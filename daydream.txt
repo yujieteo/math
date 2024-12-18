@@ -104,7 +104,7 @@ How do holomorphic function in complex analysis related to regular functions in 
 
 Eisenstein criterion?
 
-Why does one define the product topology with all but finitely many opens in components space are equal to the component space? 
+Why does one define the product topology with all but finitely many opens in components space are equal to the component space?
 
 Moduli spaces, spaces corresponding to object? Represent a contravariant functor of interest. This usually means that they represent a contravariant functor that we're interested in. For example, Vakil constructs the Grassmannian as a scheme that represents the contravariant functor that takes a scheme $X$ to the set of  surjective morphisms $O_X^n \rightarrow E$, where $E$ is locally free of rank $k$. Make this make sense?
 
@@ -130,7 +130,7 @@ Von Neumann algebra vs C* algebra?
 
 Make the definition of a class using logical predicates make sense (or distinguish it from a set somehow).
 
-Semisimple Lie groups and Lie algebras? 
+Semisimple Lie groups and Lie algebras?
 
 Christoffel symbols?
 
@@ -162,8 +162,7 @@ What does it mean for descent to be the inverse of stable under base change?
 
 What is the difference between closed immersion and embeddings?
 
-Make sense of the exponent axes and what these represent: https://terrytao.wordpress.com/2010/03/11/a-type-diagram-for-function-spaces/
-https://mathoverflow.net/questions/17736/way-to-memorize-relations-between-the-sobolev-spaces/17906#17906
+Make sense of the exponent axes and what these represent: https://terrytao.wordpress.com/2010/03/11/a-type-diagram-for-function-spaces/ https://mathoverflow.net/questions/17736/way-to-memorize-relations-between-the-sobolev-spaces/17906#17906
 
 Why is the identity map bounded but non compact unless finite dimension vector spaces? A bounded linear operator on separable Hilbert space is noncompact, hint uncountably many eigenvalues, so non separable. And on compactness: think of it as a MUCH stronger property than boundedness.
 
@@ -185,7 +184,7 @@ Fourier-Mukai transform?
 
 What does it mean for the Fourier transform to turn multiples of powers of x into derivatives? Is it a functor? How is this related to the distribution theory?
 
-What are orbits in group theory? 
+What are orbits in group theory?
 
 What is the orbit stabiliser theorem?
 
@@ -201,8 +200,7 @@ Definition of mapping class group not motivated. Classification even more so. Th
 
 https://mathoverflow.net/questions/257885/roadmap-to-hill-hopkins-ravenel/257908#257908
 
-https://en.m.wikipedia.org/wiki/List_of_statements_independent_of_ZFC
-Understand how these statements fail.
+https://en.m.wikipedia.org/wiki/List_of_statements_independent_of_ZFC Understand how these statements fail.
 
 Don’t understand Zhen Lin’s comment: usual five lemma follows from the short five lemma: factor each morphism appearing in the rows into an epimorphism followed by a monomorphism.
 
@@ -212,7 +210,7 @@ Don’t fully understand Borcherds complete computation of Tor over finitely gen
 
 Why are finitely generated abelian groups a direct sum of the cyclic groups? What is the definition of finitely generated abelian groups?
 
-What is the left adjoint of the random variable functor? It seems to forget some set of real numbers and converts it into outcomes? 
+What is the left adjoint of the random variable functor? It seems to forget some set of real numbers and converts it into outcomes?
 
 What are the key properties of Tor and Ext and how do you remember them?
 
@@ -244,14 +242,11 @@ What are spin groups and how are they related to physics?
 
 What are a list of special functors in homological algebra, Ext, Tor, Ind???
 
-https://youtu.be/PHm4bYziyug?feature=shared
-I don’t understand Scholze definition of cohomology and why is it easier to use? https://math.stackexchange.com/questions/54752/sheaf-cohomology-what-is-it-and-where-can-i-learn-it
-Akhil Mathew gives an immediate explanation of this. https://mathoverflow.net/questions/38966/what-is-sheaf-cohomology-intuitively
+https://youtu.be/PHm4bYziyug?feature=shared I don’t understand Scholze definition of cohomology and why is it easier to use? https://math.stackexchange.com/questions/54752/sheaf-cohomology-what-is-it-and-where-can-i-learn-it Akhil Mathew gives an immediate explanation of this. https://mathoverflow.net/questions/38966/what-is-sheaf-cohomology-intuitively
 
 Why is defining the opposite category of opens an open problem? It is not really Stone spaces or spatial frames.
 
-I understand why do we care about derived functors (enough injectives), but how to we understand it? Scholze uses it to give a very clean definition of etale cohomology and what does this even mean? Example: cohomology is the right defined functor from the “abelian space” (specifically spectra) and getting an abelian group. Note that abelian groups are a fully faithful inclusion into cohomology. What does it mean by enough injectives? Sheaf cohomology is the right derived functor to the global section functor?
-Answer; this is Grothendieck’s genius to use a functor for any coefficient. More specifically any functor as coefficients. 
+I understand why do we care about derived functors (enough injectives), but how to we understand it? Scholze uses it to give a very clean definition of etale cohomology and what does this even mean? Example: cohomology is the right defined functor from the “abelian space” (specifically spectra) and getting an abelian group. Note that abelian groups are a fully faithful inclusion into cohomology. What does it mean by enough injectives? Sheaf cohomology is the right derived functor to the global section functor? Answer; this is Grothendieck’s genius to use a functor for any coefficient. More specifically any functor as coefficients.
 
 How are anima a generalisation of homotopy types?
 
@@ -273,7 +268,7 @@ What is the functor that works on opens that is the colimit of open overs on a p
 
 What are sifted colimits?
 
-Make sense of essentially algebraic as set^C with C lex, coherent topoi as first order, geometric as topoi. 
+Make sense of essentially algebraic as set^C with C lex, coherent topoi as first order, geometric as topoi.
 
 What is a classifying topos?
 
@@ -285,20 +280,17 @@ What is weakly Kan injective?
 
 https://ncatlab.org/nlab/show/Gelfand+duality Gelfand duality, why do we care about Gelfand duality when others exist? What are some motivating examples of Gelfand duality? It just seems like a broad categorisation example topology to commutative algebra and algebraic geometry to commutative rings. What is the difference between this and Isbell duality which is also about algebra and geometry? Isbell seems to be about sheafification and form of spectra, whereas Gelfand is more direct and about algebraic structures and some topology/geometry?
 
-I don’t understand how a copresheaf expresses quantity where a presheaf expresses space by probing. What Ncat did was to express it as some internal hom between sets of quantities and values then gets the copresheaf as some covariant functor from copresheaves to set. The contravariant functor is the spectrum operations, from presheaves to set, the covariant functor is the copresheafification (whatever that is)
-https://ncatlab.org/nlab/show/space+and+quantity
+I don’t understand how a copresheaf expresses quantity where a presheaf expresses space by probing. What Ncat did was to express it as some internal hom between sets of quantities and values then gets the copresheaf as some covariant functor from copresheaves to set. The contravariant functor is the spectrum operations, from presheaves to set, the covariant functor is the copresheafification (whatever that is) https://ncatlab.org/nlab/show/space+and+quantity
 
 I don’t understand why how symmetric monoidal tensor products as left adjoints of internal hom and internal Hom as right adjoints for symmetric monoidal tensor products must be the correct valid notion.
 
 What is the motivation behind a diagonal morphism, and why should we care about separated morphisms so much it warrants its own functor adjunction?
 
-https://ncatlab.org/nlab/show/space+and+quantity
-How does one understand Isbell duality between space and quantity in terms of topoi?
+https://ncatlab.org/nlab/show/space+and+quantity How does one understand Isbell duality between space and quantity in terms of topoi?
 
 https://ncatlab.org/nlab/show/Tannaka+duality how can one use the proof of Tannaka duality that groups are represented by automorphisms.
 
-https://golem.ph.utexas.edu/category/2009/03/firstorder_logical_duality.html
-How can use ultracategories and ultrafunctors as geometric objects in our head to express the duality between syntax and semantics of first order logic?
+https://golem.ph.utexas.edu/category/2009/03/firstorder_logical_duality.html How can use ultracategories and ultrafunctors as geometric objects in our head to express the duality between syntax and semantics of first order logic?
 
 What is the syntax and semantics of first order logic? And how does Makkai duality clarify this?
 
@@ -308,8 +300,7 @@ How are vector bundles equivalent to class groups?
 
 How does one draw the ring of dual numbers?
 
-https://xorshammer.com/2011/07/09/a-logical-interpretation-of-some-bits-of-topology/
-Try to understand Lebesgue covering dimension.
+https://xorshammer.com/2011/07/09/a-logical-interpretation-of-some-bits-of-topology/ Try to understand Lebesgue covering dimension.
 
 Why does checking structured morphisms of schemes require a base change?
 
@@ -343,7 +334,7 @@ What are the analogies of higher inductive types with homotopy theory?
 
 What is the difference between flat and locally free (locally have some basis?)
 
-What is an infinity projective 1 loop space 
+What is an infinity projective 1 loop space
 
 What does it mean for a Cartesian closed category to be closed by exponentiation? Exponentiation is some sort of function from the power to the base right?
 
@@ -391,7 +382,7 @@ What is exponential?
 
 What is Galois group and why does a symmetric monoidal stable infinity 1 category suitable for this?
 
-Why are Galois extensions normal and separable? Why are these the right ones. 
+Why are Galois extensions normal and separable? Why are these the right ones.
 
 What is Cartesian closed?
 
@@ -405,17 +396,15 @@ https://mathoverflow.net/questions/301780/entering-to-the-k-theory-realm/301797#
 
 Is there a compilation of all varieties drawings from Mumford book that somebody has drawn out with clear explanations?
 
-What is Nisnevich descent, etale descent, ???
-You have some sort of topology you want that is not like the typical topology, since they are somewhat disconnected, certain glueing exists. This motivates these forms of descent, topologies…
+What is Nisnevich descent, etale descent, ??? You have some sort of topology you want that is not like the typical topology, since they are somewhat disconnected, certain glueing exists. This motivates these forms of descent, topologies…
 
-Is there a simpler definition of symmetric ring spectra that I can fit in my head AND DO COMPUTATIONS WITH? I don’t like the fact I have to vaguely point at some equivariance under symmetric groups, and then define spectra with stable homotopy suspension colimit thing. 
+Is there a simpler definition of symmetric ring spectra that I can fit in my head AND DO COMPUTATIONS WITH? I don’t like the fact I have to vaguely point at some equivariance under symmetric groups, and then define spectra with stable homotopy suspension colimit thing.
 
 What are function spaces that you can fit in your head?
 
 Don’t understand what are covering sieves, local isomorphisms and separated presheaves?
 
-How on earth do you work snake lemmas, five lemmas, magic diagrams. Do not understand motivation?
-https://angyansheng.github.io/notes/homological-algebra-i
+How on earth do you work snake lemmas, five lemmas, magic diagrams. Do not understand motivation? https://angyansheng.github.io/notes/homological-algebra-i
 
 Don’t understand how to keep it in head? Kunneth formula. Duality
 
@@ -429,12 +418,7 @@ Empty set: $(1)$ as ideal or the unit ideal. Useful in showing (quasi)compactnes
 
 I still don’t understand cohomology other than it is some sort of dual to homology, it is a generalisation of an abelian group, it has some coefficients.
 
-Flatness: Let $f : X \rightarrow S$ be a morphism of schemes, and assume that $S$ is reduced. What is reduced?
-(i) If $S$ is a smooth curve then $f$ is called (geometrically) flat if no 
-component of $X$ is mapped to a single point in $S$. 
-Here by component we mean an irreducible or embedded component, 
-i.e. (in the affine picture) the subvarieties of $X$ occurring in the 
-primary decomposition of the ring that defines $X$. Why does this make sense?
+Flatness: Let $f : X \rightarrow S$ be a morphism of schemes, and assume that $S$ is reduced. What is reduced? (i) If $S$ is a smooth curve then $f$ is called (geometrically) flat if no component of $X$ is mapped to a single point in $S$. Here by component we mean an irreducible or embedded component, i.e. (in the affine picture) the subvarieties of $X$ occurring in the primary decomposition of the ring that defines $X$. Why does this make sense?
 
 How do you use Kan extensions to do all of (classical) category theory quickly in your head? I have notes for this.
 
@@ -448,9 +432,7 @@ Principal ideal domain corresponds to the spectrum looking like an affine line. 
 
 Localisation of quotients and taking of quotients of localisations are equivalent, and they both give a residue field. What is the geometric interpretation of this?
 
-Hilbert's Weak Nullstellensatz shows that the “traditional points” 
-are present as points of the scheme, and this carries over to any algebraically closed field. 
-If the field is not algebraically closed, the traditional points are glued together into clumps by Galois conjugation, as in real affine line and the affine line over $F_p$. How does this even work?
+Hilbert's Weak Nullstellensatz shows that the “traditional points” are present as points of the scheme, and this carries over to any algebraically closed field. If the field is not algebraically closed, the traditional points are glued together into clumps by Galois conjugation, as in real affine line and the affine line over $F_p$. How does this even work?
 
 Why is it not possible for judgemental equalities to be proven?
 
@@ -462,14 +444,12 @@ What does it mean for loop space and suspensions to be adjoints (suspension left
 
 How do I compute homologies my head with practice exercises?
 
-
-What are adjunctions in homotopy type theory?
-https://arxiv.org/pdf/2008.12433
+What are adjunctions in homotopy type theory? https://arxiv.org/pdf/2008.12433
 
 I don’t understand transport?
 
 What Is the relationship between happly, fun ext, and transport?
- 
+
 What are modalities? Why should I care about modalities.
 
 What is the motivation of axiom K?
@@ -496,8 +476,7 @@ How to understand dependent product projections?
 
 How are types of sheaves intuitionistic in nature?
 
-What are binding constructs?
-What are object classifiers?
+What are binding constructs? What are object classifiers?
 
 What is beta reduction? What is eta expansion as a judgmental equal principle?
 
@@ -505,8 +484,7 @@ How are types obedient to partial equivalence relations?
 
 What is Quillen’s small object argument?
 
-What are (-1)-types and (-1)-truncated logic?
-They are the correct way to generalise mere propositions, if we use propositions as types the law of the excluded middle fails see https://ncatlab.org/nlab/show/mere+proposition
+What are (-1)-types and (-1)-truncated logic? They are the correct way to generalise mere propositions, if we use propositions as types the law of the excluded middle fails see https://ncatlab.org/nlab/show/mere+proposition
 
 What are universe truncations and how are they used to construct cardinals?
 
@@ -522,21 +500,19 @@ What are eliminators and constructors in type theory?
 
 How does one understand QR factorisation?
 
-How does an Householder matrix work? What motivates a Householder matrix.
-It is meant to be a transform that does some reflection. See Wikipedia.
+How does an Householder matrix work? What motivates a Householder matrix. It is meant to be a transform that does some reflection. See Wikipedia.
 
 How does unitary matrices be easier to compute (conjugate transpose) and why does it have better stabilityy properties?
 
 What is the relationship between eigenvalue eigenvector equations and the affine line and projective modules?
 
-How does the classification of finitely generated modules generalise the Jordan normal form?
-https://math.stackexchange.com/questions/88687/eigenvalues-for-matrices-over-general-rings
+How does the classification of finitely generated modules generalise the Jordan normal form? https://math.stackexchange.com/questions/88687/eigenvalues-for-matrices-over-general-rings
 
 How does one easily prove Carathedory’s theorem?
 
 I don’t understand the two cases in the proof of the Lebesgue-Radon-Nikodym derivative theorem?
 
-Why does one define the product topology with all but finitely many opens in components space are equal to the component space? 
+Why does one define the product topology with all but finitely many opens in components space are equal to the component space?
 
 Moduli spaces, spaces corresponding to object? Represent a contravariant functor of interest. This usually means that they represent a contravariant functor that we're interested in. For example, Vakil constructs the Grassmannian as a scheme that represents the contravariant functor that takes a scheme $X$ to the set of  surjective morphisms $O_X^n \rightarrow E$, where $E$ is locally free of rank $k$. Make this make sense?
 
@@ -564,7 +540,7 @@ Von Neumann algebra vs C* algebra?
 
 Make the definition of a class using logical predicates make sense (or distinguish it from a set somehow).
 
-What are semi simple Lie groups and Lie algebras? 
+What are semi simple Lie groups and Lie algebras?
 
 What are Christoffel symbols and why do people commit effort to compute them?
 
@@ -596,8 +572,7 @@ What does it mean for descent to be the inverse of stable under base change?
 
 What is the difference between closed immersion and embeddings?
 
-Make sense of the exponent axes and what these represent: https://terrytao.wordpress.com/2010/03/11/a-type-diagram-for-function-spaces/
-https://mathoverflow.net/questions/17736/way-to-memorize-relations-between-the-sobolev-spaces/17906#17906
+Make sense of the exponent axes and what these represent: https://terrytao.wordpress.com/2010/03/11/a-type-diagram-for-function-spaces/ https://mathoverflow.net/questions/17736/way-to-memorize-relations-between-the-sobolev-spaces/17906#17906
 
 Why is the identity map bounded but non compact unless finite dimension vector spaces? A bounded linear operator on separable Hilbert space is noncompact, hint uncountably many eigenvalues, so non separable. And on compactness: think of it as a MUCH stronger property than boundedness.
 
@@ -633,8 +608,7 @@ Definition of mapping class group not motivated. Classification even more so. Th
 
 https://mathoverflow.net/questions/257885/roadmap-to-hill-hopkins-ravenel/257908#257908
 
-https://en.m.wikipedia.org/wiki/List_of_statements_independent_of_ZFC
-Understand how these statements fail.
+https://en.m.wikipedia.org/wiki/List_of_statements_independent_of_ZFC Understand how these statements fail.
 
 Don’t understand Zhen Lin’s comment: usual five lemma follows from the short five lemma: factor each morphism appearing in the rows into an epimorphism followed by a monomorphism.
 
@@ -644,7 +618,7 @@ Don’t fully understand Borcherds complete computation of Tor over finitely gen
 
 Why are finitely generated abelian groups a direct sum of the cyclic groups? What is the definition of finitely generated abelian groups?
 
-What is the left adjoint of the random variable functor? It seems to forget some set of real numbers and converts it into outcomes? 
+What is the left adjoint of the random variable functor? It seems to forget some set of real numbers and converts it into outcomes?
 
 What are the key properties of Tor and Ext and how do you remember them?
 
@@ -676,14 +650,11 @@ What are spin groups and how are they related to physics?
 
 What are a list of special functors in homological algebra, Ext, Tor, Ind???
 
-https://youtu.be/PHm4bYziyug?feature=shared
-I don’t understand Scholze definition of cohomology and why is it easier to use? https://math.stackexchange.com/questions/54752/sheaf-cohomology-what-is-it-and-where-can-i-learn-it
-Akhil Mathew gives an immediate explanation of this. https://mathoverflow.net/questions/38966/what-is-sheaf-cohomology-intuitively
+https://youtu.be/PHm4bYziyug?feature=shared I don’t understand Scholze definition of cohomology and why is it easier to use? https://math.stackexchange.com/questions/54752/sheaf-cohomology-what-is-it-and-where-can-i-learn-it Akhil Mathew gives an immediate explanation of this. https://mathoverflow.net/questions/38966/what-is-sheaf-cohomology-intuitively
 
 Why is defining the opposite category of opens an open problem? It is not really Stone spaces or spatial frames.
 
-I understand why do we care about derived functors (enough injectives), but how to we understand it? Scholze uses it to give a very clean definition of etale cohomology and what does this even mean? Example: cohomology is the right defined functor from the “abelian space” (specifically spectra) and getting an abelian group. Note that abelian groups are a fully faithful inclusion into cohomology. What does it mean by enough injectives? Sheaf cohomology is the right derived functor to the global section functor?
-Answer; this is Grothendieck’s genius to use a functor for any coefficient. More specifically any functor as coefficients. 
+I understand why do we care about derived functors (enough injectives), but how to we understand it? Scholze uses it to give a very clean definition of etale cohomology and what does this even mean? Example: cohomology is the right defined functor from the “abelian space” (specifically spectra) and getting an abelian group. Note that abelian groups are a fully faithful inclusion into cohomology. What does it mean by enough injectives? Sheaf cohomology is the right derived functor to the global section functor? Answer; this is Grothendieck’s genius to use a functor for any coefficient. More specifically any functor as coefficients.
 
 How are anima a generalisation of homotopy types?
 
@@ -705,7 +676,7 @@ What is the functor that works on opens that is the colimit of open overs on a p
 
 What are sifted colimits?
 
-Make sense of essentially algebraic as set^C with C lex, coherent topoi as first order, geometric as topoi. 
+Make sense of essentially algebraic as set^C with C lex, coherent topoi as first order, geometric as topoi.
 
 What is a classifying topos?
 
@@ -717,20 +688,17 @@ What is weakly Kan injective?
 
 https://ncatlab.org/nlab/show/Gelfand+duality Gelfand duality, why do we care about Gelfand duality when others exist? What are some motivating examples of Gelfand duality? It just seems like a broad categorisation example topology to commutative algebra and algebraic geometry to commutative rings. What is the difference between this and Isbell duality which is also about algebra and geometry? Isbell seems to be about sheafification and form of spectra, whereas Gelfand is more direct and about algebraic structures and some topology/geometry?
 
-I don’t understand how a copresheaf expresses quantity where a presheaf expresses space by probing. What Ncat did was to express it as some internal hom between sets of quantities and values then gets the copresheaf as some covariant functor from copresheaves to set. The contravariant functor is the spectrum operations, from presheaves to set, the covariant functor is the copresheafification (whatever that is)
-https://ncatlab.org/nlab/show/space+and+quantity
+I don’t understand how a copresheaf expresses quantity where a presheaf expresses space by probing. What Ncat did was to express it as some internal hom between sets of quantities and values then gets the copresheaf as some covariant functor from copresheaves to set. The contravariant functor is the spectrum operations, from presheaves to set, the covariant functor is the copresheafification (whatever that is) https://ncatlab.org/nlab/show/space+and+quantity
 
 I don’t understand why how symmetric monoidal tensor products as left adjoints of internal hom and internal Hom as right adjoints for symmetric monoidal tensor products must be the correct valid notion.
 
 What is the motivation behind a diagonal morphism, and why should we care about separated morphisms so much it warrants its own functor adjunction?
 
-https://ncatlab.org/nlab/show/space+and+quantity
-How does one understand Isbell duality between space and quantity in terms of topoi?
+https://ncatlab.org/nlab/show/space+and+quantity How does one understand Isbell duality between space and quantity in terms of topoi?
 
 https://ncatlab.org/nlab/show/Tannaka+duality how can one use the proof of Tannaka duality that groups are represented by automorphisms.
 
-https://golem.ph.utexas.edu/category/2009/03/firstorder_logical_duality.html
-How can use ultracategories and ultrafunctors as geometric objects in our head to express the duality between syntax and semantics of first order logic?
+https://golem.ph.utexas.edu/category/2009/03/firstorder_logical_duality.html How can use ultracategories and ultrafunctors as geometric objects in our head to express the duality between syntax and semantics of first order logic?
 
 What is the syntax and semantics of first order logic? And how does Makkai duality clarify this?
 
@@ -740,8 +708,7 @@ How are vector bundles equivalent to class groups?
 
 How does one draw the ring of dual numbers?
 
-https://xorshammer.com/2011/07/09/a-logical-interpretation-of-some-bits-of-topology/
-Try to understand Lebesgue covering dimension.
+https://xorshammer.com/2011/07/09/a-logical-interpretation-of-some-bits-of-topology/ Try to understand Lebesgue covering dimension.
 
 Why does checking structured morphisms of schemes require a base change?
 
@@ -775,7 +742,7 @@ What are the analogies of higher inductive types with homotopy theory?
 
 What is the difference between flat and locally free (locally have some basis?)
 
-What is an infinity projective 1 loop space 
+What is an infinity projective 1 loop space
 
 What does it mean for a Cartesian closed category to be closed by exponentiation? Exponentiation is some sort of function from the power to the base right?
 
@@ -823,7 +790,7 @@ What is exponential?
 
 What is Galois group and why does a symmetric monoidal stable infinity 1 category suitable for this?
 
-Why are Galois extensions normal and separable? Why are these the right ones. 
+Why are Galois extensions normal and separable? Why are these the right ones.
 
 What is Cartesian closed?
 
@@ -837,17 +804,15 @@ https://mathoverflow.net/questions/301780/entering-to-the-k-theory-realm/301797#
 
 Is there a compilation of all varieties drawings from Mumford book that somebody has drawn out with clear explanations?
 
-What is Nisnevich descent, etale descent, ???
-You have some sort of topology you want that is not like the typical topology, since they are somewhat disconnected, certain glueing exists. This motivates these forms of descent, topologies…
+What is Nisnevich descent, etale descent, ??? You have some sort of topology you want that is not like the typical topology, since they are somewhat disconnected, certain glueing exists. This motivates these forms of descent, topologies…
 
-Simpler definition of symmetric ring spectra that I can fit in my head AND DO COMPUTATIONS WITH? I don’t like the fact I have to vaguely point at some equivariance under symmetric groups, and then define spectra with stable homotopy suspension colimit thing. 
+Simpler definition of symmetric ring spectra that I can fit in my head AND DO COMPUTATIONS WITH? I don’t like the fact I have to vaguely point at some equivariance under symmetric groups, and then define spectra with stable homotopy suspension colimit thing.
 
 Simple examples of function spaces?
 
 Don’t understand what are covering sieves, local isomorphisms and separated presheaves?
 
-How on earth do you work snake lemmas, five lemmas, magic diagrams. Do not understand motivation?
-https://angyansheng.github.io/notes/homological-algebra-i
+How on earth do you work snake lemmas, five lemmas, magic diagrams. Do not understand motivation? https://angyansheng.github.io/notes/homological-algebra-i
 
 Kunneth formula?
 
@@ -861,12 +826,7 @@ Empty set: $(1)$ as ideal or the unit ideal. Useful in showing (quasi)compactnes
 
 I still don’t understand cohomology other than it is some sort of dual to homology, it is a generalisation of an abelian group, it has some coefficients.
 
-Flatness: Let $f : X \rightarrow S$ be a morphism of schemes, and assume that $S$ is reduced. What is reduced?
-(i) If $S$ is a smooth curve then $f$ is called (geometrically) flat if no 
-component of $X$ is mapped to a single point in $S$. 
-Here by component we mean an irreducible or embedded component, 
-i.e. (in the affine picture) the subvarieties of $X$ occurring in the 
-primary decomposition of the ring that defines $X$. Why does this make sense?
+Flatness: Let $f : X \rightarrow S$ be a morphism of schemes, and assume that $S$ is reduced. What is reduced? (i) If $S$ is a smooth curve then $f$ is called (geometrically) flat if no component of $X$ is mapped to a single point in $S$. Here by component we mean an irreducible or embedded component, i.e. (in the affine picture) the subvarieties of $X$ occurring in the primary decomposition of the ring that defines $X$. Why does this make sense?
 
 How do you use Kan extensions to do all of (classical) category theory quickly in your head? I have notes for this.
 
@@ -880,9 +840,7 @@ Principal ideal domain corresponds to the spectrum looking like an affine line. 
 
 Localisation of quotients and taking of quotients of localisations are equivalent, and they both give a residue field. What is the geometric interpretation of this?
 
-Hilbert's Weak Nullstellensatz shows that the “traditional points” 
-are present as points of the scheme, and this carries over to any algebraically closed field. 
-If the field is not algebraically closed, the traditional points are glued together into clumps by Galois conjugation, as in real affine line and the affine line over $F_p$. How does this even work?
+Hilbert's Weak Nullstellensatz shows that the “traditional points” are present as points of the scheme, and this carries over to any algebraically closed field. If the field is not algebraically closed, the traditional points are glued together into clumps by Galois conjugation, as in real affine line and the affine line over $F_p$. How does this even work?
 
 Why is it not possible for judgemental equalities to be proven?
 

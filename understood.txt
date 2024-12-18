@@ -4,7 +4,7 @@ Indirection: keep the name, change the object. Example, website name, IP address
 
 Bernoulli source, hamming distortion: probability from 0 to 1/2, Hamming loss is H(p) - H(D) for prescribed distortion less than the probability (so there is loss), and zero if the prescribed distortion is larger than the distortion. This is proven by (1) considering that the rate distortion function is the minimum of the mutual information between the input X and output X^, then simply calculate the joint pmt of the two that satisfies where H(X + X^) = H(D).
 
-Prescribed distortion: D as the upper bound for the limit supremum of the expectation of Hamming indicator loss between input X^n and output X^n. 
+Prescribed distortion: D as the upper bound for the limit supremum of the expectation of Hamming indicator loss between input X^n and output X^n.
 
 Reliability function: probability of error decays exponentially with the code length, the minimal error exponent
 
@@ -40,7 +40,7 @@ Minimum description length from Bayesian reasoning: consider argmax P(D|H) P(H),
 
 Chaitin constant: probability that computer halts when input p is a binary string drawn according to Bernoulli(1/2) process. Or sum of reciprocals of alphabet size of any program p that halts. Not computable, since no finite mechanical way to solve halting problem.
 
-Slepian-Wolf code: correlated sources X, Y can be described at rates RX, RY, recovered with arbitrarily low probability if RX more than or equal to conditional entropy X given Y, RY more than or equal to conditional entropy Y given X and RX + RY more than or equal to joint entropy H(X, Y) 
+Slepian-Wolf code: correlated sources X, Y can be described at rates RX, RY, recovered with arbitrarily low probability if RX more than or equal to conditional entropy X given Y, RY more than or equal to conditional entropy Y given X and RX + RY more than or equal to joint entropy H(X, Y)
 
 Chaitin constant philosopher’s stone: list all programs in binary, supposed you have n bit of Chaitin constant, difference between full Chaitin’s and truncated Chaitin’s is less than probability of cardinality n (reciprocal of alphabet of n characters). Contributions in reciprocal of program length size is also less than that of reciprocal of alphabet of n characters. So, no program of length n that has yet to halt will half. Run increasingly longer lists of programs to keep track which one halts, find proofs to any yes/no theorems in less than n bits with 2^n characters of Chaitin’s constant. Example: program that halts with counter-example to Fermat’s last theorem. Program has finite bits N, so with 2^N bits of Chaitin’s constant, can determining Fermat’s last theorem. WARNING: Godel incompleteness still not bypassed since one cannot find effective procedures.
 
@@ -114,9 +114,9 @@ Zero joint entropy: occurs when distributions are the same.
 
 Zero mutual information: occurs when distributions are independent.
 
-Data processing inequality: if X to Y to Z is Markov chain, then mutual information I(X,Y) is more than or equal to I(X,Z). Proof I(X, Z|Y) is zero by definition of Markov chain. 
+Data processing inequality: if X to Y to Z is Markov chain, then mutual information I(X,Y) is more than or equal to I(X,Z). Proof I(X, Z|Y) is zero by definition of Markov chain.
 
-Sufficient statistic: consider n -> X -> T(X) Markov chain, T(X) statistic, X random variable, n is indexing. Data processing inequality gives mutual information between indices and random variable - mutual information of indices and statistic to be nonnegative. Definition: this difference is equal to zero if T is a sufficient statistic. Example: number of tails is sufficient statistic to recover Bernoulli variable. Example: max and min values is sufficient statistic for uniform distribution. 
+Sufficient statistic: consider n -> X -> T(X) Markov chain, T(X) statistic, X random variable, n is indexing. Data processing inequality gives mutual information between indices and random variable - mutual information of indices and statistic to be nonnegative. Definition: this difference is equal to zero if T is a sufficient statistic. Example: number of tails is sufficient statistic to recover Bernoulli variable. Example: max and min values is sufficient statistic for uniform distribution.
 
 Minimal sufficient statistic: if it forms “contravariant” Markov chain n -> T(X) -> U(X) -> X for any other sufficient statistic U. Alternatively, it has the same Kolmogorov complexity as the indices n, or it maximally compresses the indices n.
 
@@ -130,7 +130,7 @@ Hypothesis testing distance: relative entropy between hypothesis is exponent in 
 
 Randomly generated code: Shannon used it to have achievable rate with arbitrarily low probability of error.
 
-Prefix complexity K(x): use conditional Kolmogorov complexity, but programs and data must be self-delimiting. This is called K(x) since not having self-delimitation is annoying and disables some inequalities. 
+Prefix complexity K(x): use conditional Kolmogorov complexity, but programs and data must be self-delimiting. This is called K(x) since not having self-delimitation is annoying and disables some inequalities.
 
 Kolmogorov complexity C(x): not to be confused with prefix complexity K(x); fixing an additively optimal partial computable function phi, it is the conditional Kolmogorov complexity C(x | epsilon). Epsilon is natural number on auxiliary tape.
 
@@ -156,13 +156,13 @@ Universal: a lower semicomputable function is universal if enumeration exists.
 
 Universal distribution: the idea is to instead of finding some sort of algorithm that maximises ignorance, you pick some sort of distribution that maximises ignorance.
 
-Kolmogorov structure function / ML estimator: the minimal of maximal data-to-model code length log card(S) for model S. 
+Kolmogorov structure function / ML estimator: the minimal of maximal data-to-model code length log card(S) for model S.
 
 Simplicity of model: Kolmogorov complexity of model K(S)
 
 Exception MDL: minimise sum of description length K(H) and exception list K(E|H), E is error from between data D and data DH from hypothesis classification, compare this to the data processing inequality K(D|H) + K(H) >= K(D)
 
-Max. Entropy: knowledge of constraints gives bounds that maximise entropy. 
+Max. Entropy: knowledge of constraints gives bounds that maximise entropy.
 
 Maximum likelihood: pick hypothesis maximising probability of data conditioned on hypothesis. Special case of minimum description length
 
@@ -172,11 +172,11 @@ Pac-learning and compression relationship?
 
 Asymmetric complexity (minimum description length): minimum sum of encoding and encoded data. Random string: zero encoding, compressibility = data.  Or min K(H) + K(D|H)
 
-Symmetric complexity or Wittgenstein ruler: K(D,H) = K(H) + K(D) + K(K(H), D|H) + K(K(D), H|D). Need double dual to work correctly. 
+Symmetric complexity or Wittgenstein ruler: K(D,H) = K(H) + K(D) + K(K(H), D|H) + K(K(D), H|D). Need double dual to work correctly.
 
-c-incompressibility: the Kolmogorov complexity of a c-incompressible string is at least the length of the string minus c character. 
+c-incompressibility: the Kolmogorov complexity of a c-incompressible string is at least the length of the string minus c character.
 
-c-compressible: the Kolmogorov complexity of a c-compressible string is at most the length of the string -c characters. 
+c-compressible: the Kolmogorov complexity of a c-compressible string is at most the length of the string -c characters.
 
 Kolmogorov complexity alternate definition: the complexity K such that the string is both K compressible and K incompressible.
 
@@ -216,11 +216,11 @@ Z[x] is not a PID. Example (x) and (x, 7) are prime ideals, contradiction derive
 
 Lie group: group that is also a differentiable manifold. Group multiplication and inverses are differentiable.
 
-Manifold: locally similar to a vector space. 
+Manifold: locally similar to a vector space.
 
 Classification of compact, connected, simply connected Lie group: product of finitely many, compact symplectic group, special unitary group, and spin group, or 5 exceptional groups?
 
-Compact topological group: topology realised as a compact topological space. Like some sort of finite group with discrete topology. Example: unitary group, special unitary group, circle of center 0, radius 1 (symmetries everywhere). All symmetry lines pass through the two elements. Draw STRAIGHT line at center intersecting two points. Defines 
+Compact topological group: topology realised as a compact topological space. Like some sort of finite group with discrete topology. Example: unitary group, special unitary group, circle of center 0, radius 1 (symmetries everywhere). All symmetry lines pass through the two elements. Draw STRAIGHT line at center intersecting two points. Defines
 
 Derivative of complex variable: same definition as that of a real variable. Quotient of infinitesimals taken as a limit.
 
@@ -232,7 +232,7 @@ Analytic function: locally equal to its own Taylor series. General for convergen
 
 Unipotent: element r such that r-1 is nilpotent some integer n
 
-Unipotent matrix: characteristic polynomial P(t) is power of t-1. Proof of definition: all roots are equal to 1. (t-1)^n = 0. All eigenvalues is one. Eigenvalues are roots. 
+Unipotent matrix: characteristic polynomial P(t) is power of t-1. Proof of definition: all roots are equal to 1. (t-1)^n = 0. All eigenvalues is one. Eigenvalues are roots.
 
 Quasiunipotent: some power (r-1)^n is Unipotent. Classical example, diagonalisable matrix whose elements are roots of unity.
 
@@ -246,7 +246,7 @@ Localisation of ring: generalisation of field of fractions, but with arbitrary c
 
 Subgroup: subset with the same group operation
 
-Proper subgroup: proper subset, same group operation. Operation is Unital associative invertible magma 
+Proper subgroup: proper subset, same group operation. Operation is Unital associative invertible magma
 
 Embedding definitions: defined by how it can be embedded in a bigger objects: example, field of fractions of integral domain that can be embedded in a smallest field
 
@@ -336,9 +336,7 @@ Induction principle for co-products:
 
 Induction over unit type: (1) skip step 1, (2) construct for function type of unit type to universe, the dependent type of a point C(\*), (3) this is the function type to the dependent type over the unit type
 
-Induction of product types: (1) take dependent type of pairs C(x,y) over elements x in universe X and elements y over universe Y; (2) take dependent type over function types of product type from X _ Y -> U; (3) take a function type to dependent product to the element u of type X _ Y for a proposition C(u).
-Logically, (1) consider a pair of proofs x and y, there exist a proof x that proves propositions X and proof in propositions Y. Consider this pair of propositions for where the (2) conjunction of these two proofs imply U. (3) It is implied that the pair of proofs can be treated as a proof on its own.
-In spaces: (1) consider the product space of two points (x,y) formed by the space of sections over their base space X and Y. Then consider the space of sections over the function space of their base space as a product space X \* Y to some other space U; (3) one can form the function space to the product space itself which associate this pair of points to a single point.
+Induction of product types: (1) take dependent type of pairs C(x,y) over elements x in universe X and elements y over universe Y; (2) take dependent type over function types of product type from X _ Y -> U; (3) take a function type to dependent product to the element u of type X _ Y for a proposition C(u). Logically, (1) consider a pair of proofs x and y, there exist a proof x that proves propositions X and proof in propositions Y. Consider this pair of propositions for where the (2) conjunction of these two proofs imply U. (3) It is implied that the pair of proofs can be treated as a proof on its own. In spaces: (1) consider the product space of two points (x,y) formed by the space of sections over their base space X and Y. Then consider the space of sections over the function space of their base space as a product space X \* Y to some other space U; (3) one can form the function space to the product space itself which associate this pair of points to a single point.
 
 Proof for propositional uniqueness principle
 
@@ -482,8 +480,7 @@ The number of Jordan blocks corresponding to a given eigenvalue is the geometric
 
 The sum of the sizes of all the Jordan blocks corresponding to a given eigenvalue is its algebraic multiplicity.
 
-A Jordan block is the sum of a diagonal matrix and a nilpotent matrix
-since $J_k(\lambda) = \lambda I_k + J_k(0)$ and $J_k(0)^k = 0$.
+A Jordan block is the sum of a diagonal matrix and a nilpotent matrix since $J_k(\lambda) = \lambda I_k + J_k(0)$ and $J_k(0)^k = 0$.
 
 Category theory motivates (1) generalising morphisms; (2) generalising domain/codomain duality; (3) preserve integrity respecting identification and compositional order. The fastest illustration of category theory is with Kan extensions. All categories are locally small (that is to say ignore size issues in set theory) unless otherwise stated.
 
@@ -497,96 +494,33 @@ An isomorphism is a composition of two morphisms between two sets of objects who
 
 A comma category $F \downarrow G$ of two functors $F: \mathbf{D} \rightarrow \mathbf{C}$ and $G: \mathbf{E} \rightarrow \mathbf{C}$ has objects, triples $(d, e, f)$, where $d$ is a morphism in category $\mathbf{D}$, $e$ is a morphism in category $\mathbf{E}$, and $f$ which are morphisms from $Fd \rightarrow Ge$ in category $\mathbf{C}$, as well as all diagrams of this shape commuting in category $\mathbf{C}$, where $h: d \rightarrow d'$, $k: e \rightarrow e'$ such that $f' \cdot Fh = Gk \cdot f$, for morphisms of triples $(d, e, f) \rightarrow (d', e' ,f')$.
 
-A left Kan extension of a functor $F$ that takes morphisms from initial domain
-category $\mathbf{C}$ to a codomain category $\mathbf{E}$
-along a functor $K$ that maps morphisms from extended domain $\mathbf{D}$ to
-the same codomain category $\mathbf{E}$
-is a functor $\mathrm{Lan}_{K} F$ that also takes morphisms from category $\mathbf{D}$ to category $\mathbf{E}$
-such that there is a natural transformation $\eta$ that takes functor $F$ to the functorial
-composition of $\mathrm{Lan}_{K} F \cdot K$. This natural transformation $\eta$
-is defined such that any other natural transformation $\gamma$ factors uniquely through $\eta$ for any other
-functor $K'$ that, like $K$, takes morphisms from category $\mathbf{D}$ to category $\mathbf{E}$.
-A right Kan extension is defined the same but the arrows of the natural
-transformation reversed, taking the functorial
-composition of $\mathrm{Ran}_{K} F \cdot K$ to functor $F$ from the opposite category
-$\mathbf{C}^\mathrm{op}$ to opposite category $\mathbf{E}^\mathrm{op}$ when defined in terms
-of the left Kan extension.
+A left Kan extension of a functor $F$ that takes morphisms from initial domain category $\mathbf{C}$ to a codomain category $\mathbf{E}$ along a functor $K$ that maps morphisms from extended domain $\mathbf{D}$ to the same codomain category $\mathbf{E}$ is a functor $\mathrm{Lan}_{K} F$ that also takes morphisms from category $\mathbf{D}$ to category $\mathbf{E}$ such that there is a natural transformation $\eta$ that takes functor $F$ to the functorial composition of $\mathrm{Lan}_{K} F \cdot K$. This natural transformation $\eta$ is defined such that any other natural transformation $\gamma$ factors uniquely through $\eta$ for any other functor $K'$ that, like $K$, takes morphisms from category $\mathbf{D}$ to category $\mathbf{E}$.
+
+A right Kan extension is defined the same but the arrows of the natural transformation reversed, taking the functorial composition of $\mathrm{Ran}_{K} F \cdot K$ to functor $F$ from the opposite category $\mathbf{C}^\mathrm{op}$ to opposite category $\mathbf{E}^\mathrm{op}$ when defined in terms of the left Kan extension.
 
 A functor is extended naturally to left composition of a left Kan extension and the functor when the domain category is extended.
+
 A functor is extended naturally from a left composition of a right Kan extension and the functor when the domain category is extended. Easy to remember, forgetful functors are typical examples of right adjoints which are right Kan extensions.
 
 A presheaf is a functor from an opposite category to sets. A simplicial set is presheaf from the simplicial category.
 
-A category of presheaves has presheaf functors as objects, and natural transformations as
-morphisms.
+A category of presheaves has presheaf functors as objects, and natural transformations as morphisms.
 
-Most Kan extensions define the value of an extended functor on each object (each “point”)
-by a weighted (co)limit.
-For a locally small category $\mathbf{E}$, a right Kan extension is pointwise if it is preserved
-by all representable functors $\mathbf{E}(e, -)$ to the category of sets
-$\mathbf{Set}$. Representable functors are naturally isomorphic with a representation
-$\theta: \mathrm{hom}_\mathbf{C}(-,c) \rightarrow \mathbf{E}(e, -)$.
-A left Kan extension is pointwise if its corresponding right Kan extension is pointwise.
+Most Kan extensions define the value of an extended functor on each object (each “point”) by a weighted (co)limit. For a locally small category $\mathbf{E}$, a right Kan extension is pointwise if it is preserved by all representable functors $\mathbf{E}(e, -)$ to the category of sets $\mathbf{Set}$. Representable functors are naturally isomorphic with a representation $\theta: \mathrm{hom}_\mathbf{C}(-,c) \rightarrow \mathbf{E}(e, -)$. A left Kan extension is pointwise if its corresponding right Kan extension is pointwise.
 
-Also, a right Kan extension of functor $F$ from category $\mathbf{C}$ to category $\mathbf{E}$
-along a functor $K$ from category $\mathbf{C}$ to $\mathbf{D}$ is pointwise
-if and only if the limit $\mathrm{lim} ( d \downarrow K \rightarrow \mathbf{C} \rightarrow \mathbf{E})$
-exists and is isomorphic $\mathrm{Ran}_{K} F(d)$ for morphism $d$ in category $\mathbf{C}$.
-We have $d \downarrow K$ as an indexing category.
-This can be shown since a pointwise extension preserves representable functors, so Yoneda's lemma applies then the
-$\mathrm{Ran}_{K} F(d)$ is isomorphic limit of $F\Pi_d: d \downarrow K \rightarrow \mathbf{E}$ where a l $\Pi_d$.
-Dually, a left Kan extension of functor $F$ from category $\mathbf{C}$ to category $\mathbf{E}$
-along a functor $K$ from category $\mathbf{C}$ to $\mathbf{D}$ is pointwise
-if and only if the colimit $\mathrm{colim} ( K \downarrow d \rightarrow \mathbf{C} \rightarrow \mathbf{E} )$
-exists and is isomorphic $\mathrm{Lan}_{K} F(d)$ for morphism $d$ in category $\mathbf{C}$.
+Also, a right Kan extension of functor $F$ from category $\mathbf{C}$ to category $\mathbf{E}$ along a functor $K$ from category $\mathbf{C}$ to $\mathbf{D}$ is pointwise if and only if the limit $\mathrm{lim} ( d \downarrow K \rightarrow \mathbf{C} \rightarrow \mathbf{E})$ exists and is isomorphic $\mathrm{Ran}_{K} F(d)$ for morphism $d$ in category $\mathbf{C}$. We have $d \downarrow K$ as an indexing category. This can be shown since a pointwise extension preserves representable functors, so Yoneda's lemma applies then the $\mathrm{Ran}_{K} F(d)$ is isomorphic limit of $F\Pi_d: d \downarrow K \rightarrow \mathbf{E}$ where a l $\Pi_d$. Dually, a left Kan extension of functor $F$ from category $\mathbf{C}$ to category $\mathbf{E}$ along a functor $K$ from category $\mathbf{C}$ to $\mathbf{D}$ is pointwise if and only if the colimit $\mathrm{colim} ( K \downarrow d \rightarrow \mathbf{C} \rightarrow \mathbf{E} )$ exists and is isomorphic $\mathrm{Lan}_{K} F(d)$ for morphism $d$ in category $\mathbf{C}$.
 
-See Emily Riehl's "Category Theory in Context" for this construction.
-For any small diagram $F$ from category $\mathbf{C}$ to category $\mathbf{D}$ valued in a category
-with products and equalisers. There exists an equaliser diagram for monomorphisms on $Fc$ to
-the product $\Pi_{c \rightarrow x} Fx$ for two parallel maps to $\Pi_{c \rightarrow x \rightarrow y} Fy$.
-One parallel map projects to the component indexed by the composite $c \rightarrow x \rightarrow y$.
-The other parallel map projects to the component indexed by the map $c \rightarrow x$ and then acts by $F$
-on the second map $x \rightarrow y$. This is the Yoneda lemma, applied to functor $F$ from the
-category $\mathbf{C}$ to the category of sets $\mathbf{Set}$ for set morphisms $Fc$
-which is isomorphic to a limit formula $\lim(c/\mathbf{C} \rightarrow \mathbf{C} \rightarrow \mathbf{D})$.
-This limit formula can be shown to be expressed as an equaliser.
-The Yoneda lemma states that these two composites are equivalent.
+See Emily Riehl's "Category Theory in Context" for this construction. For any small diagram $F$ from category $\mathbf{C}$ to category $\mathbf{D}$ valued in a category with products and equalisers. There exists an equaliser diagram for monomorphisms on $Fc$ to the product $\Pi_{c \rightarrow x} Fx$ for two parallel maps to $\Pi_{c \rightarrow x \rightarrow y} Fy$. One parallel map projects to the component indexed by the composite $c \rightarrow x \rightarrow y$. The other parallel map projects to the component indexed by the map $c \rightarrow x$ and then acts by $F$ on the second map $x \rightarrow y$. This is the Yoneda lemma, applied to functor $F$ from the category $\mathbf{C}$ to the category of sets $\mathbf{Set}$ for set morphisms $Fc$ which is isomorphic to a limit formula $\lim(c/\mathbf{C} \rightarrow \mathbf{C} \rightarrow \mathbf{D})$. This limit formula can be shown to be expressed as an equaliser. The Yoneda lemma states that these two composites are equivalent.
 
-Yoneda's lemma implies a composition of two morphisms between two sets of
-objects whose composition and inverse identify in their respective sets of objects
-called a isomorphism. This isomorphism is canonical and unique, and is between
-the value of a presheaf $X$ at a morphism $c$ and the collection of all morphisms
-(hom-set) of presheaf homomorphisms
-from the representable presheaf $y(c)$ to the presheaf $X$.
-This means $\mathrm{Hom}_{\mathrm{Set}^{\mathbf{C}^\mathrm{op}}}(y(c), X)$
-is isomorphic to $X(c)$.
+Yoneda's lemma implies a composition of two morphisms between two sets of objects whose composition and inverse identify in their respective sets of objects called a isomorphism. This isomorphism is canonical and unique, and is between the value of a presheaf $X$ at a morphism $c$ and the collection of all morphisms (hom-set) of presheaf homomorphisms from the representable presheaf $y(c)$ to the presheaf $X$. This means $\mathrm{Hom}_{\mathrm{Set}^{\mathbf{C}^\mathrm{op}}}(y(c), X)$ is isomorphic to $X(c)$.
 
-A left Kan extension of a functor $F$ that takes morphisms from category $\mathbf{C}$ to category $\mathbf{D}$
-along a uniqueness functor $!$ from
-a category $\mathbf{C}$ to the category $\mathbf{1}$ defines a natural transformation
-to the colimit. This left Kan extension exists if and only if the colimit exists.
-A right Kan extension along a uniqueness functor $!$ from
-a category $\mathbf{C}$ to the category $\mathbf{1}$ defines a natural transformation
-from the limit. This right Kan extension exists if and only if the limit exists.
+A left Kan extension of a functor $F$ that takes morphisms from category $\mathbf{C}$ to category $\mathbf{D}$ along a uniqueness functor $!$ from a category $\mathbf{C}$ to the category $\mathbf{1}$ defines a natural transformation to the colimit. This left Kan extension exists if and only if the colimit exists. A right Kan extension along a uniqueness functor $!$ from a category $\mathbf{C}$ to the category $\mathbf{1}$ defines a natural transformation from the limit. This right Kan extension exists if and only if the limit exists.
 
-A unit $\eta$ is a natural transformation from the identity functor $\cdot$ to a composition
-of functors $GF$. A left Kan extension of the identity functor $\cdot$
-along $F$ is defined with the unit $\eta$ as an left adjoint. Left adjoints preserves colimits.
-A counit $\epsilon$ is a natural transformation from a composition of
-a functors $GF$ to the identity functor $\cdot$.
-A right Kan extension of the identity functor along $G$ is defined with the counit $\epsilon$
-as an right adjoint. Right adjoints preserves limits.
+A unit $\eta$ is a natural transformation from the identity functor $\cdot$ to a composition of functors $GF$. A left Kan extension of the identity functor $\cdot$ along $F$ is defined with the unit $\eta$ as an left adjoint. Left adjoints preserves colimits. A counit $\epsilon$ is a natural transformation from a composition of a functors $GF$ to the identity functor $\cdot$. A right Kan extension of the identity functor along $G$ is defined with the counit $\epsilon$ as an right adjoint. Right adjoints preserves limits.
 
-A Yoneda extension is a left Kan extension
-along a Yoneda embedding.
+A Yoneda extension is a left Kan extension along a Yoneda embedding.
 
-A limit of a diagram with two objects without nontrivial morphisms is a product.
-A limit of a unique empty diagram from the empty category $\mathbf{0}$ to a category $\mathbf{C}$
-defines a terminal object of $\mathbf{C}$. This can be thought of as a product.
-A limit of a pair of parallel morphisms is an equaliser.
-A limit over a cospan is a pullback, considering pairs of morphisms with the same co-domain.
-Dually, there are coproducts, initial objects, coequalisers, and pushouts for parallel pairs
-of morphisms with the same domain.
+A limit of a diagram with two objects without nontrivial morphisms is a product. A limit of a unique empty diagram from the empty category $\mathbf{0}$ to a category $\mathbf{C}$ defines a terminal object of $\mathbf{C}$. This can be thought of as a product. A limit of a pair of parallel morphisms is an equaliser. A limit over a cospan is a pullback, considering pairs of morphisms with the same co-domain. Dually, there are coproducts, initial objects, coequalisers, and pushouts for parallel pairs of morphisms with the same domain.
 
 Monoidal structure: a unital associative magma, except the magma is a tensor product BIFUNCTOR of categories. Unital and associativity come as FUNCTORS of categories.
 
@@ -616,8 +550,7 @@ Duality: pairs of concepts are mirror images of one another with some involution
 
 Derived functors: explicit computations of homology for Tor, and cohomology for Ext via resolutions
 
-Burnside’s lemma: enumeration of orbits of symmetry group, or counts distinct objects up to a symmetry equivalence relation.
-For a finite group G, consider elements x^g that are fixed by g i.e. g = x = x. The formula for orbits is |X/G| = sum of elements x fixed by g divided by the group G. Example, rotationally distinct colourings of cube with three colouring. Identity fixes 3^6 colours, six 90 degree face rotations fix 3^3 \* 6 colourings, three 180 degree face rotations fix 3^3 colourings, eight 120 degree vertex rotation fix 3^2 colourings, six 180 degree edge rotations fix 3^3 colourings. Now take average over group of order 64, get 57, so there are 57 rotationally distinct colourings of a cube with 3 colours.
+Burnside’s lemma: enumeration of orbits of symmetry group, or counts distinct objects up to a symmetry equivalence relation. For a finite group G, consider elements x^g that are fixed by g i.e. g = x = x. The formula for orbits is |X/G| = sum of elements x fixed by g divided by the group G. Example, rotationally distinct colourings of cube with three colouring. Identity fixes 3^6 colours, six 90 degree face rotations fix 3^3 \* 6 colourings, three 180 degree face rotations fix 3^3 colourings, eight 120 degree vertex rotation fix 3^2 colourings, six 180 degree edge rotations fix 3^3 colourings. Now take average over group of order 64, get 57, so there are 57 rotationally distinct colourings of a cube with 3 colours.
 
 Fourier transforms in distribution theory: turn multiplication by x into differentiation with respect to k, derivatives of delta function.
 
@@ -667,11 +600,7 @@ Injective: covariant pullback, if f(x) = f(y) then x = y.
 
 Well defined function: covariant pushforward, if x = y, then f(x) = f(y)
 
-Sobolev embedding: amplitude A, frequency N, support on volume V. Wk,p norm is AN^kV^-p,
-Apply uncertainty principle, V >= N^-d. Think of it as a trade off between regularity and interrability.
-These are single bump function spaces, can extend a lot further.
-W11(R)  =  L^infty(R1) is fundamental theorem of calculus
-Wd1(R)  =  L^infty(Rd) is iterated and Fubini
+Sobolev embedding: amplitude A, frequency N, support on volume V. Wk,p norm is AN^kV^-p, Apply uncertainty principle, V >= N^-d. Think of it as a trade off between regularity and interrability. These are single bump function spaces, can extend a lot further. W11(R)  =  L^infty(R1) is fundamental theorem of calculus Wd1(R)  =  L^infty(Rd) is iterated and Fubini
 
 Using calculus to get rid of bad fractions: newton numerators of form [f(t+h) - f(t)]/h is simply the integral
 
@@ -681,8 +610,7 @@ Trisection angle: impossible, proof, compass and straight edge constructions obe
 
 Smooth fibrations on compact spaces are fiber bundles, example Hopf fibration not Hopf fiber bundle.
 
-Elliptical curve over complex numbers is a Riemann surface of genus one with base point, or quotient of complex of lattice
-In complex, or smooth algebraic curve degree 3. Torus can be used to study complex numbers.
+Elliptical curve over complex numbers is a Riemann surface of genus one with base point, or quotient of complex of lattice In complex, or smooth algebraic curve degree 3. Torus can be used to study complex numbers.
 
 To get the properties of exclusive disjunction from ring sum and conjunction (or meet) from ring product given a Boolean ring, which is a ring of idempotents, apply truth table onto rings of ints modulo 2. 1 + 1 = 0, so exclusive disjunction.
 
@@ -694,27 +622,19 @@ Global section functor on an (infty, 1) topos is a Hom functor of morphisms out 
 
 Global section functor is direct image functor on Grothendieck topos, induced by canonically mapping spaces to terminal objects. It is right adjoint to the left adjoint which is the Set tensor on the terminal object sending set to coproduct of card(S) copies of terminal object which is the constant object. The left adjoint is the constant sheaf. It is constant since we lost all information by using the terminal object. Generalisation of the forgetful functor.
 
-Etale space: sheafs on the site of opens for topological space is the sheaf of local sections on its etale space E (double cover as example) bundle such that the sheaf functor takes opens U to sheaf of local sections Gamma*U(E).
-The sheaf of global sections is the hom-sets on the sheaf from the terminal object to the sheaf functor.
-Sheaf of global function = Hom_Sh(X)(*, A), A is sheaf functor, \_ terminal object, Sh(X) is sheaf category.
+Etale space: sheafs on the site of opens for topological space is the sheaf of local sections on its etale space E (double cover as example) bundle such that the sheaf functor takes opens U to sheaf of local sections Gamma*U(E). The sheaf of global sections is the hom-sets on the sheaf from the terminal object to the sheaf functor. Sheaf of global function = Hom_Sh(X)(*, A), A is sheaf functor, \_ terminal object, Sh(X) is sheaf category.
 
-Sections are right inverses. Sections B -> A are right inverses of bundles A -> B which are left inverses of sections..
-Sections typically refer to global sections, not local sections by default. In homotopy type theory, helpful for defining left injections and right injections.
+Sections are right inverses. Sections B -> A are right inverses of bundles A -> B which are left inverses of sections.. Sections typically refer to global sections, not local sections by default. In homotopy type theory, helpful for defining left injections and right injections.
 
 Derived functors are normal functors that are presented in a category of weak equivalences (homotopy suitable setting).
 
 Dehn twist: cut cylinder with line, glue back circle with rotation. Line becomes twisted at cut.
 
-Mapping class group of torus is special linear group of 2 x 2 matrices, Teichmuller space is the upper half plane.
-Horizontal Dehn twist, take shearing matrix A = (1 1, 0 1) giving (x+y, y) on (x, y).
-Vertical Dehn twist, take shearing matrix B = (0 1, 1 1) giving (x, x+y) on (x, y).
+Mapping class group of torus is special linear group of 2 x 2 matrices, Teichmuller space is the upper half plane. Horizontal Dehn twist, take shearing matrix A = (1 1, 0 1) giving (x+y, y) on (x, y). Vertical Dehn twist, take shearing matrix B = (0 1, 1 1) giving (x, x+y) on (x, y).
 
-Mapping class group: group of orientation preserving homeomorphisms of
-oriented topological manifold, group of automorphic homeomorphisms onto itself modulo isotopy i.e.
-MCG := Aut / Aut0. Nielsen Thurston classification.
+Mapping class group: group of orientation preserving homeomorphisms of oriented topological manifold, group of automorphic homeomorphisms onto itself modulo isotopy i.e. MCG := Aut / Aut0. Nielsen Thurston classification.
 
-Classification of surfaces: connected oriented finite type surfaces can be classified by punctures, genus, boundary. Classifying spaces encoded
-combinatorially in category of ribbon graphs.
+Classification of surfaces: connected oriented finite type surfaces can be classified by punctures, genus, boundary. Classifying spaces encoded combinatorially in category of ribbon graphs.
 
 CW approximation theorem: for any space X, there is an induced map Y to X for some closure finite weak topology complex Y with induced isomorphism of homology, homotopy and cohomology groups.
 
@@ -814,8 +734,7 @@ Cohomology from the abelian sheaf functor to the global sections of abelian shea
 
 Topological group. Group with left actions and inverses which are continuous (function which gives opens in domain induced by preimage of the function).
 
-Categorical inverse limit on pairs of objects in a category with projections onto a grading of graded objects and transition morphisms between graded objects that commutes when composed. Specifically the composition of the transition morphism with pre-projection gives post-projection with universal property that gives unique morphisms that exists to this inverse limit. This is also known as a direct limit in category theory.
-Typical example is the infinite sequence of preimages with closeness at the end (or decidable if you use Stone duality).
+Categorical inverse limit on pairs of objects in a category with projections onto a grading of graded objects and transition morphisms between graded objects that commutes when composed. Specifically the composition of the transition morphism with pre-projection gives post-projection with universal property that gives unique morphisms that exists to this inverse limit. This is also known as a direct limit in category theory. Typical example is the infinite sequence of preimages with closeness at the end (or decidable if you use Stone duality).
 
 Anima: generalisation of homotopy types
 
@@ -853,7 +772,7 @@ Makkai conceptual completeness, for a functor of (coherent) pretopoi, if the ind
 
 Boolean ring: it is a ring of idempotent, 0 and 1 are idempotent so it is canonically isomorphic to ring of integers modulo 2. Now, consider 1 + 1 = 0 using the fact that it is a ring and must have additive inverse 1. If you drop additive inverse and have 1 as an absorbing element 1 + 1 = 1, you get (default) disjunction, and it is a Boolean semiring
 
-A Boolean algebra is a ring where every element is idempotent.
+Boolean algebra: is a ring where every element is idempotent.
 
 Frame: Stone dual to topological space that is a partially ordered set lattice with some defining distribution of conjunction and the existence of either supremum or infinum for every set
 
@@ -875,14 +794,11 @@ Pontrjagin dual: easy example is additive on integers to circle group, take prod
 
 Eckhmann-Hinton duality: The most basic duality by reversing arrows in category theory.
 
-Fuks duality: take endofunctors of compact pointed (important for suspensions) Hausdorff spaces. Duality is expressed between loop space and suspension space. Endofunctor of loop space gives suspension space. Endofunctor of suspension space gives loop space.
-This works heuristically for: homotopy dual to cohomology, mapping cylinder to mapping cocylinder, fibration to cofibration.
+Fuks duality: take endofunctors of compact pointed (important for suspensions) Hausdorff spaces. Duality is expressed between loop space and suspension space. Endofunctor of loop space gives suspension space. Endofunctor of suspension space gives loop space. This works heuristically for: homotopy dual to cohomology, mapping cylinder to mapping cocylinder, fibration to cofibration.
 
 Tannaka duality: monoid with its module category are dual, considering automorphisms/endomorphisms of some forgetful functor called the fibre functor that gives the monoid structure. Just apply Yoneda’s lemma using the fact that the fibre functor is endomorphism.
 
-Proof sketch for G-set with Tannaka duality (like Cayley’s theorem), C as Set^G or GSet
-Aut(F) = Set^(SetG)(F,F) = Set^(SetG)(SetG(G, -), SetG(G, -)) = SetG(G, G) = G
-Abusing notation for GSet and isomorphism due to Yoneda’s lemma.
+Proof sketch for G-set with Tannaka duality (like Cayley’s theorem), C as Set^G or GSet Aut(F) = Set^(SetG)(F,F) = Set^(SetG)(SetG(G, -), SetG(G, -)) = SetG(G, G) = G Abusing notation for GSet and isomorphism due to Yoneda’s lemma.
 
 Makkai duality: syntax of first order logic (pretopoi) corresponds to the semantics of first order logic (ultracategories). Further, opposite category of small pretopoi maps to ultracategories, ultrafunctors of from ultra category to set has the structure of a small pretopos
 
@@ -932,9 +848,7 @@ Brown representability: all cohomology theories can be represented by spectra, n
 
 Wedge sum, glue together pointed spaces at the point.
 
-Cayley’s Theorem, one of my favourites because once you understand Cayley’s Theorem, you understand Yoneda embedding and Yoneda’s lemma. Note: not trivial, requires key step.
-Consider underlying element of group x, mapping to left action gx. IMPORTANT: groups are closed, so this is bijection, since this is a bijection on the same set, it is a permutation, so groups must be isomorphic to permutation groups (or subgroups of symmetric groups) under composition of permutations.
-Yoneda’s: considering homset(b, a) mapping to natural transformations nat(hom(a, -), hom(b, -)). This must be an isomorphism, since compositions of morphisms are morphisms. Therefore, define this as an Yoneda embedding (if on sets), and all small categories are embed into the category of functors of defined on that categories, which are represented by pre-sheaves or representable functors.
+Cayley’s Theorem, one of my favourites because once you understand Cayley’s Theorem, you understand Yoneda embedding and Yoneda’s lemma. Note: not trivial, requires key step. Consider underlying element of group x, mapping to left action gx. IMPORTANT: groups are closed, so this is bijection, since this is a bijection on the same set, it is a permutation, so groups must be isomorphic to permutation groups (or subgroups of symmetric groups) under composition of permutations. Yoneda’s: considering homset(b, a) mapping to natural transformations nat(hom(a, -), hom(b, -)). This must be an isomorphism, since compositions of morphisms are morphisms. Therefore, define this as an Yoneda embedding (if on sets), and all small categories are embed into the category of functors of defined on that categories, which are represented by pre-sheaves or representable functors.
 
 Groups as symmetries of something given by Cayley theorem, closure of left action is key step.
 
@@ -946,8 +860,7 @@ Chain complex has free abelian group (have generators as basis) on n simplex wit
 
 Nerves, take functor from n simplex to category. Nerve of 0 is object, nerve of 1 is morphism, nerve of 2 is pairs of morphisms. Fully faithful embedding, take forgetful of partial order structure of nerves to get back category
 
-Smooth morphism of scheme, approximated by affine space at any point, no nilpotent, but regular scheme. You want finiteness condition (presentation whatever that means) and flatness. Since this is a morphism of schemes, it is relative and defines a smooth scheme. That is the beauty of Grothendieck’s morphism oriented way of thinking.
-IMPORTANT POINT. YOU WANT THE FIBRES TO BE REGULAR. Example maps between regular schemes can fail to be smooth. Example V(xy) from affine plane to affine line. But the affine plane and affine line are regular schemes!
+Smooth morphism of scheme, approximated by affine space at any point, no nilpotent, but regular scheme. You want finiteness condition (presentation whatever that means) and flatness. Since this is a morphism of schemes, it is relative and defines a smooth scheme. That is the beauty of Grothendieck’s morphism oriented way of thinking. IMPORTANT POINT. YOU WANT THE FIBRES TO BE REGULAR. Example maps between regular schemes can fail to be smooth. Example V(xy) from affine plane to affine line. But the affine plane and affine line are regular schemes!
 
 Regular, think differential geometrically, consider dimension of Zariski tangent space is equal to the Krull dimension (computed using chains of noetherian stuff, max length) of local ring (local rings/ maximal ideals / points)
 
@@ -967,8 +880,7 @@ Prime spectrum: colimit of some sort of chain of suspensions. Reminds me of stal
 
 Separatedness, cannot be represented by two disjoint open subsets. Generalise to sites!
 
-Higher inductive types are machine readable homotopy theory.
-Call yourself again when you define some homotopic object. Example is circle with a base with a type called circle (recursively) and a loop with a type base == base. For 2 spheres, same exercise, use base2 as twosphere, but use idpath of base2 instead of ==. Example, univalence axiom can have this loops as the integers. Interval also work the same logic, interval is defined inductively where zero and one has type interval, then segment is of type zero == one. Suspension, define north and south inductively as susp X, then define meridian as the X -> north == south.
+Higher inductive types are machine readable homotopy theory. Call yourself again when you define some homotopic object. Example is circle with a base with a type called circle (recursively) and a loop with a type base == base. For 2 spheres, same exercise, use base2 as twosphere, but use idpath of base2 instead of ==. Example, univalence axiom can have this loops as the integers. Interval also work the same logic, interval is defined inductively where zero and one has type interval, then segment is of type zero == one. Suspension, define north and south inductively as susp X, then define meridian as the X -> north == south.
 
 However, you can derive finite fields of non prime integers, for example F4 using irreducible quadratic x^2 + x + 1 as quotient of F2
 
@@ -998,8 +910,7 @@ Field extension, easy define some subfield with some subset, then the main field
 
 Skew field, non-commutative field
 
-Eilenberg-Steenrod axioms for cohomology: contravariance,
-homotopy invariant, excision, suspension isomorphisms, disjoints to products, dimension axiom.
+Eilenberg-Steenrod axioms for cohomology: contravariance, homotopy invariant, excision, suspension isomorphisms, disjoints to products, dimension axiom.
 
 Contravariance, maps X to Y induces maps the other way round
 
@@ -1045,9 +956,7 @@ Compact, every limit point is point. Or with Stone duality, any decidable propos
 
 Suspension. Draw two points at the top. Make suspension. Somehow there is some sigma and somehow you can spam it till infinity.
 
-Spectra, some cohomology theory, fully faithful from abelian group
-Generalise abelian group. Examples.
-Spectra means I can use geometry
+Spectra, some cohomology theory, fully faithful from abelian group. Generalise abelian group. Examples. Spectra means I can use geometry
 
 Propositions as types, you want types to be points.
 
@@ -1059,27 +968,17 @@ Ring is an abelian group with a monoidal structure that interacts with the abeli
 
 Tensor product and smash product in spectra.
 
-Magma means set with binary operation.
-Unital associative magma, monoid.
-Unital associative invertible magma, group.
+Magma means set with binary operation. Unital associative magma, monoid. Unital associative invertible magma, group.
 
-Exercise: draw $\mathrm{Spec(\mathbb{C}[x,y])}$. Three types of prime ideals.
-Maximal points. Non-closed 1D points that look like curves that contain
-maximal closed points so it is irreducible, and a generic point, if you localise
-you invert everything that is not in $\mathbb{C}[x,y]$.
+Exercise: draw $\mathrm{Spec(\mathbb{C}[x,y])}$. Three types of prime ideals. Maximal points. Non-closed 1D points that look like curves that contain maximal closed points so it is irreducible, and a generic point, if you localise you invert everything that is not in $\mathbb{C}[x,y]$.
 
-Exercise: draw $\mathrm{Spec(\mathbb{R}[x])}$. Line affine line,
-with ramification points of complex conjugate pairs.
+Exercise: draw $\mathrm{Spec(\mathbb{R}[x])}$. Line affine line, with ramification points of complex conjugate pairs.
 
-Mapping from $\mathbb{Z} \rightarrow \mathbb{Z}[i]$ gives
-mapping from $\mathrm{Spec} (\mathbb{Z}) \leftarrow \mathrm{Spec}(\mathbb{Z}[i])$.
-This gives three types. Ramification points, no primes, splits into two.
+Mapping from $\mathbb{Z} \rightarrow \mathbb{Z}[i]$ gives mapping from $\mathrm{Spec} (\mathbb{Z}) \leftarrow \mathrm{Spec}(\mathbb{Z}[i])$. This gives three types. Ramification points, no primes, splits into two.
 
 Principal ideal domain corresponds to the spectrum looking like an affine line. How is this related to Z as PID from classification of surfaces?
 
-Picard groups corresponds to a group of line bundles.
-This assigning a vector space 1D to each point.
-Group completion of Dedekind domain gives ring of integer and Picard group
+Picard groups corresponds to a group of line bundles. This assigning a vector space 1D to each point. Group completion of Dedekind domain gives ring of integer and Picard group
 
 Group completion of circle S1, give trivial Z and Mobius band Z/2 since two mobius bands give circle
 
@@ -1089,10 +988,7 @@ Ideal class groups corresponds to Picard group schemes of the ring of integers.
 
 Discrete valuation ring corresponds to Sierpinski two point space.
 
-Chinese Remainder Theorem, giving a function on a disconnected
-space is the same as a giving a function on its connected components
-for disjoint union of subvarieties. This corresponds to the product
-of the spectrum of two schemes which gives the disjoint union of schemes.
+Chinese Remainder Theorem, giving a function on a disconnected space is the same as a giving a function on its connected components for disjoint union of subvarieties. This corresponds to the product of the spectrum of two schemes which gives the disjoint union of schemes.
 
 Exercise: draw $\mathrm{Spec(\mathbb{C}[x,y])}/(x,y)$. Gives picture of local ring at one point.
 
@@ -1106,26 +1002,17 @@ Stalks of sheaves represent localisation of $A$-module at prime $p$ or local rin
 
 Skyscraper sheaf is like the Dirac delta distribution.
 
-Mapping from $\mathbb{Z} \rightarrow \mathbb{Z}[x]$ gives
-mapping from $\mathrm{Spec} (\mathbb{Z}) \leftarrow \mathrm{Spec}(\mathbb{Z}[x])$.
-Fibers are finite field. Horizontal lines are quadratic residues. Fiber at zero is the ring of quotients, invert anything nonzero.
+Mapping from $\mathbb{Z} \rightarrow \mathbb{Z}[x]$ gives mapping from $\mathrm{Spec} (\mathbb{Z}) \leftarrow \mathrm{Spec}(\mathbb{Z}[x])$. Fibers are finite field. Horizontal lines are quadratic residues. Fiber at zero is the ring of quotients, invert anything nonzero.
 
-Fibres of $\mathcal{O}$-module of locally ringed space at point $p$
-correspond to $\dfrac{\mathcal{F}_p}{m_p \mathcal{F}_p}$.
+Fibres of $\mathcal{O}$-module of locally ringed space at point $p$ correspond to $\dfrac{\mathcal{F}_p}{m_p \mathcal{F}_p}$.
 
-Glueing is flat descent.
-Categorically: $0 \rightarrow \mathcal{F}(U) \rightarrow \prod \mathcal{F}(U_{i}) \rightarrow \prod \mathcal{F}(U_{ij})$ is exact.
-There exists an exact sequence of products of overlapping open covers in topological space.
-Motivates the definition of site: where we generalise with fibre products, and open covers are generalised to sites.
+Glueing is flat descent. Categorically: $0 \rightarrow \mathcal{F}(U) \rightarrow \prod \mathcal{F}(U_{i}) \rightarrow \prod \mathcal{F}(U_{ij})$ is exact. There exists an exact sequence of products of overlapping open covers in topological space. Motivates the definition of site: where we generalise with fibre products, and open covers are generalised to sites.
 
-Tangent space: assign polynomial its linear term in Taylor's series
-at point $a$, take all equations describing variety $X$, linearise them at $a$, take the common zero locus. Approximates local dimension.
-Oh this is magical reading it again.
+Tangent space: assign polynomial its linear term in Taylor's series at point $a$, take all equations describing variety $X$, linearise them at $a$, take the common zero locus. Approximates local dimension. Oh this is magical reading it again.
 
 A regular local ring is an integral domain: a variety that is regular at a point should not consist of several components that meet in this point. This corresponds to the points being able to be approximated by affine varieties at that point, see also definition of smoothness, but they approximate it by Euclidean space with Euclidean topology instead.
 
-Valuation of an element: order of vanishing of a local function on a curve at a point. Note: works on any integral domains and quotient fields, so can be in any abelian group
-and not just integers. Example: for a $k$ to be a field of rational functions of variety $X$ around smooth point $a$, the valuation can be thought of as an order of a zero or pole at smooth point $a$ in the variety.
+Valuation of an element: order of vanishing of a local function on a curve at a point. Note: works on any integral domains and quotient fields, so can be in any abelian group and not just integers. Example: for a $k$ to be a field of rational functions of variety $X$ around smooth point $a$, the valuation can be thought of as an order of a zero or pole at smooth point $a$ in the variety.
 
 Fields are zero dimensional regular local rings i.e smooth schemes modelled by affines with Krull dimension zero.
 
@@ -1137,37 +1024,21 @@ Singular curve: some sort of self crossing in the curve. Nonsingular means no cr
 
 Dedekind domains: key examples are irreducible smooth curves in algebraically closed fields.
 
-Picard group of Dedekind domain corresponds to how far the Dedekind domain is from unique factorisation domain.
-See also K-theory of Dedekind domain giving the direct sum of the integers with its Picard group.
+Picard group of Dedekind domain corresponds to how far the Dedekind domain is from unique factorisation domain. See also K-theory of Dedekind domain giving the direct sum of the integers with its Picard group.
 
-Prime factorisation:
-Decomposition of varieties into pieces that cannot be subdivided further.
-Prime factorisation also encodes orders of vanishing of function $f$ of all points of a
-irreducible smooth curve $X$. Example: $X = V(y^2 - x(x-1)(x - \lambda))$ in Gathmann's notes.
-Exercise: draw this
-Pick general linear function $l$, general line crosses at three points which are maximal ideals
-so $(l) = P_1 \cdot P_2 \cdot P_3$, special linear functions $l'$
-COINCIDES so $(l') = P_1' P_2'$.
+Prime factorisation: Decomposition of varieties into pieces that cannot be subdivided further. Prime factorisation also encodes orders of vanishing of function $f$ of all points of a irreducible smooth curve $X$. Example: $X = V(y^2 - x(x-1)(x - \lambda))$ in Gathmann's notes. Exercise: draw this Pick general linear function $l$, general line crosses at three points which are maximal ideals so $(l) = P_1 \cdot P_2 \cdot P_3$, special linear functions $l'$ COINCIDES so $(l') = P_1' P_2'$.
 
-However, recall that the underlying valuations on the local rings are defined originally
-not only on these discrete valuation rings, but also on their quotient field.
-Geometrically, this means that we can equally well consider orders of rational
-functions, i. e. quotients of polynomials, at a smooth point of a curve.
-These orders can then be positive (if the function has a zero),
-negative (if it has a pole), or zero (if the function has a non-zero value at the given point).
+However, recall that the underlying valuations on the local rings are defined originally not only on these discrete valuation rings, but also on their quotient field. Geometrically, this means that we can equally well consider orders of rational functions, i. e. quotients of polynomials, at a smooth point of a curve. These orders can then be positive (if the function has a zero), negative (if it has a pole), or zero (if the function has a non-zero value at the given point).
 
-Affine varieties are "shapes". Varieties are rings of polynomial functions.
-They are also closed sets in Zariski topology.
+Affine varieties are "shapes". Varieties are rings of polynomial functions. They are also closed sets in Zariski topology.
 
 Disconnected: disjoint union of closed sets in Zariski topology is empty.
 
 Dimension of variety: supremum of chain inclusions of irreducible closed subsets / subvarieties $X$.
 
-Condensed formalism, care about compact (all limit points are points),
-Hausdorff (disjoint opens exist), totally disconnected )
+Condensed formalism, care about compact (all limit points are points), Hausdorff (disjoint opens exist), totally disconnected )
 
-Codimension of $Y$ in $X$, supremum of chain inclusions of irreducible closed subsets / subvarieties
-from $Y$ to $X$. Local dimension at this point. Local dimension of irreducible variety is the same at every point.
+Codimension of $Y$ in $X$, supremum of chain inclusions of irreducible closed subsets / subvarieties from $Y$ to $X$. Local dimension at this point. Local dimension of irreducible variety is the same at every point.
 
 Pure dimension: valid only for Noetherian topological spaces, every irreducible component has same dimension which is $n$. Affine varieties with pure dimension 1 are curves, pure dimension 2 are surfaces, more than that hypersurfaces. Examples where definition of pure dimensions breaks down includes a line (variety) passing through a plane (variety)
 
@@ -1177,8 +1048,7 @@ Morphism of varieties: ring homomorphism with source and target reversed. Made a
 
 Sheafs allowing gluing of presheaves and conditions on it are local.
 
-Germs of (pre)sheaf at point $a$, functions defined on small neighbourhood, these are local functions.
-Examples: rational functions with nonvanishing denominator at point $a$.
+Germs of (pre)sheaf at point $a$, functions defined on small neighbourhood, these are local functions. Examples: rational functions with nonvanishing denominator at point $a$.
 
 Stalks of a (pre)sheaf at a point, like localisations of presheaf at some point.
 
@@ -1196,22 +1066,17 @@ Intersection of subvarieties: sum of ideals.
 
 Union of subvarieties: product or intersection of ideals.
 
-Difference of subvarieties: quotient of ideals.
-Strictly, the difference $Y \backslash Z$ is in general not a variety, so the exact geometric operation corresponding to quotient ideals is taking the smallest subvariety containing $Y \backslash Z$.
+Difference of subvarieties: quotient of ideals. Strictly, the difference $Y \backslash Z$ is in general not a variety, so the exact geometric operation corresponding to quotient ideals is taking the smallest subvariety containing $Y \backslash Z$.
 
 Disjoint subvarieties: coprime ideals.
 
 Fibered products correspond to tensor products. Exercise: draw fibered products.
 
-Vector bundles are equivalent to class groups.
-Exercise: make sense of this. Also, prove integers as principal ideal domain from
-homology of torus and classification of surfaces.
+Vector bundles are equivalent to class groups. Exercise: make sense of this. Also, prove integers as principal ideal domain from homology of torus and classification of surfaces.
 
 Lattice of integers correspond to the adjoining a root onto the integers.
 
-Homology or cohomology show how far it fails under localisation.
-Exactness give some Euler characteristic +2, F - E + V - 2 = 0.
-Mike Hopkins add holes become zero, easy way to remember is to divide the a torus in the regions. 4 barriers, 4 regions, no vertices, so zero.
+Homology or cohomology show how far it fails under localisation. Exactness give some Euler characteristic +2, F - E + V - 2 = 0. Mike Hopkins add holes become zero, easy way to remember is to divide the a torus in the regions. 4 barriers, 4 regions, no vertices, so zero.
 
 Zero germ corresponds to localisation of maximal ideal at point $p$ being zero. See also stalks.
 
@@ -1223,30 +1088,17 @@ Prime ideals: irreducibles or points.
 
 Maximal ideals: closed points.
 
-Not every ring is the coordinate ring of a variety,
-so for general rings we have to find an algebraic argument (Zorn's lemma) that ensures the existence of maximal ideals.
+Not every ring is the coordinate ring of a variety, so for general rings we have to find an algebraic argument (Zorn's lemma) that ensures the existence of maximal ideals.
 
-For every ideal in a ring, a radical of an ideal consists of
-the intersections of prime ideals is shown by Zorn's lemma.
-This corresponds to the geometrically obvious statement that the
-variety is the union of its irreducible subvarieties.
+For every ideal in a ring, a radical of an ideal consists of the intersections of prime ideals is shown by Zorn's lemma. This corresponds to the geometrically obvious statement that the variety is the union of its irreducible subvarieties.
 
-Fractions: rational functions that are local functions
-well defined at a point.
+Fractions: rational functions that are local functions well defined at a point.
 
-Localisation: restricting function to arbitrarily small
-neighbourhoods $q$. Like defining differentiability and continuity.
+Localisation: restricting function to arbitrarily small neighbourhoods $q$. Like defining differentiability and continuity.
 
-Localisation as $u(as' - a's) = 0$ for some $u \in S$, $S$ multiplicatively closed. Gathmann gives an immediate way to remember geometrically:
-Pick point $a = (1, 0)$, $(y/1)$ and $(0/1)$ must agree for
-variety $X = V(xy)$ but fails since $(y \cdot 1 - 0 \cdot 1) \neq 0$.
-This is fixed by introducting $x$ so
-$x(y \cdot 1 - 0 \cdot 1) = xy = 0$.
+Localisation as $u(as' - a's) = 0$ for some $u \in S$, $S$ multiplicatively closed. Gathmann gives an immediate way to remember geometrically: Pick point $a = (1, 0)$, $(y/1)$ and $(0/1)$ must agree for variety $X = V(xy)$ but fails since $(y \cdot 1 - 0 \cdot 1) \neq 0$. This is fixed by introducting $x$ so $x(y \cdot 1 - 0 \cdot 1) = xy = 0$.
 
-Noetherian: finite descending inclusion chain of varieties towards empty.
-Make subvariety smaller by dropping irreducible component or reduce
-dimension of subvariety. Decomposition of a subvariety into finitely many
-irreducible subvarieties is always possible for Noetherians.
+Noetherian: finite descending inclusion chain of varieties towards empty. Make subvariety smaller by dropping irreducible component or reduce dimension of subvariety. Decomposition of a subvariety into finitely many irreducible subvarieties is always possible for Noetherians.
 
 $V(x,y)$ is $y = x$ is a point.
 
@@ -1254,32 +1106,15 @@ $V(xy)$ is $xy$ axes.
 
 Embedded components: subvariety contained in another subvariety. Example is $(0)$ as fat point contained in line for the spectrum of integers, isolated points. The corresponding algebraic statement is that $P_2$ contains another prime ideal $P_1$ occurring as a radical in the decomposition; we will also say that $P_2$ is an embedded and $P_1$ an isolated prime ideal.
 
-Artinian: finitely ascending chains of varieties. So Artinian coordinate rings are finite unions of points. Not true for Noetherian.
-Algebraically, this means zero ideal is always product of maximal ideals.
+Artinian: finitely ascending chains of varieties. So Artinian coordinate rings are finite unions of points. Not true for Noetherian. Algebraically, this means zero ideal is always product of maximal ideals.
 
-Prime and irreducible elements. Consider coordinate ring $R = \mathbb{R}[x,y]/(x^2 + y^2 - 1)$.
-Irreducible. Since it is a circle, not a product of two lines. Lines are linear polynomials in $\mathbb{R}[x,y]$.
-It is still irreducible in $R$ since lines must cross from
-inside to outside. This is not prime in $R$ since it consists of two points.
-Exercise, reproduce example 8.7 in Gathmann.
+Prime and irreducible elements. Consider coordinate ring $R = \mathbb{R}[x,y]/(x^2 + y^2 - 1)$. Irreducible. Since it is a circle, not a product of two lines. Lines are linear polynomials in $\mathbb{R}[x,y]$. It is still irreducible in $R$ since lines must cross from inside to outside. This is not prime in $R$ since it consists of two points. Exercise, reproduce example 8.7 in Gathmann.
 
 Irreducible: cannot be written as union of closed sets in Zariski topology.
 
-Ring extension map $\mathbb{C}[x,y] \rightarrow \mathbb{C}[x,y]/(f)$
-(smaller ideal to larger ideal)
-is morphism of varieties $\pi$ from larger variety to smaller variety.
-Drawing only the real points, we have examples of
-points $V(xy)$ with morphism $\pi$ to the real line ($V(x)$).
-Exercise: reproduce Gathmann 9.4 as exercise.
-Inverse images of $\pi$ are fibers. Geometrically, this is an infinite fibre
-at $x = 0$. Try examples of $y^2 - x^2$ giving two point fibres except at origin,
-and $xy - 1$ giving one point fibres except empty fibre at origin.
-The precise geometric correspondence is more complicated.
+Ring extension map $\mathbb{C}[x,y] \rightarrow \mathbb{C}[x,y]/(f)$ (smaller ideal to larger ideal) is morphism of varieties $\pi$ from larger variety to smaller variety. Drawing only the real points, we have examples of points $V(xy)$ with morphism $\pi$ to the real line ($V(x)$). Exercise: reproduce Gathmann 9.4 as exercise. Inverse images of $\pi$ are fibers. Geometrically, this is an infinite fibre at $x = 0$. Try examples of $y^2 - x^2$ giving two point fibres except at origin, and $xy - 1$ giving one point fibres except empty fibre at origin. The precise geometric correspondence is more complicated.
 
-Normal domains: Coordinate ring of irreducible varieties. Quotient field are rational functions well defined except at isolated points where
-denominator vanishes. Example: $\mathbb{C}[x]$ is normal, rational function is ill defined as a pole but cannot satisfy monic relation since its highest order pole cannot be cancelled by lower order poles.
-$\mathbb{R}[x,y]/(y^2 - x^2 - x^3)$ is not normal, looks likereducible two lines $V(x+y)$ $V(x-y)$
-at origin approaching $+1$ and $-1$ at origin.
+Normal domains: Coordinate ring of irreducible varieties. Quotient field are rational functions well defined except at isolated points where denominator vanishes. Example: $\mathbb{C}[x]$ is normal, rational function is ill defined as a pole but cannot satisfy monic relation since its highest order pole cannot be cancelled by lower order poles. $\mathbb{R}[x,y]/(y^2 - x^2 - x^3)$ is not normal, looks likereducible two lines $V(x+y)$ $V(x-y)$ at origin approaching $+1$ and $-1$ at origin.
 
 Noetherian normalisation: example of $V(x_1x_2 - 1)$ fails lying over at origin. Coordinate transform to tilt it to $V(y_2 - y_1^2 - 1)$, $x_1 = y_2 + y_1$, $x_2 = y_2 - y_1$. Lying over is OK. See Gathmann notes.
 
@@ -1291,69 +1126,33 @@ Blowing up: replace origin with a projective space to see inside it.
 
 Regular local ring is always an integral domain (no zero divisors): variety is locally irreducible at every smooth point.
 
-Fat points: See $\mathrm{Spec}(K[x]/(x^2))$. There is a fat point
-at the origin on an affine line you can only see linearisations,
-on a plane it will start to stick out more.
+Fat points: See $\mathrm{Spec}(K[x]/(x^2))$. There is a fat point at the origin on an affine line you can only see linearisations, on a plane it will start to stick out more.
 
 Local rings: rational function with well defined values at point and does not admit similar evaluation maps since the denominator of the fraction might vanish there i.e. unique maximal ideal.
 
-Projective curves: add point at infinity for parallel lines to intersect.
-Embed each point $(x_1, ..., x_n)$ to $(1, x_1: ... x_n)$ as
-affine coordinates, the reamining points are
-$(0, x_1: ... x_n)$ as points at infinity so $\mathbb{P}^n = \mathbb{A}^{n} \cup \mathbb{P}^{n-1}$.
-as affine and infinite part. Analysts call these Riemann spheres.
+Projective curves: add point at infinity for parallel lines to intersect. Embed each point $(x_1, ..., x_n)$ to $(1, x_1: ... x_n)$ as affine coordinates, the reamining points are $(0, x_1: ... x_n)$ as points at infinity so $\mathbb{P}^n = \mathbb{A}^{n} \cup \mathbb{P}^{n-1}$. as affine and infinite part. Analysts call these Riemann spheres.
 
-Flatness: Let $f : X \rightarrow S$ be a morphism of schemes, and assume that $S$ is reduced.
-(i) If $S$ is a smooth curve then $f$ is called (geometrically) flat if no
-component of $X$ is mapped to a single point in $S$.
-Here by component we mean an irreducible or embedded component,
-i.e. (in the affine picture) the subvarieties of $X$ occurring in the
-primary decomposition of the ring that defines $X$.
+Flatness: Let $f : X \rightarrow S$ be a morphism of schemes, and assume that $S$ is reduced. (i) If $S$ is a smooth curve then $f$ is called (geometrically) flat if no component of $X$ is mapped to a single point in $S$. Here by component we mean an irreducible or embedded component, i.e. (in the affine picture) the subvarieties of $X$ occurring in the primary decomposition of the ring that defines $X$.
 
-Weak Nullstellensatz shows that the “traditional points”
-are present as points of the scheme, carries over to any algebraically closed field.
-If the field is not algebraically closed, traditional points are glued together into clumps by Galois conjugation, as in real affine line and the affine line over $F_p$.
+Weak Nullstellensatz shows that the “traditional points” are present as points of the scheme, carries over to any algebraically closed field. If the field is not algebraically closed, traditional points are glued together into clumps by Galois conjugation, as in real affine line and the affine line over $F_p$.
 
-Quasicompact and quasiseparated if and only if X can be covered by a
-finite number of affine open subsets, any two of which have intersection also covered by a finite number of affine open subsets.
-I notice that affines causes the word quasi.
+Quasicompact and quasiseparated if and only if X can be covered by a finite number of affine open subsets, any two of which have intersection also covered by a finite number of affine open subsets. I notice that affines causes the word quasi.
 
-Consider the case $A = \mathbf{C}[x, y]/(xy)$ and $f = x$.
-What is the localization $A_f$?
-The space $\mathrm{Spec} C[x, y]/(xy)$
-“is” the union of the two axes in the plane.
-Localizing means throwing out the locus where $x$ vanishes.
-So we are left with the x-axis, minus the origin,
-so we expect $\mathrm{Spec} \mathbf{C}[x]_x$ .
-Exercise: what natural isomorphism is there?
+Consider the case $A = \mathbf{C}[x, y]/(xy)$ and $f = x$. What is the localization $A_f$? The space $\mathrm{Spec} C[x, y]/(xy)$ “is” the union of the two axes in the plane. Localizing means throwing out the locus where $x$ vanishes. So we are left with the x-axis, minus the origin, so we expect $\mathrm{Spec} \mathbf{C}[x]_x$ . Exercise: what natural isomorphism is there?
 
-Suppose we have a function (ring element) vanishing at all points.
-Then it is not necessarily the zero function! Why, nilpotent.
-The translation of this question is: is the intersection of all prime ideals necessarily just $0$?
-The answer is no, as is shown by the example of the ring of dual numbers
-$k[\epsilon]/(\epsilon^2): \epsilon  \neq 0$, but
-$\epsilon^2 = 0$.
-Any function whose power is zero certainly lies in the intersection of all prime ideals.
-Functions are not determined by their values at points: the fault of nilpotents.
+Suppose we have a function (ring element) vanishing at all points. Then it is not necessarily the zero function! Why, nilpotent. The translation of this question is: is the intersection of all prime ideals necessarily just $0$? The answer is no, as is shown by the example of the ring of dual numbers $k[\epsilon]/(\epsilon^2): \epsilon  \neq 0$, but $\epsilon^2 = 0$. Any function whose power is zero certainly lies in the intersection of all prime ideals. Functions are not determined by their values at points: the fault of nilpotents.
 
 If a ring has no nonzero nilpotents, we say that it is reduced. Compare to irreducible.
 
 Projective $n$-space is the union of lines through origin in dimension $n+1$.
 
-A geometric point of a scheme $X$ is defined to be a morphism $\mathrm{Spec}(k) \rightarrow X$
-where $k$ is an algebraically closed field.
+A geometric point of a scheme $X$ is defined to be a morphism $\mathrm{Spec}(k) \rightarrow X$ where $k$ is an algebraically closed field.
 
-A geometric fiber of a morphism $X \rightarrow Y$ is defined to be the fiber over a geometric point of $Y$, i.e., the fibered product
-with the geometric point $Spec k \rightarrow Y$.
+A geometric fiber of a morphism $X \rightarrow Y$ is defined to be the fiber over a geometric point of $Y$, i.e., the fibered product with the geometric point $Spec k \rightarrow Y$.
 
-A morphism has connected (respectively. irreducible, integral, reduced) geometric fibers if all its geometric fibers are
-connected (resp. irreducible, integral, reduced). One usually says that the morphism has geometrically connected (resp. geometrically irreducible,
-geometrically integral, geometrically reduced) fibers.
+A morphism has connected (respectively. irreducible, integral, reduced) geometric fibers if all its geometric fibers are connected (resp. irreducible, integral, reduced). One usually says that the morphism has geometrically connected (resp. geometrically irreducible, geometrically integral, geometrically reduced) fibers.
 
-A $k$-scheme $X$ is geometrically connected (resp. geometrically irreducible, geometrically
-integral, geometrically reduced) if the structure morphism $X \rightarrow \mathrm{Spec} k$
-has geometrically connected (resp. irreducible, integral, reduced) fibers. Recall Grothendieck’s philosophy where you want to define the structure morphism to get these properties over a base spectrum/scheme Spec k.
-We will soon see that to check any of these conditions, we need only base change to $k$.
+A $k$-scheme $X$ is geometrically connected (resp. geometrically irreducible, geometrically integral, geometrically reduced) if the structure morphism $X \rightarrow \mathrm{Spec} k$ has geometrically connected (resp. irreducible, integral, reduced) fibers. Recall Grothendieck’s philosophy where you want to define the structure morphism to get these properties over a base spectrum/scheme Spec k. We will soon see that to check any of these conditions, we need only base change to $k$.
 
 Site: a structure that enables descent not by using intersections of subsets in descent with fibre products. See condensed formalism intro by Scholze.
 
