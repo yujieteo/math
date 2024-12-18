@@ -1,5 +1,7 @@
 DAYDREAM
 
+What concept classes fail Occam's learning to probably approximately correct learning?
+
 Need to motivate the achievability lemmas: typical average, joint typicality, packing, covering, conditional typicality?
 
 McMillan inequality?

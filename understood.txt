@@ -166,7 +166,7 @@ Max. Entropy: knowledge of constraints gives bounds that maximise entropy.
 
 Maximum likelihood: pick hypothesis maximising probability of data conditioned on hypothesis. Special case of minimum description length
 
-Probably approximately correct learning: the sum of probabilities of cases where concept in binary exemplified concept class is not equal to halted output concept can be made arbitrarily small by an algorithm. This is also the definition of an Occam algorithm.
+Probably approximately correct learning: the sum of probabilities of cases where concept in binary exemplified concept class is not equal to halted output concept can be made arbitrarily small by an algorithm. This is also the definition of an Occam algorithm. Predictive power of test set.
 
 Pac-learning and compression relationship?
 
@@ -185,6 +185,8 @@ Incompressibility lemma: since there are sum from index 0 to log[card(A)]- c -1 
 Disjunctive normal forms (“DNF”): OR of ANDs
 
 Concepts: measurable functions in set {0, 1}, concept class, functions on examples giving binary exemplar.
+
+Occam learning: objective, short data representation. Pac learning implies Occam's not the converse (for some concept classes).
 
 Occam algorithm: poly time, where complexity of hypothesis is at most complexity smallest concept ^ payoff exponent * number of examples ^ probability exponent. Pac-learnable if Occam algorithm exists. Number of hypothesis r is such that at most log r of Occam hypothesis complexity.
 
