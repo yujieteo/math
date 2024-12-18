@@ -1,10 +1,18 @@
-DAYDREAM
+DAYDREAM (MATH)
 
 What concept classes fail Occam's learning to probably approximately correct learning?
 
+Complete partial orders?
+
+Scott topology?
+
+Curry and apply as Scott continuous?
+
+Denotational semantics?
+
 Need to motivate the achievability lemmas: typical average, joint typicality, packing, covering, conditional typicality?
 
-McMillan inequality?
+Difference between uniquely decodable code versus instantaneous code.
 
 Strong typicality? Orlitsky-Roche definition? Why so significant?
 
@@ -20,7 +28,7 @@ Multi-access channel?
 
 Instantaneous code? Uniquely decodable code? Huffman code? Prefix code?
 
-Fano’s inequality? Proof? Motivation (hint: channel coding theorem)
+Fano’s inequality proof? Motivation (hint: channel coding theorem)
 
 Entropy rate of stationary Markov chain?
 
@@ -60,13 +68,13 @@ Galois conjugate?
 
 Newform?
 
-Mean value theorem?
+Rolle’s theorem?
 
 Canonical isomorphism?
 
 Limit defined up to isomorphism in 1 category? But limit defined only up to equivalence in infinity category?
 
-Complementary slackness
+Complementary slackness?
 
 Problem and dual problem? CCCP?
 
@@ -74,7 +82,7 @@ Which distributions best model which problems? Create a list.
 
 What is the difference between a polynomial and a polynomial functions?
 
-Eigenspace?
+When do you want to define eigenspace without zero vector?
 
 Hodge theorem?
 

@@ -1,4 +1,13 @@
-UNDERSTOOD
+UNDERSTOOD (MATH)
+
+Curry-apply adjunction: equivalent to tensor hom adjunction. Apply is hom, currying is tensor product.
+Example: in Lisp (apply #’ + (list 1 2)) looks like hom from + to list. See Wikipedia.
+
+Apply: space of exp object Y^X given Y compact open topology, X is locally compact Hausdorff. Needed for homotopy to be continuous paths in space of functions.
+
+Mean value theorem: secant through endpoints, you can find tangent that is parallel to that. Feels like extreme value theorem but for first derivative?
+
+Eigenspace: eigenvectors set of eigenvalue + zero vector. 
 
 Indirection: keep the name, change the object. Example, website name, IP address, keep the website name, change the address. Indirection lets you choose the reference to be invariant, not the object. Better definition: indirection is the contravariant functor to covariant naming. Name network addresses with human readable addresses. INDIRECTION from human readable addresses to network addresses. Indirection is left adjoint to naming which is right adjoint.
 
@@ -44,7 +53,7 @@ Slepian-Wolf code: correlated sources X, Y can be described at rates RX, RY, rec
 
 Chaitin constant philosopher’s stone: list all programs in binary, supposed you have n bit of Chaitin constant, difference between full Chaitin’s and truncated Chaitin’s is less than probability of cardinality n (reciprocal of alphabet of n characters). Contributions in reciprocal of program length size is also less than that of reciprocal of alphabet of n characters. So, no program of length n that has yet to halt will half. Run increasingly longer lists of programs to keep track which one halts, find proofs to any yes/no theorems in less than n bits with 2^n characters of Chaitin’s constant. Example: program that halts with counter-example to Fermat’s last theorem. Program has finite bits N, so with 2^N bits of Chaitin’s constant, can determining Fermat’s last theorem. WARNING: Godel incompleteness still not bypassed since one cannot find effective procedures.
 
-Kraft’s inequality: instantaneous codes iff sum of alphabet length raised to the string length for each strength is less than or equal to 1.
+Kraft inequality: instantaneous codes iff sum of alphabet length raised to the string length for each strength is less than or equal to 1.
 
 McMillan inequality: uniquely decodable codes iff sum of alphabet length raised to the string length for each strength is less than or equal to 1.
 
