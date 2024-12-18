@@ -518,9 +518,13 @@ A left Kan extension of a functor $F$ that takes morphisms from category $\mathb
 
 A unit $\eta$ is a natural transformation from the identity functor $\cdot$ to a composition of functors $GF$. A left Kan extension of the identity functor $\cdot$ along $F$ is defined with the unit $\eta$ as an left adjoint. Left adjoints preserves colimits. A counit $\epsilon$ is a natural transformation from a composition of a functors $GF$ to the identity functor $\cdot$. A right Kan extension of the identity functor along $G$ is defined with the counit $\epsilon$ as an right adjoint. Right adjoints preserves limits.
 
-A Yoneda extension is a left Kan extension along a Yoneda embedding.
+Yoneda extension: left Kan extension along a Yoneda embedding. See definition of field extension in Galois theory, similar.
 
-A limit of a diagram with two objects without nontrivial morphisms is a product. A limit of a unique empty diagram from the empty category $\mathbf{0}$ to a category $\mathbf{C}$ defines a terminal object of $\mathbf{C}$. This can be thought of as a product. A limit of a pair of parallel morphisms is an equaliser. A limit over a cospan is a pullback, considering pairs of morphisms with the same co-domain. Dually, there are coproducts, initial objects, coequalisers, and pushouts for parallel pairs of morphisms with the same domain.
+Limit of a diagram with two objects without nontrivial morphisms is a product. 
+
+A limit of a unique empty diagram from the empty category $\mathbf{0}$ to a category $\mathbf{C}$ defines a terminal object of $\mathbf{C}$. This can be thought of as a product. 
+
+A limit of a pair of parallel morphisms is an equaliser. A limit over a cospan is a pullback, considering pairs of morphisms with the same co-domain. Dually, there are coproducts, initial objects, coequalisers, and pushouts for parallel pairs of morphisms with the same domain.
 
 Monoidal structure: a unital associative magma, except the magma is a tensor product BIFUNCTOR of categories. Unital and associativity come as FUNCTORS of categories.
 
@@ -540,7 +544,7 @@ Perfect duality, equivalence of categories from opposite category C to D consist
 
 Heisenberg group: non abelian, every element cubed is 1
 
-Exercise: if 0 to A to B to C to 0, if any two are exact then the third must be exact. Proof is to take long exact sequence of homology groups. Then, eventually most of them will vanish, show injection and surjection.
+Exactness lemma: if 0 to A to B to C to 0, if any two are exact then the third must be exact. Proof is to take long exact sequence of homology groups. Then, eventually most of them will vanish, show injection and surjection.
 
 Eisenstein criterion, for polynomial, if there exists a prime does not divide the nth power coefficient yet it divides the rest, and prime square does not divide the zeroth term, then the polynomial is irreducible. Example: x^2 + 2, pick 2 as the prime not dividing 1, power of x^2, 0, and 4 but it divides the other term 2.
 
@@ -558,7 +562,7 @@ Jaffard domain: Krull dimension of the ring of polynomials, is the Krull dimensi
 
 Lie group and Lie algebra correspondence: isomorphic Lie algebra does not imply isomorphic Lie group (example real coordinate space, and circle group). However, requires simple connectedness. Problem is there is a hole in circle group.
 
-Schur’s lemma: all ground field, irreducible representations are unique up to homomorphism, if ground field is algebraically closed endomorphisms are scalar multiples of identity operator
+Schur’s lemma: all ground field, irreducible representations are unique up to homomorphism, if ground field is algebraically closed endomorphisms are scalar multiples of identity operator. Endomorphism of irreducible representation, multiply by complex number?
 
 Lp space: space using a power p as norm instead of typical Euclidean using p = 2
 
@@ -569,8 +573,6 @@ Duality of vector space: a vector space of rulers (sort of) of a vector space. I
 Periodicity of functions: reducible to linear combinations of exp(2 pi it)
 
 Quotients: f(x) = f(y) if x is equivalent to y. That is why quotients are very powerful. They are almost functions
-
-Schur lemma: endomorphism of irreducible representation, multiply by complex number?
 
 Linearising is the easiest thing in math (example, representation theory). Next best thing is to count.
 
@@ -614,23 +616,25 @@ Elliptical curve over complex numbers is a Riemann surface of genus one with bas
 
 To get the properties of exclusive disjunction from ring sum and conjunction (or meet) from ring product given a Boolean ring, which is a ring of idempotents, apply truth table onto rings of ints modulo 2. 1 + 1 = 0, so exclusive disjunction.
 
-Join is union both are less than supremum in lattice, meet is intersection is infimum, both are at least that in lattice.
+Join: is union both are less than supremum in lattice
+
+Meet: intersection is infimum, both are at least that in lattice.
 
 Plus construction (see Scholze lecture): A+ is the Lan(r^op) Ran(s^op) A. Step 1, apply right point wise Kan extension along the opposite of functor s^op : C -> J sending opens U on small site C to maximal sieve (set of all morphisms with codomain U). Step 2: apply left pointwise Kan extension r: J -> C as Grothendieck construction of functor Cov: C^op to Pos or category of partially ordered sets. sending opens U to set of covering sieves.
 
 Global section functor on an (infty, 1) topos is a Hom functor of morphisms out of the terminal object H(\*, -) from infinity stack sheaf of C to infinity stack sheaf of a terminal object which is an infinity groupoid. The infinity groupoid is the terminal object.
 
-Global section functor is direct image functor on Grothendieck topos, induced by canonically mapping spaces to terminal objects. It is right adjoint to the left adjoint which is the Set tensor on the terminal object sending set to coproduct of card(S) copies of terminal object which is the constant object. The left adjoint is the constant sheaf. It is constant since we lost all information by using the terminal object. Generalisation of the forgetful functor.
+Global section functor: direct image functor on Grothendieck topos, induced by canonically mapping spaces to terminal objects. It is right adjoint to the left adjoint which is the Set tensor on the terminal object sending set to coproduct of card(S) copies of terminal object which is the constant object. The left adjoint is the constant sheaf. It is constant since we lost all information by using the terminal object. Generalisation of the forgetful functor.
 
 Etale space: sheafs on the site of opens for topological space is the sheaf of local sections on its etale space E (double cover as example) bundle such that the sheaf functor takes opens U to sheaf of local sections Gamma*U(E). The sheaf of global sections is the hom-sets on the sheaf from the terminal object to the sheaf functor. Sheaf of global function = Hom_Sh(X)(*, A), A is sheaf functor, \_ terminal object, Sh(X) is sheaf category.
 
 Sections are right inverses. Sections B -> A are right inverses of bundles A -> B which are left inverses of sections.. Sections typically refer to global sections, not local sections by default. In homotopy type theory, helpful for defining left injections and right injections.
 
-Derived functors are normal functors that are presented in a category of weak equivalences (homotopy suitable setting).
+Derived functors: normal functors that are presented in a category of weak equivalences (homotopy suitable setting).
 
 Dehn twist: cut cylinder with line, glue back circle with rotation. Line becomes twisted at cut.
 
-Mapping class group of torus is special linear group of 2 x 2 matrices, Teichmuller space is the upper half plane. Horizontal Dehn twist, take shearing matrix A = (1 1, 0 1) giving (x+y, y) on (x, y). Vertical Dehn twist, take shearing matrix B = (0 1, 1 1) giving (x, x+y) on (x, y).
+Mapping class group of torus: is special linear group of 2 x 2 matrices, Teichmuller space is the upper half plane. Horizontal Dehn twist, take shearing matrix A = (1 1, 0 1) giving (x+y, y) on (x, y). Vertical Dehn twist, take shearing matrix B = (0 1, 1 1) giving (x, x+y) on (x, y).
 
 Mapping class group: group of orientation preserving homeomorphisms of oriented topological manifold, group of automorphic homeomorphisms onto itself modulo isotopy i.e. MCG := Aut / Aut0. Nielsen Thurston classification.
 
