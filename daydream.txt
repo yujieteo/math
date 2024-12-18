@@ -465,8 +465,6 @@ What is beta reduction? What is eta expansion as a judgmental equal principle?
 
 How are types obedient to partial equivalence relations?
 
-What are the principles of omniscience?
-
 What is Quillen’s small object argument?
 
 What are (-1)-types and (-1)-truncated logic?
@@ -487,7 +485,7 @@ What are eliminators and constructors in type theory?
 How does one understand QR factorisation?
 
 How does an Householder matrix work? What motivates a Householder matrix.
-It is meant to be a transform that does some reflection. See Wikipedia
+It is meant to be a transform that does some reflection. See Wikipedia.
 
 How does unitary matrices be easier to compute (conjugate transpose) and why does it have better stabilityy properties?
 
