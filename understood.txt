@@ -226,8 +226,7 @@ Function type, f has a type A -> B. Logically, f is a proof that A implies B. In
 
 Hypothesis: element x has type A. Logically, x is a proof of A as a statement is a hypothesis. Set theory wise, element x is in the set A. In homotopy, point x is in space A.
 
-Lambda-abstraction: of the form lambda (element: type)-expression.
-Logically, it refers to the expression that shows that x is a proof of a proposition A. Sets, it means at an expression such that an element is a member of that sets. Topologically, it means that this expression defines points to be some space.
+Lambda-abstraction: of the form lambda (element: type)-expression. Logically, it refers to the expression that shows that x is a proof of a proposition A. Sets, it means at an expression such that an element is a member of that sets. Topologically, it means that this expression defines points to be some space.
 
 Element to expression is of functional type. Logically, it means a proof implying an expression is an implication of propositions. Set wise, it means an element with an expression is a family of functions. Topologically it means that a function space can be defined by points to expressions as points.
 
@@ -259,92 +258,42 @@ Unitary similarity is equivalence relation: proof is easy, identity matrix, inve
 
 Schur form: proof: start with orthonormal basis matrices A = [Z1 Z2] \* A [Z1 Z2] which gives [lambda I, A12, 0, A22]. The lambda I, 0 is due to the properties of the orthonormal basis matrices being unitary, don’t care about A12, but A22 is not upper triangular! Iterate. Finite dim vector space have integer dimension n, iteration at most n steps, therefore any square matrix in complex numbers is unitary similar to upper triangular matrix.
 
-A unitary matrix is a matrix whose inverse is equal to its conjugate transpose.
-The product of a matrix with its inverse gives the identity matrix.
-A conjugate transpose of a matrix swaps the rows and columns and
-computes its complex conjugate component wise.
+A unitary matrix is a matrix whose inverse is equal to its conjugate transpose. The product of a matrix with its inverse gives the identity matrix. A conjugate transpose of a matrix swaps the rows and columns and computes its complex conjugate component wise.
 
-A square complex matrix $A$ in the set of $n$ by $n$ matrices $M_n$ of complex entries
-have eigenvalues $\lambda_1, ... \lambda_n$ in any order.
-Let $x$ in the complex n-space $\mathbf{C}^n$ be a unit vector such that
-$Ax = \lambda_1 x$.
+A square complex matrix $A$ in the set of $n$ by $n$ matrices $M_n$ of complex entries have eigenvalues $\lambda_1, ... \lambda_n$ in any order. Let $x$ in the complex n-space $\mathbf{C}^n$ be a unit vector such that $Ax = \lambda_1 x$.
 
-There is a unitary $U =  [x u_2 ... u_n]$ in the set of $n$ by $n$ matrices $M_n$
-such that $U^* A U = T = [t_{ij}]$ is upper triangular with diagonal entries $t_ii = \lambda_i$ from $i = 1, ..., n$. This is the Schur form.
+There is a unitary $U =  [x u_2 ... u_n]$ in the set of $n$ by $n$ matrices $M_n$ such that $U^* A U = T = [t_{ij}]$ is upper triangular with diagonal entries $t_ii = \lambda_i$ from $i = 1, ..., n$. This is the Schur form.
 
-The upper triangular matrix $T$ has the diagonal entries as the eigenvalues of $A$,
-the sum of these eigenvalues as the trace of $A$, the product of these eigenvalues
-as the determinant of $A$, and the main diagonal entries of $\mathrm{adj} T$
-to be the product of all eigenvalues excluding the one corresponding to the
-entry in the diagonal or $\prod^n_{j \neq 1} t_{jj}, ..., \prod^n_{j \neq n} t_{jj}$.
+The upper triangular matrix $T$ has the diagonal entries as the eigenvalues of $A$, the sum of these eigenvalues as the trace of $A$, the product of these eigenvalues as the determinant of $A$, and the main diagonal entries of $\mathrm{adj} T$ to be the product of all eigenvalues excluding the one corresponding to the entry in the diagonal or $\prod^n_{j \neq 1} t_{jj}, ..., \prod^n_{j \neq n} t_{jj}$.
 
-The Cayley-Hamilton theorem follows by factorising the characteristic polynomial
-and representing the matrix $A$ by the conjugacy $UTU^*$.
-The characteristic equation of $A$ is that of the conjugacy which is
-$Up_A(T)U^* = U([T - \lambda_1 I][T - \lambda_2 I]...[T - \lambda_n I])U^*$.
-One can check that $p_A(T)$ in this form must be zero (NOT TRIVIAL, see
-Horn and Johnson, pp. 110).
+The Cayley-Hamilton theorem follows by factorising the characteristic polynomial and representing the matrix $A$ by the conjugacy $UTU^*$. The characteristic equation of $A$ is that of the conjugacy which is $Up_A(T)U^* = U([T - \lambda_1 I][T - \lambda_2 I]...[T - \lambda_n I])U^*$. One can check that $p_A(T)$ in this form must be zero (NOT TRIVIAL, see Horn and Johnson, pp. 110).
 
-A square complex matrix $A$ in the set of $n$ by $n$ matrices $M_n$ of complex entries
-have scalars $\lambda_1, ... \lambda_n$ in the complex
-plane $\mathbf{C}$, positive integers $q$
-and $n_1, ..., n_q$ such that the sum $n_1 + ... + n_q = n$
-such that $A = S J_A S^{-1}$
-where the Jordan matrix $J_A$
-is the direct sum of Jordan blocks $J_{n_i}(\lambda_i)$, where
-$J_A = \bigoplus^{q}_{i = 1} J_{n_i}(\lambda_i)$.
+A square complex matrix $A$ in the set of $n$ by $n$ matrices $M_n$ of complex entries have scalars $\lambda_1, ... \lambda_n$ in the complex plane $\mathbf{C}$, positive integers $q$ and $n_1, ..., n_q$ such that the sum $n_1 + ... + n_q = n$ such that $A = S J_A S^{-1}$ where the Jordan matrix $J_A$ is the direct sum of Jordan blocks $J_{n_i}(\lambda_i)$, where $J_A = \bigoplus^{q}_{i = 1} J_{n_i}(\lambda_i)$.
 
-A Jordan block is an upper triangular matrix where the the scalar $\lambda_i$
-appears $n_i$ times on the main diagonal, if $n_1 > 1$ then there are $k - 1$
-entries which are $+1$ in the superdiagonal, and all other entries are zero.
+A Jordan block is an upper triangular matrix where the the scalar $\lambda_i$ appears $n_i$ times on the main diagonal, if $n_1 > 1$ then there are $k - 1$ entries which are $+1$ in the superdiagonal, and all other entries are zero.
 
 The number of Jordan blocks is the maximum number of linearly independent eigenvalues of $J_A$.
 
 If all the Jordan blocks are 1 by 1, then $J_A$ is diagonalisable, in fact, the diagonal matrix looks like this.
 
-The number of Jordan blocks corresponding to a given eigenvalue is the geometric
-multiplicity of the eigenvalue, which is the dimension of the associated eigenspace.
+The number of Jordan blocks corresponding to a given eigenvalue is the geometric multiplicity of the eigenvalue, which is the dimension of the associated eigenspace.
 
 The sum of the sizes of all the Jordan blocks corresponding to a given eigenvalue is its algebraic multiplicity.
 
 A Jordan block is the sum of a diagonal matrix and a nilpotent matrix
 since $J_k(\lambda) = \lambda I_k + J_k(0)$ and $J_k(0)^k = 0$.
 
-Category theory motivates (1) generalising morphisms;
-(2) generalising domain/codomain duality;
-(3) preserve integrity respecting identification and compositional order.
-The fastest illustration of category theory is with Kan extensions.
-All categories are locally small (that is to say ignore size issues in set theory) unless otherwise stated.
+Category theory motivates (1) generalising morphisms; (2) generalising domain/codomain duality; (3) preserve integrity respecting identification and compositional order. The fastest illustration of category theory is with Kan extensions. All categories are locally small (that is to say ignore size issues in set theory) unless otherwise stated.
 
-A category $\mathbf{C}$ have
-domain and codomain objects $ob(\mathbf{C})$ and morphisms $mor(\mathbf{C})$
-that respect the identity $\mathbf{1_C}$ and associative composition.
-A morphism is between categories is a
-functor $F$ maps morphisms $f$ from a category $\mathbf{C}$ to a category $F\mathbf{C}$
-respecting composition $F(f \cdot_{\mathbf{F}} c) \rightarrow F(f) \cdot_{F\mathbf{C}} F(c)$
-and identification in both categories.
-One can also use the family of homs definition, used in May or Lurie.
+A category $\mathbf{C}$ have domain and codomain objects $ob(\mathbf{C})$ and morphisms $mor(\mathbf{C})$ that respect the identity $\mathbf{1_C}$ and associative composition.
 
-A 2-morphism of functors is natural transformation
-$\eta$ that has components $\alpha_c$ that takes morphism $c$
-composed by a functor $F$ to a functor $G$ such that
-there is a commutative diagram between the morphism $Fc$ and
-its common composite $Gc'$ for any morphism $f$ that takes $c$ to $c'$
-($Gf \cdot \alpha_c = \alpha_{c'} \cdot Ff$).
+A morphism is between categories is a functor $F$ maps morphisms $f$ from a category $\mathbf{C}$ to a category $F\mathbf{C}$ respecting composition $F(f \cdot_{\mathbf{F}} c) \rightarrow F(f) \cdot_{F\mathbf{C}} F(c)$ and identification in both categories. One can also use the family of homs definition, used in May or Lurie.
 
-An isomorphism is a composition of two morphisms between two sets of
-objects whose composition and inverse identify in their respective sets of objects.
-Objects are isomorphic if an isomorphism between two exist between them.
-Objects can be grouped into a class of objects of a category if they are isomorphic.
-Picking the same object for the domain and codomain gives an automorphism if the morphism is isomorphism, otherwise it is endomorphisms.
+A 2-morphism of functors is natural transformation $\eta$ that has components $\alpha_c$ that takes morphism $c$ composed by a functor $F$ to a functor $G$ such that there is a commutative diagram between the morphism $Fc$ and its common composite $Gc'$ for any morphism $f$ that takes $c$ to $c'$ ($Gf \cdot \alpha_c = \alpha_{c'} \cdot Ff$).
 
-A comma category $F \downarrow G$ of two functors $F: \mathbf{D} \rightarrow \mathbf{C}$
-and $G: \mathbf{E} \rightarrow \mathbf{C}$
-has objects, triples $(d, e, f)$, where $d$ is a morphism in category $\mathbf{D}$,
-$e$ is a morphism in category $\mathbf{E}$, and $f$ which are morphisms from $Fd \rightarrow Ge$
-in category $\mathbf{C}$, as well as all diagrams of this shape commuting in category $\mathbf{C}$,
-where $h: d \rightarrow d'$, $k: e \rightarrow e'$ such that $f' \cdot Fh = Gk \cdot f$,
-for morphisms of triples $(d, e, f) \rightarrow (d', e' ,f')$.
+An isomorphism is a composition of two morphisms between two sets of objects whose composition and inverse identify in their respective sets of objects. Objects are isomorphic if an isomorphism between two exist between them. Objects can be grouped into a class of objects of a category if they are isomorphic. Picking the same object for the domain and codomain gives an automorphism if the morphism is isomorphism, otherwise it is endomorphisms.
+
+A comma category $F \downarrow G$ of two functors $F: \mathbf{D} \rightarrow \mathbf{C}$ and $G: \mathbf{E} \rightarrow \mathbf{C}$ has objects, triples $(d, e, f)$, where $d$ is a morphism in category $\mathbf{D}$, $e$ is a morphism in category $\mathbf{E}$, and $f$ which are morphisms from $Fd \rightarrow Ge$ in category $\mathbf{C}$, as well as all diagrams of this shape commuting in category $\mathbf{C}$, where $h: d \rightarrow d'$, $k: e \rightarrow e'$ such that $f' \cdot Fh = Gk \cdot f$, for morphisms of triples $(d, e, f) \rightarrow (d', e' ,f')$.
 
 A left Kan extension of a functor $F$ that takes morphisms from initial domain
 category $\mathbf{C}$ to a codomain category $\mathbf{E}$
@@ -389,7 +338,6 @@ along a functor $K$ from category $\mathbf{C}$ to $\mathbf{D}$ is pointwise
 if and only if the colimit $\mathrm{colim} ( K \downarrow d \rightarrow \mathbf{C} \rightarrow \mathbf{E} )$
 exists and is isomorphic $\mathrm{Lan}_{K} F(d)$ for morphism $d$ in category $\mathbf{C}$.
 
-% Improve on this.
 See Emily Riehl's "Category Theory in Context" for this construction.
 For any small diagram $F$ from category $\mathbf{C}$ to category $\mathbf{D}$ valued in a category
 with products and equalisers. There exists an equaliser diagram for monomorphisms on $Fc$ to
@@ -1102,17 +1050,12 @@ $V(x,y)$ is $y = x$ is a point.
 
 $V(xy)$ is $xy$ axes.
 
-Embedded components: subvariety contained in another subvariety.
-Example is $(0)$ as fat point contained in line for
-the spectrum of integers, isolated points.
-The corresponding algebraic statement is that $P_2$
-contains another prime ideal $P_1$ occurring as a radical in the decomposition; we will also say that $P_2$ is an embedded and $P_1$ an isolated prime ideal.
+Embedded components: subvariety contained in another subvariety. Example is $(0)$ as fat point contained in line for the spectrum of integers, isolated points. The corresponding algebraic statement is that $P_2$ contains another prime ideal $P_1$ occurring as a radical in the decomposition; we will also say that $P_2$ is an embedded and $P_1$ an isolated prime ideal.
 
 Artinian: finitely ascending chains of varieties. So Artinian coordinate rings are finite unions of points. Not true for Noetherian.
 Algebraically, this means zero ideal is always product of maximal ideals.
 
-Prime and irreducible elements. Consider
-coordinate ring $R = \mathbb{R}[x,y]/(x^2 + y^2 - 1)$.
+Prime and irreducible elements. Consider coordinate ring $R = \mathbb{R}[x,y]/(x^2 + y^2 - 1)$.
 Irreducible. Since it is a circle, not a product of two lines. Lines are linear polynomials in $\mathbb{R}[x,y]$.
 It is still irreducible in $R$ since lines must cross from
 inside to outside. This is not prime in $R$ since it consists of two points.
