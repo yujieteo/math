@@ -1,5 +1,21 @@
 DAYDREAM (MATH)
 
+Shape operator? Eigenvalues? Give curvature?
+
+Torus obstructions?
+
+What does it mean for the set of ideals in a ring to be a lattice?
+
+Functorial factorisation of maps?
+
+Hurewicz fibrations?
+
+Residue field?
+
+Conjugacy classes?
+
+Sobolev norm?
+
 What concept classes fail Occam's learning to probably approximately correct learning?
 
 Complete partial orders?
