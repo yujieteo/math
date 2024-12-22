@@ -1,5 +1,9 @@
 DAYDREAM (MATH)
 
+What is the relationship between the Wiener process, heat kernel, and Brownian motion?
+
+If we have a Markov process, what are the possibilities of the generators and the translation density? Example: Wiener uses Laplace operator, with heat kernel.
+
 What exactly does it mean for the characteristic function to be the expectation of some complex exponential?
 
 Shape operator? Eigenvalues? Give curvature?

@@ -1,5 +1,7 @@
 UNDERSTOOD (MATH)
 
+Wiener process: Gaussian process, with funny covariance function K(s,t) = min(s,t) as random series. Markov process with generator as Laplace operator, and transition density as heat kernel.
+
 Conditional probability: ratio of probability of A and B over probability of B. Intuition, given B, you can divide by the probability of B since you know B will happen, to raise the likelihood of A and B (less or equally likely) to A given B (more or equally likely).
 
 Poisson random variable: it is like a memoryless queue, probability is (expected value ^ time)/(time factorial) * damping exp(-expected value), since the expected value being achieved means the effect of the queue is damped somehow. The mean and the variance is the expected value. Limit of Binomial process as the number of bins is infinite and the probability gets to zero, by simple substitution. Intuitively, this makes sense, you have an infinitely small time slice of something showing up in the queue to consider as a Poisson if you think of it is as Binomial. Proof, substitute np = lambda, then take k fixed, n >> k.∂
