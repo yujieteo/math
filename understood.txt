@@ -1,7 +1,12 @@
 UNDERSTOOD (MATH)
 
-Curry-apply adjunction: equivalent to tensor hom adjunction. Apply is hom, currying is tensor product.
-Example: in Lisp (apply #’ + (list 1 2)) looks like hom from + to list. See Wikipedia.
+Poisson random variable: it is like a memoryless queue, probability is (expected value ^ time)/(time factorial) * damping exp(-expected value), since the expected value being achieved means the effect of the queue is damped somehow. The mean and the variance is the expected value. Limit of Binomial process as the number of bins is infinite and the probability gets to zero, by simple substitution. Intuitively, this makes sense, you have an infinitely small time slice of something showing up in the queue to consider as a Poisson if you think of it is as Binomial. Proof, substitute np = lambda, then take k fixed, n >> k.∂
+
+Characteristic function of a random variable: expectation of the damping e^{i zeta X} or the integral of the damping e^(i zeta x). The idea is that you can do nice things with the characteristic functions to get a new characteristic function, which shows that when you do stuff with the characteristic functions of multiple variables, you can get a known distribution.
+
+Independent random variable: preserved under products of random variable.
+
+Curry-apply adjunction: equivalent to tensor hom adjunction. Apply is hom, currying is tensor product. Example: in Lisp (apply #’ + (list 1 2)) looks like hom from + to list. See Wikipedia.
 
 Apply: space of exp object Y^X given Y compact open topology, X is locally compact Hausdorff. Needed for homotopy to be continuous paths in space of functions.
 

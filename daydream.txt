@@ -1,5 +1,7 @@
 DAYDREAM (MATH)
 
+What exactly does it mean for the characteristic function to be the expectation of some complex exponential?
+
 What concept classes fail Occam's learning to probably approximately correct learning?
 
 Complete partial orders?
