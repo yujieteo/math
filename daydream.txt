@@ -20,8 +20,6 @@ Hurewicz fibrations?
 
 What is the motivation for residue fields? They say it is the natural generalisation of the codomain / range of a point or the values of each point?
 
-Conjugacy classes?
-
 Sobolev norm?
 
 What concept classes fail Occam's learning to probably approximately correct learning?
@@ -30,15 +28,21 @@ Complete partial orders?
 
 Scott topology?
 
+Orbits? Stabilisers?
+
 Curry and apply as Scott continuous?
 
 Denotational semantics?
+
+How can conjugacy classses in the fundmaental group of path connected topological space be considered as free loops under free homotopy?
 
 Need to motivate the achievability lemmas: typical average, joint typicality, packing, covering, conditional typicality?
 
 Difference between uniquely decodable code versus instantaneous code.
 
 Strong typicality? Orlitsky-Roche definition? Why so significant?
+
+Is it possible to make the duality between embeddings and quotients more explicit?
 
 Occam algorithm intuition?
 
@@ -84,15 +88,13 @@ Essential extension?
 
 Finitely co-generated?
 
-Landau’s function
+What is the motivation for Landau's function? Why should I care about the maximum order of an element in the symmetric group?
 
 When you're localizing a quotient you localize at the image of the set of elements you're inverting? What does this mean
 
-Galois conjugate?
+What is the motivation of Galois conjugate?
 
-Newform?
-
-Rolle’s theorem?
+Newform? What is the Atkin-Lehner theory?
 
 Canonical isomorphism?
 
@@ -106,17 +108,17 @@ Which distributions best model which problems? Create a list.
 
 What is the difference between a polynomial and a polynomial functions?
 
-When do you want to define eigenspace without zero vector?
+Hodge theorem? Compact Kahler manifold? Hodge structure? It is related to de Rham complex, de Rham homology and cohomology (see Lurie lecture)?
 
-Hodge theorem?
-
-Laurent series?
+I do not understand why do we consider the Cauchy integral formula for the coefficients of the Laurent series.
 
 Degree? And Euclidean functions? For Euclidean domain?
 
 Polynomial: element in a polynomial ring. Vector: element in vector space Object: element in some structure. Is there a formal word for this?
 
-Centraliser? Centraliser of an element?
+Centraliser of an element?
+
+I understand why centraliser and normalisers are related (conjugation, and commutativity). What is the motivation for normalisers?
 
 What does it mean by a base change being the pullback of a morphism of fields?
 

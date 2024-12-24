@@ -1,5 +1,29 @@
 UNDERSTOOD (MATH)
 
+Embeddings in concrete categories: since concrete categories have underlying set, you can just use injective functions on underlying set to define embeddings for concrete categories. However, general definition of embedding does not exist yet. The dual of embedding is a quotient, this makes sense if you think about algebraic geometry.
+
+Embedding is topological invariant: a (topological) space is different from another if one object can be embedded in the space, and the other cannot.
+
+Embedding in topology: homeomorphism onto its image, or injective continuous map f: X -> Y, if f is homeomorphism (preserving topological structure) between X and f(X), where f(X) inherits subspace topology of Y. 
+
+Locally injective / locally embedding at point: consider neighbourhood and the point as the domain for the injection as a restriction of a function. Similarly, restriction of an embedding to the neighbourhood of the point. Note: generalises say for topological embeddings, smooth embeddings, isometric embedding in Riemannian geometry, field embeddings using ring homemorphisms and instead of neighbourhoods you use ideals.
+
+Morphism in category theory as structure preserving map: since it is still in the same category, therefore morphisms in category is a structure preserving map.
+
+Laurent series of complex f(z) about point c: generalises Taylor's series with positive and negative dimension. f(z) can be represented as sum of a_n (z - c)^n from negative infinity to positive infinity. Coefficients a_n is path integral f(z) / (z-c)^n+1 divided by 2 pi i.
+
+Complemntary: variables in primal problem is complementary to constraints in dual problem. There cannot be a slack in both a constraint and the corresponding dual variable. Result from duality of linear programming problem. Intuition: benefit problem is dual to cost problem.
+
+Centraliser of a subset S in a group G: set of elements in G that commute with every element in the subset S. Motivation is also very good, you can apply techniques of commutativity to a group that is noncommutative. Obviously, a subgroup of G by definition. This motivates the name commutant.
+
+Normaliser of a subset S in a group G: set of elements in G that is fixed under conjugation.
+
+Rolle's theorem: real differentiable function with two equal values at two distinct point must have one point bin between them a stationary point.
+
+Galois conjugate: element of a separable closure L of a field K, which are in the orbit of x under the group action of the absolute Galois group G_K on L.
+
+Landau's function: maximum order of element in symmetric group. Or least common multiple of all partitions of number 1 to n. Example of the order of an element in a group.
+
 Abelian group and conjugacy: an abelian group is group where every element is self conjugate example: a = gag^{-1} or ga = ag, this gives the reason why abelian is so important.
 
 Group conjugate and linear algebra: conjugate is b = gag^{-1}, this is used all the time in linear algebra by the way since if inverse equals to conjugate transpose, b is unitarily similar to a, g is group action.
