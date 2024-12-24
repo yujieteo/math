@@ -1,5 +1,7 @@
 UNDERSTOOD (MATH)
 
+Compact topological group: topological group whose topology can be realised as a compact topological space, element of group operated on, result is within that group. Examples: circle groups, orthogonal group of rotations, unitary groups, torus groups.
+
 Embeddings in concrete categories: since concrete categories have underlying set, you can just use injective functions on underlying set to define embeddings for concrete categories. However, general definition of embedding does not exist yet. The dual of embedding is a quotient, this makes sense if you think about algebraic geometry.
 
 Embedding is topological invariant: a (topological) space is different from another if one object can be embedded in the space, and the other cannot.
@@ -870,7 +872,7 @@ Internal hom is basically internally defined morphism as object or a generalisat
 
 Direct image with compact support, consider morphism of schemes, consider sections such that restrictions of support to opens are nice.
 
-Pontrjagin dual: easy example is additive on integers to circle group, take products of roots of unity gives Fourier theory. Circle group is compact and connected, integers must be discrete and torsion free by Pontrjagin duality. The exponential maps gives self duality of the additive reals (sums of powers of exponential)
+Pontrjagin dual: easy example is additive on integers to circle group, take products of roots of unity gives Fourier theory. Circle group is compact and connected, integers must be discrete and torsion free by Pontrjagin duality. The exponential maps gives self duality of the additive reals (sums of powers of exponential). This gives a duality between abelian discrete groups like additivity on integers to compact commutative topological groups like the circle group.
 
 Eckhmann-Hinton duality: The most basic duality by reversing arrows in category theory.
 

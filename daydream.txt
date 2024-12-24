@@ -146,7 +146,7 @@ Moduli spaces, spaces corresponding to object? Represent a contravariant functor
 
 Give an example where an inverse images of a sheaf is not a sheaf.
 
-Compact topological group?
+What does it mean for Pontryagin duality to give examples of compact commutative group since they are dual to abelian discrete groups?
 
 V-isotypic component?
 
