@@ -1,5 +1,9 @@
 UNDERSTOOD (MATH)
 
+Residue field of local ring: local ring has one maximal ideal, so the residue field is unique for a local ring.
+
+Residue field: quotient ring of a commutative ring and a maximal ideal.
+
 Reduced commutative ring: commutative ring with no nonzero nilpotents. Meaning: equivalently nilradical is zero.
 
 Nilradical of a commutative ring: ideal of nilpotent elements. Radical of zero ideal. Sum of two nilpotents is nilpotent (binomial theorem), product of two nilpotents is nilpotent (commutative!). 

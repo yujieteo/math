@@ -1,5 +1,7 @@
 DAYDREAM (MATH)
 
+I still don't understand how nilradical form the intersection of all prime ideals of a commutative ring. This is not intuitive to me.
+
 What is the relationship between the Wiener process, heat kernel, and Brownian motion?
 
 If we have a Markov process, what are the possibilities of the generators and the translation density? Example: Wiener uses Laplace operator, with heat kernel.
