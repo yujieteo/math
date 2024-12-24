@@ -1,5 +1,17 @@
 UNDERSTOOD (MATH)
 
+Abelian group and conjugacy: an abelian group is group where every element is self conjugate example: a = gag^{-1} or ga = ag, this gives the reason why abelian is so important.
+
+Group conjugate and linear algebra: conjugate is b = gag^{-1}, this is used all the time in linear algebra by the way since if inverse equals to conjugate transpose, b is unitarily similar to a, g is group action.
+
+Conjugacy relation: equivalence relation of conjugacy classes. Example: invertible matrices form general linear group, matrix similarity is conjugacy relation. Unitary matrices for unitary group, unitary similarity is conjugacy relation.
+
+Conjugate: element a, b, g in group such that b is conjugate of a means b = gag^-1.
+
+Conjugacy classes, equivalence of conjugates form an equivalence class that is reflexive, symmetric, and transitive, so this is a conjugacy class.
+
+Class functions: functions that are constant for members in same conjugacy classes.
+
 Residue field of local ring: local ring has one maximal ideal, so the residue field is unique for a local ring.
 
 Residue field: quotient ring of a commutative ring and a maximal ideal.

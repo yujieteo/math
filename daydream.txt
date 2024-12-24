@@ -18,7 +18,7 @@ Functorial factorisation of maps?
 
 Hurewicz fibrations?
 
-Residue field?
+What is the motivation for residue fields? They say it is the natural generalisation of the codomain / range of a point or the values of each point?
 
 Conjugacy classes?
 
