@@ -1,5 +1,11 @@
 UNDERSTOOD (MATH)
 
+Reduced commutative ring: commutative ring with no nonzero nilpotents. Meaning: equivalently nilradical is zero.
+
+Nilradical of a commutative ring: ideal of nilpotent elements. Radical of zero ideal. Sum of two nilpotents is nilpotent (binomial theorem), product of two nilpotents is nilpotent (commutative!). 
+
+Nilradical is intersection of all minimal prime ideals: proof for commutative ring A, all ideals contains zero, all prime ideals contain prime nilpotent r^n = 0, every prime ideal contains nilradical. Conversely and equivalently (Brandenburg), assume an comm. ring element a is not nilpotent, show there exists prime ideal does not contain this non-nilpotent element (is enough to show inequality), then localisation of ring A at element a is nonzero (if not then 1/1 = 0, then a^n 1 = 0, then a^n nilpotent which is untrue). Since the localisation is nonzero, it has a prime ideal p (unique maximal element, Zorn's is used here), the preimage in A is a prime not containing element a, since a is non-nilpotent and p is a prime ideal and should not contain invertible elements, so eleemnt a is not contained in the intersection of all prime ideals.
+
 Unitary: inverse equals conjugate transpose for matrix.
 
 Nilpotency: collapse dimensions to lose all informations. All linear transformation is an action of nilpotent over subspace. This connects group theory, to linear algebra.
