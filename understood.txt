@@ -1,10 +1,30 @@
 UNDERSTOOD (MATH)
 
+Sifted category: category where colimits of diagrams of shape D commute with finite products in category of Set. Consider diagram functor F: product D and S -> Set, S is finite discrete category, the colimit commutes with finite products.
+
+Discrete category: it is a groupoid and preorder i.e. all morphisms are invertible, and two parallel morphisms are equal.
+
+Accessible cardinals: apply cardinal arithmetic on cardinal numbers like omega for infinity, successors, disjoint union for addition, Cartesian product for multiplication, power set of functions for exponentiation. If you cannot use these to get the cardinals you want, these are the inaccessible cardinals.
+
+Schwarz lemma: apply maximum modulus priniciple on function g(z) = f(z) / z if z nonzero, and f'(0) if z = 0, i.e. derivative when z = 0, feels like differentiation and localisation to me, holomorphic on the whole of D at origin,look at |g(z)|. For z_r on boundary of D_r, we have |g(z_r) which must be less than 1/r, if r tends towards 1, then |g(z)| less than or equal to 1, now pick |f(z)| = |z| or |f'(0)| = 1, then f(z) = az with |a| = 1. This gives the hypothesis of the open unit disk centred on origin, and holomoprhic map where f(0) = 0, |f(z)| is less than or equal to 1.
+
+Spin group: Lie group whose manifold is double cover of special orthogonal group, for short exact sequennce 1 -> Z/2 -> Spin(n) -> SO(n) -> 1. Group law by lifting multiplication of special orthogonal group. Represents symmetries of fermions. Complexification describes electrically charged fermions or electrons. Strictly, works only on fermions in zero dimensional space, fix this with pseudo-Riemannian manifolds.
+
+Diagram chasing as linear algebra (Daniel Litt on Math Overflow): ASSUMING category of finite dimensional vector space, diagram is finite acyclic, (1) triangulate all composition of arrows, spam kernels and cokernels until terminates; (2) tabulate all exact paths or infinite long exact sequences, all but finitely many objects are zero, (3) can write the equation of the exact path sum (-1) dim A_i = 0, then solve linear system for dim Ai, telling you about surjectivity and injectivity. See also Gelfand and Manin Methods of Homological Algebra, Section II.5. The E construction in the exercise or MacLane's members.
+
+Common diagram chasing lemma: salamander lemma is the basic, then you have the 3 by 3 then n by n lemma, then four lemma to five lemma, and the snake lemma which generalises to the connecting homomorphism. Lastly, there is the braid lemma.
+
+Open mapping theorem: nonconstant holomorphic functions map open sets to open sets. If |f| obtains locally maximum at z and nonconstant, take sufficiently small neighbourhood and the image, this cannot be open by open mapping theorem, so |f| is constant, therefore proving the maximum modulus principle.
+
+Maximum modulus principle in heat equation: log |f(z)| of heat equation is harmonic, it is the steady state on region D, if STRICT maximum obtained of D, heat at this maximum will disperse to nearby point, contradicting that this is steady state.
+
+Maximum modulus principle: if f is holomorphic, complex differentiable at each point in its complex domain, modulus |f| cannot obtain strict maximum that is strictly within the domain of f.
+
 Compact topological group: topological group whose topology can be realised as a compact topological space, element of group operated on, result is within that group. Examples: circle groups, orthogonal group of rotations, unitary groups, torus groups.
 
 Embeddings in concrete categories: since concrete categories have underlying set, you can just use injective functions on underlying set to define embeddings for concrete categories. However, general definition of embedding does not exist yet. The dual of embedding is a quotient, this makes sense if you think about algebraic geometry.
 
-Embedding is topological invariant: a (topological) space is different from another if one object can be embedded in the space, and the other cannot.
+Embedding as topological invariant: a (topological) space is different from another if one object can be embedded in the space, and the other cannot.
 
 Embedding in topology: homeomorphism onto its image, or injective continuous map f: X -> Y, if f is homeomorphism (preserving topological structure) between X and f(X), where f(X) inherits subspace topology of Y. 
 
@@ -332,7 +352,7 @@ Integral domain: nonzero comm ring, product of two nonzero elements is nonzero (
 
 Linear model: Schrodinger's coloured cat pill test: (1) relationship is linear (regressor, relationship, non-varying in time), (2) error expectation is zero, (3) error has constant variance, no autocorrelation, (4) observations do not affect the experiment (Schrodinger's come in), (5) bad case of number of observations + extra independent variables > number of independent variables assumed. See book by Peter Kennedy on this
 
-Sigma-algebra: motivation is probability, closed under complements, countable unions and intersections. Complements because of not event, closure of countable unions and intersections because of stone duality, corresponding to probability of countably infinitely many events (ergodicity without killing rate) being decidable in logic. If you take sigma-semiring, this can be used in ergodic analysis in my opinion.
+Sigma-algebra: motivation is probability, closed under complements, countable unions and intersections. Complements because of not event, closure of countable unions and intersections because of Stone duality, corresponding to probability of countably infinitely many events (ergodicity without killing rate) being decidable in logic. If you take sigma-semiring, this can be used in ergodic analysis in my opinion.
 
 Algebras are closed under finite unions and intersections, need not be closed under countably many, see example take Boolean algebra, infinite negation corresponds to Grandi series, truth is not decidable, then apply Stone duality, corresponds to Grandi series -1 + 1 - 1 + 1 - 1…
 
@@ -905,6 +925,12 @@ Open cover refers to decidable experiment in finite time, compact means admits o
 Example of verification in finite time corresponding to semidecidable logic, verify something is open in finite time, closed set not so because of points in the boundary requiring infinitely many computations.
 
 Stone duality, poset lattice correspond to topology, with poset lattice interpreted as a form of logic, this corresponds to topology being defined as a semidecidable logic, where arbitrary unions correspond decidable disjunctions, finite intersections correspond to decidable conjunctions in finite time.
+
+Pro object: projective, projective limit is older term for categorical limit. Contrast to ind objects or indcutive object, corresponding to inductive limit, old name for colimit.
+
+Profinite sets by Stone duality: profinite set is a pro object in the category of finite sets, using Stone duality these are equivalent to Stone spaces, or compact Hausdorff totally disconnected topological spaces i.e. closed under topology, where distinct points have disjoint open neighbourhoods, with only connected subspaces as singletons or totally disconnected space, which are topological spaces with sets and a collection of sets with sets closed under arbitrary unions and finite intersections. For me, I just think of counting apples, apples as neighbourhoods, and core of apples as singletons.
+
+Profinite set and simplicial stuff: simplicial object in the category of compact and totally disconnected topological spaces.
 
 Etale cohomology, you want a topological or etale topology with arbitrary direct limits and finitely inverse limits, reminiscent of the definition of a topology with arbitrary unions and finite intersections. This topological notion gives the right correspondence for topoi.
 

@@ -160,7 +160,7 @@ Cauchy integral formula?
 
 Galois field in algebraic codes?
 
-Maximum modulus principle?
+Maximum modulus principle? Why should I care about it.
 
 Von Neumann algebra vs C* algebra?
 
@@ -260,11 +260,15 @@ Why can’t constructs in commutative algebra like rings, ideals (functor from g
 
 Don’t understand measurable functors and the fact that the realisation of a probability law is a natural transformation from the random variable functor to the measurable functors? Where in the construction do you want the measurable functor to use the axiom of dependent choice?
 
-What is a list of diagram lemmas?
+3 by 3 lemma?
+
+Four lemma?
+
+Connecting homomoprhism?
+
+Braid lemma?
 
 What are inductive systems and why should I care about formal filtered colimits? Ncat says that large categories are equivalent to inductive categories and are hence accessible in some sense of the word?
-
-I don’t really fully understand the effectiveness of diagrams.
 
 How is Gelfand duality related to the Stone Weierstrass theorem and how is Peter Johnstones book talking about this? See ncat page on Stone spaces.
 
@@ -274,8 +278,6 @@ Are there group extensions of subgroups to proper groups? Is there a word for th
 
 Also how does one explain that using a proper Klelisi or Eilenberg-Moore category gives Markov chains? What are the differences?
 
-What are spin groups and how are they related to physics?
-
 What are a list of special functors in homological algebra, Ext, Tor, Ind???
 
 https://youtu.be/PHm4bYziyug?feature=shared I don’t understand Scholze definition of cohomology and why is it easier to use? https://math.stackexchange.com/questions/54752/sheaf-cohomology-what-is-it-and-where-can-i-learn-it Akhil Mathew gives an immediate explanation of this. https://mathoverflow.net/questions/38966/what-is-sheaf-cohomology-intuitively
@@ -284,17 +286,19 @@ Why is defining the opposite category of opens an open problem? It is not really
 
 I understand why do we care about derived functors (enough injectives), but how to we understand it? Scholze uses it to give a very clean definition of etale cohomology and what does this even mean? Example: cohomology is the right defined functor from the “abelian space” (specifically spectra) and getting an abelian group. Note that abelian groups are a fully faithful inclusion into cohomology. What does it mean by enough injectives? Sheaf cohomology is the right derived functor to the global section functor? Answer; this is Grothendieck’s genius to use a functor for any coefficient. More specifically any functor as coefficients.
 
-How are anima a generalisation of homotopy types?
+How are anima a generalisation of homotopy types? Now it is worse ncatlab uses it as a synonym for infinity groupoid.
 
 What are projective objects and projective resolutions?
 
 How are resolutions both an exact sequence of modules and objects in an abelian category?
 
-What does it mean for something to be accessible?
-
 What is left exact localisations and why should we care about them?
 
 How does one make it easy to define frames particularly the distribution of joints and meets apart from using infimum and supremum?
+
+What is formal, cofiltered limit in the definition of a pro object?
+
+Why do we are about formal cofiltered limit of objects in a category, as well as the ind-objects, and pro-objects?
 
 Profinite space: inverse limit of finite space gives subspace topology of the product? What is the subspace topology and what does this mean?
 
@@ -302,7 +306,7 @@ I do not understand the inverse limit completion of the ring of integers modulo 
 
 What is the functor that works on opens that is the colimit of open overs on a product open covers over equalisers / descent such that applying this functor on a presheaf gives a separated sheaf, applying this functor again gives sheafification? Also how do we use separated morphisms in the definition.
 
-What are sifted colimits?
+What are sifted colimits? Why care about sifted categories?
 
 Make sense of essentially algebraic as set^C with C lex, coherent topoi as first order, geometric as topoi.
 
@@ -554,8 +558,6 @@ Moduli spaces, spaces corresponding to object? Represent a contravariant functor
 
 Give an example where an inverse images of a sheaf is not a sheaf.
 
-Compact topological group?
-
 V-isotypic component?
 
 Banach space representation
@@ -569,8 +571,6 @@ Cauchy integral formula?
 Unipotent?
 
 Galois field in algebraic codes?
-
-Maximum modulus principle?
 
 Von Neumann algebra vs C* algebra?
 
