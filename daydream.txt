@@ -2,11 +2,7 @@ DAYDREAM (MATH)
 
 Directed suprema?
 
-Partially ordered sets?
-
 Characteristic functions of open sets?
-
-Poset of truth values?
 
 Directed joins versus normal joins?
 
@@ -584,8 +580,6 @@ Why does one define the product topology with all but finitely many opens in com
 
 Moduli spaces, spaces corresponding to object? Represent a contravariant functor of interest. This usually means that they represent a contravariant functor that we're interested in. For example, Vakil constructs the Grassmannian as a scheme that represents the contravariant functor that takes a scheme $X$ to the set of  surjective morphisms $O_X^n \rightarrow E$, where $E$ is locally free of rank $k$. Make this make sense?
 
-Give an example where an inverse images of a sheaf is not a sheaf.
-
 V-isotypic component?
 
 Banach space representation
@@ -595,8 +589,6 @@ Tensor contraction?
 Implicit function theorem?  Versus inverse function theorem?
 
 Cauchy integral formula?
-
-Unipotent?
 
 Galois field in algebraic codes?
 

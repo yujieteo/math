@@ -1,5 +1,13 @@
 UNDERSTOOD (MATH)
 
+Descent as inverse of stable under base change: see "https://math.stackexchange.com/questions/4769096/smooth-proper-connected-curve-over-a-field-is-projective". The idea is instead of saying "if f: X -> S has property P, then base change X *_S S' -> S' along S' -> S also has property P", we ask "if X *_S S' -> S' has property P, must f: X -> S has property P"?. For nice S' -> S (the magic words for the case presented is faithfully flat, quasicompact), then you have closed immersion, descent. 
+
+Inverse image of sheaf which is not a sheaf: consider topological space Y, define X as two disjoint copies of Y, set f : X -> Y as canonical projection, take G, sheaf on Y. For subset V in Y open, and define U as the preimage using f on V, we have sheaf F such that  F(U) = G(V). So F = f^-1(G), F is presheaf. But the preimage of a sheaf (f^-1 F)(U) := F^sh(U) = G(V) * G(V). So the inverse image of the sheaf gives cartesian product of sheaves G, but the inverse of the canonical projection is a sheaf. Example: section of one copy, section on other copy, you cannot glue them together, intersection is empty since these are disjoint copies.
+
+Partially ordered set: reflexive (p < p), antisymmetric (i.e. p < q or q < p but not both), and transitive (p < q < r).
+
+Poset of truth values: {0, 1}, we have 0 < 1 as partial order.
+
 Horizontal categorification: step 1: pick concept as magmoid (binary operation) with single object. Typical example is thinking of group as category of one object with morphisms that are all invertible (unitary by default due to category definition), the -oidfied by presenting more than one object instead.
 
 Horizontal categorification of monoid: gives category! Start with unital associative magma i.e. one object with binary operation that has identity and is associative. Do horizontal categorification, it gives a category.
@@ -354,7 +362,7 @@ Infinitely differentiable locally. Differentiable one, then differentiable twice
 
 Analytic function: locally equal to its own Taylor series. General for convergent power series at each point for the domain. Some conflate holomorphic and analytic functions.
 
-Unipotent: element r such that r-1 is nilpotent some integer n.
+Unipotent: element r such that (r-1)^n is nilpotent some integer n. Feels like eigenvalue problem where (A - e I)^n, A linear transformation, then this is just generalised eigenvector.
 
 Unipotent matrix: characteristic polynomial P(t) is power of t-1. Proof of definition: all roots are equal to 1. (t-1)^n = 0. All eigenvalues is one. Eigenvalues are roots.
 
@@ -1119,6 +1127,8 @@ Picard groups corresponds to a group of line bundles. This assigning a vector sp
 Group completion of circle S1, give trivial Z and Mobius band Z/2 since two mobius bands give circle
 
 Group completion needs Zariski sheafification ahead of time to work on some projective modules thing.
+
+Sheafification: intuition is that the best approximation of a sheaf such that the stalks are the same, so inverse image of a sheaf f_pre^{-1} G and sheafification f^-1{G} agrees for small open sets.
 
 Ideal class groups corresponds to Picard group schemes of the ring of integers.
 
