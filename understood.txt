@@ -1,5 +1,9 @@
 UNDERSTOOD (MATH)
 
+Lattice: partially ordered set where each two element subset has a UNIQUE least upper bound (join) and dually a UNIQUE greatest lower bound (meet). Alternatively, a set with two binary absorptions in to A for a join (a meet b) = a and a meet (a join b) = a.
+
+Formal concept analysis: pick complete lattices, with pairs of objects (A, B) where A is extent or set of objects, B is intent or set of attributes. Extent contains all objects that share the attributes in B, intent contains all attributes shared by object in A. Constitutes meet and join.
+
 Descent as inverse of stable under base change: see "https://math.stackexchange.com/questions/4769096/smooth-proper-connected-curve-over-a-field-is-projective". The idea is instead of saying "if f: X -> S has property P, then base change X *_S S' -> S' along S' -> S also has property P", we ask "if X *_S S' -> S' has property P, must f: X -> S has property P"?. For nice S' -> S (the magic words for the case presented is faithfully flat, quasicompact), then you have closed immersion, descent. 
 
 Inverse image of sheaf which is not a sheaf: consider topological space Y, define X as two disjoint copies of Y, set f : X -> Y as canonical projection, take G, sheaf on Y. For subset V in Y open, and define U as the preimage using f on V, we have sheaf F such that  F(U) = G(V). So F = f^-1(G), F is presheaf. But the preimage of a sheaf (f^-1 F)(U) := F^sh(U) = G(V) * G(V). So the inverse image of the sheaf gives cartesian product of sheaves G, but the inverse of the canonical projection is a sheaf. Example: section of one copy, section on other copy, you cannot glue them together, intersection is empty since these are disjoint copies.
@@ -56,6 +60,12 @@ Maximum modulus principle: if f is holomorphic, complex differentiable at each p
 
 Compact topological group: topological group whose topology can be realised as a compact topological space, element of group operated on, result is within that group. Examples: circle groups, orthogonal group of rotations, unitary groups, torus groups.
 
+Immersion of linear maps: maps whose derivative everywhere is injective as a linear map (locally). In topology, you do not require it to be homemorphic to its image. Embedding requires injectivity and continuity, X and f(X) to have same topological properties. Example: immersion is mapping circle to figure 8, or double circle onto circle or semiopen interval to circle, inverse map is not continuous.
+
+Immersion: tangent spaces are mapped injectively. Example: Klein bottle, any point of intersection has two distinct tangent planes, map is injective onto R^3. But Klein bottle cannot be embedded in R^3. Best thought of as a local embedding.
+
+Jaffard ring: ring such that poly ring R[T1, ... T_n] = n + dim R, so dim of variables + dim of ring itself is equal to dim of poly ring (NOTE: using Krull dimension, Noetherian chain definition)
+
 Embeddings in concrete categories: since concrete categories have underlying set, you can just use injective functions on underlying set to define embeddings for concrete categories. However, general definition of embedding does not exist yet. The dual of embedding is a quotient, this makes sense if you think about algebraic geometry.
 
 Embedding as topological invariant: a (topological) space is different from another if one object can be embedded in the space, and the other cannot.
@@ -99,6 +109,14 @@ Residue field: quotient ring of a commutative ring and a maximal ideal.
 Reduced commutative ring: commutative ring with no nonzero nilpotents. Meaning: equivalently nilradical is zero.
 
 Nilradical of a commutative ring: ideal of nilpotent elements. Radical of zero ideal. Sum of two nilpotents is nilpotent (binomial theorem), product of two nilpotents is nilpotent (commutative!). 
+
+Localisation: adjoining quotients to the ring defined by (x,s) related to (y,t) for (xt - ys)u = 0. Satisfying (x/s + y/t) = (xt + ys)/st, and x/s * y/t = xy/st. See Borcherd's video for two step proof, I forgot about it. It basically corresponds to zooming in on a variety. Need multiplicative subset S. Example: R integers, S to be nonzero integers (multiplicative subsets), you have R[S^-1] to be rational. Another example, R integers, S to be even integers, get localisation to be Z/2, therefore looks like localisation of a spectrum zooming in points other than (2) in Spec(Z).Another example, pick R = C[x], S all nonzero elements, then R[S^-1] is rational functions. pick S = {x} instead then R[S^-1] is Laurent polys.
+
+Localisation with copying construction from rationals, only for case with no zero divisors: for ring R, S multiplicative subset, mostly harmeless. Construction of Q from Z, consider pair r/s. But 4/2 = 2/1, so need equivalence relation. For addition, need r1s2 + r2s1 / s1s2, need multiplicative subset, then r -> r/1 has one subset. Check equivalence relation, operations defined, ring axioms. ONE SUBTLE POINT, checking transitivity of equivalence relation, r1/s1 equivalent to r2/s2 and r2/s2 equivalent to r3/s3, so you get r1s2s3 = r2s1s3 = r3s2s1, implying r1/s1 = r3/s3 ASSUMING s2 is not zero divisor i.e. divides zero. Injectivity R to its localisation also uses the fact that there are no zero divisors. Motivates s(r1s2 - r2s1) = 0 as equivalence relation. 
+
+Zero divisor: nonzero element b such that ab = 0 for any a in ring. Double sided, of course you can have left and right zero divisors.
+
+Localisation relation to linear algebra: construction by R[t1, t2, ...] quotient out by (s1t1 -1, s2t2 - 1, ...) as ideals. Furthermore, this makes it such that elements of (sx tx - 1) or in linear algebra (A - e I)^n for eigenvalue e, linear transformation n as action of nilpotent over subspace.
 
 Nilradical is intersection of all minimal prime ideals: proof for commutative ring A, all ideals contains zero, all prime ideals contain prime nilpotent r^n = 0, every prime ideal contains nilradical. Conversely and equivalently (Brandenburg), assume an comm. ring element a is not nilpotent, show there exists prime ideal does not contain this non-nilpotent element (is enough to show inequality), then localisation of ring A at element a is nonzero (if not then 1/1 = 0, then a^n 1 = 0, then a^n nilpotent which is untrue). Since the localisation is nonzero, it has a prime ideal p (unique maximal element, Zorn's is used here), the preimage in A is a prime not containing element a, since a is non-nilpotent and p is a prime ideal and should not contain invertible elements, so eleemnt a is not contained in the intersection of all prime ideals.
 
@@ -1007,6 +1025,12 @@ Nerves, take functor from n simplex to category. Nerve of 0 is object, nerve of 
 Smooth morphism of scheme, approximated by affine space at any point, no nilpotent, but regular scheme. You want finiteness condition (presentation whatever that means) and flatness. Since this is a morphism of schemes, it is relative and defines a smooth scheme. That is the beauty of Grothendieck’s morphism oriented way of thinking. IMPORTANT POINT. YOU WANT THE FIBRES TO BE REGULAR. Example maps between regular schemes can fail to be smooth. Example V(xy) from affine plane to affine line. But the affine plane and affine line are regular schemes!
 
 Regular, think differential geometrically, consider dimension of Zariski tangent space is equal to the Krull dimension (computed using chains of noetherian stuff, max length) of local ring (local rings/ maximal ideals / points)
+
+Krull dimension: supremum of lengths of strict inclusion chains of prime ideals. Example: field has Krull dimension zero. field k[x1 to xn] has Krull dimension n.
+
+Height (Krull dimension) of prime ideal: the supremum of all lengths of all chains of prime ideals contained in the prime ideal.s The height of the prime ideal is the Krull dimension of the localisation of the ring at the prime ideal for a prime ideal in the ring.
+
+Noetherian ring, Krull dimension: a ring where every prime ideal has finite height.
 
 Fully faithful, get from cohomology to abelian group by taking cohomology of a point
 

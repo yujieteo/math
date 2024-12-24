@@ -26,8 +26,6 @@ Torus obstructions?
 
 What does it mean for the set of ideals in a ring to be a lattice?
 
-What is the PLS lab?
-
 How is the Scott topology and semicontinuity not related?
 
 Functorial factorisation of maps?
@@ -116,7 +114,7 @@ Canonical isomorphism?
 
 Limit defined up to isomorphism in 1 category? But limit defined only up to equivalence in infinity category?
 
-Complementary slackness?
+Complementary slackness? Easiest working example?
 
 Problem and dual problem? CCCP?
 
@@ -160,7 +158,6 @@ Why does one define the product topology with all but finitely many opens in com
 
 Moduli spaces, spaces corresponding to object? Represent a contravariant functor of interest. This usually means that they represent a contravariant functor that we're interested in. For example, Vakil constructs the Grassmannian as a scheme that represents the contravariant functor that takes a scheme $X$ to the set of  surjective morphisms $O_X^n \rightarrow E$, where $E$ is locally free of rank $k$. Make this make sense?
 
-Give an example where an inverse images of a sheaf is not a sheaf.
 
 What does it mean for Pontryagin duality to give examples of compact commutative group since they are dual to abelian discrete groups?
 
@@ -210,10 +207,6 @@ What are Hopf surfaces? Complex analytic K3 surface? Complex algebraic K3 surfac
 
 Why ar proper curves projective? https://math.stackexchange.com/questions/2629341/proper-curves-over-some-field-are-
 
-What does it mean for descent to be the inverse of stable under base change?
-
-What is the difference between closed immersion and embeddings?
-
 Make sense of the exponent axes and what these represent: https://terrytao.wordpress.com/2010/03/11/a-type-diagram-for-function-spaces/ https://mathoverflow.net/questions/17736/way-to-memorize-relations-between-the-sobolev-spaces/17906#17906
 
 Why is the identity map bounded but non compact unless finite dimension vector spaces? A bounded linear operator on separable Hilbert space is noncompact, hint uncountably many eigenvalues, so non separable. And on compactness: think of it as a MUCH stronger property than boundedness.
@@ -225,8 +218,6 @@ What is Tychnoff? Urysohns lemma? Tietze extension theorem?
 How does one do Joukowdsky transforms rigorously?
 
 What is the implicit function theorem in differential geometry?
-
-What is the motivation for Jaffard domains, and Prufer domains?
 
 Do not understand the definition of Prufer domains: Prufer domain: commutative ring without zero divisors, such that every non zero finitely generated ideal is invertible.
 
@@ -624,10 +615,6 @@ What are Hopf surfaces? Complex analytic K3 surface? Complex algebraic K3 surfac
 
 Why ar proper curves projective? https://math.stackexchange.com/questions/2629341/proper-curves-over-some-field-are-
 
-What does it mean for descent to be the inverse of stable under base change?
-
-What is the difference between closed immersion and embeddings?
-
 Make sense of the exponent axes and what these represent: https://terrytao.wordpress.com/2010/03/11/a-type-diagram-for-function-spaces/ https://mathoverflow.net/questions/17736/way-to-memorize-relations-between-the-sobolev-spaces/17906#17906
 
 Why is the identity map bounded but non compact unless finite dimension vector spaces? A bounded linear operator on separable Hilbert space is noncompact, hint uncountably many eigenvalues, so non separable. And on compactness: think of it as a MUCH stronger property than boundedness.
@@ -712,7 +699,7 @@ Why is defining the opposite category of opens an open problem? It is not really
 
 I understand why do we care about derived functors (enough injectives), but how to we understand it? Scholze uses it to give a very clean definition of etale cohomology and what does this even mean? Example: cohomology is the right defined functor from the “abelian space” (specifically spectra) and getting an abelian group. Note that abelian groups are a fully faithful inclusion into cohomology. What does it mean by enough injectives? Sheaf cohomology is the right derived functor to the global section functor? Answer; this is Grothendieck’s genius to use a functor for any coefficient. More specifically any functor as coefficients.
 
-How are anima a generalisation of homotopy types?
+How are anima a generalisation of homotopy types and infinity groupoids? What are they even?
 
 What are projective objects and projective resolutions?
 
@@ -798,7 +785,7 @@ What are the analogies of higher inductive types with homotopy theory?
 
 What is the difference between flat and locally free (locally have some basis?)
 
-What is an infinity projective 1 loop space
+What is an infinity projective 1 loop space?
 
 What does it mean for a Cartesian closed category to be closed by exponentiation? Exponentiation is some sort of function from the power to the base right?
 
@@ -873,10 +860,6 @@ How on earth do you work snake lemmas, five lemmas, magic diagrams. Do not under
 Kunneth formula?
 
 Eilenberg-Maclane Spaces?
-
-Horizontal categorification, groups, Groupoids, monoids, category??? Why are some so useful? Groupoids become more than one object.
-
-Quiver?
 
 Empty set: $(1)$ as ideal or the unit ideal. Useful in showing (quasi)compactness of Zariski topology?
 
