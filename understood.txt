@@ -490,43 +490,43 @@ Schur form: proof: start with orthonormal basis matrices A = [Z1 Z2] \* A [Z1 Z2
 
 A unitary matrix is a matrix whose inverse is equal to its conjugate transpose. The product of a matrix with its inverse gives the identity matrix. A conjugate transpose of a matrix swaps the rows and columns and computes its complex conjugate component wise.
 
-A square complex matrix $A$ in the set of $n$ by $n$ matrices $M_n$ of complex entries have eigenvalues $\lambda_1, ... \lambda_n$ in any order. Let $x$ in the complex n-space $\mathbf{C}^n$ be a unit vector such that $Ax = \lambda_1 x$.
+A square complex matrix A in the set of n by n matrices M_n of complex entries have eigenvalues \lambda_1, ... \lambda_n in any order. Let x in the complex n-space C^n be a unit vector such that Ax = \lambda_1 x.
 
-There is a unitary $U =  [x u_2 ... u_n]$ in the set of $n$ by $n$ matrices $M_n$ such that $U^* A U = T = [t_{ij}]$ is upper triangular with diagonal entries $t_ii = \lambda_i$ from $i = 1, ..., n$. This is the Schur form.
+There is a unitary U =  [x u_2 ... u_n] in the set of n by n matrices M_n such that U^* A U = T = [t_{ij}] is upper triangular with diagonal entries t_ii = \lambda_i from i = 1, ..., n. This is the Schur form.
 
-The upper triangular matrix $T$ has the diagonal entries as the eigenvalues of $A$, the sum of these eigenvalues as the trace of $A$, the product of these eigenvalues as the determinant of $A$, and the main diagonal entries of $\mathrm{adj} T$ to be the product of all eigenvalues excluding the one corresponding to the entry in the diagonal or $\prod^n_{j \neq 1} t_{jj}, ..., \prod^n_{j \neq n} t_{jj}$.
+The upper triangular matrix T has the diagonal entries as the eigenvalues of A, the sum of these eigenvalues as the trace of A, the product of these eigenvalues as the determinant of A, and the main diagonal entries of adj T to be the product of all eigenvalues excluding the one corresponding to the entry in the diagonal or \prod^n_{j \neq 1} t_{jj}, ..., \prod^n_{j \neq n} t_{jj}.
 
-The Cayley-Hamilton theorem follows by factorising the characteristic polynomial and representing the matrix $A$ by the conjugacy $UTU^*$. The characteristic equation of $A$ is that of the conjugacy which is $Up_A(T)U^* = U([T - \lambda_1 I][T - \lambda_2 I]...[T - \lambda_n I])U^*$. One can check that $p_A(T)$ in this form must be zero (NOT TRIVIAL, see Horn and Johnson, pp. 110).
+The Cayley-Hamilton theorem follows by factorising the characteristic polynomial and representing the matrix A by the conjugacy UTU^*. The characteristic equation of A is that of the conjugacy which is Up_A(T)U^* = U([T - \lambda_1 I][T - \lambda_2 I]...[T - \lambda_n I])U^*. One can check that p_A(T) in this form must be zero (NOT TRIVIAL, see Horn and Johnson, pp. 110).
 
-A square complex matrix $A$ in the set of $n$ by $n$ matrices $M_n$ of complex entries have scalars $\lambda_1, ... \lambda_n$ in the complex plane $\mathbf{C}$, positive integers $q$ and $n_1, ..., n_q$ such that the sum $n_1 + ... + n_q = n$ such that $A = S J_A S^{-1}$ where the Jordan matrix $J_A$ is the direct sum of Jordan blocks $J_{n_i}(\lambda_i)$, where $J_A = \bigoplus^{q}_{i = 1} J_{n_i}(\lambda_i)$.
+A square complex matrix A in the set of n by n matrices M_n of complex entries have scalars \lambda_1, ... \lambda_n in the complex plane C, positive integers q and n_1, ..., n_q such that the sum n_1 + ... + n_q = n such that A = S J_A S^{-1} where the Jordan matrix J_A is the direct sum of Jordan blocks J_{n_i}(\lambda_i), where J_A = \bigoplus^{q}_{i = 1} J_{n_i}(\lambda_i).
 
-A Jordan block is an upper triangular matrix where the the scalar $\lambda_i$ appears $n_i$ times on the main diagonal, if $n_1 > 1$ then there are $k - 1$ entries which are $+1$ in the superdiagonal, and all other entries are zero.
+A Jordan block is an upper triangular matrix where the the scalar \lambda_i appears n_i times on the main diagonal, if n_1 > 1 then there are k - 1 entries which are +1 in the superdiagonal, and all other entries are zero.
 
-The number of Jordan blocks is the maximum number of linearly independent eigenvalues of $J_A$.
+The number of Jordan blocks is the maximum number of linearly independent eigenvalues of J_A.
 
-If all the Jordan blocks are 1 by 1, then $J_A$ is diagonalisable, in fact, the diagonal matrix looks like this.
+If all the Jordan blocks are 1 by 1, then J_A is diagonalisable, in fact, the diagonal matrix looks like this.
 
 The number of Jordan blocks corresponding to a given eigenvalue is the geometric multiplicity of the eigenvalue, which is the dimension of the associated eigenspace.
 
 The sum of the sizes of all the Jordan blocks corresponding to a given eigenvalue is its algebraic multiplicity.
 
-Jordan block: sum of a diagonal matrix and a nilpotent matrix since $J_k(\lambda) = \lambda I_k + J_k(0)$ and $J_k(0)^k = 0$.
+Jordan block: sum of a diagonal matrix and a nilpotent matrix since J_k(\lambda) = \lambda I_k + J_k(0) and J_k(0)^k = 0.
 
 Category theory motivates (1) generalising morphisms; (2) generalising domain/codomain duality; (3) preserve integrity respecting identification and compositional order. The fastest illustration of category theory is with Kan extensions. All categories are locally small (that is to say ignore size issues in set theory) unless otherwise stated.
 
-A category $\mathbf{C}$ have domain and codomain objects $ob(\mathbf{C})$ and morphisms $mor(\mathbf{C})$ that respect the identity $\mathbf{1_C}$ and associative composition.
+A category C have domain and codomain objects ob(C) and morphisms mor(C) that respect the identity \mathbf{1_C} and associative composition.
 
-A morphism is between categories is a functor $F$ maps morphisms $f$ from a category $\mathbf{C}$ to a category $F\mathbf{C}$ respecting composition $F(f \cdot_{\mathbf{F}} c) \rightarrow F(f) \cdot_{F\mathbf{C}} F(c)$ and identification in both categories. One can also use the family of homs definition, used in May or Lurie.
+A morphism is between categories is a functor F maps morphisms f from a category C to a category FC respecting composition F(f \cdot_{\mathbf{F}} c) -> F(f) \cdot_{FC} F(c) and identification in both categories. One can also use the family of homs definition, used in May or Lurie.
 
-A 2-morphism of functors is natural transformation $\eta$ that has components $\alpha_c$ that takes morphism $c$ composed by a functor $F$ to a functor $G$ such that there is a commutative diagram between the morphism $Fc$ and its common composite $Gc'$ for any morphism $f$ that takes $c$ to $c'$ ($Gf \cdot \alpha_c = \alpha_{c'} \cdot Ff$).
+A 2-morphism of functors is natural transformation \eta that has components \alpha_c that takes morphism c composed by a functor F to a functor G such that there is a commutative diagram between the morphism Fc and its common composite Gc' for any morphism f that takes c to c' (Gf \cdot \alpha_c = \alpha_{c'} \cdot Ff).
 
 An isomorphism is a composition of two morphisms between two sets of objects whose composition and inverse identify in their respective sets of objects. Objects are isomorphic if an isomorphism between two exist between them. Objects can be grouped into a class of objects of a category if they are isomorphic. Picking the same object for the domain and codomain gives an automorphism if the morphism is isomorphism, otherwise it is endomorphisms.
 
-A comma category $F \downarrow G$ of two functors $F: \mathbf{D} \rightarrow \mathbf{C}$ and $G: \mathbf{E} \rightarrow \mathbf{C}$ has objects, triples $(d, e, f)$, where $d$ is a morphism in category $\mathbf{D}$, $e$ is a morphism in category $\mathbf{E}$, and $f$ which are morphisms from $Fd \rightarrow Ge$ in category $\mathbf{C}$, as well as all diagrams of this shape commuting in category $\mathbf{C}$, where $h: d \rightarrow d'$, $k: e \rightarrow e'$ such that $f' \cdot Fh = Gk \cdot f$, for morphisms of triples $(d, e, f) \rightarrow (d', e' ,f')$.
+A comma category F \downarrow G of two functors F: D -> C and G: E -> C has objects, triples (d, e, f), where d is a morphism in category D, e is a morphism in category E, and f which are morphisms from Fd -> Ge in category C, as well as all diagrams of this shape commuting in category C, where h: d -> d', k: e -> e' such that f' \cdot Fh = Gk \cdot f, for morphisms of triples (d, e, f) -> (d', e' ,f').
 
-A left Kan extension of a functor $F$ that takes morphisms from initial domain category $\mathbf{C}$ to a codomain category $\mathbf{E}$ along a functor $K$ that maps morphisms from extended domain $\mathbf{D}$ to the same codomain category $\mathbf{E}$ is a functor $\mathrm{Lan}_{K} F$ that also takes morphisms from category $\mathbf{D}$ to category $\mathbf{E}$ such that there is a natural transformation $\eta$ that takes functor $F$ to the functorial composition of $\mathrm{Lan}_{K} F \cdot K$. This natural transformation $\eta$ is defined such that any other natural transformation $\gamma$ factors uniquely through $\eta$ for any other functor $K'$ that, like $K$, takes morphisms from category $\mathbf{D}$ to category $\mathbf{E}$.
+A left Kan extension of a functor F that takes morphisms from initial domain category C to a codomain category E along a functor K that maps morphisms from extended domain D to the same codomain category E is a functor Lan_{K} F that also takes morphisms from category D to category E such that there is a natural transformation \eta that takes functor F to the functorial composition of Lan_{K} F \cdot K. This natural transformation \eta is defined such that any other natural transformation \gamma factors uniquely through \eta for any other functor K' that, like K, takes morphisms from category D to category E.
 
-A right Kan extension is defined the same but the arrows of the natural transformation reversed, taking the functorial composition of $\mathrm{Ran}_{K} F \cdot K$ to functor $F$ from the opposite category $\mathbf{C}^\mathrm{op}$ to opposite category $\mathbf{E}^\mathrm{op}$ when defined in terms of the left Kan extension.
+A right Kan extension is defined the same but the arrows of the natural transformation reversed, taking the functorial composition of Ran_{K} F \cdot K to functor F from the opposite category C^op to opposite category E^op when defined in terms of the left Kan extension.
 
 A functor is extended naturally to left composition of a left Kan extension and the functor when the domain category is extended.
 
@@ -536,23 +536,23 @@ A presheaf is a functor from an opposite category to sets. A simplicial set is p
 
 A category of presheaves has presheaf functors as objects, and natural transformations as morphisms.
 
-Most Kan extensions define the value of an extended functor on each object (each “point”) by a weighted (co)limit. For a locally small category $\mathbf{E}$, a right Kan extension is pointwise if it is preserved by all representable functors $\mathbf{E}(e, -)$ to the category of sets $\mathbf{Set}$. Representable functors are naturally isomorphic with a representation $\theta: \mathrm{hom}_\mathbf{C}(-,c) \rightarrow \mathbf{E}(e, -)$. A left Kan extension is pointwise if its corresponding right Kan extension is pointwise.
+Most Kan extensions define the value of an extended functor on each object (each “point”) by a weighted (co)limit. For a locally small category E, a right Kan extension is pointwise if it is preserved by all representable functors E(e, -) to the category of sets \mathbf{Set}. Representable functors are naturally isomorphic with a representation \theta: hom_C(-,c) -> E(e, -). A left Kan extension is pointwise if its corresponding right Kan extension is pointwise.
 
-Also, a right Kan extension of functor $F$ from category $\mathbf{C}$ to category $\mathbf{E}$ along a functor $K$ from category $\mathbf{C}$ to $\mathbf{D}$ is pointwise if and only if the limit $\mathrm{lim} ( d \downarrow K \rightarrow \mathbf{C} \rightarrow \mathbf{E})$ exists and is isomorphic $\mathrm{Ran}_{K} F(d)$ for morphism $d$ in category $\mathbf{C}$. We have $d \downarrow K$ as an indexing category. This can be shown since a pointwise extension preserves representable functors, so Yoneda's lemma applies then the $\mathrm{Ran}_{K} F(d)$ is isomorphic limit of $F\Pi_d: d \downarrow K \rightarrow \mathbf{E}$ where a l $\Pi_d$. Dually, a left Kan extension of functor $F$ from category $\mathbf{C}$ to category $\mathbf{E}$ along a functor $K$ from category $\mathbf{C}$ to $\mathbf{D}$ is pointwise if and only if the colimit $\mathrm{colim} ( K \downarrow d \rightarrow \mathbf{C} \rightarrow \mathbf{E} )$ exists and is isomorphic $\mathrm{Lan}_{K} F(d)$ for morphism $d$ in category $\mathbf{C}$.
+Also, a right Kan extension of functor F from category C to category E along a functor K from category C to D is pointwise if and only if the limit lim ( d \downarrow K -> C -> E) exists and is isomorphic Ran_{K} F(d) for morphism d in category C. We have d \downarrow K as an indexing category. This can be shown since a pointwise extension preserves representable functors, so Yoneda's lemma applies then the Ran_{K} F(d) is isomorphic limit of Fpi_d: d \downarrow K -> E where a l pi_d. Dually, a left Kan extension of functor F from category C to category E along a functor K from category C to D is pointwise if and only if the colimit colim ( K \downarrow d -> C -> E ) exists and is isomorphic Lan_{K} F(d) for morphism d in category C.
 
-See Emily Riehl's "Category Theory in Context" for this construction. For any small diagram $F$ from category $\mathbf{C}$ to category $\mathbf{D}$ valued in a category with products and equalisers. There exists an equaliser diagram for monomorphisms on $Fc$ to the product $\Pi_{c \rightarrow x} Fx$ for two parallel maps to $\Pi_{c \rightarrow x \rightarrow y} Fy$. One parallel map projects to the component indexed by the composite $c \rightarrow x \rightarrow y$. The other parallel map projects to the component indexed by the map $c \rightarrow x$ and then acts by $F$ on the second map $x \rightarrow y$. This is the Yoneda lemma, applied to functor $F$ from the category $\mathbf{C}$ to the category of sets $\mathbf{Set}$ for set morphisms $Fc$ which is isomorphic to a limit formula $\lim(c/\mathbf{C} \rightarrow \mathbf{C} \rightarrow \mathbf{D})$. This limit formula can be shown to be expressed as an equaliser. The Yoneda lemma states that these two composites are equivalent.
+See Emily Riehl's "Category Theory in Context" for this construction. For any small diagram F from category C to category D valued in a category with products and equalisers. There exists an equaliser diagram for monomorphisms on Fc to the product pi_{c -> x} Fx for two parallel maps to pi_{c -> x -> y} Fy. One parallel map projects to the component indexed by the composite c -> x -> y. The other parallel map projects to the component indexed by the map c -> x and then acts by F on the second map x -> y. This is the Yoneda lemma, applied to functor F from the category C to the category of sets \mathbf{Set} for set morphisms Fc which is isomorphic to a limit formula \lim(c/C -> C -> D). This limit formula can be shown to be expressed as an equaliser. The Yoneda lemma states that these two composites are equivalent.
 
-Yoneda's lemma implies a composition of two morphisms between two sets of objects whose composition and inverse identify in their respective sets of objects called a isomorphism. This isomorphism is canonical and unique, and is between the value of a presheaf $X$ at a morphism $c$ and the collection of all morphisms (hom-set) of presheaf homomorphisms from the representable presheaf $y(c)$ to the presheaf $X$. This means $\mathrm{Hom}_{\mathrm{Set}^{\mathbf{C}^\mathrm{op}}}(y(c), X)$ is isomorphic to $X(c)$.
+Yoneda's lemma implies a composition of two morphisms between two sets of objects whose composition and inverse identify in their respective sets of objects called a isomorphism. This isomorphism is canonical and unique, and is between the value of a presheaf X at a morphism c and the collection of all morphisms (hom-set) of presheaf homomorphisms from the representable presheaf y(c) to the presheaf X. This means \mathrm{Hom}_{\mathrm{Set}^{C^op}}(y(c), X) is isomorphic to X(c).
 
-A left Kan extension of a functor $F$ that takes morphisms from category $\mathbf{C}$ to category $\mathbf{D}$ along a uniqueness functor $!$ from a category $\mathbf{C}$ to the category $\mathbf{1}$ defines a natural transformation to the colimit. This left Kan extension exists if and only if the colimit exists. A right Kan extension along a uniqueness functor $!$ from a category $\mathbf{C}$ to the category $\mathbf{1}$ defines a natural transformation from the limit. This right Kan extension exists if and only if the limit exists.
+A left Kan extension of a functor F that takes morphisms from category C to category D along a uniqueness functor ! from a category C to the category \mathbf{1} defines a natural transformation to the colimit. This left Kan extension exists if and only if the colimit exists. A right Kan extension along a uniqueness functor ! from a category C to the category \mathbf{1} defines a natural transformation from the limit. This right Kan extension exists if and only if the limit exists.
 
-A unit $\eta$ is a natural transformation from the identity functor $\cdot$ to a composition of functors $GF$. A left Kan extension of the identity functor $\cdot$ along $F$ is defined with the unit $\eta$ as an left adjoint. Left adjoints preserves colimits. A counit $\epsilon$ is a natural transformation from a composition of a functors $GF$ to the identity functor $\cdot$. A right Kan extension of the identity functor along $G$ is defined with the counit $\epsilon$ as an right adjoint. Right adjoints preserves limits.
+A unit \eta is a natural transformation from the identity functor \cdot to a composition of functors GF. A left Kan extension of the identity functor \cdot along F is defined with the unit \eta as an left adjoint. Left adjoints preserves colimits. A counit \epsilon is a natural transformation from a composition of a functors GF to the identity functor \cdot. A right Kan extension of the identity functor along G is defined with the counit \epsilon as an right adjoint. Right adjoints preserves limits.
 
 Yoneda extension: left Kan extension along a Yoneda embedding. See definition of field extension in Galois theory, similar.
 
 Limit of a diagram with two objects without nontrivial morphisms is a product. 
 
-A limit of a unique empty diagram from the empty category $\mathbf{0}$ to a category $\mathbf{C}$ defines a terminal object of $\mathbf{C}$. This can be thought of as a product. 
+A limit of a unique empty diagram from the empty category \mathbf{0} to a category C defines a terminal object of C. This can be thought of as a product. 
 
 A limit of a pair of parallel morphisms is an equaliser. A limit over a cospan is a pullback, considering pairs of morphisms with the same co-domain. Dually, there are coproducts, initial objects, coequalisers, and pushouts for parallel pairs of morphisms with the same domain.
 
@@ -840,7 +840,7 @@ Koszul duality, generalising the fact that d^2 = 0 encodes a commutative law and
 
 Ergodicity: all states are accessible from one another. One can lose ergodicity with irreversible decisions. Take some measurable space, impose either actions on monoid of measurable space with measurable functions (random variables) or Markov kernels (don’t understand this), then a invariant measure is ergodic if the measure obeys some zero one law (measure which are only zero and one)
 
-Stabiliser of a group element a is a set such that left action of group element in group G is absorbed into a by a $ga = a$
+Stabiliser of a group element a is a set such that left action of group element in group G is absorbed into a by a ga = a
 
 Künneth formula, takes products of cohomology to tensor products of cohomology correcting by Tor groups. Like distribution law for Ext and Tor.
 
@@ -1004,11 +1004,11 @@ Tensor product and smash product in spectra.
 
 Magma means set with binary operation. Unital associative magma, monoid. Unital associative invertible magma, group.
 
-Exercise: draw $\mathrm{Spec(\mathbb{C}[x,y])}$. Three types of prime ideals. Maximal points. Non-closed 1D points that look like curves that contain maximal closed points so it is irreducible, and a generic point, if you localise you invert everything that is not in $\mathbb{C}[x,y]$.
+Exercise: draw Spec(C[x,y]). Three types of prime ideals. Maximal points. Non-closed 1D points that look like curves that contain maximal closed points so it is irreducible, and a generic point, if you localise you invert everything that is not in C[x,y].
 
-Exercise: draw $\mathrm{Spec(\mathbb{R}[x])}$. Line affine line, with ramification points of complex conjugate pairs.
+Exercise: draw Spec(R[x]). Line affine line, with ramification points of complex conjugate pairs.
 
-Mapping from $\mathbb{Z} \rightarrow \mathbb{Z}[i]$ gives mapping from $\mathrm{Spec} (\mathbb{Z}) \leftarrow \mathrm{Spec}(\mathbb{Z}[i])$. This gives three types. Ramification points, no primes, splits into two.
+Mapping from Z -> Z[i] gives mapping from Spec (Z) \leftarrow Spec(Z[i]). This gives three types. Ramification points, no primes, splits into two.
 
 Principal ideal domain corresponds to the spectrum looking like an affine line. How is this related to Z as PID from classification of surfaces?
 
@@ -1024,7 +1024,7 @@ Discrete valuation ring corresponds to Sierpinski two point space.
 
 Chinese Remainder Theorem, giving a function on a disconnected space is the same as a giving a function on its connected components for disjoint union of subvarieties. This corresponds to the product of the spectrum of two schemes which gives the disjoint union of schemes.
 
-Exercise: draw $\mathrm{Spec(\mathbb{C}[x,y])}/(x,y)$. Gives picture of local ring at one point.
+Exercise: draw Spec(C[x,y])/(x,y). Gives picture of local ring at one point.
 
 Spectrum of zero ring is empty since zero is not a prime ideal and zero is not an integral domain. Hartshorne define it this way.
 
@@ -1032,21 +1032,21 @@ Kernel of surjective map from rings to fields correspond to maximal ideals.
 
 Localisation of quotients and taking of quotients of localisations are equivalent, and they both give a residue field. What is the geometric interpretation of this?
 
-Stalks of sheaves represent localisation of $A$-module at prime $p$ or local rings.
+Stalks of sheaves represent localisation of A-module at prime p or local rings.
 
 Skyscraper sheaf is like the Dirac delta distribution.
 
-Mapping from $\mathbb{Z} \rightarrow \mathbb{Z}[x]$ gives mapping from $\mathrm{Spec} (\mathbb{Z}) \leftarrow \mathrm{Spec}(\mathbb{Z}[x])$. Fibers are finite field. Horizontal lines are quadratic residues. Fiber at zero is the ring of quotients, invert anything nonzero.
+Mapping from Z -> Z[x] gives mapping from Spec (Z) \leftarrow Spec(Z[x]). Fibers are finite field. Horizontal lines are quadratic residues. Fiber at zero is the ring of quotients, invert anything nonzero.
 
-Fibres of $\mathcal{O}$-module of locally ringed space at point $p$ correspond to $\dfrac{\mathcal{F}_p}{m_p \mathcal{F}_p}$.
+Fibres of \mathcal{O}-module of locally ringed space at point p correspond to \dfrac{\mathcal{F}_p}{m_p \mathcal{F}_p}.
 
-Glueing is flat descent. Categorically: $0 \rightarrow \mathcal{F}(U) \rightarrow \prod \mathcal{F}(U_{i}) \rightarrow \prod \mathcal{F}(U_{ij})$ is exact. There exists an exact sequence of products of overlapping open covers in topological space. Motivates the definition of site: where we generalise with fibre products, and open covers are generalised to sites.
+Glueing is flat descent. Categorically: 0 -> \mathcal{F}(U) -> \prod \mathcal{F}(U_{i}) -> \prod \mathcal{F}(U_{ij}) is exact. There exists an exact sequence of products of overlapping open covers in topological space. Motivates the definition of site: where we generalise with fibre products, and open covers are generalised to sites.
 
-Tangent space: assign polynomial its linear term in Taylor's series at point $a$, take all equations describing variety $X$, linearise them at $a$, take the common zero locus. Approximates local dimension. Oh this is magical reading it again.
+Tangent space: assign polynomial its linear term in Taylor's series at point a, take all equations describing variety X, linearise them at a, take the common zero locus. Approximates local dimension. Oh this is magical reading it again.
 
 A regular local ring is an integral domain: a variety that is regular at a point should not consist of several components that meet in this point. This corresponds to the points being able to be approximated by affine varieties at that point, see also definition of smoothness, but they approximate it by Euclidean space with Euclidean topology instead.
 
-Valuation of an element: order of vanishing of a local function on a curve at a point. Note: works on any integral domains and quotient fields, so can be in any abelian group and not just integers. Example: for a $k$ to be a field of rational functions of variety $X$ around smooth point $a$, the valuation can be thought of as an order of a zero or pole at smooth point $a$ in the variety.
+Valuation of an element: order of vanishing of a local function on a curve at a point. Note: works on any integral domains and quotient fields, so can be in any abelian group and not just integers. Example: for a k to be a field of rational functions of variety X around smooth point a, the valuation can be thought of as an order of a zero or pole at smooth point a in the variety.
 
 Fields are zero dimensional regular local rings i.e smooth schemes modelled by affines with Krull dimension zero.
 
@@ -1060,7 +1060,7 @@ Dedekind domains: key examples are irreducible smooth curves in algebraically cl
 
 Picard group of Dedekind domain corresponds to how far the Dedekind domain is from unique factorisation domain. See also K-theory of Dedekind domain giving the direct sum of the integers with its Picard group.
 
-Prime factorisation: Decomposition of varieties into pieces that cannot be subdivided further. Prime factorisation also encodes orders of vanishing of function $f$ of all points of a irreducible smooth curve $X$. Example: $X = V(y^2 - x(x-1)(x - \lambda))$ in Gathmann's notes. Exercise: draw this Pick general linear function $l$, general line crosses at three points which are maximal ideals so $(l) = P_1 \cdot P_2 \cdot P_3$, special linear functions $l'$ COINCIDES so $(l') = P_1' P_2'$.
+Prime factorisation: Decomposition of varieties into pieces that cannot be subdivided further. Prime factorisation also encodes orders of vanishing of function f of all points of a irreducible smooth curve X. Example: X = V(y^2 - x(x-1)(x - \lambda)) in Gathmann's notes. Exercise: draw this Pick general linear function l, general line crosses at three points which are maximal ideals so (l) = P_1 \cdot P_2 \cdot P_3, special linear functions l' COINCIDES so (l') = P_1' P_2'.
 
 However, recall that the underlying valuations on the local rings are defined originally not only on these discrete valuation rings, but also on their quotient field. Geometrically, this means that we can equally well consider orders of rational functions, i. e. quotients of polynomials, at a smooth point of a curve. These orders can then be positive (if the function has a zero), negative (if it has a pole), or zero (if the function has a non-zero value at the given point).
 
@@ -1068,21 +1068,21 @@ Affine varieties are "shapes". Varieties are rings of polynomial functions. They
 
 Disconnected: disjoint union of closed sets in Zariski topology is empty.
 
-Dimension of variety: supremum of chain inclusions of irreducible closed subsets / subvarieties $X$.
+Dimension of variety: supremum of chain inclusions of irreducible closed subsets / subvarieties X.
 
 Condensed formalism, care about compact (all limit points are points), Hausdorff (disjoint opens exist), totally disconnected )
 
-Codimension of $Y$ in $X$, supremum of chain inclusions of irreducible closed subsets / subvarieties from $Y$ to $X$. Local dimension at this point. Local dimension of irreducible variety is the same at every point.
+Codimension of Y in X, supremum of chain inclusions of irreducible closed subsets / subvarieties from Y to X. Local dimension at this point. Local dimension of irreducible variety is the same at every point.
 
-Pure dimension: valid only for Noetherian topological spaces, every irreducible component has same dimension which is $n$. Affine varieties with pure dimension 1 are curves, pure dimension 2 are surfaces, more than that hypersurfaces. Examples where definition of pure dimensions breaks down includes a line (variety) passing through a plane (variety)
+Pure dimension: valid only for Noetherian topological spaces, every irreducible component has same dimension which is n. Affine varieties with pure dimension 1 are curves, pure dimension 2 are surfaces, more than that hypersurfaces. Examples where definition of pure dimensions breaks down includes a line (variety) passing through a plane (variety)
 
-Subvariety $Y$ on fixed variety $X$: ideal of all functions on $X$ that vanish on $Y$. Specifically, radical ideals. Ideals of subvarieties are always radical and exact on algebraically closed fields.
+Subvariety Y on fixed variety X: ideal of all functions on X that vanish on Y. Specifically, radical ideals. Ideals of subvarieties are always radical and exact on algebraically closed fields.
 
 Morphism of varieties: ring homomorphism with source and target reversed. Made automatic with presheaves as contravariant functors from category typically of rings to category of (open) sets. Sections of presheaf are elements of ring of functions on open sets.
 
 Sheafs allowing gluing of presheaves and conditions on it are local.
 
-Germs of (pre)sheaf at point $a$, functions defined on small neighbourhood, these are local functions. Examples: rational functions with nonvanishing denominator at point $a$.
+Germs of (pre)sheaf at point a, functions defined on small neighbourhood, these are local functions. Examples: rational functions with nonvanishing denominator at point a.
 
 Stalks of a (pre)sheaf at a point, like localisations of presheaf at some point.
 
@@ -1094,13 +1094,13 @@ Spectrum of integers. Points of all prime ideals, with a fat point with the zero
 
 Full space: zero ideal.
 
-Empty set: $(1)$ as ideal or the unit ideal. Useful in showing (quasi)compactness of Zariski topology?
+Empty set: (1) as ideal or the unit ideal. Useful in showing (quasi)compactness of Zariski topology?
 
 Intersection of subvarieties: sum of ideals.
 
 Union of subvarieties: product or intersection of ideals.
 
-Difference of subvarieties: quotient of ideals. Strictly, the difference $Y \backslash Z$ is in general not a variety, so the exact geometric operation corresponding to quotient ideals is taking the smallest subvariety containing $Y \backslash Z$.
+Difference of subvarieties: quotient of ideals. Strictly, the difference Y \backslash Z is in general not a variety, so the exact geometric operation corresponding to quotient ideals is taking the smallest subvariety containing Y \backslash Z.
 
 Disjoint subvarieties: coprime ideals.
 
@@ -1112,7 +1112,7 @@ Lattice of integers correspond to the adjoining a root onto the integers.
 
 Homology or cohomology show how far it fails under localisation. Exactness give some Euler characteristic +2, F - E + V - 2 = 0. Mike Hopkins add holes become zero, easy way to remember is to divide the a torus in the regions. 4 barriers, 4 regions, no vertices, so zero.
 
-Zero germ corresponds to localisation of maximal ideal at point $p$ being zero. See also stalks.
+Zero germ corresponds to localisation of maximal ideal at point p being zero. See also stalks.
 
 Images of varieties: contraction of ideals.
 
@@ -1128,71 +1128,71 @@ For every ideal in a ring, a radical of an ideal consists of the intersections o
 
 Fractions: rational functions that are local functions well defined at a point.
 
-Localisation: restricting function to arbitrarily small neighbourhoods $q$. Like defining differentiability and continuity.
+Localisation: restricting function to arbitrarily small neighbourhoods q. Like defining differentiability and continuity.
 
-Localisation as $u(as' - a's) = 0$ for some $u \in S$, $S$ multiplicatively closed. Gathmann gives an immediate way to remember geometrically: Pick point $a = (1, 0)$, $(y/1)$ and $(0/1)$ must agree for variety $X = V(xy)$ but fails since $(y \cdot 1 - 0 \cdot 1) \neq 0$. This is fixed by introducting $x$ so $x(y \cdot 1 - 0 \cdot 1) = xy = 0$.
+Localisation as u(as' - a's) = 0 for some u \in S, S multiplicatively closed. Gathmann gives an immediate way to remember geometrically: Pick point a = (1, 0), (y/1) and (0/1) must agree for variety X = V(xy) but fails since (y \cdot 1 - 0 \cdot 1) \neq 0. This is fixed by introducting x so x(y \cdot 1 - 0 \cdot 1) = xy = 0.
 
 Noetherian: finite descending inclusion chain of varieties towards empty. Make subvariety smaller by dropping irreducible component or reduce dimension of subvariety. Decomposition of a subvariety into finitely many irreducible subvarieties is always possible for Noetherians.
 
-$V(x,y)$ is $y = x$ is a point.
+V(x,y) is y = x is a point.
 
-$V(xy)$ is $xy$ axes.
+V(xy) is xy axes.
 
-Embedded components: subvariety contained in another subvariety. Example is $(0)$ as fat point contained in line for the spectrum of integers, isolated points. The corresponding algebraic statement is that $P_2$ contains another prime ideal $P_1$ occurring as a radical in the decomposition; we will also say that $P_2$ is an embedded and $P_1$ an isolated prime ideal.
+Embedded components: subvariety contained in another subvariety. Example is (0) as fat point contained in line for the spectrum of integers, isolated points. The corresponding algebraic statement is that P_2 contains another prime ideal P_1 occurring as a radical in the decomposition; we will also say that P_2 is an embedded and P_1 an isolated prime ideal.
 
 Artinian: finitely ascending chains of varieties. So Artinian coordinate rings are finite unions of points. Not true for Noetherian. Algebraically, this means zero ideal is always product of maximal ideals.
 
-Prime and irreducible elements. Consider coordinate ring $R = \mathbb{R}[x,y]/(x^2 + y^2 - 1)$. Irreducible. Since it is a circle, not a product of two lines. Lines are linear polynomials in $\mathbb{R}[x,y]$. It is still irreducible in $R$ since lines must cross from inside to outside. This is not prime in $R$ since it consists of two points. Exercise, reproduce example 8.7 in Gathmann.
+Prime and irreducible elements. Consider coordinate ring R = R[x,y]/(x^2 + y^2 - 1). Irreducible. Since it is a circle, not a product of two lines. Lines are linear polynomials in R[x,y]. It is still irreducible in R since lines must cross from inside to outside. This is not prime in R since it consists of two points. Exercise, reproduce example 8.7 in Gathmann.
 
 Irreducible: cannot be written as union of closed sets in Zariski topology.
 
-Ring extension map $\mathbb{C}[x,y] \rightarrow \mathbb{C}[x,y]/(f)$ (smaller ideal to larger ideal) is morphism of varieties $\pi$ from larger variety to smaller variety. Drawing only the real points, we have examples of points $V(xy)$ with morphism $\pi$ to the real line ($V(x)$). Exercise: reproduce Gathmann 9.4 as exercise. Inverse images of $\pi$ are fibers. Geometrically, this is an infinite fibre at $x = 0$. Try examples of $y^2 - x^2$ giving two point fibres except at origin, and $xy - 1$ giving one point fibres except empty fibre at origin. The precise geometric correspondence is more complicated.
+Ring extension map C[x,y] -> C[x,y]/(f) (smaller ideal to larger ideal) is morphism of varieties pi from larger variety to smaller variety. Drawing only the real points, we have examples of points V(xy) with morphism pi to the real line (V(x)). Exercise: reproduce Gathmann 9.4 as exercise. Inverse images of pi are fibers. Geometrically, this is an infinite fibre at x = 0. Try examples of y^2 - x^2 giving two point fibres except at origin, and xy - 1 giving one point fibres except empty fibre at origin. The precise geometric correspondence is more complicated.
 
-Normal domains: Coordinate ring of irreducible varieties. Quotient field are rational functions well defined except at isolated points where denominator vanishes. Example: $\mathbb{C}[x]$ is normal, rational function is ill defined as a pole but cannot satisfy monic relation since its highest order pole cannot be cancelled by lower order poles. $\mathbb{R}[x,y]/(y^2 - x^2 - x^3)$ is not normal, looks likereducible two lines $V(x+y)$ $V(x-y)$ at origin approaching $+1$ and $-1$ at origin.
+Normal domains: Coordinate ring of irreducible varieties. Quotient field are rational functions well defined except at isolated points where denominator vanishes. Example: C[x] is normal, rational function is ill defined as a pole but cannot satisfy monic relation since its highest order pole cannot be cancelled by lower order poles. R[x,y]/(y^2 - x^2 - x^3) is not normal, looks likereducible two lines V(x+y) V(x-y) at origin approaching +1 and -1 at origin.
 
-Noetherian normalisation: example of $V(x_1x_2 - 1)$ fails lying over at origin. Coordinate transform to tilt it to $V(y_2 - y_1^2 - 1)$, $x_1 = y_2 + y_1$, $x_2 = y_2 - y_1$. Lying over is OK. See Gathmann notes.
+Noetherian normalisation: example of V(x_1x_2 - 1) fails lying over at origin. Coordinate transform to tilt it to V(y_2 - y_1^2 - 1), x_1 = y_2 + y_1, x_2 = y_2 - y_1. Lying over is OK. See Gathmann notes.
 
 Finite ring extensions: surjective geometric maps with finite fibers preserving dimension. See example 9.19 in Gathmann.
 
-Sum of radical ideals are not radical. Easy: take tangent of $V(x^2)$ and $V(x)$
+Sum of radical ideals are not radical. Easy: take tangent of V(x^2) and V(x)
 
 Blowing up: replace origin with a projective space to see inside it.
 
 Regular local ring is always an integral domain (no zero divisors): variety is locally irreducible at every smooth point.
 
-Fat points: See $\mathrm{Spec}(K[x]/(x^2))$. There is a fat point at the origin on an affine line you can only see linearisations, on a plane it will start to stick out more.
+Fat points: See Spec(K[x]/(x^2)). There is a fat point at the origin on an affine line you can only see linearisations, on a plane it will start to stick out more.
 
 Local rings: rational function with well defined values at point and does not admit similar evaluation maps since the denominator of the fraction might vanish there i.e. unique maximal ideal.
 
-Projective curves: add point at infinity for parallel lines to intersect. Embed each point $(x_1, ..., x_n)$ to $(1, x_1: ... x_n)$ as affine coordinates, the reamining points are $(0, x_1: ... x_n)$ as points at infinity so $\mathbb{P}^n = \mathbb{A}^{n} \cup \mathbb{P}^{n-1}$. as affine and infinite part. Analysts call these Riemann spheres.
+Projective curves: add point at infinity for parallel lines to intersect. Embed each point (x_1, ..., x_n) to (1, x_1: ... x_n) as affine coordinates, the reamining points are (0, x_1: ... x_n) as points at infinity so P^n = A^{n} \cup P^{n-1}. as affine and infinite part. Analysts call these Riemann spheres.
 
-Flatness: Let $f : X \rightarrow S$ be a morphism of schemes, and assume that $S$ is reduced. (i) If $S$ is a smooth curve then $f$ is called (geometrically) flat if no component of $X$ is mapped to a single point in $S$. Here by component we mean an irreducible or embedded component, i.e. (in the affine picture) the subvarieties of $X$ occurring in the primary decomposition of the ring that defines $X$.
+Flatness: Let f : X -> S be a morphism of schemes, and assume that S is reduced. (i) If S is a smooth curve then f is called (geometrically) flat if no component of X is mapped to a single point in S. Here by component we mean an irreducible or embedded component, i.e. (in the affine picture) the subvarieties of X occurring in the primary decomposition of the ring that defines X.
 
-Weak Nullstellensatz shows that the “traditional points” are present as points of the scheme, carries over to any algebraically closed field. If the field is not algebraically closed, traditional points are glued together into clumps by Galois conjugation, as in real affine line and the affine line over $F_p$.
+Weak Nullstellensatz shows that the “traditional points” are present as points of the scheme, carries over to any algebraically closed field. If the field is not algebraically closed, traditional points are glued together into clumps by Galois conjugation, as in real affine line and the affine line over F_p.
 
 Quasicompact and quasiseparated if and only if X can be covered by a finite number of affine open subsets, any two of which have intersection also covered by a finite number of affine open subsets. I notice that affines causes the word quasi.
 
-Consider the case $A = \mathbf{C}[x, y]/(xy)$ and $f = x$. What is the localization $A_f$? The space $\mathrm{Spec} C[x, y]/(xy)$ “is” the union of the two axes in the plane. Localizing means throwing out the locus where $x$ vanishes. So we are left with the x-axis, minus the origin, so we expect $\mathrm{Spec} \mathbf{C}[x]_x$ . Exercise: what natural isomorphism is there?
+Consider the case A = C[x, y]/(xy) and f = x. What is the localization A_f? The space Spec C[x, y]/(xy) “is” the union of the two axes in the plane. Localizing means throwing out the locus where x vanishes. So we are left with the x-axis, minus the origin, so we expect Spec C[x]_x . Exercise: what natural isomorphism is there?
 
-Suppose we have a function (ring element) vanishing at all points. Then it is not necessarily the zero function! Why, nilpotent. The translation of this question is: is the intersection of all prime ideals necessarily just $0$? The answer is no, as is shown by the example of the ring of dual numbers $k[\epsilon]/(\epsilon^2): \epsilon  \neq 0$, but $\epsilon^2 = 0$. Any function whose power is zero certainly lies in the intersection of all prime ideals. Functions are not determined by their values at points: the fault of nilpotents.
+Suppose we have a function (ring element) vanishing at all points. Then it is not necessarily the zero function! Why, nilpotent. The translation of this question is: is the intersection of all prime ideals necessarily just 0? The answer is no, as is shown by the example of the ring of dual numbers k[\epsilon]/(\epsilon^2): \epsilon  \neq 0, but \epsilon^2 = 0. Any function whose power is zero certainly lies in the intersection of all prime ideals. Functions are not determined by their values at points: the fault of nilpotents.
 
 If a ring has no nonzero nilpotents, we say that it is reduced. Compare to irreducible.
 
-Projective $n$-space is the union of lines through origin in dimension $n+1$.
+Projective n-space is the union of lines through origin in dimension n+1.
 
-A geometric point of a scheme $X$ is defined to be a morphism $\mathrm{Spec}(k) \rightarrow X$ where $k$ is an algebraically closed field.
+A geometric point of a scheme X is defined to be a morphism Spec(k) -> X where k is an algebraically closed field.
 
-A geometric fiber of a morphism $X \rightarrow Y$ is defined to be the fiber over a geometric point of $Y$, i.e., the fibered product with the geometric point $Spec k \rightarrow Y$.
+A geometric fiber of a morphism X -> Y is defined to be the fiber over a geometric point of Y, i.e., the fibered product with the geometric point Spec k -> Y.
 
 A morphism has connected (respectively. irreducible, integral, reduced) geometric fibers if all its geometric fibers are connected (resp. irreducible, integral, reduced). One usually says that the morphism has geometrically connected (resp. geometrically irreducible, geometrically integral, geometrically reduced) fibers.
 
-A $k$-scheme $X$ is geometrically connected (resp. geometrically irreducible, geometrically integral, geometrically reduced) if the structure morphism $X \rightarrow \mathrm{Spec} k$ has geometrically connected (resp. irreducible, integral, reduced) fibers. Recall Grothendieck’s philosophy where you want to define the structure morphism to get these properties over a base spectrum/scheme Spec k. We will soon see that to check any of these conditions, we need only base change to $k$.
+A k-scheme X is geometrically connected (resp. geometrically irreducible, geometrically integral, geometrically reduced) if the structure morphism X -> Spec k has geometrically connected (resp. irreducible, integral, reduced) fibers. Recall Grothendieck’s philosophy where you want to define the structure morphism to get these properties over a base spectrum/scheme Spec k. We will soon see that to check any of these conditions, we need only base change to k.
 
 Site: a structure that enables descent not by using intersections of subsets in descent with fibre products. See condensed formalism intro by Scholze.
 
-Zariski cotangent space of a local ring $(A, m)$ is defined to be $m/m^2$; it is a vector space over the residue field $A/m$.
+Zariski cotangent space of a local ring (A, m) is defined to be m/m^2; it is a vector space over the residue field A/m.
 
-The dual vector space is the Zariski tangent space. If $X$ is a scheme, the Zariski cotangent space $Tv$ at a $X,p$ point $p \in X$ is defined to be the Zariski cotangent space of the local ring $\mathbb(O)(X,p)$ (and similarly for the Zariski tangent space $TX,p$). Elements of the Zariski cotangent space are cotangent vectors or differentials; elements of the tangent space are tangent vectors.
+The dual vector space is the Zariski tangent space. If X is a scheme, the Zariski cotangent space Tv at a X,p point p \in X is defined to be the Zariski cotangent space of the local ring \mathbb(O)(X,p) (and similarly for the Zariski tangent space TX,p). Elements of the Zariski cotangent space are cotangent vectors or differentials; elements of the tangent space are tangent vectors.
 
 Schemes are topological spaces with a sheaf of unital rings whose colimits over all values of this sheaf on open subsets over every point called stalks that must be local rings or rings with a unique maximal ideal.
 
