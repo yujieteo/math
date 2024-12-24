@@ -1,5 +1,7 @@
 Journal
 
+24 December 2024: did some linear algebra and appreciated how close it is to other forms of algebra.
+
 22 December 2024: started thinking about the X + Y equal constant problem, then thought about probability some more.
 
 18 December 2024: started again.
