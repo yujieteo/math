@@ -1,5 +1,21 @@
 DAYDREAM (MATH)
 
+Directed suprema?
+
+Partially ordered sets?
+
+Characteristic functions of open sets?
+
+Poset of truth values?
+
+Directed joins versus normal joins?
+
+Complete partial orders as cartesian closed category of directed complete partial orders?
+
+Alexandrov topology?
+
+Upper topology?
+
 I still don't understand how nilradical form the intersection of all prime ideals of a commutative ring. This is not intuitive to me.
 
 What is the relationship between the Wiener process, heat kernel, and Brownian motion?
@@ -13,6 +29,10 @@ Shape operator? Eigenvalues? Give curvature?
 Torus obstructions?
 
 What does it mean for the set of ideals in a ring to be a lattice?
+
+What is the PLS lab?
+
+How is the Scott topology and semicontinuity not related?
 
 Functorial factorisation of maps?
 
@@ -440,7 +460,7 @@ What is Nisnevich descent, etale descent, ??? You have some sort of topology you
 
 Is there a simpler definition of symmetric ring spectra that I can fit in my head AND DO COMPUTATIONS WITH? I don’t like the fact I have to vaguely point at some equivariance under symmetric groups, and then define spectra with stable homotopy suspension colimit thing.
 
-What are function spaces that you can fit in your head?
+What are function spaces that you can fit in your head? This is very difficult, so start with simple examples of function spaces and work with those instead?
 
 Don’t understand what are covering sieves, local isomorphisms and separated presheaves?
 
@@ -450,9 +470,7 @@ Don’t understand how to keep it in head? Kunneth formula. Duality
 
 I realised a lot of classical algebraic topology still appear? Need to go back and learn it. These are for example Kunneth formula, Eilenberg Maclane spaces…
 
-Horizontal categorification, groups, Groupoids, monoids, category??? Why are some so useful? Groupoids become more than one object.
-
-What is a quiver? Definition
+Quiver? I learnt that it is a generalisation of set, and you can see this is a definition of a magmaoid.
 
 Empty set: $(1)$ as ideal or the unit ideal. Useful in showing (quasi)compactness of Zariski topology?
 
@@ -478,7 +496,9 @@ Why is it not possible for judgemental equalities to be proven?
 
 How to understand pullbacks and monomorphisms intuitively in the subobject classifier definition?
 
-What is the Freudenthal suspension theorem and how is it used to define spectra?
+What is the Freudenthal suspension theorem and how is it used to define spectra? Also, what motivated the suspension theorem, it was invented very early in the 1930s.
+
+Homotopy excision? How does homotopy excision (a result about cohomologies coming from quotient groups) prove the Freudenthal suspension theorem?
 
 What does it mean for loop space and suspensions to be adjoints (suspension left adjoint, loop space right adjoint)?
 
@@ -490,9 +510,17 @@ I don’t understand transport?
 
 What Is the relationship between happly, fun ext, and transport?
 
-What are modalities? Why should I care about modalities.
+What are modalities? Why should I care about modalities? See Egbert Rijke's articles on it.
 
 What is the motivation of axiom K?
+
+Dirichlet functional?
+
+Closure of test functions?
+
+List of functionals? Energy intuition?
+
+Trace theorems in Sobolev spaces?
 
 How are truncations the Postnikov sections, and why are these important? How can Postnikov sections with (-1)-type implies propositions?
 

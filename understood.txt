@@ -1,5 +1,31 @@
 UNDERSTOOD (MATH)
 
+Horizontal categorification: step 1: pick concept as magmoid (binary operation) with single object. Typical example is thinking of group as category of one object with morphisms that are all invertible (unitary by default due to category definition), the -oidfied by presenting more than one object instead.
+
+Horizontal categorification of monoid: gives category! Start with unital associative magma i.e. one object with binary operation that has identity and is associative. Do horizontal categorification, it gives a category.
+
+Horizontal categorification of untyped languages: is a typed language.
+
+Magmoid: quiver (generalise set) with partial binary operation Mor(Q) * Mor(Q) -> Mor(Q) + 1, coproduct injections inj: Mor(Q) -> Mor(Q) + 1, such that there is function h in preimage inj(h) = f * g, if s(f) = t(g) and f * g  = point. Easier: groupoid is oidification of group. Group can be category with one object, and isomorphisms on that one object. Groupoid extends to more than one object.
+
+Quiver: generalisation of set, opposite category, and even presheaves! It is a functor G from X -> Set. Where X is a walking quiver. Quiver in a category C is X -> C, C is some category.
+
+Walking quiver: cateogry with one object of vertices X0, one object of edges X1, two "contravariant/preimagey" morphisms s,t: X1 -> X0 called source and target, with identity morphisms. For some reason, it feels like simplifical structure trying to be built in to set.
+
+Category of quivers in C, Quiv(C): functor category C^X, where X is the walking quiver, where objects are functors G: X -> C, morphisms are natural transformations.
+
+Examples of category of quivers in its simplest case: Quiv(Set) is equivalent to category of presheaves on X^op, where X is category of walking quivers.
+
+Toy example of linear functional: consider functions from unit intervals to the reals, define linear functional F(u) = u(1) - u(0). F is not continuous or defined everywhere on L^2(0,1) failing at measure zero single points, but continuous on H^1(0,1). This motivates the trace operator to be defined for H1, then you can use them to sovle PDEs. This example motivates why you do not want to use L^2 spaces for everything.
+
+L^2 space: set of square integrable L2-functions, where <f, g> = int_X fg du, for measure u. Example: pick X = reals, with Lebesgue measures, these are the square summable series. These are equivalence classes of functions with the same L^2 function where the set they differ has measure zero i.e. one point. It is a sort of density function giving bad boundary conditions in differential equations for point f(p) since it is not well defined on measure zero since it is an integral.
+
+Functional analogous to energy: functional is analogous to ENERGY. This is why functional analysis is so important, for example minimising energy / action. Example: Dirichlet functional is integral | grad u |^2 dx
+
+Specialisation topology / Alexandroff's topology: subset A of preordered set, is open subset if it is upward closed, i.e. if x <= y, x in A, then y is in A. This is a topology, or the specialisation topology. Example: apply specialisation topology to poset of truth values {0,1}. Start with empty, then {1} is open, and total space {0,1} is open.
+
+Sierpinski space: set of 0, 1, topological space is {}, {1}and {0,1}. Note: {0} is omitted. It can also be defined using homotopy type theory as higher inductive type using constructors for meet, top terms; type, left, right associativitt, commutative, idempotence, for meets and joins; meet-join absorption, join-meet absorption, and other functions. Very long, see ncatlab.
+
 Sifted category: category where colimits of diagrams of shape D commute with finite products in category of Set. Consider diagram functor F: product D and S -> Set, S is finite discrete category, the colimit commutes with finite products.
 
 Discrete category: it is a groupoid and preorder i.e. all morphisms are invertible, and two parallel morphisms are equal.
@@ -714,9 +740,11 @@ Elliptical curve over complex numbers is a Riemann surface of genus one with bas
 
 To get the properties of exclusive disjunction from ring sum and conjunction (or meet) from ring product given a Boolean ring, which is a ring of idempotents, apply truth table onto rings of ints modulo 2. 1 + 1 = 0, so exclusive disjunction.
 
-Join: is union both are less than supremum in lattice
+Join: is union both are less than supremum in lattice. Join is supremum.
 
 Meet: intersection is infimum, both are at least that in lattice.
+
+Hasse diagram: diagram representing partially ordered set.
 
 Plus construction (see Scholze lecture): A+ is the Lan(r^op) Ran(s^op) A. Step 1, apply right point wise Kan extension along the opposite of functor s^op : C -> J sending opens U on small site C to maximal sieve (set of all morphisms with codomain U). Step 2: apply left pointwise Kan extension r: J -> C as Grothendieck construction of functor Cov: C^op to Pos or category of partially ordered sets. sending opens U to set of covering sieves.
 
@@ -1022,7 +1050,7 @@ Eilenberg-Steenrod axioms for cohomology: contravariance, homotopy invariant, ex
 
 Contravariance, maps X to Y induces maps the other way round
 
-Excision, cohomology of Y vanishes on X, then it must come from reduced cohomology of X mod Y as quotient group
+Excision: cohomology of Y vanishes on X, then it must come from reduced cohomology of X mod Y as quotient group. Somehow can be used to prove the Freudenthal suspension theorem.
 
 Homotopy invariant, preserves homotopy which is some interval map that is a continuous idempotent endomorphism.
 
