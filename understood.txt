@@ -1,5 +1,15 @@
 UNDERSTOOD (MATH)
 
+Unitary: inverse equals conjugate transpose for matrix.
+
+Nilpotency: collapse dimensions to lose all informations. All linear transformation is an action of nilpotent over subspace. This connects group theory, to linear algebra.
+
+Generalised eigenvector: (A - e I)^k w = 0, A matrix/linear transform, e eigenvalue, I identity matrix, k integer, x vector. Then we have (A - e I)^(k - 1) x = v, v is eigenvector. This gives all linear transformations as some action of a nilpotent (A - e I) over some subspace x.
+
+Linear transformation: function of vector space such that f(ax + by) = a f(x) + b f(y). In linear algebra, x and y are elements of vector space, but this definition is an indirection and can be generalised.
+
+Functional analysis no-eigenvalue example: S(a1, a2, ...) = (0, a1, a2, ...), Sx = ax, suppose eigenvalue a nonzero, BUT limit of product of a is nilpotent i.e. a^n x, n tends towards infinity. But a is nonzero! So x must be zero.
+
 Wiener process: Gaussian process, with funny covariance function K(s,t) = min(s,t) as random series. Markov process with generator as Laplace operator, and transition density as heat kernel.
 
 Conditional probability: ratio of probability of A and B over probability of B. Intuition, given B, you can divide by the probability of B since you know B will happen, to raise the likelihood of A and B (less or equally likely) to A given B (more or equally likely).
@@ -250,7 +260,7 @@ Infinitely differentiable locally. Differentiable one, then differentiable twice
 
 Analytic function: locally equal to its own Taylor series. General for convergent power series at each point for the domain. Some conflate holomorphic and analytic functions.
 
-Unipotent: element r such that r-1 is nilpotent some integer n
+Unipotent: element r such that r-1 is nilpotent some integer n.
 
 Unipotent matrix: characteristic polynomial P(t) is power of t-1. Proof of definition: all roots are equal to 1. (t-1)^n = 0. All eigenvalues is one. Eigenvalues are roots.
 
@@ -500,7 +510,7 @@ The number of Jordan blocks corresponding to a given eigenvalue is the geometric
 
 The sum of the sizes of all the Jordan blocks corresponding to a given eigenvalue is its algebraic multiplicity.
 
-A Jordan block is the sum of a diagonal matrix and a nilpotent matrix since $J_k(\lambda) = \lambda I_k + J_k(0)$ and $J_k(0)^k = 0$.
+Jordan block: sum of a diagonal matrix and a nilpotent matrix since $J_k(\lambda) = \lambda I_k + J_k(0)$ and $J_k(0)^k = 0$.
 
 Category theory motivates (1) generalising morphisms; (2) generalising domain/codomain duality; (3) preserve integrity respecting identification and compositional order. The fastest illustration of category theory is with Kan extensions. All categories are locally small (that is to say ignore size issues in set theory) unless otherwise stated.
 
