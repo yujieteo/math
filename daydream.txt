@@ -1,5 +1,19 @@
 DAYDREAM (MATH)
 
+What is the relationship between the Wiener process, heat kernel, and Brownian motion?
+
+What is the mathematical motivation behind the notion of filtration?
+
+Why are there no analogs of the Lebsegue measure?
+
+If we have a Markov process, what are the possibilities of the generators and the translation density? Example: Wiener uses Laplace operator, with heat kernel.
+
+Autoregressive model?
+
+Coordinate process as stochastic process?
+
+What exactly does it mean for the characteristic function to be the expectation of some complex exponential?
+
 Directed suprema?
 
 Characteristic functions of open sets?

@@ -1,5 +1,36 @@
 UNDERSTOOD (MATH)
 
+Filtration: nondecreasing family of sigma algebra F_0 in F_s in F_t , for 0 < s < t. Basically, the set of possibilities become larger.
+
+Stochastic processes as random functions of one random variables: events are sets of paths, are typical paths continuous? Motivates random fields, with more than one random variable.
+
+Stochastic process as probability distribution on path spaces. Use functional analysis with path spaces as infinite dimensional spaces. Measure theory suggests no analogs of Lebesgue measure (translation invariant measure) on such spaces, so hard to construct nontrivial measures on these spaces.
+
+Motivation for Kolmogorov extension theorem: consider fixed finite set of points, get random vector distributed on finite dimensional space. Extension theorem allows one to construct stochastic process from family of consistent finite dimensional probability distributions.
+
+Stochastic matrix is largest eigenvalue with Gershgorin discs: consult Horn, eigenvalues lie in Gershgorin disc, so spectral radius 1.
+
+Spectral radius of probability matrices is 1: proof (Spivey) starts with assuming 1 is eigenvalue of transition matrix. Suppose we have (A - e I)x = 0, e > 1. Rows of A are nonnegative, sum to 1, each element of Ax is convex combinations of components of x, not greater than x_max. But if e > 1, one element of e x is greater than x_max, so we cannot have e > 1! See https://math.stackexchange.com/questions/40320/proof-that-the-largest-eigenvalue-of-a-stochastic-matrix-is-1.
+
+Symmetric random walk: +-1, with probability 0.5, random walk on integers. Markov, because distribution is completely determined, probability of Xn+1 conditional on Xn alone.
+
+Transition probabilities: probabilities in state j at n + 1, conditional on state k at time n. Motivated by definition of Markov process, so must understand what a Markov process is first.
+
+Stationary: Markov process where transition probabilities do not depend on state n.
+
+Invariant distribution: action of invariant distribution pi is such that pi = pi * P, i.e. probability transition matrix is idempotent on the invariant distribution.
+
+Action of stochastic matrix of Markov chain: for Markov chain u_n, it is equal to u_n = u_0 P^n, where P^n is the repeated application of the stochastic matrix P, for time up to n (indexing set assumed to be nonnegative integers).
+
+Stochastic matrix: all entries nonnegative, sum of all entries is 1.
+
+Chapman-Kolmogorov equation: probability of state j at time n, given state i at time 0, is sum of all trnasition probabilities in the state space S, probability of state j at time n, given state k at time m * probability of state k at time m, given state i at time 0. This is just Baye's rule, with stipulation of Markov chain giving only one instance of the product for each state space.
+
+Markov process: probability of Xn+1 is conditional on Xn = probability of Xn+1 conditioned on whole history.
+Easy to build nonexamples, such as left right random walk such that once you go right, the next step must be right.
+
+Ehrenfest diffusion model: middle membrane container with K particles, pick one at random and place in other part of container. This is Markov process, just look at the current state and you can determine the probability of the next outcome.
+
 Lattice: partially ordered set where each two element subset has a UNIQUE least upper bound (join) and dually a UNIQUE greatest lower bound (meet). Alternatively, a set with two binary absorptions in to A for a join (a meet b) = a and a meet (a join b) = a.
 
 Formal concept analysis: pick complete lattices, with pairs of objects (A, B) where A is extent or set of objects, B is intent or set of attributes. Extent contains all objects that share the attributes in B, intent contains all attributes shared by object in A. Constitutes meet and join.
