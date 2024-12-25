@@ -2,7 +2,7 @@ UNDERSTOOD (MATH)
 
 Binomial theorem as convex combination: seems to be a generalisation of convex combination coefficients with NCj p^j (1-p)^(N-j), for j = 2 it is just p and (1-p), standard convex combination.
 
-Temperature in stastistical mechancis: degree ot stochasticity in the system.
+Temperature in stastistical mechanics: degree ot stochasticity in the system. See Sornette for better explanation. See also inverse temperature as measure of disorder or something.
 
 Central limit theorem by pertubation: goal is to define some pertubation pdf close to Gaussian law, apply constraints for the cumulants and normalisation then show that the decay of the perturbation approaches zero.
 
