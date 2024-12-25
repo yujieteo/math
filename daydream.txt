@@ -1,5 +1,17 @@
 DAYDREAM (MATH)
 
+Tail decay?
+
+Characteristic fluctuation scale?
+
+Rescaled variable, Levy reminds me of some Lp space?
+
+Scale parameter of a distribution?
+
+I don't understand the Ito and Stratnovich interpretation?
+
+I don't fully understand the renormalisation group approach to derive the central limit theorem, decimation in particular to force the limit of all other cumulatnts to tend towards zero is rather interesting.
+
 What is the relationship between the Wiener process, heat kernel, and Brownian motion?
 
 What is the mathematical motivation behind the notion of filtration?

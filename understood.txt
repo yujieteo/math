@@ -1,5 +1,39 @@
 UNDERSTOOD (MATH)
 
+Binomial theorem as convex combination: seems to be a generalisation of convex combination coefficients with NCj p^j (1-p)^(N-j), for j = 2 it is just p and (1-p), standard convex combination.
+
+Temperature in stastistical mechancis: degree ot stochasticity in the system.
+
+Central limit theorem by pertubation: goal is to define some pertubation pdf close to Gaussian law, apply constraints for the cumulants and normalisation then show that the decay of the perturbation approaches zero.
+
+Central limit theorem: normalised sum of 1/root(N) of N random independent and identically distributed variables of zero mean, and FINITE VARIANCE sigma^2 is random variable with pdf converging to Gaussian distribution with variance sigma^2. Convergence holds measure theorectical sense i.e. probability that above nromalised sum falls in given integeral converges to that calculated from Gausssian distribution. Limitations: applies to center of distribution, fails at large deviations, X_i must be independent, works for finite variance with same order of magnitude but DIFFERENT PDFS. The order of magnitude limitation is deviation sigma approximately root(N). You can relax the root(N) to get a weaker version of the central limit law. Very tricky example, but captures much of the collective phenomena one wants to study.
+
+Central limit theorem with renormalisation group theory: see Sornette, step 1, decimate the degrees of freedom of groups of sum of pairs, this becomes some sort of tree, see Sornette, characteristic function looks like P^(n+1)(k) = [P^n(k)]^2. So cumulant is c_l^(n+1) = 2c_l(n) on log scale. Step 2 is to rescale the variables, cumulants are multiplied by 2^(a l), where a is to be determined and c_l has dimension k^(-l). In this case, pick alpha = 1/2. For cumulant cl we have 2^(1 - la), iterate process of decimation and rescaling, get that first two cumulant nonzero, rest becomes zero and shrinks in the limit, so it is a Gaussian law. Apply Fourier transform, to get characteristic equation of Gaussian law. See pg. 54 of Sornette, note that it is renormalisation of P(x, N, c1, c2, ...) = 1/(2^a) (x/2^a, N/2, 2^(1-a)c_1, ... 2^(1-l) c_l). So the second cumulant pops up naturally because in the decimation process, you just need to split into bins of two.
+
+Stable extreme value distributions classification: Gumbel, Frechet, and Weibull. Location, scale, and shape parameter. For me, Taleb classifies political processes based on these three parameters as well.
+
+Gumbel intuition: tail falls faster than power law, converges to Gumbel.
+
+Frechet intuition: tail falling as power law X^(-1-mu), follows Frechet.
+
+Weibull intuition: pdf with finite right end point, dependence close to this end point with (x_F - x)^(1 / |eta|), eta is shape parameter, x_F is endpoint. Explains why Weibull is very common.
+
+Derivatives of the characteristic function: (-i)^n d^n(P(x))/dk^n at k = 0, then you can express it as some sort of Taylor series, in fact this will appear as the cumulants of a pdf.
+
+Cumulants: derivatives of the logarithm of the characteristic function, it looks like the action of the (-i) as an action (circle group in the imaginary plane) on the n-th derivative of the logarithm of the probability distribution at k = 0. We have c_n = (-i)^n d^n(log(P(k)))/dk^n at k = 0. So you can write the characteristif function as the exponential of a Taylor series i.e. sum of exp(sum c_n / n! (ik)^n), it becomes the action of (ik) instead. Sum is cumulant preserving, proof is using product of convolution is product of Foruier transform. Also, it motivates alternative measures of dispersion from normality, fixing some problems with moments of a probability distribution.
+
+Dutch book argument: bettor puts in px, house gives x, at odds (1-p)/p, house can set x to be anything but the bettor must accept both sides of the bet (win/lose). Bettor is consistent if it is not forced to accept a sure loss in probability assignment. I learnt of this argument in Sornette's book.
+
+Mode: maximises frequency count i.e. dP/dx = 0. If nonunique, then pick largest mode value. so argmax(dP/dx = 0).
+
+Moments (in probability, physics): average of the powers of x, so x works as action on probability. It is integral of x^n * P(x) dx, supported on the entire real line.
+
+Support: possibilities for some values. Example: alphabets in the dictionary. Real number values possible.
+
+Mean value based on philosophy in probability: adding all values dividing by number of cases. This is the combinatorial approach converted to the frequency approach.
+
+Frequentist interpretation (braindead version): just imagine X number of times happening, then some part Y smaller than X will happen.
+
 Filtration: nondecreasing family of sigma algebra F_0 in F_s in F_t , for 0 < s < t. Basically, the set of possibilities become larger.
 
 Stochastic processes as random functions of one random variables: events are sets of paths, are typical paths continuous? Motivates random fields, with more than one random variable.
@@ -167,7 +201,7 @@ Conditional probability: ratio of probability of A and B over probability of B. 
 
 Poisson random variable: it is like a memoryless queue, probability is (expected value ^ time)/(time factorial) * damping exp(-expected value), since the expected value being achieved means the effect of the queue is damped somehow. The mean and the variance is the expected value. Limit of Binomial process as the number of bins is infinite and the probability gets to zero, by simple substitution. Intuitively, this makes sense, you have an infinitely small time slice of something showing up in the queue to consider as a Poisson if you think of it is as Binomial. Proof, substitute np = lambda, then take k fixed, n >> k.∂
 
-Characteristic function of a random variable: expectation of the damping e^{i zeta X} or the integral of the damping e^(i zeta x). The idea is that you can do nice things with the characteristic functions to get a new characteristic function, which shows that when you do stuff with the characteristic functions of multiple variables, you can get a known distribution.
+Characteristic function of a random variable: expectation of the damping e^{i zeta X} or the integral of the damping e^(i zeta x) aka the Fourier transform of the probability distribution. Apply Fourier theory to probability theory.
 
 Independent random variable: preserved under products of random variable.
 
