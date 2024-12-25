@@ -235,7 +235,7 @@ Discrete stationary memoryless channel: finite input set X, finite output set Y,
 
 Discrete stationary memoryless SOURCE: alphabet X, probability mass function p(x).
 
-Optimal lossless compression: infimum of all achievable rate. For a discrete stationary memoryless source, this is the entropy. Achievability uses typical sequences and encoding. Converse uses Fano’s.
+Optimal lossless compression: infimum of all achievable rate. For a discrete stationary memoryless source, this is the entropy. Achievability uses typical sequences and encoding. Converse uses Fano's.
 
 Hamming distortion: indicator function for error.
 
@@ -255,7 +255,7 @@ Chaitin constant: probability that computer halts when input p is a binary strin
 
 Slepian-Wolf code: correlated sources X, Y can be described at rates RX, RY, recovered with arbitrarily low probability if RX more than or equal to conditional entropy X given Y, RY more than or equal to conditional entropy Y given X and RX + RY more than or equal to joint entropy H(X, Y)
 
-Chaitin constant philosopher’s stone: list all programs in binary, supposed you have n bit of Chaitin constant, difference between full Chaitin’s and truncated Chaitin’s is less than probability of cardinality n (reciprocal of alphabet of n characters). Contributions in reciprocal of program length size is also less than that of reciprocal of alphabet of n characters. So, no program of length n that has yet to halt will half. Run increasingly longer lists of programs to keep track which one halts, find proofs to any yes/no theorems in less than n bits with 2^n characters of Chaitin’s constant. Example: program that halts with counter-example to Fermat’s last theorem. Program has finite bits N, so with 2^N bits of Chaitin’s constant, can determining Fermat’s last theorem. WARNING: Godel incompleteness still not bypassed since one cannot find effective procedures.
+Chaitin constant philosopher's stone: list all programs in binary, supposed you have n bit of Chaitin constant, difference between full Chaitin's and truncated Chaitin's is less than probability of cardinality n (reciprocal of alphabet of n characters). Contributions in reciprocal of program length size is also less than that of reciprocal of alphabet of n characters. So, no program of length n that has yet to halt will half. Run increasingly longer lists of programs to keep track which one halts, find proofs to any yes/no theorems in less than n bits with 2^n characters of Chaitin's constant. Example: program that halts with counter-example to Fermat's last theorem. Program has finite bits N, so with 2^N bits of Chaitin's constant, can determining Fermat's last theorem. WARNING: Godel incompleteness still not bypassed since one cannot find effective procedures.
 
 Kraft inequality: instantaneous codes iff sum of alphabet length raised to the string length for each strength is less than or equal to 1.
 
@@ -271,9 +271,9 @@ Nats: replace 2 with e, same laws hold.
 
 Rate distortion theory: relax constraint on lower bound of entropy for compression, find channel capacity to receive signal with acceptable distortion
 
-Channel capacity: maximum mutual information between input and output given a probability transition matrix p(x) gives number of distinguishable inputs (not definition, but is Shannon’s channel coding theorem). Alternatively, supremum of all achievable rates of a discrete memoryless channel. Examples: binary symmetric channel has capacity 1 - entropy. Note, one can set a constraint where the sum of the codebook is less than nB.
+Channel capacity: maximum mutual information between input and output given a probability transition matrix p(x) gives number of distinguishable inputs (not definition, but is Shannon's channel coding theorem). Alternatively, supremum of all achievable rates of a discrete memoryless channel. Examples: binary symmetric channel has capacity 1 - entropy. Note, one can set a constraint where the sum of the codebook is less than nB.
 
-Channel coding theorem proof: random coding, joint typicality decoding. Weak converse requires Fano’s inequality.
+Channel coding theorem proof: random coding, joint typicality decoding. Weak converse requires Fano's inequality.
 
 Jointly typical sequences: tuples of x y with joint distribution p(x,y) such that the difference between the entropy definition as negative expectation of logarithm for p(x), p(y) and p(x,y) are arbitrarily small (converges in probability).
 
@@ -293,7 +293,7 @@ Estimated probability distribution of average distribution length: sum of entrop
 
 Average redundancy: difference between expected actual word length and entropy.
 
-Joint entropy (KL divergence): negative expectation of logarithm of a joint probability distribution. Different from Shannon’s definition. This is convex.
+Joint entropy (KL divergence): negative expectation of logarithm of a joint probability distribution. Different from Shannon's definition. This is convex.
 
 AEP for ergodic sequence: 2^(nH) typical sequence, with probability 2^(-nH) uniform.
 
@@ -315,11 +315,11 @@ Stationary stochastic process: entropy rate of joints and conditionals are equal
 
 Conditioning: condition entropy is less than or equal to unconditional entropy
 
-Log sum inequality: Jensen’s using finite summations, only for non-negative inequality.
+Log sum inequality: Jensen's using finite summations, only for non-negative inequality.
 
 Relative entropy: sum of product between probability and log of prob. distribution ratio. Also, the expectation of the log of distribution ratio with respect to p(x)
 
-Jensen’s inequality: for convex f, expectation of payoff is more than payoff of expected frequency. Payoff space is better than probability space. Trick: use - concave to get convex. Proof sketch: draw slant line passing through y = x^2.
+Jensen's inequality: for convex f, expectation of payoff is more than payoff of expected frequency. Payoff space is better than probability space. Trick: use - concave to get convex. Proof sketch: draw slant line passing through y = x^2.
 
 Information inequality: joint entropy (KL divergence) is nonnegative. Similarly, mutual information is nonnegative.
 
@@ -333,7 +333,7 @@ Sufficient statistic: consider n -> X -> T(X) Markov chain, T(X) statistic, X ra
 
 Minimal sufficient statistic: if it forms “contravariant” Markov chain n -> T(X) -> U(X) -> X for any other sufficient statistic U. Alternatively, it has the same Kolmogorov complexity as the indices n, or it maximally compresses the indices n.
 
-Fano’s inequality: consider Markov chain of input X to output Y to correlated reconstruction X*, then let the error probability be probability that X*(Y) is not equal to X. Then Fano’s inequality states that the sum of entropy of the error probability and the error probability times the logarithm of the (alphabet/support- 1) is more than or equal to the conditional entropy X given Y. Intuitively, entropy of error probability is uncertainty with correct predictions, the logarithm of the (alphabet/support -1) refers to the entropy of uniform distribution of all incorrect choice. Therefore, H(X|Y) is less than or equal to Hb(e) + Pe(X) log(card(X)-1), Hb(e) is binary entropy of Pe(X != X*)
+Fano's inequality: consider Markov chain of input X to output Y to correlated reconstruction X*, then let the error probability be probability that X*(Y) is not equal to X. Then Fano's inequality states that the sum of entropy of the error probability and the error probability times the logarithm of the (alphabet/support- 1) is more than or equal to the conditional entropy X given Y. Intuitively, entropy of error probability is uncertainty with correct predictions, the logarithm of the (alphabet/support -1) refers to the entropy of uniform distribution of all incorrect choice. Therefore, H(X|Y) is less than or equal to Hb(e) + Pe(X) log(card(X)-1), Hb(e) is binary entropy of Pe(X != X*)
 
 Independent and identically distributed inequality, if X and Y are independent and identically distribution, the probability that they are equal is more than 2^{-H(X)}.
 
@@ -353,13 +353,13 @@ Computability theory: needed rigour to get quantitative bounds on Kolmogorov com
 
 Additive optimality: goal is to have unique minimal element (avoid nonsense with axiom of choice), defined by ensuring existence of functions with greater Kolmogorov complexity up to constant for any Kolmogorov complexity of function i.e. Cg(x) + c_f,g >= Cf(x)
 
-Turing’s thesis: effective procedure defined by Turing machine
+Turing's thesis: effective procedure defined by Turing machine
 
-Church’s thesis: objective notion of effective procedure or computability independent of choice of Turing machine.
+Church's thesis: objective notion of effective procedure or computability independent of choice of Turing machine.
 
-Partially computable functions: functions that can be computed numerically and algorithmically. Church’s thesis guarantees the existence of this definition or equivalence of categories.
+Partially computable functions: functions that can be computed numerically and algorithmically. Church's thesis guarantees the existence of this definition or equivalence of categories.
 
-Laplace’s MDL argument: chance of generating x literarily is 2^{-card(x)), chance of computer program generating x is 2^{-K(x)} (also works as definition of Kolmogorov complexity), probability of program comparison to random process is 2^{-K(x) -(-n)}.
+Laplace's MDL argument: chance of generating x literarily is 2^{-card(x)), chance of computer program generating x is 2^{-K(x)} (also works as definition of Kolmogorov complexity), probability of program comparison to random process is 2^{-K(x) -(-n)}.
 
 Universal lower semicomputable continuous semimeasure complexity (KM): the logarithm of the reciprocal of the universal lower semicomputable continuous semimeasure M.
 
@@ -597,7 +597,7 @@ Types: infinity groupoid, terminal object of a global section functor for an (in
 
 Identity type: path space A^I from interval to space A.
 
-Universe: type whose elements are types. Hierarchy of universes prevent Russell’s paradox.
+Universe: type whose elements are types. Hierarchy of universes prevent Russell's paradox.
 
 Univalence: isomorphic structures can be identified or there is a canonical equivalence for the function space of id applied to function space of A and B to equiv applied to function space of spaces A and B
 
@@ -769,7 +769,7 @@ Duality: pairs of concepts are mirror images of one another with some involution
 
 Derived functors: explicit computations of homology for Tor, and cohomology for Ext via resolutions
 
-Burnside’s lemma: enumeration of orbits of symmetry group, or counts distinct objects up to a symmetry equivalence relation. For a finite group G, consider elements x^g that are fixed by g i.e. g = x = x. The formula for orbits is |X/G| = sum of elements x fixed by g divided by the group G. Example, rotationally distinct colourings of cube with three colouring. Identity fixes 3^6 colours, six 90 degree face rotations fix 3^3 \* 6 colourings, three 180 degree face rotations fix 3^3 colourings, eight 120 degree vertex rotation fix 3^2 colourings, six 180 degree edge rotations fix 3^3 colourings. Now take average over group of order 64, get 57, so there are 57 rotationally distinct colourings of a cube with 3 colours.
+Burnside's lemma: enumeration of orbits of symmetry group, or counts distinct objects up to a symmetry equivalence relation. For a finite group G, consider elements x^g that are fixed by g i.e. g = x = x. The formula for orbits is |X/G| = sum of elements x fixed by g divided by the group G. Example, rotationally distinct colourings of cube with three colouring. Identity fixes 3^6 colours, six 90 degree face rotations fix 3^3 \* 6 colourings, three 180 degree face rotations fix 3^3 colourings, eight 120 degree vertex rotation fix 3^2 colourings, six 180 degree edge rotations fix 3^3 colourings. Now take average over group of order 64, get 57, so there are 57 rotationally distinct colourings of a cube with 3 colours.
 
 Fourier transforms in distribution theory: turn multiplication by x into differentiation with respect to k, derivatives of delta function.
 
@@ -777,7 +777,9 @@ Jaffard domain: Krull dimension of the ring of polynomials, is the Krull dimensi
 
 Lie group and Lie algebra correspondence: isomorphic Lie algebra does not imply isomorphic Lie group (example real coordinate space, and circle group). However, requires simple connectedness. Problem is there is a hole in circle group.
 
-Schur’s lemma: all ground field, irreducible representations are unique up to homomorphism, if ground field is algebraically closed endomorphisms are scalar multiples of identity operator. Endomorphism of irreducible representation, multiply by complex number?
+Schur's lemma: all ground field, irreducible representations are unique up to homomorphism, if ground field is algebraically closed endomorphisms are scalar multiples of identity operator. Endomorphism of irreducible representation, multiply by complex number?
+
+Representations: group preserving map (group homomorphism) from the group to the general linear group of vector space V which is GL(V) which is the group of automorphisms (all invertible matrices) for vector space V. The representation gives the vector space the structure of a G-module for a group G (module is like vector space for rings).
 
 Lp space: space using a power p as norm instead of typical Euclidean using p = 2
 
@@ -863,13 +865,13 @@ Modular arithmetic: m divides a - b means a = b mod m, a dividend, b remainder, 
 
 Coprime ideals: sum of coprime ideals give the full ring, There are coprime numbers, coprime ideals, coprime polynomials.
 
-Bezout’s identity: linear combinations of integers are equal to their greatest common divisor i.e. au + bv = gcd(a,b). Proof: if u and v are coprime, Z as linear combination have 1 as unit vector so linear combination au/gcd(a,b)+ bv/gcd(a,b) = 1 since primes are orthogonal vectors on integers. Multiply by gcd(a,b) to get the result. Alternatively, apply Euclidean algorithm backwards using the fact that intersections of linear combinations with the integers must have minimal element (or gcd(a, b) is minimal). Since these are linear combinations, by induction linear combinations of scalars of primes are equal to the greatest common divisor of the scalars.
+Bezout's identity: linear combinations of integers are equal to their greatest common divisor i.e. au + bv = gcd(a,b). Proof: if u and v are coprime, Z as linear combination have 1 as unit vector so linear combination au/gcd(a,b)+ bv/gcd(a,b) = 1 since primes are orthogonal vectors on integers. Multiply by gcd(a,b) to get the result. Alternatively, apply Euclidean algorithm backwards using the fact that intersections of linear combinations with the integers must have minimal element (or gcd(a, b) is minimal). Since these are linear combinations, by induction linear combinations of scalars of primes are equal to the greatest common divisor of the scalars.
 
 Fundamental theorem of equivalence relations: classes of equivalence relations either equal or disjoint but not both and one can some the cardinality of classes of equivalence relations. Proof: if disjoint we are done. Suppose not disjoint, construct equivalence from element in one set to element in other set, so they must be equal sets (used the fact that sets have no repeated elements). For cardinality relation, apply cardinality functor from category of Sets to category of Naturals taking union into sum.
 
 Freyd-Mitchell embedding: small abelian categories embeds fully and exactly into the category of R-modules over suitable ring R
 
-Brouwerian counterexample: statement implies principle that is non-constructive. Example: something implies Zorn’s lemma
+Brouwerian counterexample: statement implies principle that is non-constructive. Example: something implies Zorn's lemma
 
 Content free: statements that do not actually tell you anything new about something
 
@@ -879,7 +881,7 @@ Foundation axiom, branches of sets pictured as trees cannot have infinite length
 
 Von Neumann hierarchy, recursively take subsets of sets, taking unions at end of ordinals to define ordinals
 
-Comprehension axiom: can always find a set of also some property, fails due to Russell’s paradox
+Comprehension axiom: can always find a set of also some property, fails due to Russell's paradox
 
 Pairing: inductively find sets of pairs of elements
 
@@ -937,7 +939,7 @@ Braided monoidal category: a monoidal category with a natural isomorphism of ten
 
 Monoidal category: vertically categorified category where the tensor product is a functor from the product of categories to the category itself with nice properties, (need to define 5, associator, left unitor, right unitor, triangle identity, pentagonal identity because you are working with two category.
 
-Proof that right adjoints preserve limits, the one I understood is the proof here https://ncatlab.org/nlab/show/adjoints+preserve+%28co-%29limits: start with the fact that hom adjunction is naturally isomorphic. This is obvious, by definition of adjunction HomC(L(d), c) is naturally isomorphic to HomD(d, R(c)). You will want to pick c to be the limit, since R is the right adjoint. The second thing is that Hom functors preserve limits. Lastly apply Yoneda’s lemma, natural isomorphism of Hom sets of objects give isomorphism of objects. Apply the first to second to somehow take out the limit. Apply Yoneda’s, the limits are preserved and are naturally isomorphic under action of right adjoints. Formally dual for colimits.
+Proof that right adjoints preserve limits, the one I understood is the proof here https://ncatlab.org/nlab/show/adjoints+preserve+%28co-%29limits: start with the fact that hom adjunction is naturally isomorphic. This is obvious, by definition of adjunction HomC(L(d), c) is naturally isomorphic to HomD(d, R(c)). You will want to pick c to be the limit, since R is the right adjoint. The second thing is that Hom functors preserve limits. Lastly apply Yoneda's lemma, natural isomorphism of Hom sets of objects give isomorphism of objects. Apply the first to second to somehow take out the limit. Apply Yoneda's, the limits are preserved and are naturally isomorphic under action of right adjoints. Formally dual for colimits.
 
 Hom functors, takes product of morphisms in opposite category and category (order is important) to category of set, specifically pairs of morphisms to hom-sets. This preserves limits, taking pairs of (colimit in opposite category, limit in covariant category) to limits in set. Contravariance in first variable C^op \* C means it preserves colimits in the first variable, but C^op reverses this so it also preserves limits. In a sense, the definition of Hom functors ensures that it preserves limits.
 
@@ -1001,7 +1003,7 @@ Stone spaces: compact Hausdorff spaces which are totally disconnected. Cantor to
 
 Isbell adjunction and Isbell duality, space is geometry, quantity is algebra, take the smooth space and consider its colimit, the left adjunction taking smooth spaces to smooth rings, as copresheafification, consider a smooth algebra, taking its spectrum or sheafification gives its limit which is a smooth space as right adjoint.
 
-Six functor formalism, three adjunctions. You want two adjunctions first, direct image to inverse image for morphisms as adjoints, direct image with compact support with exceptional inverse image or Verdier duality adjoints for separated morphisms, lastly it’s the symmetric monoidal tensor product with internal hom as adjoint. See Scholzes notes.
+Six functor formalism, three adjunctions. You want two adjunctions first, direct image to inverse image for morphisms as adjoints, direct image with compact support with exceptional inverse image or Verdier duality adjoints for separated morphisms, lastly it's the symmetric monoidal tensor product with internal hom as adjoint. See Scholzes notes.
 
 Separated morphism, diagonal morphism is a morphism mapping a space X to its diagonal X with product in Y is such is a closed subspace of the diagonal X to Y.
 
@@ -1017,9 +1019,9 @@ Eckhmann-Hinton duality: The most basic duality by reversing arrows in category 
 
 Fuks duality: take endofunctors of compact pointed (important for suspensions) Hausdorff spaces. Duality is expressed between loop space and suspension space. Endofunctor of loop space gives suspension space. Endofunctor of suspension space gives loop space. This works heuristically for: homotopy dual to cohomology, mapping cylinder to mapping cocylinder, fibration to cofibration.
 
-Tannaka duality: monoid with its module category are dual, considering automorphisms/endomorphisms of some forgetful functor called the fibre functor that gives the monoid structure. Just apply Yoneda’s lemma using the fact that the fibre functor is endomorphism.
+Tannaka duality: monoid with its module category are dual, considering automorphisms/endomorphisms of some forgetful functor called the fibre functor that gives the monoid structure. Just apply Yoneda's lemma using the fact that the fibre functor is endomorphism.
 
-Proof sketch for G-set with Tannaka duality (like Cayley’s theorem), C as Set^G or GSet Aut(F) = Set^(SetG)(F,F) = Set^(SetG)(SetG(G, -), SetG(G, -)) = SetG(G, G) = G Abusing notation for GSet and isomorphism due to Yoneda’s lemma.
+Proof sketch for G-set with Tannaka duality (like Cayley's theorem), C as Set^G or GSet Aut(F) = Set^(SetG)(F,F) = Set^(SetG)(SetG(G, -), SetG(G, -)) = SetG(G, G) = G Abusing notation for GSet and isomorphism due to Yoneda's lemma.
 
 Makkai duality: syntax of first order logic (pretopoi) corresponds to the semantics of first order logic (ultracategories). Further, opposite category of small pretopoi maps to ultracategories, ultrafunctors of from ultra category to set has the structure of a small pretopos
 
@@ -1061,13 +1063,13 @@ Etale space, geometrically corresponds to some double cover. The circle is some 
 
 Prefix free definition of Kolmogorov complexity, constraints on what counts as a definition only. Practical outcomes, products become direct sums of complexity up to additive constant O(1). More importantly, probability of 2^-K converges for prefix free Kolmogorov complexity of K.
 
-Grothendieck’s typical question: two examples. (1) if we have a functor from schemes/rings to set, what scheme or ring does it represent? Similarly if we have a spectra, what cohomology theory does it represent by Brown’s representability theorem in connected CW complex with base point?
+Grothendieck's typical question: two examples. (1) if we have a functor from schemes/rings to set, what scheme or ring does it represent? Similarly if we have a spectra, what cohomology theory does it represent by Brown's representability theorem in connected CW complex with base point?
 
 Complete varieties, define them in such a way such that it is easy to generalise. Define proper maps of scheme, pick base scheme a field, then if proper map of schemes exist preimage is complete variety, easy to generalise if you can easily replace the base scheme.
 
 Example of base scheme to define families of schemes, reverse currying, take elliptic curve y^2 - x^3 - ax - b. Instead of working over C2, work over C4, then have a, b fixed point. The inverse image of the fixed point is a family of schemes.
 
-Morphisms of schemes are primary object in Grothendieck’s philosophy, the idea is you want to define maps to a base scheme, and every scheme maps to the terminal object the spectrum of the integers. This way when you have some definition of a property of the morphism, you can replace the base scheme to get something else
+Morphisms of schemes are primary object in Grothendieck's philosophy, the idea is you want to define maps to a base scheme, and every scheme maps to the terminal object the spectrum of the integers. This way when you have some definition of a property of the morphism, you can replace the base scheme to get something else
 
 Z[t]/t^2 thickening of affine line with nilpotent everywhere, K1 contains invertible elements, can tell it is NOT A1 homotopy invariant by picking certain invertible elements that is in one but not the other
 
@@ -1075,7 +1077,7 @@ Brown representability: all cohomology theories can be represented by spectra, n
 
 Wedge sum, glue together pointed spaces at the point.
 
-Cayley’s Theorem, one of my favourites because once you understand Cayley’s Theorem, you understand Yoneda embedding and Yoneda’s lemma. Note: not trivial, requires key step. Consider underlying element of group x, mapping to left action gx. IMPORTANT: groups are closed, so this is bijection, since this is a bijection on the same set, it is a permutation, so groups must be isomorphic to permutation groups (or subgroups of symmetric groups) under composition of permutations. Yoneda’s: considering homset(b, a) mapping to natural transformations nat(hom(a, -), hom(b, -)). This must be an isomorphism, since compositions of morphisms are morphisms. Therefore, define this as an Yoneda embedding (if on sets), and all small categories are embed into the category of functors of defined on that categories, which are represented by pre-sheaves or representable functors.
+Cayley's Theorem, one of my favourites because once you understand Cayley's Theorem, you understand Yoneda embedding and Yoneda's lemma. Note: not trivial, requires key step. Consider underlying element of group x, mapping to left action gx. IMPORTANT: groups are closed, so this is bijection, since this is a bijection on the same set, it is a permutation, so groups must be isomorphic to permutation groups (or subgroups of symmetric groups) under composition of permutations. Yoneda's: considering homset(b, a) mapping to natural transformations nat(hom(a, -), hom(b, -)). This must be an isomorphism, since compositions of morphisms are morphisms. Therefore, define this as an Yoneda embedding (if on sets), and all small categories are embed into the category of functors of defined on that categories, which are represented by pre-sheaves or representable functors.
 
 Groups as symmetries of something given by Cayley theorem, closure of left action is key step.
 
@@ -1087,7 +1089,7 @@ Chain complex has free abelian group (have generators as basis) on n simplex wit
 
 Nerves, take functor from n simplex to category. Nerve of 0 is object, nerve of 1 is morphism, nerve of 2 is pairs of morphisms. Fully faithful embedding, take forgetful of partial order structure of nerves to get back category
 
-Smooth morphism of scheme, approximated by affine space at any point, no nilpotent, but regular scheme. You want finiteness condition (presentation whatever that means) and flatness. Since this is a morphism of schemes, it is relative and defines a smooth scheme. That is the beauty of Grothendieck’s morphism oriented way of thinking. IMPORTANT POINT. YOU WANT THE FIBRES TO BE REGULAR. Example maps between regular schemes can fail to be smooth. Example V(xy) from affine plane to affine line. But the affine plane and affine line are regular schemes!
+Smooth morphism of scheme, approximated by affine space at any point, no nilpotent, but regular scheme. You want finiteness condition (presentation whatever that means) and flatness. Since this is a morphism of schemes, it is relative and defines a smooth scheme. That is the beauty of Grothendieck's morphism oriented way of thinking. IMPORTANT POINT. YOU WANT THE FIBRES TO BE REGULAR. Example maps between regular schemes can fail to be smooth. Example V(xy) from affine plane to affine line. But the affine plane and affine line are regular schemes!
 
 Regular, think differential geometrically, consider dimension of Zariski tangent space is equal to the Krull dimension (computed using chains of noetherian stuff, max length) of local ring (local rings/ maximal ideals / points)
 
@@ -1135,7 +1137,7 @@ Function type is analogous to Cartesian product since both can used as primitive
 
 Spectrum: representation of cohomology by Brown representability theorem
 
-Fields: every element is invertible, every module (vector space) over fields are free or have basis (need Zorn’s)
+Fields: every element is invertible, every module (vector space) over fields are free or have basis (need Zorn's)
 
 Smash product generalised tensor product which is a product that is bilinear since a ring is a monoid with tensor product of abelian groups. Tensor product corresponds to Tor.
 
@@ -1157,7 +1159,7 @@ Disjoint unions of spaces form products of abelian groups under cohomology
 
 Dimension axiom, get back abelian group taking zeroth cohomology of a point, vanishing otherwise.
 
-Total singular complex in May’s book is the same as a CW complex, proof of S(X) has extension property.
+Total singular complex in May's book is the same as a CW complex, proof of S(X) has extension property.
 
 Square of stable infinity categories Cartesian. You have D(R) D(R[1/f]) D(R[1/g]) D(R[1/fg]) being commuting as Cartesian. D is derived category of a ring. Note that the quotient looks like Zariski descent already.
 
@@ -1387,7 +1389,7 @@ A geometric fiber of a morphism X -> Y is defined to be the fiber over a geometr
 
 A morphism has connected (respectively. irreducible, integral, reduced) geometric fibers if all its geometric fibers are connected (resp. irreducible, integral, reduced). One usually says that the morphism has geometrically connected (resp. geometrically irreducible, geometrically integral, geometrically reduced) fibers.
 
-A k-scheme X is geometrically connected (resp. geometrically irreducible, geometrically integral, geometrically reduced) if the structure morphism X -> Spec k has geometrically connected (resp. irreducible, integral, reduced) fibers. Recall Grothendieck’s philosophy where you want to define the structure morphism to get these properties over a base spectrum/scheme Spec k. We will soon see that to check any of these conditions, we need only base change to k.
+A k-scheme X is geometrically connected (resp. geometrically irreducible, geometrically integral, geometrically reduced) if the structure morphism X -> Spec k has geometrically connected (resp. irreducible, integral, reduced) fibers. Recall Grothendieck's philosophy where you want to define the structure morphism to get these properties over a base spectrum/scheme Spec k. We will soon see that to check any of these conditions, we need only base change to k.
 
 Site: a structure that enables descent not by using intersections of subsets in descent with fibre products. See condensed formalism intro by Scholze.
 
