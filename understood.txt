@@ -1,5 +1,9 @@
 UNDERSTOOD (MATH)
 
+Jacobson ring: used to describe the Nullstellensatz, a Jacobson ring is every prime ideal of the commutative ring R is inthe intersection of maximal ideals. See pg. 132 of Eisenbud.
+
+Points near p in set X: Illustration in Eisenbud. Consider Y is algebraic subset of X not containing P, consider X - Y, this is not an affine algebraic set (examples: plane minus a point is not a affine algebraic set), however you can have it isomorphic to an algebraic set embedded in A^{r+1}(k). This is important: assume that Y is the set defined by vanishing of a single function f. So you can get the affine ring A(X - Y) and A(X), we can invert f by adjoining multiplicative inverses. This localisation gives is an algebraic thing like of the germ of X at p, the local ring of X at p.
+
 Representable nature of limits / colimits: for functor diagram F: J -> C, there is natural isomorphism between C(X, lim_J F) and lim_J C(X, F-). Similarly, there is natural isomorphism for C(colim_J F, X) to lim_J^op C(F-, X). Note, be careful, the diagram is for the opposite category.
 
 Reflective subcategory: consider category C, pick subcategory D such that inclusion (or embedding) admits left adjoint (preserving colimits) called reflector or localisation. Mnemoic: object looks at its reflection. Example: category of compact Hausdorff spaces included into category of topological spaces. The reflector left adjoint is Stone-Cech compactificiation. Example 2: category of abelian groups admitted into category of groups, the reflector right adjoint is abelianisation. Example 3: Sheaves as subcategory of presheaves, left adjoint is sheafification. Example 4: inclusion of certain categories of general commutative rings have localisation as left adjoint to inclusion. Example 5: small categories included to the category of simplicial sets, the left adjoint sends simplicial set to its homotopy category, no good name for this.

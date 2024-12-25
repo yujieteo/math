@@ -1,5 +1,13 @@
 DAYDREAM (MATH)
 
+Laurent series versus Laurent polynomials?
+
+I do not understand Jacobson rings as a convenience definition.
+
+Fundamental finiteness principle in algebraic geometry? See pg. 71 of Eisenbud.
+
+Try to understand page 60 of Eisenbud later. Specifically, how prime ideals can be thought of more deeply.
+
 How does one generalises preserves, creates, and reflection of limits generally. See Page 90 of Emily Riehl's Category Theory in Context.
 
 Do not understand the purpose of having representable limits and colimits and their nature?
