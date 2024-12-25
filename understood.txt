@@ -167,6 +167,8 @@ Conjugacy classes, equivalence of conjugates form an equivalence class that is r
 
 Class functions: functions that are constant for members in same conjugacy classes.
 
+Character: complex valued function on the group, for vector space V as a representation of group G we have x(g) = Tr(g|v) for elements g in a group. Characters are preserved by group conjugation, we have x(g) = x(hgh^-1). Further, x(1) = dim V. Direct sums give addition of character (characters are like dimensions, so is sum of eigenvalues), tensor products give multiplication of characters (product of eigenvalues), duality of vector spaces gives conjugation of characters (eigenvalues are n-th roots of unity, n the order of the element g), exterior powers of characters i.e. x_(Ext^2 V)(g) = 0.5(x_V(g)^2 - x_V(g^2)) (given by sum of products of eigenvalues apply binomial theorem), symmetric powers of characters, the x_(Sym^2 V)(g) = 0.5(x_V(g)^2 + x_V(g^2)) from comptability of symmetric power and exterior power decomposition of the tensor product.
+
 Residue field of local ring: local ring has one maximal ideal, so the residue field is unique for a local ring.
 
 Residue field: quotient ring of a commutative ring and a maximal ideal.
@@ -777,9 +779,13 @@ Jaffard domain: Krull dimension of the ring of polynomials, is the Krull dimensi
 
 Lie group and Lie algebra correspondence: isomorphic Lie algebra does not imply isomorphic Lie group (example real coordinate space, and circle group). However, requires simple connectedness. Problem is there is a hole in circle group.
 
-Schur's lemma: all ground field, irreducible representations are unique up to homomorphism, if ground field is algebraically closed endomorphisms are scalar multiples of identity operator. Endomorphism of irreducible representation, multiply by complex number?
+Schur's lemma: all ground field, irreducible representations are unique up to homomorphism, if ground field is algebraically closed endomorphisms are scalar multiples of identity operator. Endomorphism of irreducible representation, multiply by complex number? This property is also known as complete reducibility or semisimplicity. Note: over finite fields, not completely irreducible, so modular representations is very tricky.
 
-Representations: group preserving map (group homomorphism) from the group to the general linear group of vector space V which is GL(V) which is the group of automorphisms (all invertible matrices) for vector space V. The representation gives the vector space the structure of a G-module for a group G (module is like vector space for rings).
+Schur's lemma (in Fulton Harris): consider V and W irreducible representations of G, and p: V -> W is a G-module homomorphism, then either p is an isomorphism, or p = 0, and if V = W then p = e I for some complex e, and I is identity matrix. First claim, the kernel and image of the map are invariant subspaces, so p is an isomorphisms or is some vanishing map. For the second claim, since the complex numbers is algebraically closed, p as a FINITE DIMENSIONAL linear map must have an eigenvalue, so (p - eI) has nonzero kernel. By (1), (p - eI) = 0, so p = eI. Note we did use the hypothesis that V and W are finite dimensional vector spaces.
+
+Representations: group preserving map (group homomorphism) from the group to the general linear group of vector space V which is GL(V) which is the group of automorphisms (all invertible matrices) for vector space V. The representation gives the vector space the structure of a G-module for a group G (module is like vector space for rings). 
+
+Degree of a representation: the dimension of the vector space (finite for finite simple groups)
 
 Lp space: space using a power p as norm instead of typical Euclidean using p = 2
 
@@ -873,8 +879,6 @@ Freyd-Mitchell embedding: small abelian categories embeds fully and exactly into
 
 Brouwerian counterexample: statement implies principle that is non-constructive. Example: something implies Zorn's lemma
 
-Content free: statements that do not actually tell you anything new about something
-
 Extensionality axiom, sets pictured as trees have unique branches
 
 Foundation axiom, branches of sets pictured as trees cannot have infinite length
@@ -885,7 +889,7 @@ Comprehension axiom: can always find a set of also some property, fails due to R
 
 Pairing: inductively find sets of pairs of elements
 
-Choice: pick some element from sets of elements to find a new set
+Choice: pick some element from sets of elements to find a new set, this new set exists.
 
 Projective dimension of module: minimal length of projective resolution of module over a ring. Osofosky, projective dimension of modules over ring C[x,y,z] is undecidable in ZFC. 2 if continuum hypothesis holds, 3 if it fails.
 

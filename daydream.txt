@@ -1,6 +1,14 @@
 DAYDREAM (MATH)
 
+Semisimple?
+
+I do not really understand the linear algebra of eigenvalues that is behind the results for character calculations.
+
 Tail decay?
+
+Exterior powers of vector space?
+
+Symmetric powers of vector space?
 
 Characteristic fluctuation scale?
 
