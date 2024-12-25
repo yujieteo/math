@@ -1,5 +1,17 @@
 DAYDREAM (MATH)
 
+How does one generalises preserves, creates, and reflection of limits generally. See Page 90 of Emily Riehl's Category Theory in Context.
+
+Do not understand the purpose of having representable limits and colimits and their nature?
+
+What are the reflective subcategories involved in localisation of commutative rings?
+
+2 of 6 properties of composable triple of arrows? How does one understands this definition? For the class of weak equivalences.
+
+Localisation functor? Why is it called that? See Gabriel and Zisman's construction of this.
+
+Splitting an idempotent?
+
 Semisimple?
 
 I do not really understand the linear algebra of eigenvalues that is behind the results for character calculations.

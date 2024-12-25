@@ -1,5 +1,29 @@
 UNDERSTOOD (MATH)
 
+Representable nature of limits / colimits: for functor diagram F: J -> C, there is natural isomorphism between C(X, lim_J F) and lim_J C(X, F-). Similarly, there is natural isomorphism for C(colim_J F, X) to lim_J^op C(F-, X). Note, be careful, the diagram is for the opposite category.
+
+Reflective subcategory: consider category C, pick subcategory D such that inclusion (or embedding) admits left adjoint (preserving colimits) called reflector or localisation. Mnemoic: object looks at its reflection. Example: category of compact Hausdorff spaces included into category of topological spaces. The reflector left adjoint is Stone-Cech compactificiation. Example 2: category of abelian groups admitted into category of groups, the reflector right adjoint is abelianisation. Example 3: Sheaves as subcategory of presheaves, left adjoint is sheafification. Example 4: inclusion of certain categories of general commutative rings have localisation as left adjoint to inclusion. Example 5: small categories included to the category of simplicial sets, the left adjoint sends simplicial set to its homotopy category, no good name for this.
+
+Reflection of isomorphisms: consider a full and faithful functor F from category C to category D, if Ff is isomorphism in cat D, f is morphism in C, then f is isomorphism in C. 
+
+Creation of isomorphisms: consider a full and faithful functor F from category C to category D, if Fx is isomorphic to Fy in cat D, and x and y are objects in category C, then x and y are isomorphic in C.
+
+Full functor: consider category C and category D with functor F : C -> D, if C(x,y) -> D(Fx, Fy) is surjective, this is full for each x, y in C.
+
+Faithful functor: consider category C and category D with functor F : C -> D, if C(x,y) -> D(Fx, Fy) is injective, this is faithful for each x, y in C.
+
+Essentially surjective on objects: if for object d in category D, there exists Fc for object in c and functor F that Fc is isomorphic to d, then the functor F is essential surjective.
+
+Homotopical category: category is equipped with a class of weak equivalence.
+
+Homotopical functor: functor is homotopical if it preserves weak equivalence.
+
+Universal property of homotopy category: homotopical category C has a homotopy category HoC, universal property, initial among categories equipped with homotopical category C -> E, that is a functor that sends weak equivalence in C to isomorphisms.
+
+Localisation functor: universal functor from HoC -> E. Precomposition with localisation functors induces bijection between HoC -> E and C -> E. 
+
+Finiteness of commutative diagram: a diagram is finite if it is indexing category contains only finitely many morphisms.
+
 Binomial theorem as convex combination: seems to be a generalisation of convex combination coefficients with NCj p^j (1-p)^(N-j), for j = 2 it is just p and (1-p), standard convex combination.
 
 Temperature in stastistical mechanics: degree ot stochasticity in the system. See Sornette for better explanation. See also inverse temperature as measure of disorder or something.
@@ -899,7 +923,9 @@ Whitehead problem: 0 to Z to B to A to 0 is spit short exact sequence. Equivalen
 
 Split exact sequence: short exact sequence built in the simplest possible way (quotients)
 
-Lex: left exact
+Lex: left exact, preserving FINITE colimits. So it is weaker than left adjoints.
+
+Rex: right exact, preserving FINITE limits. So it is weaker than right adjoint.
 
 Solvability: permutations of roots preserving algebraic relations can be used to determine solvability by radicals.
 
@@ -1081,7 +1107,7 @@ Brown representability: all cohomology theories can be represented by spectra, n
 
 Wedge sum, glue together pointed spaces at the point.
 
-Cayley's Theorem, one of my favourites because once you understand Cayley's Theorem, you understand Yoneda embedding and Yoneda's lemma. Note: not trivial, requires key step. Consider underlying element of group x, mapping to left action gx. IMPORTANT: groups are closed, so this is bijection, since this is a bijection on the same set, it is a permutation, so groups must be isomorphic to permutation groups (or subgroups of symmetric groups) under composition of permutations. Yoneda's: considering homset(b, a) mapping to natural transformations nat(hom(a, -), hom(b, -)). This must be an isomorphism, since compositions of morphisms are morphisms. Therefore, define this as an Yoneda embedding (if on sets), and all small categories are embed into the category of functors of defined on that categories, which are represented by pre-sheaves or representable functors.
+Cayley's Theorem, one of my favourites because once you understand Cayley's Theorem, you understand Yoneda embedding and Yoneda's lemma. Note: not trivial, requires key step. Consider underlying element of group x, mapping to left action gx. IMPORTANT: groups are closed, so this is bijection, since this is a bijection on the same set, it is a permutation, so groups must be isomorphic to permutation groups (or subgroups of symmetric groups) under composition of permutations. Yoneda's: considering homset(b, a) mapping to natural transformations nat(hom(a, -), hom(b, -)). This must be an isomorphism, since compositions of morphisms are morphisms (we used the assumption of a locally small category here, this is large enough to only form a set). Therefore, define this as an Yoneda embedding (if on sets), and all small categories are embed into the category of functors of defined on that categories, which are represented by pre-sheaves or representable functors.
 
 Groups as symmetries of something given by Cayley theorem, closure of left action is key step.
 
