@@ -2,17 +2,15 @@ DAYDREAM (MATH)
 
 Do not understand the purpose of the Kolmogorov consistency theorem? The proof also relies axiom of choice? https://fabricebaudoin.blog/2012/03/25/lecture-5-the-daniell-kolmogorov-existence-theorem/
 
-How does Varadhan construct a counterexample for moments not determining the function.
+How does Varadhan construct a counterexample for moments not determining the function?
 
-Maschke's theorem proof?
+Maschke's theorem proof in groups and in modules and in category theory?
 
 Subspace interaction theorem proof? What is it used for?
 
 What is the difference between Karmarkar's method and the simplex method? Why is it better?
 
 Rayleigh quotient how it works?
-
-Are there different names for the nullity associated with the right null space (n - r) or number of rows - rank of matrix, and the nullity associated with the left null space (m - r) or the number of column - rank of the matrix.
 
 Do not understand spanning trees from linear algebra.
 
@@ -83,8 +81,6 @@ What are the reflective subcategories involved in localisation of commutative ri
 Localisation functor? Why is it called that? See Gabriel and Zisman's construction of this.
 
 Splitting an idempotent?
-
-Semisimple?
 
 I do not really understand the linear algebra of eigenvalues that is behind the results for character calculations.
 
