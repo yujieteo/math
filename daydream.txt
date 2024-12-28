@@ -1,8 +1,12 @@
 DAYDREAM (MATH)
 
+All norms are equivalent in finite dimensional vector space. This is not really intuitive, and there are a lot of details in the proof.
+
+Don't understand the intuition the contraction mapping theorem and why is it important.
+
 Need a clearer proof that L^infty(K) is not separable. Need a clear proof that L^p(K) is separable.
 
-Need a clearer proof that K^d is complete.
+Need a clearer (more concise) proof that K^d is complete. L^p spaces are complete. c0(K) is complete.
 
 Do not fully understand the proof of supremum norm as norm, especially the step.
 

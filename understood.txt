@@ -1,10 +1,28 @@
 UNDERSTOOD (MATH)
 
+Finite dimensional normed vector space is complete: isometrically isomorphic to K^n with l^2 norm, so it must be complete.
+
+Compactness of subsets of finite dimensional normed vector space is equivalent to closed and boundedness: forward: closure and boundedness is preserved under equivalent norms, identity map on equivalent norms is continuous, so it is really just a statement on how closure and boundedness is equivalent to compactness in topology.
+
+All norms are equivalent on finite dimensional vector space: harder than K^n since you need to construct a norm on V. First construct Euclidean norm on components of the basis of V, then apply that K^n with l^2 norm is isometrically isomorphic to this norm. So it is sufficient to prove norms being equivalent on K^n since equivalence of norms is equivalence relation. Now use the tirangle inequality and the Cauchy-Schwarz inequality (see Robinson) to show norm(x) <= C norm_E(x) and some details attaining lower bound, considering unit spherical shell in K^n as closed and bounded subset of K^n and is compact to show norm(x) >= alpha norm_E(x). It just seems like there are a lot of details for this proof, hard to keep it in your head.
+
+Contraction mapping theorem (Banach fixed point theorem): suppose non-empty CLOSED subset K of a completed normed space X with norm norm(x), let f: K -> K be a contraction a endomorphism which norm(f(x) - f(y)) <= k norm((x - y)), for k < 1, then f has a fixed point in the subset k, there exist a unique point where f(x) = x. NOTE: for k <= 1, you need compactness of K. Proof involves constructing a Cauchy sequence bounded by repeatedly using this inequality on terms of the convergent subsequence, then use X being Banach space, K closed, so this limit must be in this set K. Note that such a contraction is CONTINOUS by definition (preimage of opens is in K), we have that function of convergent f(x_n) -> f(x) this is nice since function is continuous, you have the limit of this subsequence x to be equal to f(x) of the contraction, so this is a fixed point. Uniqueness follows by considering norms norm(x - y) = norm(f(x) - f(y)) <= (k) norm(x - y). So we have (1 - k) norm(x - y) = 0 using the fact that k is less than 1, and norm(x - y) is nonnegative. Therefore, x = y.
+
+Fixed point under function: x = f(x) after action of the function.
+
+Contraction mapping: endomorphism on non-empty closed subset K such that distance between f(x) and f(y) in this set K is bounded by a scalar multiple k * distance between x and y, where k is in closed unit interval from 0 to 1 in reals. Note, this works since when define norms it is output on the half open positive ray [0, infinity).
+
+Convergent series of norms of Banach spaces implies sequence converges in the Banach space: let X be such that Banach space, key step is to show that partial sums form a Cauchy sequence using the triangle inequality repeatedly, since the Banach space is complete. Sequence convergent.
+
+Space is normed space where series of norms if finite AND the sum of components converges in the space so the space must be Banach space: two key steps, equivalently show some subsequence converges to y (this needs to be shown separately), next key step is to think that each term is bounded by 2^(-k) carefully using (y_i) is Cauchy so that the full norm is bounded by 1, then replace this with x_j which is some difference, this shows that series of norms is finite, so series of x_j converges to some y in X, then define y_1 + series of differences equal to y_n_j to show this converges to y, so X is complete and y_k converges to y.
+
+Product of Banach spaces is Banach space for Manhattan form and Eculidean norm: proof: step 1 Cauchy sequence, show that p-norms are bounded by epsilon gap using Cauchy sequences in X and Y. Then take difference between norm of convergence of sequences with their converged limit in each component versus that of the pair. Therefore product of components converge to their pair of points, so the product space is alsi complete.
+
 Cauchy seqeuence: sequence that convergeces in metric space i.le. for every nonzero gap epsilon, there exists an integer lower bound N such that d(x_n, x_m) is bounded by (less than) the gap epsilon for all _n and _m more than this lower bound N. Apply triangle inequality, so this definition makes sense when we are careful to use half of the nonzero gap epsilon, which is epsilon/2.
 
 Complete metric space: a space where every Cauchy sequence converges.
 
-Banach space: normed complete metric spaces. The reals and the complexes are completes. This carries over to powers of reals and complexes with standard norms.
+Banach space: normed complete metric spaces. The reals and the complexes are completes. This carries over to powers of reals and complexes with standard norms. Examples: space of l^p sequences l^p(K), c0(K), l^\infty(K), space C^1([a,b]) is complete on closed intervals.
 
 Linear closed subspaces of Banach spaces are Banach spaces: proof key step, forward just apply thae fact that it is Cauchy in Y and then it is Cauchy in X, the limit must be in Y since Y is closed. For reverse, if Y is complete then a must be in X, and Cauchy sequences converge in Y, so Y must be closed.
 
@@ -56,7 +74,7 @@ Example of valuation as p-adic: suppose v is valuation in field K to linearly or
 
 Ultrametric norm: useful since it looks like p-infity norm, it is a group homomorphism f(x+y) is less than or equal to the max(f(x),f(y)). It refers to the difference between the sup/max norm to this.
 
-Normed space: vector space with norm.
+Normed space: vector space with norm. This has a notion of convergence, and linear structures, so series make sense.
 
 Normed space are metric spaces: endow with taxicab distance d(x,y) = norm(x-y), pick whatever norm you want.
 
