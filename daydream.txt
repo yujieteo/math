@@ -1,5 +1,7 @@
 DAYDREAM (MATH)
 
+Subspace interaction theorem proof? What is it used for?
+
 What is the difference between Karmarkar's method and the simplex method? Why is it better?
 
 Rayleigh quotient how it works?
@@ -9,6 +11,10 @@ Are there different names for the nullity associated with the right null space (
 Do not understand spanning trees from linear algebra.
 
 Gram-Schmidt process? 
+
+Is there some sort of representation theory going on when one decomposes it into the Sym and Alt for matrices.
+
+Motivation of echelon matrices?
 
 Why do matrix exponentials converge? Something to do with completeness of spaces?
 

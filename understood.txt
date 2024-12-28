@@ -1,6 +1,18 @@
 UNDERSTOOD (MATH)
 
-Hermitian matrix: matrix that is equal to their conjugate transpose. A Hermitian matrix or a symmetric matrix to a real number sort of like how unitary or orthogonal matrix is like a number on a unit circle. Hermitian matrices are nice because there is a spectral decomposition of A = sum of e_i P_i, where e_i is the eigenvalue, and P_i is the projection onto the eigenspace for e_i.
+Subspace: subset of the vector space that itself is a vector space of the field. Proper if not equal to the full vector space. A subspace S is said to span vector space V if span S = V.
+
+Sum of two subspaces: S_1 + S_2 can be expressed as the span of the union of S_1 and S_2. If the subspaces are disjoint, this is defined as direct sum.
+
+Hermitian matrix: matrix that is equal to their conjugate transpose. A Hermitian matrix or a symmetric matrix to a real number sort of like how unitary or orthogonal matrix is like a number on a unit circle. Hermitian matrices are nice because there is a spectral decomposition of A = sum of e_i P_i, where e_i is the eigenvalue, and P_i is the projection onto the eigenspace for e_i. Majorization is an important part of studying hermitian matrices.
+
+Orthogonal matrix: product of matrix and matrix transpose is the identity matrix.
+
+Essentially Hermitian: exp(i theta) A is Hermitian.
+
+Toeplitz decomposition to symmetric and skew symmetric: matrices can be decomposed uniquely to the sum of a symmetric matrix S(A) and a skew-symmetric matrix C(A). S(A) = (A + A^T)/2, C(A) = (A - A^T)/2. This is studied in representation theory. Similarly for Hermitian and Skew-Hermitian that is given this canonical name.
+
+Isotropic vectors: x^T x = 0 example [1 i]^T is a nonzero isotropic vector in C^2. There are no nonzero isotropic vectors in the reals.
 
 Skew-Hermitian: matrix equal to the negative of its conjugate transpose.
 
@@ -20,7 +32,15 @@ Differentiation in linear algebra: it is a linear operation, null space is one d
 
 Integration in linear algebra: there is no null space except for zero vector, integration does not produce all polynomials in P_{n + 1}.
 
-Incidence matrices: every entry is 1, -1 or 0.
+Incidence matrices: every entry is 1, -1 or 0. This is meant to represent a graph.
+
+Matrix: m rows, n columns. Representation of a linear transformation, so stuff like domain, range / row space of matrix and (right) null space of a matrix are valid notions. Domain is always a vector space or subspace, than the range or row space is set of y such that y = Ax, null space is the set of x such that Ax = 0.
+
+Square matrix: m rows, n columns, m = n.
+
+Submatrix: some rectangular array lying in the entries of the matrix to be formed as am matrix.
+
+Linearly dependent: valid for only a finite list of vectors if there exists scalars in scalar field such that the sum of a_i v_i = 0. Or nontrivial linear combination gives zero vector. This happens when one vector is a linear combination of the others (hint: you can consider inverse). Two vectors are linear dependent is logically equivalent to saying one vector is a scalar multiple of another. For infinitely many vectors, you simply need some sub-list of vectors to be linearly dependent.
 
 Incidence matrices in the fundamental subspaces: null space is dimension 1, column space gives r = n - 1, any n - 1 columns are independent or give sufficient information on the matrix and all vectors in the column space have y^T b = 0, or all potential differences add to zero around all loops, row space is r = n - 1 and every vector in the row space add to zero this is the current laws, independent rows from spanning trees, left null space is dimension m - r or m - n + 1, contained by the current loops. This gives Euler's formula from the four fundamental spaces.
 
@@ -40,9 +60,9 @@ Null space: consist of all vector x such that Ax = 0. It is a subspace of R^n. C
 
 Row space: column space of the transpose of A.
 
-Left null space: null space of the transpose of A. It is the number of columns = m, so it is m - r.
+Left null space: null space of the transpose of A. It is the number of columns = m, so it is m - r, where r is the rank of the matrix.
 
-Echelon form, U:  it is a staircase pattern, upper triangular, zeroes below the pivots.
+Echelon form, U: it is a staircase pattern, upper triangular, zeroes below the pivots.
 
 Reduced row echelon form, R: Make all the pivots 1, use the pivot row to produce zero above the pivot, apply this to an echelon matrix, so this is the reduced row echelon form. 
 
@@ -50,7 +70,7 @@ Gaussian elimination: PA = LU, you permute the matrix A, then decompose them int
 
 Inverse matrix: matrix such that A * A^(-1) gives the identity matrix. NOTE, not all matrices are invertible. If Ax = 0, and x is nonzero, then an inverse is zero. No matrix can multiply the zero vector and get back a nonzero vector. The rank is s large as possible so that the inverse exists.
 
-Symmetric matrix: matrix that is equal to its own transpose.
+Symmetric matrix: matrix that is equal to its own transpose. See Hermitian matrices.
 
 Sparse matrix intuition: sparse matrices tend to have far fewer than n^2 pieces of information, so there should be ways to speed up matrix multiplication.
 
@@ -62,7 +82,7 @@ Frobenius matrix: represent Gaussian transformation for Gaussian elimination, al
 
 Orthogonality of fundamental subspace: row space is orthogonal to (right) null space, column space is orthogonal to left null space.
 
-Dimension formulas for fundamental subspaces: dim(row space) + dim(right null space) = number of columns. We have dim(column space) + dim(left null space) = number of rows.
+Rank nullity theorem: dim(row space) + dim(right null space) = number of columns. We have dim(column space) + dim(left null space) = number of rows. Dim of row space is designated as a rank of the matrix, the dim of the right null space is designated as the nullity of a matrix.
 
 Orthogonal complement: subspace V, then it is the space of all vectors orthogonal to V.
 
@@ -76,7 +96,7 @@ Inner product in matrices: row vector * column vector. NOTE: non-commutative. No
 
 Elementary matrix, square matrix obtained by doing elementary row and column operation. These are row switching, row multiplication and row addition. These generate the general linear group GL_n(F), F is field.
 
-Identity matrix: 1s on the diagonal, 0s everywhere else. It can be thought as the matrix that gives an idempotent action (matrix multiplication) on every other matrix. 
+Identity matrix: 1s on the diagonal, 0s everywhere else. It can be thought as the matrix that gives an idempotent action (matrix multiplication) on every other matrix. It is the multiplicative identity of the matrices as the group of linear transformations.
 
 Upper triangular: all entries below diagonal is zero.
 
@@ -86,7 +106,15 @@ Column picture: combination of columns.
 
 LU factorisation: factorising a matrix to a left bottom triangular matrix and a right upper triangular matrix. I like the word factorisation instead of decomposition.
 
-Basis of vector space: linearly independent vectors that span the space. Maximal independent set, minimal spanning set.
+Basis of vector space: linearly independent vectors that span the space. Maximal independent set, minimal spanning set. Each element of a vector space can be represented as a linear combination of basis vectors in uniquely. No list (still within vector space V) containing the basis is linear independent. Any linearly independent list of vectors may be extended non-uniquely to a basis. A basis need not be finite: examples infinite list of monomials, 1, t, t^2, ...
+
+Standard basis: consider matrix, each element has 1 in its i-th entry.
+
+Subspace intersection theorem: dim(S_1 intersect S_2) + dim(S_1 + S_2) = dim S_1 + dim S_2.
+
+Zero matrix: matrix with all zeroes, it is the additive identity.
+
+Dimension of vector space: positive integer n such that the basis of vector space contains exactly n vectors. If this exists, V is finite dimensional vector space, otherwise it is infinitely dimensional. In infinite dimensional vector space, we have a one-to-one correspondence between elements of any two basis (bijection in the style of Cantor).
 
 Vectors are classified up to its dimension: suppose these are the row vectors of the basis W is not equal in number to row vectors form a basis V (dimensions are different) where W is a n by 1 matrix, then V is a m by 1 matrix where n is more than m, take linear combinations of w with v vectors. you get W = VA, but A must be size m by n which is not square. There is a nonzero matrix Ax = 0, VAx = 0, so Wx = 0, therefore W is not a basis, contradiction. So n and m must be equal.
 
@@ -127,6 +155,8 @@ Linear subspaces of normed spaces need not be closed: this is easy, take unit ba
 Equivalent norms preserve convergence and continuity: for convergence consider c1 norm1(x_n - x) <= norm2(x_n -x) <= c2 norm1(x_n - x). Convergence to zero for norm 1 is equivalent to convergence to zero for norm 2. Compactness is defined by open covers, so equivalence under scalar multiplication means that equivalence of norms preserve compactness.
 
 Isomorphism of normed spaces: if we have a map from normed space X to normed space Y that is a bijection under sets, linear preserving vector space (so this is a matrix) and makes it such that c1 normX(x) <= normY(Tx) <= c2 normX(x) i.e. the map Tx makes norms X and norm Y equivalent, then this is an isomorphism of normed spaces. Linear maps that are bijections are requirement for isomorphism of vector spaces, so this third property gives it an equivalence of norms. Normed spaces are isomorphic if we have this isomorphism. Intuitively, it is an isomorphism of vector spaces + equivalence of norms.
+
+Isomorphism of vector space: invertible function f from vector space U to vector space V such that f(ax + by) = a f(x) + b f(y) for all x and y in U and a, and b in field F.
 
 C^n is isometrically isomorphic to R^2n: use map (x1, y1, x2, y2, ... xn, yn), z_i = x_i + y_i as the isometric isomorphism.
 
@@ -729,7 +759,7 @@ Coproduction: generated by left inverse and right inverse, co-product of space, 
 
 Surjective: a function is surjective if all fibres of are inhibited, there exists over the codomain space B there must be an induced element over the domain space A such that we have f(a) = b and these two are inhibited.
 
-Interesting, connectedness means that the unique function from a space A to the 1-type space 1 for all dimensions, fibres of maps are contractible. Every function is (-2) connected, up to level of propositions. (-1)-connectedness means surjectivity. This generalised higher level subjectivity. 0-connected is connected, 1-connected is simply connected. This gives the generalisation of connectivity in terms of dimension.
+Connectedness of propositional-types: means that the unique function from a space A to the 1-type space 1 for all dimensions, fibres of maps are contractible. Every function is (-2) connected, up to level of propositions. (-1)-connectedness means surjectivity. This generalised higher level subjectivity. 0-connected is connected, 1-connected is simply connected. This gives the generalisation of connectivity in terms of dimension.
 
 Contractible maps: a map is contractible if it is contractible over all the fibres of a point in the total space.
 
@@ -871,6 +901,12 @@ Characteristic equation: take the determinant map (lambda I - A) x = 0, there is
 
 Sum of roots and product of roots as trace and determinant. For a 2x2 matrix, trace and determinant has something to do with sum of roots, product of roots; We have x^2 - tx + d, -t is trace, d is determinant.
 
+Trace of matrix: sum of main diagonal entries.
+
+Trace of product of matrix and conjugate transpose: sum of square of diagonal entries.
+
+Multiplication of matrices by left: in matrix AB, left multiplication by A multiplies columns of B, right multiplication of B multiplies rows of A.
+
 Determinant: test for invertibility if determinant is nonzero it is invertible so used to define the general linear group, volume of box in n-dimensional space, used to define special linear group of unit volume. Determinant is product of pivots / eigenvalues.
 
 Diagonalisation failure: if we have repeated eigenvalues, these are like singularities or nilpotents. That is the only iconnection between diagonalisability with independent eigenvectors and invertibility with nonzero eigenvalues. Zero is like an absorbing element.
@@ -881,7 +917,7 @@ Stability: matrix exponential tends towards zero, real part of eigenvalues are l
 
 Jacobian determinant: stretching matrix of the volume.
 
-Noraml matrices: commutes with conjugate transpose.
+Normal matrices: commutes with conjugate transpose.
 
 Similarity: B is similar to A if there exists nonsingular S such that B = S^-1 A S.
 
@@ -899,7 +935,9 @@ Unitary similarity is equivalence relation: proof is easy, identity matrix, inve
 
 Schur form: proof: start with orthonormal basis matrices A = [Z1 Z2] \* A [Z1 Z2] which gives [lambda I, A12, 0, A22]. The lambda I, 0 is due to the properties of the orthonormal basis matrices being unitary, don’t care about A12, but A22 is not upper triangular! Iterate. Finite dim vector space have integer dimension n, iteration at most n steps, therefore any square matrix in complex numbers is unitary similar to upper triangular matrix.
 
-A unitary matrix is a matrix whose inverse is equal to its conjugate transpose. The product of a matrix with its inverse gives the identity matrix. A conjugate transpose of a matrix swaps the rows and columns and computes its complex conjugate component wise.
+Unitary matrix: is a matrix whose inverse is equal to its conjugate transpose. The product of a matrix with its inverse gives the identity matrix. 
+
+Conjugate transpose of a matrix: swaps the rows and columns and computes its complex conjugate component wise. It is quite special, so people call it adjoint or Hermitian adjoint, however these are superseded in modern algebra.
 
 A square complex matrix A in the set of n by n matrices M_n of complex entries have eigenvalues \lambda_1, ... \lambda_n in any order. Let x in the complex n-space C^n be a unit vector such that Ax = \lambda_1 x.
 
@@ -1405,7 +1443,7 @@ Function type is analogous to Cartesian product since both can used as primitive
 
 Spectrum: representation of cohomology by Brown representability theorem
 
-Fields: every element is invertible, every module (vector space) over fields are free or have basis (need Zorn's)
+Fields: every element is invertible, every module (vector space) over fields are free or have basis (need Zorn's). For matrix analysis, the main definition is that it be closed under "addition" and "multiplication".
 
 Smash product generalised tensor product which is a product that is bilinear since a ring is a monoid with tensor product of abelian groups. Tensor product corresponds to Tor.
 
