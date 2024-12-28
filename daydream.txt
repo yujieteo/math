@@ -1,5 +1,9 @@
 DAYDREAM (MATH)
 
+What is lambda in the definition of convex combination. What is a good name?
+
+How do you get Lebesgue decomposition theorem to get the Radon-Nikodym derivative? When do you notice something is combined. Why do you need all decomposition theorems to get what you want?
+
 Laurent series versus Laurent polynomials?
 
 I do not understand Jacobson rings as a convenience definition.

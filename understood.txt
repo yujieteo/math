@@ -1,5 +1,25 @@
 UNDERSTOOD (MATH)
 
+Norms: map from vector space X to positive half open ray [0, infinity), that is zero at zero (note: nonnegative implicit in valid range), has scalar multiplication, and obeys the triangle inequality. This feels very similar to random variables actually, maps from outcome space to closed interval. Need this to define open and closed balls.
+
+Normed space: vector space with norm.
+
+Normed space are metric spaces: endow with taxicab distance d(x,y) = norm(x-y), pick whatever norm you want.
+
+Open ball: set of all points where norm is strictly less than the radius. This work because norms are maps to positive half open rays, so the radius makes sense. For closed balls, change to not strictly less than the radius.
+
+Convex subset: line segment joining two points lie within the set. Points can be as general as you want. Example, let e be the coefficient, we have ex + (1-e)y, or if we have functions we have f(ex + (1-e)y) <= e f(x) + (1 - e)f(y), where e is in open unit interval. You use an inequality here (Jensen's) to get a weaker version of homomorphism of convex functions. I realise you can have an inequality to form a weaker version of homomorphisms (I also realised homomorphism is a lot like linearity i.e. f(xy) = f(x) f(y)).
+
+Constructing norms from bounded convex symmetric set: suppose N is zero on zero, has scalar multiplication. If the set where N applies such that N(x) is convex. Key step for proof: (N[x] / N[x] + N[y])(x / N[x]) + (N(y) / N[x] + N[y])(y / N[y]). The triangle inequality in N(x+y)/(N(x) + N(y)).
+
+Lp norm: take sum of p power components modulus, then take 1/p power of the sum. L2 norm in Euclidean norm. Linfty is amx of components. Proof, key step is Lp norm is obviously norm, since L1 is Manhattan distance, trivially obeying triangle inequality, Linfty is a max norm, looks like a square. The function deforming L1 square to Linfty square preserves convexity of the set. You will need to show this in calculation.
+
+Triangle inequality: I realise this is the whole basis of analysis, this is the weaker version of homomorphism, group law is addition. Example: f(x + y) <= f(x) + f(y), f is the NORM, + is the group law. If you have scalar multiple, this is just Jensen's inequality.
+
+Max norm proofs: it always looks like this: step 1, norm is max norm, step 2: apply triangle inequality for norms within the max, step 3, decompose the max, step 4: redefine max to be the norm. State the max, split the inner norm, split the max, redefine max as norm again.
+
+Lp norm: nonnegativity obvious.
+ 
 Jacobson ring: used to describe the Nullstellensatz, a Jacobson ring is every prime ideal of the commutative ring R is inthe intersection of maximal ideals. See pg. 132 of Eisenbud.
 
 Points near p in set X: Illustration in Eisenbud. Consider Y is algebraic subset of X not containing P, consider X - Y, this is not an affine algebraic set (examples: plane minus a point is not a affine algebraic set), however you can have it isomorphic to an algebraic set embedded in A^{r+1}(k). This is important: assume that Y is the set defined by vanishing of a single function f. So you can get the affine ring A(X - Y) and A(X), we can invert f by adjoining multiplicative inverses. This localisation gives is an algebraic thing like of the germ of X at p, the local ring of X at p.
@@ -273,7 +293,7 @@ Max. differential entropy under average power constraint: achieved when X is nor
 
 Power constraint of Gaussian channel: block length n then expected sum of square of random variables E(sum Xi^2) / n is less than or equal to P. Note that this is very similar to a kinetic energy term, dividing by n gives some sort of power since alphabet n is index of sequence, alphabet, or support. Hence the name, power constraint for a Gaussian channel. This is 0.5 log (2 pi e sigma^2), start with KL-divergence differential entropy D(f || phi) definition, get -h(X) and expectation of log(1/phi X), where phi X = e^{-X^2/2}/root(2 pi). This will give -h(X) + 0.5 log 2 pi + 0.5 log E(X^2) <= 0 for no KL divergence giving the constraint.
 
-Capacity of Gaussian channel under power constraint: by power constraint of differential entropy, we have 0.5 log (2 pi e(P + sigma^2))- 0.5 log (2 pi e sigma^2)) as the mutual information from h(Xg + Z) - h(Z) where Z is H(Y|X) for channel Y output Yi = Xi + Zi for input X, Zi independent of X. The subtraction of log simplifies to a quotient 0.5 log(1 + P^2/sigma^2).
+Capacity of Gaussian channel under power constraint: by power constraint of differential entropy, we have 0.5 log (2 pi e(P + sigma^2))- 0.5 log (2 pi e sigma^2) as the mutual information from h(Xg + Z) - h(Z) where Z is H(Y|X) for channel Y output Yi = Xi + Zi for input X, Zi independent of X. The subtraction of log simplifies to a quotient 0.5 log(1 + P^2/sigma^2).
 
 Turing machine: finite control and single tape and pointer with symbols 0,1,B, B for blank
 
@@ -349,8 +369,10 @@ Log sum inequality: Jensen's using finite summations, only for non-negative ineq
 
 Relative entropy: sum of product between probability and log of prob. distribution ratio. Also, the expectation of the log of distribution ratio with respect to p(x)
 
-Jensen's inequality: for convex f, expectation of payoff is more than payoff of expected frequency. Payoff space is better than probability space. Trick: use - concave to get convex. Proof sketch: draw slant line passing through y = x^2.
+Jensen's inequality: for convex f, expectation of payoff is more than payoff of expected frequency. Payoff space is better than probability space. Trick: use - concave to get convex. Proof sketch: draw slant line passing through y = x^2. Recall, convexity is lines segment lieing within the set. See triangle inequality, and see convexity as some geometric stuff. We have f(tx + (1-t)y) <= t f(x) + (1-t) f(y).
 
+Jensen's gap: difference between the decomposed convex combination and the composed convex combination.
+ 
 Information inequality: joint entropy (KL divergence) is nonnegative. Similarly, mutual information is nonnegative.
 
 Zero joint entropy: occurs when distributions are the same.
@@ -959,7 +981,7 @@ Constructing Tor: (1) take free or projective resolution of a sequence of abelia
 
 Probability laws are natural transformations from random variable functor to measurable functor.
 
-Random variables are Set endofunctors A^{omega}.
+Random variable: are Set endofunctors A^{omega}. Measurable function from sample space to measurable space. Motivation: you want a different measures.
 
 Locally ringed space is topological space by some stalk. Ringed space such that all presheafs are local rings i.e. colimits of global section functors of opens. By Gelfand duality, this corresponds to maximal ideals.
 
