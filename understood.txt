@@ -116,6 +116,8 @@ Zero matrix: matrix with all zeroes, it is the additive identity.
 
 Dimension of vector space: positive integer n such that the basis of vector space contains exactly n vectors. If this exists, V is finite dimensional vector space, otherwise it is infinitely dimensional. In infinite dimensional vector space, we have a one-to-one correspondence between elements of any two basis (bijection in the style of Cantor).
 
+Maschke's theorem: generalisation of the theorem that vector spaces are classified by dimension.
+
 Vectors are classified up to its dimension: suppose these are the row vectors of the basis W is not equal in number to row vectors form a basis V (dimensions are different) where W is a n by 1 matrix, then V is a m by 1 matrix where n is more than m, take linear combinations of w with v vectors. you get W = VA, but A must be size m by n which is not square. There is a nonzero matrix Ax = 0, VAx = 0, so Wx = 0, therefore W is not a basis, contradiction. So n and m must be equal.
 
 Finite dimensional normed vector space is complete: isometrically isomorphic to K^n with l^2 norm, so it must be complete.
@@ -1043,7 +1045,7 @@ Lie group and Lie algebra correspondence: isomorphic Lie algebra does not imply 
 
 Schur's lemma: all ground field, irreducible representations are unique up to homomorphism, if ground field is algebraically closed endomorphisms are scalar multiples of identity operator. Endomorphism of irreducible representation, multiply by complex number? This property is also known as complete reducibility or semisimplicity. Note: over finite fields, not completely irreducible, so modular representations is very tricky.
 
-Schur's lemma (in Fulton Harris): consider V and W irreducible representations of G, and p: V -> W is a G-module homomorphism, then either p is an isomorphism, or p = 0, and if V = W then p = e I for some complex e, and I is identity matrix. First claim, the kernel and image of the map are invariant subspaces, so p is an isomorphisms or is some vanishing map. For the second claim, since the complex numbers is algebraically closed, p as a FINITE DIMENSIONAL linear map must have an eigenvalue, so (p - eI) has nonzero kernel. By (1), (p - eI) = 0, so p = eI. Note we did use the hypothesis that V and W are finite dimensional vector spaces.
+Schur's lemma (in Fulton Harris): consider V and W irreducible representations of G, and p: V -> W is a G-module homomorphism, then either p is an isomorphism, or p = 0, and if V = W then p = e I for some complex e, and I is identity matrix. First claim, the kernel and image of the map are invariant subspaces, so p is an isomorphisms or is some vanishing map. For the second claim, since the complex numbers is algebraically closed, p as a FINITE DIMENSIONAL linear map must have an eigenvalue, so (p - eI) has nonzero kernel. By (1), (p - eI) = 0, so p = eI. Note we did use the hypothesis that V and W are finite dimensional vector spaces. Essentially, Schur's lemma states that linear transformations are represented by matrices if you restrict it to the case of the trivial group i.e. linear algebra.
 
 Representations: group preserving map (group homomorphism) from the group to the general linear group of vector space V which is GL(V) which is the group of automorphisms (all invertible matrices) for vector space V. The representation gives the vector space the structure of a G-module for a group G (module is like vector space for rings). 
 
