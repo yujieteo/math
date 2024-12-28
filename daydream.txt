@@ -4,6 +4,8 @@ Do not fully understand the proof of supremum norm as norm, especially the step.
 
 I do not fully understand Ito stuff (Ito integral, isometry, calculus) and why is it so potent.
 
+Why are finite boolean algebras isomorphic to power set algebras? What are power set algebras?
+
 Weak ergodicity? Strong ergodicity? See Weinan, Tiejun, and Vanden-Eijnden.
 
 Prove that finite fields and their extensions only have trivial norm?
