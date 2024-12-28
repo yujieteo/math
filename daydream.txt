@@ -1,5 +1,9 @@
 DAYDREAM (MATH)
 
+Need a clearer proof that L^infty(K) is not separable. Need a clear proof that L^p(K) is separable.
+
+Need a clearer proof that K^d is complete.
+
 Do not fully understand the proof of supremum norm as norm, especially the step.
 
 I do not fully understand Ito stuff (Ito integral, isometry, calculus) and why is it so potent.

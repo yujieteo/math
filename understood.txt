@@ -1,5 +1,41 @@
 UNDERSTOOD (MATH)
 
+Cauchy seqeuence: sequence that convergeces in metric space i.le. for every nonzero gap epsilon, there exists an integer lower bound N such that d(x_n, x_m) is bounded by (less than) the gap epsilon for all _n and _m more than this lower bound N. Apply triangle inequality, so this definition makes sense when we are careful to use half of the nonzero gap epsilon, which is epsilon/2.
+
+Complete metric space: a space where every Cauchy sequence converges.
+
+Banach space: normed complete metric spaces. The reals and the complexes are completes. This carries over to powers of reals and complexes with standard norms.
+
+Linear closed subspaces of Banach spaces are Banach spaces: proof key step, forward just apply thae fact that it is Cauchy in Y and then it is Cauchy in X, the limit must be in Y since Y is closed. For reverse, if Y is complete then a must be in X, and Cauchy sequences converge in Y, so Y must be closed.
+
+Banach spaces with equivalent norms must be equivalent under completeness: first spell out definition of equivalent norms, key step is to use left haft and right half of equivalence inequality properly, right half implies that Cauchy sequence (x_n) in X must be Cauchy sequence (Tx_n) in Y. Use the fact that Y is a Banach space (complete), then you can use left half to show that X is Banach space by taking preimages of the sequences and using the left half tending to zero when Y is complete. Lemma 4.5 in Robinson, just use endomorphism of maps with different norms.
+
+Completeness arguments prototype: step 1, define what it means for sequence to be Cauchy, step 2: use this definition to identify a limit, step 3, show it convergences to this limit with the appropriate norm, step 4, show this limit lies in the correct space.
+
+K^d complete with standard norm: step 1, pick l2 norm to be complete, then consider arbitray powers of n and m where |x_i^n 0 x_i^m| less than equal to bounded gap epsilon. Show that candidate l^2 norm is bounded so limit of this gap in the arbitrary case convergeces to zero., and this limit lies as an element of K^n.
+
+Linear subspaces of normed spaces need not be closed: this is easy, take unit ball, consider the sum of two identical unit vectors in the ball, it will escape.
+
+Equivalent norms preserve convergence and continuity: for convergence consider c1 norm1(x_n - x) <= norm2(x_n -x) <= c2 norm1(x_n - x). Convergence to zero for norm 1 is equivalent to convergence to zero for norm 2. Compactness is defined by open covers, so equivalence under scalar multiplication means that equivalence of norms preserve compactness.
+
+Isomorphism of normed spaces: if we have a map from normed space X to normed space Y that is a bijection under sets, linear preserving vector space (so this is a matrix) and makes it such that c1 normX(x) <= normY(Tx) <= c2 normX(x) i.e. the map Tx makes norms X and norm Y equivalent, then this is an nisomorphism of normed spaces. Linear maps that are bijections are requirement for isomorphism of vector spaces, so this third property gives it an equivalence of norms. Normed spaces are isomorphic if we have this isomorphism. Intuitively, it is an isomorphism of vector spaces + equivalence of norms.
+
+C^n is isometrically isomorphic to R^2n: use map (x1, y1, x2, y2, ... xn, yn), z_i = x_i + y_i as the isometric isomorphism.
+
+Closed linear span: set of all elements that can be approximated arbitraily closly by finite linear combinations of E, this feels like separability. We call this the clin(E), which is the closure of the span of E.
+
+Equivalence of separable, separability of unit sphere, linear space is dense: separable spaces containing countable dense subset, scale by scalar using the fact that this is a normed space, 
+
+l^infty(K) is not separable: prove using Cantor's diagonal argument using the trivial norm ||x-y|| = 1 if they differ. So any dense set A must contain uncountable number of elements.
+
+l^p(K) is separable: proof key step is to consider the difference between x and linear combination of unit vectors in e^j, then also sum of components powers by p is bounded by some epsilon^p, we used the fact that l^p is a norm here. Therefore the gap bbetween x and linear combination of unit vectors in e^j is the lp norm of components is bounded by another epsilon. See Robinson for a more explainable proof.
+
+Linear span of subset of normed space: set of all finite linear combinations of elements of the subset of normed space X
+
+Isometry: instead of enforcing equivalence of norms X and Y, we say these are equal i.e. norm_X(x) = norm_Y(Tx). Ito isometry is an example, where norms on Wiener process and on time itself are isometric in power 2.
+
+Isometrically isomorphic, replace equivalence of norms with isometry as a condition. Still must be a isomorphism of vector space.
+
 Lp norm is norm proof: nonnegativity show by contradiction: need to show converse, norm is 0 means it must be 0 function. Suppose you do have a nonzero function that gives norm zero, take some integral from 0 to 1 of the norm of the function, it is more than zero somehow (see Robinson for proof). Next step is simply to apply triangle inequality internally within on the convex combinations of the norm and show that it is less than or equal to 1 by careful integration.
 
 Map from x to norm of x is always continuous: proof is by considering triangle inequality.
