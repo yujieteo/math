@@ -1,5 +1,9 @@
 UNDERSTOOD (MATH)
 
+Characteristic function of binomial distribution: recall that the characteristic function is the expectation of exp(itx). Consider sum from 1 to N of (n!/(n-k)! k!) p^k (1 - p)^(N - k) * exp(itk) for discrete sum. Now fold it into: (n!/(n-k)! k!) (1 - p)^(N - k) * [exp(it) * p]^k and then you will get  ([1 - p] + p exp(it))^N as a decomposition of the binomial sum.
+
+Characteristic function of degenerate distribution with probability 1 at point a: this is just exp(i a t). See exercise 2.1 in Varadhan.
+
 Subspace: subset of the vector space that itself is a vector space of the field. Proper if not equal to the full vector space. A subspace S is said to span vector space V if span S = V.
 
 Sum of two subspaces: S_1 + S_2 can be expressed as the span of the union of S_1 and S_2. If the subspaces are disjoint, this is defined as direct sum.
@@ -445,7 +449,7 @@ Conditional probability: ratio of probability of A and B over probability of B. 
 
 Poisson random variable: it is like a memoryless queue, probability is (expected value ^ time)/(time factorial) * damping exp(-expected value), since the expected value being achieved means the effect of the queue is damped somehow. The mean and the variance is the expected value. Limit of Binomial process as the number of bins is infinite and the probability gets to zero, by simple substitution. Intuitively, this makes sense, you have an infinitely small time slice of something showing up in the queue to consider as a Poisson if you think of it is as Binomial. Proof, substitute np = lambda, then take k fixed, n >> k.∂
 
-Characteristic function of a random variable: expectation of the damping e^{i zeta X} or the integral of the damping e^(i zeta x) aka the Fourier transform of the probability distribution. Apply Fourier theory to probability theory.
+Characteristic function of a random variable: expectation of the damping e^{i zeta X} or the integral of the damping e^(i zeta x) aka the Fourier transform of the probability distribution. Apply Fourier theory to probability theory. There are three ways to calculate: first is using a sum or an integral, the second is to interpret it as the expectation of the e^{i zeta X}, the third is to think of it as a Fourier transform.
 
 Independent random variable: preserved under products of random variable.
 
