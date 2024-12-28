@@ -1,10 +1,100 @@
 UNDERSTOOD (MATH)
 
+Hermitian matrix: matrix that is equal to their conjugate transpose. A Hermitian matrix or a symmetric matrix to a real number sort of like how unitary or orthogonal matrix is like a number on a unit circle. Hermitian matrices are nice because there is a spectral decomposition of A = sum of e_i P_i, where e_i is the eigenvalue, and P_i is the projection onto the eigenspace for e_i.
+
+Skew-Hermitian: matrix equal to the negative of its conjugate transpose.
+
+Cyclic permutation: permutation matrix that forms a cyclic subgroup i.e. action of P^{n - 1} is idempotent or P^{n} gives identity matrix.
+
+Tests for positive definiteness of matrices: each are necessary sufficient, x^T A x > 0 for all nonzero real vectors x, all eigenvalues are positive, all upper left submatrices A_k have positive determinant, all pivots without row exchanges (i.e. like eigenvalues) are positive.
+
+Rayleigh's quotient: minimisation problem equivalent to solving (A - e I)x = 0, so we have minimise R(x) = x^T A / x^T x. 
+
+Preconditioner in numerical analysis: we have Ax_1 = b, so S is the preconditioner with many choices to classify the iterative method solver, S being diagonal part of A gives the Jacobi method, S being the triangular part of A give the Gauss-Seidel method, S being combination of triangular part and diagonal part gives successive over-relaxation.
+
+Circulant matrix: all rows are make of the same element, each row is rotated one element to the right in the relative to the preceding row.
+
+Orthogonal vectors in linear algebra: x^T y = 0
+
+Differentiation in linear algebra: it is a linear operation, null space is one dimensional space of constants where Ax = 0 i.e. nullity is 1, column space is n-dimensional space P_{n-1}.
+
+Integration in linear algebra: there is no null space except for zero vector, integration does not produce all polynomials in P_{n + 1}.
+
+Incidence matrices: every entry is 1, -1 or 0.
+
+Incidence matrices in the fundamental subspaces: null space is dimension 1, column space gives r = n - 1, any n - 1 columns are independent or give sufficient information on the matrix and all vectors in the column space have y^T b = 0, or all potential differences add to zero around all loops, row space is r = n - 1 and every vector in the row space add to zero this is the current laws, independent rows from spanning trees, left null space is dimension m - r or m - n + 1, contained by the current loops. This gives Euler's formula from the four fundamental spaces.
+
+Euler characteristic for connected graphs using linear algebra and incidence matrices: V - E + F for loops = 1, we have (n) - (m) + (m - n + 1) = 1.
+
+Incidence matrix, Kirchhoff laws: A^T is the right matrix for the current law, left null space gives Kirchhoff current law, right null space gives Kirchhoff voltage law. A^T y = f.
+
+Trees in linear algebra: graph with no loops.
+
+Row rank = column rank: not obvious, it also implies if the rows of square matrix and linearly independent, columns are also linearly independent. 
+
+Rank of a matrix: elimination gives r pivot variables and n - r free variables, r is the rank of the matrix. It counts the number of pivot rows in the row space and pivot columns in the column solutions.
+
+Column space: column space contains all linear combinations of the columns of A. It can be thought of as the space that is spanned by its columns. It is a subspace of R^n. Its dimension is the rank of the matrix. This  is called the range, since it is all the possible vectors f(x) = Ax, that is why it is given the name for some hypothetical function.
+
+Null space: consist of all vector x such that Ax = 0. It is a subspace of R^n. Column of A are independent when null space is the zero vector. The reasoning is as follows: pick columns of triangular matrix with no zeroes on the diagonal. Solve Ac = 0, forced to pick entries of c to be zero, therefore, the only combination to produce the zero vector is the trivial combination. The dimension is dimension of the space - rank of matrix or n - r. This dimension is also called the nullity.
+
+Row space: column space of the transpose of A.
+
+Left null space: null space of the transpose of A. It is the number of columns = m, so it is m - r.
+
+Echelon form, U:  it is a staircase pattern, upper triangular, zeroes below the pivots.
+
+Reduced row echelon form, R: Make all the pivots 1, use the pivot row to produce zero above the pivot, apply this to an echelon matrix, so this is the reduced row echelon form. 
+
+Gaussian elimination: PA = LU, you permute the matrix A, then decompose them into LU.
+
+Inverse matrix: matrix such that A * A^(-1) gives the identity matrix. NOTE, not all matrices are invertible. If Ax = 0, and x is nonzero, then an inverse is zero. No matrix can multiply the zero vector and get back a nonzero vector. The rank is s large as possible so that the inverse exists.
+
+Symmetric matrix: matrix that is equal to its own transpose.
+
+Sparse matrix intuition: sparse matrices tend to have far fewer than n^2 pieces of information, so there should be ways to speed up matrix multiplication.
+
+Band matrix: a_{ij} = 0, except in the band |i - j| < w, interesting that a norm is used to define this band matrix.
+
+Positive definite matrices: pivots are positive. 
+
+Frobenius matrix: represent Gaussian transformation for Gaussian elimination, all entries on main diagonal are ones, entries below main diagonal of at most one column.
+
+Orthogonality of fundamental subspace: row space is orthogonal to (right) null space, column space is orthogonal to left null space.
+
+Dimension formulas for fundamental subspaces: dim(row space) + dim(right null space) = number of columns. We have dim(column space) + dim(left null space) = number of rows.
+
+Orthogonal complement: subspace V, then it is the space of all vectors orthogonal to V.
+
+Fundamental spaces orthogonal complement: right null space is orthogonal complement to row space, left null space is orthogonal complement to column space.
+
+Pseudoinverse: A^+ Ax = x, for x in the row space. Pseudo-inverse requires singular value decomposition, motivates eigenvalues.
+
+Projection matrix: A(A^T A)^{-1} A^T, seems like some crazy formula, because I am stupid. It is symmetric P^T = P, and it is idempotent P^2 = P. These two properties feel like the identity matrix.
+
+Inner product in matrices: row vector * column vector. NOTE: non-commutative. Notation is x^T y, or transpose x from row vector to column vector. Useful: if nonzero vectors are mutually orthogonal, than those vectors are linearly independent: suppose linear combination of those vectors are zero. Take inner product of both sides with v_1, so it is multiply by v_1^T. Get v_1^T (sum of c_1 v_1 to c_k v_k) = c_1 v_1^T v_1 = 0 using mutual orthogonality. But v_1^T v_1 is nonzero (basis vector), so c_1 must be zero, so independent. 
+
+Elementary matrix, square matrix obtained by doing elementary row and column operation. These are row switching, row multiplication and row addition. These generate the general linear group GL_n(F), F is field.
+
+Identity matrix: 1s on the diagonal, 0s everywhere else. It can be thought as the matrix that gives an idempotent action (matrix multiplication) on every other matrix. 
+
+Upper triangular: all entries below diagonal is zero.
+
+Row picture: intersection of planes. Example, three planes are identical. 
+
+Column picture: combination of columns. 
+
+LU factorisation: factorising a matrix to a left bottom triangular matrix and a right upper triangular matrix. I like the word factorisation instead of decomposition.
+
+Basis of vector space: linearly independent vectors that span the space. Maximal independent set, minimal spanning set.
+
+Vectors are classified up to its dimension: suppose these are the row vectors of the basis W is not equal in number to row vectors form a basis V (dimensions are different) where W is a n by 1 matrix, then V is a m by 1 matrix where n is more than m, take linear combinations of w with v vectors. you get W = VA, but A must be size m by n which is not square. There is a nonzero matrix Ax = 0, VAx = 0, so Wx = 0, therefore W is not a basis, contradiction. So n and m must be equal.
+
 Finite dimensional normed vector space is complete: isometrically isomorphic to K^n with l^2 norm, so it must be complete.
 
 Compactness of subsets of finite dimensional normed vector space is equivalent to closed and boundedness: forward: closure and boundedness is preserved under equivalent norms, identity map on equivalent norms is continuous, so it is really just a statement on how closure and boundedness is equivalent to compactness in topology.
 
-All norms are equivalent on finite dimensional vector space: harder than K^n since you need to construct a norm on V. First construct Euclidean norm on components of the basis of V, then apply that K^n with l^2 norm is isometrically isomorphic to this norm. So it is sufficient to prove norms being equivalent on K^n since equivalence of norms is equivalence relation. Now use the tirangle inequality and the Cauchy-Schwarz inequality (see Robinson) to show norm(x) <= C norm_E(x) and some details attaining lower bound, considering unit spherical shell in K^n as closed and bounded subset of K^n and is compact to show norm(x) >= alpha norm_E(x). It just seems like there are a lot of details for this proof, hard to keep it in your head.
+All norms are equivalent on finite dimensional vector space: harder than K^n since you need to construct a norm on V. First construct Euclidean norm on components of the basis of V, then apply that K^n with l^2 norm is isometrically isomorphic to this norm. So it is sufficient to prove norms being equivalent on K^n since equivalence of norms is equivalence relation. Now use the triangle inequality and the Cauchy-Schwarz inequality (see Robinson) to show norm(x) <= C norm_E(x) and some details attaining lower bound, considering unit spherical shell in K^n as closed and bounded subset of K^n and is compact to show norm(x) >= alpha norm_E(x). It just seems like there are a lot of details for this proof, hard to keep it in your head.
 
 Contraction mapping theorem (Banach fixed point theorem): suppose non-empty CLOSED subset K of a completed normed space X with norm norm(x), let f: K -> K be a contraction a endomorphism which norm(f(x) - f(y)) <= k norm((x - y)), for k < 1, then f has a fixed point in the subset k, there exist a unique point where f(x) = x. NOTE: for k <= 1, you need compactness of K. Proof involves constructing a Cauchy sequence bounded by repeatedly using this inequality on terms of the convergent subsequence, then use X being Banach space, K closed, so this limit must be in this set K. Note that such a contraction is CONTINOUS by definition (preimage of opens is in K), we have that function of convergent f(x_n) -> f(x) this is nice since function is continuous, you have the limit of this subsequence x to be equal to f(x) of the contraction, so this is a fixed point. Uniqueness follows by considering norms norm(x - y) = norm(f(x) - f(y)) <= (k) norm(x - y). So we have (1 - k) norm(x - y) = 0 using the fact that k is less than 1, and norm(x - y) is nonnegative. Therefore, x = y.
 
@@ -48,7 +138,7 @@ l^infty(K) is not separable: prove using Cantor's diagonal argument using the tr
 
 l^p(K) is separable: proof key step is to consider the difference between x and linear combination of unit vectors in e^j, then also sum of components powers by p is bounded by some epsilon^p, we used the fact that l^p is a norm here. Therefore the gap between x and linear combination of unit vectors in e^j is the lp norm of components is bounded by another epsilon. See Robinson for a more explainable proof.
 
-Linear span of subset of normed space: set of all finite linear combinations of elements of the subset of normed space X
+Linear span of subset of normed space: set of all finite linear combinations of elements of the subset of normed space X. Spanning just means combinations produce teh whole space.
 
 Isometry: instead of enforcing equivalence of norms X and Y, we say these are equal i.e. norm_X(x) = norm_Y(Tx). Ito isometry is an example, where norms on Wiener process and on time itself are isometric in power 2.
 
@@ -140,7 +230,7 @@ Weibull intuition: pdf with finite right end point, dependence close to this end
 
 Derivatives of the characteristic function: (-i)^n d^n(P(x))/dk^n at k = 0, then you can express it as some sort of Taylor series, in fact this will appear as the cumulants of a pdf.
 
-Cumulants: derivatives of the logarithm of the characteristic function, it looks like the action of the (-i) as an action (circle group in the imaginary plane) on the n-th derivative of the logarithm of the probability distribution at k = 0. We have c_n = (-i)^n d^n(log(P(k)))/dk^n at k = 0. So you can write the characteristif function as the exponential of a Taylor series i.e. sum of exp(sum c_n / n! (ik)^n), it becomes the action of (ik) instead. Sum is cumulant preserving, proof is using product of convolution is product of Foruier transform. Also, it motivates alternative measures of dispersion from normality, fixing some problems with moments of a probability distribution.
+Cumulants: derivatives of the logarithm of the characteristic function, it looks like the action of the (-i) as an action (circle group in the imaginary plane) on the n-th derivative of the logarithm of the probability distribution at k = 0. We have c_n = (-i)^n d^n(log(P(k)))/dk^n at k = 0. So you can write the characteristic function as the exponential of a Taylor series i.e. sum of exp(sum c_n / n! (ik)^n), it becomes the action of (ik) instead. Sum is cumulant preserving, proof is using product of convolution is product of Foruier transform. Also, it motivates alternative measures of dispersion from normality, fixing some problems with moments of a probability distribution.
 
 Dutch book argument: bettor puts in px, house gives x, at odds (1-p)/p, house can set x to be anything but the bettor must accept both sides of the bet (win/lose). Bettor is consistent if it is not forced to accept a sure loss in probability assignment. I learnt of this argument in Sornette's book.
 
@@ -781,6 +871,18 @@ Characteristic equation: take the determinant map (lambda I - A) x = 0, there is
 
 Sum of roots and product of roots as trace and determinant. For a 2x2 matrix, trace and determinant has something to do with sum of roots, product of roots; We have x^2 - tx + d, -t is trace, d is determinant.
 
+Determinant: test for invertibility if determinant is nonzero it is invertible so used to define the general linear group, volume of box in n-dimensional space, used to define special linear group of unit volume. Determinant is product of pivots / eigenvalues.
+
+Diagonalisation failure: if we have repeated eigenvalues, these are like singularities or nilpotents. That is the only iconnection between diagonalisability with independent eigenvectors and invertibility with nonzero eigenvalues. Zero is like an absorbing element.
+
+Matrix exponential: it is some series with the properties you want from an exponential. We have exp(At) = I + At + (At)^2/2 + ... (At)^k / k! up to infinity. Invertible, consider exp(-At). Never singular, exp(e t) is always nonzero, e is eigenvalue. So there are nonzero eigenvalues. Also determinant of exp(At) is equal to exp(trace(At)).
+
+Stability: matrix exponential tends towards zero, real part of eigenvalues are less than 0, neutrally stable when real part of eigenvalues equalto zero. This is called asymptotic stability.
+
+Jacobian determinant: stretching matrix of the volume.
+
+Noraml matrices: commutes with conjugate transpose.
+
 Similarity: B is similar to A if there exists nonsingular S such that B = S^-1 A S.
 
 Diagonalisable: if similar to diagonal matrix, then diagonalisable.
@@ -939,7 +1041,7 @@ Cuspoidal cubic: y^2 - x^3
 
 Proof that every vector space has a norm: every vector space has a finite linear combination of basis vectors (even if it has infinite dimensions, this uses some weird completion magic). Take max of the coefficients amongst finitely many basis vectors, this defines one possible norm. Infinite dimensional TOPOLOGICAL vector spaces don’t have a norm that indices the topology
 
-Exponential functions are quintessential examples of holomorphic functions
+Exponential functions: quintessential examples of holomorphic functions. Entropy (logarithms) turn products into addition. Exponentials is even better, if you differentiate it, integrate it or transform it with linear combinations, it is still a multiple of an exponential.
 
 Unital subring: some authors define the identity to be in subring. Note that analysts don’t like forcing an identity at all.
 
@@ -1331,7 +1433,7 @@ Square of stable infinity categories Cartesian. You have D(R) D(R[1/f]) D(R[1/g]
 
 Motivic homotopy theory, use affine line instead of unit interval in definition of homotopy.
 
-Retracts are continuous idempotent (or misleadingly, projections) endomorphisms. Projections are similar.
+Retracts are continuous idempotent (or misleadingly, projections) endomorphisms. Projections are similar, but the main difference is that projections sort of reduce the dimension. Projection in linear algebra are not invertible.
 
 Deformation retracts are continuous homotopic idempotent endomorphisms. Difference is notion of time.
 
@@ -1517,7 +1619,7 @@ Irreducible: cannot be written as union of closed sets in Zariski topology.
 
 Ring extension map C[x,y] -> C[x,y]/(f) (smaller ideal to larger ideal) is morphism of varieties pi from larger variety to smaller variety. Drawing only the real points, we have examples of points V(xy) with morphism pi to the real line (V(x)). Exercise: reproduce Gathmann 9.4 as exercise. Inverse images of pi are fibers. Geometrically, this is an infinite fibre at x = 0. Try examples of y^2 - x^2 giving two point fibres except at origin, and xy - 1 giving one point fibres except empty fibre at origin. The precise geometric correspondence is more complicated.
 
-Normal domains: Coordinate ring of irreducible varieties. Quotient field are rational functions well defined except at isolated points where denominator vanishes. Example: C[x] is normal, rational function is ill defined as a pole but cannot satisfy monic relation since its highest order pole cannot be cancelled by lower order poles. R[x,y]/(y^2 - x^2 - x^3) is not normal, looks likereducible two lines V(x+y) V(x-y) at origin approaching +1 and -1 at origin.
+Normal domains: Coordinate ring of irreducible varieties. Quotient field are rational functions well defined except at isolated points where denominator vanishes. Example: C[x] is normal, rational function is ill defined as a pole but cannot satisfy monic relation since its highest order pole cannot be cancelled by lower order poles. R[x,y]/(y^2 - x^2 - x^3) is not normal, looks like reducible two lines V(x+y) V(x-y) at origin approaching +1 and -1 at origin.
 
 Noetherian normalisation: example of V(x_1x_2 - 1) fails lying over at origin. Coordinate transform to tilt it to V(y_2 - y_1^2 - 1), x_1 = y_2 + y_1, x_2 = y_2 - y_1. Lying over is OK. See Gathmann notes.
 

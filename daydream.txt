@@ -1,5 +1,25 @@
 DAYDREAM (MATH)
 
+What is the difference between Karmarkar's method and the simplex method? Why is it better?
+
+Rayleigh quotient how it works?
+
+Are there different names for the nullity associated with the right null space (n - r) or number of rows - rank of matrix, and the nullity associated with the left null space (m - r) or the number of column - rank of the matrix.
+
+Do not understand spanning trees from linear algebra.
+
+Gram-Schmidt process? 
+
+Why do matrix exponentials converge? Something to do with completeness of spaces?
+
+Pivot variables, free variables, combinations of special solutions?
+
+I do not understand positive definite matrices. Wy are they the thing that round off the course in linear algebra for Strang's book?
+
+I also do not really understand the motivation for all the effort to form the difference equations for coefficient matrices. I understand these are important in practice, but I do not understand what is useful about this viewpoint and how to keep in your head.
+
+What do we know about the factorisation of matrices (LU factorisation) from what we know in commutative algebra, and algebraic geometry?
+
 All norms are equivalent in finite dimensional vector space. This is not really intuitive, and there are a lot of details in the proof.
 
 Don't understand the intuition the contraction mapping theorem and why is it important.
