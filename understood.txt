@@ -129,6 +129,7 @@ Zero matrix: matrix with all zeroes, it is the additive identity.
 Dimension of vector space: positive integer n such that the basis of vector space contains exactly n vectors. If this exists, V is finite dimensional vector space, otherwise it is infinitely dimensional. In infinite dimensional vector space, we have a one-to-one correspondence between elements of any two basis (bijection in the style of Cantor).
 
 Maschke's theorem in representation theory: generalisation of the theorem that vector spaces are classified by dimension. Corollary to this result, if V is a representation of a finite group G over a field F with characteristic not dividing the order of G and V has a subrepresentation W, then it has another subrepresentation U such that V = W ++ U, ++ is direct sum. Corollary is: every representation of a finite group G over a field F with characteristic not dividing the order of G is a direct sum of irreducible representations. So this helps classify represenation of finite groups to be determined up to isomorphism by its character.
+Fails at G infinite, or K has characteristic dividing G.
 
 Maschke's theorem in category theory: if G is a group, F is field with characteristic not dividing over G, then the category of representations of G over F is semi-simple.
 
