@@ -1,6 +1,6 @@
 UNDERSTOOD (MATH)
 
-Kolmogorov consistency theorem: you want a unique measure P on outcome space Omega and and sigma algebra Sigma such that under natural projection pi(omega) = list of coordinates vectors (x_1, x_2, ... x_n) the induced measure P pi_n^{-1} = P_n on R^n.
+Kolmogorov consistency theorem: you want a unique measure P on outcome space Omega and and sigma algebra Sigma such that under natural projection pi(omega) = list of coordinates vectors (x_1, x_2, ... x_n) the induced measure P pi_n^{-1} = P_n on R^n. Wikipedia says that it means you can construct a probability space if you fulfil conditions that permutations of distinct times (careful NOT measurable sets i.e. random variables are exchangeable) still give consistent product of measurable sets i.e. order in which the t_i appear does not change the distribution, only the way I write down and future events can be input as R^{n} in the probability measure and these two conditions (which define a stochastic process) are necessary and sufficient.
 
 Consistent family of finite dimensional distributions: the natural projection from R^{n + 1} -> R^{n} losing one degree of freedom, the probability measure P^{n+1} projects to P^{n}.
  
@@ -128,7 +128,13 @@ Zero matrix: matrix with all zeroes, it is the additive identity.
 
 Dimension of vector space: positive integer n such that the basis of vector space contains exactly n vectors. If this exists, V is finite dimensional vector space, otherwise it is infinitely dimensional. In infinite dimensional vector space, we have a one-to-one correspondence between elements of any two basis (bijection in the style of Cantor).
 
-Maschke's theorem: generalisation of the theorem that vector spaces are classified by dimension.
+Maschke's theorem in representation theory: generalisation of the theorem that vector spaces are classified by dimension. Corollary to this result, if V is a representation of a finite group G over a field F with characteristic not dividing the order of G and V has a subrepresentation W, then it has another subrepresentation U such that V = W ++ U, ++ is direct sum. Corollary is: every representation of a finite group G over a field F with characteristic not dividing the order of G is a direct sum of irreducible representations. So this helps classify represenation of finite groups to be determined up to isomorphism by its character.
+
+Maschke's theorem in category theory: if G is a group, F is field with characteristic not dividing over G, then the category of representations of G over F is semi-simple.
+
+Semi-simple: can be decomposed into simple obeject, and simple object to not contain nontrivial subobjects.
+
+All finite dimensional vector spaces are semisimple: proof comes from the fact that all vector spaces are classified up to dimension, problem is essentially homemorphic to taking direct sums of copies of R to form your vector space.
 
 Vectors are classified up to its dimension: suppose these are the row vectors of the basis W is not equal in number to row vectors form a basis V (dimensions are different) where W is a n by 1 matrix, then V is a m by 1 matrix where n is more than m, take linear combinations of w with v vectors. you get W = VA, but A must be size m by n which is not square. There is a nonzero matrix Ax = 0, VAx = 0, so Wx = 0, therefore W is not a basis, contradiction. So n and m must be equal.
 

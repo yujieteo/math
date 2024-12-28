@@ -1,10 +1,10 @@
 DAYDREAM (MATH)
 
-Do not understand the purpose of the Kolmogorov consistency theorem?
+Do not understand the purpose of the Kolmogorov consistency theorem? The proof also relies axiom of choice? https://fabricebaudoin.blog/2012/03/25/lecture-5-the-daniell-kolmogorov-existence-theorem/
 
 How does Varadhan construct a counterexample for moments not determining the function.
 
-Maschke's theorem?
+Maschke's theorem proof?
 
 Subspace interaction theorem proof? What is it used for?
 
