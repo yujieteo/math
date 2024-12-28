@@ -1,5 +1,9 @@
 DAYDREAM (MATH)
 
+Do not understand the purpose of the Kolmogorov consistency theorem?
+
+How does Varadhan construct a counterexample for moments not determining the function.
+
 Maschke's theorem?
 
 Subspace interaction theorem proof? What is it used for?

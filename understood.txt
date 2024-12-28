@@ -1,5 +1,13 @@
 UNDERSTOOD (MATH)
 
+Kolmogorov consistency theorem: you want a unique measure P on outcome space Omega and and sigma algebra Sigma such that under natural projection pi(omega) = list of coordinates vectors (x_1, x_2, ... x_n) the induced measure P pi_n^{-1} = P_n on R^n.
+
+Consistent family of finite dimensional distributions: the natural projection from R^{n + 1} -> R^{n} losing one degree of freedom, the probability measure P^{n+1} projects to P^{n}.
+ 
+Moment generating function: integral of x^k on the distribution, or the expected value of X^k for k-th moment. Stone-Weierstrass theorem suggests that polynomials from the linear combinations of all the moments of a distribution can approximate any continuous function (some sort of completeness or separability condition on vector spaces), this can be done to recover the probability distribution from the moments, however this is not easy according to Varadhan. See also cumulants.
+
+Moments do not determine distribution in general:  example it is the problem of trying to recover the function from all the derivatives at t = 0 aka the Maclaurin series. Varadhan constructs an explict counterexample on page 23 which I do not understand why this fails.
+
 Characteristic function of binomial distribution: recall that the characteristic function is the expectation of exp(itx). Consider sum from 1 to N of (n!/(n-k)! k!) p^k (1 - p)^(N - k) * exp(itk) for discrete sum. Now fold it into: (n!/(n-k)! k!) (1 - p)^(N - k) * [exp(it) * p]^k and then you will get  ([1 - p] + p exp(it))^N as a decomposition of the binomial sum.
 
 Characteristic function of degenerate distribution with probability 1 at point a: this is just exp(i a t). See exercise 2.1 in Varadhan.
@@ -446,6 +454,8 @@ Functional analysis no-eigenvalue example: S(a1, a2, ...) = (0, a1, a2, ...), Sx
 Wiener process: Gaussian process, with funny covariance function K(s,t) = min(s,t) as random series. Markov process with generator as Laplace operator, and transition density as heat kernel.
 
 Conditional probability: ratio of probability of A and B over probability of B. Intuition, given B, you can divide by the probability of B since you know B will happen, to raise the likelihood of A and B (less or equally likely) to A given B (more or equally likely).
+
+Conditional expectation of integrable function: integral of events f(omega) over probability distribution P in A divided by the probability of A.
 
 Poisson random variable: it is like a memoryless queue, probability is (expected value ^ time)/(time factorial) * damping exp(-expected value), since the expected value being achieved means the effect of the queue is damped somehow. The mean and the variance is the expected value. Limit of Binomial process as the number of bins is infinite and the probability gets to zero, by simple substitution. Intuitively, this makes sense, you have an infinitely small time slice of something showing up in the queue to consider as a Poisson if you think of it is as Binomial. Proof, substitute np = lambda, then take k fixed, n >> k.∂
 
