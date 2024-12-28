@@ -16,37 +16,37 @@ Convergent series of norms of Banach spaces implies sequence converges in the Ba
 
 Space is normed space where series of norms if finite AND the sum of components converges in the space so the space must be Banach space: two key steps, equivalently show some subsequence converges to y (this needs to be shown separately), next key step is to think that each term is bounded by 2^(-k) carefully using (y_i) is Cauchy so that the full norm is bounded by 1, then replace this with x_j which is some difference, this shows that series of norms is finite, so series of x_j converges to some y in X, then define y_1 + series of differences equal to y_n_j to show this converges to y, so X is complete and y_k converges to y.
 
-Product of Banach spaces is Banach space for Manhattan form and Eculidean norm: proof: step 1 Cauchy sequence, show that p-norms are bounded by epsilon gap using Cauchy sequences in X and Y. Then take difference between norm of convergence of sequences with their converged limit in each component versus that of the pair. Therefore product of components converge to their pair of points, so the product space is alsi complete.
+Product of Banach spaces is Banach space for Manhattan form and Euclidean norm: proof: step 1 Cauchy sequence, show that p-norms are bounded by epsilon gap using Cauchy sequences in X and Y. Then take difference between norm of convergence of sequences with their converged limit in each component versus that of the pair. Therefore product of components converge to their pair of points, so the product space is also complete.
 
-Cauchy seqeuence: sequence that convergeces in metric space i.le. for every nonzero gap epsilon, there exists an integer lower bound N such that d(x_n, x_m) is bounded by (less than) the gap epsilon for all _n and _m more than this lower bound N. Apply triangle inequality, so this definition makes sense when we are careful to use half of the nonzero gap epsilon, which is epsilon/2.
+Cauchy sequence: sequence that converges in metric space i.le. for every nonzero gap epsilon, there exists an integer lower bound N such that d(x_n, x_m) is bounded by (less than) the gap epsilon for all _n and _m more than this lower bound N. Apply triangle inequality, so this definition makes sense when we are careful to use half of the nonzero gap epsilon, which is epsilon/2.
 
 Complete metric space: a space where every Cauchy sequence converges.
 
 Banach space: normed complete metric spaces. The reals and the complexes are completes. This carries over to powers of reals and complexes with standard norms. Examples: space of l^p sequences l^p(K), c0(K), l^\infty(K), space C^1([a,b]) is complete on closed intervals.
 
-Linear closed subspaces of Banach spaces are Banach spaces: proof key step, forward just apply thae fact that it is Cauchy in Y and then it is Cauchy in X, the limit must be in Y since Y is closed. For reverse, if Y is complete then a must be in X, and Cauchy sequences converge in Y, so Y must be closed.
+Linear closed subspaces of Banach spaces are Banach spaces: proof key step, forward just apply the fact that it is Cauchy in Y and then it is Cauchy in X, the limit must be in Y since Y is closed. For reverse, if Y is complete then a must be in X, and Cauchy sequences converge in Y, so Y must be closed.
 
 Banach spaces with equivalent norms must be equivalent under completeness: first spell out definition of equivalent norms, key step is to use left haft and right half of equivalence inequality properly, right half implies that Cauchy sequence (x_n) in X must be Cauchy sequence (Tx_n) in Y. Use the fact that Y is a Banach space (complete), then you can use left half to show that X is Banach space by taking preimages of the sequences and using the left half tending to zero when Y is complete. Lemma 4.5 in Robinson, just use endomorphism of maps with different norms.
 
 Completeness arguments prototype: step 1, define what it means for sequence to be Cauchy, step 2: use this definition to identify a limit, step 3, show it convergences to this limit with the appropriate norm, step 4, show this limit lies in the correct space.
 
-K^d complete with standard norm: step 1, pick l2 norm to be complete, then consider arbitray powers of n and m where |x_i^n 0 x_i^m| less than equal to bounded gap epsilon. Show that candidate l^2 norm is bounded so limit of this gap in the arbitrary case convergeces to zero., and this limit lies as an element of K^n.
+K^d complete with standard norm: step 1, pick l2 norm to be complete, then consider arbitrary powers of n and m where |x_i^n 0 x_i^m| less than equal to bounded gap epsilon. Show that candidate l^2 norm is bounded so limit of this gap in the arbitrary case converges to zero., and this limit lies as an element of K^n.
 
 Linear subspaces of normed spaces need not be closed: this is easy, take unit ball, consider the sum of two identical unit vectors in the ball, it will escape.
 
 Equivalent norms preserve convergence and continuity: for convergence consider c1 norm1(x_n - x) <= norm2(x_n -x) <= c2 norm1(x_n - x). Convergence to zero for norm 1 is equivalent to convergence to zero for norm 2. Compactness is defined by open covers, so equivalence under scalar multiplication means that equivalence of norms preserve compactness.
 
-Isomorphism of normed spaces: if we have a map from normed space X to normed space Y that is a bijection under sets, linear preserving vector space (so this is a matrix) and makes it such that c1 normX(x) <= normY(Tx) <= c2 normX(x) i.e. the map Tx makes norms X and norm Y equivalent, then this is an nisomorphism of normed spaces. Linear maps that are bijections are requirement for isomorphism of vector spaces, so this third property gives it an equivalence of norms. Normed spaces are isomorphic if we have this isomorphism. Intuitively, it is an isomorphism of vector spaces + equivalence of norms.
+Isomorphism of normed spaces: if we have a map from normed space X to normed space Y that is a bijection under sets, linear preserving vector space (so this is a matrix) and makes it such that c1 normX(x) <= normY(Tx) <= c2 normX(x) i.e. the map Tx makes norms X and norm Y equivalent, then this is an isomorphism of normed spaces. Linear maps that are bijections are requirement for isomorphism of vector spaces, so this third property gives it an equivalence of norms. Normed spaces are isomorphic if we have this isomorphism. Intuitively, it is an isomorphism of vector spaces + equivalence of norms.
 
 C^n is isometrically isomorphic to R^2n: use map (x1, y1, x2, y2, ... xn, yn), z_i = x_i + y_i as the isometric isomorphism.
 
-Closed linear span: set of all elements that can be approximated arbitraily closly by finite linear combinations of E, this feels like separability. We call this the clin(E), which is the closure of the span of E.
+Closed linear span: set of all elements that can be approximated arbitrarily closely by finite linear combinations of E, this feels like separability. We call this the clin(E), which is the closure of the span of E.
 
 Equivalence of separable, separability of unit sphere, linear space is dense: separable spaces containing countable dense subset, scale by scalar using the fact that this is a normed space, 
 
 l^infty(K) is not separable: prove using Cantor's diagonal argument using the trivial norm ||x-y|| = 1 if they differ. So any dense set A must contain uncountable number of elements.
 
-l^p(K) is separable: proof key step is to consider the difference between x and linear combination of unit vectors in e^j, then also sum of components powers by p is bounded by some epsilon^p, we used the fact that l^p is a norm here. Therefore the gap bbetween x and linear combination of unit vectors in e^j is the lp norm of components is bounded by another epsilon. See Robinson for a more explainable proof.
+l^p(K) is separable: proof key step is to consider the difference between x and linear combination of unit vectors in e^j, then also sum of components powers by p is bounded by some epsilon^p, we used the fact that l^p is a norm here. Therefore the gap between x and linear combination of unit vectors in e^j is the lp norm of components is bounded by another epsilon. See Robinson for a more explainable proof.
 
 Linear span of subset of normed space: set of all finite linear combinations of elements of the subset of normed space X
 
@@ -62,7 +62,7 @@ Equivalent norms: norms that are equivalent (reflexive, symmetric, transitive) u
 
 Sequence space: all real valued sequence such that the Lp norm is finite. At infinity, it is the space of bounded sequences equipped with the supremum norm of components.
 
-c0(K) subspaces of null seqeuences: consists of seqeuences that have all zeroes as the number of components tends towards ifnity:
+c0(K) subspaces of null sequences: consists of sequences that have all zeroes as the number of components tends towards infinity:
 
 Norms on a vector space: map from vector space X to positive half open ray [0, infinity), that is zero at zero (note: nonnegative implicit in valid range), has scalar multiplication, and obeys the triangle inequality. This feels very similar to random variables actually, maps from outcome space to closed interval. Need this to define open and closed balls.
 
@@ -72,7 +72,7 @@ Valuation as logarithmic norm on fields: logarithmic norm on fields, generalises
 
 Example of valuation as p-adic: suppose v is valuation in field K to linearly ordered group of reals R, if a is real number in open unit interval i.e. 0 < a < 1, then phi(x) = a^(v(x)) is a norm. Now pick field K to be the rationals, v_p is the p-adic valuation of Q, then we have |x| = (1/p)^(v(x)) as the p-adic norm. It is also an example of a ultrametric norm.
 
-Ultrametric norm: useful since it looks like p-infity norm, it is a group homomorphism f(x+y) is less than or equal to the max(f(x),f(y)). It refers to the difference between the sup/max norm to this.
+Ultrametric norm: useful since it looks like p-infinity norm, it is a group homomorphism f(x+y) is less than or equal to the max(f(x),f(y)). It refers to the difference between the sup/max norm to this.
 
 Normed space: vector space with norm. This has a notion of convergence, and linear structures, so series make sense.
 
@@ -92,13 +92,13 @@ Max norm proofs: it always looks like this: step 1, norm is max norm, step 2: ap
 
 Lp norm: nonnegativity obvious.
  
-Jacobson ring: used to describe the Nullstellensatz, a Jacobson ring is every prime ideal of the commutative ring R is inthe intersection of maximal ideals. See pg. 132 of Eisenbud.
+Jacobson ring: used to describe the Nullstellensatz, a Jacobson ring is every prime ideal of the commutative ring R is in the intersection of maximal ideals. See pg. 132 of Eisenbud.
 
 Points near p in set X: Illustration in Eisenbud. Consider Y is algebraic subset of X not containing P, consider X - Y, this is not an affine algebraic set (examples: plane minus a point is not a affine algebraic set), however you can have it isomorphic to an algebraic set embedded in A^{r+1}(k). This is important: assume that Y is the set defined by vanishing of a single function f. So you can get the affine ring A(X - Y) and A(X), we can invert f by adjoining multiplicative inverses. This localisation gives is an algebraic thing like of the germ of X at p, the local ring of X at p.
 
 Representable nature of limits / colimits: for functor diagram F: J -> C, there is natural isomorphism between C(X, lim_J F) and lim_J C(X, F-). Similarly, there is natural isomorphism for C(colim_J F, X) to lim_J^op C(F-, X). Note, be careful, the diagram is for the opposite category.
 
-Reflective subcategory: consider category C, pick subcategory D such that inclusion (or embedding) admits left adjoint (preserving colimits) called reflector or localisation. Mnemoic: object looks at its reflection. Example: category of compact Hausdorff spaces included into category of topological spaces. The reflector left adjoint is Stone-Cech compactificiation. Example 2: category of abelian groups admitted into category of groups, the reflector right adjoint is abelianisation. Example 3: Sheaves as subcategory of presheaves, left adjoint is sheafification. Example 4: inclusion of certain categories of general commutative rings have localisation as left adjoint to inclusion. Example 5: small categories included to the category of simplicial sets, the left adjoint sends simplicial set to its homotopy category, no good name for this.
+Reflective subcategory: consider category C, pick subcategory D such that inclusion (or embedding) admits left adjoint (preserving colimits) called reflector or localisation. Mnemonic: object looks at its reflection. Example: category of compact Hausdorff spaces included into category of topological spaces. The reflector left adjoint is Stone-Cech compactification. Example 2: category of abelian groups admitted into category of groups, the reflector right adjoint is abelianisation. Example 3: Sheaves as subcategory of presheaves, left adjoint is sheafification. Example 4: inclusion of certain categories of general commutative rings have localisation as left adjoint to inclusion. Example 5: small categories included to the category of simplicial sets, the left adjoint sends simplicial set to its homotopy category, no good name for this.
 
 Reflection of isomorphisms: consider a full and faithful functor F from category C to category D, if Ff is isomorphism in cat D, f is morphism in C, then f is isomorphism in C. 
 
