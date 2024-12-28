@@ -1,5 +1,7 @@
 DAYDREAM (MATH)
 
+Maschke's theorem?
+
 Subspace interaction theorem proof? What is it used for?
 
 What is the difference between Karmarkar's method and the simplex method? Why is it better?
