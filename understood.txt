@@ -184,7 +184,7 @@ Sequence space: all real valued sequence such that the Lp norm is finite. At inf
 
 c0(K) subspaces of null sequences: consists of sequences that have all zeroes as the number of components tends towards infinity:
 
-Norms on a vector space: map from vector space X to positive half open ray [0, infinity), that is zero at zero (note: nonnegative implicit in valid range), has scalar multiplication, and obeys the triangle inequality. This feels very similar to random variables actually, maps from outcome space to closed interval. Need this to define open and closed balls.
+Norms on a vector space: map from vector space X to positive half open ray [0, infinity), that is zero at zero (note: nonnegative implicit in valid range, Horn and Johnson calls it positivity), has scalar multiplication / homogenity in Horn and Johnson, and obeys the triangle inequality. This feels very similar to random variables actually, maps from outcome space to closed interval. Need this to define open and closed balls.
 
 Norm on a FIELD: map from field F to real numbers, nonnegative and zero at zero, mapping is homomorphism under group product, mapping is weaker than homomorphism obey triangle inequality under group addition i.e. f(x + y) <= f(x) + f(y). Lastly, group identity makes sense f(1) = f(-1) = 1, and norm preserves group inverses i.e. f(x^-1) = x. Examples: if field is reals, the norm defined is the max norm. If the field is the complex number, the norm is the absolute modulus of product of complex numbers, or the geometric mean of a complex number and its complex conjugate. Any field has trivial norm, norm 1 if nonzero, norm zero if x is zero, and finite fields and finite field extensions only have this trivial norm (I want proof for this).
 
