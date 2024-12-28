@@ -1,5 +1,23 @@
 DAYDREAM (MATH)
 
+Do not fully understand the proof of supremum norm as norm, especially the step.
+
+I do not fully understand Ito stuff (Ito integral, isometry, calculus) and why is it so potent.
+
+Weak ergodicity? Strong ergodicity? See Weinan, Tiejun, and Vanden-Eijnden.
+
+Prove that finite fields and their extensions only have trivial norm?
+
+How does a locally compact field be defined by some norm?
+
+What is the condition for separability, which is all elements can be approximated arbitrarily by countale collection such that the distance measure for the norm can be done by picking x_j such that d(x_j, x), j is in integers, in the context of Stone duality? I thought about this because Stone duality can be thought of some completion of an experiment in logic.
+
+Adeles? Why do this, why embed a field into its direct product of all completion.
+
+Classical completion?
+
+Ostrokowski's theorem?
+
 What is lambda in the definition of convex combination. What is a good name?
 
 How do you get Lebesgue decomposition theorem to get the Radon-Nikodym derivative? When do you notice something is combined. Why do you need all decomposition theorems to get what you want?

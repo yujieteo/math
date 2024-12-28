@@ -1,6 +1,24 @@
 UNDERSTOOD (MATH)
 
-Norms: map from vector space X to positive half open ray [0, infinity), that is zero at zero (note: nonnegative implicit in valid range), has scalar multiplication, and obeys the triangle inequality. This feels very similar to random variables actually, maps from outcome space to closed interval. Need this to define open and closed balls.
+Lp norm is norm proof: nonnegativity show by contradiction: need to show converse, norm is 0 means it must be 0 function. Suppose you do have a nonzero function that gives norm zero, take some integral from 0 to 1 of the norm of the function, it is more than zero somehow (see Robinson for proof). Next step is simply to apply triangle inequality internally within on the convex combinations of the norm and show that it is less than or equal to 1 by careful integration.
+
+Map from x to norm of x is always continuous: proof is by considering triangle inequality.
+
+Equivalent norms: norms that are equivalent (reflexive, symmetric, transitive) up to constant scalar multiples i.e. c_1 norm(x1) <= norm(x2) <= c_2 norm(x1)
+
+Sequence space: all real valued sequence such that the Lp norm is finite. At infinity, it is the space of bounded sequences equipped with the supremum norm of components.
+
+c0(K) subspaces of null seqeuences: consists of seqeuences that have all zeroes as the number of components tends towards ifnity:
+
+Norms on a vector space: map from vector space X to positive half open ray [0, infinity), that is zero at zero (note: nonnegative implicit in valid range), has scalar multiplication, and obeys the triangle inequality. This feels very similar to random variables actually, maps from outcome space to closed interval. Need this to define open and closed balls.
+
+Norm on a FIELD: map from field F to real numbers, nonnegative and zero at zero, mapping is homomorphism under group product, mapping is weaker than homomorphism obey triangle inequality under group addition i.e. f(x + y) <= f(x) + f(y). Lastly, group identity makes sense f(1) = f(-1) = 1, and norm preserves group inverses i.e. f(x^-1) = x. Examples: if field is reals, the norm defined is the max norm. If the field is the complex number, the norm is the absolute modulus of product of complex numbers, or the geometric mean of a complex number and its complex conjugate. Any field has trivial norm, norm 1 if nonzero, norm zero if x is zero, and finite fields and finite field extensions only have this trivial norm (I want proof for this).
+
+Valuation as logarithmic norm on fields: logarithmic norm on fields, generalises norm to linearly ordered ring (need linear order like in half open positive ray in reals). It is a mapping from field K into a totally ordered linear group adjoined by infinity (similar to half open positive ray.) Infinity is absorbing element, any element added to infinity gives infinity. Properties: the valuation at zero must be infinity, any valuation of an element is less than infinity, the valuation is a group homomorphism converting products f(xy) in fields to group addition in this totally ordered group f(x) + f(y) and lastly, the valuation of a difference f(x - y) is more than or equal to the minima of the valuation in this group i.e. f(x - y) >= min(f(x), f(y)).
+
+Example of valuation as p-adic: suppose v is valuation in field K to linearly ordered group of reals R, if a is real number in open unit interval i.e. 0 < a < 1, then phi(x) = a^(v(x)) is a norm. Now pick field K to be the rationals, v_p is the p-adic valuation of Q, then we have |x| = (1/p)^(v(x)) as the p-adic norm. It is also an example of a ultrametric norm.
+
+Ultrametric norm: useful since it looks like p-infity norm, it is a group homomorphism f(x+y) is less than or equal to the max(f(x),f(y)). It refers to the difference between the sup/max norm to this.
 
 Normed space: vector space with norm.
 
@@ -983,6 +1001,44 @@ Probability laws are natural transformations from random variable functor to mea
 
 Random variable: are Set endofunctors A^{omega}. Measurable function from sample space to measurable space. Motivation: you want a different measures.
 
+Borel sigma algebra: set in topological space formed by open sets using countable unions, countable intersections, and relative complements.
+
+Sigma algebra: closed under countable complements, countable unions, and countable intersections.
+
+Preimage of sigma algebras are sigma algebras: prove using the fact that preimages preserve intersections, unions, and relative complements.
+
+Permutation matrix: matrix that is exactly 1 in each column and row. Named because multiplication by permutation matrix permutes the rows and columns.
+
+Reducible matrix: if there exists a permutation matrix such that conjugation (by transpose) oby this permutation i.e. R^T P R, for P permutation matrix gives an upper triangular block matrix, then the matrix is reducible. Intuition is that upper triangular matrix is more or less solved.
+
+Irreducibility gives invariant distribution: row reduction gives an outcast subgroup of nodes, with no arrows pointing out of it, if you think of each row as some node, therefore, we have the existence of a stable distribution.
+
+Weak ergodicity: time average goes to ensemble average.
+
+Primitive Markov chain: exists positive s such that (P^s)_{ij} > 0  for any pair (i, j)
+
+Ergodicity theorem: let {X_m} be irreducible finite Markov chain, then the average of f(X_m) i.e. 1/n sum_{0 to n-1} f(X_m) tends towards the sum of the product of the unique invariant distribution and f(i) as n tends towards inifinity.
+
+Poisson process: {N_t}_{t >= 0} increasing, right continuous, integer valued process. Defined by properties: initial value at zero is zero, then N_t has stationary independent increments, i.e. for totally lineared ordered nonnegative time 0 <= t1 <= ... <= tn, we have N_t2 - N_t1, N_t3 - N_t2 ... being independent.
+
+Ito isometry: expectation of integral of square of the expectation of the function with respect to Wiener process is equal to the expectation of the square of the function with respect to time i.e. Exp(int^T_S f(w,t) dW_t)^2 = Exp(int^T_S f^2(w,t) dt). Proof using simple functions, split into dummy variable, then split into autocorrelated part and uncorrelated part. Apply independence of e_j e_k delta W_j and delta W_k. Also we have B(t)^2 not equivalent to B(t) for Brownian motion B. It is useful because it preserves measure.
+
+F_t adapted: a measurable function is F_t adapted if f(t, -) is F_t measurable.
+
+Natural filtration:  the filtration that records all the information then at that time.
+
+Adapted (in statistics): information of the process is precisely and completely available at the same time. It is an non-antipating process.
+
+Ito integral: consider the diffusion term sigma(X_t, t), then consider the typical Riemann integral definition, where the integral from 0 to time t of sigma(X_s, s) dW_s is the limit as subdivisions go to zero of the Riemann sum of sigma(X_j, t_j)(W_t_j+1 - W_t_j). There are three possible choices for the integral which is either have the left endpoint integral (for the example of integrating from 0 to time T of W_t dW_t) i.e. sum of W_tj (W_tj+1 - W_tj) = 0 (this corresponds to Ito's integral).
+
+White noise: derivative of Wiener process in the sense of distribution. Has constant power spectral density.
+
+Coloured noise: has non-constant, power spectrum density.
+
+Wiener process derivative: comprises of drift term and diffusion term.
+
+Diffusion term in probability: dertivative of the white noise.
+
 Locally ringed space is topological space by some stalk. Ringed space such that all presheafs are local rings i.e. colimits of global section functors of opens. By Gelfand duality, this corresponds to maximal ideals.
 
 Subringed space is locally isomorphic to opens (on some site) cut out by (\*\*) functions on the opens.
@@ -1049,7 +1105,7 @@ Ultraproduct, Cartesian product modulo ultra filter, filter is family of subset 
 
 Makkai conceptual completeness, for a functor of (coherent) pretopoi, if the induced contravariant functor on models of pretopoi is an equivalence of categories, then the former functor is an equivalence of categories
 
-Boolean ring: it is a ring of idempotent, 0 and 1 are idempotent so it is canonically isomorphic to ring of integers modulo 2. Now, consider 1 + 1 = 0 using the fact that it is a ring and must have additive inverse 1. If you drop additive inverse and have 1 as an absorbing element 1 + 1 = 1, you get (default) disjunction, and it is a Boolean semiring
+Boolean ring: it is a ring of idempotent, 0 and 1 are idempotent so it is canonically isomorphic to ring of integers modulo 2. Now, consider 1 + 1 = 0 using the fact that it is a ring and must have additive inverse 1. If you drop additive inverse and have 1 as an absorbing element 1 + 1 = 1, you get (default) disjunction, and it is a Boolean semiring. It is commutative, proof: start with a + a = 0, by substituting a + a with (a + a)^2, then consider x + y, you should get xy + yx = 0 using the same trick, recycle trick to get xy + (xy + yx) = xy. Boolean ring is characteristic 2, so xy = yx.
 
 Boolean algebra: is a ring where every element is idempotent.
 
