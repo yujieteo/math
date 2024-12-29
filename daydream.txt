@@ -1,5 +1,7 @@
 DAYDREAM (MATH)
 
+Euclidean algorithm? Good definition for it to keep in your head.
+
 Do not understand the purpose of the Kolmogorov consistency theorem? The proof also relies axiom of choice? https://fabricebaudoin.blog/2012/03/25/lecture-5-the-daniell-kolmogorov-existence-theorem/
 
 How does Varadhan construct a counterexample for moments not determining the function?

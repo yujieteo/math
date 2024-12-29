@@ -1,5 +1,55 @@
 UNDERSTOOD (MATH)
 
+Matrix rings: set by two by two matrices also form a matrix ring, example we have injective ring homomorphism from x + yi to [x y ; -y x].
+
+Injective morphism: kernel is zero, f(x) = f(y) implies x = y, converse of well definedness of function.
+
+Gaussian integers: ring of integers adjoined with the root of -1.
+
+Forgetful functor of unital commutative rings from Z: there is a unique group homomorphism from Z to ring R.
+
+Sylow's theorem: important partial converse to Lagrange's theorem, G be finite group. Let p be prime, and p^n divides the cardinality of G for some power n >= 1, G has a subgroup of order p^n.
+
+Lagrange's theorem: consider G FINITE group, cardinality of G = cardinality of H * number of distinct cosets in H. Proof is based on left cosets of finite groups form equivalence classes. Coset distinction since left cosets form equivalence classes. Consider group G as disjoint union of left cosets of H, apply forgetful functor so cardinality of G is cardinality of H * number of distinct cosets. Lagrange's theorem falls out from left cosets as equivalence classes. 
+
+Index of a subgroup: number of left distinct cosets of H.
+
+Left cosets of finite groups form equivalence classes: same proof, disjoint and we are done, otherwise we can find g1 h1 = g2 h2, then consider g2 h2 h1^{-1} h is in left coset g2 H. This gives equivalence classes of left cosets.
+
+Left coset of a subgroup H of G attached with element g: this is the group formed by multiplying every other element of H with the element g using the group law of G.
+
+Group homomorphism: homomorphism that gives p(a * b) = p(a) + p(b) where * is a group law and + is another group law. Typical example is the logarithm, which takes from product group on reals to addition group on reals.
+
+Symmetric group: group with permutations as the composition law. Important since this is related to the Cayley's theorem and it is one of the first example of the Yoneda's lemma in action.
+
+Dihedral group: group of all permutations of the n-gon. 
+
+Quaternion group: eight element group of signed 1, i, j, k, with a bunch of formulas where i^2 = j^2 = k^2 = ijk = -1.
+
+Cyclic group: there is an element i.e. that generates the entire group i.e. g^{n}, n integer gives all elements in the group.
+
+Order of element of a group: integer n where number of products give g^n = e, where e is the identity, and g is the group element.
+
+Partial order: binary relation if it is reflexive, antisymmetric, and transitive.
+
+Principle of inclusion and exclusion: cardinality of union on sets on A and B is equal to cardinality of A + cardinality of B - cardinality of A intersect B, proof is easiest considering the forgetful functor (cardinality) on the category of finite sets.
+
+Binomial theorem: (x + y) raised to the power m is a series of with binomial coefficient m! / (m - k!) k! multiplied by x^k and y^{m - k}. For the binomial distribution, pick x = p, and y = 1 - p. This is useful in deriving the characteristic function of the binomial distribution since this is an integral of a damping exponential or a Fourier transform.
+
+Binomial coefficient is 1 mod p at k = 0, k = p, 0 otherwise: proof, p choose 0 and p choose p is 1 by calculation. The rest are divisible by p.
+
+Fermat's little theorem: this is the statement that a^p = a mod p, or a^{p - 1} = 1 mod p. Proof: I like this binomial coefficient proof I saw in Silverman using induction on a. Verify for a = 0, a = 1, now assume it is true for a, verify true for (a + 1)^p. Do binomial expansion, this will give series (p choose [p - k]) a^k, which is a^p + 1 (from p choose p = 1), which then reduces to a + 1 from the induction hypothesis. Second statement, just divide both sides by a. 
+
+Unique factorisation up to order and units: all integers more than or equal to two can be factored uniquely up to order and units into a product of primes.
+
+Integers modulo prime p: equivalence classes forming p distinct equivalence classes for primes. NOTE: this is actually a set of sets. 
+
+Integers: group completion of the naturals.
+
+Mathematical induction: verify base case is true, let n >= some integer, then assume P_1 all the way to P_n is true (important, not necessarily P_n), then show P_{n+1} is true.
+
+Construction of equivalence classes theorem: statement that if sets have equivalence relations on it, then (1) they are either equal or disjoint union; (2) there is a functor from disjoint union of equivalence classes to cardinality of equivalence classes. Proof: if disjoint union, we are done, otherwise assuming union, reflexivity, symmetry and transitivity necessitates that mutual inclusion of the two sets.
+
 Kolmogorov consistency theorem: you want a unique measure P on outcome space Omega and and sigma algebra Sigma such that under natural projection pi(omega) = list of coordinates vectors (x_1, x_2, ... x_n) the induced measure P pi_n^{-1} = P_n on R^n. Wikipedia says that it means you can construct a probability space if you fulfil conditions that permutations of distinct times (careful NOT measurable sets i.e. random variables are exchangeable) still give consistent product of measurable sets i.e. order in which the t_i appear does not change the distribution, only the way I write down and future events can be input as R^{n} in the probability measure and these two conditions (which define a stochastic process) are necessary and sufficient.
 
 Consistent family of finite dimensional distributions: the natural projection from R^{n + 1} -> R^{n} losing one degree of freedom, the probability measure P^{n+1} projects to P^{n}.
@@ -728,6 +778,8 @@ Localisation of ring: generalisation of field of fractions, but with arbitrary c
 
 Subgroup: subset with the same group operation
 
+Kernel of a group homomorphism: set of elements such that p(g) = e', where g is the group element and e' is the identity element of the other group. This reminds me of the left null space of a linear map. Null space is in the category of matrices, whereas kernels is linear transformation. The classical example is the special linear group, which is the kernel of the determinant map from the general linear group to the reals under the multiplicative group.
+
 Proper subgroup: proper subset, same group operation. Operation is Unital associative invertible magma
 
 Embedding definitions: defined by how it can be embedded in a bigger objects: example, field of fractions of integral domain that can be embedded in a smallest field
@@ -1154,7 +1206,7 @@ CW approximation theorem: for any space X, there is an induced map Y to X for so
 
 Modular arithmetic: m divides a - b means a = b mod m, a dividend, b remainder, m divisor.
 
-Coprime ideals: sum of coprime ideals give the full ring, There are coprime numbers, coprime ideals, coprime polynomials.
+Coprime ideals: sum of coprime ideals give the full ring, There are coprime numbers, coprime ideals, coprime polynomials. For corpime integers we have au + bv = gcd(a,b) = 1. This fact should be exploited when you think of coprime.
 
 Bezout's identity: linear combinations of integers are equal to their greatest common divisor i.e. au + bv = gcd(a,b). Proof: if u and v are coprime, Z as linear combination have 1 as unit vector so linear combination au/gcd(a,b)+ bv/gcd(a,b) = 1 since primes are orthogonal vectors on integers. Multiply by gcd(a,b) to get the result. Alternatively, apply Euclidean algorithm backwards using the fact that intersections of linear combinations with the integers must have minimal element (or gcd(a, b) is minimal). Since these are linear combinations, by induction linear combinations of scalars of primes are equal to the greatest common divisor of the scalars.
 
