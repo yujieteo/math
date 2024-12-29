@@ -1,5 +1,23 @@
 DAYDREAM (MATH)
 
+Induced representations: contrast between tensor products of G modules and vector valued functions on g?
+
+Hausdorff spaces as every net converges to atmost one point? Compact Hausdorff space is space where every net accumulates at some point and converges to at most one point? See Folland for nets and filters. Make this make sense?
+
+Wederbern's little theorem?
+
+Amenability in group theory?
+
+How to understand Schur's lemma defined using endomorphism ring? Simple modules? Division rings?
+
+How to understand rings as homomorphisms from a ring to the endomorphism ring of an abelian group?
+
+Differential geometry using locally ringed spaces? See Sheaves on Manifolds by Kashiwara.
+
+Prime elements versus irreducible elements?
+
+Prove all equivalent definitions of a normal subgroup.
+
 Euclidean algorithm? Good definition for it to keep in your head.
 
 Do not understand the purpose of the Kolmogorov consistency theorem? The proof also relies axiom of choice? https://fabricebaudoin.blog/2012/03/25/lecture-5-the-daniell-kolmogorov-existence-theorem/

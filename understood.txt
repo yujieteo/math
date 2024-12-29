@@ -1,5 +1,36 @@
 UNDERSTOOD (MATH)
 
+Continuous function: Equivalently: (1) preimage of opens in codomain is open for all opens in domain; (2) lim_n f(x_n) = f(lim_n x_n) for all convergent sequence in the domain of f; (3) epsilon-delta; (4) continuous at a point x if preimage of any neighbourhood of f(x) is a neighbourhood of x.
+
+Convolution (group, measure theory perspective): suppose we have two finite complex Radon measure on an LCA group G, it is the unique, bilinear, weak-* continuous extension of the group product to M(G) which is the space of measures, and G is naturally identified with point measures. Restrict to L1(G), gets convolution formula.
+
+Convolution (probabilist): the probability density function associated with the sum of two independent ABSOLUTELY continuous random variables
+https://mathoverflow.net/questions/5892/what-is-convolution-intuitively
+
+Equivalence relation: binary operation that is reflexive, symmetric and transitive; Equivalently: there exists a function f such that R(a, b) if f(a) = f(b).
+
+Function: triple (A, B) such that R is a subset of the product of A and B. Or Timothy Gowers prefer not to say what it is at all, and just say f is a function form A to B, x is an element of A, f(x) is an element of B.
+
+G-torsor: a set X with an action of G (group homomorphism from G to X), multiply any element of g with element x in X such that identty and associativity holds for action 1x = x and (g1g2)x = g1(g2 x), a group action is a torsor there exist a UNIQUE group element such that gx1 = x2 for any x1 and x2 in X, such that (x2 / x1) x1 = x2.
+
+Smooth structure: manifold that is an equivalence class of an atlas, use some locally ringed space formalism to define this.
+
+Group action: homomorphism from G to the group of permutations on X
+
+Dates as Z-torsors: subtract two dates gives integer number of days, so dates are elements of a Z-torsor, you cannot add dates, integers is Z.
+
+Indefinite integrals as R-torsor: when you integrate f you get a set of functions whose derivative is f. This is a R-torsor, with + C
+
+Energies are R-torsor: potential energy is with respect to a base point, so you need an R-torsor.
+
+Affine plane as torsor: you forget the origin, so the plane becomes torsor. Affine space is a vector space forgetting an origin. A torsor is like group forgetting the identity. To turn the G-torsor into a group G, pick an element to be an identity.
+
+Normal subgroups: subgroup invariant under conjugation of any group element i.e. gng^{-1} is in N. Equivalently, (1) image of conjugation is subset/equal to N; (2) left cosets right cosets are equal; (3) N is A (not the) union of conjugacy classes of G; (4) there is some group homomorphism whose kernel (null space if you use representation theory) is N; (5) for all n in N and g in G the commutator n^{-1} g^{-1} n g is in subgroup N. Special linear group is a normal subgroup of the general linear group, since it is the kernel of the determinant map as group homomorphism.
+
+Center of group: set of elements that commute with all elements of the group.
+
+Hamiltonian group: non-abelian group but every subgroup is normal.
+
 Matrix rings: set by two by two matrices also form a matrix ring, example we have injective ring homomorphism from x + yi to [x y ; -y x].
 
 Injective morphism: kernel is zero, f(x) = f(y) implies x = y, converse of well definedness of function.
@@ -331,7 +362,8 @@ Weibull intuition: pdf with finite right end point, dependence close to this end
 
 Derivatives of the characteristic function: (-i)^n d^n(P(x))/dk^n at k = 0, then you can express it as some sort of Taylor series, in fact this will appear as the cumulants of a pdf.
 
-Cumulants: derivatives of the logarithm of the characteristic function, it looks like the action of the (-i) as an action (circle group in the imaginary plane) on the n-th derivative of the logarithm of the probability distribution at k = 0. We have c_n = (-i)^n d^n(log(P(k)))/dk^n at k = 0. So you can write the characteristic function as the exponential of a Taylor series i.e. sum of exp(sum c_n / n! (ik)^n), it becomes the action of (ik) instead. Sum is cumulant preserving, proof is using product of convolution is product of Foruier transform. Also, it motivates alternative measures of dispersion from normality, fixing some problems with moments of a probability distribution.
+Cumulants: derivatives of the logarithm of the characteristic function, it looks like the action of the (-i) as an action (circle group in the imaginary plane) on the n-th derivative of the logarithm of the probability distribution at k = 0. We have c_n = (-i)^n d^n(log(P(k)))/dk^n at k = 0. So you can write the characteristic function as the exponential of a Taylor series i.e. sum of exp(sum c_n / n! (ik)^n), it becomes the action of (ik) instead. Sum is cumulant preserving, proof is using product of convolution is product of Foruier transform. Also, it motivates alternative measures of dispersion from normality, fixing some problems with moments of a probability distribution. Another motivation for it is that the variance is second degree homogenous i.e. var(cX) = c^2 var(X), translation invariant var(c + X) = var(X) and cumulative var(sum of X_1 to X_n)
+= sum of var(X_i) from 1 to n.
 
 Dutch book argument: bettor puts in px, house gives x, at odds (1-p)/p, house can set x to be anything but the bettor must accept both sides of the bet (win/lose). Bettor is consistent if it is not forced to accept a sure loss in probability assignment. I learnt of this argument in Sornette's book.
 
@@ -1118,6 +1150,8 @@ Lie group and Lie algebra correspondence: isomorphic Lie algebra does not imply 
 
 Schur's lemma: all ground field, irreducible representations are unique up to homomorphism, if ground field is algebraically closed endomorphisms are scalar multiples of identity operator. Endomorphism of irreducible representation, multiply by complex number? This property is also known as complete reducibility or semisimplicity. Note: over finite fields, not completely irreducible, so modular representations is very tricky.
 
+Schur's lemma (endomorphism ring): if a module is simple, then its endomorphism ring is a division ring.
+
 Schur's lemma (in Fulton Harris): consider V and W irreducible representations of G, and p: V -> W is a G-module homomorphism, then either p is an isomorphism, or p = 0, and if V = W then p = e I for some complex e, and I is identity matrix. First claim, the kernel and image of the map are invariant subspaces, so p is an isomorphisms or is some vanishing map. For the second claim, since the complex numbers is algebraically closed, p as a FINITE DIMENSIONAL linear map must have an eigenvalue, so (p - eI) has nonzero kernel. By (1), (p - eI) = 0, so p = eI. Note we did use the hypothesis that V and W are finite dimensional vector spaces. Essentially, Schur's lemma states that linear transformations are represented by matrices if you restrict it to the case of the trivial group i.e. linear algebra.
 
 Representations: group preserving map (group homomorphism) from the group to the general linear group of vector space V which is GL(V) which is the group of automorphisms (all invertible matrices) for vector space V. The representation gives the vector space the structure of a G-module for a group G (module is like vector space for rings). 
@@ -1246,7 +1280,9 @@ Etale topology: gives a uniform definition of Galois groups and fundamental grou
 
 Galois group: covering space with fundamental group or universal covering space with algebraic closure.
 
-Module: additive abelian groups closed under left and right linear decomposition f(ax + by) = af(x) + bf(y) of ring multiples of group elements.
+Module: additive abelian groups closed under left and right linear decomposition f(ax + by) = af(x) + bf(y) of ring multiples of group elements. Beginner: like vector space over arbitrary ring instead of fields. Module over ring as a homomorphism from the ring to an endomorphism ring of an abelian group.
+
+Endomorphism ring, End(G): set of all homomorphism of G onto itself. Endomorphism composition is product, pointiwse addition is addition. Abelian group is module over ring of integers, initial object in category of ring. 
 
 Snake lemma: three tensor products _ M exact sequences columns with (module) M except for missing zeroes on 0 to Zm to Zn to A to 0 substituting A, B, C for A. This gives exact sequences of complexes and tensor products except at end of sequence of Tors and start of tensor products of A, B, C. To fill in snake belly, zigzag from Tor(C, M) to A _ M. Well defined forwards due to first column having final image zero. Well defined backwards due to rest of columns having final image zero.
 
@@ -1524,7 +1560,9 @@ Smash product generalised tensor product which is a product that is bilinear sin
 
 Field extension, easy define some subfield with some subset, then the main field is the field extension. Also, the subset is adjunction to the field extension. From field to field extension, if it is a ring homomorphism preserving ring structure, must be an injection.
 
-Skew field, non-commutative field
+Skew field / division ring: non-commutative field
+
+
 
 Eilenberg-Steenrod axioms for cohomology: contravariance, homotopy invariant, excision, suspension isomorphisms, disjoints to products, dimension axiom.
 
@@ -1632,7 +1670,9 @@ A regular local ring is an integral domain: a variety that is regular at a point
 
 Valuation of an element: order of vanishing of a local function on a curve at a point. Note: works on any integral domains and quotient fields, so can be in any abelian group and not just integers. Example: for a k to be a field of rational functions of variety X around smooth point a, the valuation can be thought of as an order of a zero or pole at smooth point a in the variety.
 
-Fields are zero dimensional regular local rings i.e smooth schemes modelled by affines with Krull dimension zero.
+Fields as zero dimensional regular local rings: smooth schemes modelled by affines with Krull dimension zero.
+
+Fields as commutative division ring: compare and contrast with skew fields. All finite division rings are commutative and are finite fields by Wedderburn's little theorem.
 
 Discrete valuation rings are one dimensional regular local rings.
 
