@@ -1,5 +1,91 @@
 UNDERSTOOD (MATH)
 
+Norm induced by inner product: maps from V to half open ray [0, infinity) such that norm ||v||^2 = inner product of v and v. Typical examples are for l^2 and L^2(Omega), where 1 is a sum from j = 1 to j = infinity of |x_j|^2 and the other is an integral of the norm of f(x)^2 over support Omega.
+
+Proof that norm induced by inner product is a norm: nonnegativity by computation on example, homogenity by considering product of scalar and its scalar conjugate. Triangle inequality gives inequality excess of 2 times the real part of the inner product of x and y typical of a binomial expansion.
+
+Parallelogram identity: norm of square of (x+y) + norm of square of (x-y) gives two times the norms squared of x and y.
+
+Hilbert space: complete inner product space with completness respecting the norm induced by the inner product.
+
+Polarisation identity: 4(x,y) = sum from n = 0 to n = 3 of i^n(x + i^n y)^2. Proof is easy by expanding the right hand side into four roots of unity.
+
+Closed subspace of Banach spaces are Banach spaces: proof, if Y is complete than (x_n) in Y is Cauchy in Y so it is Cauchy is X, if Y is closed...
+
+Schauder basis: motivated by the fact that the basis will always be finite dimensional even in an infinite dimensional space. Take a countable set of basis elements e_j from j = 1 to j = infinity for a normed space X. If every x in X can be written uniquely as a linear composition of coefficients in base field K with the basis elements e_j such that the sum converges in X, then it is a Schauder basis.
+
+Orthogonal: inner product of elements is zero.
+
+Orthonormal: all basis slements in E has a unit norm, and the inner product of pairs of basis elemtns is zero. Important, this does not require E to be countable.
+
+Orthonormal set in l^2, this is just the set of e^(j) from j = 1 to j = infinity.
+
+Orthonormal set on L^2{-pi, pi}. This is the basis elements with coefficient 1/2{\pi} and exp(ikx) for some integer x. Proof: inner propduct looks like Fourier transform, this is 1 when you have identical exp{ikx} and exp{-ikx}. If not identical, this vanishes when you compute the Fourier transform.
+
+Generalised pythagoras: define orthonormality so that generalised Pythagora's falls out easily.
+
+(Hilbert) adjoint of a linear operator: consider a linear operator from hilbert spaces H to K, then using the Riesz representation theorem there is a unique adjoint T^* in the set of bounded linear operators B(H, K) such that (Tx, y)_H = (x, T^*y)_K. Construction starts with f(x) := (Tx, y)_K, then since this is a bounded linear operator the norm of f(x) is less than or equal to the norm of the linear map T in the operator norm ||T|| of the space of bounded linear maps B(H, K), by linearity f is in H^*, therefore using Riesz representation theorem, you can get uniqueness.
+
+Operator norm on the space of bounded linear maps: is the greatest lower bound / infimum of all M such that the norm of Tx in Y is less than M times the norm of x in X for bounded linear maps B(X, Y) from X to Y.
+
+Motivating the Hilbert adjoint: generalises inner products (recall that Hilbert spaces is a complete space with endowed with an inner product). Consider the example of subsets S and T in set X, such that we have some indicator intersection norm where an nonempty intersection of S and T gives 1, and S and T disjoint gives 0. For a relation R from X to Y, there is a unique adjoint of the relation R^* from Y to X where <RE, F> = <E, R^*F> where R^* is the set of (y,x) such that (x,y) is in R. This is symmetric in the basic example of some indicator intersection norm.
+
+Self adjunction of a linear operator: a linear operator such that T = T^*. Self adjoint linear operators have plenty of examples, and serve as generalisation of unitary / Hermitian / symmetric matrices.
+
+Self adjoint of a linear operator and its spectrum: sppposed linear operator T in the banach space of bounded linear operator B(H), then if it is self adjoint we have all eigenvalues are real, then if Tx_1 = e_1 x_1 and Tx_2 = e_2 x_2 with nonequal eigenvalues e_1 e_2 then the inner product of x_1 and x_2 is zero. Typical example is that of symmetric matrices.
+
+Motivation for self adjoint operators in physics: these correspond to physical observables like mass, momentum (not like complex valued stuff like capacitance and inductance) on an infinite dimensional hilbert space.
+
+Adjunction of right shift operator gives left shift operator: suppose we have s_r x = (0, x1, x2, ...) and maps s_r from l^2 to l^2 discretised Hilbert spaces, then we have s_r^* = s_l since we can see that s_r^* y = (y2, y3, y4, ...). We have that (s_r x, y) = (x, s_r^* y) or that the the right shift operator x is left adjoint to the left shift operator on y.
+
+Right shift operator has no eigenvalue: proof is s_r x = k x, k is eigenvalue in field K. We have kx_1 = 0, kx_2 = x_1, kx_3 = x_2. If k is nonzero, then x_1 must be zero, so x_2 and the rest must be zero. So the spectrum of nonzero eigenvalues k is empty, therefore this is an example to how a linear operator may have empty spectrum or no eigenvalues.
+
+Example of operator as functor: derivative operator is a functor from the category of pointed smooth manifolds to the category of vector spaces taking smooth maps f: (M, m) to (N, n) for m in M, n in N, f(m) to the derivative df_m from the tangent space T_m(M) to tangent space T_n(N). Chain rule is derived from respecting composition.
+
+Linear subspace as algebra: subspace of a compact metric space A defined to be C(X, K), X subspace, K field such that the identity is in A and that it is closed under composition.
+
+Arzela-Ascoli definition of compactness: for X a compact metric space, it is equivalently equicontinuous, closed and bounded.
+
+Bounded in the sense of norms: there exists a positive R > 0 such that the max norm (l^\infty) on the norm of f is less than R.
+
+Bounded linear operator in the sense of norms: there exists a positive R such that the norm of Tx in Y is less than R * the norm of X.
+
+Baire category theorem motivation: a form of axiom of choice to ensure that no countable cover of proper subspaces of K^n exists, K being some field. See Tao's notes.
+
+Equicontinuous in the sense of norms: continuous everywhere, pick your favourite definition of continuity (preimage of opens is open on operators, epsilon-delta definition, preimage of open neighbourhoods)
+
+Resolvent of a linear operator: set of values k in the complex numbers / field such that T - kI is invertible, T is linear operator, I is identity operator / matrix. Equvialently, this is the set of complex numbers such that (A - e I)^{-1} is bounded and densely defined.
+
+Spectrum of a linear operator: the complement of the field (typically C) from the resolvent. or the set of values k such that T = kI is not invertible. Note: in finite dimensional vector space, this corresponds to the set of eigenvalues for some linear transformation / matrix.
+
+Operator: operators feels like endofunctors. Not very well defined. Typical definition is function from object of some structure to another object of somet structure.
+
+Kernel as comparison between isomorphism and homomorphism: isomorphism has trivial kernel, homomorphism may have nontrivial kernel. Use nullspace analogy again. Homomorphisms can be seen as approximations of the group law, isomorphisms are PERFECT approximations.
+
+Baire category equivalences: see Tao's notes. Relates qualitative theory of continuous linear operators and quantiative theory of estimates. I am surprised this is not phrased in terms of a categorical duality.
+
+Intuition behind uniform boundedness principle: equates qualitative boundedness (convergence) of a family of continuous operators with quantitative bounds.
+
+Intuition behind the open mapping theorem: equates qualiative solvability of the linear problem Lu = f with quantitative solvability.
+
+Intuition behind the closed graph theorem: equates qualitative regularity of weakly continuous operator T with quantitative regularity.
+
+Basis of topological space: every open is union of set in basis sets. Like basis of vector space.
+
+Unique subbasis: related to countable intersections of opens as unions.
+
+Bernstein polynomials: looks like Binomial series: start with 1 = (x + (1-x))^k = sum (n! / (n - k)! k!) x^k (1 - x)^{n - k} from k = 0 to k = n. Now have some f(k/n) factor in each term.
+
+Compact linear operator: linear operator T from X to Y is compact if for any bounded sequence (x_n) in X then the sequence of (Tx_n) in Y has a convergent subsequence OR T is compact if TB_x is precompact (bounded and equicontinuous) subset of Y OR completion of TB_x is a compact subset of Y.
+
+Precompact: equivalent to Cauchy subsequence.
+
+Comparison of precompactness to compactness: precompact is every Cauchy subsequence converges versus every Cauchy sequence converges.
+
+Baire space: topological space whose conclusion satisfies to Baire category theorem. This is also thte topological space where intersections of countable family of dense open subspaces is also dense. This is the space with countable union of closed sets with empty interior also has an empty interior.
+
+Hilbert-Schmoidt operator: orthonormal basis {e_j} from j = 1 to j = infinity of a Hilbert space is such that the norm square of T which is the sum of norms of the linear maps from the orthonormal basis elements squared is bounded i.e. sum from j = 1 to j = infinity of norm(Te_j)^2 is less than infinity. This is well defined since this is independent of the orthonormal basis we pick.
+
 Continuous function: Equivalently: (1) preimage of opens in codomain is open for all opens in domain; (2) lim_n f(x_n) = f(lim_n x_n) for all convergent sequence in the domain of f; (3) epsilon-delta; (4) continuous at a point x if preimage of any neighbourhood of f(x) is a neighbourhood of x.
 
 Convolution (group, measure theory perspective): suppose we have two finite complex Radon measure on an LCA group G, it is the unique, bilinear, weak-* continuous extension of the group product to M(G) which is the space of measures, and G is naturally identified with point measures. Restrict to L1(G), gets convolution formula.

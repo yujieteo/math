@@ -1,5 +1,23 @@
 DAYDREAM (MATH)
 
+Densely defined?
+
+Finish the proof of closed subspaces of Banach spaces are Banach spaces.
+
+Prove the equivalent definitions of a Baire space.
+
+Prove the properties of the spectrum of self linear operators.
+
+Prove that precompactness gives the equivalent definition as having all Cauchy subsequences converge.
+
+Find generalisations or good definitions that help prove the Baire category theorem.
+
+Good definition of operator in contrast to endofunctor.
+
+What is the relationship between equivalence relations and partition functions?
+
+Is there a definition of left and right adjoints in terms of operators (not categorical)?
+
 Induced representations: contrast between tensor products of G modules and vector valued functions on g?
 
 Hausdorff spaces as every net converges to atmost one point? Compact Hausdorff space is space where every net accumulates at some point and converges to at most one point? See Folland for nets and filters. Make this make sense?
