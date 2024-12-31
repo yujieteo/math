@@ -1,5 +1,9 @@
 DAYDREAM (MATH)
 
+Completion of ring construction inverse limit, do not understand what do you mean by modulo a filtration of an abelian group.
+
+Why is completion of an abelian group also an abelian group?
+
 Constructive definition of connectedness? Not the nonexistent definition.
 
 Open mapping theorem proof. I don't understand it. Find a better proof of the open mapping theorem. Ideally helping in defining some useful construct to do the proof, that uses linearity, (convexity), surjectivity. It does not make sense because I have some balls centred, then do some scaling of the balls. I also do not understand where surjectivity is used. Admit you don't want to work on it.
