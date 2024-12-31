@@ -1,5 +1,7 @@
 UNDERSTOOD (MATH)
 
+Sequences, nets, and filters: convergent sequences can fail when checking for closure, continuity, and compactness. This motivates the definitions of nets and filters.
+
 Norm induced by inner product: maps from V to half open ray [0, infinity) such that norm ||v||^2 = inner product of v and v. Typical examples are for l^2 and L^2(Omega), where 1 is a sum from j = 1 to j = infinity of |x_j|^2 and the other is an integral of the norm of f(x)^2 over support Omega.
 
 Proof that norm induced by inner product is a norm: nonnegativity by computation on example, homogeneity by considering product of scalar and its scalar conjugate. Triangle inequality gives inequality excess of 2 times the real part of the inner product of x and y typical of a binomial expansion.
@@ -18,7 +20,7 @@ Schauder basis proof of decomposition of linear combination of complex exponenti
 
 Orthogonal: inner product of elements is zero.
 
-Orthonormal: all basis slements in E has a unit norm, and the inner product of pairs of basis elements is zero. Important, this does not require E to be countable.
+Orthonormal: all basis elements in E has a unit norm, and the inner product of pairs of basis elements is zero. Important, this does not require E to be countable.
 
 Orthonormal set in l^2, this is just the set of e^(j) from j = 1 to j = infinity.
 
@@ -71,7 +73,7 @@ Lindelof: weaken compactness to use countable subcover / refinement.
 
 Refinement of cover: a refinement of a cover C in a topological space X is a new cover D of X such that every set in D is contained in some set in the cover C.
 
-Partition of unity: feels very category theory like, a set R of continuous functions from topological space X to the unit interval [0, 1] such that for every point x in X, there is a neighbourhood where all but a finite number of the functions of R are 0, the sum of all function values at x is 1. Classical example is partitions of unity of a circle unrolled to a line, then you have compositions of sine waves to form the flat circle. Bernstein polynomials are examples of partitions of unity. Weak Hilbert Nullstellensatz asserts that the linear combination polynomials with no common vanishing points f_1 to f_r and polynomials a_1 to a_r that is equal to 1 is subordinate to the Zariski open cover (something like that, see Wikipedia).
+Partition of unity: feels very category theory like, a set R of continuous functions from topological space X to the unit interval [0, 1] such that for every point x in X, there is a neighbourhood where all but a finite number of the functions of R are 0, the sum of all function values at x is 1. Classical example is partitions of unity of a circle unrolled to a line, then you have compositions of sine waves to form the flat circle. Bernstein polynomials are examples of partitions of unity. Weak Hilbert Nullstellensatz asserts that the linear combination polynomials with no common vanishing points f_re1 to f_r and polynomials a_1 to a_r that is equal to 1 is subordinate to the Zariski open cover (something like that, see Wikipedia).
 
 Locally finite: each point in the space has a neighbourhood that intersects with only finitely many sets in the collection. This is the key idea that helps in Nagata-Smirnov metrization, as well as the definition of paracompactness which is sufficient for metrization.
 
@@ -103,9 +105,11 @@ Baire category equivalences: see Tao's notes. Relates qualitative theory of cont
 
 Intuition behind uniform boundedness principle: equates qualitative boundedness (convergence) of a family of continuous operators with quantitative bounds.
 
-Uniform boundedness principle: let X be a complete normed space (a Banach space), let Y be a normed vector space, let T_a indexed by a in indexing set A be a family of continuous linear operators T_a from X to Y. The following are equivalent: (1) pointwise boundedness of linear operator i.e. the set of T_a x is bounded (exists positive M such that T_a x in norm Y is less than M times norm of x in norm X); (2) uniform bounded, the operator norms T_a are bounded i.e. infimum of all M such that the norm of T_a x in norm Y is less than M times norm of x in norm X on the whole space of linear operators B(X, Y)
+Uniform boundedness principle: let X be a complete normed space (a Banach space), let Y be a normed vector space, let T_a indexed by a in indexing set A be a family of continuous linear operators T_a from X to Y. The following are equivalent: (1) pointwise boundedness of linear operator i.e. the set of T_a x is bounded (exists positive M such that T_a x in norm Y is less than M times norm of x in norm X); (2) uniform bounded, the operator norms T_a are bounded i.e. infimum of all M such that the norm of T_a x in norm Y is less than M times norm of x in norm X on the whole space of linear operators B(X, Y).
 
 Proof of uniform boundedness principle: uniform boundedness obviously implies pointwise boundedness, assume pointwise boundedness, consider point x, then take countably many sets E_n be the set of points x in X such that norm of T_a y is less than n for all a in the indexing set A. This E_n cover X, using the Baire category theorem, one of this E_n is dense in a ball (I understand this key step). The T_a are continuous, so E_n are closed, so one of the E_n contains a ball. Stuck on this step, you can have the ball centred on the origin. Increase the value of n, E_n dilates, and it contains the open ball B(0,1), but all of the operator norms are bounded by the value of n, so pointwise boundedness implies uniform boundedness.
+
+Failure of uniform boundedness principle (Tao's exercise 4): drop completeness we have the enumeration of the rationals in unit interval f_n(r_N) = n, f_n(x) = 0 if x is not equal to r_n. Each function of f_n is bounded (by n), but has single point of discontinuity. This is pointwise bounded but no subintervals are uniformly bounded since it contains infinitely many rationals. Similar reasons, it is not continuous. For nonlinearity, pick sequence (x_n) = 1/n, get sequence f_n = n, this is unbounded.
 
 Intuition behind the open mapping theorem: equates qualitative solvability of the linear problem Lu = f with quantitative solvability.
 
@@ -119,7 +123,7 @@ Bernstein polynomials: looks like Binomial series: start with 1 = (x + (1-x))^k 
 
 Compact linear operator: linear operator T from X to Y is compact if for any bounded sequence (x_n) in X then the sequence of (Tx_n) in Y has a convergent subsequence OR T is compact if TB_x is precompact (bounded and equicontinuous) subset of Y OR completion of TB_x is a compact subset of Y.
 
-Precompact: equivalent to Cauchy subsequence.
+Precompact: equivalent to Cauchy subsequence. This relates to its completion, a precompact space is a space whose completion is compact.
 
 Comparison of precompactness to compactness: precompact is every Cauchy subsequence converges versus every Cauchy sequence converges.
 
@@ -290,13 +294,17 @@ Row rank = column rank: not obvious, it also implies if the rows of square matri
 
 Rank of a matrix: elimination gives r pivot variables and n - r free variables, r is the rank of the matrix. It counts the number of pivot rows in the row space and pivot columns in the column solutions.
 
-Column space: column space contains all linear combinations of the columns of A. It can be thought of as the space that is spanned by its columns. It is a subspace of R^n. Its dimension is the rank of the matrix. This  is called the range, since it is all the possible vectors f(x) = Ax, that is why it is given the name for some hypothetical function.
+Column space (image): column space contains all linear combinations of the columns of A. It can be thought of as the space that is spanned by its columns. It is a subspace of R^n. Its dimension is the rank of the matrix. This is called the range, since it is all the possible vectors f(x) = Ax, that is why it is given the name for some hypothetical function.
 
-Null space: consist of all vector x such that Ax = 0. It is a subspace of R^n. Column of A are independent when null space is the zero vector. The reasoning is as follows: pick columns of triangular matrix with no zeroes on the diagonal. Solve Ac = 0, forced to pick entries of c to be zero, therefore, the only combination to produce the zero vector is the trivial combination. The dimension is dimension of the space - rank of matrix or n - r. This dimension is also called the nullity.
+Null space (kernel in linear algebra): consist of all vector x such that Ax = 0. It is a subspace of R^n. Column of A are independent when null space is the zero vector. The reasoning is as follows: pick columns of triangular matrix with no zeroes on the diagonal. Solve Ac = 0, forced to pick entries of c to be zero, therefore, the only combination to produce the zero vector is the trivial combination. The dimension is dimension of the space - rank of matrix or n - r. This dimension is also called the nullity.
 
-Row space: column space of the transpose of A.
+Difference between null space and kernel: kernel is basis free, only once you choose a basis you can define the null space.
 
-Left null space: null space of the transpose of A. It is the number of columns = m, so it is m - r, where r is the rank of the matrix.
+Cokernel equivalent definitions in linear algebra (not true over general fields): the following are equivalent: cokernel of matrix A, orthogonal complement of the image of A, equivalence classes of every vector of image of A. Proof is finding isomorphisms but requires x^T A^T Ax = 0.
+
+Row space (coimage): column space of the transpose of A.
+
+Left null space (cokernel in linear algebra): null space of the transpose of A. It is the number of columns = m, so it is m - r, where r is the rank of the matrix.
 
 Echelon form, U: it is a staircase pattern, upper triangular, zeroes below the pivots.
 
@@ -318,7 +326,7 @@ Frobenius matrix: represent Gaussian transformation for Gaussian elimination, al
 
 Orthogonality of fundamental subspace: row space is orthogonal to (right) null space, column space is orthogonal to left null space.
 
-Rank nullity theorem: dim(row space) + dim(right null space) = number of columns. We have dim(column space) + dim(left null space) = number of rows. Dim of row space is designated as a rank of the matrix, the dim of the right null space is designated as the nullity of a matrix.
+Rank nullity theorem: dim(row space, image) + dim(right null space, kernel) = number of columns, n. We have dim(column space, image) + dim(left null space, cokernel) = number of rows, m. Dim of row space is designated as a rank of the matrix, the dim of the right null space is designated as the nullity of a matrix. dim(row space of A, image) = dim(column space of A, coimage) since there is a bijection from the image and coimage of A.
 
 Orthogonal complement: subspace V, then it is the space of all vectors orthogonal to V.
 

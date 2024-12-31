@@ -6,6 +6,8 @@ Make the weak Hilbert Nullstellensatz in terms of partitions of unity make sense
 
 Free probability and non-commutative random variables.
 
+Shoenfield's absoluteness theorem? https://jaydaigle.net/blog/more-on-the-axiom-of-choice/
+
 Densely defined?
 
 Prove the uniqueness of function when in agreement on dense subset.
@@ -30,7 +32,7 @@ Is there a definition of left and right adjoints in terms of operators (not cate
 
 Induced representations: contrast between tensor products of G modules and vector valued functions on g?
 
-Hausdorff spaces as every net converges to atmost one point? Compact Hausdorff space is space where every net accumulates at some point and converges to at most one point? See Folland for nets and filters. Make this make sense?
+Hausdorff spaces as every net converges to at most one point? Compact Hausdorff space is space where every net accumulates at some point and converges to at most one point? See Folland for nets and filters. Make this make sense?
 
 Wederbern's little theorem?
 
