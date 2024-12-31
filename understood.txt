@@ -16,6 +16,8 @@ Subnet: given a net (x_a) and a net (y_b) with index sets A and B respectively, 
 
 Motivation for filters: to define subnets.
 
+Weierstrass approximation theorem (original): supremum norm |f-p| less than epsilon on real intervals. Proof by Bernstein polynomials, slowly. There are versions for everything, C* algebra, reals, locally compact space.
+
 Filter of a power set: let X be a set, T be a topology, P(X) be the power set of X. A subset of the power set of X is a filter of subsets if it is closed under intersection and under taking supersets.
 
 Filter of a partially ordered set: a (NONEMPTY) subset F of poset L if it is upward closed and downward directed: (1) if A <= B in poset L, and A is in subset F, then B is in subset F; (2) for some subset A in poset L, A is in filter F; (3) if A is in filter F and B is in filter F then there is a C such that C <= A and C <= B.
@@ -95,6 +97,8 @@ Bounded in the sense of norms: there exists a positive R > 0 such that the max n
 Bounded linear operator in the sense of norms: there exists a positive R such that the norm of Tx in Y is less than R * the norm of X.
 
 Baire category theorem motivation: a form of axiom of choice to ensure that no countable cover of proper subspaces of K^n exists, K being some field. See Tao's notes.
+
+Dense: subset A is dense in set X if every point in X can is either in or close to a member of A. Picture: rationals are dense in reals as typical example. The following are equivalent: (1) smallest closed subset of X containg A is X; X is the closure of A in X; (3) interior of the complement of A is empty; (4) points in X either belong to A or a limit point of A (see intuition above); (5) for all x in X, every neighbourhood U of x intersects in A; (6) A intersects every nonempty open subset of X.
 
 Baire category theorem, main result (Tao's definition): let E_1 and E_2 ... be a countable sequence of subsets of a complete metric space X, if the union of all this sequence contains a ball B (at least axiom of dependent choice is used here, when you take the countable union of this sequence and somehow gets a ball out of it by dilating the ball to be big enough), then at least one of the E_n is dense in a subball B' and B. The contrapositive is interesting: the countable union of nowhere dense sets cannot contain a ball. 
 
@@ -1365,7 +1369,7 @@ Representations: group preserving map (group homomorphism) from the group to the
 
 Degree of a representation: the dimension of the vector space (finite for finite simple groups)
 
-Lp space: space using a power p as norm instead of typical Euclidean using p = 2
+Lp space: space using a power p as norm instead of typical Euclidean using p = 2. Triangle inequality fails for p < 1, so you need quasi triangle inequality so we have |f + g| <= C(|f| + |g|) for Lp norm, non-degenerate (zero defined) and homogeneity (constants factor out, constants in field K).
 
 Hom Tensor adjunction on vector space: Hom(V,W) is canonically isomorphic to V * tensor W.
 
