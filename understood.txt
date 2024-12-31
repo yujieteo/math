@@ -1,6 +1,6 @@
 UNDERSTOOD (MATH)
 
-Differential manifold paracompactness motivation: the following are equivalent for X being a differentiable manifold: (1) X is paracompact; (2) X is metrisable (2 to 1 is kind of the point); (3) X has differentiable partitions of unity; (4) each connected component of X is second countable; (5) each connected component of X is sigma-comapct.
+Differential manifold paracompactness motivation: the following are equivalent for X being a differentiable manifold: (1) X is paracompact; (2) X is metrisable (1 to 2s is kind of the point); (3) X has differentiable partitions of unity; (4) each connected component of X is second countable; (5) each connected component of X is sigma-compact.
 
 Locally compact: every point has a neighbourhood contained in a compact subset (open cover of that set admits a finite subcover) of X. Compare this with the definition of locally path connected for a better feel of local definitions.
 
