@@ -1,8 +1,10 @@
 UNDERSTOOD (MATH)
 
+Linear (Cauchy functional equation) but fails homogeneity: requires axiom of choice, consider a rational vector basis extending Q linear independent set {x nonzero x is not root(2)x}, f(x) = r != 0 and f(root(2)x) not equal root(2) r and the rest on B anyway you want. 
+
 Irreducible / simple representation: nonzero vector space with no vector subspace stable under V except for zero space and whole space. Equivalent definition is irreducible representations are not the direct sum of two representations.
 
-Every representation is the sum of irreducible representation: let V be a linear representation of finite group G, by classification of finite groups we can induct on dimension of V, dim(V) >= 1 valid, if V irreducible trivial, otherwise it can be decomposed indto direct sum V'and V'' with dim(V) larger than these representations. By induction hypothesis V' and V'' are direct sums of irreducible representations.
+Every representation is the sum of irreducible representation: let V be a linear representation of finite group G, by classification of finite groups we can induct on dimension of V, dim(V) >= 1 valid, if V irreducible trivial, otherwise it can be decomposed into direct sum V'and V'' with dim(V) larger than these representations. By induction hypothesis V' and V'' are direct sums of irreducible representations.
 
 Nonuniqueness of irreducible representations: typical counterexample is several possibilities of real lines to form a space in real plane.
 

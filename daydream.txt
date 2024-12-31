@@ -2,6 +2,8 @@ DAYDREAM (MATH)
 
 Completion of ring construction inverse limit, do not understand what do you mean by modulo a filtration of an abelian group.
 
+Linear (Cauchy functional equation) but fails homogeneity, don't understand where this fails axiom of choice.
+
 Why is completion of an abelian group also an abelian group?
 
 Constructive definition of connectedness? Not the nonexistent definition.
