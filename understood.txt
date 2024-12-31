@@ -1,5 +1,47 @@
 UNDERSTOOD (MATH)
 
+Locally compact: every point has a neighbourhood contained in a compact subset (open cover of that set admits a finite subcover) of X. Compare this with the definition of locally path connected for a better feel of local definitions.+
+
+Topological manifolds are locally compact: proof follows from existence of countable basis of precompact coordinate balls.
+
+Topological manifolds are locally path connected, connected equivalent to path connected, components of M are same as the path components, and has countably many components, each is open subset of M: prove sketch start with rational balls, these are path connected open subsets on R^n, manifolds have a chart from this to its basis of path connected open subsets, so topological manifolds are locally path connected. Connectedness being equivalent to path connectedness follows from second countability. The rest follows from second countability anyway, all components are disjoint (Hausdorff), this must be the countable subcover of the topological manifold. See full proof from Lee's book but I captured all of the key points.
+
+Topological connectedness: nonexistence of two disjoint, nonempty, open subsets whose union is X.
+
+Path connected: every pair of points in X can be joined by a path in X.
+
+Locally path connected: if X has a basis of path connected open subsets. This is quite the amazing definition now that I think about it since it makes locality so intuitive. You have some property done locally, then you make it a basis somehow (basic elements) to construct whatever you want.
+
+Topological path: continuous map from closed interval to topological space (X, T). Reminds me of mapping cylinders.
+
+Existence of countable basis of precompact coordinate balls for topological manifolds: key step is probably homeomorphism to precompact rational balls by suitable coordinate chart. Use second countability to make countable subcover to cover the topological manifold with countably many coordinate charts, use Hausdorff to ensure if closure of these bases is compact, these balls are precompact in the manifold. See Lee's for fuller explanation.
+
+Topological manifolds (Lee's): topological spaces that look locally like k^N, k field. The following are equivalent: (1) topological manifold; (2) second-countable, locally Euclidean of dimension n, and Hausdorff space.
+
+Coordinate chart: a pair of set U also known as the coordinate domain and homeomorphism P from U to an open subset of R^n.
+
+Graphs of continuous functions as topological manifold: pairs of points with y = f(x) with the SUBSPACE topology. Projection map to first factor Pi from R^n times R^k to R^n, and we have the restriction r from the graph of f Gamma(f) to open subset U, r(x,y) = x. The restriction is a homeomorphism to U, so the graph of f Gamma(f)and r is a global coordinate chart known as graph coordinates.
+
+Spheres as topological manifold: shadow of sphere is homeomorphic to open in R^n.
+
+Torus as topological manifold: product manifold of topological manifolds so it is a topological n manifold, pair of (HOMEOMORPHIC) product maps and images in open subset of R^n form coordinate charts. 
+
+Projective space as topological manifold: set of 1 dimension linear subspaces of R^{n+1}, example, lines through the origin. Hausdorff since you can separate lines pointwise (inherited as subspace of Euclidean space), and second countable inheriting the countable bases of the rationals.
+
+Projective space is compact: proof sketch restriction of sphere S^n (R^{n+1}) to complex projective space (RP^n) is surjective (looks like shadow casting, in fact it is Riemann sphere). But sphere S^n is compact, so RP^n is compact when we consider open covers on complex projective space RP^n, take an open cover on the sphere and its finite subcover, preimage of the projection map from the open cover RP^n to this finite subcover, and back again (surjectivity is used here) gives a finite subcover, so projective space is compact.
+
+Chart centering: for a coordinate chart P(u) = 0, u is some point in U, then the chart is centered at u. You can center again the chart by subtracting vector P(u), note that vectors make sense here since it is a homeomorphism to a finite dimensional real vector space.
+
+Second-countable: there exists a countable basis.
+
+Locally Euclidean of dimension n: each point of manifold M has a neighbourhood that is homeomorphic to an open subset of R^n. Specifically, this means open subset U containing p in manifold, open subset V of Euclidean space R^n, and homeomorphism p from U to V. You can get equivalent definitions by weakening it to open ball or to R^n itself, rather than any open subset. The main property you want to preserve is connectedness when defining this.
+
+Topological invariance of dimension: a nonempty n-dimensional topological manifold cannot be homeomorphic to an m-dimensional manifold unless m = n. Lee's book states you use some singular homology to prove this, but I think this would fail already if you can assume the fact that finite dimensional vector spaces R^n are classified up to dimension, and those are topological manifolds, so minimally dimension will be required for a homeomorphism.
+
+Lorentz metric: metric defined so that gravity can be modelled.
+
+Motivation for smooth structure: topological manifold + smooth structure gives some sort of derivative.
+
 Sequences, nets, and filters: convergent sequences can fail when checking for closure, continuity, and compactness. This motivates the definitions of nets and filters.
 
 Net: a function from a directed set D (called an indexing set) to X, directed set have preorder (not poset, be careful) on it. Proper filters correspond to nets.
@@ -1377,9 +1419,9 @@ Duality of vector space: a vector space of rulers (sort of) of a vector space. I
 
 Periodicity of functions: reducible to linear combinations of exp(2 pi it)
 
-Quotients: f(x) = f(y) if x is equivalent to y. That is why quotients are very powerful. They are almost functions
+Quotients: f(x) = f(y) if x is equivalent to y. That is why quotients are very powerful. They are almost functions. Even better, they form equivalence classes. Even even better, you can find unique representative elements for these quotients using the axiom of choice, which you can weaken to dependent or countable if you wish.
 
-Linearising is the easiest thing in math (example, representation theory). Next best thing is to count.
+Linearising is the easiest thing in math (example, representation theory). Next best thing is to count (combinatorics).
 
 Connectedness is not hereditary, example Q does not inherit connectedness from R or even path connectedness.
 
@@ -1905,7 +1947,7 @@ Disconnected: disjoint union of closed sets in Zariski topology is empty.
 
 Dimension of variety: supremum of chain inclusions of irreducible closed subsets / subvarieties X.
 
-Condensed formalism, care about compact (all limit points are points), Hausdorff (disjoint opens exist), totally disconnected )
+Condensed formalism, care about compact (all limit points are points), Hausdorff (disjoint opens exist), totally disconnected
 
 Codimension of Y in X, supremum of chain inclusions of irreducible closed subsets / subvarieties from Y to X. Local dimension at this point. Local dimension of irreducible variety is the same at every point.
 
