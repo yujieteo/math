@@ -2,11 +2,11 @@ UNDERSTOOD (MATH)
 
 Norm induced by inner product: maps from V to half open ray [0, infinity) such that norm ||v||^2 = inner product of v and v. Typical examples are for l^2 and L^2(Omega), where 1 is a sum from j = 1 to j = infinity of |x_j|^2 and the other is an integral of the norm of f(x)^2 over support Omega.
 
-Proof that norm induced by inner product is a norm: nonnegativity by computation on example, homogenity by considering product of scalar and its scalar conjugate. Triangle inequality gives inequality excess of 2 times the real part of the inner product of x and y typical of a binomial expansion.
+Proof that norm induced by inner product is a norm: nonnegativity by computation on example, homogeneity by considering product of scalar and its scalar conjugate. Triangle inequality gives inequality excess of 2 times the real part of the inner product of x and y typical of a binomial expansion.
 
 Parallelogram identity: norm of square of (x+y) + norm of square of (x-y) gives two times the norms squared of x and y.
 
-Hilbert space: complete inner product space with completness respecting the norm induced by the inner product.
+Hilbert space: complete inner product space with completeness respecting the norm induced by the inner product.
 
 Polarisation identity: 4(x,y) = sum from n = 0 to n = 3 of i^n(x + i^n y)^2. Proof is easy by expanding the right hand side into four roots of unity.
 
@@ -16,7 +16,7 @@ Schauder basis: motivated by the fact that the basis will always be finite dimen
 
 Orthogonal: inner product of elements is zero.
 
-Orthonormal: all basis slements in E has a unit norm, and the inner product of pairs of basis elemtns is zero. Important, this does not require E to be countable.
+Orthonormal: all basis slements in E has a unit norm, and the inner product of pairs of basis elements is zero. Important, this does not require E to be countable.
 
 Orthonormal set in l^2, this is just the set of e^(j) from j = 1 to j = infinity.
 
@@ -32,7 +32,7 @@ Motivating the Hilbert adjoint: generalises inner products (recall that Hilbert 
 
 Self adjunction of a linear operator: a linear operator such that T = T^*. Self adjoint linear operators have plenty of examples, and serve as generalisation of unitary / Hermitian / symmetric matrices.
 
-Self adjoint of a linear operator and its spectrum: sppposed linear operator T in the banach space of bounded linear operator B(H), then if it is self adjoint we have all eigenvalues are real, then if Tx_1 = e_1 x_1 and Tx_2 = e_2 x_2 with nonequal eigenvalues e_1 e_2 then the inner product of x_1 and x_2 is zero. Typical example is that of symmetric matrices.
+Self adjoint of a linear operator and its spectrum: supposed linear operator T in the banach space of bounded linear operator B(H), then if it is self adjoint we have all eigenvalues are real, then if Tx_1 = e_1 x_1 and Tx_2 = e_2 x_2 with nonequal eigenvalues e_1 e_2 then the inner product of x_1 and x_2 is zero. Typical example is that of symmetric matrices.
 
 Motivation for self adjoint operators in physics: these correspond to physical observables like mass, momentum (not like complex valued stuff like capacitance and inductance) on an infinite dimensional hilbert space.
 
@@ -54,11 +54,11 @@ Baire category theorem motivation: a form of axiom of choice to ensure that no c
 
 Equicontinuous in the sense of norms: continuous everywhere, pick your favourite definition of continuity (preimage of opens is open on operators, epsilon-delta definition, preimage of open neighbourhoods)
 
-Resolvent of a linear operator: set of values k in the complex numbers / field such that T - kI is invertible, T is linear operator, I is identity operator / matrix. Equvialently, this is the set of complex numbers such that (A - e I)^{-1} is bounded and densely defined.
+Resolvent of a linear operator: set of values k in the complex numbers / field such that T - kI is invertible, T is linear operator, I is identity operator / matrix. Equivalently, this is the set of complex numbers such that (A - e I)^{-1} is bounded and densely defined.
 
 Spectrum of a linear operator: the complement of the field (typically C) from the resolvent. or the set of values k such that T = kI is not invertible. Note: in finite dimensional vector space, this corresponds to the set of eigenvalues for some linear transformation / matrix.
 
-Operator: operators feels like endofunctors. Not very well defined. Typical definition is function from object of some structure to another object of somet structure.
+Operator: operators feels like endofunctors. Not very well defined. Typical definition is function from object of some structure to another object of some structure.
 
 Kernel as comparison between isomorphism and homomorphism: isomorphism has trivial kernel, homomorphism may have nontrivial kernel. Use nullspace analogy again. Homomorphisms can be seen as approximations of the group law, isomorphisms are PERFECT approximations.
 
@@ -66,7 +66,7 @@ Baire category equivalences: see Tao's notes. Relates qualitative theory of cont
 
 Intuition behind uniform boundedness principle: equates qualitative boundedness (convergence) of a family of continuous operators with quantitative bounds.
 
-Intuition behind the open mapping theorem: equates qualiative solvability of the linear problem Lu = f with quantitative solvability.
+Intuition behind the open mapping theorem: equates qualitative solvability of the linear problem Lu = f with quantitative solvability.
 
 Intuition behind the closed graph theorem: equates qualitative regularity of weakly continuous operator T with quantitative regularity.
 
@@ -82,9 +82,9 @@ Precompact: equivalent to Cauchy subsequence.
 
 Comparison of precompactness to compactness: precompact is every Cauchy subsequence converges versus every Cauchy sequence converges.
 
-Baire space: topological space whose conclusion satisfies to Baire category theorem. This is also thte topological space where intersections of countable family of dense open subspaces is also dense. This is the space with countable union of closed sets with empty interior also has an empty interior.
+Baire space: topological space whose conclusion satisfies to Baire category theorem. This is also the topological space where intersections of countable family of dense open subspaces is also dense. This is the space with countable union of closed sets with empty interior also has an empty interior.
 
-Hilbert-Schmoidt operator: orthonormal basis {e_j} from j = 1 to j = infinity of a Hilbert space is such that the norm square of T which is the sum of norms of the linear maps from the orthonormal basis elements squared is bounded i.e. sum from j = 1 to j = infinity of norm(Te_j)^2 is less than infinity. This is well defined since this is independent of the orthonormal basis we pick.
+Hilbert-Schmidt operator: orthonormal basis {e_j} from j = 1 to j = infinity of a Hilbert space is such that the norm square of T which is the sum of norms of the linear maps from the orthonormal basis elements squared is bounded i.e. sum from j = 1 to j = infinity of norm(Te_j)^2 is less than infinity. This is well defined since this is independent of the orthonormal basis we pick.
 
 Continuous function: Equivalently: (1) preimage of opens in codomain is open for all opens in domain; (2) lim_n f(x_n) = f(lim_n x_n) for all convergent sequence in the domain of f; (3) epsilon-delta; (4) continuous at a point x if preimage of any neighbourhood of f(x) is a neighbourhood of x.
 
