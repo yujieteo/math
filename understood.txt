@@ -1,6 +1,8 @@
 UNDERSTOOD (MATH)
 
-Locally compact: every point has a neighbourhood contained in a compact subset (open cover of that set admits a finite subcover) of X. Compare this with the definition of locally path connected for a better feel of local definitions.+
+Differential manifold paracompactness motivation: the following are equivalent for X being a differentiable manifold: (1) X is paracompact; (2) X is metrisable (2 to 1 is kind of the point); (3) X has differentiable partitions of unity; (4) each connected component of X is second countable; (5) each connected component of X is sigma-comapct.
+
+Locally compact: every point has a neighbourhood contained in a compact subset (open cover of that set admits a finite subcover) of X. Compare this with the definition of locally path connected for a better feel of local definitions.
 
 Topological manifolds are locally compact: proof follows from existence of countable basis of precompact coordinate balls.
 
@@ -160,6 +162,8 @@ Lindelof: weaken compactness to use countable subcover / refinement.
 Refinement of cover: a refinement of a cover C in a topological space X is a new cover D of X such that every set in D is contained in some set in the cover C.
 
 Partition of unity: feels very category theory like, a set R of continuous functions from topological space X to the unit interval [0, 1] such that for every point x in X, there is a neighbourhood where all but a finite number of the functions of R are 0, the sum of all function values at x is 1. Classical example is partitions of unity of a circle unrolled to a line, then you have compositions of sine waves to form the flat circle. Bernstein polynomials are examples of partitions of unity. Weak Hilbert Nullstellensatz asserts that the linear combination polynomials with no common vanishing points f_re1 to f_r and polynomials a_1 to a_r that is equal to 1 is subordinate to the Zariski open cover (something like that, see Wikipedia).
+
+Motivations for having paracompactness and partitions of unity in differentiable manifolds: mainly it is to quickly give easy properties of integrals on differentiable manifolds. Say you have three charts and compute integrals and these have nontrivial intersection, partitions of unity avoid this by a priori having a disjoin union of pieces. It is also used to define the Riemannian metric, or integrals with repsect to volume form et cetera.
 
 Locally finite: each point in the space has a neighbourhood that intersects with only finitely many sets in the collection. This is the key idea that helps in Nagata-Smirnov metrization, as well as the definition of paracompactness which is sufficient for metrization.
 
