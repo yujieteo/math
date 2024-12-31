@@ -1,6 +1,16 @@
 DAYDREAM (MATH)
 
+Write sketches of proofs of the metrization theorems.
+
+Make the weak Hilbert Nullstellensatz in terms of partitions of unity make sense?
+
+Free probability and non-commutative random variables.
+
 Densely defined?
+
+Prove the uniqueness of function when in agreement on dense subset.
+
+Eberlein-Smulian theorem?
 
 Finish the proof of closed subspaces of Banach spaces are Banach spaces.
 

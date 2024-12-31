@@ -12,7 +12,9 @@ Polarisation identity: 4(x,y) = sum from n = 0 to n = 3 of i^n(x + i^n y)^2. Pro
 
 Closed subspace of Banach spaces are Banach spaces: proof, if Y is complete than (x_n) in Y is Cauchy in Y so it is Cauchy is X, if Y is closed...
 
-Schauder basis: motivated by the fact that the basis will always be finite dimensional even in an infinite dimensional space. Take a countable set of basis elements e_j from j = 1 to j = infinity for a normed space X. If every x in X can be written uniquely as a linear composition of coefficients in base field K with the basis elements e_j such that the sum converges in X, then it is a Schauder basis.
+Schauder basis: motivated by the fact that the basis will always be finite dimensional even in an infinite dimensional space. Take a countable set of basis elements e_j from j = 1 to j = infinity for a normed space X. If every x in X can be written uniquely as a linear composition of coefficients in base field K with the basis elements e_j such that the sum converges in X, then it is a Schauder basis. Only separable Banach spaces admit a Schauder basis. The Schauder basis is powerful since it gives a unique infinite linear combination of basis elements.
+
+Schauder basis proof of decomposition of linear combination of complex exponentials: any function in L2[0,1] or L2[-pi, pi] can be approximated by a Fourier series, since its Schauder basis is precisely that of the complex exponential exp(2 pi i n x) or exp(i n x) depending on the range of your infinite dimensional Hilbert space. This is a countable basis. Therefore, L2[0,1] and L2[-pi, pi] is a separable Banach space, approximated by countably many complex exponentials. Therefore, not all functions can be approximated by the Fourier series.
 
 Orthogonal: inner product of elements is zero.
 
@@ -52,6 +54,41 @@ Bounded linear operator in the sense of norms: there exists a positive R such th
 
 Baire category theorem motivation: a form of axiom of choice to ensure that no countable cover of proper subspaces of K^n exists, K being some field. See Tao's notes.
 
+Baire category theorem, main result (Tao's definition): let E_1 and E_2 ... be a countable sequence of subsets of a complete metric space X, if the union of all this sequence contains a ball B (at least axiom of dependent choice is used here, when you take the countable union of this sequence and somehow gets a ball out of it by dilating the ball to be big enough), then at least one of the E_n is dense in a subball B' and B. The contrapositive is interesting: the countable union of nowhere dense sets cannot contain a ball. 
+
+Baire category theorem, classical equivalent characterisation: any complete metric space, its underlying topological space is a completely metrisable topological space is a Baire space (this is the BCT1 definition). Recall that a metric space, completeness can be defined using Arzela-Ascoli (compact, bounded, equicontinuous). This requires the axiom of choice, or at least the axiom of dependent choice. However, you do not need the axiom of choice if the space is separable (i.e. it has a countable dense subset).
+This means the reals are Baire spaces, irrational numbers are Baire spaces, every Polish space is a Baire space.
+
+Baire category theorem, alternative characterisation: every locally compact regular space is a Baire space. Also, every locally compact Hausdorff space is a Baire space. Examples: compact Hausdorff space like the Cantor set, or manifolds even if not paracompact (hence not metrisable)
+
+Regular space: closed set F and point x not in F, then you can separate x and F with disjoint neighbourhoods always.
+
+T3 space: regular Hausdorff space.
+
+Paracompact: if compact spaces have every open cover admit a finite subcover, then a paracompact space in which every open cover has an open refinement (new cover that has sets contained in the original cover) that is locally finite (sets intersects with only finitely many sets in collection). Sometimes people define paracompact to have Hausdorff also. Basically paracompactness is sort of the key idea in metrisation.
+
+Lindelof: weaken compactness to use countable subcover / refinement.
+
+Refinement of cover: a refinement of a cover C in a topological space X is a new cover D of X such that every set in D is contained in some set in the cover C.
+
+Partition of unity: feels very category theory like, a set R of continuous functions from topological space X to the unit interval [0, 1] such that for every point x in X, there is a neighbourhood where all but a finite number of the functions of R are 0, the sum of all function values at x is 1. Classical example is partitions of unity of a circle unrolled to a line, then you have compositions of sine waves to form the flat circle. Bernstein polynomials are examples of partitions of unity. Weak Hilbert Nullstellensatz asserts that the linear combination polynomials with no common vanishing points f_1 to f_r and polynomials a_1 to a_r that is equal to 1 is subordinate to the Zariski open cover (something like that, see Wikipedia).
+
+Locally finite: each point in the space has a neighbourhood that intersects with only finitely many sets in the collection. This is the key idea that helps in Nagata-Smirnov metrization, as well as the definition of paracompactness which is sufficient for metrization.
+
+Hausdorff space: points x and y in the space can be separated by disjoint neighbourhoods. Easy to relate to regular spaces.
+
+Baire space classification: NOTE there are Baire spaces that are not complete pseudometric spaces or locally compact regular spaces. Therefore, the Baire category theorem does not admit a full characterisation.
+
+Metrizable: topological space homemomorphic to a metric space i.e. there is a metric d from pairs of the space to the half open ray [0, infinity). Examples of non-metrizable spaces include the Zariski topology or spectrum of a ring. Another example is the long line which is locally metrizable but not metrizable.
+
+Uryshon's metrization theorem: second-countable regular spaces are metrisable. Or, a topological space is separable and metrizable if and only if (equivalently) regular, Hausdorff, and second countable.
+
+Nagata-Smirnov metrization theorem: topological space is metrisable if and only if it is regular, Hausdorff and has a COUNTABLY LOCALLY FINITE basis. You add some locality to basis for the construction.
+
+Separable: a topological space is separable if it has a countable dense subset. Typical example is countable dense balls of rational radii that cover the real line. Countability is important if you think about Stone duality (countably many experiments can be used to determine a result, corresponding to every limit point being a limit point of some countable subset). Replace balls with neighbourhoods and you have the general topological notion.
+
+Uniqueness on dense subset on whole space: if f and g are CONTINUOUS functions that agree on a dense subset of both X and Y, and X and Y is Hausdorff, then f is equal to g.
+
 Equicontinuous in the sense of norms: continuous everywhere, pick your favourite definition of continuity (preimage of opens is open on operators, epsilon-delta definition, preimage of open neighbourhoods)
 
 Resolvent of a linear operator: set of values k in the complex numbers / field such that T - kI is invertible, T is linear operator, I is identity operator / matrix. Equivalently, this is the set of complex numbers such that (A - e I)^{-1} is bounded and densely defined.
@@ -60,11 +97,15 @@ Spectrum of a linear operator: the complement of the field (typically C) from th
 
 Operator: operators feels like endofunctors. Not very well defined. Typical definition is function from object of some structure to another object of some structure.
 
-Kernel as comparison between isomorphism and homomorphism: isomorphism has trivial kernel, homomorphism may have nontrivial kernel. Use nullspace analogy again. Homomorphisms can be seen as approximations of the group law, isomorphisms are PERFECT approximations.
+Kernel as comparison between isomorphism and homomorphism: isomorphism has trivial kernel, homomorphism may have nontrivial kernel. Use null space analogy again. Homomorphisms can be seen as approximations of the group law, isomorphisms are PERFECT approximations.
 
-Baire category equivalences: see Tao's notes. Relates qualitative theory of continuous linear operators and quantiative theory of estimates. I am surprised this is not phrased in terms of a categorical duality.
+Baire category equivalences: see Tao's notes. Relates qualitative theory of continuous linear operators and quantitative theory of estimates. I am surprised this is not phrased in terms of a categorical duality.
 
 Intuition behind uniform boundedness principle: equates qualitative boundedness (convergence) of a family of continuous operators with quantitative bounds.
+
+Uniform boundedness principle: let X be a complete normed space (a Banach space), let Y be a normed vector space, let T_a indexed by a in indexing set A be a family of continuous linear operators T_a from X to Y. The following are equivalent: (1) pointwise boundedness of linear operator i.e. the set of T_a x is bounded (exists positive M such that T_a x in norm Y is less than M times norm of x in norm X); (2) uniform bounded, the operator norms T_a are bounded i.e. infimum of all M such that the norm of T_a x in norm Y is less than M times norm of x in norm X on the whole space of linear operators B(X, Y)
+
+Proof of uniform boundedness principle: uniform boundedness obviously implies pointwise boundedness, assume pointwise boundedness, consider point x, then take countably many sets E_n be the set of points x in X such that norm of T_a y is less than n for all a in the indexing set A. This E_n cover X, using the Baire category theorem, one of this E_n is dense in a ball (I understand this key step). The T_a are continuous, so E_n are closed, so one of the E_n contains a ball. Stuck on this step, you can have the ball centred on the origin. Increase the value of n, E_n dilates, and it contains the open ball B(0,1), but all of the operator norms are bounded by the value of n, so pointwise boundedness implies uniform boundedness.
 
 Intuition behind the open mapping theorem: equates qualitative solvability of the linear problem Lu = f with quantitative solvability.
 
@@ -82,9 +123,25 @@ Precompact: equivalent to Cauchy subsequence.
 
 Comparison of precompactness to compactness: precompact is every Cauchy subsequence converges versus every Cauchy sequence converges.
 
-Baire space: topological space whose conclusion satisfies to Baire category theorem. This is also the topological space where intersections of countable family of dense open subspaces is also dense. This is the space with countable union of closed sets with empty interior also has an empty interior.
+Cauchy sequence: all but finite (note, finite is stronger than countable) number of elements of the sequence are less than than any stipulated positive distance from EACH OTHER. Not sufficient for each term to be arbitrary close to PRECEDING TERM. Must be each other. Cauchy sequence in complete metric space, convergence only depends on the terms of the sequence and not just the limit values, so algorithms produce a Cauchy sequence to fit some logical sequence.
+
+Baire space: topological space whose conclusion satisfies to Baire category theorem. This is also the topological space where intersections of countable family of dense open subspaces (endowed with topology) is also dense. This is the space with countable union of closed sets with empty interior also has an empty interior. Trick  example: algebraic varieties with the Zariski topology are Baire spaces, but are not metrisable.
+
+Closed subspaces of Baire spaces need not be Baire. Example: product of rationals {0} is closed in open upper half plane with rationals on X axis is a Baire space but this is not a Baire space.
+
+Complement properties for Baire space definition: a set is open (closed under arbitrary unions and finite intersections) so its complement is closed. A set is comeagre, its complement is meagre or of first category (a set is a countable union of set whose closure has an empty interior). A set is dense, its complement has empty interior. A set has a dense interior, its complement is nowhere dense. A set if Baire (unrelated to Baire sigma algebra) or ALMOST open if it differes from an open set by a meager set. 
+
+Analogy between complete nonempty mertic spaces and measure space of positive measure: helps to related, meager or first category is like zero measure / null, second category is like positive measure, residual or co-meager is like full measure or co-null, Baire is like measurable. NOTE: these differ in practice, see Tao's blog article for this.
+
+Banach-Mazur game: topological game, infinite positional game of perfect information related to Baire spaces.
 
 Hilbert-Schmidt operator: orthonormal basis {e_j} from j = 1 to j = infinity of a Hilbert space is such that the norm square of T which is the sum of norms of the linear maps from the orthonormal basis elements squared is bounded i.e. sum from j = 1 to j = infinity of norm(Te_j)^2 is less than infinity. This is well defined since this is independent of the orthonormal basis we pick.
+
+Every Hilbert space has a orthonormal basis: proof apply Zorn's lemma (warning: there is no need to use Zorn's for finite dimensional vector space), collection of orthonormal sets ordered by inclusion has a maximal element, so it is a basis (otherwise, you can extend the Hilbert space with the extra element, so the non-maximal element is not an orthonormal set) 
+
+Separable equivalent to countable orthonormal basis for Hilbert spaces: take countable dense set, apply Gram-Schmidt, so this set admits a Schauder basis, therefore equivalent to countable orthonormal basis. The equivalence of separable to countable orthonormal basis is equivalent to the definition of a Schauder basis.
+
+Unitary maps: invertible linear maps U from H_1 to H_2, for H_1 and H_2 Hilbert spaces preserving inner products i.e. <Ux, Uy>_2 = <x, y>_1. This is an isometry if you pick y = x. Converse, isometry and SURJECTIVE required, otherwise you do not have a well defined Uy in norm of H_2.
 
 Continuous function: Equivalently: (1) preimage of opens in codomain is open for all opens in domain; (2) lim_n f(x_n) = f(lim_n x_n) for all convergent sequence in the domain of f; (3) epsilon-delta; (4) continuous at a point x if preimage of any neighbourhood of f(x) is a neighbourhood of x.
 
@@ -165,7 +222,7 @@ Integers: group completion of the naturals.
 
 Mathematical induction: verify base case is true, let n >= some integer, then assume P_1 all the way to P_n is true (important, not necessarily P_n), then show P_{n+1} is true.
 
-Construction of equivalence classes theorem: statement that if sets have equivalence relations on it, then (1) they are either equal or disjoint union; (2) there is a functor from disjoint union of equivalence classes to cardinality of equivalence classes. Proof: if disjoint union, we are done, otherwise assuming union, reflexivity, symmetry and transitivity necessitates that mutual inclusion of the two sets.
+Construction of equivalence classes theorem INTO partitions: statement that if sets have equivalence relations on it, then (1) they are either equal or disjoint union, these are what we call partitions of a set where every element is included in exactly one subset; (2) there is a functor from disjoint union of equivalence classes to cardinality of equivalence classes. Proof: if disjoint union, we are done, otherwise assuming union, reflexivity, symmetry and transitivity necessitates that mutual inclusion of the two sets. The set of equivalence classes is a partition.
 
 Kolmogorov consistency theorem: you want a unique measure P on outcome space Omega and and sigma algebra Sigma such that under natural projection pi(omega) = list of coordinates vectors (x_1, x_2, ... x_n) the induced measure P pi_n^{-1} = P_n on R^n. Wikipedia says that it means you can construct a probability space if you fulfil conditions that permutations of distinct times (careful NOT measurable sets i.e. random variables are exchangeable) still give consistent product of measurable sets i.e. order in which the t_i appear does not change the distribution, only the way I write down and future events can be input as R^{n} in the probability measure and these two conditions (which define a stochastic process) are necessary and sufficient.
 
@@ -350,7 +407,7 @@ C^n is isometrically isomorphic to R^2n: use map (x1, y1, x2, y2, ... xn, yn), z
 
 Closed linear span: set of all elements that can be approximated arbitrarily closely by finite linear combinations of E, this feels like separability. We call this the clin(E), which is the closure of the span of E.
 
-Equivalence of separable, separability of unit sphere, linear space is dense: separable spaces containing countable dense subset, scale by scalar using the fact that this is a normed space, 
+Equivalence of separable, separability of unit sphere, linear space is dense: separable spaces containing countable dense subset, scale by scalar using the fact that this is a normed space.
 
 l^infty(K) is not separable: prove using Cantor's diagonal argument using the trivial norm ||x-y|| = 1 if they differ. So any dense set A must contain uncountable number of elements.
 
@@ -358,7 +415,7 @@ l^p(K) is separable: proof key step is to consider the difference between x and 
 
 Linear span of subset of normed space: set of all finite linear combinations of elements of the subset of normed space X. Spanning just means combinations produce teh whole space.
 
-Isometry: instead of enforcing equivalence of norms X and Y, we say these are equal i.e. norm_X(x) = norm_Y(Tx). Ito isometry is an example, where norms on Wiener process and on time itself are isometric in power 2.
+Isometry: instead of enforcing equivalence of norms X and Y, we say these are equal i.e. norm_X(x) = norm_Y(Tx). Ito isometry is an example, where norms on Wiener process and on time itself are isometric in power 2. Isometry is used in defining unitary maps or unitary matrices. The following are equivalent: isometry and surjectivity, and unitary maps (without surjectivity, the other element may not exist in the range of the Hilbert space)
 
 Isometrically isomorphic, replace equivalence of norms with isometry as a condition. Still must be a isomorphism of vector space.
 
@@ -524,7 +581,7 @@ Examples of category of quivers in its simplest case: Quiv(Set) is equivalent to
 
 Toy example of linear functional: consider functions from unit intervals to the reals, define linear functional F(u) = u(1) - u(0). F is not continuous or defined everywhere on L^2(0,1) failing at measure zero single points, but continuous on H^1(0,1). This motivates the trace operator to be defined for H1, then you can use them to sovle PDEs. This example motivates why you do not want to use L^2 spaces for everything.
 
-L^2 space: set of square integrable L2-functions, where <f, g> = int_X fg du, for measure u. Example: pick X = reals, with Lebesgue measures, these are the square summable series. These are equivalence classes of functions with the same L^2 function where the set they differ has measure zero i.e. one point. It is a sort of density function giving bad boundary conditions in differential equations for point f(p) since it is not well defined on measure zero since it is an integral.
+L^2 space: set of square integrable L2-functions, where <f, g> = int_X fg du, for measure u. Example: pick X = reals, with Lebesgue measures, these are the square summable series. These are equivalence classes of functions with the same L^2 function where the set they differ has measure zero i.e. one point. It is a sort of density function giving bad boundary conditions in differential equations for point f(p) since it is not well defined on measure zero since it is an integral. L stands for Lebesgue measure.
 
 Functional analogous to energy: functional is analogous to ENERGY. This is why functional analysis is so important, for example minimising energy / action. Example: Dirichlet functional is integral | grad u |^2 dx
 
@@ -910,7 +967,7 @@ Sigma-algebra: motivation is probability, closed under complements, countable un
 
 Algebras are closed under finite unions and intersections, need not be closed under countably many, see example take Boolean algebra, infinite negation corresponds to Grandi series, truth is not decidable, then apply Stone duality, corresponds to Grandi series -1 + 1 - 1 + 1 - 1…
 
-Compactness: every open cover admits finite sub cover. WARNING: single cover of X is finite, so insufficient for definition. A set that is closed and totally bounded (corresponding to not admitting rotations about infinitely many axes) is compact. Rotations also cause Banach Tarski paradox.
+Compact: every open cover admits finite sub cover. WARNING: single cover of X is finite, so insufficient for definition. A set that is closed and totally bounded (corresponding to not admitting rotations about infinitely many axes) is compact. Rotations also cause Banach-Tarski paradox. You can weaken to Lindelof with countable subcover or refinement, metacompact with point-finite open refinement, or paracompact with locally finite open refinement.
 
 Hahn decomposition: Measure space X under signed measure can be decomposed into disjoint union of positive and negative sets P and N, up to differences in sets of measure zero. Proof: assume measure v cannot take -infty as a value, otherwise take -v without loss of generality. v(Pj) tends to supremum m, however a measure is continuous from above. Consider countable collections of Pj. By an additional lemma, countable unions of positive sets are positive, therefore P is positive. Take N = X - P. Assume nonnegative for contradiction. Note, if we have non null set E inside N, we can take union of P and E and take its measure and it exceeds supremum. Contradiction. Secondly, for A in N v(A) > 0, if B subset of A then v(B) = v(A) + k, k real number. Now for construction, consider collections of nj such that v(Aj+1) = v(Aj) + 1/nj for lowest integer n1, inductively define. Consider countably many intersections of this Aj collection, gives nj tends to infinity. Yet, the rule still applies due to point number 2, so there exist a n > nj even though nj tends to infinity. Contradiction in constructability. See stack exchange or Folland for full proof I am not sure about the last step.
 
@@ -1346,7 +1403,7 @@ Comprehension axiom: can always find a set of also some property, fails due to R
 
 Pairing: inductively find sets of pairs of elements
 
-Choice: pick some element from sets of elements to find a new set, this new set exists.
+Choice: pick some element from sets of elements to find a new set, this new set exists. Alternatively, there for a set X there exist a subset of X from each part of the paritition. This make the axiom of choice powerful, since it defines each equivalence class with a canonical representative element (when I realised this I finally understood why the axiom of choice is controversial).
 
 Projective dimension of module: minimal length of projective resolution of module over a ring. Osofosky, projective dimension of modules over ring C[x,y,z] is undecidable in ZFC. 2 if continuum hypothesis holds, 3 if it fails.
 
@@ -1610,7 +1667,7 @@ A ring is a monoid with tensor product of abelian groups.
 
 Galois extension, normal means linear affines, separable means no nilpotents.
 
-Galois extension is a normal separable extension. Normal means decomposed to linear factor, separable means no repeated roots or factors. Automorphism fixing some point. Automorphism of field extension (recall you have some subfield, of a field extension) is an endomorphism (recall idempotence) that is an isomorphism (preserve structure), Galois group is exists for these, on the automorphisms of a field extension. Analogous to linear algebra, Jordan blocks with nontrivial multiplicity.
+Galois extension is a normal separable extension. Normal means decomposed to linear factor, separable (in the context of Galois theory) means no repeated roots or factors. Automorphism fixing some point. Automorphism of field extension (recall you have some subfield, of a field extension) is an endomorphism (recall idempotence) that is an isomorphism (preserve structure), Galois group is exists for these, on the automorphisms of a field extension. Analogous to linear algebra, Jordan blocks with nontrivial multiplicity.
 
 Subfield and subgroups are bijective, that is the fundamental theorem of Galois theory.
 
