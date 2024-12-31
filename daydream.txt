@@ -1,5 +1,9 @@
 DAYDREAM (MATH)
 
+Open mapping theorem proof. I don't understand it. Find a better proof of the open mapping theorem. Ideally helping in defining some useful construct to do the proof, that uses linearity, (convexity), surjectivity. It does not make sense because I have some balls centred, then do some scaling of the balls. I also do not understand where surjectivity is used. Admit you don't want to work on it.
+
+Fix the corollary on quantiative regularity for the closed graph theory.
+
 Write sketches of proofs of the metrization theorems.
 
 Make the weak Hilbert Nullstellensatz in terms of partitions of unity make sense?

@@ -153,6 +153,22 @@ Failure of uniform boundedness principle (Tao's exercise 4): drop completeness w
 
 Intuition behind the open mapping theorem: equates qualitative solvability of the linear problem Lu = f with quantitative solvability.
 
+Open mapping theorem: let surjective continuous linear map T be from Frechet spaces (weaken to Banach spaces) E to F. Then T is an open mapping, where if open subset U of Frechet space E means T(U) is open in F (open mapping, well defined, this is like opposite of continuous where you have preimages). See also Tao's quantiative version but it is a the following are equivalent untidy spam. I only recommend his notes because they give the philosophy as to why we want these theorems to be true.
+
+Frechet space: locally convex (some people drop locally convex requirement, but I understand why they want this so that norms work nicely) metrisable topological vector space. Defined so that every Cauchy sequence in X converges to a point in X. Banach spaces and Hilbert spaces are Frechet spaces.
+
+Weakened open mapping theorem: linear map f between normed spaces E to F is nearly open if the image is non-meagre in F (continuity is not needed, meagre means countable union whose closure has empty interior). I could not identify the key step but common patterns based ont he proof in Wikipedia is: shrink the open ball to centre at zero, apply axiom of dependent choice to construct f(E) = union f(nU), norms are bounded by radii, linearity and convexity gives subsets (-1)U.
+
+Metamathematics of open mapping theorem: justifies approximations for solving linear equations Lu = f for datum f in Y and unknown u in X, looks like linear PDE. f is in some dense class of nice functions find some norm ||u||_X <= C||f||_y for some constant C.
+
+Bijection and invertibility equivalence in the open mapping theorem: let T be a continuous linear operator from X to Y, X and Y are Banach spaces, the following are equivalent: (1) T is bijective; (2) T is bijective and T^{-1}: Y -> X is a continuous (hence bounded) linear transformation.
+
+Bounded inverse theorem: continuous bijective linear operator between Frechet spaces has continuous inverse. Corollary of the open mapping theorem. Also, for this example, then bounded inverse theorem means bijection is enough if you have the linearity and Frechet spaces.
+
+Closed graph theorem: let T be a continuous linear operator from X to Y, X and Y are Banach spaces, the following are equivalent: (1) T is continuous, (2) T is closed, (3) there exists a topology F on Y, weaker than the norm topology (containing fewer opens) but still Hausdorff. Proofs: 1 implies 3 picking F as norm topology, 3 implies 2, convergence in norm gives convergence in weak topology. Hausdorff topological spaces have unique limit, 2 implies 1 is KEY STEP using the open mapping theorem, T closed, consider graph which is set of (x, Tx) for x in X is a closed linear subspace of the Banach space X * Y, this is a Banach space (see lemma elsewhere here). On the other hand, projection map back to X is clearly a continuous linear bijection, BY corollary of open mapping theorem, inverse is continuous linear bijective, so T is continuous i.e. 2 implies 1.
+
+Closed graph theorem quantitative (Tao's approach): X and Y are Banach spaces, some inclusion Y into Z into Hausdorff topological vector space. Let T: X -> Z be a continuous linear operator / transformation (need not be bijective), the following are equivalent: (1, qualitative regularity) for x in X, Tx is in Y; (2, quantitative regularity) x in X, Tx is in Y, and |Tx|_Y <= C|x|_X, for some C > 0 is independent of x; (3, quantitative regularity on a dense subclass) x in dense subset of X, Tx is in Y, and |Tx|_Y <= C|x|_X. Proof: 2 implies 3 or 1. 3 implies 2, by using the fact that limits in Hausdorff space is unique; 1 implies the 2. or 3. use closed graph theorem to reduce it to a map from X to Y, this map is continuous (this step that Tao gave is not very clear.)
+
 Intuition behind the closed graph theorem: equates qualitative regularity of weakly continuous operator T with quantitative regularity.
 
 Basis of topological space: every open is union of set in basis sets. Like basis of vector space.

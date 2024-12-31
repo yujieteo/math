@@ -1,5 +1,9 @@
 Journal
 
+31 December 2024: topology of the functional analysis day. Statement of paper. Main step that you need. Learn and understand the statement of this step or the main two step, or two cases, then you go backwards. Stop when run out of paper and interest. Experience of how much you want to know. Takes practice to find what step you want to understand, what else is technical detail that it is not that important. Try to pin down everything. Achievement focus not helpful. It is creative occupation, do not try to understand everything.
+ 
+30 December 2024: functional analysis day
+
 28 December 2024: revised almost all concepts in linear algebra from Strang (no exercises) and also supplemented it by reading more in Horn and Johnson.
 
 27 December 2024: learnt about norms in functional analysis.
