@@ -2,6 +2,46 @@ UNDERSTOOD (MATH)
 
 Sequences, nets, and filters: convergent sequences can fail when checking for closure, continuity, and compactness. This motivates the definitions of nets and filters.
 
+Net: a function from a directed set D (called an indexing set) to X, directed set have preorder (not poset, be careful) on it. Proper filters correspond to nets.
+
+Convergence of nets: let X be set, T be topology, so (X, T) is topological space, let v be a net from a directed set A to the underlying set X, we say the net v converges to an element x in X if given any neighbourhood U of x, v is eventually in the set U. This point x is a limit point of net. 
+
+Clustering of net at clustering point: let X be set, T be topology, so (X, T) is topological space, let v be a net from a directed set A to the underlying set X, we say the net v clusters at point x if v is frequently in U for every neighbourhood U of x.
+
+Uniqueness of limit point of X: limit points need not be unique except in Hausdorff spaces.
+
+Motivation for subnets: since it is defined so that the theorem that the following are equivalent: (1) compact spaces; (2) space that every net has a converging subnet. This is the whole point of this, since for sequences we only have sequential compactness. 
+
+Subnet: given a net (x_a) and a net (y_b) with index sets A and B respectively, we say y is a subnet of x if the eventuality filter of y refines the eventuality filter of x. Explicitly, for each a in A there is a b in B such that for every b_1 more than b_in B there is a a_1 more than a in a such that y_{b_1} = x_{a_1}.
+
+Motivation for filters: to define subnets.
+
+Filter of a power set: let X be a set, T be a topology, P(X) be the power set of X. A subset of the power set of X is a filter of subsets if it is closed under intersection and under taking supersets.
+
+Filter of a partially ordered set: a (NONEMPTY) subset F of poset L if it is upward closed and downward directed: (1) if A <= B in poset L, and A is in subset F, then B is in subset F; (2) for some subset A in poset L, A is in filter F; (3) if A is in filter F and B is in filter F then there is a C such that C <= A and C <= B.
+
+Intuition behind filter: it is dual to the ideal of a lattice, which is very similar. The duality arises when a subset of L that satisfies the first two of the three axioms for a ideal in a lattice (inhibited, antisymmetric, reflexive, transitives) is precisely a directed subset of Y. 
+
+Ideal in a lattice / proset: an ideal I is a lattice or a proset is a subset I in the underlying set L such that (1) ideal I is inhibited; (2) if x and y are in I then x, y are less than or equal to z for some z in ideal I (this corresponds to transitivity, existence of upper bound, antisymmetric); (3) if x is in I, and y <= x, then y is in I (this is dualised, in a filter if A <= B in poset L, and A is a subset of filter, then B is a subset of the filter. Here, abusing the same notation, it says if B is in the ideal, then A is in the ideal.)
+
+Comparison to ideals in rings versus ideals in lattice: left ideal in ring is such that: (1) 0 is in the ideal which corresponds to the ideal being inhibited which is weaker; (2) x + y is in the ideal whenever x, y is in the ideal this is weaker than saying x, y <= z for some z in the ideal I; (3) xy is in I, whenever y is in I, regardless of whether x is in I (this regardless becomes OR for two sided ideals). From this comparison (NOT VERIFIED, THIS IS WHAT I THINK I UNDERSTAND), I think that ideals in rings are much more strict, since they enforce that the upper bound not just exist, but equals to the ring sum i.e. x + y = z, and also the product must exist if the elements forming the product is in the ideal such that the product ideal is a subset of the ideal.
+
+Proper filter: a filter such that each set in it is inhibited i.e. there is no empty set in it.
+
+Prime filter: a filter whose complement is an ideal.
+
+Maximal filter: same as ultra filter, if it is maximal under proper filters.
+
+Eventuality filter of a net: a proper filter
+
+Sequences are a special case of nets: pick the directed set to be set of positive or nonnegative integers from 0 to infinity.
+
+Directed set: preordered set with reflexive and transitive relation such that every finite subset has an upper bound (that way we do not have to use Zorn's).
+
+Directed set of neighbourhoods: set of neighbourhoods is a directed set by reverse inclusion.
+
+Motivation for nets: sequential compactness fails at detecting general compactness, since the natural numbers can be too short. So nets detect teh topology, topological continuity, Hausdorff and compactness.
+
 Norm induced by inner product: maps from V to half open ray [0, infinity) such that norm ||v||^2 = inner product of v and v. Typical examples are for l^2 and L^2(Omega), where 1 is a sum from j = 1 to j = infinity of |x_j|^2 and the other is an integral of the norm of f(x)^2 over support Omega.
 
 Proof that norm induced by inner product is a norm: nonnegativity by computation on example, homogeneity by considering product of scalar and its scalar conjugate. Triangle inequality gives inequality excess of 2 times the real part of the inner product of x and y typical of a binomial expansion.
@@ -1563,7 +1603,7 @@ Makkai conceptual completeness, for a functor of (coherent) pretopoi, if the ind
 
 Boolean ring: it is a ring of idempotent, 0 and 1 are idempotent so it is canonically isomorphic to ring of integers modulo 2. Now, consider 1 + 1 = 0 using the fact that it is a ring and must have additive inverse 1. If you drop additive inverse and have 1 as an absorbing element 1 + 1 = 1, you get (default) disjunction, and it is a Boolean semiring. It is commutative, proof: start with a + a = 0, by substituting a + a with (a + a)^2, then consider x + y, you should get xy + yx = 0 using the same trick, recycle trick to get xy + (xy + yx) = xy. Boolean ring is characteristic 2, so xy = yx.
 
-Boolean algebra: is a ring where every element is idempotent.
+Boolean algebra: is a ring where every element is idempotent. A Boolean algebra is a distributive lattice (ideal in lattice) and a Boolean ring.
 
 Frame: Stone dual to topological space that is a partially ordered set lattice with some defining distribution of conjunction and the existence of either supremum or infinum for every set
 
@@ -1937,7 +1977,7 @@ Regular local ring is always an integral domain (no zero divisors): variety is l
 
 Fat points: See Spec(K[x]/(x^2)). There is a fat point at the origin on an affine line you can only see linearisations, on a plane it will start to stick out more.
 
-Local rings: rational function with well defined values at point and does not admit similar evaluation maps since the denominator of the fraction might vanish there i.e. unique maximal ideal.
+Local rings: rational function with well defined values at point and does not admit similar evaluation maps since the denominator of the fraction might vanish there i.e. unique maximal ideal. Note that Zorn's lemma only guarantees existence and not uniqueness, so uniqueness is important.
 
 Projective curves: add point at infinity for parallel lines to intersect. Embed each point (x_1, ..., x_n) to (1, x_1: ... x_n) as affine coordinates, the reamining points are (0, x_1: ... x_n) as points at infinity so P^n = A^{n} \cup P^{n-1}. as affine and infinite part. Analysts call these Riemann spheres.
 

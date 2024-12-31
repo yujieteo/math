@@ -4,6 +4,8 @@ Write sketches of proofs of the metrization theorems.
 
 Make the weak Hilbert Nullstellensatz in terms of partitions of unity make sense?
 
+Do not really understand the duality between ideals and filters. Need to break it down in terms of definitions in ways I could understand.
+
 Free probability and non-commutative random variables.
 
 Shoenfield's absoluteness theorem? https://jaydaigle.net/blog/more-on-the-axiom-of-choice/
