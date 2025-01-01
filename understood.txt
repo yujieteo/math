@@ -1,6 +1,6 @@
 UNDERSTOOD (MATH)
 
-Contragradient representation: let p be a linear representation p^{*}(g) is transpose p(g^-1) for all g in finite group G. Its character is the conjugate of the character of p. This follows because a finite dimension matrix is conjugate to its own transpose, taking values in a field (using theory of modules over a PID: Smith normal forms of XI_n - A and XI_n - A^T are the same by symmetry. A and its transpose A^T has the same invariant factors, and has the same rational canonical form (Frobenius normal form), and hence they are similar over K.s
+Contragradient representation: let p be a linear representation p^{*}(g) is transpose p(g^-1) for all g in finite group G. Existence, use the standard basis of the dual of vector space. Uniqueness is tricky, you need the fact that the contragradient is always invertible (note: linear representations are maps to the general linear group of a vector space, so linear representations are invertible). Its character is the conjugate of the character of p. This follows because a finite dimensional matrix is conjugate to its own transpose, taking values in a field (using theory of modules over a PID: Smith normal forms of XI_n - A and XI_n - A^T are the same by symmetry. A and its transpose A^T has the same invariant factors, and has the same rational canonical form (Frobenius normal form), and hence they are similar over K.s
 
 Characters of direct sum representation: direct sum of representations has their characters added. Proof is by considering Jordan blocks.
 
@@ -494,7 +494,7 @@ Sylow's theorem: important partial converse to Lagrange's theorem, G be finite g
 
 Lagrange's theorem: consider G FINITE group, cardinality of G = cardinality of H * number of distinct cosets in H. Proof is based on left cosets of finite groups form equivalence classes. Coset distinction since left cosets form equivalence classes. Consider group G as disjoint union of left cosets of H, apply forgetful functor so cardinality of G is cardinality of H * number of distinct cosets. Lagrange's theorem falls out from left cosets as equivalence classes. 
 
-Index of a subgroup: number of left distinct cosets of H.
+Index of a subgroup: the following are equivalent: (1) number of left distinct cosets of H; (2) A be abelian subgroup of G with order a, G has order g, each irreducible representation have of G has degree <= g/a, g/a is index of subgroup A in G.
 
 Left cosets of finite groups form equivalence classes: same proof, disjoint and we are done, otherwise we can find g1 h1 = g2 h2, then consider g2 h2 h1^{-1} h is in left coset g2 H. This gives equivalence classes of left cosets.
 
@@ -927,6 +927,8 @@ Maximum modulus principle: if f is holomorphic, complex differentiable at each p
 
 Compact topological group: topological group whose topology can be realised as a compact topological space, element of group operated on, result is within that group. Examples: circle groups, orthogonal group of rotations, unitary groups, torus groups.
 
+Lorentz group is noncompact: group preserving quadratic form x^2 + y^2 + z^2 - t^2 is Lorentz group. Clearly this is unbounded.
+
 Immersion of linear maps: maps whose derivative everywhere is injective as a linear map (locally). In topology, you do not require it to be homemorphic to its image. Embedding requires injectivity and continuity, X and f(X) to have same topological properties. Example: immersion is mapping circle to figure 8, or double circle onto circle or semiopen interval to circle, inverse map is not continuous.
 
 Immersion: tangent spaces are mapped injectively. Example: Klein bottle, any point of intersection has two distinct tangent planes, map is injective onto R^3. But Klein bottle cannot be embedded in R^3. Best thought of as a local embedding.
@@ -957,7 +959,7 @@ Galois conjugate: element of a separable closure L of a field K, which are in th
 
 Landau's function: maximum order of element in symmetric group. Or least common multiple of all partitions of number 1 to n. Example of the order of an element in a group.
 
-Abelian group and conjugacy: an abelian group is group where every element is self conjugate example: a = gag^{-1} or ga = ag, this gives the reason why abelian is so important.
+Abelian group: the following are equivalent: (1) an abelian group is group where every element is self conjugate example: a = gag^{-1} or ga = ag, this gives the reason why abelian is so important; (2) an abelian group is 1 where all irreducible representations of G have degree 1, proof key step is let g be order of G, h is number of classes of h, (n_1, ..., n_h) be degrees of distinct irreducible representations of g, g = sum of n_i^2 and is only equal to h if and only if all n_i = 1; (3) st = ts for all s, t in group G; (4) all conjugacy classes consist of a single element (self conjugate, conjugacy classes are equivalence classes under conjugation); (4) each function of G is a class function which are functions that are constant for the same conjugacy class as linear combinations of characters;
 
 Group conjugate and linear algebra: conjugate is b = gag^{-1}, this is used all the time in linear algebra by the way since if inverse equals to conjugate transpose, b is unitarily similar to a, g is group action.
 
@@ -1611,9 +1613,25 @@ Jaffard domain: Krull dimension of the ring of polynomials, is the Krull dimensi
 
 Lie group and Lie algebra correspondence: isomorphic Lie algebra does not imply isomorphic Lie group (example real coordinate space, and circle group). However, requires simple connectedness. Problem is there is a hole in circle group.
 
+Averaging over finite group: integral over G of f(t) for f element of vector space with respect to measure dt.
+
+Haar measure desired properties: (1) integral over finite group G of f(t) for f element of vector space with respect to measure dt is equal to integral over G of f(ts) for f element of vector space with respect to Haar measure dt for t and s in the finite group G; (1') integral over finite group G of f(t) for f element of vector space with respect to Haar measure dt is equal to integral over G of f(st) for f element of vector space with respect to measure dt for t and s in the finite group G, i.e. invariant under left translation; (2) integral over finite group G with respect to Haar measure dt is equal to 1 or total mass of Haar measure is equal to 1; 
+
+Example of Haar measure for finite group of order g: assign each element t in finite group G a mass equal to 1/g.
+
+Example of Haar measure on C_infty rotations in plane: assign mass of 1/2 pi for elements t in G of the form t = exp(i alpha), taken modulo 2 pi, this ensures that the total mass of the Haar measure is 1.
+
+Inner product of two functions in the context of finite groups in a Hilbert space: integral over finite group G for two functions f, g to be integral over G f(t) * g(t)^* dt, where there is a good notion of conjugate transpose.
+
+Schur's lemma proof that each irreducible representation of an abelian group is degree 1: consider p^i from group G (need not be finite) to general linear group GL(V_i), at least one V_i irreducible by hypothesis, then by Schur's p_i * f = f * p_{i-1} is such that f is homothety and equivalent to eigenvalue p_i * l = l * p_{i-1}, by commutativity we see that these maps are l * p_i = l * p_{i-1}, but the p_i in question is degree 1, so any irreducible representation is of degree 1.
+
 Homothety: scalar multiple of the iddentity map.
 
-Schur's lemma (Serre's): let p^1 be a linear representation from the finite group G to the general linear group on vector space V_1, GL(V_1), p^2 be a linear representation from the finite group G to the general linear group on vector space V_2, GL(V_2), let f be a linear mapping of V_1 such that p_s^2 * f = f * p_s^1 i.e. f is the linear map that makes these two linear representations adjoint. Schur's lemma states that if p^1 and p^2 are not isomorphic, then f = 0 i.e. this adjunction does not exist, if V_1 = V_2 and p^1 = p^2, then f is a homothety (scalar multiple of the identity)
+Schur's lemma (Serre's): let p^1 be a linear representation from the finite group G to the general linear group on vector space V_1, GL(V_1), p^2 be a linear representation from the finite group G to the general linear group on vector space V_2, GL(V_2), let f be a linear mapping of V_1 such that p_s^2 * f = f * p_s^1 i.e. f is the linear map that makes these two linear representations adjoint. Schur's lemma states that if p^1 and p^2 are not isomorphic, then f = 0 i.e. this adjunction does not exist, if V_1 = V_2 and p^1 = p^2, then f is a homothety (scalar multiple of the identity).
+
+Schur's lemma (proof by Serre for isomorphism): suppose f nonzero, KEY STEP: let W_1 be kernel (set such that fx = 0), let * be linear map composition, by hypothesis p_s^2 * fx = fx * p_s^1 = 0 because W_1 is the kernel;, KEY RESULT: W_1 is stable under G. Using V_1 irreducible, W_1 is either V_1 or 0, so W_1 is 0 since if W_1 = V_1 then f = 0. Recycle argument for W_2, so W_2 = V_2. But W_1 = 0, W_2 is V_2, this means f is isomorphism from V_1 onto V_2. 
+
+Schur's lemma (proof by Serre for homothety): suppose V_1 = V_2, p^1 = p^2 without loss of generality, let l be eigenvalue of f, there is at least 1, field of scalars is field of complex numbers using fundamental theorem of arithmetic (this means we need algebraically closed field). Since l is eigenvalue of f, (KEY STEP) kernel of f' = f - l is nonzero. NOTE: p_s^2 * f' = f' * p_s^1 . Either f' = 0 by part 1, or f' = l i.e. f' is homothety.
 
 Schur's lemma: all ground field, irreducible representations are unique up to homomorphism, if ground field is algebraically closed endomorphisms are scalar multiples of identity operator. Endomorphism of irreducible representation, multiply by complex number? This property is also known as complete reducibility or semisimplicity. Note: over finite fields, not completely irreducible, so modular representations is very tricky.
 
