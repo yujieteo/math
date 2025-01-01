@@ -1,5 +1,17 @@
 DAYDREAM (MATH)
 
+Prove the equivalence of Zorn's lemma, the well-ordering principle, and the Axiom of Choice.
+
+Prove the existence of a unique torsion-free metric connection on a pseudo-Riemannian manifold. (aka the Levi-Civita connection). Prove also a unique metric connection with any given vector-valued 2-form, the proof is in the same spirit.
+
+Riesz-Markov representation theorem?
+
+Forcing produces ZFC?
+
+The group law on an elliptic curve is associative using Riemann surfaces?
+
+Construction on the Haar measure on locally compact groups?
+
 Subdirect product?
 
 Figure out easier proof of Goursat's lemma and Zassenhaus' butterfly lemma, Schreier refinement theorem and the Jordan Holder theorem.

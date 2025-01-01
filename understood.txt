@@ -1,5 +1,7 @@
 UNDERSTOOD (MATH)
 
+Matrix associativity with Einstein summation notation: ((AB)C)_ij = (AB)_ik C_kj = A_il B_lk C_kj = A_il (BC)_lj = (A(BC))_ij.
+
 Hilbert basis Theorem: if R is Noetherian than R[X] is Noetherian.
 
 Module has finite composition rings equivalent to Artinian and Noetherian module: prove using the finite composition series.
