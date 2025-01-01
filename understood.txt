@@ -1,10 +1,38 @@
 UNDERSTOOD (MATH)
 
-Moduli space: points are algebro-geometric isomorphism classes of objects, solutions to geometric problems
+Moduli space: points are algebro-geometric isomorphism classes of objects, solutions to geometric problems.
 
 Example of projective space as moduli space: real / complex projective space is a moduli space parametrising the space of line passing through the origin in real / complex space.
 
-Example of Grassmanian as moduli space: Grassmanian G(k, V) of a vector space over field K is moduli space of all k-dimensional linear subspaces of V.
+Example of Grassmanian as moduli space: Grassmanian G(k, V) of a vector space over field K is moduli space of all k-dimensional linear subspaces of V. I think this is the example that is interesting since it talks about vector spaces directly.
+
+Lindelof spaces equivalent to axiom of countable choice: the following are equivalent: (1) N, Q, and R are Lindelof spaces i.e. weaken compactness to use countable subcover / local refinement; (2) the axiom of countable choice holds for subsets of the reals.
+
+Algebraic group: endow algebraic variety with a group structure.
+
+Regular map: morphism of algebraic varieties, given locally by the polynomials.
+
+Geometric transformations as algebraic groups: examples include orthogonal group (rotations), general linear group, projective groups, Euclidean groups
+
+Affine algebraic group: algebraic group where the underlying variety is an affine variety. There is an exact correspondence to the subgroups of the general linear group.
+
+Chevallay's structure theorem: (1) every connected algebraic group is an extension of an abelian variety by a linear algebraic group; (2) K perfect field, G connected abelian group over K, unique normal subgroup H in G, such that H is connected linear algebraic group, G/H an abelian variety.
+
+Projective algebraic group: algebraic group where the underlying variety is a projective variety, formed by the abelian varieties.
+
+Quotient group / factor group idea: similar elements are now made equivalent by an equivalence relation. Duality with subgroup.
+
+Quotient group naming: compared to division of integers: 12 divide by 3 gives 4, 12 objects into 4 subcollections of 3 objects. G / N gives cosets of N in G, 4 cosets of 3 equivalence classes. The three objects in normal division are identical (not even equivalent). Axiom of choice becomes important when picking representative elements of equivalence classes.
+
+Properties preserved by quotient groups of normal subgroups: abelian,nilpotent, sovlable, cyclic, or finitely generated.
+
+Fundamental theorem of homomorphisms: capture properties of quotient groups.
+
+Isomorphism theorems: capture properties of quotient groups.
+
+Subgroup quotient group duality: can be seen in (short) exact sequences.
+
+Quotient object: three are quotient ring, space (linear algebra or topology), quotient set.
 
 Involution: f^2 is idempotent or f = f^{-1}.
 
