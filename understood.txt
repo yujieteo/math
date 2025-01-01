@@ -1,5 +1,17 @@
 UNDERSTOOD (MATH)
 
+Moduli space: points are algebro-geometric isomorphism classes of objects, solutions to geometric problems
+
+Example of projective space as moduli space: real / complex projective space is a moduli space parametrising the space of line passing through the origin in real / complex space.
+
+Example of Grassmanian as moduli space: Grassmanian G(k, V) of a vector space over field K is moduli space of all k-dimensional linear subspaces of V.
+
+Involution: f^2 is idempotent or f = f^{-1}.
+
+Cantor's bijection: a bijection from the product of naturals to the naturals taking (x, y) to 0.5([x+y]^2 + 3x + y). Draw it out. This is the only quadratic bijection up to symmetry of variables (x,y) (y,x). Used to show cardinality of products of naturals is the same as that of the naturals.
+
+Algebraist definition of 0^0: this is equal to 1, empty map from nothing to nothing. Also gives 0! = 1.
+
 Matrix associativity with Einstein summation notation: ((AB)C)_ij = (AB)_ik C_kj = A_il B_lk C_kj = A_il (BC)_lj = (A(BC))_ij.
 
 Hilbert basis Theorem: if R is Noetherian than R[X] is Noetherian.
@@ -307,7 +319,7 @@ Baire space classification: NOTE there are Baire spaces that are not complete ps
 
 Metrizable: topological space homemomorphic to a metric space i.e. there is a metric d from pairs of the space to the half open ray [0, infinity). Examples of non-metrizable spaces include the Zariski topology or spectrum of a ring. Another example is the long line which is locally metrizable but not metrizable.
 
-Uryshon's metrization theorem: second-countable regular spaces are metrisable. Or, a topological space is separable and metrizable if and only if (equivalently) regular, Hausdorff, and second countable.
+Uryshon's metrization theorem: second-countable regular spaces are metrisable. Or, a topological space is separable and metrizable if and only if (equivalently) regular, Hausdorff, and second countable. This does not require axiom of choice.
 
 Nagata-Smirnov metrization theorem: topological space is metrisable if and only if it is regular, Hausdorff and has a COUNTABLY LOCALLY FINITE basis. You add some locality to basis for the construction.
 
