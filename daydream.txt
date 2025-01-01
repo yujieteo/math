@@ -1,10 +1,200 @@
 DAYDREAM (MATH)
 
-Schur's lemma intuition. Too many statement styles of Schur's lemma.
+Fatou's lemma
+
+Bounded linear operators are continuous?
+
+Ito's lemma
+
+Hensel lemma?
+
+Central limit theorem applications?
+
+How to remember the conditions for central limit theorem?
+
+Implicit function theorem? See ncat and Lee for more information. Also what is the relation between it and functional analysis?
+
+Nonsingular projective algebraic curve?
+
+Jacobian variety?
+
+Principally polarised abelian variety?
+
+Svarc-Milnor lemma? Cocompact, properly discontinuous, quasi-isometric, word metric?
+
+Fubini's theorem? Using measure theory? Tonelli's theorem? See Wikipedia for proof key steps, this one is good.
+
+Coarea formula?
+
+Godel's incompleteness theorem?
+
+Forms of Cauchy-Schwarz?
+
+Symmetry of second derivatives?
+
+Dominated convergence theorem?
+
+Sobolev embedding theorem? Missing gaps: test function, frequency scale, Lorentz norms, Lebesgue space as s = 0, regularity parameter, uncertainty principle in Fourier analysis, Plancherel's theorem, singular integrals, Holder spaces: https://terrytao.wordpress.com/2009/04/30/245c-notes-4-sobolev-spaces/ 
+
+Spectral theorem? See all possibilites of a spectral theorem.
+
+Noether's theorem? Symplectic version.
+
+How to maximise the use of the Chinese remainder theorem?
+
+Riemann-Roch theorem? 
+
+Implications of Riesz representation theorem?
+
+Intuition for Cauchy sequences?
+
+Liouville theorem?
+
+Gauss-Bonnet theorem?
+
+Ergodic theorem? What are some important classes of this?
+
+Torelli theorem? How is this concretely applied?
+
+Prime number theorem?
+
+PBW theorem, Poincare-Birkhoff-Witt theorem?
+
+Trace theorem? Sobolev spaces? https://math.stackexchange.com/questions/2091716/understanding-the-trace-theorem-for-sobolev-spaces
+
+Atiyah-Singer index theorem?
+
+Ramsey's theorem?
+
+Inverse function theorem? 
+
+Residue theorem?
+
+Uniqueness theorem? This one seems super vague.
+
+Hodge theorem?
+
+Applications of the continuous mapping theorem?
+
+KAM theorem?
+
+Girsanov's theorem?
+
+Wick's theorem
+
+Lax-Milgram theorem
+
+Birkhoff ergodic theorem
+
+Universal coefficient theorem
+
+Riemann mapping theorem
+
+Major comparison theorems?
+
+Taylor's theorem
+
+Chebotarev density theorem
+
+Consequences of the fundamental theorem of calculus?
+
+Cauchy's theorem
+
+Paley-Wiener theorem
+
+Hodge index theorem
+
+Intermediate value theorem?
+
+Stoke's theorem?
+
+Binomial theorem consequences?
+
+Representation theorems?
+
+Frobenius theorem?
+
+Uniformization theorem?
+
+Dirichlet's theorem?
+
+Lefschetz theorem
+
+Darboux theorem
+
+Peter-Weyl theorem
+
+Bertini's theorem
+
+Mountain Pass theorem
+
+Jordan curve theorem
+
+Stone-Weierstrass theorem
+
+Borsuk-Ulam theorem
+
+Finetti theorem?
+
+Lebesgue theorem?
+
+Bernstein theorem?
+
+Stability theorems?
+
+Egorov's theorem
+
+Positive mass theorem
+
+Riesz theorem
+
+Sard's theorem
+
+Portmanteau theorem
+
+Kodaira vanishing theorem
+
+Bochner's theorem
+
+addition theorem
+
+Helly's theorem
+
+Tverberg theorem
+
+Carleson embedding?
+
+Hurewicz theorem?
+
+Bombieri-Vinogradov theorem?
+
+Stone's theorem
+
+Local limit theorem
+
+Monotone convergence theorem
+
+Dirichlet principle
+
+Godel incompleteness
+
+Quadratic reciprocity
+
+Euler-Lagrange formula
+
+Nilpotence theorem of CW complexes.
+
+Spectral theorem for self adjoint operators, what else can you milk out of it?
+
+Littlewood-Richardson rule?
+
+Explore https://notebookarchive.org/frequencies-of-named-theorems-in-arxiv-math-mathoverflow-and-stackexchange-mathematics--2020-09-8sywjs5/.
 
 Fill in fundamental theorem of quotient groups.
 
-Prove the equivalence of Zorn's lemma, the well-ordering principle, and the Axiom of Choice.
+Prove the equivalence of Zorn's lemma, the well-ordering principle, and the Axiom of Choice. Consider: https://math.stackexchange.com/questions/629464/statements-equivalent-to-the-axiom-of-choice
+
+Hahn-Banach theorem, Banach-Tarski paradox, ultrafilter lemam, countable choice?
 
 Figure out a description of Chevalley's structure theorem?
 
@@ -30,7 +220,7 @@ Forcing produces ZFC?
 
 The group law on an elliptic curve is associative using Riemann surfaces?
 
-Construction on the Haar measure on locally compact groups?
+Construction on the Haar measure on locally compact groups? Explore this in the context of representation theory.
 
 Subdirect product?
 

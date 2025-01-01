@@ -1,5 +1,33 @@
 UNDERSTOOD (MATH)
 
+Liouville's theorem: phsae space distribution function evolves with time and is constant along trajectories. Valid for no friction, with no chemical reactions. Defines measure preserving systems  You can prove the fluctuation theorem (what is this), then derive the second law of thermodynmics.
+
+Spectral theorem: result when linear operator can be diagonalised and form some eigenvalues or spectrum or set of values k such that T = kI is not invertible.
+
+Spectral decomposition: spectral theorem gives this decomposition.
+
+Svarc-Milnor lemma: if a group G acts on a metric space X such that the action is cocompact, properly discontinuous and by isometries, then X is quasi-isometric to G with the word metric. Similar to when a group acts on a space transitively and you quotient out by the stabilizer.
+
+Noether's theorem: continuous symmetry of the Lagrangian physical system corresponds to conservation law. Time translation invariance, energy conserved, space translation invariance, momentum is conserved.
+
+Formulations of Noether's theorem: variational calculus on local action functional, variational bicomplex definition, moment maps.
+
+Symplectic noether theorem: moment map of Hamiltonian action preserving a given time evolution is conserved by this same time evolution.
+
+Motivation of implicit function theorem: k nonlinear equation in k unknown, in practice cannot event ell whether it has solution. Implicit function theorem reduces impossible questions to linear ones. However, it is limited to local linear approximations near (a,b)
+
+Intuition of implicit function theorems: sufficient conditions for differentiable inverse of germ f_p of a differentiable map of smooth manifolds f: M -> N, invertibility works as germ is local diffeomorphism for some neighbourhood of p to some neighbourhood of f(p), then you can consider the tangent map.
+
+Torelli's theorem: nonsingular projective algebraic curve (compact Riemann surface) is determined by its Jacobian variety given in the form of a principally polarised abelian variety for algebraically closed field.
+
+Fubini theorem on Lebesgue measure: Lebesgue integrable on Cartesian product rectangle X * Y (product measure is needed), then double integral equivalent in evaluation with iterated integral. Warning: product of two complete measure spaces is usually not complete example Lebesgue measure of unit interval with itself is not Lebesgue measure of unit square. Fix by using complete measure.
+
+Weaker Fubini's theorem on Riemann integrals: Riemann integral Cartesian product rectangle X * Y, if function is continuous, then double integral equivalent in evaluation with iterated integral.
+
+Tonelli's theorem: apply to non-negative measurable functions.
+
+Central limit theorem common misconceptions: (1) random sampling leads to normal distribution for sufficiently large samples of any random variable, in reality, it will reproduce properties of population; (2) theorem applies to random sampling of any variable, rather than mean values or sums.
+
 Contragradient representation: let p be a linear representation p^{*}(g) is transpose p(g^-1) for all g in finite group G. Existence, use the standard basis of the dual of vector space. Uniqueness is tricky, you need the fact that the contragradient is always invertible (note: linear representations are maps to the general linear group of a vector space, so linear representations are invertible). Its character is the conjugate of the character of p. This follows because a finite dimensional matrix is conjugate to its own transpose, taking values in a field (using theory of modules over a PID: Smith normal forms of XI_n - A and XI_n - A^T are the same by symmetry. A and its transpose A^T has the same invariant factors, and has the same rational canonical form (Frobenius normal form), and hence they are similar over K.s
 
 Characters of direct sum representation: direct sum of representations has their characters added. Proof is by considering Jordan blocks.
@@ -48,7 +76,7 @@ Quotient group / factor group idea: similar elements are now made equivalent by 
 
 Quotient group naming: compared to division of integers: 12 divide by 3 gives 4, 12 objects into 4 subcollections of 3 objects. G / N gives cosets of N in G, 4 cosets of 3 equivalence classes. The three objects in normal division are identical (not even equivalent). Axiom of choice becomes important when picking representative elements of equivalence classes.
 
-Properties preserved by quotient groups of normal subgroups: abelian,nilpotent, sovlable, cyclic, or finitely generated.
+Properties preserved by quotient groups of normal subgroups: abelian,nilpotent, solvable, cyclic, or finitely generated.
 
 Fundamental theorem of homomorphisms: capture properties of quotient groups.
 
@@ -332,13 +360,13 @@ Example of operator as functor: derivative operator is a functor from the catego
 
 Linear subspace as algebra: subspace of a compact metric space A defined to be C(X, K), X subspace, K field such that the identity is in A and that it is closed under composition.
 
-Arzela-Ascoli definition of compactness: for X a compact metric space, it is equivalently equicontinuous, closed and bounded.
+Arzela-Ascoli definition of compactness: for X a compact metric space, it is equivalently equicontinuous, closed and bounded. Note, you can modify this using nets and ultrafilters to avoid dependence on countability.
 
 Bounded in the sense of norms: there exists a positive R > 0 such that the max norm (l^\infty) on the norm of f is less than R.
 
 Bounded linear operator in the sense of norms: there exists a positive R such that the norm of Tx in Y is less than R * the norm of X.
 
-Baire category theorem motivation: a form of axiom of choice to ensure that no countable cover of proper subspaces of K^n exists, K being some field. See Tao's notes.
+Baire category theorem motivation: a form of axiom of (dependent) choice to ensure that no countable cover of proper subspaces of K^n exists, K being some field. See Tao's notes. Baire category theorem requires some form of the axiom of choice.
 
 Dense: subset A is dense in set X if every point in X can is either in or close to a member of A. Picture: rationals are dense in reals as typical example. The following are equivalent: (1) smallest closed subset of X containg A is X; X is the closure of A in X; (3) interior of the complement of A is empty; (4) points in X either belong to A or a limit point of A (see intuition above); (5) for all x in X, every neighbourhood U of x intersects in A; (6) A intersects every nonempty open subset of X.
 
@@ -476,7 +504,7 @@ Energies are R-torsor: potential energy is with respect to a base point, so you 
 
 Affine plane as torsor: you forget the origin, so the plane becomes torsor. Affine space is a vector space forgetting an origin. A torsor is like group forgetting the identity. To turn the G-torsor into a group G, pick an element to be an identity.
 
-Normal subgroups: subgroup invariant under conjugation of any group element i.e. gng^{-1} is in N. Equivalently, (1) image of conjugation is subset/equal to N; (2) left cosets right cosets are equal; (3) N is A (not the) union of conjugacy classes of G; (4) there is some group homomorphism whose kernel (null space if you use representation theory) is N; (5) for all n in N and g in G the commutator n^{-1} g^{-1} n g is in subgroup N. Special linear group is a normal subgroup of the general linear group, since it is the kernel of the determinant map as group homomorphism.
+Normal subgroups: subgroup invariant under conjugation of any group element i.e. gng^{-1} is in N. Equivalently, (1) image of conjugation is subset/equal to N; (2) left cosets and right cosets are equal; (3) N is A (not the) union of conjugacy classes of G; (4) there is some group homomorphism whose kernel (null space if you use representation theory) is N; (5) for all n in N and g in G the commutator n^{-1} g^{-1} n g is in subgroup N. Special linear group is a normal subgroup of the general linear group, since it is the kernel of the determinant map as group homomorphism.
 
 Center of group: set of elements that commute with all elements of the group.
 
@@ -810,6 +838,8 @@ Central limit theorem by pertubation: goal is to define some pertubation pdf clo
 Central limit theorem: normalised sum of 1/root(N) of N random independent and identically distributed variables of zero mean, and FINITE VARIANCE sigma^2 is random variable with pdf converging to Gaussian distribution with variance sigma^2. Convergence holds measure theoretical sense i.e. probability that above normalised sum falls in given integeral converges to that calculated from Gausssian distribution. Limitations: applies to centre of distribution, fails at large deviations, X_i must be independent, works for finite variance with same order of magnitude but DIFFERENT PDFS. The order of magnitude limitation is deviation sigma approximately root(N). You can relax the root(N) to get a weaker version of the central limit law. Very tricky example, but captures much of the collective phenomena one wants to study.
 
 Central limit theorem with renormalisation group theory: see Sornette, step 1, decimate the degrees of freedom of groups of sum of pairs, this becomes some sort of tree, see Sornette, characteristic function looks like P^(n+1)(k) = [P^n(k)]^2. So cumulant is c_l^(n+1) = 2c_l(n) on log scale. Step 2 is to rescale the variables, cumulants are multiplied by 2^(a l), where a is to be determined and c_l has dimension k^(-l). In this case, pick alpha = 1/2. For cumulant cl we have 2^(1 - la), iterate process of decimation and rescaling, get that first two cumulant nonzero, rest becomes zero and shrinks in the limit, so it is a Gaussian law. Apply Fourier transform, to get characteristic equation of Gaussian law. See pg. 54 of Sornette, note that it is renormalisation of P(x, N, c1, c2, ...) = 1/(2^a) (x/2^a, N/2, 2^(1-a)c_1, ... 2^(1-l) c_l). So the second cumulant pops up naturally because in the decimation process, you just need to split into bins of two.
+
+Central limit theorem with characteristic function: product of characteristic functions of a number of density function becomes close to the characteristic function of normal density, as the number of density functions increase without boundes under nice conditions up to scaling.
 
 Stable extreme value distributions classification: Gumbel, Frechet, and Weibull. Location, scale, and shape parameter. For me, Taleb classifies political processes based on these three parameters as well.
 
@@ -1271,7 +1301,7 @@ Field of fractions: defined like field extension, smallest field in which an int
 
 Localisation of ring: generalisation of field of fractions, but with arbitrary commutative ring.
 
-Subgroup: subset with the same group operation
+Subgroup: the following are equivalent: (1) subset with the same group operation closed under the group operation; (2) action of any element of A on the left is equal to A i.e. xA = A for all x in A, left coset of elements in A is A.
 
 Kernel of a group homomorphism: set of elements such that p(g) = e', where g is the group element and e' is the identity element of the other group. This reminds me of the left null space of a linear map. Null space is in the category of matrices, whereas kernels is linear transformation. The classical example is the special linear group, which is the kernel of the determinant map from the general linear group to the reals under the multiplicative group.
 
@@ -1683,7 +1713,13 @@ Injective: covariant pullback, if f(x) = f(y) then x = y.
 
 Well defined function: covariant pushforward, if x = y, then f(x) = f(y)
 
-Sobolev embedding: amplitude A, frequency N, support on volume V. Wk,p norm is AN^kV^-p, Apply uncertainty principle, V >= N^-d. Think of it as a trade off between regularity and interrability. These are single bump function spaces, can extend a lot further. W11(R)  =  L^infty(R1) is fundamental theorem of calculus Wd1(R)  =  L^infty(Rd) is iterated and Fubini
+Sobolev embedding (Tao's intuition): amplitude A, frequency N, support on volume V. Wk,p norm is AN^kV^-p, Apply uncertainty principle, V >= N^-d. Think of it as a trade off between regularity and intergrability. These are single bump function spaces, can extend a lot further. W11(R)  =  L^infty(R1) is fundamental theorem of calculus Wd1(R)  =  L^infty(Rd) is iterated and Fubini applies.
+
+Sobolev embedding motivation: smoothness of solutions in differential equations if you do it in Soboleev spaces (and compactness so that you have nice existence theorems).
+
+Sobolev space intuition: Banach space of measurable functions such that generalsied partial derivatives (generalised functions) or in L_p(Omega); vector space of functions with norms that is combination of L^p norms. Try 1d case.
+
+Regularity in the context of partial differentialequations: smooth enough to be qualified as classical solution. Example: weak solution that is not smooth would be shock waves.
 
 Using calculus to get rid of bad fractions: newton numerators of form [f(t+h) - f(t)]/h is simply the integral
 
@@ -1747,7 +1783,9 @@ Comprehension axiom: can always find a set of also some property, fails due to R
 
 Pairing: inductively find sets of pairs of elements
 
-Choice: pick some element from sets of elements to find a new set, this new set exists. Alternatively, there for a set X there exist a subset of X from each part of the paritition. This make the axiom of choice powerful, since it defines each equivalence class with a canonical representative element (when I realised this I finally understood why the axiom of choice is controversial).
+Axiom of choice: pick some element from sets of elements to find a new set, this new set exists. Alternatively, there for a set X there exist a subset of X from each part of the paritition. This make the axiom of choice powerful, since it defines each equivalence class with a canonical representative element (when I realised this I finally understood why the axiom of choice is controversial).
+
+Axiom of choice equivalence statements: the following are equivalent: (1) product of a collection of non-empty sets is non-empty; (2) posets which every chain has an upper bound must have a maximal element; (3) every set can be well ordered; (4) product of compact topological spaces is compact; there is a bijection A -> cartesian product A * A; (5) all vector spaces have a basis i.e. vector spaces are equivalent to free modules; (6) all unital commutative rings have a maximal ideal; (7) all surjection has an injective inverse; (8) every free abelian group is projective; (9) every spanning set includes a basis;  (10) trichotomy, two sets either have the same cardinality, or one is smaller cardinality than the other; (11) every partially ordered set has a maximal chain; (12) every chain in a partially ordered set can be extended to a maximal chain; (13) Cartesian product of any family of conneccted topological spaces is connected; (14) closed unit ball of the dual of a normed vector space over the reals has one extreme point; (15) in product topology, closure of product of subsets is equal to product of closures; (16) Freyd adjoint functor theorem.
 
 Projective dimension of module: minimal length of projective resolution of module over a ring. Osofosky, projective dimension of modules over ring C[x,y,z] is undecidable in ZFC. 2 if continuum hypothesis holds, 3 if it fails.
 
@@ -1889,11 +1927,15 @@ Special adjoint functor theorem: example: consider inclusion as functor from com
 
 Ergodic theory, semi group actions with no (additively structured) inverses, use this as the basis of modelling dynamics and absorbing states in ergodic theory. See Erdos notes.
 
+Irrational rotation of circle as ergodic: if rational then periodic so not ergodic in fact it is root of unity, there is idempotence on the action and it will not visit everywhere on the circle.
+
 Sign of permutation is inevitable, proof is consider a n sphere, boundary is (n-1) sphere which can be constructed in simplicies/CW complex, but spheres can be realised as sphere spectrum, which correspond to the integers as group under addition forgetting the spectra properly, integers as a abelian group has two automorphisms, trivial and negations therefore there is a well defined homomorphism from symmetric group of n to symmetric group order 2. Related to Tor.
 
 Example, take model of group object. We have group, topological group, Lie group, semi direct product. Category of points of topoi is isomorphic to models of theory.
 
-Ultraproduct, Cartesian product modulo ultra filter, filter is family of subset of power set 2^I, I is some indexing or grading, closed under superset and non empty intersections, the following are equivalent filter is ultrafilter, no filter greater than that filter, proper subsets are closed by inclusion or the complement inclusion. Ultraproducts are defining things in first order logic,
+Ultraproduct, Cartesian product modulo ultra filter, filter is family of subset of power set 2^I, I is some indexing or grading, closed under superset and non empty intersections, the following are equivalent filter is ultrafilter, no filter greater than that filter, proper subsets are closed by inclusion or the complement inclusion. Ultraproducts are defining things in first order logic.
+
+Ultrafilter lemma: the following are equivalent: (1) every proper filter on a set X is contained in some ultra filter on X; (2) every prefilter on a set X, there exists a maximal prefilter subordinate to it; (3) every proper filter subbase on a set X is contained in some ultrafilter on X.
 
 Makkai conceptual completeness, for a functor of (coherent) pretopoi, if the induced contravariant functor on models of pretopoi is an equivalence of categories, then the former functor is an equivalence of categories
 
@@ -1917,7 +1959,7 @@ Internal hom is basically internally defined morphism as object or a generalisat
 
 Direct image with compact support, consider morphism of schemes, consider sections such that restrictions of support to opens are nice.
 
-Pontrjagin dual: easy example is additive on integers to circle group, take products of roots of unity gives Fourier theory. Circle group is compact and connected, integers must be discrete and torsion free by Pontrjagin duality. The exponential maps gives self duality of the additive reals (sums of powers of exponential). This gives a duality between abelian discrete groups like additivity on integers to compact commutative topological groups like the circle group.
+Pontrjagin dual: easy example is additive on integers to circle group, take products of roots of unity gives Fourier theory. Circle group is compact and connected, integers must be discrete and torsion free by Pontrjagin duality. The exponential maps gives self duality of the additive reals (sums of powers of exponential). This gives a duality between abelian discrete groups like additivity on integers to compact commutative topological groups like the circle group. Several key steps includes construction of the Haar measure and associating it with this group.
 
 Eckhmann-Hinton duality: The most basic duality by reversing arrows in category theory.
 
@@ -1931,7 +1973,15 @@ Makkai duality: syntax of first order logic (pretopoi) corresponds to the semant
 
 Koszul duality, generalising the fact that d^2 = 0 encodes a commutative law and d^2w (differential) = 0, recall that this is case for some long sequences, one can get that having free graded comm algebra on the special linear group into a differential graded algebra is the same as making it into a Lie algebra (Jacobi identity is indeed = 0), duality having free graded Lie algebra on special linear group into a differential graded algebra makes it into a commutative algebra (d^2 = 0 encodes a commutative law)
 
-Ergodicity: all states are accessible from one another. One can lose ergodicity with irreversible decisions. Take some measurable space, impose either actions on monoid of measurable space with measurable functions (random variables) or Markov kernels (don’t understand this), then a invariant measure is ergodic if the measure obeys some zero one law (measure which are only zero and one)
+Ergodicity: all states are accessible from one another. One can lose ergodicity with irreversible decisions. Take some measurable space, impose either actions on monoid of measurable space with measurable functions (random variables) or Markov kernels (don’t understand this), then a invariant measure is ergodic if the measure obeys some zero one law (measure which are only zero and one).
+
+Ergodic theory: statistical properties of deterministic dynamical systems.
+
+Poincare recurrence: almost all points in any subset of phase space eventaully revisit the set.
+
+Ergodicity for compact abelian groups automorphisms: let G be compact abelian group, u normalised Haar measure, T an group automoprhism, G* be Pontryagin dual group, consisting of continuous characters of G, T* be corresponding adjoint automorphism of G*. We say T is ergodic if (T*)^n(X) is idempotent on the character i.e. (T*)^n(X) = X is possible only when n = 0 or X is the trivial character. Basically you do not want T to be idempotent, and you want it to visit everywhere otherwise it will get stuck in some finite loop. 
+
+Example of ergodicity for compact abelian group automoprhisms: pick G as n-dim torus, automorphism T is unimodular matrix, then T is ergodic if and only if no eigenvalue of A is a root of unity. It will not get stuck on some dots on a circle and go back to the identity and it will visit everywhere.
 
 Stabiliser of a group element a is a set such that left action of group element in group G is absorbed into a by a ga = a
 
