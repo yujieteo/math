@@ -1,5 +1,93 @@
 UNDERSTOOD (MATH)
 
+Hilbert basis Theorem: if R is Noetherian than R[X] is Noetherian.
+
+Module has finite composition rings equivalent to Artinian and Noetherian module: prove using the finite composition series.
+
+Left annihilator ann(x): set of a in ring R such that ax = 0. Kernel if R is an algebra (need not be always true), f: A -> A where f(x) = ax. This is a left ideal in R.
+
+Left annihilator ann(x) in category theory: kernel of action map R to endomorphism ring End_R(M) determined by the adjunct map of the identity M -> M along the tensor-hom adjunction.
+
+Degenerate bilinear form: bilinear form such that map from V -> V* where the following are equivalent: (1) taking v -> (x -> f(x,v)) is not an isomorphism; (2) when V is finite dimensional the map has a nontrivial kernel; (3) there exist nonzero x in vector space V such that f(x,y) = 0 for all y in V; (4) for finite dimensional vector space relative to basis, and teh determinant is zero or the matrix is singular form and in this case it is a singular form. This feels like the failure of the "Yoneda lemma" where objects and maps of objects do not correspond. 
+
+Nonsingular form: map from V to its dual V* such that the following are equivalent: (1) v -> (x -> f(x,v)) is isomorphism in finite dimensions; (2) f(x,y) = 0 for all y in V implies x = 0.
+
+Examples of non-singular forms: inner products, symplectic forms. This gives rise to symmetric nondegenerate forms to generalise inner products.
+
+Example of generalisation of Riemann manifolds: manifold with inner product structure on tangent space is Riemannian manifold, so a manifold with a symmetric nondegenerate form is a pseudo-Riemannian manifolds.
+
+Quotient of Noetherian is Noetherian: follows from Hilbert's basis theorem.
+
+Finitely generated ring over Noetherian ring is also finitely generated: follows from Hilbert's basis theorem.
+
+Composition series of module M: finite increasing filtration of module M by submodules such that successive quotients are simple and replace the direct sum composition of M.
+
+Jordan-Holder theorem: two composition series of a given group are equivalent with the same composition factors, up to permutation and isomorphism. Proved using Schreier refinement theorem.
+
+Schreier refinement theorem: two subnormal series of subgroups of a given group have equivalent refinements.
+
+Zassenhaus / butterfly lemma: G is group with subgroups A and C, B is normal subgroup of A, and D is normal subgroup of C, there is this isomorphism of quotient groups: (A ^ C)B/(A ^ D)B is isomorphic to (A ^ C)D/(B ^ C)D. The Hasse diagram (diagram showing finite partially ordered set) looks like butterfly.
+
+Goursat's lemma consequences: subdirect product of two groups can be described as a fiber product.
+
+Primary decomposition / Lasker-Noether theorem: every Noetherian ring is a Lasker ring, every ideal can be decomposed as an intersection called primary decomposition of finitely many primary ideals (similar to powers of prime ideals). Extends fundamental theorem of arithmetic.
+
+Primary ideal: the following are equivalent for proper ideal I: (1) for each pair of elements x and Y in noetherian commutative ring R such that xy is in ideal I, then either some power of x is in I or some power of y is in I or both; (2) every zero-divisor in quotient R/I is nilpotent; (3) Ass(A/I) consists of a single element; (4) set of zero divisors is equal to the nilradical.
+
+Commutative ring has minimal prime ideal: proof requires Zorn's lemma.
+
+Every prime ideal contains a minimal prime: proof: apply localisation at minimal prime ideal to localisation at p.
+
+Equivalence of definitions for primary ideal (https://math.stackexchange.com/questions/804556/how-to-prove-assr-q-p-if-and-only-if-q-is-p-primary-when-r-is-noet): Zero divisors are union of associated primes in Noetherian ring, so the nilradical intersection of all minimal primes, every minimal prime is an associated prime, so the union of primes in Ass(R/Q) is equal to the intersection of minimal primes in (R/Q) which is equal to the intersection of primes in Ass(R/Q). Union = Intersection, occurs if |Ass(R/Q)| = 1, therefore P is the radical of Q for the single associated prime {P} = Ass(R/Q).
+
+Associated prime of a module M over a ring R: the following are equivalent: (1) prime ideal of R that is an annhilator of a prime submodule of M. The set of associated primes is Ass_R(M), this is called the assassinator of M; (2) minimal prime over Ann(x) for nonzero x in R-module M
+
+Union of associated primes of M: equal to the set of zero divisors of M if the ring is Noetherian. 
+
+Support of a module: set of all primes p such that the localisation of the module at p is nonzero.
+
+Consequence of Lasker-Noether theorem on algebraic sets: every algebraic set can be decomposed as finite union of irreducible components. I think it means that intersections of Lasker ring correspond to union of irreducible varieties.
+
+Classification of finitely generated modules over PID canonical forms, consider R = K[T], algebra of polys with field K evaluated at T: invariant factors + companion matrix yields (1) Frobenius normal form or rational canonical form; primary decomposition + companion matrix gives (2) primary rational canonical form; primary decomposition + Jordan blocks gives (3) Jordan canonical forms (valid only for algebraically closed field).  
+
+Finite dimensional matrix is conjugate to its own transpose, taking values in a field: (1) counterexample is left shift and right shift operators being adjoint to one another but not conjugate (consider kernels of these linear transformation), so you need finite dimensions; (2) [1 -5 ; 3 1] is not conjugate to its transpose in matrices over the integers, but are conjugate over the rationals, this is related to how ideals work in rings of algebraic integers.
+
+Finite dimension matrix is conjugate to its own transpose, taking values in a field (using Jordan normal blocks): key step is to use Jordan canonical form (exists only for fields that split the characteristic polynomial), reducing it to single Jordan blocks.
+
+Finite dimension matrix is conjugate to its own transpose, taking values in a field (using theory of modules over a PID: Smith normal forms of XI_n - A and XI_n - A^T are the same by symmetry. A and its transpose A^T has the same invariant factors, and has the same rational canonical form, and hence they are similar over K.
+
+Smith normal form: normal form that can be defined for any matrix with entries in a principal ideal domain (every ideal generated by one element, it is principal ideal).
+
+Rational canonical form / Frobenius normal form: canonical form for matrices by conjugation of invertible matrices over F, reflecting the minimal decomposition of a vector space into subspaces which are cyclic for A.
+
+Subspaces cyclic for A: spanned by some vector and repeated images under subspace A for full vector space M(F), for field F.
+
+Classification of finitely generated modules over PID: uniquely decomposed into sum of cyclic modules generated by invariant factors. 
+
+Classification of finitely generated modules over PID, pick module R = Z: gets fundamental theorem of finitely generated abelian groups which is direct sum of primary cyclic group and infinite cyclic group. The invariant factor decomposition is equivalent to this classification by the Chinese remainder theorem.
+
+Invariant factors of module M over PID R: finitely generated module M over principal ideal domain R, there exists a unique decreasing sequence of proper ideals such that M is isomorphic to the sum of cyclic modules, the generators of these ideals d_i are unique up to multiplication by unit, these are the invariant factors of the module M. Ideals are proper, so these factors are not invertible. These are a complete set of invariants for the module, so any two modules with the same set of invariants are necessarily isomorphic. It looks like the free part of M + sum of modules that has the invariant factors quotiented out. Proof of this is by taking finitely generated module M over PID is finitely presented, PID is Noetherian. Then take presentation and put it in Smith normal form, this gives invariant factor decomposition, diagonal entries of Smith normal form are invariant factors.
+
+Alternate proof of invariant factor style decomposition: define tM torsion submodule, get short exact sequence 0 to tM to M to M/tM to 0. M/tM is finitely generated torsion free module (that was the goal of defining torsion submodule), this is free module of finite rank so isomorphic to R^n for positive integer n. Free module is projective module, right inverse of projective map exists, use splitting lemma M = tM + F. Prime element in R, you can talk about N_p as direct sum of cyclic modules and tM as direct sum of N_p to get the cyclic decomposition you want. 
+
+Elementary divisors of module M over PID R: finitely generated module M over principal ideal R is isomorphic to the sum of indecomposable R/(q_i), q_i are primary ideals, whose elements are elementary divsors of M. This gives every finitely generated module over PID as completely decomposable, using the Lasker-Noether theorem.
+
+Locally contractible: a topological space (X,T) that has a basis of open subsets consisting of contractible topological spaces. Again, basis is useful in defining local properties.
+
+Contractible: a topological space (X, T) is locally contractible if the canonical map from X to a point is a homotopy equivalence. 
+
+Whitehead theorem (classical): the following are equivalent for CW-complexes: (1) weak homotopy equivalence; (2) homotopy equivalence.
+
+Homotopy equivalence: morphism f: X -> Y with a homotopy inverse. This is an equivalence relation.
+
+Homotopy inverse: for morphism f: X -> Y, there exists g: Y -> X and homotopies g * f is 1_X and f * g is 1_Y. Homotopies are a totally ordered family of continuous maps graded along the unit interval such that composition of maps at the endpoint is idempotent. In this case, the family of maps are idempotent onto the identity at X and Y.
+
+Reduced ring: ring R contains no nonzero nilpotent elements, r^2 = 0 implies r = 0 for any r in ring R.
+
+Nonreduced ring example of matrix ring: [0 1; 0 0]^2 = [0 0; 0 0].
+
+Nonreduced ring example, Z8: 4^2 = 0
+
 Linear (Cauchy functional equation) but fails homogeneity: requires axiom of choice, consider a rational vector basis extending Q linear independent set {x nonzero x is not root(2)x}, f(x) = r != 0 and f(root(2)x) not equal root(2) r and the rest on B anyway you want. 
 
 Irreducible / simple representation: nonzero vector space with no vector subspace stable under V except for zero space and whole space. Equivalent definition is irreducible representations are not the direct sum of two representations.
@@ -355,6 +443,8 @@ Dihedral group: group of all permutations of the n-gon.
 Quaternion group: eight element group of signed 1, i, j, k, with a bunch of formulas where i^2 = j^2 = k^2 = ijk = -1.
 
 Cyclic group: there is an element i.e. that generates the entire group i.e. g^{n}, n integer gives all elements in the group.
+
+Primary cyclic group: there is an prime p i.e. that generates the entire group i.e. g^{p}, n integer gives all elements in the group. 
 
 Order of element of a group: integer n where number of products give g^n = e, where e is the identity, and g is the group element.
 
@@ -1075,7 +1165,9 @@ n-ary operation: suppose U is forgetful from commutative R- algebra to set, then
 
 Dual graph: points are faces, faces are points of the graph. Draw points at each face (including outside edge), draw lines passing through each edge
 
-Noetherian: condition so you can do induction over ideals. The ascending chain condition.
+Noetherian ring: condition so you can do induction over ideals. The following are equivalent: (1) the ascending chain condition; (2) every ideal has in the ring has a finite set of generators a_i, so is the set of all R-linear combination of a_i; (3) every submodule of a finitely generated R-module is finitely generated.
+
+Noetherian R-module M: the following are equivalent: (1) submodules satisfy the ascending chain condition; (2) every submodule of module M is finitely generated.
 
 Base change: pullback over morphism of fields
 
@@ -1119,7 +1211,7 @@ Proper subgroup: proper subset, same group operation. Operation is Unital associ
 
 Embedding definitions: defined by how it can be embedded in a bigger objects: example, field of fractions of integral domain that can be embedded in a smallest field
 
-Integral domain: nonzero comm ring, product of two nonzero elements is nonzero (no nilpotents, idempotents are OK)
+Integral domain: nonzero commutative ring, product of two nonzero elements is nonzero (no nilpotents, idempotents are OK). This is a reduced ring, containing no nonzero nilpotent elements.
 
 Linear model: Schrodinger's coloured cat pill test: (1) relationship is linear (regressor, relationship, non-varying in time), (2) error expectation is zero, (3) error has constant variance, no autocorrelation, (4) observations do not affect the experiment (Schrodinger's come in), (5) bad case of number of observations + extra independent variables > number of independent variables assumed. See book by Peter Kennedy on this
 
@@ -1243,7 +1335,7 @@ Product type: left adjoint to type of functions
 
 Eta-expansion: judgemental uniqueness principle
 
-Classical homotopy: continuous totally ordered family of maps graded by intervals such that compositions of maps at the endpoint is idempotent.
+Classical homotopy: continuous totally ordered family of maps graded by intervals such that compositions of maps at the endpoint is idempotent. Need continuity if not you can make everything a homotopy. 
 
 Isbell duality: space is dual to algebra.
 
@@ -1329,7 +1421,7 @@ Jacobian determinant: stretching matrix of the volume.
 
 Normal matrices: commutes with conjugate transpose.
 
-Similarity: B is similar to A if there exists nonsingular S such that B = S^-1 A S.
+Similarity: B is similar to A if there exists nonsingular S such that B = S^-1 A S. Another definition of similar is if they have the same Frobenius normal form (canonical form by conjugation of invertible matrices over F) which is the same as the definition above.
 
 Diagonalisable: if similar to diagonal matrix, then diagonalisable.
 
@@ -1713,7 +1805,7 @@ Ultraproduct, Cartesian product modulo ultra filter, filter is family of subset 
 
 Makkai conceptual completeness, for a functor of (coherent) pretopoi, if the induced contravariant functor on models of pretopoi is an equivalence of categories, then the former functor is an equivalence of categories
 
-Boolean ring: it is a ring of idempotent, 0 and 1 are idempotent so it is canonically isomorphic to ring of integers modulo 2. Now, consider 1 + 1 = 0 using the fact that it is a ring and must have additive inverse 1. If you drop additive inverse and have 1 as an absorbing element 1 + 1 = 1, you get (default) disjunction, and it is a Boolean semiring. It is commutative, proof: start with a + a = 0, by substituting a + a with (a + a)^2, then consider x + y, you should get xy + yx = 0 using the same trick, recycle trick to get xy + (xy + yx) = xy. Boolean ring is characteristic 2, so xy = yx.
+Boolean ring: it is a ring of idempotent, 0 and 1 are idempotent so it is canonically isomorphic to ring of integers modulo 2. Now, consider 1 + 1 = 0 using the fact that it is a ring and must have additive inverse 1. If you drop additive inverse and have 1 as an absorbing element 1 + 1 = 1, you get (default) disjunction, and it is a Boolean semiring. It is commutative, proof: start with a + a = 0, by substituting a + a with (a + a)^2, then consider x + y, you should get xy + yx = 0 using the same trick, recycle trick to get xy + (xy + yx) = xy. Boolean ring is characteristic 2, so xy = yx. This  is the classical example of a reduced ring, with no nonzero nilpotent elements since 1 is idempotent.
 
 Boolean algebra: is a ring where every element is idempotent. A Boolean algebra is a distributive lattice (ideal in lattice) and a Boolean ring.
 
@@ -1799,7 +1891,13 @@ Wedge sum, glue together pointed spaces at the point.
 
 Cayley's Theorem, one of my favourites because once you understand Cayley's Theorem, you understand Yoneda embedding and Yoneda's lemma. Note: not trivial, requires key step. Consider underlying element of group x, mapping to left action gx. IMPORTANT: groups are closed, so this is bijection, since this is a bijection on the same set, it is a permutation, so groups must be isomorphic to permutation groups (or subgroups of symmetric groups) under composition of permutations. Yoneda's: considering homset(b, a) mapping to natural transformations nat(hom(a, -), hom(b, -)). This must be an isomorphism, since compositions of morphisms are morphisms (we used the assumption of a locally small category here, this is large enough to only form a set). Therefore, define this as an Yoneda embedding (if on sets), and all small categories are embed into the category of functors of defined on that categories, which are represented by pre-sheaves or representable functors.
 
-Groups as symmetries of something given by Cayley theorem, closure of left action is key step.
+Groups as symmetries of something given by Cayley theorem, closure of left action is key step. Some examples include how the circle group embedds in the symmetric group of the natural numbers.
+
+Real exponential exact sequence: 0 to integers to reals to circle group to 0 is a short exact sequence.
+
+Character of abelian group: homomorphism from abelian group A to the circle group.
+
+Circle group: the following are equivalent (by group isomorphism) - (1) quotient group of additive reals by additive integers, induced by the canonical embedding of the integers into the reals; (2) unitary group U(1); (3) special orthogonal group SO(2); (4) subgroup of group of units in teh field of complex number given by fixed positive modulus.
 
 Subgroup of unital associative magmas with inverses preserved. Same unit, same magma operation.
 
@@ -1864,8 +1962,6 @@ Smash product generalised tensor product which is a product that is bilinear sin
 Field extension, easy define some subfield with some subset, then the main field is the field extension. Also, the subset is adjunction to the field extension. From field to field extension, if it is a ring homomorphism preserving ring structure, must be an injection.
 
 Skew field / division ring: non-commutative field
-
-
 
 Eilenberg-Steenrod axioms for cohomology: contravariance, homotopy invariant, excision, suspension isomorphisms, disjoints to products, dimension axiom.
 
