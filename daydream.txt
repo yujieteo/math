@@ -1,5 +1,7 @@
 DAYDREAM (MATH)
 
+Schur's lemma intuition. Too many statement styles of Schur's lemma.
+
 Fill in fundamental theorem of quotient groups.
 
 Prove the equivalence of Zorn's lemma, the well-ordering principle, and the Axiom of Choice.
@@ -9,6 +11,8 @@ Figure out a description of Chevalley's structure theorem?
 Add more details on algebraic group and algebraic group schemes.
 
 Local field?
+
+Clearer example of the decomposition of SU(2)?
 
 Cayley's theorem on algebraic group?
 

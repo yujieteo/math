@@ -1,5 +1,29 @@
 UNDERSTOOD (MATH)
 
+Contragradient representation: let p be a linear representation p^{*}(g) is transpose p(g^-1) for all g in finite group G. Its character is the conjugate of the character of p. This follows because a finite dimension matrix is conjugate to its own transpose, taking values in a field (using theory of modules over a PID: Smith normal forms of XI_n - A and XI_n - A^T are the same by symmetry. A and its transpose A^T has the same invariant factors, and has the same rational canonical form (Frobenius normal form), and hence they are similar over K.s
+
+Characters of direct sum representation: direct sum of representations has their characters added. Proof is by considering Jordan blocks.
+
+Characters of tensor product representation: tensor product of representations has their characters multiplied. Proof is by carefully considering sum of products of eigenvalues.
+
+Characters of symmetric square and alternating square: let s be some element in finite group G, (1) X_Sym(s)^2 = 0.5(X(s)^2 + X(s^2)); (2) X_Alt(s)^2 = 0.5(X(s)^2 - X(s^2)); and (3) X_Sym^2 + X_Alt^2 = X^2. Proof: (1) choose basis consisting of eigenvectors, then we have p_s e_i = lambda_i e_i by eigenvalue eigenvector equation, and the result is that X(s) = sum of eigenvalues, X(s^2) = sum of eigenvalues squared. Now consider the definition of the basis of the symmetric squares and alternating squares, one should obtain the above which looks similar to the dimension expression which is obtained above. The third expression is simply because the tensor product of vector spaces is the direct sum of the symmetric square and alternating square representations.
+
+Decompositions of (x + x')_Sym^2 into x_Sym^2 + x'_Sym^2 + xx': proof is by using Proposition 3 of Serre where X_Sym(s)^2 = 0.5(X(s)^2 + X(s^2)), you decompose once, the recompose again, be careful and state that it is x(s) where s its the element of the finite group. The same trick can be applied to the alternating representation.
+
+Linear representation of Hom(V_1, V_2): see exercise 2.4 of Serre, let p_1 be a map from finite group G to the general linear group GL(V_1), let p_2 be a map from finite group G to the general linear group GL(V_2), let W be the set of linear maps (homomorphisms preserving vector space structure) W = Hom(V_1, V_2), then define for s in finite group G, and f in Hom-Vector space W we have p_s * f = p_2,s * f * p_1,s^{-1} so p_s f is in W. This is a linear representation p from finite group G to GL(W) since composition of linear maps is linear. Dimension is X_1^* X_2. 
+
+Character of a representation: let p from finite group G to general linear group of vector space GL(V) be a linear representation. For each element s in the finite group G, put the character of the representation of p, X_p(s) = Tr(p_s). Defined so that it characterises p.
+
+Properties of character of representation: let p be a representation of degree n, and X be a character of its representation. X(1) = n since the trace of 1 is simply degree n, X(s^-1) is equal to X(s)^* or the conjugate since p is of finite order, and a unitary matrix can represent this, X(tst^{-1}) = X(s), so this is preserved under conjugation, in fact it follows from Tr(ab) = Tr(ba) for two linear maps since sums of eigenvalues are commutative.
+
+Tensor product of vector spaces / linear representations / matrices (Serre's definition for linear representation): map from V_1 x V_2 to V_1 * V_2 = W with map (x_1, x_2) -> x_1 * x_2 is tensor product if these two conditions: (1) x_1 * x_2 is linear; (2) if (e_i) is basis in V_1 and (e_j) is basis in V_2, then product of e_i e_j is basis in W. This exists and unique up to isomorphism (universal property).
+
+Tensor product of two irreducible representations is not irreducible: example rotation group SO(3), double cover SU(2). Decompose into V_{l} * V_{m} = V_{l + m} + V_{l + m - 1} + ... + V_{l - m}. Need more clarity. In general this is a problem of character theory.
+
+Symmetric square and alternating square: V * V = Sym^2(V) + Alt^2(V), let p be automorphism of V * V such that p(e_i e_j) = e_j e_i for pairs e_i, e_j as elements of basis of V. Sym^2(V) is set of elements z in V * V such that p(z) = z, Alt^2(V) is set of elements z in V * V such that p(z) = -z. Symmetric sum (e_i e_j + e_j + e_i) is basis of symmetric square, whereas (e_i e_j - e_j e_i) is basis of alternating square. Dimension of symmetric square is n(n+1)/2, dimension of alternating square is n(n-1)/2, and these are stable under G for a vector space of dimension n.
+
+Dimension decomposition of tensor product: dim(V_1 * V_2) = dim(V_1) dim(V_2)., this arise from condition 2 of tensor product from vector space
+
 Moduli space: points are algebro-geometric isomorphism classes of objects, solutions to geometric problems.
 
 Example of projective space as moduli space: real / complex projective space is a moduli space parametrising the space of line passing through the origin in real / complex space.
@@ -921,7 +945,7 @@ Morphism in category theory as structure preserving map: since it is still in th
 
 Laurent series of complex f(z) about point c: generalises Taylor's series with positive and negative dimension. f(z) can be represented as sum of a_n (z - c)^n from negative infinity to positive infinity. Coefficients a_n is path integral f(z) / (z-c)^n+1 divided by 2 pi i.
 
-Complemntary: variables in primal problem is complementary to constraints in dual problem. There cannot be a slack in both a constraint and the corresponding dual variable. Result from duality of linear programming problem. Intuition: benefit problem is dual to cost problem.
+Complementary: variables in primal problem is complementary to constraints in dual problem. There cannot be a slack in both a constraint and the corresponding dual variable. Result from duality of linear programming problem. Intuition: benefit problem is dual to cost problem.
 
 Centraliser of a subset S in a group G: set of elements in G that commute with every element in the subset S. Motivation is also very good, you can apply techniques of commutativity to a group that is noncommutative. Obviously, a subgroup of G by definition. This motivates the name commutant.
 
@@ -943,7 +967,7 @@ Conjugate: element a, b, g in group such that b is conjugate of a means b = gag^
 
 Conjugacy classes, equivalence of conjugates form an equivalence class that is reflexive, symmetric, and transitive, so this is a conjugacy class.
 
-Class functions: functions that are constant for members in same conjugacy classes.
+Class functions: functions that are constant for members in same conjugacy classes. This is also given in Serre explicitly as f(uv) = f(vu) or f(uvu^{-1}) = f(v). Each class function is a linear comnbination of characters.
 
 Character: complex valued function on the group, for vector space V as a representation of group G we have x(g) = Tr(g|v) for elements g in a group. Characters are preserved by group conjugation, we have x(g) = x(hgh^-1). Further, x(1) = dim V. Direct sums give addition of character (characters are like dimensions, so is sum of eigenvalues), tensor products give multiplication of characters (product of eigenvalues), duality of vector spaces gives conjugation of characters (eigenvalues are n-th roots of unity, n the order of the element g), exterior powers of characters i.e. x_(Ext^2 V)(g) = 0.5(x_V(g)^2 - x_V(g^2)) (given by sum of products of eigenvalues apply binomial theorem), symmetric powers of characters, the x_(Sym^2 V)(g) = 0.5(x_V(g)^2 + x_V(g^2)) from comptability of symmetric power and exterior power decomposition of the tensor product.
 
@@ -1445,7 +1469,7 @@ Characteristic equation: take the determinant map (lambda I - A) x = 0, there is
 
 Sum of roots and product of roots as trace and determinant. For a 2x2 matrix, trace and determinant has something to do with sum of roots, product of roots; We have x^2 - tx + d, -t is trace, d is determinant.
 
-Trace of matrix: sum of main diagonal entries.
+Trace of matrix: sum of main diagonal entries, sum of eigenvalues (counted with their multiplicities), basis free. Used to define the character of a representation.
 
 Trace of product of matrix and conjugate transpose: sum of square of diagonal entries.
 
@@ -1575,9 +1599,11 @@ Uses of pseudometric: you have two points with 0 distance that aren’t the same
 
 Duality: pairs of concepts are mirror images of one another with some involution like two points define a line and the intersection of two lines is a point up to taking projections.
 
-Derived functors: explicit computations of homology for Tor, and cohomology for Ext via resolutions
+Derived functors: explicit computations of homology for Tor, and cohomology for Ext via resolutions.
 
-Burnside's lemma: enumeration of orbits of symmetry group, or counts distinct objects up to a symmetry equivalence relation. For a finite group G, consider elements x^g that are fixed by g i.e. g = x = x. The formula for orbits is |X/G| = sum of elements x fixed by g divided by the group G. Example, rotationally distinct colourings of cube with three colouring. Identity fixes 3^6 colours, six 90 degree face rotations fix 3^3 \* 6 colourings, three 180 degree face rotations fix 3^3 colourings, eight 120 degree vertex rotation fix 3^2 colourings, six 180 degree edge rotations fix 3^3 colourings. Now take average over group of order 64, get 57, so there are 57 rotationally distinct colourings of a cube with 3 colours.
+Character as element fixed by s: S be finite set in which finite group G acts on, X_S be character of permutation representation p, let g be in G, show that X_S(g) is number of elements of X fixed by g, g is group action on s, g * s = s. X_S(g) is by definition the trace of permutation representation, and the permutation representation has diagonal 1 if it is a group action g fixing s in S, so the sum of these eigenvalues = 1 must be the number of elements in set X fixed by g.
+
+Burnside's lemma: enumeration of orbits of symmetry group, or counts distinct objects up to a symmetry equivalence relation. For a finite group G, consider elements x^g that are fixed by g i.e. g * x = x. The formula for orbits is |X/G| = sum of elements x fixed by g divided by the group G. Example, rotationally distinct colourings of cube with three colouring. Identity fixes 3^6 colours, six 90 degree face rotations fix 3^3 \* 6 colourings, three 180 degree face rotations fix 3^3 colourings, eight 120 degree vertex rotation fix 3^2 colourings, six 180 degree edge rotations fix 3^3 colourings. Now take average over group of order 64, get 57, so there are 57 rotationally distinct colourings of a cube with 3 colours.
 
 Fourier transforms in distribution theory: turn multiplication by x into differentiation with respect to k, derivatives of delta function.
 
@@ -1585,11 +1611,15 @@ Jaffard domain: Krull dimension of the ring of polynomials, is the Krull dimensi
 
 Lie group and Lie algebra correspondence: isomorphic Lie algebra does not imply isomorphic Lie group (example real coordinate space, and circle group). However, requires simple connectedness. Problem is there is a hole in circle group.
 
+Homothety: scalar multiple of the iddentity map.
+
+Schur's lemma (Serre's): let p^1 be a linear representation from the finite group G to the general linear group on vector space V_1, GL(V_1), p^2 be a linear representation from the finite group G to the general linear group on vector space V_2, GL(V_2), let f be a linear mapping of V_1 such that p_s^2 * f = f * p_s^1 i.e. f is the linear map that makes these two linear representations adjoint. Schur's lemma states that if p^1 and p^2 are not isomorphic, then f = 0 i.e. this adjunction does not exist, if V_1 = V_2 and p^1 = p^2, then f is a homothety (scalar multiple of the identity)
+
 Schur's lemma: all ground field, irreducible representations are unique up to homomorphism, if ground field is algebraically closed endomorphisms are scalar multiples of identity operator. Endomorphism of irreducible representation, multiply by complex number? This property is also known as complete reducibility or semisimplicity. Note: over finite fields, not completely irreducible, so modular representations is very tricky.
 
 Schur's lemma (endomorphism ring): if a module is simple, then its endomorphism ring is a division ring.
 
-Schur's lemma (in Fulton Harris): consider V and W irreducible representations of G, and p: V -> W is a G-module homomorphism, then either p is an isomorphism, or p = 0, and if V = W then p = e I for some complex e, and I is identity matrix. First claim, the kernel and image of the map are invariant subspaces, so p is an isomorphisms or is some vanishing map. For the second claim, since the complex numbers is algebraically closed, p as a FINITE DIMENSIONAL linear map must have an eigenvalue, so (p - eI) has nonzero kernel. By (1), (p - eI) = 0, so p = eI. Note we did use the hypothesis that V and W are finite dimensional vector spaces. Essentially, Schur's lemma states that linear transformations are represented by matrices if you restrict it to the case of the trivial group i.e. linear algebra.
+Schur's lemma (in Fulton/Harris): consider V and W irreducible representations of G, and p: V -> W is a G-module homomorphism, then either p is an isomorphism, or p = 0, and if V = W then p = e I for some complex e, and I is identity matrix. First claim, the kernel and image of the map are invariant subspaces, so p is an isomorphisms or is some vanishing map. For the second claim, since the complex numbers is algebraically closed, p as a FINITE DIMENSIONAL linear map must have an eigenvalue, so (p - eI) has nonzero kernel. By (1), (p - eI) = 0, so p = eI. Note we did use the hypothesis that V and W are finite dimensional vector spaces. Essentially, Schur's lemma states that linear transformations are represented by matrices if you restrict it to the case of the trivial group i.e. linear algebra.
 
 Representations: group preserving map (group homomorphism) from the group to the general linear group of vector space V which is GL(V) which is the group of automorphisms (all invertible matrices) for vector space V. The representation gives the vector space the structure of a G-module for a group G (module is like vector space for rings). 
 
@@ -2195,7 +2225,7 @@ Fractions: rational functions that are local functions well defined at a point.
 
 Localisation: restricting function to arbitrarily small neighbourhoods q. Like defining differentiability and continuity.
 
-Localisation as u(as' - a's) = 0 for some u in S, S multiplicatively closed. Gathmann gives an immediate way to remember geometrically: Pick point a = (1, 0), (y/1) and (0/1) must agree for variety X = V(xy) but fails since (y * 1 - 0 * 1) is not equal to 0. This is fixed by introducting x so x(y * 1 - 0 * 1) = xy = 0.
+Localisation as u(as' - a's) = 0 for some u in S, S multiplicatively closed. Gathmann gives an immediate way to remember geometrically: Pick point a = (1, 0), (y/1) and (0/1) must agree for variety X = V(xy) but fails since (y * 1 - 0 * 1) is not equal to 0. This is fixed by introducing x so x(y * 1 - 0 * 1) = xy = 0.
 
 Noetherian: finite descending inclusion chain of varieties towards empty. Make subvariety smaller by dropping irreducible component or reduce dimension of subvariety. Decomposition of a subvariety into finitely many irreducible subvarieties is always possible for Noetherians.
 
