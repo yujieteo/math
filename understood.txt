@@ -12,7 +12,13 @@ Varieties intersection properties: Zariski topology of closed sets was invented 
 
 Motivation for schemes using topology: topology fails since you cannot encode more information than single points.
 
-Regular function construction: step 1 define quotients locally, step 2 glue neighbourhood of points as bases, step 3: regular function defined 
+Regular function construction: step 1 define quotients locally, step 2 glue neighbourhood of points as bases, step 3: regular function defined.
+
+Regular function: let U be open subset of variety V, a function from U to coordinate ring C(V) is a regular function if for every point p of U, find an open set U_p in U containing p and a rational function f_p / g_p, g_p(x) nonzero, the set of all regular functions is the sheaf of opens in variety V. Regular function is special case of general sheafification.
+
+Regular functions on distinguished open set: let U be open subset of variety V, a function from U to coordinate ring C(V) is a regular function if for every point p of U, find an distinguished open set D_g in U containing p and a rational function f / g^n, n in integers, g_p^n nonzero, the set of all regular functions is the sheaf of opens in variety V. Regular function is special case of general sheafification.
+
+Global regular functions are the same as those in coordinate ring: notationally equivalent to O_V(V) = O(D(1)) = C(V), proof is by Nullstellensatz?
 
 Differentiation as linear approximation: use the form derivative * f(h) + f(t) = f(t+h). It makes it obvious it is a linear approximation or models some form of failure in the linear homomorphism (feels like kernel of group homomorphism). More generally, one need not even use addition as the group or composition law. NOTE, we still want f(h) to be as small as possible to see how bad is the defect in this composition.
 
@@ -1943,7 +1949,9 @@ Presheaf is a functor from the opposite of category of opens to sets. Note that 
 
 Presheaf with functor F# such that for union of open covers, there is a canonical isomorphism of opens that gives the equaliser of morphisms between product of sections to the product of section (set-theoretic) intersections (overlap). This equaliser is glueing or descent.
 
-Sheafification: left adjoint to the fully faithful inclusion of the category of sheaves into presheaves. You can use an adjoint functor theorem. Follows from the key step of the preservation of all limits from the definition of Zariski descent.
+Sheafification: the following are equivalent: (1) left adjoint to the fully faithful inclusion of the category of sheaves into presheaves. You can use an adjoint functor theorem. Follows from the key step of the preservation of all limits from the definition of Zariski descent.
+
+Sheafification intuition: presheaves of function which are P is sheafified to sheaves of functions which are locally P.
 
 Separated presheaf: sections F(U) include into product of section of covering opens U_i for any cover.
 
@@ -2006,6 +2014,34 @@ Proof sketch for G-set with Tannaka duality (like Cayley's theorem), C as Set^G 
 Makkai duality: syntax of first order logic (pretopoi) corresponds to the semantics of first order logic (ultracategories). Further, opposite category of small pretopoi maps to ultracategories, ultrafunctors of from ultra category to set has the structure of a small pretopos
 
 Koszul duality, generalising the fact that d^2 = 0 encodes a commutative law and d^2w (differential) = 0, recall that this is case for some long sequences, one can get that having free graded comm algebra on the special linear group into a differential graded algebra is the same as making it into a Lie algebra (Jacobi identity is indeed = 0), duality having free graded Lie algebra on special linear group into a differential graded algebra makes it into a commutative algebra (d^2 = 0 encodes a commutative law)
+
+Graded ring: as an abelian group, it decomposes into direct sums groups of homogenous elements.
+
+C[x] as graded ring: C[x] is isomorphic to C + x^2 C + x^3 C + ...
+
+Standard affine charts: set U_i of (x_0, ..., x_n), x_i nonzero in the complex projective plane of dimension n. Surprised it is not paired with a homomorphism.
+
+Homogeneous variety: algebraic variety of the form G/P, G is LINEAR algebraic group, P is parabolic subgroup.
+
+Conics in complex projective plane: variety V_pr(x^2 + y^2 - z^2) in CP^2, view as subspace of P^3, lines intersect origin, looks like CONIC!, pick x = 1, get hyperbola, y = 1 get hyperbola, z = 1 get circle.
+
+Distinguished open set: Vakil feels principal open set works better. Forms a basis for the Zariski topology on Spec(R). Spec(R)_f = Spec(R) \ V(f)
+
+Rational function: let U be open in V, V projective variety, rational function on projective variety is quotient f/g, f,g are homogenous of same degree, f,g in coordinate ring C(V) and vanishing locus of p is disjoint with U.
+
+Vanishing locus: kernel of a homogenous map i.e. V_pr(f) = {(x_0, ..., x_n) such that f(x_0, ... x_n) = 0}
+
+Vanishing locus of an ideal: kernel of maps f in ideal i.e. {x such that f(x) = 0 for all f in the ideal}
+
+Irrelevant ideal: the following are equivalent: (1) homogenous ideal, but V_pr(I) = 0; (2) ideal (x_0, ... x_n).
+
+Homogenous Nullstellensatz: Gelfand duality between projective varieties in complex projective space of order n, and homogenous ideals of coordinate ring(x_0 to x_n) EXCEPT for the irrelevant ideal.
+
+Same vanishing locus gives same radical i.e. V_pr(I) = V_pr(J) != 0 implies radical(I) = radical(J): proof, not sure?
+
+Bezout's theorem: forgetful functor from curves d and e of degree d and e in CP^2 intersects at exactly d * e points. Hint: one is the definition of intersection of exactly needed for combinatorics since in projective space, any two lines intersect.
+
+If vanishing locus is empty for an ideal, then either I = (1) or unit ideal or the radical of I is a single point: proof
 
 Ergodicity: all states are accessible from one another. One can lose ergodicity with irreversible decisions. Take some measurable space, impose either actions on monoid of measurable space with measurable functions (random variables) or Markov kernels (don’t understand this), then a invariant measure is ergodic if the measure obeys some zero one law (measure which are only zero and one).
 
@@ -2326,6 +2362,8 @@ Not every ring is the coordinate ring of a variety, so for general rings we have
 For every ideal in a ring, a radical of an ideal consists of the intersections of prime ideals is shown by Zorn's lemma. This corresponds to the geometrically obvious statement that the variety is the union of its irreducible subvarieties.
 
 Fractions: rational functions that are local functions well defined at a point.
+
+Rational functions: let U be open subset of variety V, rational function on U is a quotient f(x) / g(x) of two elements f and g in coordinate ring of the variety V, requiring g(x) to be nonzero 
 
 Localisation: restricting function to arbitrarily small neighbourhoods q. Like defining differentiability and continuity.
 

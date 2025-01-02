@@ -2,6 +2,12 @@ DAYDREAM (MATH)
 
 Relationship between irreducible and no zero divisors.
 
+Global regular functions proof to be coordinate ring of variety.
+
+Motivation behind distinguished open sets?
+
+Show this: same vanishing locus gives same radical i.e. V_pr(I) = V_pr(J) != 0 implies radical(I) = radical(J)
+
 Fatou's lemma
 
 Bounded linear operators are continuous?
