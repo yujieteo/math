@@ -1,5 +1,39 @@
 DAYDREAM (MATH)
 
+Not all open sets in totally disconnected space is also closed. Counterexample?
+
+Intuition behind examples of filtered category?
+
+Don’t fully understand locality and glueing? Why do we need these in contrast when we do open covers that do all the work for us.
+
+Ncatlab definition of locally presentable in terms of reflective localisation 
+
+https://en.m.wikipedia.org/wiki/Cantor_space
+
+Flat cohomology?
+
+Complexity and Real Computation?
+
+Ornstein-Uhlenbledk?
+
+Final topology, cofinal topology?
+
+https://arxiv.org/abs/1409.3503v1
+
+Examples of a cofree functor.
+
+https://www.math.uchicago.edu/~may/MISC/FiniteSpaces.pdf
+
+Hamilton Cayley theorem in one sentence using algebraic geometry: true for diagonalizable matrices, which forms a Zariski dense set. (although it is not open, but it contains the open subset of matrices with distinct eigenvalues, this is where it feels perturbative Also, the irreducibility of affine space is assumed.) Compare to A is a square matrix, then it is diagonalizable after perturbation. Finally, as an example of the somewhat mysterious reduction steps in EGA, we can also restate and reprove it for integral domains by base change to the algebraic closure of the function field.
+
+Fiber product: define product locally, have it as a basis, construct twisting globally. Same way as locally compact i.e. all opens are covered by compact set.
+
+Tietze extension theorem?
+
+Borcherds proof of Lasker Noether motivates all the definitions to look at it
+
+Direct limit as inductive limit?
+
 Relationship between irreducible and no zero divisors.
 
 Global regular functions proof to be coordinate ring of variety.
