@@ -1905,7 +1905,7 @@ Diffusion term in probability: dertivative of the white noise.
 
 Locally ringed space is topological space by some stalk. Ringed space such that all presheafs are local rings i.e. colimits of global section functors of opens. By Gelfand duality, this corresponds to maximal ideals.
 
-Subringed space is locally isomorphic to opens (on some site) cut out by (\*\*) functions on the opens.
+Subringed space is locally isomorphic to opens (on some site) cut out by ??? functions on the opens.
 
 Embedding: very loose way to say adjoint to forgetful functor with extra stuff
 
@@ -2367,7 +2367,7 @@ Projective curves: add point at infinity for parallel lines to intersect. Embed 
 
 Flatness: Let f : X -> S be a morphism of schemes, and assume that S is reduced. (i) If S is a smooth curve then f is called (geometrically) flat if no component of X is mapped to a single point in S. Here by component we mean an irreducible or embedded component, i.e. (in the affine picture) the subvarieties of X occurring in the primary decomposition of the ring that defines X.
 
-Weak Nullstellensatz shows that the “traditional points” are present as points of the scheme, carries over to any algebraically closed field. If the field is not algebraically closed, traditional points are glued together into clumps by Galois conjugation, as in real affine line and the affine line over F_p.
+Weak Nullstellensatz shows that the “traditional points” are present as points of the scheme, carries over to any algebraically closed field. If the field is not algebraically closed, traditional points are glued together into clumps by Galois conjugation, as in real affine line and the affine line over F_p. Maximal ideals become these points.s
 
 Quasicompact and quasiseparated if and only if X can be covered by a finite number of affine open subsets, any two of which have intersection also covered by a finite number of affine open subsets. I notice that affines causes the word quasi.
 
@@ -2395,4 +2395,11 @@ The dual vector space is the Zariski tangent space. If X is a scheme, the Zarisk
 
 Schemes are topological spaces with a sheaf of unital rings whose colimits over all values of this sheaf on open subsets over every point called stalks that must be local rings or rings with a unique maximal ideal.
 
-Locally ringed space: sheaf + topological space
+Locally ringed space: sheaf + topological space. The idea is fairly simple, you have a ring of functions locally on each open set.
+
+Localism in definitions using basis: (1) have some local properties in open subset / sites, then (2) collection of these sets form basis to construct what you wants. Examples include: locally path connected where basis of open sets is path connected, locally contractible where basis of open sets is contractible, locally ringed space with a ring of function at each open set.
+
+Localism in definition using containment: (1) have some opens / sites contained in set with desired property; (2) use this collection of opens as some basis. Examples include: locally compact where opens are contained in compact sets, fibre products where basis of sets are products glued on a base space to form a total space.
+
+Localism in definition using points: (1) local property is defined at point; (2) neighbourhood of points have these properties and form basis. Example: analytic functions locally at a point has Taylor's series. Examples include: locally finite where each point has neighbourhood intersecting finitely many points.
+

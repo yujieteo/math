@@ -1,5 +1,7 @@
 DAYDREAM (MATH)
 
+Relationship between irreducible and no zero divisors.
+
 Fatou's lemma
 
 Bounded linear operators are continuous?
