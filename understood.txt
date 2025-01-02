@@ -1,5 +1,39 @@
 UNDERSTOOD (MATH)
 
+Radical of an ideal intuition: idempotent action of taking intersections. For number theory, take intersection of prime powers removing excess prime factors. Similar idea for ideals.
+
+Radical ideal intuition: ideal that has undergone radicalisation.
+
+Nullstellensatz intuition in terms of duality: ideals are dual to varieties up to radicalisation.
+
+Irreducible: same as connectedness in topology, cannot be written as the union of two basic objects. So irreducible varieties cannot be written as union of two varieties. I am starting to realise that lots of properties or definitions of irreducibility are meant to construct classes of basic objects
+
+Varieties intersection properties: Zariski topology of closed sets was invented to help remember the intersection properties, finite unions, arbitrary intersections.
+
+Motivation for schemes using topology: topology fails since you cannot encode more information than single points.
+
+Regular function construction: step 1 define quotients locally, step 2 glue neighbourhood of points as bases, step 3: regular function defined 
+
+Differentiation as linear approximation: use the form derivative * f(h) + f(t) = f(t+h). It makes it obvious it is a linear approximation or models some form of failure in the linear homomorphism (feels like kernel of group homomorphism). More generally, one need not even use addition as the group or composition law. NOTE, we still want f(h) to be as small as possible to see how bad is the defect in this composition.
+
+Scheme theory key example for cohomology: probably the twisted thin Mobius band; recycled everywhere to show how surjectivity fails globally. 
+
+Fiber product construction intuition: define product locally, have it as a basis, construct twisting globally. Same way as locally compact i.e. all opens are covered by compact set.
+
+Commutativity equivalent statements: the following are equivalent: (1) maps are self dual, no need for dual space; (2) left conjugate is idempotent; (3) right conjugate is idempotent; (4) commutator is identity; (5) identity is an canonical adjunction 
+
+Normality: commutative means self normal, you can form self dual or some form of equivalence class / adjoint class / class, then when you take quotients, these are equivalent / adjoint in some sense so we deliberately lose information about it using combinatorics and look at a higher level / sub collections of it and see what structures we can form. So quotients mean we look at equivalence classes, finite quotients not a problem, infinite quotients require axiom of choice.
+
+Inner product and natural transformations: condition for adjunction of Hilbert operators is on the level of inner products, which means that each component is commutative, and in some sense the sum of it is complete with respect to a field. Adjunction in categories obey this to some extent, with natural transformations being a global form of commutativity in composition and no worry about completion since composition of morphisms are morphisms (the same sort of guarantee helps with the Yoneda lemma).
+
+Tensor hom adjunction intuition: you take homsets and reduce it to elements of codomain, same (up to natural transformation which just means if you compose maps that do this, you can form some “normal” class due to commutativity, as taking pairs of elements and reducing it to single elements called the tensor product. Normal classes are used in some sense similar to orthogonal or equivalence classes, commutativity is a condition to ensure these are equivalent in some way by thinking about self dual maps, identity being adjunction, idempotent action under left/right conjugation.
+
+Homotopy equivalence in contrast to commutativity: you weaken the condition that instead of having an identity map as the adjoint action, you have a family of invertible continuous maps that are idempotent action at the right endpoint by composition of these maps (invertible to give idempotent action at the left endpoint) to give some sort of commutativity. That way you can define some sort of homotopy equivalence classes, and use quotients to identify a more macroscopic structure.
+
+Free and cofree relative to forgetful functor: free is left adjoint to forget, cofree is right adjoint to forget.
+
+History of ideals in lattice and ideals in ring: coincide in Boolean lattices using meets and joins, but weakened to partial order in general lattices.
+
 Liouville's theorem: phsae space distribution function evolves with time and is constant along trajectories. Valid for no friction, with no chemical reactions. Defines measure preserving systems  You can prove the fluctuation theorem (what is this), then derive the second law of thermodynmics.
 
 Spectral theorem: result when linear operator can be diagonalised and form some eigenvalues or spectrum or set of values k such that T = kI is not invertible.
