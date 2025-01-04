@@ -1,5 +1,25 @@
 DAYDREAM (MATH)
 
+I still do not fully understand limit constructions, sure I can think of examples and see how they are all similar.
+
+Ribet’s theorem
+
+Ideal class group
+
+Diagonal functor better definition? See Gelfand and Manin.
+
+Supercommutator? Supercommutative ring to correspond to sheaves? See Gelfand and Manin's Homological Algebra.
+
+Vector bundles correspondence to locally free projective modules? (Serre Swan theorem!)
+
+Quasi coherent has enough projective?
+
+Vector bundles coming from locally free sheaves?
+
+Resultants?
+
+https://en.m.wikipedia.org/wiki/Derived_functor
+
 Not all open sets in totally disconnected space is also closed. Counterexample?
 
 Intuition behind examples of filtered category?
