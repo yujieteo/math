@@ -1,8 +1,32 @@
 UNDERSTOOD (MATH)
 
+Examples of derived functor in cohomology: (1) sheaf cohomology as right derived functors of global section functor with De Rham cohomology and etale cohomology; (2) Ext functor: left derived functor of right exact functor of Hom_R(-, B): R-module to Ab^op with group cohomology, Hochschild cohomology and Lie algebra cohomology; (3) Tor functors: left derived functor of tensor product from Mod-R, R-Mod to Ab, examples are group homology, Lie algebra homology. Hochschild homology.
+
+Quillen model structure intuition to derived functors: (1) fibrant cofibrant resolution of object apply that DERIVED functor, extend to whole category to preserve weak equivalences.
+
+Examples of right derived functors: assume F is left exact, examples are F: A -> Ab given by X -> Hom(X, A) with right direct functor Ext^n(-, A), or X to Hom(A, X) with right derived functor Ext^n(A, -), global sections functors on sheaves with right derived functor which is the sheaf cohomology H^n(X, F), direct image functor with right derived functor R^nf_*(F).
+
+Enough projectives: the following are equivalent: (1) for every object X, there is an epimorphism from a projective object P to X
+
+Enough injectives: the following are equivalent: (1) for every object X, there is an monomorphism from object X into injective object I
+
+Motivation for enough projectives or injectives: need to see where it fails, to have derived functors.
+
+Liouville's formula: y' = A(t) y is some square matrix, this feels like eigenvalue equation, find some fundamental matrix P'(t) = A(t) P(t) let trace of A(s) = sum of i-thh diagonal entries then det P(t) = det P(t_0) exp (integral from t_0 to t of trace A(s) ds). Typically, over interval [0, 1] on reals.
+
+Slogan for derived functors: right derived functors come from left exact functors, use injective resolutions; left derived functors come from right exact functors, use projective resolution.
+
+Connection between derived functors to Kan extensions: derived functors with abelian category A can be seen as Kan extensions of embeddings of A into suitable derived categories.
+
 Derived functors and derived category intuition: let A be abelian category, define a homotopical category with morphisms being hom-sets up to homotopy, then localise at it to get a derived category.
 
-Category of complexes of A, Kom(Ab) as example: objects in Kom Ab are cochain complexs of C* of Abelian groups, Hom(B*, C*) are morphisms of complexs f*: B* -> C*.
+Universal property of derived category: localisation of the category of complexes with respect to quasi-isomorphisms.
+
+Derived category: A abelian category, D(A) is a category, with functor Q from category of cochain complexes Kom(A) to the derived category D(A) with universal property, defined by universal property, C is another category (note, note abelian), and F: Kom(A) to C such that f^o is quasi-isomorphism in Kom(A), image F(f^o) is ISOMORPHISM in C, F factors to Q. They weakened universal property with quasi-issomorphism.
+
+Category of complexes of A, Kom(Ab) as example: objects in Kom Ab are cochain complexes of C* of Abelian groups, Hom(B*, C*) are morphisms of complexes f*: B* -> C* that are equivalent under homotopy.
+
+Cochain complexes look like long maps of X^i such that differential of the differential is zero i.e. d^{i+1} * d^i = 0, ith cohomology group of H^i is defined by the kernel of the differntial map d^i (sending objects in X^i to 0) quotiented out by the image of d^{i - 1} (equivalence of elements in the image of the previous differential map for stuff in the kernel)
 
 Image of integers in commutative field is integral domain: you get isomorphisms of Z to Q and Z/pZ to F_p. The former is characteristic 0, the latter is characteristic p.
 
@@ -34,7 +58,21 @@ Projective limit as representative object: projective limit can take the place a
 
 Examples of minimal injective abelian groups over commutative rings: Q is localisation of Z by the complement of prime ideal, Q_(p)/Z for prime p, Q_p additve groups of rationals.
 
-Projective module: the folowing are equivalent, (1) direct summand of free modules, (1a) direct summand of projective modules.
+Projective module: the folowing are equivalent, (1) direct summand of free modules, (1a) direct summand of projective modules; (2) lifting exists i.e. every surjective module homomorphism f: N ->> M and every module homomorphism g: P -> M, there is a module homomorphism called the lift h: P -> N such that fh = g; (3) every short exact sequence 0 -> A -> B -> P -> 0 is split exact sequence i.e. surjective module homomorphism f: B ->> P, section map exist that h : P -> B such that fh = id_P so h(P) is a direct summand of B, h is an isomorphism from P to h(P), hf is a projection on summand of h(P) or B = Im(h) ++ Ker(f), Ker(f) = A, Im(h) is P or EASIEST FOR ME: 0 -> Ker(f) -> Im(h) ++ Ker(f) -> Im(h) -> 0.
+
+Split exact sequence: short exact sequence is exact if isomorphic to exact sequence where middle term is direct sum of the outer ones 0 -> A -> A ++ C -> C -> 0. From A to A ++ C is a injective, and A ++ C to C is a projective.
+
+Examples of split short exact sequence in vector spaces: (1) we have 0 -> A -> A ++ C -> C -> 0. From A to A ++ C is a canonical injective, and A ++ C to C is canonical projective, A, C as R-modules; (2) any short exact sequence of vector spaces are split exact; (3) any set of linearly independent vectors in a vector space can be extended to a basis.
+
+Example of non-split exact sequence: we have 0 -> Z -> Z -> Z/2Z -> 0, first map is multiplication by 2, note that Z ++ Z/2Z is ???.
+
+Projective module as locally free: projective modules are "locally free", such that localisation at every prime ideal is free over the corresponding localisation of the ring (with basis vectors). Similarly, vector bundles are locally free since projective modules (over certain commutative rings) are analogues of vector bundles.
+
+Properties of projective modules: e = e^2 is idempotent in ring R, Re is projective left module over R.
+
+Module theory properties: free implies projective implies flat implies torsion free. Note: some define torsion free modules over a domain.
+
+Flat module that is not free: example abelian group Q is a Z-module that is flat, but not projective.
 
 Relation amongst components of left A-module, let X be a left A module, (x_1, ..., x_n) be a finite set of elements in X, family of (a_1, ..., a_n) in A^n is a relation of sum of a_i x_i from i to n is equal to 0, generally Y^n is right A-module if tensor product y_i * x_i is zero for i from i to n i s equal to 0.
 
@@ -2013,6 +2051,8 @@ Construction of Tor, take step 1 free resolution 0 -> Z^M -> Z^N -> A -> 0. You 
 
 Free resolution: take free modules as coefficient of chain complexes… C2 -> C1 -> C0 -> 0 as basis of i-th simplex. You can weaken this to projective resolutions for duality between projective and injectives. Take homotopy of complexes when defining Tor.
 
+Projective resolution: infinite exact sequence of modules from ... -> P_n -> ... -> P_1 -> P_0 -> M -> 0, all P_is are projective, M arbitrary modules.
+
 Universal coefficient theorem: compute arbitrary homologies over manifold/space M with arbitrary coefficients groups/functors, G instead of using integers. Typical example sheaf of global sections as a group functor. Let _ be tensor, then you can show that it is 0 -> Hi(M, Z) _ G -> Hi(M, G) -> Tor(Hi(M, Z), G) -> 0, which is not Hi(M, Z) \* G as one naively thinks.
 
 Standard counterexample for Hom sets over the module integers modulo two, take sequence from 0 to Z to Z to Z/2 to zero is exact. Take Hom functor integers on Z/2 so it must be 0 to Hom(Z, Z/2) to Hom(Z, Z/2) to Hom(Z/2, Z/2) which is not right exact since kernel Hom(Z, Z/2) vanish but not Hom(Z/2, Z/2) which is Z/2 as standard double cover. Therefore, Ext must be a left exact functor, corresponding to the double cover obstruction. See Borcherds video for homological algebra. Further, the same counterexample can be used to show Tor is only right exact, 0 to Z to 2Z to Z/2 to 0 is exact. Take tensor products in Z/2 coefficients, you get Z/2 to Z/2 to Z/2 to 0 is exact, so this is right exact. This exemplifies the tensor hom adjunction, and also the tor-ext adjunction. Tensor is left adjoint to the right adjoint which is hom. This is one example of the Eckham-Hilton duality.
@@ -2229,7 +2269,9 @@ Profinite sets by Stone duality: profinite set is a pro object in the category o
 
 Profinite set and simplicial stuff: simplicial object in the category of compact and totally disconnected topological spaces.
 
-Etale cohomology, you want a topological or etale topology with arbitrary direct limits and finitely inverse limits, reminiscent of the definition of a topology with arbitrary unions and finite intersections. This topological notion gives the right correspondence for topoi.
+Etale cohomology, you want a topological or etale topology with arbitrary direct limits and finitely inverse limits, reminiscent of the definition of a topology with arbitrary unions and finite intersections. This topological notion gives the right correspondence for topoi. It has the right derived functor of the global sections of abelian sheaves on the etale sites with families of surjective maps as covers.
+
+De Rham cohomology: sheaf cohomology of the sheaf of locally constant R-valued functions ona  manifold. De Rham complex is resolution of this sheaves by fine sheaves, motivating fine sheaves since these are not injective sheaf.
 
 Morphism of topos should have the same intuition as continuous functions, preimages
 
