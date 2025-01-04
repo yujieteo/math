@@ -1183,6 +1183,8 @@ Compact topological group: topological group whose topology can be realised as a
 
 Lorentz group is noncompact: group preserving quadratic form x^2 + y^2 + z^2 - t^2 is Lorentz group. Clearly this is unbounded.
 
+Quadratic form: all terms are degree 2 i.e. Ax^2 + Bxy + Cy^2.
+
 Immersion of linear maps: maps whose derivative everywhere is injective as a linear map (locally). In topology, you do not require it to be homemorphic to its image. Embedding requires injectivity and continuity, X and f(X) to have same topological properties. Example: immersion is mapping circle to figure 8, or double circle onto circle or semiopen interval to circle, inverse map is not continuous.
 
 Immersion: tangent spaces are mapped injectively. Example: Klein bottle, any point of intersection has two distinct tangent planes, map is injective onto R^3. But Klein bottle cannot be embedded in R^3. Best thought of as a local embedding.
@@ -2445,7 +2447,11 @@ Group completion needs Zariski sheafification ahead of time to work on some proj
 
 Sheafification: intuition is that the best approximation of a sheaf such that the stalks are the same, so inverse image of a sheaf f_pre^{-1} G and sheafification f^-1{G} agrees for small open sets.
 
-Ideal class groups corresponds to Picard group schemes of the ring of integers.
+Ideal class groups: (1) corresponds to Picard group schemes of the ring of integers; (2) for number field K, quotient group J_K/P_K, J_K is group of rational ideals of the ring of integers K, P_K is its subgroups of principal ideals;
+
+Class number of algebraic number field: order of ideal class group.
+
+Motivation of class group: measures how unique factorisation fails.
 
 Discrete valuation ring corresponds to Sierpinski two point space.
 
