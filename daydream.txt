@@ -738,8 +738,6 @@ Complete partial orders?
 
 Scott topology?
 
-Orbits? Stabilisers?
-
 Curry and apply as Scott continuous?
 
 Denotational semantics?
