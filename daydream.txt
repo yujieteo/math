@@ -12,8 +12,6 @@ I still do not fully understand limit constructions, sure I can think of example
 
 Ribet’s theorem
 
-Ideal class group
-
 Diagonal functor better definition? See Gelfand and Manin.
 
 Supercommutator? Supercommutative ring to correspond to sheaves? See Gelfand and Manin's Homological Algebra.
@@ -22,7 +20,7 @@ Vector bundles correspondence to locally free projective modules? (Serre Swan th
 
 Quasi coherent has enough projective?
 
-Vector bundles coming from locally free sheaves?
+Quadratic reciprocity.
 
 Resultants?
 
