@@ -4,6 +4,104 @@ Big Picard?
 
 Contour integral?
 
+Harnack inequality?
+
+ABP estimate for elliptic equations?
+
+Hyperbolic space?
+
+Ricci curvature?
+
+Green's functions?
+
+Harmonic conjugates?
+
+Hadamard three circle theorem?
+
+What matrices can you solve exp(A) = B?
+
+Artin-Wedderburn?
+
+Cyclotomic fields to prove quadratic reciprocity?
+
+Tchebotarev density?
+
+Proof that infinitely many primes split completely in an arbitrary extension of number fields using Dedekind zeta function with pole at 1.
+
+Non-constant function between two compact Riemann surfaces, how is it related to Galois theory?
+
+Schwartz's lemma? Mobius transformations to eliminate condition of f(0) = 0.
+
+Conjugacy in terms of eigenvalues and eigenvectors?
+
+Fundamental theorem of Galois theory?
+
+How to do classification of order of groups?
+
+Cauchy's theorem?
+
+Regular language?
+
+Finite automaton?
+
+Inertia group?
+
+Decomposition group?
+
+Modular forms?
+
+Genus of curve? Arithmetic genus? Serre duality?
+
+Maximal torii?
+
+Spherical harmonics?
+
+Uniform vs nonuniform complexity classes?
+
+Why must all minimal programs be algorithmically random strings?
+
+Rellich theorem?
+
+Sobolev immersion theorem?
+
+KAM theory?
+
+Why is resolvent set unbounded on Banach space for bounded operator?
+
+Self-adjoint vs essentially self-adjoint?
+
+Volume comparison theorem?
+
+Optimal transport?
+
+Brenier's theorem?
+
+Thom isomorphism.
+
+Thom class?
+
+Mayer-Vietoris in different contexts.
+
+Homotopy long exact sequence of fibration?
+
+Hurewicz theorem?
+
+Torus knots?
+
+Seifert-van Kampen theorem?
+
+Holomorphic sphere?
+
+Gromov-Witten invariant?
+
+Gromov compactness?
+
+Schwarz class preserved under Fourier transform, how does Fourier transform trades regularity for decay?
+
+Fourier inversion theorem?
+
+Proof of subgroups of free groups being free using covering space of wedges of circles?
+
 Riesz potential?
 
 Phragmen-Lindelof theorem?
@@ -200,6 +298,14 @@ Symmetry of second derivatives?
 
 Dominated convergence theorem?
 
+Plancherel formula?
+
+Euler classs?
+
+Diagonal embeddings?
+
+Haar measure on SL_2(R) explicitly with matrix coordinates. Compare with Iwasawa decomposition.
+
 Sobolev embedding theorem? Missing gaps: test function, frequency scale, Lorentz norms, Lebesgue space as s = 0, regularity parameter, uncertainty principle in Fourier analysis, Plancherel's theorem, singular integrals, Holder spaces: https://terrytao.wordpress.com/2009/04/30/245c-notes-4-sobolev-spaces/ 
 
 Spectral theorem? See all possibilites of a spectral theorem.
@@ -217,6 +323,14 @@ Intuition for Cauchy sequences?
 Liouville theorem?
 
 Gauss-Bonnet theorem?
+
+Sylow's relation to Cartan's existence theorem for maximal tori?
+
+Finite vision ring necessarily commutative proof and why?
+
+Galois theory to prove impossible trisections?
+
+Inseparable extension example and proof?
 
 Ergodic theorem? What are some important classes of this?
 
@@ -248,13 +362,35 @@ Girsanov's theorem?
 
 Wick's theorem
 
+Brill-Noether matrix?
+
+Abel's theorem?
+
+Automorphisms of compact Riemann surfaces?
+
+Holomorphy?
+
+Stein spaces?
+
+Cousin problems?
+
+Oka's principle?
+
 Lax-Milgram theorem
+
+Counterexample that L^2 convergence not implying convergence.
+
+Cantor function differentiable almost everywhere to 0, but not absolutely continuous.
 
 Birkhoff ergodic theorem
 
+Krasner's lemma?
+
 Universal coefficient theorem
 
-Riemann mapping theorem
+Casorati-Weierstrass proof of essential singularity.
+
+Riemann mapping theorem? Why is the key step that the limit is onto has same characteristic as functions taht approach it?
 
 Major comparison theorems?
 
