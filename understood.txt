@@ -1,5 +1,13 @@
 UNDERSTOOD (MATH)
 
+Cohomology as ring: homology as equivalence classes of chains on X (simplices cannot be multiplied), cohomology as equivalence classes of ring valued functions over chains (can be multiplied). Need cup product to define ring multiplication (understoof as singular cohomology as prototype example).
+
+Cohomology ring worked example: (1) sequence of cohomology groups H^k(X, R), coefficients in commutative ring R (pick your favourite: Z_n, Z, Q, R, C), define cup product: which tunrs H^k * H^l into H^{k + l}, cup product gives ring product on direct sum of cohomology groups. Define indefinite sum of cohomology group H^*(X, R) to be the direct sum of all cohomologry groups in naturals. Examples H^*(RP^n, F_2) gives F_2[alpha]/(alpha^{n + 1}), |\alpha| = 1.
+
+Cohomology broad background: solve problems locally, local solutions are glued to global solutions.
+
+Resolutions in defining cohomology: sheaf cohomology can be defined using injective resolutions existing in any cateegory of sheaves, but sheaf homology defined by projective resolutions need not always exist.
+
 Examples of derived functor in cohomology: (1) sheaf cohomology as right derived functors of global section functor with De Rham cohomology and etale cohomology; (2) Ext functor: left derived functor of right exact functor of Hom_R(-, B): R-module to Ab^op with group cohomology, Hochschild cohomology and Lie algebra cohomology; (3) Tor functors: left derived functor of tensor product from Mod-R, R-Mod to Ab, examples are group homology, Lie algebra homology. Hochschild homology.
 
 Quillen model structure intuition to derived functors: (1) fibrant cofibrant resolution of object apply that DERIVED functor, extend to whole category to preserve weak equivalences.
@@ -26,7 +34,7 @@ Derived category: A abelian category, D(A) is a category, with functor Q from ca
 
 Category of complexes of A, Kom(Ab) as example: objects in Kom Ab are cochain complexes of C* of Abelian groups, Hom(B*, C*) are morphisms of complexes f*: B* -> C* that are equivalent under homotopy.
 
-Cochain complexes look like long maps of X^i such that differential of the differential is zero i.e. d^{i+1} * d^i = 0, ith cohomology group of H^i is defined by the kernel of the differntial map d^i (sending objects in X^i to 0) quotiented out by the image of d^{i - 1} (equivalence of elements in the image of the previous differential map for stuff in the kernel)
+Cochain complexes look like long maps of X^i such that differential (coboundary) of the differential is zero i.e. d^{i+1} * d^i = 0, ith cohomology group of H^i is defined by the kernel of the differntial map d^i (sending objects in X^i to 0) quotiented out by the image of d^{i - 1} (equivalence of elements in the image of the previous differential map for stuff in the kernel)
 
 Image of integers in commutative field is integral domain: you get isomorphisms of Z to Q and Z/pZ to F_p. The former is characteristic 0, the latter is characteristic p.
 

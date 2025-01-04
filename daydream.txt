@@ -24,6 +24,8 @@ Quadratic reciprocity.
 
 Resultants?
 
+Learn cup product properly in Hatcher.
+
 https://en.m.wikipedia.org/wiki/Derived_functor
 
 Not all open sets in totally disconnected space is also closed. Counterexample?
