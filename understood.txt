@@ -1,5 +1,27 @@
 UNDERSTOOD (MATH)
 
+Derived functors and derived category intuition: let A be abelian category, define a homotopical category with morphisms being hom-sets up to homotopy, then localise at it to get a derived category.
+
+Category of complexes of A, Kom(Ab) as example: objects in Kom Ab are cochain complexs of C* of Abelian groups, Hom(B*, C*) are morphisms of complexs f*: B* -> C*.
+
+Image of integers in commutative field is integral domain: you get isomorphisms of Z to Q and Z/pZ to F_p. The former is characteristic 0, the latter is characteristic p.
+
+Field of characteristic p, map s: x -> x^p is isomorphism of K onto subfields K^p: (1) verify that s(xy) = s(x)s(y), binomial coefficient is congruent to 0 mod p (same trick in Silverman when he proves Fermat's little theorem), conclude that s(x+y) = s(x) + s(y).
+
+Multiplicative group of finite field F_q cyclic of order q - 1: proof using Euler phi-function, number of integers x with 1 <= x <= which are corprime to d, whose image in Z/dZ is a generator of this group. There are phi(d) = q - 1 generators of cyclic group of order d.
+
+Zero ring: trivial field, excluded from a field, one maximal ideal (0)
+
+Z[root(2)] not a field but with unifnitely many units: key step is using (1 + root(2))^n(-1 + root(2))^n = 1 by induction, so these are the only units using induction on b of a + root(2) b.
+
+Gaussian integers of integral domain which is not unique factorisation domain: nonunique factorisation of (1 +- root(5)/2) and (3, 2) but it is a integral domain, products of two nonzero gaussian integers cannot be zero.
+
+No ring of order 6 is an integral domain: key step is 2 * 3 = 0, so not integral domain. Lagrange's theorem gives 1, 2, 3, 6 as number of cosets of equivalence classes.
+
+Finite integral domain must have power prime order: adapt the idea that no ring of order 6 is an integral domain for rings with order of products of two primes.
+
+Product of ideals is ideal: (1) zero is in ideal; (2) check linear combinations of ideals to be in ideal i.e. = 0.
+
 Final object: projective limit of functor with empty indexing category.
 
 Initial object: inductive limit of functor with empty indexing category.
@@ -158,7 +180,11 @@ Free and cofree relative to forgetful functor: free is left adjoint to forget, c
 
 History of ideals in lattice and ideals in ring: coincide in Boolean lattices using meets and joins, but weakened to partial order in general lattices.
 
-Liouville's theorem: phsae space distribution function evolves with time and is constant along trajectories. Valid for no friction, with no chemical reactions. Defines measure preserving systems  You can prove the fluctuation theorem (what is this), then derive the second law of thermodynmics.
+Liouville's theorem for hamiltonian mechanics: (1) phase space distribution function evolves with time and is constant along trajectories. Valid for no friction, with no chemical reactions. Defines measure preserving systems  You can prove the fluctuation theorem (what is this), then derive the second law of thermodynmics.
+
+Liouville's theorem for classification of holomorphic function: (1, Gelfand/Manin) the family of holomorphic functions with domain of the Riemann sphere and sheaf of holomorphic functions on it consists of constant functions only; (2) every bounded entire function must be constant, i.e. for every holomorphic function f, whivh exists a positive M such that |f(z)| <= M for all complex z is constant.
+
+Picard's little theorem: (1) every entire function whose image omits two or more complex numbers must be constant.
 
 Spectral theorem: result when linear operator can be diagonalised and form some eigenvalues or spectrum or set of values k such that T = kI is not invertible.
 
@@ -789,6 +815,8 @@ Rank of a matrix: elimination gives r pivot variables and n - r free variables, 
 Column space (image): column space contains all linear combinations of the columns of A. It can be thought of as the space that is spanned by its columns. It is a subspace of R^n. Its dimension is the rank of the matrix. This is called the range, since it is all the possible vectors f(x) = Ax, that is why it is given the name for some hypothetical function.
 
 Null space (kernel in linear algebra): consist of all vector x such that Ax = 0. It is a subspace of R^n. Column of A are independent when null space is the zero vector. The reasoning is as follows: pick columns of triangular matrix with no zeroes on the diagonal. Solve Ac = 0, forced to pick entries of c to be zero, therefore, the only combination to produce the zero vector is the trivial combination. The dimension is dimension of the space - rank of matrix or n - r. This dimension is also called the nullity.
+
+Eigenvalues and null space: Ax = ex, e is eigenvalue, special case of eigenvalue equals zero gives nullspace.
 
 Difference between null space and kernel: kernel is basis free, only once you choose a basis you can define the null space.
 
@@ -1439,7 +1467,7 @@ Compact topological group: topology realised as a compact topological space. Lik
 
 Derivative of complex variable: same definition as that of a real variable. Quotient of infinitesimals taken as a limit.
 
-Holomorphic function: complex differentiable complex variable at each point in complex domain.
+Holomorphic function, and its sheaf: (1) complex differentiable complex variable at each point in complex domain; (2) any point z_0 in domain U of holomorphic function f from domain U to complex C with a neighbourhood V in domain U where f is represented by a convergent power series sum of a_i(z-z_0)^i for i from 0 to infinity for z_0 in C OR removing the z_0 for the case of z_0 being infinitely. A collection of pairs of functions and neighbourhoods (f, V) gives the most concrete definition of a sheaf of holomorphic functions on the Riemann sphere.
 
 Infinitely differentiable locally. Differentiable one, then differentiable twice. These are regular functions!
 
@@ -1779,7 +1807,7 @@ Measurement of random variable: defined when the exponential is taken out of an 
 
 Mapping space of CW complex has type of CW complex: need domain compactness, example mapping from universal infinite discrete space to discrete space.
 
-Germ: for open U and functor f, take image from i(U) from sheaves of opens on top space X OU(X) to cocone C, then G(u,f) is i(U)(f)
+Germ: the following are equivalent: (1, categorical) for open U and functor f, take image from i(U) from sheaves of opens on top space X OU(X) to cocone C, then G(u,f) is i(U)(f); (2, Gelfand/Manin) germ s_y of a section of presheaf F at the point y is than equivalence class of pairs (s, V), consisting of open neighbourhoods V of y and s in holomoprhic functions (V, F) given by the equivalence relation (s, V) equivalent to (s' V') means there exists open W in the intersection of V and V', and uniqueness of germ as universal property r_{V, W}(s) = r_{V', W}(s').
 
 Perfect duality, equivalence of categories from opposite category C to D consisting of dual concrete structures
 
@@ -2396,6 +2424,8 @@ Skyscraper sheaf is like the Dirac delta distribution.
 Mapping from Z -> Z[x] gives mapping from Spec (Z) \leftarrow Spec(Z[x]). Fibers are finite field. Horizontal lines are quadratic residues. Fiber at zero is the ring of quotients, invert anything nonzero.
 
 Fibres of O-module of locally ringed space at point p correspond to F_p / m_p F_p.
+
+Fibres of presheaf F at a point y: (1, Gelfand/Manin) set F_y of all germs of F at this point, note that given the language of inductive limit, the fibre F_y is the inductive limit of holomorphic functions for variety V and presheaf F on V.
 
 Glueing is flat descent. Categorically: 0 -> F(U) -> product of F(U_{i}) -> product of F(U_{ij}) is exact. There exists an exact sequence of products of overlapping open covers in topological space. Motivates the definition of site: where we generalise with fibre products, and open covers are generalised to sites.
 
