@@ -1,6 +1,6 @@
 UNDERSTOOD
 
-Localisations are flat i..e canonical homomorphism A to the localisation of A called S^{-1} A is flat: proof let N be a sub-A-module of M as A-module, by construction S^{-1} N is submodule of S^{-1} M, take tensor product N *_A S^{-1} A -> M *_A S^{-1} A is injective (submodule) so by definition localisations are flat.
+Localisations are flat i.e canonical homomorphism A to the localisation of A called S^{-1} A is flat: proof let N be a sub-A-module of M as A-module, by construction S^{-1} N is submodule of S^{-1} M, take tensor product N *_A S^{-1} A -> M *_A S^{-1} A is injective (submodule) so by definition localisations are flat.
 
 Nakayama's lemma false for ideals not finally generated: pick M = Q, I = (2), IM = M, odd numbers do not kill Q when M is nonzero. So M is not zero.
 
