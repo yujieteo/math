@@ -1,5 +1,47 @@
 DAYDREAMS:
 
+spectral sequences topics: leray spectral, sheaf cohomology, pushforward, chain complex, fibrations, derived functors, grothendieck spectral, chain complex; visualisation; cup product; cohomology ring; differential graded algebra; exact couple; derived couple; bockstein; serrel atiyah-hirezburch for k theory; filtered complex; hodge-de rham spectral
+
+geometric invariant topics: isbell dual, quotients, action groupoids, moduli spaces, moduli stacks; reductive group on projective variety; orbifold; gauge group; bridgeland stability conditions; deligne mumford stack, stability, stable vector bundles
+
+Atiyah Singer topics: elliptical differential operator, analytic index, compact manifold, topological index, riemann roch, gauss bonnet, pontryagin classes; differential oprerator symbol; fredholm operator; todd class; mixed cohom class; chern character; classifying space; thom isomorphism; index problem; grothendieck riemann roch; teleman index theorem, many index theorem, hirzeburch thom char classes;
+
+Symplectic reduction topics: almost Kahler manifodls; cotangent bundles; 1-form; Hamiltonian; symplectic gradient; Hamiltonian group action; moment maps; convex polytope; conjugates; equivariant moment maps; moment image as n-simplicies.
+
+Deformation theory examples: moduli space: functor of points: family; fibres of same type; iso classes of vector bundles of fixed rank; iso classes of subvarieties of a fixed varieties with fixed hilbert poly; iso classes of regular maps; stability condition; coherent sheaf; vector bundle; nonsingualr varieties; moduli problem functor; representable of moduli problem; art category; curvilienar deformation; first order deformation; tangent space; obstructions; embedded deformations; dgla philosophy; deformation of nonsingular varities; deformation of bundle; cech differential; deformation fo smooth embedded varieties; kuranishi model; germ of moduli space; T1 lifting technqiue;
+
+Lefschetz pencils: hyperplane slices; hyperplane theorem; eigenvalues, ordinary double point, hessian nondegeneracy; dimension counting environment; real morse theory; vanishing cycle; lefschetz thimble; monodromy; hard lefschertz;
+
+Moduli spaces topics: stable bundles; parameter space; deformations; ringed space; germs; pullbacks; moduli problen; classify up to equivalence; base spacel family pullbacks; example of familities; deformation of vector bundles; hilbert poly and flatness; functor of points; fine moduli space; universal family; coarse moduli space; jump phenomenon; quot functor; symmetric algebra; plucker embedding to show grassmanian is projective smooth irreducible variety; simpson's construction; gieseker stability; 
+
+Ordinary double point topics: hypersuface sinularities; nodes; Delign mumford compactification; pencil of sections; Morse lemma; smoothing; resolving; Milnor fibre; symplectic geometry; Lagrangian submanifold; vanishing cycles; monodromy, holomony; Dehn twist; Picard-Lefschetz formula; resolution of singularities using birational map compare to this; Cartier divisor; Atiyah flop; algebraic surgery;
+
+Tropical curves topics: ameobas; moment map; clifford torus; graph of ameoba; tropicalisation; tropical curves; corner loci; tropical semiring; weights and balancing; relation with plane conic; degree and number of tentacles;newton polygons; combinatorial object; example of reducing algebraic geometry to combinatorics; puiseux series; 
+
+Weil conjectures topics: gorthendieck group of nicely compactible differential manifolds; universal Euler characteristic; Ax-Grothendieck; Lefschetz principle for first order logic; profinite completion; spreading out; counting points; gorthendieck ring of varieties; motivic measures; de Rham fundamental group; algebraic envelope; zeta functions; rational functions, functional equation, Betti numbers and related to Riemann hypothesis; Hasse-Weil for elliptic curves; Weil coohomology theory; poincare duality; kunneth formula;
+
+Hodge theory topics: hodge star operator; hodge theorem; stokes theorem; de rham cohom; exterior derivative; laplacian operator as linear operator called harmonic; hodge theorem; poincare duality; betti numberl weitzenbock formula; fundamental form; Kahler manifold; dolbeault theorem
+
+Koszul duality topics: artin-wedderburn, semisimple algebras; koszul algebras, koszul dual; ext algebra; augmentation; poincare poly; quadratic duality; quadratic algebra as quotients of tensor algebras; koszul resolutions; derived kozsul duality; differential graded algebra; rational homotopy theory; quillen's model; whitehead product; massey product; minimal algebra;
+
+Toric varieties: Polytopes and symplectic toric varieties, Givental's quotient construction, line bundles and divisors, Fans and algebro-geometric toric varieties, symplectic manifold, sympleictic form, n-torus, C* complexification of S1, moment maps, hamiltonian, atiyah guillemen sternberg, delzant polytope, fan, toric blow up, combinatorial structure; 
+
+Line bundles and kodaira embedding: line bundles give rational maps of proj space; very ample, ample, sem ample; test for Kahler manifold projective using Kodaira embedding theorem; ample line bundles; Kleiman's criterion; when embedding fails; line bundle not generated by sections; minimal model program; nend and break lemma; kodaira dimension; rational curves; canonical modles; positivity; moduli space;
+
+Blowing up examples: blow up C^2 at origin, blowing up affine variety along ideal; blowing up complex manifolds at points; definition of blow up of affine noetherian scheme; exceptional divisors; build up to most general def of blow ups.
+
+Classifying space, equivariant cohom, localisation: Grassmanians, infinite qutient Grassmanians, frame bundle construction; principal bundles; weakly contractivles; homotopy groups; Hopf fibration; classifying space; universal bundle; joins and meets of spaces; bijective correspondence between principal G bundles up to isomorphisms and BG spaces; equivariant cohomology for smooth continuous group action; localisation using excision, thom isomorphism, atiyah-bott-berline-vergne, generic cubic surface 27 lines using this.
+
+Chern classes: classify all nonisomorphic vector bundles, topological invariant to distinguish classes of vector bundle; rank of vector bundle; local trivialisations; smooth sections; clutching functions; generic section; transversal section; Poincare duality on fundamental class gives Euler class and Chern class; total Chern class.
+
+Morse theory and witten complexes phenomena: morse theory fixing smooth function has height function then differentia data completely determines smooth manifold; height function of circle embeded in real line with critical points; height function of torus on real line; nondegeneracy of critical points where df has single zero or vanishes to first order; consider Hessian nonsinular; morse function if critical points nondegenerate; morse lemma; riemannian metric; grad f direction of greatest increase with gradient flow; compact manifold is homotopy equivalent to cell complex, decompose to morse-smale-witten complex; unstable manifolds and stable manifolds; borken flow line; chain groups; morse homology isomorphic to singular homology; tilted torus, alternate proof of poincare duality by replacement of f by -f.
+
+Complex manifolds phenomena: almost complex structure, smooth varying endomorphism, complexified cotangent space direct sum decomposition to eigenspaces; lie bracket to study this; nijenhuis tensor to measure torsion; newlander-nierenberg for manifold complex; exterior derivative operator; dolbeault cohomology; hermitian manifold for manifold M, J orthogonal transform to riemannian metric g, Kahler condition is associated two form omega is closed; holomorphic coordinates.
+
+Poincare duality and cohomology phenomena (1) simplicial homology; fundamental group; singular cohomology; Mayer Vietoris; poincare duality, homology is H_k is dual to cohomology H^{n-k} for X^n; compute a bunch of homoology groups.
+
+Spec and Proj phenomena: (1) algebraically closed; (2) duality of space and ring; (3) Gelfand-Naimak classification of C* algebras, C* algebra associated to Hausdorff compact topological space get spectrum of C* algebra exercise to forget C(X) and get complexification of X; (4) finitely generated unital commutative algebras over C corresponding to affine varieties using Hilbert's basis theorem; (5) show case these phenomena: coordinate rings, localisations to fields, bijection between radical ideals and affine varieties, contravariant equivalence between affine varieties and category of finitely generated reduced algebra without nilopotent elements, quotient is reduced if I is radical, nullstellensatz; (6) C^{n+1} remove {0} over C*, use Hermitian on C^{n+1}, get projective space, homogenous ideals, projective varieties, homogenous spectrum, rewritie dualities of Spec and Proj, degree genus formula, Zariski topology, coordinates as linear functionals.
+
 Spec and Proj.
 
 Affine and projective varieties and schemes.
