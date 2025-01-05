@@ -2,6 +2,10 @@ UNDERSTOOD
 
 Algebraic scheme over a field K: (1) scheme X with morphism of finite type from X to Spec(K); (2) scheme X has a finite covering by affine opens whose coordinate rings are finitely generated K-algebra. Coordinate ring of affine open U may be denoted A(U).
 
+Morphism of finite type in schemes: morphism f of schemes X to Y has covering of affine open subschemes V_i = Spec(A_i) such that preimages V_i has a finite covering by affine open subschemes U_{ij} = Spec(B_{ij}) of X with B_{ij} an A_i algebra of finite type.
+
+Morphism of finite type in commutative algebra: ring homomorphism of A to B of commutative ring, B is called an A-algebra of finite type oif B is finitely generated as an A-algebra, much stronger for B to be a finite A-algebra, which means B is finitely generated as an A-module.
+
 Point of scheme: 0-dimension subvariety of x
 
 Function field of variety R(V) with example, if V is the subvariety, then R(V) is the residue field of the structural sheaf of O_{V,X} quotiented out by the maximal ideal M_{V,X}
