@@ -2561,7 +2561,7 @@ Proof sketch for G-set with Tannaka duality (like Cayley's theorem), C as Set^G 
 
 Makkai duality: syntax of first order logic (pretopoi) corresponds to the semantics of first order logic (ultracategories). Further, opposite category of small pretopoi maps to ultracategories, ultrafunctors of from ultra category to set has the structure of a small pretopos
 
-Koszul duality, generalising the fact that d^2 = 0 encodes a commutative law and d^2w (differential) = 0, recall that this is case for some long sequences, one can get that having free graded comm algebra on the special linear group into a differential graded algebra is the same as making it into a Lie algebra (Jacobi identity is indeed = 0), duality having free graded Lie algebra on special linear group into a differential graded algebra makes it into a commutative algebra (d^2 = 0 encodes a commutative law)
+Koszul duality: generalising the fact that d^2 = 0 encodes a commutative law and d^2w (differential) = 0, recall that this is case for some long sequences, one can get that having free graded comm algebra on the special linear group into a differential graded algebra is the same as making it into a Lie algebra (Jacobi identity is indeed = 0), duality having free graded Lie algebra on special linear group into a differential graded algebra makes it into a commutative algebra (d^2 = 0 encodes a commutative law)
 
 Graded ring: as an abelian group, it decomposes into direct sums groups of homogenous elements.
 
