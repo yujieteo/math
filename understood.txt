@@ -14,7 +14,7 @@ Plane curve xy not isomorphic to poly ring in one variable: A[Z] = k[x, 1/x], bu
 
 Variety: (1) reduced and irreducible (integral) algebraic scheme.
 
-Subvariety: reduced and irreducible closed subscheme of X, subvariety V correspondsto a prime ideal in the coordinate ring of any affine open set meeting V.
+Subvariety: reduced and irreducible closed subscheme of X, subvariety V corresponds to a prime ideal in the coordinate ring of any affine open set meeting V.
 
 Localisations are flat i.e canonical homomorphism A to the localisation of A called S^{-1} A is flat: proof let N be a sub-A-module of M as A-module, by construction S^{-1} N is submodule of S^{-1} M, take tensor product N *_A S^{-1} A -> M *_A S^{-1} A is injective (submodule) so by definition localisations are flat.
 
@@ -210,7 +210,7 @@ Log-concave: three numbers x < y < z, we have y^2 >= xz.
 
 Perron-Frobenius theorem: real square matrix with positive entries have unique eigenvalue of largest magnitude, with real eigenvalue. Defines leading eigenvalue with spectral radius equalling it, it is a simple root of the characteristic poly, there is a leading eigenvector. Key step for proof, Brouwer fixed point theorem.
 
-Proof sketch of Perron-Frobenius theorem: postive matrix, spectral radius is 1 without loss of generality, consider another eigenvalue that is not 1 also fall on unit circle (i.e. maximum is not unique), so (KEY STEP) there is A^m positive, real part of lambda^m is negative, take T = A^m - eps I, this is positive matrix when we pick eps to be half the smallest diagonal entry, check that Ax = ex, then A^m x = e^m x so e^m - eps is eigenvalue, lies outside spectral unit disk p(T) > 1, BUT entries in T are positive and less than or equal to those in A^m but by Gelfand's formula p(T) <= p(A^m) <= p(A)^m = 1, contradiction, so eigenvalue is 1, no others exist on the unit circle. 
+Proof sketch of Perron-Frobenius theorem: positive matrix, spectral radius is 1 without loss of generality, consider another eigenvalue that is not 1 also fall on unit circle (i.e. maximum is not unique), so (KEY STEP) there is A^m positive, real part of lambda^m is negative, take T = A^m - eps I, this is positive matrix when we pick eps to be half the smallest diagonal entry, check that Ax = ex, then A^m x = e^m x so e^m - eps is eigenvalue, lies outside spectral unit disk p(T) > 1, BUT entries in T are positive and less than or equal to those in A^m but by Gelfand's formula p(T) <= p(A^m) <= p(A)^m = 1, contradiction, so eigenvalue is 1, no others exist on the unit circle. 
 
 Motivation for Koszul complex: define cohomology for Lie algebras, ended up as a general construction. You can use it to prove facts about module depth.
 
@@ -582,7 +582,7 @@ Left annihilator ann(x): set of a in ring R such that ax = 0. Kernel if R is an 
 
 Left annihilator ann(x) in category theory: kernel of action map R to endomorphism ring End_R(M) determined by the adjunct map of the identity M -> M along the tensor-hom adjunction.
 
-Degenerate bilinear form: bilinear form such that map from V -> V* where the following are equivalent: (1) taking v -> (x -> f(x,v)) is not an isomorphism; (2) when V is finite dimensional the map has a nontrivial kernel; (3) there exist nonzero x in vector space V such that f(x,y) = 0 for all y in V; (4) for finite dimensional vector space relative to basis, and teh determinant is zero or the matrix is singular form and in this case it is a singular form. This feels like the failure of the "Yoneda lemma" where objects and maps of objects do not correspond. 
+Degenerate bilinear form: bilinear form such that map from V -> V* where the following are equivalent: (1) taking v -> (x -> f(x,v)) is not an isomorphism; (2) when V is finite dimensional the map has a nontrivi	al kernel; (3) there exist nonzero x in vector space V such that f(x,y) = 0 for all y in V; (4) for finite dimensional vector space relative to basis, and teh determinant is zero or the matrix is singular form and in this case it is a singular form. This feels like the failure of the "Yoneda lemma" where objects and maps of objects do not correspond. 
 
 Nonsingular form: map from V to its dual V* such that the following are equivalent: (1) v -> (x -> f(x,v)) is isomorphism in finite dimensions; (2) f(x,y) = 0 for all y in V implies x = 0.
 
