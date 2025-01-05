@@ -1,5 +1,11 @@
 DAYDREAM (MATH)
 
+Don't understand the essentiallys urjective example where R is isomorphic to poly ring quotiented out by radical ideal.
+
+Why care about reduced rings?
+
+Motivation for valuation rings?
+
 Why is Noetherian normalisation called that?
 
 Do not understand the significance of the existence of nonempty affine algebraic sets for all proper ideals in poly ring k[X_1, ..., X_n]. This just means it is nonempty if proper?

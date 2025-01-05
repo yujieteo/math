@@ -30,6 +30,20 @@ Geometrically integral: let X be algebraic variety of k, k^b be the algebraicall
 
 Hartshorne vs Vakil's definition of morphisms of schemes: Hartshorne defines morphism at the level of stalks, ring homomorphism induces contravariant morphisms of schemes, construct ring homs on stalks, concludes that maps of sections from O_{spec B}(V) -> O_{spec A}(f^{-1} V) at the level of the preimages of V as contravariant; Vakil spends a chapter using compatible morphisms on distinguished basis elements (morphisms of affine scheme) and then glue.
 
+Affine scheme: locally ringed space such that topological space + structural sheaf is isomorphic to pirme spectrum of A and structural sheaf on prime spectrum.
+
+Morphism of affine schemes: exactly a morphism of locally ringed spaces, as well as a morphism of schemes.
+
+Equivalence of categories for affine schemes and rings: proof, contravariant functor sending A to (prime spectrum of A, structural sheaf of Spec A).
+
+Reduced scheme: if for all opens in X the ring O_X(U) is a reduced ring (i.e. f^m = 0 equivalent to f = 0).
+
+Category of schemes has all fibre products ie. if Spec A *_{fibre product over Spec R} Spec B is isomorphic to Spec(A *_{tensor product over R} B): proof, for affines it is case of universal properties of fibre product of schemes, tensor product of rings, Yoneda lemma, for schemes, need to look at affine covers of X Y and S, then cover them with the fibre product at S and S_j indexed. These are affine and proved, now glue all of them. See Hartshorne for proof.
+
+Fibre product of schemes is not the fibre product of spaces with extra structure: this means forgetful functor from schemes to topological spaces or sets do not have a left adjoint (or free). There is no left adjoint to the forgetful functor producing a scheme from set or topological space because of this.
+
+Weil conjectures: for a scheme X of finite type over integers (locally Spec A where A is finitely generated Z-algebra), then the analytic topology of X(C) i.e. complex points of X have a strong influence on the number of finite field F_p valued points i.e. X(F_p).
+
 Failure of Veronese map by proj construction: from the fact that Proj T -> Proj S do not come from S -> T. P^1 -> P^2 is the Veronese map.
 
 Dedekind cuts: a real number is a cut in the rationals
@@ -734,6 +748,12 @@ Torus as topological manifold: product manifold of topological manifolds so it i
 
 Projective space as topological manifold: set of 1 dimension linear subspaces of R^{n+1}, example, lines through the origin. Hausdorff since you can separate lines pointwise (inherited as subspace of Euclidean space), and second countable inheriting the countable bases of the rationals.
 
+Projective space defined by equivalence relation: complex projective space CP^n is equal to C^{n +1} - 0 that is quotiented out by points (x_0, ... x_n) equivalent two sclar multiples of it e(x_0, ... x_n)for all eigenvalues in complex multiplicative group. These are the homogenous coordinates, ratios are well defiend when x_j is nonzero.
+
+Standard cover of projective space CP^n: thesea rethe (n+1) many copies of C^n.
+
+Projective space for any field k: more generally we have P^n(k) = k^n+1 - {0} quotiented out by multiplicative group of k. Caution, not the case for general ring R.
+
 Projective space is compact: proof sketch restriction of sphere S^n (R^{n+1}) to complex projective space (RP^n) is surjective (looks like shadow casting, in fact it is Riemann sphere). But sphere S^n is compact, so RP^n is compact when we consider open covers on complex projective space RP^n, take an open cover on the sphere and its finite subcover, preimage of the projection map from the open cover RP^n to this finite subcover, and back again (surjectivity is used here) gives a finite subcover, so projective space is compact.
 
 Chart centering: for a coordinate chart P(u) = 0, u is some point in U, then the chart is centered at u. You can center again the chart by subtracting vector P(u), note that vectors make sense here since it is a homeomorphism to a finite dimensional real vector space.
@@ -860,6 +880,8 @@ Baire category theorem, alternative characterisation: every locally compact regu
 Regular space: closed set F and point x not in F, then you can separate x and F with disjoint neighbourhoods always.
 
 T3 space: regular Hausdorff space.
+
+Quasicompact: open cover have finite subcover. Topologists say this is valid enough for compactness, however this definition is used in algebraic geometry, where compactness is quasicompact + Hausdorff.
 
 Paracompact: if compact spaces have every open cover admit a finite subcover, then a paracompact space in which every open cover has an open refinement (new cover that has sets contained in the original cover) that is locally finite (sets intersects with only finitely many sets in collection). Sometimes people define paracompact to have Hausdorff also. Basically paracompactness is sort of the key idea in metrisation.
 
@@ -1293,6 +1315,8 @@ Jacobson ring: used to describe the Nullstellensatz, a Jacobson ring is every pr
 
 Points near p in set X: Illustration in Eisenbud. Consider Y is algebraic subset of X not containing P, consider X - Y, this is not an affine algebraic set (examples: plane minus a point is not a affine algebraic set), however you can have it isomorphic to an algebraic set embedded in A^{r+1}(k). This is important: assume that Y is the set defined by vanishing of a single function f. So you can get the affine ring A(X - Y) and A(X), we can invert f by adjoining multiplicative inverses. This localisation gives is an algebraic thing like of the germ of X at p, the local ring of X at p.
 
+Germ of s at x: let s_x be equivalence class of opens (U, s) at stalk of sheaf F at x.
+
 Affine algebraic set: a subset in an algebraically closed field k^n if it can be written as the set of common zeros of a set of polynomials, there is a set M variables such that V(M) := {(x_i from 1 to n) in j^n, such that f(x_1, ... x_n) = 0}, this looks like some sort of kernel. Gives consequences if you have Hilbert's basis theorem.
 
 V(affine algebraic set) = V(a for some ideal generated by M): proof containment affine algebraic set M in ideal a is obvious. Converse, write poly in ideal to be linear combination sum f_i g_i, f_i in affine algebraic set, g_i in poly ring k[X_1, ... X_n], then using conditionin (x_1, ..., x_n) in V(M) we have sum f_i g_i - 0, i.e. f = 0.
@@ -1312,6 +1336,8 @@ Full functor: consider category C and category D with functor F : C -> D, if C(x
 Faithful functor: consider category C and category D with functor F : C -> D, if C(x,y) -> D(Fx, Fy) is injective, this is faithful for each x, y in C.
 
 Essentially surjective on objects: if for object d in category D, there exists Fc for object in c and functor F that Fc is isomorphic to d, then the functor F is essential surjective.
+
+Essentially surjective: R be reduced finitely generated k-algebra, then R is isomorphic to poly ring k[X_1, ..., X_n]/a where a = rad(a) i.e. no nonzero nilpotents, nilradical is 0, then we have V = V(a) in k^n, we have sheaf of rings (V) isomorphic to R by Hilbert's Nullstellensatz.
 
 Homotopical category: category is equipped with a class of weak equivalence.
 
@@ -2095,7 +2121,9 @@ A functor is extended naturally to left composition of a left Kan extension and 
 
 A functor is extended naturally from a left composition of a right Kan extension and the functor when the domain category is extended. Easy to remember, forgetful functors are typical examples of right adjoints which are right Kan extensions.
 
-A presheaf is a functor from an opposite category to sets. A simplicial set is presheaf from the simplicial category.
+Presheaf: TFAE: (1) is a functor from an opposite category to sets. A simplicial set is presheaf from the simplicial category; (2) define using X = Spec A on th ebasis of principal opens using M(D(f)) = M[f^{-1}] for f in ring A, M being A-module.
+
+Gluing modules: A-modules are equivalent to quasi-coherent sheafs on Spec A which are equivalent to quasi-coherent sheaves on distinguished opens D(f_i) + gluing data. See Scholze corollary 11.10.
 
 A category of presheaves has presheaf functors as objects, and natural transformations as morphisms.
 
@@ -2401,9 +2429,11 @@ Wiener process derivative: comprises of drift term and diffusion term.
 
 Diffusion term in probability: dertivative of the white noise.
 
-Locally ringed space is topological space by some stalk. Ringed space such that all presheafs are local rings i.e. colimits of global section functors of opens. By Gelfand duality, this corresponds to maximal ideals.
+Locally ringed space is a ringed space i.e. all stalks at x are a local ring. Ringed space such that all presheafs are local rings i.e. colimits of global section functors of opens. By Gelfand duality, this corresponds to maximal ideals.
 
-Ringed space (locally ringed in local rings): tpological sapce endowed with a sheaf of rings called the structure sheaf O_X on X such that O_{X,x} is a local ring (with unique maximal ideal) for all x in X, denote it as (X, O_X)
+Notation for locally ringed space: Spec A is (Spec A, O_{Spec A}) by abuse of notation. Howevr next step is fully faithful functor from opposite category of ring to locally ringed spaces, evolving from opposite category of topological space to sets.
+
+Ringed space (locally ringed in local rings): topological sapce endowed with a sheaf of rings called the structure sheaf O_X on X such that O_{X,x} is a local ring (with unique maximal ideal) for all x in X, denote it as (X, O_X)
 
 Subringed space is locally isomorphic to opens (on some site) cut out by ??? functions on the opens.
 
@@ -2450,8 +2480,6 @@ Directesd system: find upper bound of finite subset, finite limit exists, so the
 Sheafification intuition: presheaves of function which are P is sheafified to sheaves of functions which are locally P.
 
 Separated presheaf: sections F(U) include into product of section of covering opens U_i for any cover.
-
-Stalks are colimits of sections of opens for elements in opens. (Local). Stalks are direct limits of over open subset containing a point.
 
 Sections are the sheaf functors applied on opens.
 
@@ -2522,6 +2550,12 @@ Homogeneous variety: algebraic variety of the form G/P, G is LINEAR algebraic gr
 Conics in complex projective plane: variety V_pr(x^2 + y^2 - z^2) in CP^2, view as subspace of P^3, lines intersect origin, looks like CONIC!, pick x = 1, get hyperbola, y = 1 get hyperbola, z = 1 get circle.
 
 Distinguished open set: Vakil feels principal open set works better. Forms a basis for the Zariski topology on Spec(R). Spec(R)_f = Spec(R) \ V(f). Used to define morphism of sheaves.
+
+Morphisms of sheaves (injective and bijective): are injective/bijective if for all x in X in topological space they are injective or bijective on stalks i.e. p_x: F_x -> G_x are injective/bijective, equivalent to saying they are injective or bijective for all open subsets U or X.
+
+Morphisms of sheaves (surjective): surjective is stricter, it must be surjective on p_x: F_x -> G_x is surjective for all x in X, it cannot only be locally surjective on opens, it must be surjective for all stalks of points.
+
+Locality of spectral space: a spectral space is local if it has a unique closed points. This is similar for saying a ring is a local ring if it has a unique maximal ideal.
 
 Rational function: let U be open in V, V projective variety, rational function on projective variety is quotient f/g, f,g are homogenous of same degree, f,g in coordinate ring C(V) and vanishing locus of p is disjoint with U.
 
@@ -2641,6 +2675,24 @@ Subfield and subgroups are bijective, that is the fundamental theorem of Galois 
 
 Prime spectrum: colimit of some sort of chain of suspensions. Reminds me of stalks, which are colimits of neighbourhoods of functions.
 
+Maximal spectrum: subset of prime spectrum with all maximal spectrum.
+
+Presheaf, separated presheaf, sheaf: presheaf as contravariant functor from opposite category of Top to Set, separated presheaf means it satisfied locality, sheaf means it satisfies locality and glueing.
+
+Sheaf over empty set is one point set: proof take U be empty, cover U by all the open sets indexed over empty set, sheaf condition says F(empty) is equaliser(product of empties to product of empties), product over nothing is single point, equaliser of unique map from a point to a point with itself, so sheaf over empty set is a one point set.
+
+Prime spectrum of ring A is quasicompact: proof, Spec A be cover of Spec A by open sets, now remove U_i so that Z_i = Spec(A) \ U_i = V(M_i) by Gelfand duality, intersection of V(M_i) is empty, now let a in A be the ideal generated by union of these M_i so by definition V(a) = V(union of M_i). Assume ideal a is not A, so there is maximal ideal containing a, but m is also prime ideal m in V(a) which is empty, so a = A, unit ideal in a, so there exists generating functions such that sum of f_i g_i = 1, Pick finite indexing set J in I so that f_1 ... f_m in union of M_j indexed by J, this tells us that union of these J generates the unit ideals so V(union of M_i over indexing J) = V(A) = empty, so Spec A must be the union of U_k with indexing set J, J finite, so we have quasicompactness. (NOTE: prime spectrum is not Hausdorff in general.)
+
+Spec(-) is functorial: for any ring A, unique map from Z to A, so unique map from Spec A to Spec Z. all of algebraic geometry lives over Spec Z, so you can do number theory. This follows from the theorem that given f from ring A to ring B, Spec f defined by q giving preimage from ideal q in ring B is well defined. The key step for well definedness is that product between elements in ideal and elements in ring is in the ideal in the image of f.
+
+Prime spectrum of Z: all nonzero prime ideals (2), (3), (5), ... ideal (0) as generic point arbitrary to all others, residue fields at these points are Z/pZ and Q. elements of Z act as functions of Spec(Z), example n in Z, n(p) = n mod p.
+
+Prime decomposition in Spec: V(12) = {(2), {3}}, V(64) = {(2)}
+
+Spec f is continuous given f morphism A to B of rings: proof: preimage of closed set V(M) in Spec(A) is V(f(M)) in Spec(B).
+
+Given f: ring A -> ring B, Spec f with q -> preimage of ideal q is well defined: proof x, y in A and xy in preimage of f with codomain ideal q, then f(x)f(y) = f(y) in ideal q (check definition of ideal as absorbings set) by image, so x and y is in preimage of f with codomain ideal q, so preimage of f with codomain ideal q is a prime ideal in A by definition.
+
 Separatedness: (1) cannot be represented by two disjoint open subsets. Generalise to sites!; (2) separated with diagonal map from X -> cart prod of X and X with product topology is closed. Proof: separated, then open subsets fail to meet diagonal so diagonal of X is closed; conversely if closed, take cartesian product excluding diagonal morphism then find disjoint opens, so separated. See Qing Liu's 3.3.1.
 
 Higher inductive types are machine readable homotopy theory. Call yourself again when you define some homotopic object. Example is circle with a base with a type called circle (recursively) and a loop with a type base == base. For 2 spheres, same exercise, use base2 as twosphere, but use idpath of base2 instead of ==. Example, univalence axiom can have this loops as the integers. Interval also work the same logic, interval is defined inductively where zero and one has type interval, then segment is of type zero == one. Suspension, define north and south inductively as susp X, then define meridian as the X -> north == south.
@@ -2743,7 +2795,13 @@ Mapping from Z -> Z[i] gives mapping from Spec (Z) \leftarrow Spec(Z[i]). This g
 
 Principal ideal domain corresponds to the spectrum looking like an affine line. How is this related to Z as PID from classification of surfaces?
 
-Picard groups corresponds to a group of line bundles. This assigning a vector space 1D to each point. Group completion of Dedekind domain gives ring of integer and Picard group
+Picard group: (1) corresponds to a group of line bundles. This assigning a vector space 1D to each point. Group completion of Dedekind domain gives ring of integer and Picard group; (2) Picard group is the Pic(X) = {invertible O_X-modules which are called line bundles} / isomorphisms, where X is a scheme.
+
+Quasi-coherent sheaf O_X module, X is a scheme is of finite type: if there exists an open cover X is the union of opens of U_i with U_i = Spec A_i such that M(U_i) is a finitely generated A_i module where M is some O_X module. See Scholze Proposition 12.20.
+
+Noetherian scheme: the following are equivalent: (1) X is quasicompact scheme, for all open affines U = SpecA in X, the ring A is noetherian. Classif cexample of demanding property on open affine cover of scheme X (see local compactness), which descends to a property of all affine open subschemes of X.
+
+Line bundles: invertible ring O_X-modules, X is a scheme, see theorem 12.15 in Scholze's notes.
 
 Group completion of circle S1, give trivial Z and Mobius band Z/2 since two mobius bands give circle
 
@@ -2759,17 +2817,23 @@ Motivation of class group: measures how unique factorisation fails.
 
 Discrete valuation ring corresponds to Sierpinski two point space.
 
+Intuition of valuation rings: S = Spec Z, scheme X is separated equivalent to X quasiseparated and for every valuation ring with fraction field K, X(V) -> X(K) is injective.
+
 Chinese Remainder Theorem, giving a function on a disconnected space is the same as a giving a function on its connected components for disjoint union of subvarieties. This corresponds to the product of the spectrum of two schemes which gives the disjoint union of schemes.
 
 Exercise: draw Spec(C[x,y])/(x,y). Gives picture of local ring at one point.
 
 Spectrum of zero ring is empty since zero is not a prime ideal and zero is not an integral domain. Hartshorne define it this way.
 
+Integral scheme: the following are equivalent: (1) a scheme X is integral if the ring O_X(U) is an integral domain for all nonempty U open in X; (2) an irreducible and reduced scheme;
+
+Integral scheme is not a local condition: A = k * k, A not integral, but Spec A = disjoint union of two copies of Spec k, k is integral domain.
+
 Kernel of surjective map from rings to fields correspond to maximal ideals.
 
 Localisation of quotients and taking of quotients of localisations are equivalent, and they both give a residue field. What is the geometric interpretation of this?
 
-Stalks of sheaves represent localisation of A-module at prime p or local rings.
+Stalks of sheaves: (1) represent localisation of A-module at prime p or local rings; (2) colimit for x in open U, and U in Ouv(X) sheaf of open U, note this colimit is taken over a filtered indexing set; (3) stalk F at x is the pairs of open set U and s such that x is in U which is part of Ouv(X), and s is in F(U) under the equivalence relation if there exists a V contained in intersection of U and U' such that s|V = s'|V. These are the equivalence class of (U, s) int the stalk. The filtereness let us say that the functor defined by taking stalk of a sheaf is exact by showing filtered colimits of abelian groups are exact; (4) direct limits over open subset containing a point; (5) if B is a basis of topology X then stalk of F at x is the colimit for x in open, U in basis for sheaf over U F(U), comes from the fact that all opens U in basis containing X is cofinal in the set of all opens containg X, useful when we look at structural sheaf of the spectrum of ring A, taking very nice values of the basis of principal open subsets.
 
 Skyscraper sheaf is like the Dirac delta distribution.
 
@@ -2797,7 +2861,13 @@ Singular curve: some sort of self crossing in the curve. Nonsingular means no cr
 
 1-dim regular local rings: local properties of smooth points on curves.
 
-Dedekind domains: key examples are irreducible smooth curves in algebraically closed fields.
+Dedekind domains key examples: are irreducible smooth curves in algebraically closed fields.
+
+Dedekind domain: (1) normal, noetherian, integral domain such that dim Spec A = 1 so Spec A has a generic point and closed point; (2) for C normal curve over field k, for all open U  = Spec A in C, then the ring A is a Dedekind domain; (3) K is finite extension of Q, integral closure of Z in K is sheaf of rings O_K, then O_K is a Dedking domain;
+
+Analogy between number field case and function field case: Spec O_K, K number field is analogous to curves over a field.
+
+Toy example for ample line bundles: line bundle O(1) over projective space P^n_k is ample.
 
 Picard group of Dedekind domain corresponds to how far the Dedekind domain is from unique factorisation domain. See also K-theory of Dedekind domain giving the direct sum of the integers with its Picard group.
 
@@ -2947,7 +3017,7 @@ Zariski cotangent space of a local ring (A, m) is defined to be m/m^2; it is a v
 
 The dual vector space is the Zariski tangent space. If X is a scheme, the Zariski cotangent space Tv at a X,p point p in X is defined to be the Zariski cotangent space of the local ring (O)(X,p) (and similarly for the Zariski tangent space TX,p). Elements of the Zariski cotangent space are cotangent vectors or differentials; elements of the tangent space are tangent vectors.
 
-Schemes are topological spaces with a sheaf of unital rings whose colimits over all values of this sheaf on open subsets over every point called stalks that must be local rings or rings with a unique maximal ideal.
+Schemes: (1) are topological spaces with a sheaf of unital rings whose colimits over all values of this sheaf on open subsets over every point called stalks that must be local rings or rings with a unique maximal ideal; (2) schemes is a locally ringed space with a covering of X by open subsets such that for each open U_i and structure sheaf of X at each open U_i i.e. (U_i, O_{X at U_i}) is isomorphic to a affine scheme.
 
 Locally ringed space: sheaf + topological space. The idea is fairly simple, you have a ring of functions locally on each open set.
 
