@@ -1,5 +1,7 @@
 DAYDREAM (MATH)
 
+Orbit stabiliser to Sylow theorems see Silverman.
+
 Nice generalisation of contour integrals using partial orders?
 
 Residue theorem?
