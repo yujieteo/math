@@ -1,4 +1,78 @@
-UNDERSTOOD (MATH)
+UNDERSTOOD
+
+Irreducible element different from zero divisor (CAUTION): field of two elements F_2, look at ring F_2[x] / (x^2), {0, 1, x, x+1}, note that x is irreducible, only pairs multiplying to x are x1 and x(x+1), both cases one of the pair is a unit, but x^2 is a zero divisor. Further R = Z/4 has irreducible element, but it is a zero divisor. I think this one is clearer.
+
+Quadratic reciprocity calculation: Legendre symbol (q/p) to be 1 if p divides n^2 - q, -1 otherwise. Then (p/q)(q/p) = -1^((p-1)/2 * (q-1)/2). Determines integer solution to p dividing x^2 - a.
+
+Hodge theory idea: cohomology has canonical representative given Riemannian metric on manifold, differential form vanishing under Laplacian of metric.
+
+Ramification: square root function has two branches, now generalise this to other cases in geometry. Picture of Riemann surface of square root will be useful. There is ramificaiton theory of valuations, unramified morphism to define etale morphisms, aand tameness, local fields, algebraic extensions of rationals.
+
+Graph, edge vertex colouring: no gvertex, edge, face sharing a boundary have the same colour. Planar duality of points and lines generalise.
+
+Riesz potential: definition for the inverse of a power of a Laplace operator (Laplacian, divergence of the gradient of f). Some singular integral. Some weak convolution.
+
+Thom isomorphism: morphism from cohomology of X, to Thom space of vector bundle of rank n over simply connected CW complex.
+
+Regular language: formal language that can be defined by a regular expression. Empty language is regular, singleton language is regular, Kleene star language is regular, union and concatenation is regular. No other languages are regular.
+
+Regular expression: with boolean or, grouping example (gray|grey) is (gr(a|e)y); quantification with question mark, asterisk or Kleene star and Kleene plus. Question mark means not sure if preceding character is there: example {a?b} matches to "ab" or "b"; * means 0 or more occurences, example "hi*" means "h" or "hi" or "hii" and so on, + means one or more occurence of preceding "hi+" means "hi" or "hii" and so on, we have {} which does several functions {n} means exact match n times, {min,} means match minimally min, similarly for {,max} and {min,max}, there is also the wildcard character ., that matches any character.
+
+Finite state machine: exactly in finitely many state of any times and can be changed via transitions based on inputs. Less computational power than Turing machine.
+
+Ramification group: filtration of Galois group of a local field extension.
+
+Complex conjugate pair of eigenvalues and eigenvectors: say we have e_2 e_3 = 1, e_2^2 = e_3, e_3^2 = e_2, we have eigenvectors [1, e_2, e_3]^T and [1, e_3, e_2]^T, which are a complex conjugate pair.
+
+Lagrange duality: constraint problem is dual to abundance problem, min problem dual to max problem, related to duality of vector space in optimisation.
+
+Harmonic conjugates (complex analysis): the following are equivalent: (1) real valued function u has harmonic conjugate if they are real and imaginary parts of a holomorphic function. Example f, holomorphic, u is real function, v is real function, then f = u + iv; (2) u and v satisfy the Cauchy-Riemann equations; (2) u + iv is complex potential, u is potential function, v is stream function, u and v have orthogonal trajectories see Cauchy-Riemann equations.
+
+Projective harmonic conjugates: A and B points are harmonic conjugates if with respect to pair C, D, cross ratio (ABCD) = -1.
+
+Contour integral: calculus of residues, direct integration, Cauchy's integral formula.
+
+Contour: directed curve made up of a finite sequence of directed smooth curves, endpoints matched to give a single direction.
+
+Picard's complex analysis theorem: all about range of analytic functions.
+
+Entire function (integral function): complex valued function that is holomorphic on whole complex plane.
+
+Examples of entire function: polynomial and exponential functions, finite sums, products, compositions of these like sine, cosine, sinh, cosh, error function.
+
+Non-examples of entire functions: natural log, reciprocal, square root. Analytical continuation of functions fail for these.
+
+Little Picard theorem: entire nonconstant functions have the set of values that is either the entire complex plane, or the centire complex plane minus single point called the lacunary value of the function.
+
+Great Picard's: if analytic function f has an essential singularity at point w, any punctured neighbourhood of w, f(z) takes on all possible complex values, with at most a single exception, infinitely often. This can be clearly seen if you use Little Picard's.
+
+Example of Great Picard's: exp(z) is entire nonconstant function that is never 0, exp(1/z) has essential singularity at 0, but still does not obtain 0.
+
+Big Picard's proof sketch: work with some integral, then carefully think about disks and upper half plane. Use Riemann's theorem of removable singularities and Landau's theorem.
+
+Casorati-Weierstrass's theorem: range of f is dense.
+
+Little Picard corollary: image of entire nonconstant functions must be unbounded.
+
+Sketch of proof of little Picard: modular lambda, holomorphic universal covering of the twice punctured plane. Construct using elliptic function, have it omit two values (use Liouville's theorem here), compose f with inverse of modular function, maps plane to unit disc implying f is constant, contradiction.
+
+Alternate proof of little Picard: Consider f(z) - z_0 / z_1 - z_0 as linear approximation, f has holomorphic logarithm since C is simply connected with range omitting 0. Now take "Fourier transform" of entire function g, where f(z) = exp(2 pi i g(z)), the range omits all integers, use quadratic formula, entire function so g(z) = cos(h(z)).  h omits all complex of the form 2 pi n +- i cosh^{-1} m. n integer, m nonnegative, use Landau's theorem to consider h'(w) = 0 to make some large disk for one number range of h omits, so h'(w) = 0 instead, h is constant so f is constant by fundamental theorem of calculus.
+
+Meromorphic function: on open subset D, function that is holomorphic on all of D except poles of function. Meros means part.
+
+Algebraic geometry point of view of meromorphic function: function's domain is connected, meromorphic functions is the field of fractions of the integral domain of the set of holomorphic function. So holomorphic function feel like integers, meromorphic function feels like localisation of the integers to form the rational numbers. I think it is easier to work with locally connected with this example.
+
+Locally connected: every point admits a neighbourhood basis of open connected sets.
+
+Locally path connected: every point admits a neighbourhood basis of open path connected sets.
+
+Meromorphic function expression: ratio of two holomorphic function defined on D, poles coinciding with zero of denominator. Easiest to see, Laplace transform of rational functions.
+
+Big Picard's (meromorphic): let M be Riemann surface, w a poitn of M, P^1(C) = C union point of infinity as Riemann sphere (projective plane), and f: M excluding w -> Riemann sphere be a holomorphic function with essential singularity at w, then on any open susbet of M containing w, f(z) attains all but at most two points on P^1(C) infinitely often.
+
+Big Picard's meromorphic example: f(z) = 1/(1 - exp(1/z)) is meromorphic on C - {0}, complex plane with deleted origin. Essential singularity is z = 0, attains infinity infinitely often in any neighbourhood of 0, but fails to attain 0 or 1.
+
+Big Picard's conjecture: idea is to locally glue, let U_1 to U_n be collection of open connected subsets of C covering punctured unit disk D\{0}, on each U_j there is injective holomorphic function agreeing on df_j = df_k oon each intersection U_j with U_k, differentials glue together to a meromorphic 1-form on D. This is quite motivating, but obviously really really hard.
 
 Frobenius classification of finite dimensional associative division algebras: reals, complexes numbers and quaternions.
 
@@ -656,7 +730,7 @@ Arzela-Ascoli definition of compactness: for X a compact metric space, it is equ
 
 Bounded in the sense of norms: there exists a positive R > 0 such that the max norm (l^\infty) on the norm of f is less than R.
 
-Bounded linear operator in the sense of norms: there exists a positive R such that the norm of Tx in Y is less than R * the norm of X.
+Bounded linear operator in the sense of norms: (1) there exists a positive R such that the norm of Tx in Y is less than R * the norm of X; (2) it is continuous (but only on normed spaces), for forward implication take small approx of L(x+h) - L(x) being bounded, for converse, use an epsilon delta proof.
 
 Baire category theorem motivation: a form of axiom of (dependent) choice to ensure that no countable cover of proper subspaces of K^n exists, K being some field. See Tao's notes. Baire category theorem requires some form of the axiom of choice.
 
@@ -1809,9 +1883,15 @@ Determinant: test for invertibility if determinant is nonzero it is invertible s
 
 Diagonalisation failure: if we have repeated eigenvalues, these are like singularities or nilpotents. That is the only iconnection between diagonalisability with independent eigenvectors and invertibility with nonzero eigenvalues. Zero is like an absorbing element.
 
-Matrix exponential: it is some series with the properties you want from an exponential. We have exp(At) = I + At + (At)^2/2 + ... (At)^k / k! up to infinity. Invertible, consider exp(-At). Never singular, exp(e t) is always nonzero, e is eigenvalue. So there are nonzero eigenvalues. Also determinant of exp(At) is equal to exp(trace(At)).
+Matrix exponential: it is some series with the properties you want from an exponential. We have exp(At) = I + At + (At)^2/2 + ... (At)^k / k! up to infinity. Invertible, consider exp(-At). Never singular, exp(e t) is always nonzero, e is eigenvalue. So there are nonzero eigenvalues. Also determinant of exp(At) is equal to exp(trace(At)). Gives exponential map between matrix lie algebra to its lie group.
+
+Exponential of a matrix is always invertible: proof, there is a valid notion of exp(-X).
+
+Laplace transform of matrix exponentials: strangely this gives the resolvent example integral from 0 to infinity of exp(-ts) exp(tX) dt = (sI - X)^{-1}, s is pole/zero.
 
 Stability: matrix exponential tends towards zero, real part of eigenvalues are less than 0, neutrally stable when real part of eigenvalues equalto zero. This is called asymptotic stability.
+
+Determinant of matrix exponential: det(exp(A)) = exp(tr(A)), interesting, this is because additive group is changed from the multiplicative group. See the fact that the determinant map's kernel is the special lienar group.
 
 Jacobian determinant: stretching matrix of the volume.
 
@@ -1896,6 +1976,12 @@ A left Kan extension of a functor F that takes morphisms from category C to cate
 A unit \eta is a natural transformation from the identity functor * to a composition of functors GF. A left Kan extension of the identity functor * along F is defined with the unit \eta as an left adjoint. Left adjoints preserves colimits. A counit \epsilon is a natural transformation from a composition of a functors GF to the identity functor *. A right Kan extension of the identity functor along G is defined with the counit \epsilon as an right adjoint. Right adjoints preserves limits.
 
 Yoneda extension: left Kan extension along a Yoneda embedding. See definition of field extension in Galois theory, similar.
+
+Diagonal functor intuition: categorification of the diagonal function, diag() from C to C * C, C category is given by diag(x) = (x, x), regardless of whether x is object or arrow, generally, we can have diag()_I from C to C^I, where C^I is indexing, sending each object c to constant functor diag(c).
+
+Diagonal morphism intuition: canonical morphism of the diagonal function, diag() from C to C * C, C MORPHISM is given by diag(x) = (x, x), regardless of whether x is object or arrow, generally, we can have diag()_I from C to C^I, where C^I is indexing, sending each object c to constant functor diag(c), dually it is codiagonal. These properties are induced by universal property of Cartesian product / direct sums.
+
+Diagonal function: diag(a)_I maps a to (a, a), I indexing set 
 
 Adjunction of diagonal functor: diagonal functor is a functor from C to Funct(I, C), projective limit is right adjoint, inductive limit is left adjoint.
 
