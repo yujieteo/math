@@ -1,5 +1,9 @@
 UNDERSTOOD
 
+Hartshorne vs Vakil's definition of morphisms of schemes: Hartshorne defines morphism at the level of stalks, ring homomorphism induces contravariant morphisms of schemes, construct ring homs on stalks, concludes that maps of sections from O_{spec B}(V) -> O_{spec A}(f^{-1} V) at the level of the preimages of V as contravariant; Vakil spends a chapter using compatible morphisms on distinguished basis elements (morphisms of affine scheme) and then glue.
+
+Failure of Veronese map by proj construction: from the fact that Proj T -> Proj S do not come from S -> T. P^1 -> P^2 is the Veronese map.
+
 Dedekind cuts: a real number is a cut in the rationals
 
 Fancy names and actual understanding: orbit stabiliser theorem is one of them. Borcherds showed the stabiliser action on faces of dodecahedron, fixing a side (orbit) then take stabiliser action, rotating to derive the total order of a group on icosahedron embedded in real space, however I never understood the statement in Silverman nor his proof of it.
