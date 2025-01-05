@@ -1,5 +1,9 @@
 UNDERSTOOD
 
+Hartshorne vs Vakil's definition of morphisms of schemes: Hartshorne defines morphism at the level of stalks, ring homomorphism induces contravariant morphisms of schemes, construct ring homs on stalks, concludes that maps of sections from O_{spec B}(V) -> O_{spec A}(f^{-1} V) at the level of the preimages of V as contravariant; Vakil spends a chapter using compatible morphisms on distinguished basis elements (morphisms of affine scheme) and then glue.
+
+Failure of Veronese map by proj construction: from the fact that Proj T -> Proj S do not come from S -> T. P^1 -> P^2 is the Veronese map.
+
 Irreducible element different from zero divisor (CAUTION): field of two elements F_2, look at ring F_2[x] / (x^2), {0, 1, x, x+1}, note that x is irreducible, only pairs multiplying to x are x1 and x(x+1), both cases one of the pair is a unit, but x^2 is a zero divisor. Further R = Z/4 has irreducible element, but it is a zero divisor. I think this one is clearer.
 
 Quadratic reciprocity calculation: Legendre symbol (q/p) to be 1 if p divides n^2 - q, -1 otherwise. Then (p/q)(q/p) = -1^((p-1)/2 * (q-1)/2). Determines integer solution to p dividing x^2 - a.
@@ -393,6 +397,10 @@ Character of a representation: let p from finite group G to general linear group
 Properties of character of representation: let p be a representation of degree n, and X be a character of its representation. X(1) = n since the trace of 1 is simply degree n, X(s^-1) is equal to X(s)^* or the conjugate since p is of finite order, and a unitary matrix can represent this, X(tst^{-1}) = X(s), so this is preserved under conjugation, in fact it follows from Tr(ab) = Tr(ba) for two linear maps since sums of eigenvalues are commutative.
 
 Tensor product of vector spaces / linear representations / matrices (Serre's definition for linear representation): map from V_1 x V_2 to V_1 * V_2 = W with map (x_1, x_2) -> x_1 * x_2 is tensor product if these two conditions: (1) x_1 * x_2 is linear; (2) if (e_i) is basis in V_1 and (e_j) is basis in V_2, then product of e_i e_j is basis in W. This exists and unique up to isomorphism (universal property).
+
+Tensor product of module as as a universal property: of M and N over A, where M and N are A modules and a bilinear map from product of M and N to H, satisfying universal property, where if there is L which is a A-module, unique morphism from L to H gives commutative diagram.
+
+Comparison of tensor product to free group: direct product is like free group of tensor project, then Hom is right adjoint like forget is right adjoint.
 
 Tensor product of two irreducible representations is not irreducible: example rotation group SO(3), double cover SU(2). Decompose into V_{l} * V_{m} = V_{l + m} + V_{l + m - 1} + ... + V_{l - m}. Need more clarity. In general this is a problem of character theory.
 
@@ -2319,7 +2327,9 @@ Presheaf is a functor from the opposite of category of opens to sets. Note that 
 
 Presheaf with functor F# such that for union of open covers, there is a canonical isomorphism of opens that gives the equaliser of morphisms between product of sections to the product of section (set-theoretic) intersections (overlap). This equaliser is glueing or descent.
 
-Sheafification: the following are equivalent: (1) left adjoint to the fully faithful inclusion of the category of sheaves into presheaves. You can use an adjoint functor theorem. Follows from the key step of the preservation of all limits from the definition of Zariski descent.
+Sheafification: the following are equivalent: (1) left adjoint to the fully faithful inclusion of the category of sheaves into presheaves. You can use an adjoint functor theorem. Follows from the key step of the preservation of all limits from the definition of Zariski descent; (2) sheafification is a universal property, morphism of presheaves, sheafify, apply universal propety so true for sheaves.
+
+Directesd system: find upper bound of finite subset, finite limit exists, so there is inductive limit.
 
 Sheafification intuition: presheaves of function which are P is sheafified to sheaves of functions which are locally P.
 
@@ -2740,6 +2750,8 @@ Maximal ideals: closed points.
 Not every ring is the coordinate ring of a variety, so for general rings we have to find an algebraic argument (Zorn's lemma) that ensures the existence of maximal ideals.
 
 For every ideal in a ring, a radical of an ideal consists of the intersections of prime ideals is shown by Zorn's lemma. This corresponds to the geometrically obvious statement that the variety is the union of its irreducible subvarieties.
+
+Another construction that requires Zorn's lemma is that if you have 0 -> F' -> F -> F'' -> 0, the functor F(U, -) is exact if F'is a flasque sheaf, left exact in general, surjectivity need to be proved with Zorn's lemma.
 
 Fractions: rational functions that are local functions well defined at a point.
 

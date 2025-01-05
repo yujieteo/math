@@ -4,6 +4,34 @@ Orbit stabiliser to Sylow theorems see Silverman.
 
 Nice generalisation of contour integrals using partial orders?
 
+Veroneus map?
+
+Morphisms on a base?
+
+Sheaf of distinguished opens is isomorphic to A_f, see Hartshorne Prop II 2.2.
+
+Intersection of affines covered by finite number of affines i.e. QCQS lemma?
+
+Nike's lemma? Spec A and Spec B are affine open subschemes of a scheme X, then intersection of Spec A and Spec B are the union of open sets are simultaneously open subschemes of Spec A and Spec B.
+
+Affine communication lemma? See Vakil. If affine open subset Spec A injects into X has property X, then for any f in A, then Spec A_f injects into X has this property. Part II, if (f_1, ... f_...n)= A Spec A_fi injects into A for all i so Spec A injects into X.
+
+Why care about Artinian ring? Situations involving finitely many prime ideals, or finitely many points ofn a scheme, reduced to a statement about Artinian ring.
+
+Noetherian normalisation?
+
+Four-fold way?
+
+Cocycle condition?
+
+Segre embedding?
+
+Base of a residue field?
+
+Geometric Nakayama?
+
+Eisenbud says II1 to II4 as vocabulary building. But basic results are hidden here.
+
 Residue theorem?
 
 Cauchy's integral formula?
