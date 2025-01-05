@@ -1,5 +1,51 @@
 UNDERSTOOD
 
+Dedekind cuts: a real number is a cut in the rationals
+
+Fancy names and actual understanding: orbit stabiliser theorem is one of them. Borcherds showed the stabiliser action on faces of dodecahedron, fixing a side (orbit) then take stabiliser action, rotating to derive the total order of a group on icosahedron embedded in real space, however I never understood the statement in Silverman nor his proof of it.
+
+Cuts: pair of nonempty subsets whose union is rationals, one set is upper bounds for the other and the set of lower bounds have contain largest element.
+
+Members of covers are not covers: there exist elements in A that are not in cover, use word patches instead.
+
+Circle not homeomorphic to disc by using connectedness: remove one point, circle is disconnected, but not disc, disc becomes connected torus.
+
+Denumerable vs countable, countable may be finite, denumerable always has cardinality of integers.
+
+Cauchy condition: for all norm bound epsilon that is positive there exists a integer called the minimum index such that the norm of the difference in two Cauchy terms is more than the minimum index is bounded by the positive norm bound epsilon.
+
+Path connectedness implies connectedness: by contradiction, suppose path connected but not connected, find homeomorphism to disjoint union of closed intervals, contradicting connectedness of interval
+
+Integral domain spatial intuition: I multiply stuff and I can’t walk back to 0, vectors in Z[i] lattice is what I use to imagine this.
+
+Connectedness alt definition: contains no proper clopen subset.
+
+Hom exact as generalisation of divisibility test: if Hom(-,M) is exact on this form: 0 to ideal to main module to module quotient out by ideal to 0, here they have generalised divisibility, consider case of principal ideal in integral domain case. Is it divisible by the generator of the principal ideal?
+
+Cartesian pair of compact sets is compact; consider subsequence in component an and sub subsequence in component b, they both converge to (a,b) so Cartesian product is convergent. Induction on naturals makes this argument generalise.
+
+Box of closed intervals is compact: example of induction on Cartesian pair of compact sets.
+
+Limit of limit is limit: limits are idempotent
+
+Completeness of product if components are complete: complete means Cauchy sequences have limit, so consider limit of each component, exists in product space.
+
+Closed subspace of complete space are complete: Cauchy sequences inherited from inclusion, limit in subspace due to closed.
+
+Closed subspace of compact spaces are compact: convergence of Cauchy subsequence inherited from inclusion, limit in subspace due to closed.
+
+Bolzano-Weierstrass: bounded sequence inherited R^m have convergent subsequence, proof bounded so in compact box up to homomorphism, closed boxes are compact, so convergent subsequences exist. 
+
+Heine-Borel: closed and bounded boxes imply compact in R^m, proof: bounded so without loss of generality homeomorphic f to box, box is compact, limit in image if closed since limit in preimage if closed.
+
+Failure of Heine Borel for general metric spaces: easiest counterexample is naturals with discrete metric. Striking one is C(unit interval, R) with L infinity norm, complete space but closed unit ball not compact.
+
+Continuous image of compact sets are compact: proof by image of compact subsequences which must have limit in image of compact set, we used continuity to show existence.
+
+Open sets closed set duality: complementation is how this duality is established
+
+Epsilon delta condition: for map f, for all positive image bound epsilon at each point in domain, exists positive coimage bound delta in image such that distance between points is less than coimage bound epsilon implies distance between images of points is less than image bound delta.
+
 Irreducible element different from zero divisor (CAUTION): field of two elements F_2, look at ring F_2[x] / (x^2), {0, 1, x, x+1}, note that x is irreducible, only pairs multiplying to x are x1 and x(x+1), both cases one of the pair is a unit, but x^2 is a zero divisor. Further R = Z/4 has irreducible element, but it is a zero divisor. I think this one is clearer.
 
 Quadratic reciprocity calculation: Legendre symbol (q/p) to be 1 if p divides n^2 - q, -1 otherwise. Then (p/q)(q/p) = -1^((p-1)/2 * (q-1)/2). Determines integer solution to p dividing x^2 - a.
