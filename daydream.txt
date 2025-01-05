@@ -1,5 +1,19 @@
 DAYDREAM (MATH)
 
+Reals constructed by Dedekind cuts, not very clear.
+
+Easy proof of connectedness of R?
+
+Darboux continuous?
+
+Singularity theory?
+
+Galois insertion and coinsertion?
+
+Chain equivalences?
+
+Helmholtz decomposition
+
 Orbit stabiliser to Sylow theorems see Silverman.
 
 Nice generalisation of contour integrals using partial orders?
