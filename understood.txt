@@ -172,7 +172,7 @@ Algebraic geometry point of view of meromorphic function: function's domain is c
 
 Locally connected: every point admits a neighbourhood basis of open connected sets.
 
-Locally path connected: every point admits a neighbourhood basis of open path connected sets.
+Locally path connected: points admit a neighbourhood basis of path connected open subsets. This is quite the amazing definition now that I think about it since it makes locality so intuitive. You have some property done locally, then you make it a basis somehow (basic elements) to construct whatever you want.
 
 Meromorphic function expression: ratio of two holomorphic function defined on D, poles coinciding with zero of denominator. Easiest to see, Laplace transform of rational functions.
 
@@ -747,8 +747,6 @@ Topological manifolds are locally path connected, connected equivalent to path c
 Topological connectedness: nonexistence of two disjoint, nonempty, open subsets whose union is X.
 
 Path connected: every pair of points in X can be joined by a path in X.
-
-Locally path connected: if X has a basis of path connected open subsets. This is quite the amazing definition now that I think about it since it makes locality so intuitive. You have some property done locally, then you make it a basis somehow (basic elements) to construct whatever you want.
 
 Topological path: continuous map from closed interval to topological space (X, T). Reminds me of mapping cylinders.
 
@@ -1333,8 +1331,6 @@ Triangle inequality: I realise this is the whole basis of analysis, this is the 
 
 Max norm proofs: it always looks like this: step 1, norm is max norm, step 2: apply triangle inequality for norms within the max, step 3, decompose the max, step 4: redefine max to be the norm. State the max, split the inner norm, split the max, redefine max as norm again.
 
-Lp norm: nonnegativity obvious.
- 
 Jacobson ring: used to describe the Nullstellensatz, a Jacobson ring is every prime ideal of the commutative ring R is in the intersection of maximal ideals. See pg. 132 of Eisenbud.
 
 Points near p in set X: Illustration in Eisenbud. Consider Y is algebraic subset of X not containing P, consider X - Y, this is not an affine algebraic set (examples: plane minus a point is not a affine algebraic set), however you can have it isomorphic to an algebraic set embedded in A^{r+1}(k). This is important: assume that Y is the set defined by vanishing of a single function f. So you can get the affine ring A(X - Y) and A(X), we can invert f by adjoining multiplicative inverses. This localisation gives is an algebraic thing like of the germ of X at p, the local ring of X at p.
@@ -1991,8 +1987,6 @@ Eta-expansion: judgemental uniqueness principle
 
 Classical homotopy: continuous totally ordered family of maps graded by intervals such that compositions of maps at the endpoint is idempotent. Need continuity if not you can make everything a homotopy. 
 
-Isbell duality: space is dual to algebra.
-
 Types: infinity groupoid, terminal object of a global section functor for an (infinity,1) category.
 
 Identity type: path space A^I from interval to space A.
@@ -2113,17 +2107,15 @@ The Cayley-Hamilton theorem follows by factorising the characteristic polynomial
 
 A square complex matrix A in the set of n by n matrices M_n of complex entries have scalars \lambda_1, ... \lambda_n in the complex plane C, positive integers q and n_1, ..., n_q such that the sum n_1 + ... + n_q = n such that A = S J_A S^{-1} where the Jordan matrix J_A is the direct sum of Jordan blocks J_{n_i}(\lambda_i), where J_A = \bigoplus^{q}_{i = 1} J_{n_i}(\lambda_i).
 
-A Jordan block is an upper triangular matrix where the the scalar \lambda_i appears n_i times on the main diagonal, if n_1 > 1 then there are k - 1 entries which are +1 in the superdiagonal, and all other entries are zero.
+Jordan block: (1) is an upper triangular matrix where the the scalar \lambda_i appears n_i times on the main diagonal, if n_1 > 1 then there are k - 1 entries which are +1 in the superdiagonal, and all other entries are zero; (2) sum of a diagonal matrix and a nilpotent matrix since J_k(\lambda) = \lambda I_k + J_k(0) and J_k(0)^k = 0.
 
-The number of Jordan blocks is the maximum number of linearly independent eigenvalues of J_A.
+Number of Jordan blocks: the maximum number of linearly independent eigenvalues of J_A.
 
 If all the Jordan blocks are 1 by 1, then J_A is diagonalisable, in fact, the diagonal matrix looks like this.
 
-The number of Jordan blocks corresponding to a given eigenvalue is the geometric multiplicity of the eigenvalue, which is the dimension of the associated eigenspace.
+Multiplicity and Jordan block: number of Jordan blocks corresponding to a given eigenvalue is the geometric multiplicity of the eigenvalue, which is the dimension of the associated eigenspace.
 
-The sum of the sizes of all the Jordan blocks corresponding to a given eigenvalue is its algebraic multiplicity.
-
-Jordan block: sum of a diagonal matrix and a nilpotent matrix since J_k(\lambda) = \lambda I_k + J_k(0) and J_k(0)^k = 0.
+Algebraic multiplicity of Jordan block: sum of the sizes of all the Jordan blocks corresponding to a given eigenvalue is its algebraic multiplicity.
 
 Category theory motivates (1) generalising morphisms; (2) generalising domain/codomain duality; (3) preserve integrity respecting identification and compositional order. The fastest illustration of category theory is with Kan extensions. All categories are locally small (that is to say ignore size issues in set theory) unless otherwise stated.
 
@@ -2270,8 +2262,6 @@ Quotients: f(x) = f(y) if x is equivalent to y. That is why quotients are very p
 Linearising is the easiest thing in math (example, representation theory). Next best thing is to count (combinatorics).
 
 Connectedness is not hereditary, example Q does not inherit connectedness from R or even path connectedness.
-
-Normal subgroups: invariant under conjugation or serving as the identity for a different group compared to the rest of the elements. So I have the normal subgroup, then everything else not invariant under group conjugation. So the whole group is an identity somehow. Ideals of rings are comparable to normal subgroups?
 
 Free group as universal property (universal left adjoint): there is a canonical free group, with any function from set S to the group G giving a unique isomorphism with set S included to the alphabet Fs mapping to the group G. If non unique, relations exist.
 
@@ -2453,7 +2443,7 @@ Wiener process derivative: comprises of drift term and diffusion term.
 
 Diffusion term in probability: dertivative of the white noise.
 
-Locally ringed space is a ringed space i.e. all stalks at x are a local ring. Ringed space such that all presheafs are local rings i.e. colimits of global section functors of opens. By Gelfand duality, this corresponds to maximal ideals.
+Locally ringed space: (1) is a ringed space i.e. all stalks at x are a local ring. Ringed space such that all presheafs are local rings i.e. colimits of global section functors of opens. By Gelfand duality, this corresponds to maximal ideals; (2) sheaf + topological space. The idea is fairly simple, you have a ring of functions locally on each open set.
 
 Notation for locally ringed space: Spec A is (Spec A, O_{Spec A}) by abuse of notation. Howevr next step is fully faithful functor from opposite category of ring to locally ringed spaces, evolving from opposite category of topological space to sets.
 
@@ -3042,8 +3032,6 @@ Zariski cotangent space of a local ring (A, m) is defined to be m/m^2; it is a v
 The dual vector space is the Zariski tangent space. If X is a scheme, the Zariski cotangent space Tv at a X,p point p in X is defined to be the Zariski cotangent space of the local ring (O)(X,p) (and similarly for the Zariski tangent space TX,p). Elements of the Zariski cotangent space are cotangent vectors or differentials; elements of the tangent space are tangent vectors.
 
 Schemes: (1) are topological spaces with a sheaf of unital rings whose colimits over all values of this sheaf on open subsets over every point called stalks that must be local rings or rings with a unique maximal ideal; (2) schemes is a locally ringed space with a covering of X by open subsets such that for each open U_i and structure sheaf of X at each open U_i i.e. (U_i, O_{X at U_i}) is isomorphic to a affine scheme.
-
-Locally ringed space: sheaf + topological space. The idea is fairly simple, you have a ring of functions locally on each open set.
 
 Localism in definitions using basis: (1) have some local properties in open subset / sites, then (2) collection of these sets form basis to construct what you wants. Examples include: locally path connected where basis of open sets is path connected, locally contractible where basis of open sets is contractible, locally ringed space with a ring of function at each open set.
 
