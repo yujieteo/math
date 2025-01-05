@@ -86,6 +86,8 @@ Deformation theory.
 
 Virtual cycles.
 
+Explain: is that an algebraic scheme over a field can be covered by a finite number of spectra of finitely generated algebras. Those affine schemes that arise as the spectrum of a finitely generated algebra over a field are called algebraic, and the intuition behind this is that they are defined by a finite set of polynomials in a finite number of symbols. I think this terminology and point of view is common in the context of group schemes, see for example the notes of J.S. Milne
+
 2 of 6 properties of composable triple of arrows? How does one understands this definition? For the class of weak equivalences.
 
 3 by 3 lemma?
