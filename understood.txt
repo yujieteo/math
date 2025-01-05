@@ -214,7 +214,7 @@ Proof sketch of Perron-Frobenius theorem: postive matrix, spectral radius is 1 w
 
 Motivation for Koszul complex: define cohomology for Lie algebras, ended up as a general construction. You can use it to prove facts about module depth.
 
-Gelfand duality for depth of module and Krull dimension: these are corresponding notion of dimension.
+Duality for depth of module and Krull dimension: these are corresponding notion of dimension.
 
 Koszul complex: looks like projective sequence of wedge product for R-linear maps, let R be commutative ring, s: A^r -> A be an A-linear map, it is the wedge product *_{r} A^r -> *_{r-1} A^{r} all the way *_0 A^r isomorphic to A.
 
@@ -2269,7 +2269,7 @@ Maximal subgroup: proper subgroup that is not contained in any other proper subg
 
 Proper subgroup: subgroup that is a proper subset of the group (particularly, excludes the group itself as a proper subgroup of a group)
 
-Construction of Non-Noetherian rings for each finite dimension: start with a Noetherian ring, adjoin infinite number of nilpotents. Or take affine line, adjoin infinite number of fat points somewhere (Gelfand duality), the corresponding ring is not Noetherian even though it is dim 1.
+Construction of Non-Noetherian rings for each finite dimension: start with a Noetherian ring, adjoin infinite number of nilpotents. Or take affine line, adjoin infinite number of fat points somewhere, the corresponding ring is not Noetherian even though it is dim 1.
 
 Gros topos: sheaf is a generalised space with descent
 
@@ -2443,7 +2443,7 @@ Wiener process derivative: comprises of drift term and diffusion term.
 
 Diffusion term in probability: dertivative of the white noise.
 
-Locally ringed space: (1) is a ringed space i.e. all stalks at x are a local ring. Ringed space such that all presheafs are local rings i.e. colimits of global section functors of opens. By Gelfand duality, this corresponds to maximal ideals; (2) sheaf + topological space. The idea is fairly simple, you have a ring of functions locally on each open set.
+Locally ringed space: (1) is a ringed space i.e. all stalks at x are a local ring. Ringed space such that all presheafs are local rings i.e. colimits of global section functors of opens. By duality between commutative algebra and algebraic geometry, this corresponds to maximal ideals; (2) sheaf + topological space. The idea is fairly simple, you have a ring of functions locally on each open set.
 
 Notation for locally ringed space: Spec A is (Spec A, O_{Spec A}) by abuse of notation. Howevr next step is fully faithful functor from opposite category of ring to locally ringed spaces, evolving from opposite category of topological space to sets.
 
@@ -2579,7 +2579,7 @@ Vanishing locus of an ideal: kernel of maps f in ideal i.e. {x such that f(x) = 
 
 Irrelevant ideal: the following are equivalent: (1) homogenous ideal, but V_pr(I) = 0; (2) ideal (x_0, ... x_n).
 
-Homogenous Nullstellensatz: Gelfand duality between projective varieties in complex projective space of order n, and homogenous ideals of coordinate ring(x_0 to x_n) EXCEPT for the irrelevant ideal.
+Homogenous nullstellensatz: duality between projective varieties in complex projective space of order n, and homogenous ideals of coordinate ring(x_0 to x_n) EXCEPT for the irrelevant ideal.
 
 Same vanishing locus gives same radical i.e. V_pr(I) = V_pr(J) != 0 implies radical(I) = radical(J): proof, not sure?
 
