@@ -8,7 +8,7 @@ Hodge theory idea: cohomology has canonical representative given Riemannian metr
 
 Ramification: square root function has two branches, now generalise this to other cases in geometry. Picture of Riemann surface of square root will be useful. There is ramificaiton theory of valuations, unramified morphism to define etale morphisms, aand tameness, local fields, algebraic extensions of rationals.
 
-Graph, edge vertex colouring: no gvertex, edge, face sharing a boundary have the same colour. Planar duality of points and lines generalise.
+Graph, edge vertex colouring: no vertex, edge, face sharing a boundary have the same colour. Planar duality of points and lines generalise.
 
 Riesz potential: definition for the inverse of a power of a Laplace operator (Laplacian, divergence of the gradient of f). Some singular integral. Some weak convolution.
 
@@ -660,6 +660,8 @@ Filter of a partially ordered set: a (NONEMPTY) subset F of poset L if it is upw
 
 Intuition behind filter: it is dual to the ideal of a lattice, which is very similar. The duality arises when a subset of L that satisfies the first two of the three axioms for a ideal in a lattice (inhibited, antisymmetric, reflexive, transitives) is precisely a directed subset of Y. 
 
+Intuition of ideal: ideal is addtive subgroup in additive group R, absorbs multiplication on the left by elements of additive group R. So left ideal is left submodule of R, the considered as left module over itself, the over itself is absorption part. So unlike closure of subgroup or subspaces, ideals using this absorption property to ensure closure to make it module over itself, vector space over itself. Feels like a zero object.
+
 Ideal in a lattice / proset: an ideal I is a lattice or a proset is a subset I in the underlying set L such that (1) ideal I is inhibited; (2) if x and y are in I then x, y are less than or equal to z for some z in ideal I (this corresponds to transitivity, existence of upper bound, antisymmetric); (3) if x is in I, and y <= x, then y is in I (this is dualised, in a filter if A <= B in poset L, and A is a subset of filter, then B is a subset of the filter. Here, abusing the same notation, it says if B is in the ideal, then A is in the ideal.)
 
 Comparison to ideals in rings versus ideals in lattice: left ideal in ring is such that: (1) 0 is in the ideal which corresponds to the ideal being inhibited which is weaker; (2) x + y is in the ideal whenever x, y is in the ideal this is weaker than saying x, y <= z for some z in the ideal I; (3) xy is in I, whenever y is in I, regardless of whether x is in I (this regardless becomes OR for two sided ideals). From this comparison (NOT VERIFIED, THIS IS WHAT I THINK I UNDERSTAND), I think that ideals in rings are much more strict, since they enforce that the upper bound not just exist, but equals to the ring sum i.e. x + y = z, and also the product must exist if the elements forming the product is in the ideal such that the product ideal is a subset of the ideal.
@@ -876,10 +878,16 @@ Center of group: set of elements that commute with all elements of the group.
 
 Hamiltonian group: non-abelian group but every subgroup is normal.
 
-Matrix rings: set by two by two matrices also form a matrix ring, example we have injective ring homomorphism from x + yi to [x y ; -y x].
+Classification of integers: primes, prime powers, or composites (products of prime powers). This is useful for me to show Z/mZ is integral domain equivalently m is prime, and Z/mZ field equivalently if m is prime.
+
+Matrix rings: set by two by two matrices also form a matrix ring, example we have injective ring homomorphism from x + yi to [x y ; -y x]. Can show that this is a ring explicitly, for additive it is piecewise addition, use the fact that base is commutative ring, then product is explictly computed to have the same structure as [x y; -y x]. Noncommutative, because matrix product is anticommutative.
+
+AB in matrix ring = I, means BA = I: proof, dumbest proof ever [a b; c d], compare components of matrix with 1, you get a^2 + b^2c^2 + d^2 = 2, and ring is commutative, so it must be the other case as well and the entries obtained is the same. Similarly, ab + bd = ac + dc = 0.
+
+Matrix ring is not integral domain: pick [1 0; 0 0] and [0 0 ; 1 0], so not integral domain.
 
 Injective morphism: kernel is zero, f(x) = f(y) implies x = y, converse of well definedness of function.
-
+ 
 Gaussian integers: ring of integers adjoined with the root of -1.
 
 Forgetful functor of unital commutative rings from Z: there is a unique group homomorphism from Z to ring R.
@@ -1379,7 +1387,7 @@ Residue field: quotient ring of a commutative ring and a maximal ideal.
 
 Reduced commutative ring: commutative ring with no nonzero nilpotents. Meaning: equivalently nilradical is zero.
 
-Nilradical of a commutative ring: ideal of nilpotent elements. Radical of zero ideal. Sum of two nilpotents is nilpotent (binomial theorem), product of two nilpotents is nilpotent (commutative!). 
+Nilradical of a commutative ring: ideal of nilpotent elements. Radical of zero ideal. Sum of two nilpotents is nilpotent (binomial theorem), product of two nilpotents is nilpotent (commutative!). See the idea of ideals as absorbing element to become some sort of closed submodule. 
 
 Localisation: adjoining quotients to the ring defined by (x,s) related to (y,t) for (xt - ys)u = 0. Satisfying (x/s + y/t) = (xt + ys)/st, and x/s * y/t = xy/st. See Borcherd's video for two step proof, I forgot about it. It basically corresponds to zooming in on a variety. Need multiplicative subset S. Example: R integers, S to be nonzero integers (multiplicative subsets), you have R[S^-1] to be rational. Another example, R integers, S to be even integers, get localisation to be Z/2, therefore looks like localisation of a spectrum zooming in points other than (2) in Spec(Z).Another example, pick R = C[x], S all nonzero elements, then R[S^-1] is rational functions. pick S = {x} instead then R[S^-1] is Laurent polys.
 
@@ -1664,6 +1672,8 @@ Unipotent matrix: characteristic polynomial P(t) is power of t-1. Proof of defin
 Quasiunipotent: some power (r-1)^n is Unipotent. Classical example, diagonalisable matrix whose elements are roots of unity.
 
 Principal ideal domain: a domain which all ideals are principal.
+
+Z is a principal ideal domain: key step aq + r = b, but r must be zero since sums of ideals are in ideals. Consider I as ideal of Z, if I is zero ideal this is principal. Supposed nonzero ideal, let l be smallest positive element in I, existence by well ordering of integers, (l) = I, (l) is in I, since lr in I, r is integer, let b in I, use Euclidean so b = aq + r, so must be zero, b = aq, so (a) generates I for any ideal in Z.
 
 Principal ideals: ideals generated by one element
 
@@ -2057,7 +2067,9 @@ Schur's lemma: all ground field, irreducible representations are unique up to ho
 
 Schur's lemma (endomorphism ring): if a module is simple, then its endomorphism ring is a division ring.
 
-Converse to Schur's fails with endomorphism ring definition: Z-module Q is not simple, endomorphism ring is isomorphic to Q
+Converse to Schur's fails with endomorphism ring definition: Z-module Q is not simple, endomorphism ring is isomorphic to Q.
+
+Endomorphism ring examples: End(Z) gives Z, End(Q) gives Q, End(C_n) gives Z/n, End(Z^n) gives M_n(Z), End(Q^+/Z) = profinite completion of Z. So we have endomoprhism of cyclic group related to some Z/n, Cartesian product becomes matrix ring. This feels like representatives and categorical in flavour.
 
 Schur's lemma slogan: irreducible representation of group, if matrix "commutes" with all group members, it is basically the identity up to differing eigenvalues.
 
@@ -2587,7 +2599,7 @@ Higher inductive type. Motivation! Apply homotopy theory methods in logic. Most 
 
 Motives. Realisation from some nice category to explain other cohomology theories.
 
-Ring is an abelian group with a monoidal structure that interacts with the abelian group via the tensor product.
+Definition of a ring: (1) an abelian group with a monoidal structure that interacts with the abelian group via the tensor product; (2) Ab group + means associative, commutative, additive id, additive inverse, where Ab group *, associative, multiplicative identity, and distributive.
 
 Tensor product and smash product in spectra.
 

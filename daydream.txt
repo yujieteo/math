@@ -360,6 +360,10 @@ Oka's principle?
 
 Lax-Milgram theorem
 
+Ways to prove ring homomorphisms.
+
+Why is the reals are center of ring of quaternions. I guessed it.
+
 Counterexample that L^2 convergence not implying convergence.
 
 Cantor function differentiable almost everywhere to 0, but not absolutely continuous.
