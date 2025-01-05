@@ -1,5 +1,13 @@
 DAYDREAM (MATH)
 
+Integral extension?
+
+Baer-Specker?
+
+Do not understand simple example of power series ring being faithfully flat BUT NOT free.
+
+Base change of closed immersion stays closed immersion proof using locality.
+
 Reals constructed by Dedekind cuts, not very clear.
 
 Easy proof of connectedness of R?
