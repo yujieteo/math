@@ -1,3 +1,7 @@
+DAYDREAMS:
+
+Main examples in geometry from Richard Thomas: Spec and Proj. Affine and projective varieties and schemes. Complex manifolds and the Kähler condition. Levi-Civita and Chern connections. (GAGA?) Poincaré duality. Cohomology, differential forms, currents, de Rham theory, Thom isomorphism. Morse theory and the Witten complex. Vector bundles and Chern Classes. Classifying spaces, equivariant cohomology, localisation. Blowing up. Blow ups and blow downs. Symplectic blow ups. Topology. Line bundles and the minimal model programme. Kodaira embedding, bend and break. Toric varieties I. Polytopes and symplectic toric varieties.Toric varieties II. Givental's quotient construction, line bundles and divisors. Toric varieties III. Fans and algebro-geometric toric varieties. Koszul resolutions and Koszul duality. Hodge theory. The Weil conjectures. Cohomology, motives, point counting. Tropical curves. The ordinary double point. Vanishing cycles, symplectic geometry. The simple flop. Geometric Invariant theory. Symplectic reduction. Moment maps and the Kempf-Ness theorem. Stable bundles and simple bundles. Moduli spaces. Lefschetz pencils in algebraic and symplectic geometry. Mixed Hodge structures. Spectral sequences. Atiyah-Singer index theorem. Feynman path integrals. Higgs bundles. Deformation theory. Perhaps also virtual cycles.
+
 2 of 6 properties of composable triple of arrows? How does one understands this definition? For the class of weak equivalences.
 
 3 by 3 lemma?
