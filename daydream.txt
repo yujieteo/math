@@ -52,6 +52,12 @@ Levi-Civita and Chern connections.
 
 (GAGA?)
 
+Compare definitions of various fundamental groups. 
+
+Absolutely irreducible meaning?
+
+Feit Thompson theorem?
+
 Poincaré duality.
 
 Cohomology, differential forms, currents, de Rham theory, Thom isomorphism.

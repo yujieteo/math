@@ -1,5 +1,127 @@
 UNDERSTOOD
 
+Absolute Galois group: the following are equivalent: Galois group of the separable closure of field K, automorphism group of algebraic closure by inner automorphisms.
+
+Inner automorphisms: automorphisms given by conjugation action of fixed element: we have p_g be a map from finite group G to itself such that it is (1/g)xg or right conjugate.
+
+Absolute Galois group as an example of a profinite groups: this is isomorphic to the group of profinite integers or the inverse limit of the cyclic groups of order prime.
+
+Profinite integer: element of the ring of product of all cyclic groups of order prime.
+
+Profinite group as the set of sequence of residues, this is the sequence of v_i mod i.
+
+Universal property of the profinite group: any profinite group H, group homomorphism from  integra to H, then there is a unique continuous groups homomorphism from the profinite integers of H, profinite integers feel like free group in this case.
+
+Profinite integer representation: this is the sum of a_i i! Using factorial notation, so we have (…, c3 c2 c1)
+
+Profinite integer constructed from the Chinese remainder theorem: is the product of all cyclic groups equal to the inverse limit of cyclic groups due to the Chinese Remainder Theorem.
+
+Profinite integers topology: compact Hausdorff. Proof: closed subset of the infinite direct product using the Chinese Remainder Theorem. With this product topology, it is compact and Hausdorff.
+
+Metric on the profinite integers: reciprocal if the minimum positive integer such that z is not congruent of y modulo (k+1)!. Addition of profinite integers is continuous, so the profinite integers form a compact Hausdorff abelian topological group, its Pontrygain dual is discrete and abelian.
+
+Algebraic closure of a finite field: Galois group that is isomorphic to the cyclic group is the inverse limit of cyclic groups modulo n. So the Galois group of algebraic closure of finite field of q order quotiented out the same finite field of q order is the profinite integers.
+
+Example of Galois group of of finite field with prime power quotiented out by the same prime: this is isomorphic to the cyclic group of order prime.
+
+Etale fundamental group: profinite completion of automorphisms where Pi_1(X) is the direct limit of X_i / X, where X_I to X is an etale cover.
+
+Example of an etale fundamental group: profinite integers is isomorphic to the etale fundamental group of the spectrum of finite fields. Profinite integers are therefore embedded in an algebraic torus.
+
+Absolute Galois group of the reals: cyclic group of two elements, one is the identity, the other is the complex conjugate.
+
+Absolute Galois group of an algebraically closed field and of variable C[x] where C is a field: it is free of rank equal to the cardinalotu if C.
+
+Compact groups especially cyclic groups: they are used in the study of harmonic analysis by means of representation theory.
+
+Linear representations in Hilbert space: representation is isomorphic to Hilbert direct sum of unitary representations of finite dimension.
+
+Character table of a cyclic group: realised as rotation of 2 pi k/b about axis. Character of r is w, the character of r power is w power, so characters are that of exp(2 pi h k/n). This is an abelian group, since exponential add by multiplication.
+
+Character table of the cyclic group of infinite order: this is the group of rotations on the plane, represented with basis exp(ina) n integer and angle a, orthogonality resolutions give orthogonal basis of Fourier series. Delta_{nm} is 1/2pi * integral of exp(-ina) exp(ima)
+
+Character table of dihedral group of a plane of infinite order: rotations and reflections preserving the origin, contains the cyclic group of infinite order, let s be the reflection we have sr_a(1/s) = r_(-a). The dihedral group of infinite order. A then be written either as ra belonging to the cyclic group or not. This therefore looks like two disjoint circles in topological space. The invariant measure is (da)/4 pi. The average of integral of the Haar measure is the sum 1/4 pi integral of f(r) da from 0 to 2 pi of one circle, then that of f(sr) as well.
+
+Dihedral group of order n: these are rotations and reflections such that action r with n times is 1 (characteristic r), reflections are characteristic 2 i.e s^2 is identity, then inverses are conjugate i.e sr(1/s) is (1/r). Elements can either be r^k or sr^k.
+
+Residual class of dihedral group of order n: these are matrices [ exp(2 pi i h k/n, 0; 0, exp( -2 pi i h k/n)] for linear representations of r^k, the terms are flipped about the diagonal for the reflection.
+
+Prime field: unique minimal subfield of a field, it is isomorphic to an element of Spec(Z)
+
+Examples of characteristic: ordered fields like rationals, reals, complexes, algebraic number field are of characteristic zero, fields like finite fields or p-adic fields are of characteristic p.
+
+Ring homomorphism alternate definition: the following are equivalent we have (1) one homomorphism unique from integers to any ring; (2) morphism from initial object of integers to any ring.
+
+Structural theorem of semisimple algebra consequences: K[G] is a product of matrix algebras over skew fields of finite degree over K.
+
+Integral over integers: let R be a commutative ring, let x be an element in R, the element x is integral of Z if nonzero inters exist and coefficient integers of sequence a_1 to a_n such that the binomial expansion of x with coefficients is equal to 0 or simply solution of polynomial equal to 0 with coefficients integers
+
+Algebraic integer: complex number j reveal over the integers. Typical example is the root of unity.
+
+Algebraic integer over rationals are integers: if not rational than consider binomial expansion of (p+q)^n with p/q, q more than 1 as integer and p, q for prime, gives 0 so q divides powers of p, contradicting coprimality.
+
+Isotypic representation: direct sum of isomorphic irreducible representations.
+
+Semidirect product: G is a semidirect product of H by A where the following are equivalent (1) G is equal to A H; (2) intersection of A and H is trivial group; (3) each element of the G can be written uniquely as a product ah with a in A and h in H.
+
+Solvable group: the following are equivalent: (1) G is solvable if the filtration sequence from the trivial group is such that each group is normal to the next subgroup and the quotient group of the entry group by its previous entry normal subgroup is abelian.
+
+Supersolvable: solvable group requiring all members of the filtration be normal subgroups be normal and quotients of entry group by its previous entry be isomorphic to cyclic group.
+
+Nilpotent: supersolvable and additionally the following are equivalent (1) each quotient with its adjacent (G_i/G_{i-1}) in the filtration needs to be in the center of G/G_{i-1}, for integer i with at least inclusive 1 and at most inclusive n. Find Borcherds notes from Lie groups; (2) the group is obtained from the trivial group by a finite number of central extensions.
+
+Brauer theory: representations of finite groups in characteristic p with those in characteristic 0 are compared.
+
+Algebra over a field: let G be a finite group of order g, K be a commutative ring, K[G] be an algebra of G over K, basis indexed by elements of K. The functions f in the algebra over K, K[G] can ve written as linear combinations of the left coefficients in the field K, with group elements s such that it is the sum of a_s * s for element s in the group G.
+
+Center: element commuting with all other elements of a center.
+
+Center definition of an abelian group: an abelian is a group that is equal to its center.
+
+Basis of the center: for c in conjugacy class, let e_c be the union of all elements in each conjugacy class, then e_c forms basis of the ceneter, so the dimension of the center is the number of conjugacy classes (check this I think I might have made typos)
+
+Modular character or Brauer character: function from the set of p regular elements to the valuation ring A
+
+Artinian ring: the following are equivalent, decreasing sequence of left ideals is stationary; left A module has finite length; finitely generated left A modular finite length.
+
+Example of Artinian ring: algebra of finite dimension over a field K is Artinian, K[G] for finite group.
+
+Grothendieck group: we have a ring A, F be the be the category of left A modules, the Grothendieck group of the category F is an abelian group with generators for each left A module and relations [E] = [E’] + [E’’] associated with exact sequences such that 0 is to E is to E’ is to E’’ is to 0.
+
+Projective module: the following are equivalent: (1) free module in which P is a direct factor; (2) surjective homomorphism f from E to E’ of left A modules, every hom g’ from P to E’ such that there exist a lift g from P to E where g’ equals to f g; (3) the functor from category E to hom sets of projective modules Hom_A(P, E) is an exact functor for E a left A module.
+
+Discrete valuation of a field K, K be multiplicative group, it is a surjective field homomorphism such that v(x + y) is more than or equal to least upper bound of valuation of x and valuation of y. Then when the valuation is extended to the field, the valuation of 0 is infinity,
+
+Completeness of topology with respect to topology defined by powers of m: the canonical map from the valuation to the projective limit A/m^n is an isomorphism. See algebraic closure.
+
+Characteristic of a field: smallest positive integer such that the sum of 1s with this many integers is 0, if it exists. If it does not exist, then it is 0.
+
+Forgetful functor from G-modules to real Lie group; left and right adjoint are called Casselman and Wallace globalisation functors.
+
+Frobenius reciprocity: generalisation of quadratic reciprocity, restriction of representation do adjoint (right adjoint) to induction on representation
+
+Induction: the following are equivalent: (1) consider subgroup H of group G, R is a system of left coset representatives of subgroup H. Let V be a complex G group C[G] module, and W be the corresponding submodule using subgroup H. The module V or the representation V is induced by G if V is the direct sum of sW for left coset representatives of S in R or V is a direct sum of images sW; (2) W is tensor product of C[G] and W over the C[H] module, be the C[G] module obtained from W by a scalar extension from C[H] to C[G], injection W to V extends by linearity to a C[G] homomorphism, i from W’ to V.
+
+Group elements congruent modulo subgroup: these belong to the same left coset.
+
+Artin’s theorem motivation: character in group G is. A linear combination with rational coefficients of representations induced by the direct sum from cyclic subgroup.
+
+Brauer’s theorem as a generalisation of Artin’s theorem: character in the group G is a linear combination with integral (formable into polynomial as linear combination) coefficients of characters of representations induced from the elementary groups of G.
+
+Brauer’s theorem and elementary groups: motivates the definition of elementary groups, these are groups that generalise Artin’s theorem from cyclic subgroup.
+
+Mackey’s criterion motivation: tells us when an induced representation is irreducible
+
+Frobenius reciprocity as a formula: it is a formula relating the class function induced on a subgroup and its restriction calculated on the full group.
+
+Group product vs semidirect product: group product  form pairs, but semi product forms uniquely from each product of elements s in G and t in H given that their intersection is the trivial group.
+
+Induced function: the class function on H where you take the average of conjugates or integral of Haar measure where the main element is in the full group and the conjugate is in the subgroup. We say that the I function is induced by F for the group G, subgroup H. This is OK since class functions are constant on members of conjugacy classes
+
+Properties of induced representation: (1) exists and unique; (2) canonical isomorphism from Hom sets between Hom^H(W, E) and Hom^G(V, E), induction is transitive from associativity of the tensor product.
+
+Frobenius theorem: the semidirect product of the Frobenius kernel and the Frobenius complement is the full Frobenius group
+
 Algebraic scheme over a field K: (1) scheme X and morphism of finite type from scheme X to prime spectrum of a field Spec(K); (2) scheme X has a finite covering by affine opens with coordinate rings as finitely generated K-algebras. Coordinate ring of affine open U may be denoted A(U).
 
 Morphism of finite type in schemes: morphism f of schemes X to Y has covering of affine open subschemes V_i = Spec(A_i) such that preimages V_i has a FINITE covering by affine open subschemes U_{ij} = Spec(B_{ij}) of X with B_{ij} an A_i algebra of finite type.
