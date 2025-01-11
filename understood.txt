@@ -1,5 +1,15 @@
 UNDERSTOOD
 
+Subfield of C is an extension of Q: since nontrivial subring is char 0, must contain integers, so extension of rationals
+
+Irreducible components: connected components of sufficiently small dense opens?
+
+Reduced: no nilpotents
+
+Irreducible: no zero divisors that are not nilpotents
+
+Sheaf of functions: varieties with no nilpotents
+
 Absolute Galois group: the following are equivalent: Galois group of the separable closure of field K, automorphism group of algebraic closure by inner automorphisms.
 
 Inner automorphisms: automorphisms given by conjugation action of fixed element: we have p_g be a map from finite group G to itself such that it is (1/g)xg or right conjugate.
