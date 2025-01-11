@@ -52,6 +52,117 @@ Levi-Civita and Chern connections.
 
 (GAGA?)
 
+Minimal primes: codimension 0 (why?)
+
+Frobenius theorem on real division algebras?
+
+Make this make sense: pushforwards are nice on sections bad on stalks, pullbacks are nice on stalks bad on sections
+
+Distribution theory as sheaf?
+
+https://math.stackexchange.com/questions/313940/cohomology-with-coefficients-in-the-sheaf-of-distributions
+
+Extension of scalars?
+
+Pushforward and inverse image of sheaves as adjoints?
+
+How to prove that Reg(X) is open for reduced k-schemes locally of finite type, but things like J-2 rings arose and you simply can't find a unified reference that does all of this in a linear way. Qing Liu's book has some of this but I didn't really like the treatment.
+
+If X and Y are smooth projective varieties and F a sheaf on X, do we have something like H^p(X x Y, pr\_1^\* F) = H^p(X,F) \otimes H^0(Y,O\_Y)? Yes, but need flat to prove by induction on affines that cover X, use pushforward?
+
+Closed map lemma?
+
+Cell complex as quotient space of disjoint union of cells
+
+https://terrytao.wordpress.com/2010/10/21/245a-problem-solving-strategies/
+
+Bona Turner Tao Combinatorics
+
+Codensity theorem?
+
+Ambient homotopy theory?
+
+Linear map lemma in Axler, try using a proof from the integers
+
+Modules over group ring
+
+Index notation example size or orbit is [N: stabiliser]??
+
+As it stands, it looks like you're proving that every completely simple semigroup (with an idempotent) has a unique idempotent. This is not true, as otherwise every finite completely simple semigroup is a group (take the direct product of a non-trivial rectangular band and a group as a counter example). To make it more clear, the definition of a primitive idempotent needs updating. Let $E$ be the set of idempotents of a semigroup $S$ without zero. Then $\prec$, defined by $e \prec f$ if $ef = fe = e$ for $e,f \in E$, is a partial ordering of $E$. An idempotent is primitive if it minimal under this partial ordering. In other words, the idempotent $e$ is primitive if for all $f \in E$ we have $ef = fe = f \implies e = f$. Then the calculation you did shows that every idempotent is primitive.
+
+Frattini subgroup?
+
+Imagine you have a scalar valued continuous functions defined on an open cover of a topological space And that all the functions agree on intersections  Then you can glue all these functions to give a continuous global scalar valued function 
+This is the idea of gluing?
+
+s_P is an element of the stalk F_P, which by definition is an equivalence class of sections over neighborhoods of P. s(P) is a section in F(V_P), where V_P is some open neighborhood of P, representing s_P
+
+I'm not sure where to ask this but can someone explain to me the definition of a symplectic lattice?  Is the period lattice of a riemann surface an example?
+
+Tor functor does not detect torsion
+
+Torsion subgroup
+
+Combinatorial Set Theory by Halbeisen
+
+https://terrytao.wordpress.com/2009/10/19/grothendiecks-definition-of-a-group/ A group is identifiable with a (set-valued) sheaf on the category of simplicial complexes such that the morphisms associated to collapses…
+
+Galois group
+
+Chain of closed irreducibles corresponds (locally, dually) to a chain of primes. so a minimal prime (i.e. has no proper prime 'subideals') corresponds to a maximal closed irreducible set a.k.a. an irreducible component
+
+Polarisation is an I sogeny to the dual abelian variety, and a principal polarization is a polarization which is an isomorphism?
+
+Hermitian pairing
+
+Euler product?
+
+Spanier Whitehead category
+
+Prism map?
+
+Blakers Massey
+
+Cellular spectra? General spectra?
+
+Lebsegue measure as interval coverings?
+
+Exterior domain
+
+Polish space
+
+“Closed category” with any monoidal product, like the hom-tensor adjunction, so cartesian there definitely refers to the cartesian product structure on C as opposed to a tensor product.
+
+"Cartesian fibration" is named because of the existence of cartesian lifts for morphisms, which are named that because the paradigmatic example of a cartesian fibration is the codomain functor C^{\to} -> C for a category C that has all pullbacks (i.e. the existence of Cartesian squares.)
+
+Referring to pullbacks as Cartesian squares is a bit more questionable than referring to Cartesian products, but you can justify it on the grounds that a Cartesian square is just a Cartesian product that lives in a slice category, products are pretty close to pullbacks in the grand scheme of things as they're both fundamental kinds of limits
+
+Descartes did not just describe the plane as the product of a line with itself, he basically invented analytic algebraic geometry, which is the study of polynomial curves in n-dimensional affine k-space - which are exactly the equalizers of polynomial functions k^n -> k. So we are justified in naming both products and equalizers after Descartes, thus the term "Cartesian category" for a category with products and equalizers.
+
+For curves the arithmetic and geometric genus are defined by finding a replacement smooth curve and taking its genus. For the geometric genus: the normalization. For the arithmetic genus: the deformation to smoothness. For higher dimensional compete varieties, the geometric genus is again defined by normalization, but the normalization isn’t smooth. The geometric genus is h^0,n, while you propose h^0,1. h^0,n is better because it is birationally invariant.
+
+The **definition** of birationally equivalent is that there is are open dense subset that are isomorphic
+
+Show equivalence of definitions: variety is irreducible iff every dense open subset is connected iff every sufficiently small open dense subset. Sufficiently small dense opens are a birational invariant
+
+Example of  "affine basis" of the plane z=1 in R3? I'm curious if there is an element of this basis that corresponds to the origin. Is <1,0,1>,<0,1,1>, <0,0,1> an affine basis? A set is an affine basis of when you translate it so that one element  is the origin, the rest forms a basis
+
+Prove rings are unital, then every left artinian ring is also left Noetherian, so you have both ACC and DCC
+
+component of a point x from X is a union of all connected subsets of  X that contain x
+
+Wirtinger presentation
+
+Orientability table
+
+Open cover of trivialisation
+
+Cofinal has nothing to do with categorical duality
+
+Convex hull
+
+Integral over as element vs integral over as field? If K is integral over F (K,F are fields) then thats the same as saying K is algebraic over F right?
+
 Compare definitions of various fundamental groups. 
 
 Absolutely irreducible meaning?
