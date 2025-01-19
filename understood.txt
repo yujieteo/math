@@ -1,5 +1,53 @@
 UNDERSTOOD
 
+Row reduction and Yoneda lemma: row reduction of matrices with k rows is natural (natural transformation where morphisms are matrices) is multiplication by that operation on the k by k identity matrix. So one can replace natural transformations between matrices in row reductions, with an appropriate matrix to multiply with, by applying that operation on the identity matrix, then multiply using that. Trick: understand that natural transformations of morphisms correspond to a morphism itself. Note that for matrices, you don't need a hom-set, you can get away with a single matrix I think need to check. Not true for arbitrary categories.
+
+Consequence of Yoneda's lemma on row operations: requirement that it must be elementary row operations, these are the natural transformations between matrices i.e. swapping two columns, multiplication by scalar, scalar multiples of one column to another are invertible since corresponding elementary matrices are invertible. Non-example includes appending a column to 1s. Applying this to identity matrix fails, then right multiplication defines different column operation, this is because this is not an elementary row operation, fails invertibility. 
+
+Group acting via automorphisms: group A acts on B via automorphisms if there exist a left group action * from the product group A x B to B such that a * (b x_B c) = (a * b) x_B (a * c). 
+
+Euler's identity of Riemann zeta function: decompose into infinite product of 1/(1 - p^s), p prime. Now interpret it as independent events.
+
+Cauchy functional equations: stuff that decomposes f(a + b) to f(a) + f(b).
+
+Fredholm theory: g(x) is integral from a to b K(x, y) f(x) where Lg(x) = f(x), L is a linear differential theorem.
+
+Mantell's theorem: for N vertex graph, max edge without forming triangles is n^2/4. Extremal example is complete bipartite graph. This is the fundamental example of extremal combinatorics.
+
+Turan's theorem: generalises Mantell's theorem.
+
+Uniformisation theorem: 2D surface can be either spherical, flat, hyperbolic. Simply connected Riemann surfaces must have one of these three geometries.
+
+Borsuk-Ulam's theorem: sphere crushed into a plane, two points must be the same. This is a fixed point theorem.
+
+Leibniz's formula: looks like the sum of binomial terms of a partial derivative operator.
+
+Unique factorisation: fix by adding ideal numbers, sets of numbers to get unique factorisation. Replace ideal of 2 with even numbers, so for the integer ring modulo 2 it is just (0, 1), so you have unique factorisation. This becomes the ideal (2) the goal is to get unique factorisation.
+
+Principal value of the integral: limit as epsilon tends to 0 of the region excluding the small center of epsilon ball radius of p(x) / (x-c).
+
+Hilbert transform: statement on the cyclic group of order 4 on the unit circle, example hilbert transform of cosine is sin x, and hilbert transform of sine is cosine. Differentiation works like Hilbert transforms.
+
+Finding mollifiers that meet a constraint: the trick is to find the roots you want the equation, example: degree 6 poly such that first second and third derivatives are zero and bounded on [-1, 1], find the roots that meet this, then take product of (x - pole/zero) that meets these criteria.
+
+Integral inner product: for reals, this is the integral of a product of functions f and g, for complex, you will need to take the product of f and the complex conjugate of g.
+
+Function translated by y: this is the rule T_y (f) = f(x - y), useful for defining convolutions.
+
+Convolutions: integral of sensitivity p(x) multiplied by the function translated by y T_y(f) = f(x - y). These are an integral inner product.
+
+Convolutions when differentiated: suppose f is merely continuous but not differentiable. Then we have the derivative of the convolution of the signal f and the averaging function phi ass imply the convolution of the signal and the derivative of the averaging or sensitivity function, where the integral of the sensitivity function is 1 aka normalised. See book on distribution theory for more details:
+
+Sensitivity of the convolution: define sensitivity of a function to be pe(x) = p(x/e)/e, take the limit as e tends to 0.
+
+Mollifier: mapping from f to the convolution of f and pe(x), where sensitivity of a function to be pe(x) = p(x/e)/e, take the limit as e tends to 0.
+
+Summary of Grothendieck's work on affine varieties: start with duality between classical affine varieties and nilpotent free finitely generated algebras over a field. Recall that an algebra over a field has, G be a finite group of order g, K be a commutative ring, K[G] be an algebra of G over K, basis indexed by elements of K. Now, drop as many assumptions (nilpotents exists, finitely generated, field?) to get schemes. The idea is to start with some duality, drop as many assumptions as you can, and see how much duality will hold.
+
+Degenerations: local model gives nilpotents over a ring, these are called degenerations.
+
+Topological vector space of compactly supported test functions: motivation is distributions, these are locally convex (convex gives valid distance measures), and complete with respect to uniformity. This is also an example of an inductive limit of Frechet spaces. 
+
 Integers to rationals: take fraction field of integers to form rationals, this is what we call adding units or localisation at 0 (consider Spec Z)
 
 Rationals to reals: go from the rational numbers to the real numbers by adding all limits, several constructions available like Dedekind cuts.
@@ -94,7 +142,7 @@ Nilpotent: supersolvable and additionally the following are equivalent (1) each 
 
 Brauer theory: representations of finite groups in characteristic p with those in characteristic 0 are compared.
 
-Algebra over a field: let G be a finite group of order g, K be a commutative ring, K[G] be an algebra of G over K, basis indexed by elements of K. The functions f in the algebra over K, K[G] can ve written as linear combinations of the left coefficients in the field K, with group elements s such that it is the sum of a_s * s for element s in the group G.
+Algebra over a field: let G be a finite group of order g, K be a commutative ring, K[G] be an algebra of G over K, basis indexed by elements of K. The functions f in the algebra over K, K[G] can be written as linear combinations of the left coefficients in the field K, with group elements s such that it is the sum of a_s * s for element s in the group G.
 
 Center: element commuting with all other elements of a center.
 
@@ -622,7 +670,7 @@ History of ideals in lattice and ideals in ring: coincide in Boolean lattices us
 
 Liouville's theorem for hamiltonian mechanics: (1) phase space distribution function evolves with time and is constant along trajectories. Valid for no friction, with no chemical reactions. Defines measure preserving systems  You can prove the fluctuation theorem (what is this), then derive the second law of thermodynmics.
 
-Liouville's theorem for classification of holomorphic function: (1, Gelfand/Manin) the family of holomorphic functions with domain of the Riemann sphere and sheaf of holomorphic functions on it consists of constant functions only; (2) every bounded entire function must be constant, i.e. for every holomorphic function f, whivh exists a positive M such that |f(z)| <= M for all complex z is constant.
+Liouville's theorem for classification of holomorphic functions: (1, Gelfand/Manin) the family of holomorphic functions with domain of the Riemann sphere and sheaf of holomorphic functions on it consists of constant functions only; (2) every bounded entire function must be constant, i.e. for every holomorphic function f, whivh exists a positive M such that |f(z)| <= M for all complex z is constant.
 
 Picard's little theorem: (1) every entire function whose image omits two or more complex numbers must be constant.
 
@@ -1392,6 +1440,8 @@ Finite dimensional normed vector space is complete: isometrically isomorphic to 
 Compactness of subsets of finite dimensional normed vector space is equivalent to closed and boundedness: forward: closure and boundedness is preserved under equivalent norms, identity map on equivalent norms is continuous, so it is really just a statement on how closure and boundedness is equivalent to compactness in topology.
 
 All norms are equivalent on finite dimensional vector space: harder than K^n since you need to construct a norm on V. First construct Euclidean norm on components of the basis of V, then apply that K^n with l^2 norm is isometrically isomorphic to this norm. So it is sufficient to prove norms being equivalent on K^n since equivalence of norms is equivalence relation. Now use the triangle inequality and the Cauchy-Schwarz inequality (see Robinson) to show norm(x) <= C norm_E(x) and some details attaining lower bound, considering unit spherical shell in K^n as closed and bounded subset of K^n and is compact to show norm(x) >= alpha norm_E(x). It just seems like there are a lot of details for this proof, hard to keep it in your head.
+
+Cauchy-Schwarz generalised: this just states that the L1 norm is less than the L2 norm i.e. |f(x + y)|^2 <=  |f(x) + f(y)|^2, f in this case can be a norm, visualisations, diamond for L1 norm, circle for L2 norm, big square or maximal square for L infinity norm. This is so useful since every inner product gives rise to an Euclidean l2 norm, called the canonical or induced norm. Take square root on both sides give triangle inequality.
 
 Contraction mapping theorem (Banach fixed point theorem): suppose non-empty CLOSED subset K of a completed normed space X with norm norm(x), let f: K -> K be a contraction a endomorphism which norm(f(x) - f(y)) <= k norm((x - y)), for k < 1, then f has a fixed point in the subset k, there exist a unique point where f(x) = x. NOTE: for k <= 1, you need compactness of K. Proof involves constructing a Cauchy sequence bounded by repeatedly using this inequality on terms of the convergent subsequence, then use X being Banach space, K closed, so this limit must be in this set K. Note that such a contraction is CONTINOUS by definition (preimage of opens is in K), we have that function of convergent f(x_n) -> f(x) this is nice since function is continuous, you have the limit of this subsequence x to be equal to f(x) of the contraction, so this is a fixed point. Uniqueness follows by considering norms norm(x - y) = norm(f(x) - f(y)) <= (k) norm(x - y). So we have (1 - k) norm(x - y) = 0 using the fact that k is less than 1, and norm(x - y) is nonnegative. Therefore, x = y.
 

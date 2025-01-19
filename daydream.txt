@@ -42,6 +42,26 @@ Poincare duality and cohomology phenomena (1) simplicial homology; fundamental g
 
 Spec and Proj phenomena: (1) algebraically closed; (2) duality of space and ring; (3) Gelfand-Naimak classification of C* algebras, C* algebra associated to Hausdorff compact topological space get spectrum of C* algebra exercise to forget C(X) and get complexification of X; (4) finitely generated unital commutative algebras over C corresponding to affine varieties using Hilbert's basis theorem; (5) show case these phenomena: coordinate rings, localisations to fields, bijection between radical ideals and affine varieties, contravariant equivalence between affine varieties and category of finitely generated reduced algebra without nilopotent elements, quotient is reduced if I is radical, nullstellensatz; (6) C^{n+1} remove {0} over C*, use Hermitian on C^{n+1}, get projective space, homogenous ideals, projective varieties, homogenous spectrum, rewritie dualities of Spec and Proj, degree genus formula, Zariski topology, coordinates as linear functionals.
 
+Frechet spaces?
+
+Schwartz notations?
+
+Number ring?
+
+Gorenstein ring?`
+
+Support of function, closure, test function, analytic vs compact support and infinitely differentiable, constructing new test functions.
+
+Nerve theorem?
+
+Partition of unity definition does not make sense to me?
+
+Matrix mortality problem: undecidable for 3 x 3 in 1970s.
+
+Poincare-Hopf index theorem?
+
+Combinatorial characters? Perfect matching? Pleytheism? Polynomial functors? Frobenius character of a permutation action?
+
 Spec and Proj.
 
 del Pezzo surface?
