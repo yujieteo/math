@@ -142,7 +142,7 @@ Induced function: the class function on H where you take the average of conjugat
 
 Properties of induced representation: (1) exists and unique; (2) canonical isomorphism from Hom sets between Hom^H(W, E) and Hom^G(V, E), induction is transitive from associativity of the tensor product.
 
-Frobenius theorem: the semidirect product of the Frobenius kernel and the Frobenius complement is the full Frobenius group
+Frobenius theorem: the semidirect product of the Frobenius kernel and the Frobenius complement is the full Frobenius group. Exercise in Serre. Each linear representation of subgroup H extends to a lienar representation ofG whose kernel is N, the set of elements of G which are not conjugate to any element in N. Therefore N union {1} identity element is normal subgroup in G.
 
 Algebraic scheme over a field K: (1) scheme X and morphism of finite type from scheme X to prime spectrum of a field Spec(K); (2) scheme X has a finite covering by affine opens with coordinate rings as finitely generated K-algebras. Coordinate ring of affine open U may be denoted A(U).
 

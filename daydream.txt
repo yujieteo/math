@@ -64,6 +64,8 @@ Cluster algebra
 
 Weak derivative
 
+What is the best way to write down Frobenius reciprocity in terms of dtensor products, resolutions and induced representations?
+
 Proj is to Spec as projective varieties are to affine varieties. To elaborate on this, just as Spec takes a ring and gives you an affine scheme by putting a structure sheaf on the space of prime ideals with the Zariski topology, Proj takes a graded ring and gives you a (general) scheme by putting a structure sheaf on the space of homogeneous prime ideals with the Zariski topology. I'm leaving out some details, but you said you wanted an "intuitive" understanding.
 
 Zariski topological group, TFAE: G with the Zariski topology is a topological group, G is finite.
