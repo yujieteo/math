@@ -1,5 +1,17 @@
 UNDERSTOOD
 
+Integers to rationals: take fraction field of integers to form rationals, this is what we call adding units or localisation at 0 (consider Spec Z)
+
+Rationals to reals: go from the rational numbers to the real numbers by adding all limits, several constructions available like Dedekind cuts.
+
+Dedekind completion: only completes a field, Dedekind completion fails on merely a poset.
+
+Dedekind completion as a completion: this is a completion from a poset to a lattice
+
+Fraction field completion: completes by filling in gaps where there should be a fraction.
+
+Locality: holds on the space if it holds for some open cover, what about local if we use etale maps?
+
 Subfield of C is an extension of Q: since nontrivial subring is char 0, must contain integers, so extension of rationals
 
 Irreducible components: connected components of sufficiently small dense opens?

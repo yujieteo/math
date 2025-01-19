@@ -44,6 +44,59 @@ Spec and Proj phenomena: (1) algebraically closed; (2) duality of space and ring
 
 Spec and Proj.
 
+del Pezzo surface?
+
+rational conic bundles?
+
+algebraic K theory
+
+Motivic cohomology
+
+Higher chow groups
+
+Elliptic parabolic regularity theory?
+
+Lenstras definition of Euclidean domain
+
+Smooth, piecewise linear, and topological manifolds compare and contrast
+
+Cluster algebra
+
+Weak derivative
+
+Proj is to Spec as projective varieties are to affine varieties. To elaborate on this, just as Spec takes a ring and gives you an affine scheme by putting a structure sheaf on the space of prime ideals with the Zariski topology, Proj takes a graded ring and gives you a (general) scheme by putting a structure sheaf on the space of homogeneous prime ideals with the Zariski topology. I'm leaving out some details, but you said you wanted an "intuitive" understanding.
+
+Zariski topological group, TFAE: G with the Zariski topology is a topological group, G is finite.
+
+Complex character of finite group is Q linear combination induced from cyclic subgroup? What does this mean?
+
+Cardinality with element g, h in G with coprime cardinality such that card gh = card g * card h, iff G is nilpotent. Baumslag Wiegold 2014???
+
+Over ZF, ultra filter lemma is equivalent to maps from X to Sierpinski two point set with product topology is compact . Make this make sense?
+
+Over ZF: The ultrafilter lemma implies that a countable union of finite sets is always countable. Interesting, I didn’t know we need to make this assumption. It also implies that every countable family of non-empty finite sets has a choice function, which is equivalent to Kónig's lemma. Make this make sense?
+
+Ring with Jacobson radical (Gupta-Khurana-Khurana-Lam 2009): TFAE, transpose of every invertible square matrix over R is invertible; R/rad(R) is commutative
+
+Birkhoff Kakurani theorem: topological group TFAE: G is first countable and Hausdorff; G is metrizable
+
+D be category, object is space of distinct closed base point and base point preserving map. Theorem by Freyd is that Terminal object is [0,1].
+
+For monoid: TFAE: pullback of triple cross to double cross to single cross; G is a group.
+
+Gupta 1970, over every division ring D, not a field, there is an invertible size 2 square matrix whose transpose is not nilpotent
+
+Let R be a ring. Writing Tr for the trace of a matrix, TFAE: (1) Whenever A,B,C are square matrices of the same size over R, we have Tr(ABC) = Tr(CB).
+(2) R is the zero ring.
+
+Exactly 9 model category structure in set?
+
+Combinatorial species?
+
+Partial retrospective, like taking a partial derivative looking to the future
+
+Probe the upper bound, averages don’t matter
+
 Affine and projective varieties and schemes.
 
 Complex manifolds and the Kähler condition.
