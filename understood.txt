@@ -1,6 +1,36 @@
 UNDERSTOOD
 
-Coverings as special case of etale space: coverings are local homeomorphisms, so it is a special kind of etale space. However, not all local homemorphisms are coverings, mainly failing at either one of two conditions: not homeomorphic to trivial fibre bundle (Cartesian product may fail) or failing because discretisation does not exist (no fully faithful left adjoint exists).
+Opposite category in the generalisation of presheaves: you want sections to exist, so instead of consider morphisms g * f, asserting g exist knowing f, you want to consider f * g, g exists such that fg identify as an object (setions exist), f becomes a morphism instead of an object. A normal category will use g * f, if f exists then g exists, opposite category will have f * g, f exists, then g exists.
+
+Fundamental group: quotient space of paths under homotopy as equivalence relation.
+
+Representable functors: a functor C to Set if it is naturally isomorphic to Hom(A, -) for some object A of C, feels like instead of using linear maps as linear representations, we require it to be naturally isomorphic to some hom-set within the category itself. So the functor to Set for set like properties can be identified with a hom-set inside the category C itself. Compare this with linear representations from group G to GL(V), we have representation which is from Hom(A, -) to functor F as natural isomorphism. Hom(A, -) can be thought of as the group, functors F can be though of general linear group GL(V). Presheaves are special since they are the DUAL notion of this, they go the other way round i.e. a presheaf is representable if it is naturally isomorphic to contravariant Hom(-, A) i.e. these hom-sets represent the sections itself. This is very useful, recycle stuff about facts in Set to hom-sets within a category.
+
+Representation theory as maps between object to its algebra: (1) representation of discrete groups, modules over group ring i.e. G -> GL(V), G is discrete group or group ring, GL(V) where general linear group is like endomorphisms on vector space; (2) representation of ring, ring action on abelian group i.e. R -> End(M), endomorphisms on M as R-module, where R is ring, M is abelian group; (3) representable functors, consider object A view as functor B -> Hom(A, B), now objects A, B feels like a vector space or field, and Hom feel endomorphisms, these are called the algebra. The general pattern is that a representation is a map from some object X to some algebra on another object End(Y). This feels like Tannaka duality.
+
+Dualities: (1) there is concrete duality with dualising object i.e. representable stuff, examples are like Tannaka duality, Pontrayagin duality so "representation theory" applies; (2) adjoints, very loose form of duality, lots of examples like limits/colimits, exist/unique; (3) axiomatic duality, logic is preserve by object is changed example domain/codomain, points and lines, meets and joins.
+
+Yoneda's lemma and representation theory: simply says that natural transformations are represented by the homset of homsets from objects to functors i.e. Nat(h_A, F) is represented by Hom(Hom(A, -), F), for object A in category C, F any functor. So natural transformations are always representable by the algebra of hom-sets under any functor from (LOCALLY SMALL) category from C to Set, locally small means set's worth of arrows locally, no monkey business with large cardinalities.
+
+Existence of adjoint if representable functors exist: G be functor from D to C, X be object in C, G has left adjoint F if Hom_C(X, G-) is representable (by this left adjoint), the natural isomorphism gives the adjunction i.e. Hom_D(FX, Y) -> Hom_C(X, GY) is natural isomorphism.
+
+Example of representable functors: forgetful functors are very representable. Example, forgetful functor of group to set is represented by free object over singleton generator (Z, 1). Forgetful functor of ring is represented by free object over singleton generator (Z[x], x), forgetful functor of Vect to Set is represented by free object over singleton generator (Reals, 1). Better examples, representation of hom functor is limit, representation of product of hom functors is pair of projection maps, classifying space is representing object of presheaf (functor) of GBund from homotopy categoryh Ho_{Top}^{op} to Set.
+
+Analogy with Riesz representation theorem and representable functors: F be linear functional in complex Hilbert space H, if F is continuous then there exists unique a in complex Hilbert space H it is equal to inner product functional <a, -> where F(v) = <a, v>. Example: continuous linear functions on square integrable functions are representable by integral inner product integrate a(x) v(x). Example: general continuous functionals are representable by test functions, this is distribution theory.
+
+Flat vector bundle: vector bundle with locally constant transition functions.
+
+Locally constant sheaves correspond to representations of the fundamental group: see also https://mathoverflow.net/questions/17786/why-are-local-systems-and-representations-of-the-fundamental-group-equivalent, COVERING SPACES are thought of as locally constant sheaves. Spanier gives an example. Consider a manifold, let X^ to X be its universal cover. Consider representations from fundamental group Pi_1(X) to GL(V), form sheaf of sections of the bundle (X^ cross V) quotiented out by the fundamental group Pi_1(X), explicitly these are sections such that continuous functions such that for continuous f: U^ to V such that f(gx) = p(g) f(x) for g in fundamental group. Notice that the representation is clearly a section gives identity on V given p as representation. Therefore, representations of fundamental groups (think of representations as maps now) are equivalent to the sheaf (presheaves are a way to ensure maps exist by considering suitabe sections) of sections of the bundle of universal covering space cross vector space quotiented out by fundamental group.
+
+Locally constant sheaves, local systems: open neighbourhood U of x exist (locality), such that sheaf given by F|U (sections exist, with nice restrictions, glueing, local uniqueness or separation) is a constant sheaf. These are bundles.
+
+Example of explicit isomorphism of fundamental groups: see Kuga's Galois's dream, integral of 1/{2 pi i} dz/(z-a), a is some pole looks like windings over integers and is an isomorphism. So fundamental group of punctured complex plane is the integers. The complex plane is the universal covering space itself, the cover is the exponential map.
+
+Cardinality of number of sets: 2^m, proof is by considering permutations of yes and no.
+
+Retracts, projections, and idempotents: retracts are topological, projections are analytical, idempotents are algebraic.
+
+Coverings as special case of etale space: coverings are local homeomorphisms, so it is a special kind of etale space. However, not all local homeomorphisms are coverings, mainly failing at either one of two conditions: not homeomorphic to trivial fibre bundle (Cartesian product may fail) or failing because discretisation does not exist (no fully faithful left adjoint exists).
 
 Discrete space: classical example is discrete topological space, every subset is open. Discrete space is object of concrete (no screwy stuff) category that is free on its underlying set, i.e. for forgetful functor from concrete category Sp to category of Set, has a fully faithful left adjoint called the free functor. Codiscrete means right adjoint. True for category of topological space, not true for category of metric space (no free object exist).
 
@@ -32,7 +62,7 @@ Free product of groups as concatenation: coproduction since you concatenate sets
 
 Homotopy as an equivalence relation: same initial point and terminal point, so transitivity is confirmed. 
 
-Homotopy class: take W(D; O) is set of closed curves in surface D with O as initial and terminal point. Take quotient on equivalence relation of homotopy this is the definition of homotopy class.
+Homotopy class: take W(D; O) is set of closed curves (start and end points coincide) in surface D with O as initial and terminal point. Take quotient on equivalence relation of homotopy this is the definition of homotopy class.
 
 Nullhomotopic: consider W(D; O), you can deform to point O, so it is nullhomotopic.
 
@@ -540,7 +570,7 @@ Exact sequences of A-modules are exact on tensor products: proof from Qing Liu, 
 
 Canonical isomorphism of (N *_A M)/(Im i_M) is isomorphic to (N/N') *_A M for N, M A-modules, N' submodule: proof is to apply exact sequence of A-modules exact on tensor products on exact sequence N' -> N -> (N/N') -> 0, pick N = A or ring, and N' = I or ideal using the fact that tnesor product of A-module M with A isomorphic to ring A-module M.
 
-Projective module as locally free: projective modules are "locally free", such that localisation at every prime ideal is free over the corresponding localisation of the ring (with basis vectors). Similarly, vector bundles are locally free since projective modules (over certain commutative rings) are analogues of vector bundles.
+Projective module as locally free: projective modules are "locally free", such that localisation at every prime ideal is free over the corresponding localisation of the ring (with basis vectors). Similarly, vector bundles are locally free (hint, think of free group as alphabet and vector spaces) since projective modules (over certain commutative rings) are analogues of vector bundles.
 
 Properties of projective modules: e = e^2 is idempotent in ring R, Re is projective left module over R.
 
@@ -586,9 +616,9 @@ Presentation of dihedral group of order 8, free group of rotations of order 8 ca
 
 Free group: a group whose presentation has relators only.
 
-Universal property of free group: any map f of sets (called the generating set of the free group) into a group, there is a unique group homomorphism p from the free group into the set such that the composition of the inclusion i of the set into the free group and group homomorphism p is f, this means f = p * i. Proof feels like Cayley’s theorem. The idea is that this unique group homomorphism is enough to work with and for all intents and purposes, replaces the group. So the group is replaced by a unique arrow from the free group into it.
+Universal property of free group: any map f of sets (called the generating set of the free group) into a group, there is a unique group homomorphism p from the free group into the set such that the composition of the inclusion i of the set into the free group and group homomorphism p is f, this means f = p * i. Proof feels like Cayley’s theorem / Yoneda. The idea is that this unique group homomorphism is enough to work with and for all intents and purposes, replaces the group. So the group is replaced by a unique arrow from the free group into it.
 
-Construction of free group: from universal property, we see this is left adjoint to the forgetful functor from the category of set to the category of groupsy, that forgets the group property forming its generating set.
+Construction of free group: from universal property, we see this is left adjoint to the forgetful functor from the category of set to the category of groups, that forgets the group property forming its generating set.
 
 Finite support: finite number of values in domain whose image is nonzero in value 
 
@@ -2381,9 +2411,9 @@ Retractions vs sections: let f be a map from A to B, a retraction r from B to A,
 
 Retractions and sections are left inverses and right inverses: uniqueness of inverse means if retraction and section exist, then it is unique. A map is an isomorphism if retractions and sections exist.
 
-Presheaf: TFAE: (1) is a functor from an opposite category to sets. A simplicial set is presheaf from the simplicial category; (2) define using X = Spec A on the basis of principal opens using M(D(f)) = M[f^{-1}] for f in ring A, M being A-module; (3) classical, exists global sections F(Y/X)(U) such that f * s identifies on open U, and for inclusion of opens, restrictions exist such that order of restriction does not matter given chain of inclusions.
+Presheaf: TFAE: (1) is a functor from an opposite category to sets. Use poset of opens in topological space, partial order given by inclusion, to get back presheaf. A simplicial set is presheaf from the simplicial category; (2) define using X = Spec A on the basis of principal opens using M(D(f)) = M[f^{-1}] for f in ring A, M being A-module; (3) classica with presheaf of topological space, exists global sections s in F(Y/X)(U) such that f * s identifies on open U (this condition turns any point into a morphism), and for inclusion of opens, restrictions exist such that order of restriction does not matter given chain of inclusions (these are similar to definition of a category, to give it functoriality).
 
-Presheaf as choice problem: regardless of what we choose for f * s = 1_B, sections exist and there is a solution ot the choice problem. Definition of a presheaf is such that it guarantees that such a morphism f exists, it gives the minimal condition for morphisms (instead of points, recall we are using a functorial point of view) to exist. This motivates the classical definition of presheaves as something that asserts global sections of opens exist. You want the definition of a presheaf to be such that morphisms exist, and nontrivially the key step to do this is to ensure sections of presheaf over opens exist. As for inclusion stufff, this is required to give some consistency of properties (cannot be such that restrictions screw up) since classicaly these are done on topological spaces.
+Presheaf as choice problem: regardless of what we choose for f * s = 1_B, sections exist and there is a solution of the choice problem. Definition of a presheaf is such that it guarantees that such a morphism f exists, it gives the minimal condition for morphisms (instead of points, recall we are using a functorial point of view) to exist. This motivates the classical definition of presheaves as something that asserts global sections of opens exist. You want the definition of a presheaf to be such that morphisms exist, and nontrivially the key step to do this is to ensure sections of presheaf over opens exist. As for inclusion stufff, this is required to give some consistency of properties (cannot be such that restrictions screw up) since classicaly these are done on topological spaces.
 
 Gluing modules: A-modules are equivalent to quasi-coherent sheafs on Spec A which are equivalent to quasi-coherent sheaves on distinguished opens D(f_i) + gluing data. See Scholze corollary 11.10.
 
@@ -2623,7 +2653,7 @@ Solvability: permutations of roots preserving algebraic relations can be used to
 
 Etale topology: gives a uniform definition of Galois groups and fundamental groups.
 
-Galois group: covering space with fundamental group or universal covering space with algebraic closure.
+Galois group: covering space with fundamental group or universal covering space with algebraic closure. See Galois' dream by Kuga.
 
 Module: additive abelian groups closed under left and right linear decomposition f(ax + by) = af(x) + bf(y) of ring multiples of group elements. Beginner: like vector space over arbitrary ring instead of fields. Module over ring as a homomorphism from the ring to an endomorphism ring of an abelian group.
 
@@ -2793,7 +2823,7 @@ Eckhmann-Hinton duality: The most basic duality by reversing arrows in category 
 
 Fuks duality: take endofunctors of compact pointed (important for suspensions) Hausdorff spaces. Duality is expressed between loop space and suspension space. Endofunctor of loop space gives suspension space. Endofunctor of suspension space gives loop space. This works heuristically for: homotopy dual to cohomology, mapping cylinder to mapping cocylinder, fibration to cofibration.
 
-Tannaka duality: monoid with its module category are dual, considering automorphisms/endomorphisms of some forgetful functor called the fibre functor that gives the monoid structure. Just apply Yoneda's lemma using the fact that the fibre functor is endomorphism.
+Tannaka duality: monoid with its module category are dual, considering automorphisms/endomorphisms of some forgetful functor called the fibre functor that gives the monoid structure. Just apply Yoneda's lemma using the fact that the fibre functor is endomorphism. See also representable functors, and the fact that modules are representations over rings.
 
 Proof sketch for G-set with Tannaka duality (like Cayley's theorem), C as Set^G or GSet Aut(F) = Set^(SetG)(F,F) = Set^(SetG)(SetG(G, -), SetG(G, -)) = SetG(G, G) = G Abusing notation for GSet and isomorphism due to Yoneda's lemma.
 
@@ -3185,7 +3215,7 @@ Fibered products correspond to tensor products. Exercise: draw fibered products.
 
 Fibered products always exist (see Vakil notes): proof key step is to check that Spec A *_C B  correspond to universal property for tensor product, when we think of tensor product as cofibered product in the category of rings.
 
-Vector bundles are equivalent to class groups. Exercise: make sense of this. Also, prove integers as principal ideal domain from homology of torus and classification of surfaces.
+Vector bundles are equivalent to class groups. Exercise: make sense of this. See also the above about representation of fundamental groups being locally constant sheaves aka bundles. Also, prove integers as principal ideal domain from homology of torus and classification of surfaces.
 
 Lattice of integers correspond to the adjoining a root onto the integers.
 
