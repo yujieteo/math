@@ -1,5 +1,39 @@
 UNDERSTOOD
 
+Coverings as special case of etale space: coverings are local homomorphisms, so it is a special kind of etale space.
+
+Gimbal lock as covering space: consider charts on SO(3), rotation group, this is RP3, fundamental group Z/2 by covering plate trick, with S^3 covering space hypersphere S^3 (S^2 is a normal sphere) this is the group Spin(3) and there is the unit quaternions. However, we lazy want to use Euler angles, so you can use 3 gimbals. This is a map from the 3 torus (hint: 3 gimbals are 3 rotations, so fundamental group Z + Z + Z), then we have a map from the three torus T^3 to RP^3. But the torus is not a COVERING SPACE, so it fails to be a local hot due to gimbal lock. Gimbal lock means it can only move in two dimensions, it can pitch and yaw but not roll (rotate in the plane all axes lie in). Example, two gimbals same plane.
+
+Determination / extension problem: for example h = g * f, what are all g such that this holds or this is the extension problem, given f and h. Example, pick A -> B -> C. Pick B = 1, then h is a constant map. Choosing g means to choose a single element. If h is identity, then this is a retraction problem (hint: think deformation retract as idempotence)
+
+Choice / lifting problem: for example given g and h, what are all f, such that h =  g * f.
+
+Isomorphism as equinumerous: see Lawvere’s conceptual mathematics. Most important part of naturally is somehow preserve cardinality or same size using isomorphisms. This is why the content of the Yoneda lemma involves a forgetful functor to Set.
+
+Yoneda lemma on points of sets: there is Nat(1 -> X, !) is canonically isomorphic to Hom(Hom(1, X), !). So a point of set X is a map from the initial object 1 to X.
+
+Galileo using bird flight as universal property: space given level gives line, space given shadow gives plane. Suppose there is a map called time uniquely sent to flight of bird, then there is the map time to line given the level of flight of bird, and time to plane given the shadow of the flight of bird. This is correctly known as a product, line * plane = space. Try example with coproduct. See Lawvere’s Conceptual Mathematics.
+
+Smith normal form: idea is to use Yoneda’s lemma, consider map from Z^m to Z^n, cokernel is abelian group of interest. Apply automorphisms by matrix multiplication on the left and right, these correspond to elementary row operation, Yoneda’s lemma guarantees the existence of a smith normal form. Similar logic applies for reduced row echelon form, which need not be diagonal and only permits left action. Smith normal form is always diagonal, with empty part of diagonal column, permitting left and right actions. Only works when entries form principal ideal domain.
+
+Smith normal form of two by two, integer entries: top left is gcd of all integer entries, bottom right is magnitude of ad-bc.
+
+Van Kampen statement: duality, amalgamated free product of fundamental group is wedge sum of two path connected topological space. This is Pontryagin duality, locally compact topological space 
+
+Free product of groups: reason why coproduct is given coproduct. Natural definition of sum in groups, see colimit. Also naturality preserve homsets, homset of Homs of free products under functor to Set Hom(Hom(A,-),F) equivalent to natural transformations of group homs on free products to Set Nat(ha, F), F is forgetful. F(A) is canonically isomorphic to Nat(hA, F) or objects are arrows when forgetting group structure.
+
+Free product of groups as concatenation: coproduction since you concatenate sets together to form words. So words are an example of free product.
+
+Homotopy as an equivalence relation: same initial point and terminal point, so transitivity is confirmed. 
+
+Homotopy class: take W(D; O) is set of closed curves in surface D with O as initial and terminal point. Take quotient on equivalence relation of homotopy this is the definition of homotopy class.
+
+Nullhomotopic: consider W(D; O), you can deform to point O, so it is nullhomotopic.
+
+Plane with two points removed: wind a rope around two poles, then you can make concatenation of loops around these two poles, so fundamental group is free group of two generators. It is like making an alphabet using two poles. Felt understanding is each alphabet is a pole or a hole.
+
+Fundamental group of R^3 - (S^1 union l): consider loops inside the circle, so S1, then loops trapped by the line also another copy of S1, so it is Z ++ Z or torus. Number of lines gives number of holes.
+
 Row reduction and Yoneda lemma: row reduction of matrices with k rows is natural (natural transformation where morphisms are matrices) is multiplication by that operation on the k by k identity matrix. So one can replace natural transformations between matrices in row reductions, with an appropriate matrix to multiply with, by applying that operation on the identity matrix, then multiply using that. Trick: understand that natural transformations of morphisms correspond to a morphism itself. Note that for matrices, you don't need a hom-set, you can get away with a single matrix I think need to check. Not true for arbitrary categories.
 
 Consequence of Yoneda's lemma on row operations: requirement that it must be elementary row operations, these are the natural transformations between matrices i.e. swapping two columns, multiplication by scalar, scalar multiples of one column to another are invertible since corresponding elementary matrices are invertible. Non-example includes appending a column to 1s. Applying this to identity matrix fails, then right multiplication defines different column operation, this is because this is not an elementary row operation, fails invertibility. 
@@ -2335,7 +2369,15 @@ A functor is extended naturally to left composition of a left Kan extension and 
 
 A functor is extended naturally from a left composition of a right Kan extension and the functor when the domain category is extended. Easy to remember, forgetful functors are typical examples of right adjoints which are right Kan extensions.
 
-Presheaf: TFAE: (1) is a functor from an opposite category to sets. A simplicial set is presheaf from the simplicial category; (2) define using X = Spec A on th ebasis of principal opens using M(D(f)) = M[f^{-1}] for f in ring A, M being A-module.
+Sections and presheaves: by definition global sections must exist when defining presheaves. Recall that sections are maps f such that f_s * s = id_B for s as a map from B to A. This is like the reverse of a retraction. A section is something that makes any map a retraction (think idempotence).
+
+Retractions vs sections: let f be a map from A to B, a retraction r from B to A, makes any map f into a identifying idempotent button i.e. r * f = 1_A. A section s from B to A is such that any map f is now a button i.e. f * s = 1_B.
+
+Retractions and sections are left inverses and right inverses: uniqueness of inverse means if retraction and section exist, then it is unique. A map is an isomorphism if retractions and sections exist.
+
+Presheaf: TFAE: (1) is a functor from an opposite category to sets. A simplicial set is presheaf from the simplicial category; (2) define using X = Spec A on the basis of principal opens using M(D(f)) = M[f^{-1}] for f in ring A, M being A-module; (3) classical, exists global sections F(Y/X)(U) such that f * s identifies on open U, and for inclusion of opens, restrictions exist such that order of restriction does not matter given chain of inclusions.
+
+Presheaf as choice problem: regardless of what we choose for f * s = 1_B, sections exist and there is a solution ot the choice problem. Definition of a presheaf is such that it guarantees that such a morphism f exists, it gives the minimal condition for morphisms (instead of points, recall we are using a functorial point of view) to exist. This motivates the classical definition of presheaves as something that asserts global sections of opens exist. You want the definition of a presheaf to be such that morphisms exist, and nontrivially the key step to do this is to ensure sections of presheaf over opens exist. As for inclusion stufff, this is required to give some consistency of properties (cannot be such that restrictions screw up) since classicaly these are done on topological spaces.
 
 Gluing modules: A-modules are equivalent to quasi-coherent sheafs on Spec A which are equivalent to quasi-coherent sheaves on distinguished opens D(f_i) + gluing data. See Scholze corollary 11.10.
 
@@ -2517,7 +2559,9 @@ Global section functor: direct image functor on Grothendieck topos, induced by c
 
 Etale space: sheafs on the site of opens for topological space is the sheaf of local sections on its etale space E (double cover as example) bundle such that the sheaf functor takes opens U to sheaf of local sections Gamma*U(E). The sheaf of global sections is the hom-sets on the sheaf from the terminal object to the sheaf functor. Sheaf of global function = Hom_Sh(X)(*, A), A is sheaf functor, terminal object, Sh(X) is sheaf category.
 
-Sections are right inverses. Sections B -> A are right inverses of bundles A -> B which are left inverses of sections.. Sections typically refer to global sections, not local sections by default. In homotopy type theory, helpful for defining left injections and right injections.
+Motivation for slice category as bundle: Top be category of topological space, Top/B be slice category, category of topological space over object B in Top (these are the bundles of B!)
+
+Sections are right inverses. Sections B -> A are right inverses of bundles A -> B which are left inverses of sections. Sections typically refer to global sections, not local sections by default. In homotopy type theory, helpful for defining left injections and right injections.
 
 Derived functors: normal functors that are presented in a category of weak equivalences (homotopy suitable setting).
 
@@ -2667,7 +2711,7 @@ Sheaf cohomology (Wikipedia gives best definition): right derived functors of le
 
 Enough injectives: for every sheaf there is an injective sheaf with injection from sheaf to injective sheaf. This is proved knowing that category of abelian sheaves form an abelian category. Abelian category Mitchell embeds into category of modules over ring. Nice Kunneth, snakes.
 
-General working example for pullbacks and pushforwards in motivating clients homology, consider a continuous map of topological spaces from Y to X, there is a pullback of sheaves over abelian groups f^\_ from Ab(X) to Ab(Y) which requires sheafification first over colimits, however it is better described by the equality between stalks of the pullback composed with its presheaf functor to the stalk on the image of the element. Pushforward of sheaves is easier in this case from f\_\_ from Ab(Y) to Ab(X), where the composition of the pushforward with the (pre)sheaves functor on a topological space X gives the the global sections functor on the preimage of the topological space. The pullback is exact, the pushforward is only left exact. The composition of the right derived functor on the pubsforward on some space X gives the sheafification of opens to its cohomology on the inverse images with coefficients in the (pre)sheaf functor. Note that inverse images of a sheaf is typically only a presheaf, need to sheafify again.
+General working example for pullbacks and pushforwards in motivating clients homology, consider a continuous map of topological spaces from Y to X, there is a pullback of sheaves over abelian groups f^\_ from Ab(X) to Ab(Y) which requires sheafification first over colimits, however it is better described by the equality between stalks of the pullback composed with its presheaf functor to the stalk on the image of the element. Pushforward of sheaves is easier in this case from f\_\_ from Ab(Y) to Ab(X), where the composition of the pushforward with the (pre)sheaves functor on a topological space X gives the the global sections functor on the preimage of the topological space. The pullback is exact, the pushforward is only left exact. The composition of the right derived functor on the pushforward on some space X gives the sheafification of opens to its cohomology on the inverse images with coefficients in the (pre)sheaf functor. Note that inverse images of a sheaf is typically only a presheaf, need to sheafify again.
 
 Motivation for cohomology, the following are equivalent exact sequence of presheaf/sheaf functors is exact if it is exact in stalks, however the global sections functors only give a left exact sequence. The easiest example considering these presheaf functors with integers as the kernel, sheaves over the reals as the image to the sheaves and sheaves over the cokernel is the unit circle. There is an exact sequence of stalks, given by the double cover as the real image of the integers over the circle as a quotient space, but there is no canonical lift of the identity residing the circle to its double cover. This gives a counterexample to how global section functors (which are continuous maps between the circle to the reals or the double cover or continuous maps between the circle to the circle) are exact.
 
@@ -2685,9 +2729,9 @@ Presheaf is a functor from the opposite of category of opens to sets. Note that 
 
 Presheaf with functor F# such that for union of open covers, there is a canonical isomorphism of opens that gives the equaliser of morphisms between product of sections to the product of section (set-theoretic) intersections (overlap). This equaliser is glueing or descent.
 
-Sheafification: the following are equivalent: (1) left adjoint to the fully faithful inclusion of the category of sheaves into presheaves. You can use an adjoint functor theorem. Follows from the key step of the preservation of all limits from the definition of Zariski descent; (2) sheafification is a universal property, morphism of presheaves, sheafify, apply universal propety so true for sheaves; (3) intuition is that the best approximation of a sheaf such that the stalks are the same, so inverse image of a sheaf f_pre^{-1} G and sheafification f^-1{G} agrees for small open sets.
+Sheafification: the following are equivalent: (1) left adjoint to the fully faithful inclusion of the category of sheaves into presheaves. You can use an adjoint functor theorem. Follows from the key step of the preservation of all limits from the definition of Zariski descent; (2) sheafification is a universal property, morphism of presheaves, sheafify, apply universal property so true for sheaves; (3) intuition is that the best approximation of a sheaf such that the stalks are the same, so inverse image of a sheaf f_pre^{-1} G and sheafification f^-1{G} agrees for small open sets.
 
-Directesd system: find upper bound of finite subset, finite limit exists, so there is inductive limit.
+Directed system: find upper bound of finite subset, finite limit exists, so there is inductive limit.
 
 Sheafification intuition: presheaves of function which are P is sheafified to sheaves of functions which are locally P.
 
@@ -3007,7 +3051,21 @@ Quasi-coherent sheaf O_X module, X is a scheme is of finite type: if there exist
 
 Noetherian scheme: the following are equivalent: (1) X is quasicompact scheme, for all open affines U = SpecA in X, the ring A is noetherian. Classif cexample of demanding property on open affine cover of scheme X (see local compactness), which descends to a property of all affine open subschemes of X.
 
-Line bundles: invertible ring O_X-modules, X is a scheme, see theorem 12.15 in Scholze's notes.
+Philosophy of invertible sheaves: varieties are looked at classically as topological spaces, instead study varieties as functions of them (using the language of bundles, using some sort of duality). So we study line bundles instead using the sheaf of sections.
+
+Invertible sheaf on variety: let X be variety, it is an O_X module (local ring L) with open cover U_i (hint local definition) such that there are isomorphisms L|U_i to O_{U_i}, agreeing on the intersects i.e. there exists invertible functions f_ij on overlaps U_i intersect U_j such that for any U in U_i intersect U_j, p_i(z) function on U is equal to f_ij p_i(z). Cocycle condition follows from this definition.
+
+Line bundles defined as invertible sheaves: invertible ring O_X-modules, X is a scheme, see theorem 12.15 in Scholze's notes. See also Vakil notes (introduction to algebraic geometry, class 21).
+
+Classical line bundles on complex manifold: cover U_i, trivilisations U_i cross C, C is complex numbers, and transition functions f_ij satisfying cocycle condition i.e. f_{ij} f_{jk} = f_{ik}. Constructed so that if u is in intersection U_i and U_j, then (u,z) in U_j cross C, is such that (u, f_ij z) is in U_{ik} cross C. Cech cohomology gives this as an element of the Cech cohomology on space X with the group being the sheaf of invertible (= nowhere zero) analytic functions.
+
+Bundle over category generally: object B in category C, a bundle is an object E of C equipped with a morphism called the submersion / projection in C from E to B. Picture, B is base space, E is total space, bundle is E, fibres E_x over generalised element x in B is the pullback x^* E (limit, see Lawvere's Conceptual Mathematics for this to make sense). So pullbacks x^* E are bundles over generalised element (or points) x in base space B. Fibre bundles require homeomorphisms, pullback of the bundle along the inclusion of a point as open and homeomorphic. Espace etale only require local homemorphism, there exist a covering open neighbourhood where image of stalk is open in base space, and is homeomorphism.
+
+Comparison of bundles over category to etale space: etale space is object p: E -> B in Top/B, like fibres E_x  also in Top/B such that p is local homeomorphism (exists local neighbourhood, think locality definition such that image is open in base space, and it is homemomorphism). So pullbacks are stalks of p over x (stalks for etale space, pullbacks more generally). Total space is union of STALKS for etale space (not fibres FOR COVERING SPACE).
+
+Example of stalks not being fibres (OVER covering space but instead over ESPACE ETALE): espace etale are typically not fibre bundles. Example: consider sheaf of sections t_M of tangent bundle TM -> M of manifold of smooth variety. Fibre bundle is vector space (of tangent vectors) by definition as vector bundles, but stalk of sheaf of sections t_M is at best module over LOCAL ring O_x. Local ring O_x need not be a field (recall definition of local homemorphisms, ). More explicitly, stalk is germs of vector fields at x, fibre is tangent vectors.
+
+Morphisms of bundles: a morphism such that both E_1 and E_2 have morphisms to B, i.e. a certain diagram commutes where E_1 -> E_2, E_1 -> B, E_2 -> B. Morphisms of bundles allow for construction of category.
 
 Group completion of circle S1, give trivial Z and Mobius band Z/2 since two mobius bands give circle
 
@@ -3037,7 +3095,7 @@ Kernel of surjective map from rings to fields correspond to maximal ideals.
 
 Localisation of quotients and taking of quotients of localisations are equivalent, and they both give a residue field. Geometric intuiton is that they become a point.
 
-Stalks of sheaves: (1) represent localisation of A-module at prime p or local rings; (2) colimit for x in open U, and U in Ouv(X) sheaf of open U, note this colimit is taken over a filtered indexing set; (3) stalk F at x is the pairs of open set U and s such that x is in U which is part of Ouv(X), and s is in F(U) under the equivalence relation if there exists a V contained in intersection of U and U' such that s|V = s'|V. These are the equivalence class of (U, s) int the stalk. The filtereness let us say that the functor defined by taking stalk of a sheaf is exact by showing filtered colimits of abelian groups are exact; (4) direct limits over open subset containing a point; (5) if B is a basis of topology X then stalk of F at x is the colimit for x in open, U in basis for sheaf over U F(U), comes from the fact that all opens U in basis containing X is cofinal in the set of all opens containg X, useful when we look at structural sheaf of the spectrum of ring A, taking very nice values of the basis of principal open subsets.
+Stalks of sheaves: (1) represent localisation of A-module at prime p or local rings; (2) colimit for x in open U, and U in Ouv(X) sheaf of open U, note this colimit is taken over a filtered indexing set; (3) stalk F at x is the pairs of open set U and s such that x is in U which is part of Ouv(X), and s is in F(U) under the equivalence relation if there exists a V contained in intersection of U and U' such that s|V = s'|V. These are the equivalence class of (U, s) int the stalk. The filteredness let us say that the functor defined by taking stalk of a sheaf is exact by showing filtered colimits of abelian groups are exact; (4) direct limits over open subset containing a point; (5) if B is a basis of topology X then stalk of F at x is the colimit for x in open, U in basis for sheaf over U F(U), comes from the fact that all opens U in basis containing X is cofinal in the set of all opens containg X, useful when we look at structural sheaf of the spectrum of ring A, taking very nice values of the basis of principal open subsets.
 
 Skyscraper sheaf: (1) like Dirac delta distribution.
 
@@ -3095,7 +3153,7 @@ Morphism of varieties: ring homomorphism with source and target reversed. Made a
 
 Germs of (pre)sheaf at point a: functions defined on small neighbourhood, these are local functions. Examples: rational functions with nonvanishing denominator at point a.
 
-Stalks of a (pre)sheaf at a point, like localisations of presheaf at some point. These are used to define local rings, see definition of local ring in Fulton's intersection theory
+Stalks of a (pre)sheaf at a point, like localisations of presheaf at some point. These are used to define local rings, see definition of local ring in Fulton's intersection theory.
 
 Passing from ideals to varieties reverses inclusions. Smaller zero ideal generates whole space. Vanishes on whole space.
 
