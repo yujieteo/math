@@ -1,5 +1,39 @@
 DAYDREAMS:
 
+Understand Galois correspondence of subgroups and path connected coverings. See Kuga, Galois’s dream.
+
+Hawaiian ring has no universal covering.
+
+Ramification points and branch points of compact Riemann surfaces.
+
+Lifting property of covering, means we can find something f such that g composed with f gives h, given g and h.
+
+Covering space and analytic continuation?
+
+Don’t understand what is a covering map? See Kuga’s Galois Dream?
+
+Smith normal form for homology?
+
+Transmission and blocking zeroes of transfer function?
+
+Invariant factor calculation
+
+Spec C[x] to Spec R[x]
+
+Dense image for spec?
+
+Chain? Refinement? Simplicity? Composition series?
+
+Homology of finite simplicial complex over integers, try two by two matrix https://eric-bunch.github.io/blog/calculating_homology_of_simplicial_complex
+
+Make this make sense: If one wants to summarize our knowledge of physics in the briefest possible terms, there are three really fundamental observations: (i) Space-time is a pseudo-Riemannian manifold M, endowed with a metric tensor and governed by geometrical laws. (ii) Over M is a vector bundle X with a nonabelian gauge group G. (iii) Fermions are sections of (???). R and F are not isomorphic; their failure to be isomorphic explains why the light fermions are light and presumably has its origins in a representation difference A in some underlying theory. All of this must be supplemented with the understanding that the geometrical laws obeyed by the metric tensor, the gauge fields, and the fermions are to be interpreted in quantum mechanical terms.
+
+Maybe the first and clearest situation one sees motivic behavior is in the Weil conjectures (and this is how Grothendieck formulated the ideas around motives in the first place) Among other things the Weil conjectures (which are theorems by the way) tell you that the number of solutions to polynomial equations over finite fields controls/is controlled by the topology of the space of solutions over the complex numbers. Motives would certainly imply this sort of thing
+
+The Wikipedia page is horrible and I will probably rewrite it at some point. Someone already suggested the Grothendieck ring of varieties K_0(Var) which is sort of related but isn’t quite what motives are… 
+
+The point is that you see the same kinds of behaviors around the cohomology of algebraic varieties between all sorts of different cohomology theories, because all of those cohomology theories are supposed to be different realizations of the same underlying object, namely the motive of the variety. The idea is that every cohomology class should be explained by the existence of algebraic cycles in some sense, and those algebraic cycles can be realized as classes in various cohomology theories.
+
 spectral sequences topics: leray spectral, sheaf cohomology, pushforward, chain complex, fibrations, derived functors, grothendieck spectral, chain complex; visualisation; cup product; cohomology ring; differential graded algebra; exact couple; derived couple; bockstein; serrel atiyah-hirezburch for k theory; filtered complex; hodge-de rham spectral
 
 geometric invariant topics: isbell dual, quotients, action groupoids, moduli spaces, moduli stacks; reductive group on projective variety; orbifold; gauge group; bridgeland stability conditions; deligne mumford stack, stability, stable vector bundles
