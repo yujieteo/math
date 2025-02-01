@@ -1,5 +1,35 @@
 UNDERSTOOD
 
+Mobius maps: maps of the form T(z) = (az + b)/(cz + d). The idea is you want T(z) = az + b to spiral expand or contract from source, T(z) = 1/z to turn unit circle inside out. They do for the Riemann sphere what affine maps az + b do for the complex plane (affine maps motivate affine varieties). Also map z to 1/z. NOTE: ad - bc nonzero makes this map invertible i.e. natural in some sense. These form the general linear group GL(V^2). Fixed points of these are actually quadratic formula cz^2 + (d-a)z - b = 0 so consider roots. Trace is a + d.
+
+Schottky group: free group with generators a, b (2 generators for example, arbitrary generator) as Mobius transformation. It is free if generators only cancel with their inverses (need not be true for Schottky group).
+
+Circle pairing to derive classical Schottky group: consider loxodromic transformation pairing the disks if the disks do not overlap, outside of one disk maps to inside of the other disk, one disk is dual to the other i.e. a^{-1} = A, A^{-1} = a, fixed points are dual, successive powers shrink or exapnd the disk etc, see Indra's Pearls. To generalise this, use arbitrary paired shapes that are not disk.
+
+Tiling of Schottsky disk: there are four circles, from two generators, delete the generators, so you have a torus of genus 2 i.e. two holed pretzel.
+
+Mobius transformation geometrically: inverse stereographic projection from plane onto unit sphere, moving and rotating sphere to new location and orientatation in space, reapply stereographic projection. Form mobius group, or projective linear group PGL(2, C). Automorphism group of Riemann sphere.
+
+Classification of Mobius maps: loxodromic (hyperbolic if scaling map k is real), parabolic, elliptic. DEfinition: parabolic transformations are conjugate to translations T(z) = z + a, all elliptic transformations are conjugate to rotations T(z) = kz, |k| = 1, all loxodromic maps are conjugate the scaling maps T(z) = jz, |j| >= 1 (not typo). Trace of conjugate is same as trace of T, loxodromic maps have trace not between -2 and 2 (hyperbolic if k real) move into sink out of source, elliptic maps have trace strictly between -2 and 2 with two neutral fixed points move around in circles around fixed points, parabolic maps have trace exactly +- 2 one fixed point both source and sink.
+
+Topology of loxodromic transformation: see Indra's Pearls, see Riemann sphere, remove two fixed points. Easiest way is to start with a flat sheet, glue the top to bottom, left to right aligning the edges, you get a torus. Indra's Pearls considers two concentric circles, big circle glued onto small circle, then you roll up the ring and glue them.
+
+Upper half plane group: SL(2, R) map from z -> 1/z carries i to 1/i or -i, swapping two half planes, but this is of determinant -1. So SL(2, R) is upper half plane group since it preserves the upper half plane. NOTE: SL(2, R) have real trace, so it cannot never be loxodromic.
+
+Ordinary language is not associative: example ((the cat ate) (a fish, took a nap)).
+
+Commute and conjugate: order does not matter, so ab = ba. I now tend to think of it is as conjugation as idempotent i.e. a = bab^{-1} (right conjugate). See Indra's Pearls, the Vision of Felix Klein, Figure 1.15. The idea is simple, (1) take a step back; (2) apply original map; (3) apply step forward again. This is so useful in real life (like a redo in case you forgot something), mathematicians give it a funny name.
+
+Erlangen program: characterise projective geometry using group.
+
+Inversion of unit circle: map from z to 1/z^, z^ is complex conjugate. See Figure 2.6 in Indra's Pearls for what happens when you invert in a circle. This is a Riemann sphere.
+
+Stereographic projection: consider circle on sphere, stereopgraphic projection gives ellipse on the plane. This is because cone is sliced by complex plane, so it is a conic section, since this is a conic section, it must be at least an ellipse. Now, tricky, this is a circle! Needs proof. So stereographic projection preserves angles and circles.
+
+Stereographic projection mechanics: butterfly on surface of Earth idealised as sphere, place complex plane on South pole. Long stick from you to north pole and hit plane below, that is your image (as butterfly) on plane. South Pole maps itself, North Pole disappears to infinity. This is a Riemann sphere.
+
+Worked example of conjugated maps in Indra's Pearls: consider dynamics of z -> z + b, and T is z -> az, we have conjugate T^ = STS^-1 = ST(z - b) = S(a(z - b)) = a(z - b) + b. This map fixes point b (it is a conjugate), the dynamics is copied. This is an affine map. Therefore conjugating and composing affine maps with a nonzero forms a group (see the point fixing).
+
 Opposite category in the generalisation of presheaves: you want sections to exist, so instead of consider morphisms g * f, asserting g exist knowing f, you want to consider f * g, g exists such that fg identify as an object (setions exist), f becomes a morphism instead of an object. A normal category will use g * f, if f exists then g exists, opposite category will have f * g, f exists, then g exists.
 
 Fundamental group: quotient space of paths under homotopy as equivalence relation.
@@ -664,11 +694,11 @@ Initial object: for every object in C, there is a unique morphism ! from the ini
 
 Zero object: an object that is both an initial object and and a terminal object.
 
-Pro object: formal cofiltered limit of objects, commutes with finite colimits
+Pro object: formal cofiltered limit of objects, commutes with finite colimits. Projective object.
 
 Profinite set: pro object in finite set, easiest way into profinite sets is Stone duality. By Stone duality profinite sets are totally disconnected compact Hausdorff spaces.
 
-Ind object: formal filtered colimit of object, commutes with finite limits
+Ind object: formal filtered colimit of object, commutes with finite limits. Inductive object.
 
 Filtered category: horizontal categorification of directed sets, see filters and ideals in lattice theory, directed set means there is upper bound for pair of objects (coproduct need not exist), filtered category means there is upper bound (coequaliser need not exist) for parallel morphism. 
 
