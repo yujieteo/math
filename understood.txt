@@ -1,5 +1,36 @@
 UNDERSTOOD
 
+Tangent vectors for lie groups O(n), U(n) amd Sp(n): trick is to differentiate the defining equation A A^* = 1, where A^* is the conjugate transpose. For tangent vectors X at 1 for O(n) it is X + X^*T = 0, X is n by n real matrices. For tangent vectors X at 1 for U(n) it is X + X^*T = 0, X is n by n complex matrices. For tangent vectors X at 1 for Sp(n) it is X + X^*T = 0, X is n by n quaternion matrices. See Stillwell's Naive Lie Theory.
+
+Functor of points: Hom(-, X): (Affine schemes)^op to Set, sending affine scheme Y to set of scheme maps Y -> X. Therefore, a scheme is the representing object of the functor of points, the functor of points is a representable functor. Yoneda lemma is weaker, Hom(-, X): Schemes^op -> Set, where X is a scheme. The functor of points is sufficient to be isomorphic to functor of points, and not necessarily the natural transformations. This functor Hom(-, X) classifies geometric objects over Y given by F. Notion is analogous to classifying space.
+
+Functor of points analogy to classifying space: principal G bundle over space S (G topological group) is pullback of universal bundle EG -> BG along some map S -> G. Classifying space BG is quotient of weakly contractible space EG by proper free action of G.
+
+Classifying space as representative object: it is a representative object of  the contravariant functor of homotopy category Htpy^{op} to category of sets. See Riehl's Category Theory in Context, example (vii) in the relevant section, takes a CW complex to the set of isomorphism classes of principal G-bundles over it.
+
+Eilenberg-MacLane space: represented by functor of Htpy_{CW}^op to Set note that initially we have Top^{op} to Ab which is singular cohomology with coefficients, then need to pass through to nice space like CW complex to get the Eilenberg-Maclane space. Homotopy classes of maps X -> K(A,n) stand in for bijection with nth singular cohomology group H^n(X, A), X with coefficients in A for nice spaces like CW complexes.
+
+Paths and loops are obviously representable: say we have path functor from Top -> Set, this is representable by path as continuous functions from I to X. Loops representing loop functors from Top_* -> Set, which are representable by based closed circle S1 -> X.
+
+Examples of classifying spaces: (1) circle is classifying space of integer group, total space is EZ = reals R; (2) n-torus is classifying space for free abelian group of rank n i.e. Z + Z + Z ... n times. total space is EZ^n = R^n; (3) Wedge of n circles is free group of rank n; (4) closed compact without boundary connected surface S of genus at least one is classifying space for its fundamental group pi_1(S); closed compact connected HYPERBOLIC manifold is classifying space for its fundamental group Pi_1(N); (5) Grassmannian of n planes in R^{\infty} is classifying space of orthogonal group O(n).
+
+Grassmannians as prototypical examples of classifying spaces: we have O(n), U(n), SO(n) and SU(n) with classifying spaces being some Grassmannian construction.
+
+Example of classifying space for discrete group: classifying space BG is path connected topological space X such that fundamental group of X is isomorphic to G, higher homotopy groups of X are trivial. This means, BG is Eilenberg-Maclane space.
+
+Matrix representation of complex numbers, consider R = cos theta(1 0 ; 0 1) + sin theta(0 -1 ; 1 0) in fact we just have (a -b; b a) to be exactly the same as the complex numbers.
+Quaternions, we have this tricky thing called (a+id -b-ic; b-ic a-id). Pick c = d = 0 and you get back complex numbers. Computing determinant? Trace as 2a?
+
+Pell equation: x^2 - ny^2 = 1. Forms a group of solutions with integers adjoined root 2 if you pick n = 2.
+
+Zeta function product and sum equality: sum of 1/n^s is equal to product of (1/1 - p^{-s}), p prime. This equality is equivalent to unique prime factorisation. Hint, consider geometric series of this i.e. (1 + p^{-s} + p^{-2s} +...), then product of all the factors will be every possible term of the form 1/(product of p_i^(m_i))^s, these are distinct primes, so you get the formula. This also implies the infinitude of primes by picking s  = 1, but left hand side is infinite since 1 + 1/2 + 1/3 is infinite.
+
+Greatest common divisor by division of remainder: a_{i+1} = b_{i}, b_{i+1} is remainder when b_i/a_i. Division of natural numbers is just repeated subtraction. Halts when gcd is constant. Euclidean algorithm gives linear representation of the gcd. i.e. gcd(a,b) = ma + nb, equal 1 if coprime.
+
+Induction on successor function: you can use the successor function to inductively define sums and products.
+
+Diophantus chord method: method for rational points consider circle, Q = (-1, 0) to arbitrary rational point R, we have line Y = t(X + 1), rational points on X^2 + Y^2 + 1. Quadratic formula gives solution X = -1, (1 - t^2)/(1 + t^2), it has coordinates (1 - t^2)/(1 + t^2), 2t/(1 + t^2). You can recover Euclid's formulas using substitution x/z, y/z. Generalise to cubics, see Silverman and Tate.See also demo by Borcherds in first algebraic geometry lecture.
+
 Torsion of G-bundles: prevents global sections (think arrows) from existing. Standard example is universal covering of the reals onto the circle.
 
 Atlas as structural sheaf of smooth manifolds: the atlas is in some sense, maps that construct the smooth manifolds.
@@ -18,7 +49,7 @@ Mobius transformation from upper half plane to unit disk: PSL(2, R) (key word is
 
 Simple closed curve: closed curve where map from S^1 -> S is injective i.e. it is embedded.
 
-Simple closed curve classification up to homemorphism: cut along them, Dehn twists, fully classify simple closed curves. Hoemmorphisms of surfaces can be studied via actions of simple closed curve.
+Simple closed curve classification up to homeomorphism: cut along them, Dehn twists, fully classify simple closed curves. Homeomorphisms of surfaces can be studied via actions of simple closed curve.
 
 Closed curve on surface: continuous map from circle to surface. Closed curve with its image in S.
 
@@ -34,17 +65,17 @@ Mobius maps: maps of the form T(z) = (az + b)/(cz + d). The idea is you want T(z
 
 Schottky group: free group with generators a, b (2 generators for example, arbitrary generator) as Mobius transformation. It is free if generators only cancel with their inverses (need not be true for Schottky group).
 
-Circle pairing to derive classical Schottky group: consider loxodromic transformation pairing the disks if the disks do not overlap, outside of one disk maps to inside of the other disk, one disk is dual to the other i.e. a^{-1} = A, A^{-1} = a, fixed points are dual, successive powers shrink or exapnd the disk etc, see Indra's Pearls. To generalise this, use arbitrary paired shapes that are not disk.
+Circle pairing to derive classical Schottky group: consider loxodromic transformation pairing the disks if the disks do not overlap, outside of one disk maps to inside of the other disk, one disk is dual to the other i.e. a^{-1} = A, A^{-1} = a, fixed points are dual, successive powers shrink or expand the disk etc, see Indra's Pearls. To generalise this, use arbitrary paired shapes that are not disk.
 
 Tiling of Schottsky disk: there are four circles, from two generators, delete the generators, so you have a torus of genus 2 i.e. two holed pretzel.
 
-Mobius transformation geometrically: inverse stereographic projection from plane onto unit sphere, moving and rotating sphere to new location and orientatation in space, reapply stereographic projection. Form mobius group, or projective linear group PGL(2, C). Automorphism group of Riemann sphere.
+Mobius transformation geometrically: inverse stereographic projection from plane onto unit sphere, moving and rotating sphere to new location and orientation in space, reapply stereographic projection. Form Mobius group, or projective linear group PGL(2, C). Automorphism group of Riemann sphere.
 
 Classification of Mobius maps / isometries of hyperbolic plane: loxodromic (hyperbolic if scaling map k is real), parabolic, elliptic. Definition: parabolic transformations are conjugate to translations T(z) = z + a, all elliptic transformations are conjugate to rotations T(z) = kz, |k| = 1, all loxodromic maps are conjugate the scaling maps T(z) = jz, |j| >= 1 (not typo). Trace of conjugate is same as trace of T, loxodromic maps have trace not between -2 and 2 (hyperbolic if k real) move into sink out of source, elliptic maps have trace strictly between -2 and 2 with two neutral fixed points move around in circles around fixed points, parabolic maps have trace exactly +- 2 one fixed point both source and sink.
 
-Number of fixed points in classification of isoemetries of hyperbolic plane: (1) elliptic, rotation about fixed point p, there is no fixed points on boundary of hyperbolic plane, elements of PSL(2, R) with trace absolute value less than 2; (2) parabolic has one fixed point on boundary of hyperbolic plane, nonidentity elements with trace +-2; (3) loxodromic, elements of PSL(2, R), absolute value greater than 2, two fixed points on boundary of hyperbolic plane; (4) three fixed points so identity.
+Number of fixed points in classification of isometries of hyperbolic plane: (1) elliptic, rotation about fixed point p, there is no fixed points on boundary of hyperbolic plane, elements of PSL(2, R) with trace absolute value less than 2; (2) parabolic has one fixed point on boundary of hyperbolic plane, nonidentity elements with trace +-2; (3) loxodromic, elements of PSL(2, R), absolute value greater than 2, two fixed points on boundary of hyperbolic plane; (4) three fixed points so identity.
 
-Metrics of surfaces: curvature chi(S) less than 0, admits hyperbolic metric, chi(S) equal to 0 admits Euclidean metric. Consistent with Gauss-Bonnet thoerem, compact surface with totally geodesic boundary, integral of curvature over S is 2 pi chi(S)/
+Metrics of surfaces: curvature chi(S) less than 0, admits hyperbolic metric, chi(S) equal to 0 admits Euclidean metric. Consistent with Gauss-Bonnet theorem, compact surface with totally geodesic boundary, integral of curvature over S is 2 pi chi(S).
 
 Surface admitting hyperbolic metric then centraliser of nontrivial element of fundamental group is cyclic, or fundamental group has trivial center: prove using fundamental group identified with deck transformation group. Classification of isometries have same fixed points as central element, if a is centralised by b, a in fundamental group, a b have same fixed points (used the fact that it is hyperbolic metric). By discreteness of action of pi(S), centraliser must be infinite cyclic, if nontrivial than it is Z, but S will have infinite volume, contradiction. Can follow this line by line but don't fully understand this.
 
@@ -80,7 +111,7 @@ Yoneda's lemma and representation theory: simply says that natural transformatio
 
 Existence of adjoint if representable functors exist: G be functor from D to C, X be object in C, G has left adjoint F if Hom_C(X, G-) is representable (by this left adjoint), the natural isomorphism gives the adjunction i.e. Hom_D(FX, Y) -> Hom_C(X, GY) is natural isomorphism.
 
-Example of representable functors: forgetful functors are very representable. Example, forgetful functor of group to set is represented by free object over singleton generator (Z, 1). Forgetful functor of ring is represented by free object over singleton generator (Z[x], x), forgetful functor of Vect to Set is represented by free object over singleton generator (Reals, 1). Better examples, representation of hom functor is limit, representation of product of hom functors is pair of projection maps, classifying space is representing object of presheaf (functor) of GBund from homotopy categoryh Ho_{Top}^{op} to Set.
+Example of representable functors: forgetful functors are very representable. Example, forgetful functor of group to set is represented by free object over singleton generator (Z, 1). Forgetful functor of ring is represented by free object over singleton generator (Z[x], x), forgetful functor of Vect to Set is represented by free object over singleton generator (Reals, 1). Better examples, representation of hom functor is limit, representation of product of hom functors is pair of projection maps, classifying space is representing object of presheaf (functor) of GBund from homotopy category Ho_{Top}^{op} to Set.
 
 Analogy with Riesz representation theorem and representable functors: F be linear functional in complex Hilbert space H, if F is continuous then there exists unique a in complex Hilbert space H it is equal to inner product functional <a, -> where F(v) = <a, v>. Example: continuous linear functions on square integrable functions are representable by integral inner product integrate a(x) v(x). Example: general continuous functionals are representable by test functions, this is distribution theory.
 
@@ -1380,7 +1411,7 @@ Matrix ring is not integral domain: pick [1 0; 0 0] and [0 0 ; 1 0], so not inte
 
 Injective morphism: kernel is zero, f(x) = f(y) implies x = y, converse of well definedness of function.
  
-Gaussian integers: ring of integers adjoined with the root of -1.
+Gaussian integers: ring of integers adjoined with the root of -1. Compare this to Euclid's formula of Pythagorean triples and can be used to generate them.
 
 Forgetful functor of unital commutative rings from Z: there is a unique group homomorphism from Z to ring R.
 
