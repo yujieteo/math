@@ -1910,6 +1910,8 @@ Complementary: variables in primal problem is complementary to constraints in du
 
 Centraliser of a subset S in a group G: set of elements in G that commute with every element in the subset S. Motivation is also very good, you can apply techniques of commutativity to a group that is noncommutative. Obviously, a subgroup of G by definition. This motivates the name commutant.
 
+Centraliser need not be abelian: example centraliser of identity of the full group is not abelian.
+
 Normaliser of a subset S in a group G: set of elements in G that is fixed under conjugation.
 
 Rolle's theorem: real differentiable function with two equal values at two distinct point must have one point bin between them a stationary point.
