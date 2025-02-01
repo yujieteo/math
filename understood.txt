@@ -1,5 +1,65 @@
 UNDERSTOOD
 
+Vector bundle intuition: idea is you want family of vectors parameterised by some space. Attach a vector space to every point so they become another space. Example: sphere be parameter for tangent bundles. Tangent space is vector bundle. This is not a trivial bundle! (Hairy ball theorem). Example of globally trivial vector bundle, take S^1 cross R to get cylinder. Generalisation of cross product of topological space with vector space.
+
+Euclidean algorithm visual: cover a * b with square tiles, use b * b tiles first where a < b without loss of generality, stuck with r_0 * b rectangle where (a - bq) = r_0. Iterate on this step.
+
+Constructive definition of connectedness: all continuous functions from X to {0, 1}, where {0, 1} is two point space endowed with discrete topology is constant.
+
+Coxeter group: group with generators r_1, r_2, to r_n where (r_i r_j)^{m_{ij}} = 1, m_ii = 1, m_ij = m_ji <= is either an integer or infinity, m_ij = m_ji = infinity means no relation for torsion should be imposed. These are reflections. Finite Coxeter groups are precisely finite Euclidean reflections.
+
+Cartesian closed: category has terminal object, finite products (not finite limits) exist in C and exponentials exist in C. For locally small categories, we have bijection Hom(X cross Y, Z) and Hom(X, Z^Y). This is the point, it is a caetgory where product of two objects can be naturally identified as morphisms of one of its factors. Motivation: sufficient to be equivalent to simply typed lambda calculus.
+
+Birkhoff's ergodic theorem: T be ergodic endomorphism of probability space X, f from X to R be real valued measurable function, then for almost every x in X, the sum of 1/n f * T^j (x) for repeated applications of j from j = 1 to j = N in the limit i the integral of f dm, as n tends to infinity. Space averages equal to time averages almost everywhere. Left hand side feels like representation theory and Haar measure. EXAMPLE: pick f to be characteristic function where 1 if it is in subset A, zero otherwise, left hand side means how often the orbit of x (points x, Tx, T^2 x) is in A, right hand side is the measure of A. See https://mathworld.wolfram.com/BirkhoffsErgodicTheorem.html.
+
+Wirtinger presentation: see normal presentations of groups, this is a finite presentations where relations are of the form of conjugates on word i.e. wg_i w^{-1} where w is word in generators {g_i from 1 to k}. Wirtinger presentations are used to present knot COMPLEMENTS.
+
+Knots: are embeddings of one sphere S^1 into 3D space R^3, so we can consider knot complement i.e. use three sphere S^3.
+
+Knot complement: S^3 \ K is knot complement.
+
+Convex hull: TFAE: (1) smallest convex polygon containing a set of points (convexity because you want nice distance properties); (2) intersection of all convex sets containing X; (3) unique minimal convex set containing X; (4) set of all convex combinations of points containing X; (5) union of all simplices with vertices in X. Recall that set of points in Euclidean space is convex if it contains the line segments containing each pair of points.
+
+Example of Wirtinger presentation of trefoil: fundamental group of (R^3 \ trefoil) as knot complement is generators x, y with relation (xy)^{-1}yxy = x.
+
+Birational equivalence: algebriac varieties are isomorphic outside of lower dimensional subsets, they are birationally equivalent. Example smooth quadric of degree 2 is rational, use stereographic projection (see Indra's Pearls) and projective space P^n.
+
+Torsion subgroup of abelian group: subgroup consisting of all elements with finite order i.e. a^n = e, n is integer. Factor group of ABELIAN group quotiented out by quotient subgroup is torsion free.
+
+Torsion free group: every element of group except identity is of infinite order.
+
+Affine basis: {x_0 to x_n is affine basis} if and only if (x_1 - x_0, ... x_n - x_0) is linear basis of associated vector space.
+
+Covariant functor for torsion subgroups: covariant functor from Ab to TorGrp sending ABELIAN groups to torsion subgroups and homomorphisms to restriction to torsion subgroups.
+
+Covariant functor for torsion-free groups: covariant functor from Ab to TorFreeGrp sending ABELIAN groups to torsion free groups made through quotienting out torsion subgroups and homomorphisms to induced homomorphism.
+
+Spanier-Whitehead category: idea is to have Hom(X, Y) to be colimits of suspensions sum^q X sum^q Y over homotopy classes of arbitrarily high suspensions. Quite clever, but lacks desirable properties and fails Brown's representability theory.
+
+Spanier-Whitehead duality: idea is topological space is dual to its n-sphere, where n is large enough. Sphere complements determine homology, and determines the STABLE HOMOTOPY TYPE. Example: X be compact smooth manifold, dual of its suspension spectrum is Thom spectrum of stable normal bundle.
+
+Combinatorial species: introduced by Joyal, used to make generating functions of discrete structures like finite graphs, permutations, and trees. Category of species is equivalent to category of symmetric sequences in finite set. Let B be the category of finite sets, morphisms being bijections, a species is simply a functor from B to B.
+
+Examples of combinatorial species: let F(x) = sum of Card F[n] x^n/n! which is the exponential generating series, (1) species of sets f_n = 1, E(x) = exp(x); (2) species of permutations, f_n = n!, S(x) = 1/(1 - x) which is geometric series. Combinatorial series feels like a way to have generating functions be like characteristic functions from probability theory, then you can design more and more combinatorial species.
+
+Géometrie Algébrique et Géométrie Analytique: GAGA is a Serre paper, relates algebraic varieties with classes of analytic spaces, sheaves. Comparisons of category of sheaves.
+
+Birkhoff-Kakutani theorem: topological group TFAE: G is first countable and Hausdorff; G is metrizable. Forward is obvious, see below for reasons. Converse is hard: https://terrytao.wordpress.com/2011/05/17/the-birkhoff-kakutani-theorem/. Need Urysohn-type lemma to have bounded continuous function with unique maximum, neighbourhood base, uniform continuity. Now, use this to construct a supremum norm, check that this is a metric using these properties. In general, the idea is to use a suitalbe continuous function to make a useful metric.
+
+Metrisable topological space: a topological space X is metrisable if we can find metric from product of X * X to [0, infinity) whose open balls generate the topology. Obviously, it needs to be Hausdorff (metric spaces are Hausdorff) and first countable (countable neighhbourhood base of balls).
+
+Category of distinct closed base points with basepoint preserving map: take functor to Set, terminal object must be [0, 1] (a theorem by Freyd).
+
+Algebraic integers: root of polynomial equation with coefficients in the integers.
+
+Number field: totality of the expressions constructed from algebraic number of degree n by repeated addition, subtraction, multiplications and divisions. This is the number field (or algebraic number field) generated by r. Elements of number field are roots of a polynomial. These also form a ring.
+
+Curve complex: extend curve graph, use k-simplex whenever there are k + 1 disjoint vertices. Example, add in simplicial complex.
+
+Curve graph: vertices are homotopy classes of essential simple closed curves, edges are disjoint.
+
+Covering map: locally looks like projection of multiple copies of a space onto itself. Special type of homeomorphisms. Coverings are used to define new domain for analytic continuation.
+
 Motion, isometry, congruence: a motion is a automorphism on Euclidean space preserving distances, T is bijective. This isa rigid body motion. T(x) = Ax + b, A is orthogonal matrix. In Euclidean plane, it is either rotation matrix or reflection matrix for Euclidean plane. Motion is affine linear i.e. T([1-p]x + py) = (1-p)T(x) + pT(y).
 
 Embedding homomorphisms: consider cyclic group of 3 elements as an embedding (outer surface) of the Cayley graph of the symmetric group on 3 elements (inner graph is what happens when we have f, rf, r^2 f)
@@ -153,7 +213,11 @@ Coverings as special case of etale space: coverings are local homeomorphisms, so
 
 Discrete space: classical example is discrete topological space, every subset is open. Discrete space is object of concrete (no screwy stuff) category that is free on its underlying set, i.e. for forgetful functor from concrete category Sp to category of Set, has a fully faithful left adjoint called the free functor. Codiscrete means right adjoint. True for category of topological space, not true for category of metric space (no free object exist).
 
-Covering space (wrapping space): bundle which is locally trivial (LOCALLY ISOMORPHIC, but not locally homeomorphic to trivial fibre bundle i.e. Cartesian product using local open neighbourhood) with discrete fibre (some sort of free object thing?). Continuous function is covering space if there exists open on point that is evenly covered. Pullback p over U is isomorphic to product bundle with discrete fibre E_x = p. Discrete fibre means I can spam it and consider all possibilities (see discrete in the context of discrete topological space), corresponds to fully faithful left adjunction. Canonical example is exp(i pi x) wrapping of the real line on the unit circle. See also gimbal lock for the group SO(3) being covered by the S^3 hypersphere identifible with the group of quaternions or spin 3.
+Covering space (wrapping space): bundle which is locally trivial (LOCALLY ISOMORPHIC, but not locally homeomorphic to trivial fibre bundle i.e. Cartesian product using local open neighbourhood) with discrete fibre (some sort of free object thing?). Continuous function is covering space if there exists open on point that is evenly covered. Pullback p over U is isomorphic to product bundle with discrete fibre E_x = p. Discrete fibre means I can spam it and consider all possibilities (see discrete in the context of discrete topological space), corresponds to fully faithful left adjunction. Canonical example is exp(i pi x) wrapping of the real line on the unit circle. See also gimbal lock for the group SO(3) being covered by the S^3 hypersphere identifible with the group of quaternions or spin 3
+
+Locally trivial: around every point there is a neighbourhood where the bundle is isomorphic to the trivial bundle.
+
+Trivialising open cover: pick neighbourhoods of all points U_i such that the bundle is trivial, isomorphic to a product. This is the trivialising open cover of a fibre bundle.
 
 Pullback of covering spaces are covering spaces: see Hatcher 1.3 exercise 1, pullbacks of covering space is covering space, restriction of covering space is pullback of an inclusion into a base space.
 
@@ -455,7 +519,15 @@ Points as fields: take Spec(Z), each point is a finite field, Z/mZ, or Q, so imm
 
 Fibre product of schemes is not the fibre product of spaces with extra structure: forgetful functor from schemes to topological spaces or sets do not have a left adjoint (or free). There is no left adjoint to the forgetful functor producing a scheme from set or topological space.
 
-Weil conjectures: for a scheme X of finite type over integers (locally Spec A where A is finitely generated Z-algebra), then the analytic topology of X(C) i.e. complex points of X have a strong influence on the number of finite field F_p valued points i.e. X(F_p).
+Weil conjectures: for a scheme X of finite type over integers (locally Spec A where A is finitely generated Z-algebra), then the analytic topology of X(C) i.e. complex points of X have a strong influence on the number of finite field F_p valued points i.e. X(F_p). Or you have generating functions (local zeta functions) derived from counting points on algebraic varieties on finite fields. Weil conjectured that zeta functions for smooth varieties are rational functions, satisfy some functional equation, and have zeroes in restricted places (feels like Riemann zeta function).
+
+Weil conjectures on projective line: take X to be projective line, number of points is q^m + 1, where 1 is point at infinity, the variety is Riemann sphere, initial Betti numbers is 1, 0, 1. Striking about it is analogy with topology.
+
+Deligne's first proof of the Weil conjectures: uses Lefschetz pencils, blow up, some Leray spectral sequence, find some eigenvalue of some sheaves, looks very complicated.
+
+Weil conjecture on topology of space of solutions: correspondence between number of solutions of polynomials over finite fields correspond to topology of the space of solutions over complex numbers.
+
+Motivation for motivic stuff: cohomology of algebraic varieties, too many cohomology theories, these are realisations of the same object, motive of a variety. Cohomology class is related to algebraic cycles as classes of cohomology theory. In some sense, motives should be the central point for these cohomology theories?
 
 Failure of Veronese map by proj construction: from the fact that Proj T -> Proj S do not come from S -> T. P^1 -> P^2 is the Veronese map.
 
@@ -627,7 +699,7 @@ Cohomology broad background: solve problems locally, local solutions are glued t
 
 Resolutions in defining cohomology: sheaf cohomology can be defined using injective resolutions existing in any cateegory of sheaves, but sheaf homology defined by projective resolutions need not always exist.
 
-Examples of derived functor in cohomology: (1) sheaf cohomology as right derived functors of global section functor with De Rham cohomology and etale cohomology; (2) Ext functor: left derived functor of right exact functor of Hom_R(-, B): R-module to Ab^op with group cohomology, Hochschild cohomology and Lie algebra cohomology; (3) Tor functors: left derived functor of tensor product from Mod-R, R-Mod to Ab, examples are group homology, Lie algebra homology. Hochschild homology.
+Examples of derived functor in cohomology: (1) sheaf cohomology as right derived functors of global section functor (this feels like sheaves by the way, recall sheaves are about existence of global sections) with De Rham cohomology and etale cohomology; (2) Ext functor: left derived functor of right exact functor of Hom_R(-, B): R-module to Ab^op with group cohomology, Hochschild cohomology and Lie algebra cohomology; (3) Tor functors: left derived functor of tensor product from Mod-R, R-Mod to Ab, examples are group homology, Lie algebra homology. Hochschild homology.
 
 Quillen model structure intuition to derived functors: (1) fibrant cofibrant resolution of object apply that DERIVED functor, extend to whole category to preserve weak equivalences.
 
@@ -931,7 +1003,7 @@ Moduli space: points are algebro-geometric isomorphism classes of objects, solut
 
 Example of projective space as moduli space: real / complex projective space is a moduli space parametrising the space of line passing through the origin in real / complex space.
 
-Example of Grassmanian as moduli space: Grassmanian G(k, V) of a vector space over field K is moduli space of all k-dimensional linear subspaces of V. I think this is the example that is interesting since it talks about vector spaces directly.
+Example of Grassmannian as moduli space: Grassmanian G(k, V) of a vector space over field K is moduli space of all k-dimensional linear subspaces of V. I think this is the example that is interesting since it talks about vector spaces directly.
 
 Lindelof spaces equivalent to axiom of countable choice: the following are equivalent: (1) N, Q, and R are Lindelof spaces i.e. weaken compactness to use countable subcover / local refinement; (2) the axiom of countable choice holds for subsets of the reals.
 
@@ -1285,8 +1357,9 @@ Dense: subset A is dense in set X if every point in X can is either in or close 
 
 Baire category theorem, main result (Tao's definition): let E_1 and E_2 ... be a countable sequence of subsets of a complete metric space X, if the union of all this sequence contains a ball B (at least axiom of dependent choice is used here, when you take the countable union of this sequence and somehow gets a ball out of it by dilating the ball to be big enough), then at least one of the E_n is dense in a subball B' and B. The contrapositive is interesting: the countable union of nowhere dense sets cannot contain a ball. 
 
-Baire category theorem, classical equivalent characterisation: any complete metric space, its underlying topological space is a completely metrisable topological space is a Baire space (this is the BCT1 definition). Recall that a metric space, completeness can be defined using Arzela-Ascoli (compact, bounded, equicontinuous). This requires the axiom of choice, or at least the axiom of dependent choice. However, you do not need the axiom of choice if the space is separable (i.e. it has a countable dense subset).
-This means the reals are Baire spaces, irrational numbers are Baire spaces, every Polish space is a Baire space.
+Baire category theorem, classical equivalent characterisation: any complete metric space, its underlying topological space is a completely metrisable topological space is a Baire space (this is the BCT1 definition). Recall that a metric space, completeness can be defined using Arzela-Ascoli (compact, bounded, equicontinuous). This requires the axiom of choice, or at least the axiom of dependent choice. However, you do not need the axiom of choice if the space is separable (i.e. it has a countable dense subset). This means the reals are Baire spaces, irrational numbers are Baire spaces, every Polish space is a Baire space.
+
+Polish space: separable completely metrizable topological space homeomorphic to complete metric space with countably dense subset. Example, real line, separable Banach space, Cantor space. Motviation is to be used for measure theory.
 
 Baire category theorem, alternative characterisation: every locally compact regular space is a Baire space. Also, every locally compact Hausdorff space is a Baire space. Examples: compact Hausdorff space like the Cantor set, or manifolds even if not paracompact (hence not metrisable)
 
@@ -2690,7 +2763,7 @@ Unital subring: some authors define the identity to be in subring. Note that ana
 
 Injective: covariant pullback, if f(x) = f(y) then x = y.
 
-Well defined function: covariant pushforward, if x = y, then f(x) = f(y)
+Well defined function: "covariant pushforward", if x = y, then f(x) = f(y)
 
 Sobolev embedding (Tao's intuition): amplitude A, frequency N, support on volume V. Wk,p norm is AN^kV^-p, Apply uncertainty principle, V >= N^-d. Think of it as a trade off between regularity and intergrability. These are single bump function spaces, can extend a lot further. W11(R)  =  L^infty(R1) is fundamental theorem of calculus Wd1(R)  =  L^infty(Rd) is iterated and Fubini applies.
 
@@ -2734,7 +2807,7 @@ Derived functors: normal functors that are presented in a category of weak equiv
 
 Dehn twist: cut cylinder with line, glue back circle with rotation. Line becomes twisted at cut. These are the simplest infinite order elements of the mapping class group. These are "natural". There is a fundamental theorem, SL(n, Z) is generated by elementary matrices, then Mod(S_g) is generated by finitely many Dehn twists.
 
-Mapping class group of S_g is generate by finitely many Dehn twist: prove using induction on genus, Birman exact sequence for induction on genus. Connected when g >= 2. Simplicial complex C(S_g) encodes intersecton patterns of simple closed curves.
+Mapping class group of S_g is generate by finitely many Dehn twists: prove using induction on genus, Birman exact sequence for induction on genus. Connected when g >= 2. Simplicial complex C(S_g) encodes intersecton patterns of simple closed curves.
 
 Mapping class group of torus is isomorphic to special linear group SL(2, Z): you can prove tons of properties of of SL(2, Z) by now using the torus. This is one of the highlights of the book.
 
@@ -2886,13 +2959,13 @@ Proof that right adjoints preserve limits, the one I understood is the proof her
 
 Hom functors, takes product of morphisms in opposite category and category (order is important) to category of set, specifically pairs of morphisms to hom-sets. This preserves limits, taking pairs of (colimit in opposite category, limit in covariant category) to limits in set. Contravariance in first variable C^op \* C means it preserves colimits in the first variable, but C^op reverses this so it also preserves limits. In a sense, the definition of Hom functors ensures that it preserves limits.
 
-Sheaf cohomology can be thought of as obstructions when you have an abelian group on a space and try to patch things locally on abelian groups.
+Sheaf cohomology: obstructions when you have an abelian group on a space and try to patch things locally on abelian groups.
 
-Sheaf cohomology (Wikipedia gives best definition): right derived functors of left exact functor (here, the functor becomes the “coefficients”of the cohomology) of the sheaves of abelian groups on a space to abelian groups. Implies vanishing on negative sheaf cohomology, and also the zeroth cohomology group is given by the group of global sections of the left exact functor on the space.
+Sheaf cohomology (Wikipedia gives best definition): right derived functors of left exact functor (here, the functor becomes the “coefficients” of the cohomology) of the sheaves of abelian groups on a space to abelian groups. Implies vanishing on negative sheaf cohomology, and also the zeroth cohomology group is given by the group of global sections of the left exact functor on the space.
 
 Enough injectives: for every sheaf there is an injective sheaf with injection from sheaf to injective sheaf. This is proved knowing that category of abelian sheaves form an abelian category. Abelian category Mitchell embeds into category of modules over ring. Nice Kunneth, snakes.
 
-General working example for pullbacks and pushforwards in motivating clients homology, consider a continuous map of topological spaces from Y to X, there is a pullback of sheaves over abelian groups f^\_ from Ab(X) to Ab(Y) which requires sheafification first over colimits, however it is better described by the equality between stalks of the pullback composed with its presheaf functor to the stalk on the image of the element. Pushforward of sheaves is easier in this case from f\_\_ from Ab(Y) to Ab(X), where the composition of the pushforward with the (pre)sheaves functor on a topological space X gives the the global sections functor on the preimage of the topological space. The pullback is exact, the pushforward is only left exact. The composition of the right derived functor on the pushforward on some space X gives the sheafification of opens to its cohomology on the inverse images with coefficients in the (pre)sheaf functor. Note that inverse images of a sheaf is typically only a presheaf, need to sheafify again.
+General working example for pullbacks and pushforwards in motivating homology, consider a continuous map of topological spaces from Y to X, there is a pullback of sheaves over abelian groups f^\_ from Ab(X) to Ab(Y) which requires sheafification first over colimits, however it is better described by the equality between stalks of the pullback composed with its presheaf functor to the stalk on the image of the element. Pushforward of sheaves is easier in this case from f\_\_ from Ab(Y) to Ab(X), where the composition of the pushforward with the (pre)sheaves functor on a topological space X gives the the global sections functor on the preimage of the topological space. The pullback is exact, the pushforward is only left exact. The composition of the right derived functor on the pushforward on some space X gives the sheafification of opens to its cohomology on the inverse images with coefficients in the (pre)sheaf functor. Note that inverse images of a sheaf is typically only a presheaf, need to sheafify again.
 
 Motivation for cohomology, the following are equivalent exact sequence of presheaf/sheaf functors is exact if it is exact in stalks, however the global sections functors only give a left exact sequence. The easiest example considering these presheaf functors with integers as the kernel, sheaves over the reals as the image to the sheaves and sheaves over the cokernel is the unit circle. There is an exact sequence of stalks, given by the double cover as the real image of the integers over the circle as a quotient space, but there is no canonical lift of the identity residing the circle to its double cover. This gives a counterexample to how global section functors (which are continuous maps between the circle to the reals or the double cover or continuous maps between the circle to the circle) are exact.
 

@@ -12,19 +12,21 @@ Ramification points and branch points of compact Riemann surfaces.
 
 Lifting property of covering, means we can find something f such that g composed with f gives h, given g and h.
 
-Covering space and analytic continuation?
-
-Don’t understand what is a covering map? See Kuga’s Galois Dream?
+Covering space and analytic continuation? https://mathoverflow.net/questions/479125/analytic-continuation-gives-a-covering-space-and-not-just-a-local-homeomorphism
 
 Smith normal form for homology?
 
 Transmission and blocking zeroes of transfer function?
 
-Invariant factor calculation
+Invariant factor calculation.
+
+Invariant factor as free rank of Betti number of module?
+
+Extended Euclid's algorithm?
 
 Spec C[x] to Spec R[x]
 
-Dense image for spec?
+Dense image for Spectrum? 
 
 Chain? Refinement? Simplicity? Composition series?
 
@@ -32,35 +34,29 @@ Homology of finite simplicial complex over integers, try two by two matrix https
 
 Make this make sense: If one wants to summarize our knowledge of physics in the briefest possible terms, there are three really fundamental observations: (i) Space-time is a pseudo-Riemannian manifold M, endowed with a metric tensor and governed by geometrical laws. (ii) Over M is a vector bundle X with a nonabelian gauge group G. (iii) Fermions are sections of (???). R and F are not isomorphic; their failure to be isomorphic explains why the light fermions are light and presumably has its origins in a representation difference A in some underlying theory. All of this must be supplemented with the understanding that the geometrical laws obeyed by the metric tensor, the gauge fields, and the fermions are to be interpreted in quantum mechanical terms.
 
-Maybe the first and clearest situation one sees motivic behavior is in the Weil conjectures (and this is how Grothendieck formulated the ideas around motives in the first place) Among other things the Weil conjectures (which are theorems by the way) tell you that the number of solutions to polynomial equations over finite fields controls/is controlled by the topology of the space of solutions over the complex numbers. Motives would certainly imply this sort of thing
+Spectral sequences topics: Leray spectral, sheaf cohomology, pushforward, chain complex, fibrations, derived functors, grothendieck spectral, chain complex; visualisation; cup product; cohomology ring; differential graded algebra; exact couple; derived couple; bockstein; serrel atiyah-hirezburch for k theory; filtered complex; hodge-de rham spectral
 
-The Wikipedia page is horrible and I will probably rewrite it at some point. Someone already suggested the Grothendieck ring of varieties K_0(Var) which is sort of related but isn’t quite what motives are… 
+Geometric invariant theory topics: Isbell dual, quotients, action groupoids, moduli spaces, moduli stacks; reductive group on projective variety; orbifold; gauge group; bridgeland stability conditions; deligne mumford stack, stability, stable vector bundles
 
-The point is that you see the same kinds of behaviors around the cohomology of algebraic varieties between all sorts of different cohomology theories, because all of those cohomology theories are supposed to be different realizations of the same underlying object, namely the motive of the variety. The idea is that every cohomology class should be explained by the existence of algebraic cycles in some sense, and those algebraic cycles can be realized as classes in various cohomology theories.
+Atiyah Singer topics: elliptical differential operator, analytic index, compact manifold, topological index, Riemann-Roch, gauss bonnet, Pontryagin classes; differential operator symbol; fredholm operator; todd class; mixed cohom class; chern character; classifying space; thom isomorphism; index problem; grothendieck riemann roch; teleman index theorem, many index theorem, Hirzeburch-Thom characteristic classes;
 
-spectral sequences topics: leray spectral, sheaf cohomology, pushforward, chain complex, fibrations, derived functors, grothendieck spectral, chain complex; visualisation; cup product; cohomology ring; differential graded algebra; exact couple; derived couple; bockstein; serrel atiyah-hirezburch for k theory; filtered complex; hodge-de rham spectral
+Symplectic reduction topics: almost Kahler manifolds; cotangent bundles; 1-form; Hamiltonian; symplectic gradient; Hamiltonian group action; moment maps; convex polytope; conjugates; equivariant moment maps; moment image as n-simplices
 
-geometric invariant topics: isbell dual, quotients, action groupoids, moduli spaces, moduli stacks; reductive group on projective variety; orbifold; gauge group; bridgeland stability conditions; deligne mumford stack, stability, stable vector bundles
+Deformation theory examples: moduli space; functor of points; family; fibres of same type; isomorphism classes of vector bundles of fixed rank; isomorphism classes of subvarieties of a fixed varieties with fixed hilbert poly; iso classes of regular maps; stability condition; coherent sheaf; vector bundle; nonsingular varieties; moduli problem functor; representable of moduli problem; art category; curvilinear deformation; first order deformation; tangent space; obstructions; embedded deformations; dgla philosophy; deformation of nonsingular varieties; deformation of bundle; Cech differential; deformation fo smooth embedded varieties; Kuranishi model; germ of moduli space; T1 lifting technique;
 
-Atiyah Singer topics: elliptical differential operator, analytic index, compact manifold, topological index, riemann roch, gauss bonnet, pontryagin classes; differential oprerator symbol; fredholm operator; todd class; mixed cohom class; chern character; classifying space; thom isomorphism; index problem; grothendieck riemann roch; teleman index theorem, many index theorem, hirzeburch thom char classes;
+Lefschetz pencils: hyperplane slices; hyperplane theorem; eigenvalues, ordinary double point, Hessian nondegeneracy; dimension counting environment; real morse theory; vanishing cycle; Lefschetz thimble; monodromy; hard Lefschetz;
 
-Symplectic reduction topics: almost Kahler manifodls; cotangent bundles; 1-form; Hamiltonian; symplectic gradient; Hamiltonian group action; moment maps; convex polytope; conjugates; equivariant moment maps; moment image as n-simplicies.
+Moduli spaces topics: stable bundles; parameter space; deformations; ringed space; germs; pullbacks; moduli problem; classify up to equivalence; base spacel family pullbacks; example of families; deformation of vector bundles; hilbert poly and flatness; functor of points; fine moduli space; universal family; coarse moduli space; jump phenomenon; quot functor; symmetric algebra; plucker embedding to show Grassmannian is projective smooth irreducible variety; simpson's construction; Fieseker stability; 
 
-Deformation theory examples: moduli space: functor of points: family; fibres of same type; iso classes of vector bundles of fixed rank; iso classes of subvarieties of a fixed varieties with fixed hilbert poly; iso classes of regular maps; stability condition; coherent sheaf; vector bundle; nonsingualr varieties; moduli problem functor; representable of moduli problem; art category; curvilienar deformation; first order deformation; tangent space; obstructions; embedded deformations; dgla philosophy; deformation of nonsingular varities; deformation of bundle; cech differential; deformation fo smooth embedded varieties; kuranishi model; germ of moduli space; T1 lifting technqiue;
+Ordinary double point topics: hypersuface singularities; nodes; Deligne-Mumford compactification; pencil of sections; Morse lemma; smoothing; resolving; Milnor fibre; symplectic geometry; Lagrangian submanifold; vanishing cycles; monodromy, holomony; Dehn twist; Picard-Lefschetz formula; resolution of singularities using birational map compare to this; Cartier divisor; Atiyah flop; algebraic surgery;
 
-Lefschetz pencils: hyperplane slices; hyperplane theorem; eigenvalues, ordinary double point, hessian nondegeneracy; dimension counting environment; real morse theory; vanishing cycle; lefschetz thimble; monodromy; hard lefschertz;
+Tropical curves topics: amoebas; moment map; clifford torus; graph of amoeba; tropicalisation; tropical curves; corner loci; tropical semiring; weights and balancing; relation with plane conic; degree and number of tentacles;newton polygons; combinatorial object; example of reducing algebraic geometry to combinatorics; Puiseux series; 
 
-Moduli spaces topics: stable bundles; parameter space; deformations; ringed space; germs; pullbacks; moduli problen; classify up to equivalence; base spacel family pullbacks; example of familities; deformation of vector bundles; hilbert poly and flatness; functor of points; fine moduli space; universal family; coarse moduli space; jump phenomenon; quot functor; symmetric algebra; plucker embedding to show grassmanian is projective smooth irreducible variety; simpson's construction; gieseker stability; 
+Weil conjectures topics: Grothendieck group of nicely compactible differential manifolds; universal Euler characteristic; Ax-Grothendieck; Lefschetz principle for first order logic; profinite completion; spreading out; counting points; Grothendieck ring of varieties; motivic measures; de Rham fundamental group; algebraic envelope; zeta functions; rational functions, functional equation, Betti numbers and related to Riemann hypothesis; Hasse-Weil for elliptic curves; Weil cohomology theory; Poincare duality; Kunneth formula;
 
-Ordinary double point topics: hypersuface sinularities; nodes; Delign mumford compactification; pencil of sections; Morse lemma; smoothing; resolving; Milnor fibre; symplectic geometry; Lagrangian submanifold; vanishing cycles; monodromy, holomony; Dehn twist; Picard-Lefschetz formula; resolution of singularities using birational map compare to this; Cartier divisor; Atiyah flop; algebraic surgery;
+Hodge theory topics: hodge star operator; hodge theorem; stokes theorem; de rham cohom; exterior derivative; laplacian operator as linear operator called harmonic; hodge theorem; poincare duality; betti numbers, weitzenbock formula; fundamental form; Kahler manifold; dolbeault theorem
 
-Tropical curves topics: ameobas; moment map; clifford torus; graph of ameoba; tropicalisation; tropical curves; corner loci; tropical semiring; weights and balancing; relation with plane conic; degree and number of tentacles;newton polygons; combinatorial object; example of reducing algebraic geometry to combinatorics; puiseux series; 
-
-Weil conjectures topics: gorthendieck group of nicely compactible differential manifolds; universal Euler characteristic; Ax-Grothendieck; Lefschetz principle for first order logic; profinite completion; spreading out; counting points; gorthendieck ring of varieties; motivic measures; de Rham fundamental group; algebraic envelope; zeta functions; rational functions, functional equation, Betti numbers and related to Riemann hypothesis; Hasse-Weil for elliptic curves; Weil coohomology theory; poincare duality; kunneth formula;
-
-Hodge theory topics: hodge star operator; hodge theorem; stokes theorem; de rham cohom; exterior derivative; laplacian operator as linear operator called harmonic; hodge theorem; poincare duality; betti numberl weitzenbock formula; fundamental form; Kahler manifold; dolbeault theorem
-
-Koszul duality topics: artin-wedderburn, semisimple algebras; koszul algebras, koszul dual; ext algebra; augmentation; poincare poly; quadratic duality; quadratic algebra as quotients of tensor algebras; koszul resolutions; derived kozsul duality; differential graded algebra; rational homotopy theory; quillen's model; whitehead product; massey product; minimal algebra;
+Koszul duality topics: Artin-Wedderburn, semisimple algebras; Koszul algebras, Koszul dual; ext algebra; augmentation; poincare poly; quadratic duality; quadratic algebra as quotients of tensor algebras; Koszul resolutions; derived Koszul duality; differential graded algebra; rational homotopy theory; Quillen's model; Whitehead product; massey product; minimal algebra;
 
 Toric varieties: Polytopes and symplectic toric varieties, Givental's quotient construction, line bundles and divisors, Fans and algebro-geometric toric varieties, symplectic manifold, sympleictic form, n-torus, C* complexification of S1, moment maps, hamiltonian, atiyah guillemen sternberg, delzant polytope, fan, toric blow up, combinatorial structure; 
 
@@ -83,8 +79,6 @@ Spec and Proj phenomena: (1) algebraically closed; (2) duality of space and ring
 Frechet spaces?
 
 Schwartz notations?
-
-Number ring?
 
 Gorenstein ring?`
 
@@ -126,21 +120,15 @@ What is the best way to write down Frobenius reciprocity in terms of tensor prod
 
 Proj is to Spec as projective varieties are to affine varieties. To elaborate on this, just as Spec takes a ring and gives you an affine scheme by putting a structure sheaf on the space of prime ideals with the Zariski topology, Proj takes a graded ring and gives you a (general) scheme by putting a structure sheaf on the space of homogeneous prime ideals with the Zariski topology. I'm leaving out some details, but you said you wanted an "intuitive" understanding.
 
-Zariski topological group, TFAE: G with the Zariski topology is a topological group, G is finite.
-
 Complex character of finite group is Q linear combination induced from cyclic subgroup? What does this mean?
 
-Cardinality with element g, h in G with coprime cardinality such that card gh = card g * card h, iff G is nilpotent. Baumslag Wiegold 2014???
-
-Over ZF, ultra filter lemma is equivalent to maps from X to Sierpinski two point set with product topology is compact . Make this make sense?
+Over ZF, ultrafilter lemma is equivalent to maps from X to Sierpinski two point set with product topology is compact. Make this make sense?
 
 Over ZF: The ultrafilter lemma implies that a countable union of finite sets is always countable. Interesting, I didn’t know we need to make this assumption. It also implies that every countable family of non-empty finite sets has a choice function, which is equivalent to Kónig's lemma. Make this make sense?
 
+Examples of weak choice principles: https://math.stackexchange.com/questions/3001455/how-strong-are-weak-choice-principles
+
 Ring with Jacobson radical (Gupta-Khurana-Khurana-Lam 2009): TFAE, transpose of every invertible square matrix over R is invertible; R/rad(R) is commutative
-
-Birkhoff Kakurani theorem: topological group TFAE: G is first countable and Hausdorff; G is metrizable
-
-D be category, object is space of distinct closed base point and base point preserving map. Theorem by Freyd is that Terminal object is [0,1].
 
 For monoid: TFAE: pullback of triple cross to double cross to single cross; G is a group.
 
@@ -149,9 +137,9 @@ Gupta 1970, over every division ring D, not a field, there is an invertible size
 Let R be a ring. Writing Tr for the trace of a matrix, TFAE: (1) Whenever A,B,C are square matrices of the same size over R, we have Tr(ABC) = Tr(CB).
 (2) R is the zero ring.
 
-Exactly 9 model category structure in set?
+Exactly 9 model category structure in set? https://www.matem.unam.mx/~omar/notes/modelcatsets.html
 
-Combinatorial species?
+https://www.matem.unam.mx/~omar/notes/surprises.html
 
 Partial retrospective, like taking a partial derivative looking to the future
 
@@ -162,8 +150,6 @@ Affine and projective varieties and schemes.
 Complex manifolds and the Kähler condition.
 
 Levi-Civita and Chern connections.
-
-(GAGA?)
 
 Minimal primes: codimension 0 (why?)
 
@@ -210,13 +196,13 @@ I'm not sure where to ask this but can someone explain to me the definition of a
 
 Tor functor does not detect torsion
 
-Torsion subgroup
-
 Combinatorial Set Theory by Halbeisen
 
 https://terrytao.wordpress.com/2009/10/19/grothendiecks-definition-of-a-group/ A group is identifiable with a (set-valued) sheaf on the category of simplicial complexes such that the morphisms associated to collapses…
 
 Galois group
+
+Computation of Galois groups: https://math.stackexchange.com/questions/45893/how-to-find-the-galois-group-of-a-polynomial
 
 Chain of closed irreducibles corresponds (locally, dually) to a chain of primes. so a minimal prime (i.e. has no proper prime 'subideals') corresponds to a maximal closed irreducible set a.k.a. an irreducible component
 
@@ -225,8 +211,6 @@ Polarisation is an I sogeny to the dual abelian variety, and a principal polariz
 Hermitian pairing
 
 Euler product?
-
-Spanier Whitehead category
 
 Prism map?
 
@@ -238,7 +222,7 @@ Lebsegue measure as interval coverings?
 
 Exterior domain
 
-Polish space
+Polish space, Lusin space, Suslin space, Radon spaces and probability theory: https://en.wikipedia.org/wiki/Polish_space
 
 “Closed category” with any monoidal product, like the hom-tensor adjunction, so cartesian there definitely refers to the cartesian product structure on C as opposed to a tensor product.
 
@@ -250,25 +234,23 @@ Descartes did not just describe the plane as the product of a line with itself, 
 
 For curves the arithmetic and geometric genus are defined by finding a replacement smooth curve and taking its genus. For the geometric genus: the normalization. For the arithmetic genus: the deformation to smoothness. For higher dimensional compete varieties, the geometric genus is again defined by normalization, but the normalization isn’t smooth. The geometric genus is h^0,n, while you propose h^0,1. h^0,n is better because it is birationally invariant.
 
-The **definition** of birationally equivalent is that there is are open dense subset that are isomorphic
+Every algebraic variety is birational to a projective variety (Chow's lemma). https://en.wikipedia.org/wiki/Birational_geometry
+
+Hironaka's 1964 theorem on resolution of singularities
 
 Show equivalence of definitions: variety is irreducible iff every dense open subset is connected iff every sufficiently small open dense subset. Sufficiently small dense opens are a birational invariant
 
-Example of  "affine basis" of the plane z=1 in R3? I'm curious if there is an element of this basis that corresponds to the origin. Is <1,0,1>,<0,1,1>, <0,0,1> an affine basis? A set is an affine basis of when you translate it so that one element  is the origin, the rest forms a basis
+Example of  "affine basis" of the plane z=1 in R3? I'm curious if there is an element of this basis that corresponds to the origin. Is <1,0,1>,<0,1,1>, <0,0,1> an affine basis? A set is an affine basis of when you translate it so that one element is the origin, the rest forms a basis
+
+Exterior power?
 
 Prove rings are unital, then every left artinian ring is also left Noetherian, so you have both ACC and DCC
 
 component of a point x from X is a union of all connected subsets of  X that contain x
 
-Wirtinger presentation
-
 Orientability table
 
-Open cover of trivialisation
-
 Cofinal has nothing to do with categorical duality
-
-Convex hull
 
 Integral over as element vs integral over as field? If K is integral over F (K,F are fields) then thats the same as saying K is algebraic over F right?
 
@@ -313,8 +295,6 @@ Fans and algebro-geometric toric varieties.
 Koszul resolutions and Koszul duality.
 
 Hodge theory.
-
-The Weil conjectures.
 
 Cohomology, motives, point counting.
 
@@ -400,7 +380,7 @@ Baer-Specker?
 
 Balog-Szemeredi-Gowers theorem?
 
-Banach space representation
+Banach space representation https://ivv5hpp.uni-muenster.de/u/pschnei/publ/pap/iwasawa.pdf
 
 Base change of closed immersion stays closed immersion proof using locality.
 
@@ -412,21 +392,19 @@ Bertini's theorem
 
 Binomial theorem consequences?
 
-Birkhoff ergodic theorem
-
 Bochner's theorem
 
 Bombieri-Vinogradov theorem?
 
 Borcherds proof of Lasker Noether motivates all the definitions to look at it
 
-Borel subgroup?
+Borel subgroup? https://en.wikipedia.org/wiki/Borel_subgroup
 
 Borsuk-Ulam theorem
 
 Bounded variation vs monotonic function?
 
-Braid lemma?
+Braid lemma? https://ncatlab.org/nlab/show/braid+lemma
 
 Brauer-Siegel formula?
 
@@ -444,8 +422,6 @@ Capacity with cost? How is the cost applied?
 
 Carleson embedding?
 
-Cartesian closed?
-
 Casorati-Weierstrass proof of essential singularity.
 
 Cauchy integral formula?
@@ -456,15 +432,11 @@ Cauchy's integral formula?
 
 Cauchy's theorem
 
-Cayley's theorem on algebraic group?
-
 Central limit theorem applications?
 
 Chain equivalences?
 
 Characteristic fluctuation scale?
-
-Characteristic functions of open sets?
 
 Chebotarev density theorem
 
@@ -472,13 +444,11 @@ Christoffel symbols?
 
 Clariaut's theorem and why is it true?
 
-Clariauts theorem and why is it true?
-
-Class number formula?
+Class number formula? https://en.wikipedia.org/wiki/Class_number_formula
 
 Class number problem?
 
-Classical completion?
+Classical completion? https://kskedlaya.org/prismatic/sec_derived-complete.html
 
 Classification of singularities?
 
@@ -498,17 +468,15 @@ Completion of ring construction inverse limit, do not understand what do you mea
 
 Complexity and Real Computation?
 
-Connecting homomoprhism?
+Connecting homomorphism?
 
 Consequences of the fundamental theorem of calculus?
 
 Construction on the Haar measure on locally compact groups? Explore this in the context of representation theory.
 
-Constructive definition of connectedness? Not the nonexistent definition.
-
 Contravariance of universal property, example: there is a unique map from scheme S to spectrum of Z, scheme S can be represented by this unique map. The proof relies on the fact that there is a unique (ring) homomorphism from the integers to any other ring. This is contravariant! Why is that? Can we complete this proof so that it clarifies going on. Note, a ring is an abelian group with an additional monoidal structure given by tensor product?
 
-Convex conjguate? Lagrange duality? Dual problem?
+Convex conjguate? Lagrange duality? Dual problem? https://cs.stanford.edu/people/davidknowles/lagrangian_duality.pdf
 
 Coordinate process as stochastic process?
 
@@ -518,8 +486,6 @@ Cousin problems?
 
 Covering lemma?
 
-Coxeter group?
-
 Curry and apply as Scott continuous?
 
 Cyclotomic fields to prove quadratic reciprocity?
@@ -528,11 +494,9 @@ Darboux continuous?
 
 Darboux theorem
 
-De Morgan algebra?
+De Morgan algebra? https://en.wikipedia.org/wiki/De_Morgan_algebra Can do this I am lazy.
 
 Decomposition group?
-
-Definition of mapping class group not motivated. Classification even more so. Thurston-Nielsen classification.
 
 Denotational semantics?
 
@@ -560,8 +524,6 @@ Dirichlet's theorem?
 
 Dirichlet's unit theorem?
 
-Do not fully understand the proof of supremum norm as norm, especially the step.
-
 Do not really understand the duality between ideals and filters. Need to break it down in terms of definitions in ways I could understand.
 
 Do not understand simple example of power series ring being faithfully flat BUT NOT free.
@@ -569,8 +531,6 @@ Do not understand simple example of power series ring being faithfully flat BUT 
 Do not understand spanning trees from linear algebra.
 
 Do not understand the definition of Prufer domains: Prufer domain: commutative ring without zero divisors, such that every non zero finitely generated ideal is invertible.
-
-Do not understand the purpose of having representable limits and colimits and their nature?
 
 Do not understand the purpose of the Kolmogorov consistency theorem? The proof also relies axiom of choice? https://fabricebaudoin.blog/2012/03/25/lecture-5-the-daniell-kolmogorov-existence-theorem/
 
@@ -586,17 +546,15 @@ Don’t fully understand Borcherds complete computation of Tor over finitely gen
 
 Don’t fully understand how tensor and Hom are adjunctions? Constant is left adjoint to limits which are right adjoint. Colimit is left adjoint to constant which are right adjoint
 
-Don’t fully understand locality and glueing? Why do we need these in contrast when we do open covers that do all the work for us.
+Don’t fully understand locality and glueing? Why do we need these in contrast when we do open covers that do all the work for us. See separated presheaf, sheaf, scheme constructions.
 
 Don’t understand Zhen Lin’s comment: usual five lemma follows from the short five lemma: factor each morphism appearing in the rows into an epimorphism followed by a monomorphism.
-
-Don’t understand definition 6.10.4, why define predicate as equivalence class that way.
 
 Don’t understand how to keep it in head? Kunneth formula. Duality
 
 Don’t understand measurable functors and the fact that the realisation of a probability law is a natural transformation from the random variable functor to the measurable functors? Where in the construction do you want the measurable functor to use the axiom of dependent choice?
 
-Don’t understand the definition of quasiinverse?
+Don’t understand the definition of quasiinverse? https://ncatlab.org/nlab/show/weak+inverse. Princial of equivalence?
 
 Don’t understand the salamander lemma, it’s proof and its importance.
 
@@ -618,17 +576,15 @@ Eisenbud says II1 to II4 as vocabulary building. But basic results are hidden he
 
 Eisenstein criterion?
 
-Embedding? General examples?
+Embedding? General examples? https://ncatlab.org/nlab/show/embedding
 
 Empty set: $(1)$ as ideal or the unit ideal. Useful in showing (quasi)compactness of Zariski topology?
 
-Entropy rate of stationary Markov chain?
+Entropy rate of stationary Markov chain? https://www2.isye.gatech.edu/~yxie77/ece587/Lecture6.pdf
 
 Ergodic theorem? What are some important classes of this?
 
 Essential extension?
-
-Euclidean algorithm? Good definition for it to keep in your head.
 
 Euler class?
 
@@ -648,7 +604,7 @@ Exterior powers of vector space?
 
 Fano’s inequality proof? Motivation (hint: channel coding theorem)
 
-Fatou's lemma
+Fatou's lemma: https://en.wikipedia.org/wiki/Fatou%27s_lemma
 
 Field of one element?
 
@@ -658,7 +614,7 @@ Figure out easier proof of Goursat's lemma and Zassenhaus' butterfly lemma, Schr
 
 Fill in fundamental theorem of quotient groups.
 
-Final topology, cofinal topology?
+Final topology (https://en.wikipedia.org/wiki/Final_topology), cofinal topology? Final topology is coinduced, weak, colimit, inductive. Quotient topology of quotient space is final topology.
 
 Find generalisations or good definitions that help prove the Baire category theorem.
 
@@ -666,13 +622,13 @@ Finetti theorem?
 
 Finish the proof of closed subspaces of Banach spaces are Banach spaces.
 
-Finite dimensional representation of compact group always unitary: proof by stickign inner product and integrate?
+Finite dimensional representation of compact group always unitary: proof by sticking inner product and integrate?
 
 Finite field F_p, are there irreducible polynomials of each degree? Yes and how to compute them?
 
-Finite vision ring necessarily commutative proof and why?
+Finite division ring necessarily commutative proof and why?
 
-Finitely co-generated?
+Finitely co-generated? https://math.stackexchange.com/questions/2239502/an-example-about-finitely-cogenerated-modules
 
 Fix the corollary on quantiative regularity for the closed graph theory.
 
@@ -726,7 +682,7 @@ Gauss-Bonnet theorem?
 
 Genus of curve? Arithmetic genus? Serre duality?
 
-Geometric Nakayama?
+Geometric Nakayama? https://math.stackexchange.com/questions/3895881/geometric-nakayamas-lemma
 
 Girsanov's theorem?
 
@@ -786,7 +742,7 @@ Homotopy long exact sequence of fibration?
 
 How are analytic functions related to the completions of a commutative ring?
 
-How are anima a generalisation of homotopy types and infinity groupoids? What are they even?
+How are anima a generalisation of homotopy types and infinity groupoids? What are they even? https://www.reddit.com/r/math/comments/ni8a7l/why_are_infinitygroupoids_the_right_notion_of/
 
 How are anima a generalisation of homotopy types? Now it is worse ncatlab uses it as a synonym for infinity groupoid.
 
@@ -796,9 +752,9 @@ How are truncations the Postnikov sections, and why are these important? How can
 
 How are types obedient to partial equivalence relations?
 
-How are types of sheaves intuitionistic in nature?
+How are types of sheaves intuitionistic in nature? https://studenttheses.uu.nl/bitstream/handle/20.500.12932/22151/Applications%20of%20sheaves%20to%20intuitionistic%20logic.pdf?sequence=2
 
-How are vector bundles equivalent to class groups?
+How are vector bundles equivalent to class groups? https://www.math.uchicago.edu/~may/VIGRE/VIGRE2008/REUPapers/Clarkson.pdf
 
 How do I compute homologies my head with practice exercises?
 
@@ -826,7 +782,7 @@ How does one generalises preserves, creates, and reflection of limits generally.
 
 How does one make it easy to define frames particularly the distribution of joints and meets apart from using infimum and supremum?
 
-How does one prove that the continuum hypothesis is independent are ZFC.
+How does one prove that the continuum hypothesis is independent are ZFC?
 
 How does one understand QR factorisation?
 
@@ -836,7 +792,7 @@ How does unitary matrices be easier to compute (conjugate transpose) and why doe
 
 How is Gelfand duality related to the Stone Weierstrass theorem and how is Peter Johnstones book talking about this? See ncat page on Stone spaces.
 
-How is tensor product related to smash product?
+How is tensor product related to smash product? https://ncatlab.org/nlab/show/smash+product
 
 How is the Scott topology and semicontinuity not related?
 
@@ -848,15 +804,15 @@ How on earth do you work snake lemmas, five lemmas, magic diagrams. Do not under
 
 How to do classification of order of groups?
 
-How to maximise the use of the Chinese remainder theorem?
+How to maximise the use of the Chinese remainder theorem? Fast Fourier transform?
 
 How to remember the conditions for central limit theorem?
 
 How to understand Lie’s three laws? It is apparently some realisation from some functor but it is not really clear?
 
-How to understand Schur's lemma defined using endomorphism ring? Simple modules? Division rings?
+How to understand Schur's lemma defined using endomorphism ring? Simple modules? Division rings? https://en.wikipedia.org/wiki/Schur%27s_lemma
 
-How to understand dependent product projections?
+How to understand dependent product projections?        
 
 How to understand pullbacks and monomorphisms intuitively in the subobject classifier definition?
 
@@ -866,8 +822,6 @@ Hurewicz fibrations?
 
 Hurewicz theorem?
 
-Hyperbolic space?
-
 I also do not really understand the motivation for all the effort to form the difference equations for coefficient matrices. I understand these are important in practice, but I do not understand useful about this viewpoint and how to keep in your head.
 
 I do not fully understand Ito stuff (Ito integral, isometry, calculus) and why is it so potent.
@@ -876,7 +830,7 @@ I do not understand Jacobson rings as a convenience definition.
 
 I do not understand positive definite matrices. Wy are they the thing that round off the course in linear algebra for Strang's book?
 
-I do not understand the inverse limit completion of the ring of integers modulo prime powers.
+I do not understand the inverse limit completion of the ring of integers modulo prime powers. See profinite completion and p-adic integers.
 
 I do not understand total space and the space of sections in the context of homotopy type theory. I always find it hard to imagine the space of functions. Is cobordism?
 
@@ -894,19 +848,17 @@ I don’t understand the two cases in the proof of the Lebesgue-Radon-Nikodym de
 
 I don’t understand the visualisation and contrast between the topological and the type-theoretic induction principles.
 
-I don’t understand transport?
+I don’t understand transport in homotopy type theory?
 
 I don’t understand why how symmetric monoidal tensor products as left adjoints of internal hom and internal Hom as right adjoints for symmetric monoidal tensor products must be the correct valid notion.
 
 I read somewhere that there is perfectoid spaces are a third group of all but I cannot remember?
 
-I realised a lot of classical algebraic topology still appear? Need to go back and learn it. These are for example Kunneth formula, Eilenberg Maclane spaces…
-
-I still don't understand how nilradical form the intersection of all prime ideals of a commutative ring. This is not intuitive to me.
+I still don't understand how nilradical form the intersection of all prime ideals of a commutative ring. This is not intuitive to me. Prove it again, proof is available.
 
 I still don’t understand cohomology other than it is some sort of dual to homology, it is a generalisation of an abelian group, it has some coefficients.
 
-Motivation for normalisers?
+Motivation for normalisers? https://en.wikipedia.org/wiki/Centralizer_and_normalizer
 
 I understand why do we care about derived functors (enough injectives), but how to we understand it? Scholze uses it to give a very clean definition of etale cohomology and what does this even mean? Example: cohomology is the right defined functor from the “abelian space” (specifically spectra) and getting an abelian group. Note that abelian groups are a fully faithful inclusion into cohomology. What does it mean by enough injectives? Sheaf cohomology is the right derived functor to the global section functor? Answer; this is Grothendieck’s genius to use a functor for any coefficient. More specifically any functor as coefficients.
 
@@ -970,7 +922,7 @@ Laurent series versus Laurent polynomials?
 
 Lax-Milgram theorem
 
-Learn cup product properly in Hatcher.
+Learn cup product properly in Hatcher. Hatcher is unreadable to me still...
 
 Lebesgue theorem?
 
@@ -1018,7 +970,7 @@ Make the weak Hilbert Nullstellensatz in terms of partitions of unity make sense
 
 Maschke's theorem proof in groups and in modules and in category theory?
 
-Maximal torii?
+Maximal torii? https://en.wikipedia.org/wiki/Maximal_torus
 
 Maximum modulus principle? Why should I care about it.
 
@@ -1026,7 +978,7 @@ Mayer-Vietoris in different contexts.
 
 Minimax theorem for word length?
 
-Modular forms?
+Modular forms? https://en.wikipedia.org/wiki/Modular_form See Indra's pearls.
 
 Moduli spaces, spaces corresponding to object? Represent a contravariant functor of interest. This usually means that they represent a contravariant functor that we're interested in. For example, Vakil constructs the Grassmannian as a scheme that represents the contravariant functor that takes a scheme $X$ to the set of  surjective morphisms $O_X^n \rightarrow E$, where $E$ is locally free of rank $k$. Make this make sense?
 
@@ -1042,11 +994,11 @@ Morphisms on a base?
 
 Motivation behind distinguished open sets?
 
-Motivation for valuation rings?
+Motivation for valuation rings? https://math.stackexchange.com/questions/462574/learn-about-valuations-valuation-rings-value-group
 
 Motivation of echelon matrices?
 
-Mountain Pass theorem
+Mountain Pass theorem: https://en.wikipedia.org/wiki/Mountain_pass_theorem
 
 Multi-access channel?
 
