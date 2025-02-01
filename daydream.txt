@@ -118,7 +118,7 @@ Cluster algebra
 
 Weak derivative
 
-What is the best way to write down Frobenius reciprocity in terms of dtensor products, resolutions and induced representations?
+What is the best way to write down Frobenius reciprocity in terms of tensor products, resolutions and induced representations?
 
 Proj is to Spec as projective varieties are to affine varieties. To elaborate on this, just as Spec takes a ring and gives you an affine scheme by putting a structure sheaf on the space of prime ideals with the Zariski topology, Proj takes a graded ring and gives you a (general) scheme by putting a structure sheaf on the space of homogeneous prime ideals with the Zariski topology. I'm leaving out some details, but you said you wanted an "intuitive" understanding.
 
@@ -167,8 +167,6 @@ Frobenius theorem on real division algebras?
 
 Make this make sense: pushforwards are nice on sections bad on stalks, pullbacks are nice on stalks bad on sections
 
-Distribution theory as sheaf?
-
 https://math.stackexchange.com/questions/313940/cohomology-with-coefficients-in-the-sheaf-of-distributions
 
 Extension of scalars?
@@ -192,8 +190,6 @@ Codensity theorem?
 Ambient homotopy theory?
 
 Linear map lemma in Axler, try using a proof from the integers
-
-Modules over group ring
 
 Index notation example size or orbit is [N: stabiliser]??
 
@@ -286,15 +282,13 @@ Morse theory and the Witten complex.
 
 Vector bundles and Chern Classes.
 
-Classifying spaces, equivariant cohomology, localisation.
+Equivariant cohomology (classifying spaces sort of explained), localisation.
 
 Blowing up.
 
 Blow ups and blow downs.
 
 Symplectic blow ups.
-
-Topology.
 
 Line bundles and the minimal model programme.
 
@@ -478,7 +472,7 @@ Clariauts theorem and why is it true?
 
 Class number formula?
 
-Class number problem>
+Class number problem?
 
 Classical completion?
 
@@ -489,8 +483,6 @@ Clearer example of the decomposition of SU(2)?
 Closure of test functions?
 
 Coarea formula?
-
-Cocycle condition?
 
 Compactly supported smooth functions dense in L1 by approximating characteristic function on an interval.
 
@@ -582,7 +574,7 @@ Do not understand the significance of the existence of nonempty affine algebraic
 
 Dominated convergence theorem?
 
-Don't understand the essentiallys urjective example where R is isomorphic to poly ring quotiented out by radical ideal.
+Don't understand the essentially surjective example where R is isomorphic to poly ring quotiented out by radical ideal.
 
 Don't understand the intuition the contraction mapping theorem and why is it important.
 
@@ -616,9 +608,7 @@ Egorov's theorem
 
 Eigenvalues of Frobenius map?
 
-Eilenberg Maclane spectrum?
-
-Eilenberg-Maclane Spaces?
+Eilenberg Maclane spectrum? (Hint: use Eilenberg Maclane spaces as representing object)
 
 Eisenbud says II1 to II4 as vocabulary building. But basic results are hidden here.
 
@@ -720,7 +710,7 @@ Fundamental theorem of Galois theory?
 
 Galois field in algebraic codes?
 
-Galois group and why does a symmetric monoidal stable infinity 1 category suitable for this?
+Galois group and why does a symmetric monoidal stable infinity 1 category suitable for this? See Kuga's Galois dream.
 
 Galois group, filtration of it, local field extension.
 
@@ -806,8 +796,6 @@ How are types of sheaves intuitionistic in nature?
 
 How are vector bundles equivalent to class groups?
 
-How can conjugacy classses in the fundmaental group of path connected topological space be considered as free loops under free homotopy?
-
 How do I compute homologies my head with practice exercises?
 
 How do holomorphic function in complex analysis related to regular functions in algebraic geometry?
@@ -874,8 +862,6 @@ Hurewicz fibrations?
 
 Hurewicz theorem?
 
-Hurewicz theorem?
-
 Hyperbolic space?
 
 I also do not really understand the motivation for all the effort to form the difference equations for coefficient matrices. I understand these are important in practice, but I do not understand useful about this viewpoint and how to keep in your head.
@@ -912,13 +898,11 @@ I read somewhere that there is perfectoid spaces are a third group of all but I 
 
 I realised a lot of classical algebraic topology still appear? Need to go back and learn it. These are for example Kunneth formula, Eilenberg Maclane spaces…
 
-I still do not fully understand limit constructions, sure I can think of examples and see how they are all similar.
-
 I still don't understand how nilradical form the intersection of all prime ideals of a commutative ring. This is not intuitive to me.
 
 I still don’t understand cohomology other than it is some sort of dual to homology, it is a generalisation of an abelian group, it has some coefficients.
 
-I understand why centraliser and normalisers are related (conjugation, and commutativity). the motivation for normalisers?
+Motivation for normalisers?
 
 I understand why do we care about derived functors (enough injectives), but how to we understand it? Scholze uses it to give a very clean definition of etale cohomology and what does this even mean? Example: cohomology is the right defined functor from the “abelian space” (specifically spectra) and getting an abelian group. Note that abelian groups are a fully faithful inclusion into cohomology. What does it mean by enough injectives? Sheaf cohomology is the right derived functor to the global section functor? Answer; this is Grothendieck’s genius to use a functor for any coefficient. More specifically any functor as coefficients.
 
@@ -942,7 +926,7 @@ Instantaneous code? Uniquely decodable code? Huffman code? Prefix code?
 
 Integral extension?
 
-Intermediate value theorem?
+Intermediate value theorem? Revisit.
 
 Intersection of affines covered by finite number of affines i.e. QCQS lemma?
 
@@ -1194,8 +1178,6 @@ Rescaled variable, Levy reminds me of some Lp space?
 
 Residue theorem?
 
-Residue theorem?
-
 Resultants?
 
 Ribet’s theorem? This one is quite crazy.
@@ -1268,8 +1250,6 @@ Sobolev norm?
 
 Spectral theorem for self adjoint operators, what else can you milk out of it?
 
-Spectral theorem?
-
 Spectral theorem? See all possibilites of a spectral theorem.
 
 Spherical harmonics?
@@ -1324,7 +1304,7 @@ Thom class?
 
 Tietze extension theorem?
 
-Torelli theorem? How is this concretely applied?
+Torelli theorem? How is this concretely applied? See mapping class groups.
 
 Torus knots?
 
@@ -1390,8 +1370,6 @@ What are adjunctions in homotopy type theory? https://arxiv.org/pdf/2008.12433
 
 What are binding constructs? What are object classifiers?
 
-What are centralisers of group elements?
-
 What are covariant derivatives? parallel transport in this context?
 
 What are covering sieves? What are Grothendieck constructions? How did Scholze define the plus construction?
@@ -1417,8 +1395,6 @@ What are projective resolutions?
 What are representable functors as upper sets or posets?
 
 What are semi simple Lie groups and Lie algebras?
-
-What are sifted colimits?
 
 What are sifted colimits? Why care about sifted categories?
 
@@ -1476,7 +1452,7 @@ Whitney extension theorem?
 
 Why ar proper curves projective? https://math.stackexchange.com/questions/2629341/proper-curves-over-some-field-are-
 
-Why are Galois extensions normal and separable? Why are these the right ones.
+Why are Galois extensions normal and separable? Why is this the right definition?
 
 Why are finite boolean algebras isomorphic to power set algebras? What are power set algebras?
 
@@ -1562,11 +1538,7 @@ classifying topos?
 
 etale fundamental group?
 
-etale fundamental groups?
-
 etale topology, fppf topology? Sites? easy to remember definition of sites other than the fibre product?
-
-exponential?
 
 exponential?
 
@@ -1689,4 +1661,3 @@ the weak star topology?
 unramified morphism?
 
 weakly Kan injective?
-
