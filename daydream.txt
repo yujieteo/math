@@ -2,6 +2,8 @@ DAYDREAMS:
 
 Understand Galois correspondence of subgroups and path connected coverings. See Kuga, Galois’s dream.
 
+Pullback as induced fibration with fibre bundles?
+
 Hawaiian ring has no universal covering.
 
 Ramification points and branch points of compact Riemann surfaces.

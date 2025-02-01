@@ -1,5 +1,13 @@
 UNDERSTOOD
 
+Algebra structure on R^n: bilinear multiplication map R^n cross R^n into R^n where (a,b) -> ab. Products satisfy left right distributivity and scalar associativity. Commutativity, full associativity and identity not assumed. division algebra means equations ax = b, xa = b always solvable i.e. maps from x to ax and x to xa are always surjective for nonzero a.
+
+Homotopy group: generalisation of fundamental group Pi_i(S), S some space. Typical example is homotopy groups of sphere which are very complicated. Pi_n(X, x_0) basepoint x_0 is set of homotopy classes of maps f: (I^n, del I^n) to (X, x_0), homotopies f_t satisfies f_t(del I^n) = x_0. I^n is n-dimension unit cube, product of n copies of interval, del I^n is boundary with one coordinate equal to 0 or 1. Try n = 0, I^0 is a point, boundary empty so pi_0(X, x_0) is path components.
+
+Sum operation in homotopy group: looks like deformation, where you have f for the first half of interval [0, 0.5], g in second half from [0.5, 1]. Additive notation for group operation is used, n >= 2 means abelian, shrink domain of f and g down, then slide around due to space and expand back to ordinary size, fixing other coordinates, then do for the rest of the coordinates. See Hatcher for figure.
+
+Motivation for fibre bundles in algebraic topology: fibre bundles give long exact sequence of homotopy groups but not normal short exact sequences.
+
 Tangent vectors for lie groups O(n), U(n) amd Sp(n): trick is to differentiate the defining equation A A^* = 1, where A^* is the conjugate transpose. For tangent vectors X at 1 for O(n) it is X + X^*T = 0, X is n by n real matrices. For tangent vectors X at 1 for U(n) it is X + X^*T = 0, X is n by n complex matrices. For tangent vectors X at 1 for Sp(n) it is X + X^*T = 0, X is n by n quaternion matrices. See Stillwell's Naive Lie Theory.
 
 Functor of points: Hom(-, X): (Affine schemes)^op to Set, sending affine scheme Y to set of scheme maps Y -> X. Therefore, a scheme is the representing object of the functor of points, the functor of points is a representable functor. Yoneda lemma is weaker, Hom(-, X): Schemes^op -> Set, where X is a scheme. The functor of points is sufficient to be isomorphic to functor of points, and not necessarily the natural transformations. This functor Hom(-, X) classifies geometric objects over Y given by F. Notion is analogous to classifying space.
@@ -135,6 +143,12 @@ Discrete space: classical example is discrete topological space, every subset is
 
 Covering space (wrapping space): bundle which is locally trivial (LOCALLY ISOMORPHIC, but not locally homeomorphic to trivial fibre bundle i.e. Cartesian product using local open neighbourhood) with discrete fibre (some sort of free object thing?). Continuous function is covering space if there exists open on point that is evenly covered. Pullback p over U is isomorphic to product bundle with discrete fibre E_x = p. Discrete fibre means I can spam it and consider all possibilities (see discrete in the context of discrete topological space), corresponds to fully faithful left adjunction. Canonical example is exp(i pi x) wrapping of the real line on the unit circle. See also gimbal lock for the group SO(3) being covered by the S^3 hypersphere identifible with the group of quaternions or spin 3.
 
+Pullback of covering spaces are covering spaces: see Hatcher 1.3 exercise 1, pullbacks of covering space is covering space, restriction of covering space is pullback of an inclusion into a base space.
+
+Product of covering space is covering space: recall definition of product topology, points of product has neighbourhood that is evenly covered. See Hatcher 1.3 exercise 2.
+
+Classical definition of covering space: covering space of a space X is a space X^ with map p: X^ -> X such that there exists a open cover {U_a} of X where p^{-1} U_a is disjoint union of opens in X, each mapped by p homemorphically onto open U_a. Note that p^{-1} U_a need not be nonempty, so p need not be surjective.
+
 Trivial fibre bundle: Cartesian product of bundle and fibre with projection to bundle such that this is a fibre bundle. If it is isomorphic. 
 
 Gimbal lock as covering space: consider charts on SO(3), rotation group, this is RP3, fundamental group Z/2 by covering plate trick, with S^3 covering space hypersphere S^3 (S^2 is a normal sphere) this is the group Spin(3) and there is the unit quaternions. However, we lazy want to use Euler angles, so you can use 3 gimbals. This is a map from the 3 torus (hint: 3 gimbals are 3 rotations, so fundamental group Z + Z + Z), then we have a map from the three torus T^3 to RP^3. But the torus is not a COVERING SPACE, so it fails to be a local hot due to gimbal lock. Gimbal lock means it can only move in two dimensions, it can pitch and yaw but not roll (rotate in the plane all axes lie in). Example, two gimbals same plane.
@@ -188,6 +202,8 @@ Mantell's theorem: for N vertex graph, max edge without forming triangles is n^2
 Turan's theorem: generalises Mantell's theorem.
 
 Uniformisation theorem: 2D surface can be either spherical, flat, hyperbolic. Simply connected Riemann surfaces must have one of these three geometries.
+
+Simply connected: all maps S^1 to X are homotopic. This is quite obvious but see Hatcher's Section 1.1 exercise 5 for an exercise on this.
 
 Borsuk-Ulam's theorem: sphere crushed into a plane, two points must be the same. This is a fixed point theorem.
 
