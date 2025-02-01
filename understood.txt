@@ -1,5 +1,17 @@
 UNDERSTOOD
 
+Motion, isometry, congruence: a motion is a automorphism on Euclidean space preserving distances, T is bijective. This isa rigid body motion. T(x) = Ax + b, A is orthogonal matrix. In Euclidean plane, it is either rotation matrix or reflection matrix for Euclidean plane. Motion is affine linear i.e. T([1-p]x + py) = (1-p)T(x) + pT(y).
+
+Embedding homomorphisms: consider cyclic group of 3 elements as an embedding (outer surface) of the Cayley graph of the symmetric group on 3 elements (inner graph is what happens when we have f, rf, r^2 f)
+
+Fundamental homomorphism theorem: p from G to H is a homomorphism then the image of p is the group G quotiented out by the kernel of p. Example, consider Z/cosets of 12, gives isomorphism to cyclic group of 12 elements.
+
+Complementary orthogonal idempotents: say x is idempotent, x' = 1 - x is idempotent, consider (1 - x)(1 - x) = 1 - x^2 = 1 - x so idempotent, x + x' = 1 by definition x(1 - x) = x - x^2 = x - x =0. Consider a direct sum of rings A = A_1 ++ A_2, where A_1 = Ax and A_2 = Ax'.
+
+(ax + by) nilpotent if x and y are nilpotent: expand (ax + by)^N some power with binomial theorem, highest power nilpotent and vanishes taking N to be product of powers mn, so either it vanishes due to nilpotence of x, or vanishes due to nilpotence of y.
+
+x nilpotent implies 1-x invertible in A: start with 1/(1-x) as geometric series 1 + x + x^2 + ... but it must terminate as some x^n = 0 (x nilpotent), so it must exist.
+
 Algebra structure on R^n: bilinear multiplication map R^n cross R^n into R^n where (a,b) -> ab. Products satisfy left right distributivity and scalar associativity. Commutativity, full associativity and identity not assumed. division algebra means equations ax = b, xa = b always solvable i.e. maps from x to ax and x to xa are always surjective for nonzero a.
 
 Homotopy group: generalisation of fundamental group Pi_i(S), S some space. Typical example is homotopy groups of sphere which are very complicated. Pi_n(X, x_0) basepoint x_0 is set of homotopy classes of maps f: (I^n, del I^n) to (X, x_0), homotopies f_t satisfies f_t(del I^n) = x_0. I^n is n-dimension unit cube, product of n copies of interval, del I^n is boundary with one coordinate equal to 0 or 1. Try n = 0, I^0 is a point, boundary empty so pi_0(X, x_0) is path components.
