@@ -1,5 +1,41 @@
 DAYDREAMS:
 
+Open interval (a, b) is open in usual topology on real line: countable unions and finite intersections of open sets are are open. STUCK: I also didn't understand what you mean by usual topology on real line. Imagine trying to start with definition of topology using the whole real line first, then somehow get it down to (a, b). Actually I was thinking you can try a continuous function between (a, b) and real line sort of that preserve open-ness. Further, you can use the positive real number definition of subsets being open in Euclidean n-space.
+
+Show open intervals is basis for usual topology on R.
+
+Show rational open balls is basis for usual topology on R.
+
+Describe the Sorgenfrey line.
+
+Furstenberg topology to give infinitude of primes.
+
+Show ray topology is topology.
+
+Show every nonempty open contains rational number, show there is no uncountable collection of pairwise disjoint open subsets in the reals.
+
+Prove uncountable pigeonhole principle.
+
+Prove every Hausdorff space is T1, every T1 space is T0.
+
+Show that addition and multiplications are continuous from unit square to unit interval with usual topologies.
+
+Show that unit square and unit interval are not homeomorphic with the usual topology. Actually the real question is give a list of topological invariants that distinguish the two (very easy since dimension is a topological invariant, what about others?)
+
+Prove Urysohn's lemma.
+
+Prove the pasting lemma.
+
+Prove subspace topology from universal property.
+
+Prove that regularity, normality are topological invariants.
+
+IMPORTANT: use Zorn's lemma to prove that every filter on a set is contained in an ultra filter. Hint: filter is in the power set of the power set of X, let F be the collection of all filters, F with strict inclusion is an partial order, apply Zorn's lemma with the appropriate hypothesis. Not the partial order that will solve this. Warm up, show that a filter is an ultrafilter if and only if it is a maximal element in this partial order.
+
+Converge pointwise vs converge uniformly
+
+Show Tietze Extension Theorem implies Urysohn's lemma.
+
 Hartshorne chapter 1, 2.5: show that projective n-th space is a noetherian topological space. My approach is that descending chain of closed projective points terminate at P^1 points, Use n+1 copies of A^n to cover, note that A^n is noetherian. STUCK, noetherian topological space, descending chain condition is still not natural to me because normally noetherian to me is rather algebraic.
 
 Hartshorne Chapter 1, 1.3: let Y be algebraic set in A^3 defined by polynomials x^2 - yz, and xz - x, show that Y is the union of three irreducible components, STUCK at algebraic set, A^3 and irreducible components not being natural notions.
