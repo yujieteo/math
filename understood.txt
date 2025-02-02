@@ -1,5 +1,7 @@
 UNDERSTOOD
 
+Category misunderstanding: I think that one of the biggest, most subtle misunderstanding in category theory is to think of categories as totally distinct worlds of math, rather than an algebraic structure in its own right. Simplest counterexample is definition of a group as a category. A category is an algebraic structure in its own right, so functors may be trapped within its own world as well. If not, you will limit the imaginations you can have functors.
+
 Counting measure: simplest example of measure, f(x) = 1 gives cardinality of measurable sets. Therefore, f is the counting measure.
 
 Infinite sigma algebra exercises (see Folland, Exercises in 1.2.): it contains an infinite sequence of disjoint sets, without loss of generality consider sequence not all disjoint, take sequence of set complements, with union of every other sets. Cardinality of M is at that of the continuum to define (choice function) second projection onto power set of the naturals, so it is least cardinality of the continuum.

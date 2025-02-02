@@ -1,5 +1,23 @@
 DAYDREAMS:
 
+Hartshorne chapter 1, 2.5: show that projective n-th space is a noetherian topological space. My approach is that descending chain of closed projective points terminate at P^1 points, Use n+1 copies of A^n to cover, note that A^n is noetherian. STUCK, noetherian topological space, descending chain condition is still not natural to me because normally noetherian to me is rather algebraic.
+
+Hartshorne Chapter 1, 1.3: let Y be algebraic set in A^3 defined by polynomials x^2 - yz, and xz - x, show that Y is the union of three irreducible components, STUCK at algebraic set, A^3 and irreducible components not being natural notions.
+
+Hartshorne Chapter 1, 1.2: twisted cubic, show that Y = {(t, t^2, t^3)| t in field k } is affine variety, find generators for the ideal, show that A(Y) is isomorphic to polynomial ring of one variable over k.  
+
+Hartshorne Chapter 1, 1.1(c): let f be any irreducible quadratic polynomial k[x,y], let W be the conic defined by f, show that A(W) is isomorphic to either A(Y) in example 1a, or A(Z) in example 1b. STUCK: I think you need some sort of classification of the conics. It is strange that these are the only two cases. First case it is obvious, but why is it only A(Z)?
+
+Hartshorne Chapter 1, 1.1(b): let Z be plane curve xy = 1, A(Z) is not isomorphic to poly ring in one variable over k. Looks like curve y = 1/x. Consider poly ring as k[x, 1/x], but 1/x is not zero in k. Note this is not a polynomial ring by definition, since poly ring have indexes that are indexed by positive integers, so it cannot be isomorphic since there is no representative for x^{-1}.
+
+Hartshorne Chapter 1, 1.1(a): y = x^2 is zero set of poly y - x^2, show that A(Y) is isomorphic to polynomial ring in one variable. STUCK: know that k[x,y]/(y-x^2) is isomorphic to k[x]/(x^2), but how on earth do you construct the isomorphism. Definition of polynomial ring. Polynomial ring is set of expression of the form with coefficients. These form a ring (take ring action on group of monomials). Maybe the best way is to show that they have the same group, and they have the same ring action. In this case they do, same coefficients? Also there is the ideal (y - x^2) and (x^2). These cut out the same zeroes? Coordinate rings isomorphic actually, is it sufficient. Definition of morphism of algebraic varieties, definition of isomorphisms are unclear.
+
+Brouwer's fixed point theorem with category theory: stuck on statement turns out need suitable statement, only thing I sort of know is the trick, deforms from D^2 to S^1 to D^2, then compute fundamental group have it factor through 0 group, then think carefully about lifts and retracts, so cannot be identity, contradiction. Suppose yes, no fixed point, then there is retraction of D^2 onto S^1 that is STUCK.
+
+Polynomial maps?
+
+Linear maps?
+
 Vakil 1.2F: (a) show localisation cmmutes with finite products or equivalently with finite direct sums; (b) localisation commutes with arbitrary direct sums; (c) localisation fails to commute with infinite products hint take series (1/s) which is infinite product of Q. This means that the map of infinite products induced by the universal property is not always isomorphism; (d) localisation does not always commute with Hom, except when Hom is finitely presented.
 
 Vakil 1.2E: construct the localisation map from M to its localisation, define elements, then check that it is a module, see one subtle point by Borcherds where you need something extra that I cannot remember I think it is no nonzero divisors. I am STUCK only at carefully checking all details.
@@ -8,7 +26,7 @@ Vakil 1.2D: verify that maps from A to its localisation have a suitable universa
 
 Vakil 1.2C: show that A to its localisation S^{-1} A is injective if A does not have zero divisors. STUCK: need definition of localisation, injective, and zero divisors.
 
-Vakil 1.2B: initial and final objects in Set, Rings, Top (if they exist), we have initial as empty set, final as singleton set. Actually I get stuck thinking naturally why these must be the correct objects. STUCK on rings, Top is empty and Sierpinski two point space.
+Vakil 1.2B: initial and final objects in Set, Rings, Top (if they exist), we have initial as empty set, final as singleton set. Actually I get stuck thinking naturally why these must be the correct objects. STUCK on rings (do not understand why Z is initial object, and zero ring i.e. 0 = 1 is terminal object), Top is empty and Sierpinski two point space.
 
 Vakil 1.2A: show two initial/terminal objects are uniquely isomorphic. These are representing objects of limits and colimits, therefore as universal properties there is a natural isomorphism between them.
 
@@ -56,7 +74,7 @@ Distinguish between sections and stalks naturally. I could not really distinguis
 
 Same germ near point if locally, honest open neighbourhood they are the same. MAke this make sense.
 
-Vakil: distinguish between constant sheaf and locally constant sheaves as an exercise.
+Vakil: distinguish between globally constant sheaf and locally constant sheaves as an exercise.
 
 Construct formal power series degree n poly by taking first n terms is a limit as an example of a categorical limit.
 
@@ -166,7 +184,9 @@ Frechet spaces?
 
 Schwartz notations?
 
-Gorenstein ring?`
+Gorenstein ring? STUCK: what is finite injective dimension as R-module, why do we care? Localisation at prime ideal is Gorenstein local ring?
+
+R = k[x,y,z]/(x^2, y^2, xz, yz, z^2 - xy) as a Gorenstein ring of zero dimensions. See Wikipedia for. I don't understand the motivation for it.
 
 Support of function, closure, test function, analytic vs compact support and infinitely differentiable, constructing new test functions.
 
