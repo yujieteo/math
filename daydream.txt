@@ -1,5 +1,11 @@
 DAYDREAMS:
 
+Calculate centraliser of matrix [a 0; b d] in GL_2(R). Stuck at what sort of elements are even possible in GL_2(R).
+
+Combine all definitions of matroid: https://homepages.inf.ed.ac.uk/cheunen/publications/2015/matroids/matroids.pdf
+
+Logical functor
+
 Nakayama's lemma like inverse function theorem: https://mathoverflow.net/questions/61446/how-to-memorise-understand-nakayamas-lemma-and-its-corollaries/61448#61448
 
 Understand Galois correspondence of subgroups and path connected coverings. See Kuga, Galois’s dream.

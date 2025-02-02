@@ -1,5 +1,37 @@
 UNDERSTOOD
 
+Centraliser of an element versus centraliser of a set: same logic elements in the group that commute with all elements in the set.
+
+Example of calculating centraliser of elements: in D4, rotations form one centraliser, cyclic group S4, flips form another centraliser cyclic group S2.
+
+Symmetry group of a square: this is D4, consisting of rotations and flips.
+
+Product of order of elements: g and h be element of a group G, g has order |g|, h has order |h|, then order of gh is |g||h| requires ABELIAN. Proof is by considering free group of two generators under relations of finite order. The element gh is an representing object IF abelian.
+
+Permutation: can be thought of as an endomorphism.
+
+Full transformation monoid: compositions of endomorphisms are endomorphisms, so for a category C it is End_C{X} as a monoid.
+
+Euclidean algorithm remainder decreasing speed: r_{n+2} < 0.5r_{n}, proof, consider r_{n-3} = q_{n-1} (q_{n} r_{n-1} + r_{n}) + r_{n-1}.
+
+Proving equivalence relations: simplest way is to check reflexive, symmetric, transitive. Otherwise, think about disjoint union of equivalence classes for the relation.
+
+Logical equivalences using truth tables: if two statements have the same truth table, they are logically equivalent. Truth table is therefore some sort of invariant or representing object?
+
+Inclusion exclusion: cardinality of union is equal to sum of cardinalities subtract away the intersection. This is done by applying the forgetful functor and taking cardinality of objects as some of norm. # (S union T) = #S + #T - #(S intersect T). For general case, induction applies, induction hypothesis holds for S the union of the first n sets, then T is the n+1-th set.
+
+Matroid: matroid on (finite) set X with TFAE: (1) family of subsets called independent sets, empty set is independent, downward closed i.e. if J is a proper subset of an independent set I, then J is an independent set, and the exchange axiom where if I and J are independent sets, with J of higher cardinality, then the union of I and some element in J\I is an independent set;
+
+Graphic matroid: derived from single graph, underlying set are edges, independent sets are those that forms forests or graphs without cycles.
+
+Vector matroid: derived from collection of vectors, independent sets are those that are linearly independent. Providing equivalence of vector matroid is representation theory over specific field.
+
+Algebraic matroid: derived from collection of elements E in K, field extension K/F, independent sets are those F(S) has transcendence degree equal to |S|, so all of S is algebraically independent.
+
+Maximal independent set in matroid: maximal independent sets of matroid is a basis.
+
+Free matroid: let E be a finite set, set of all subsets defines independent sets of a matroid, it is a free matroid over E, the representative object of the functor Matroid^{op} -> Set as forgetful functor.
+
 Vector bundle intuition: idea is you want family of vectors parameterised by some space. Attach a vector space to every point so they become another space. Example: sphere be parameter for tangent bundles. Tangent space is vector bundle. This is not a trivial bundle! (Hairy ball theorem). Example of globally trivial vector bundle, take S^1 cross R to get cylinder. Generalisation of cross product of topological space with vector space.
 
 Euclidean algorithm visual: cover a * b with square tiles, use b * b tiles first where a < b without loss of generality, stuck with r_0 * b rectangle where (a - bq) = r_0. Iterate on this step.
