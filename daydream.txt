@@ -1,5 +1,25 @@
 DAYDREAMS:
 
+Vakil 1.2F: (a) show localisation cmmutes with finite products or equivalently with finite direct sums; (b) localisation commutes with arbitrary direct sums; (c) localisation fails to commute with infinite products hint take series (1/s) which is infinite product of Q. This means that the map of infinite products induced by the universal property is not always isomorphism; (d) localisation does not always commute with Hom, except when Hom is finitely presented.
+
+Vakil 1.2E: construct the localisation map from M to its localisation, define elements, then check that it is a module, see one subtle point by Borcherds where you need something extra that I cannot remember I think it is no nonzero divisors. I am STUCK only at carefully checking all details.
+
+Vakil 1.2D: verify that maps from A to its localisation have a suitable universal property. Define it, verify it. Map that sends elements to its invertibles must factor uniquely through its localisation.
+
+Vakil 1.2C: show that A to its localisation S^{-1} A is injective if A does not have zero divisors. STUCK: need definition of localisation, injective, and zero divisors.
+
+Vakil 1.2B: initial and final objects in Set, Rings, Top (if they exist), we have initial as empty set, final as singleton set. Actually I get stuck thinking naturally why these must be the correct objects. STUCK on rings, Top is empty and Sierpinski two point space.
+
+Vakil 1.2A: show two initial/terminal objects are uniquely isomorphic. These are representing objects of limits and colimits, therefore as universal properties there is a natural isomorphism between them.
+
+Vakil 1.1D: show that vector space with bases to finite dimensional vector space without bases by describing a suitable inverse functor. STUCK, my best guess is forgetting the base somehow, so use forgetful functor. Really I should try describing these categories in detail.
+
+Vakil 1.1C: show that double dual functor is naturally isomorphic (not just natural transformation) identity functor in category of finite dimensional vector space. STUCK: can't see where finite dimensional is needed here, but I can think of counterexamples without finiteness condition being left shift operator, taking double dual of that will fail. these are from functional analysis.
+
+Vakil 1.1A: UNIMPORTANT EXERCISE. A category in which each morphism is an isomorphism is called a groupoid. (This notion is not important in what we will discuss. The point of this exercise is to give you some practice with categories, by relating them to an object you know well.) (a) A perverse definition of a group is: a groupoid with one object. Make sense of this: One object as symmetries and guarantees closure, isomorphisms guarantee invertible. (b) Describe a groupoid that is not a group. Easy: homotopies with different base points.
+
+Vakil 1.1.B.: If A is an object in a category C , show that the invertible elements of Mor(A,A) form a group (called the automorphism group of A, denoted Aut(A)). What are the automorphism groups of the objects in Set and Vect_k? (free group on objects in Set as generators, general linear group on vector space) Show that two isomorphic objects have isomorphic automorphism groups (use the isomorphism as a way to factor through the automorphic group, this is an example of a universal property). (For readers with a topological background: if X is a topological space, then the fundamental groupoid is the category where the objects are points of X, and the morphisms x to y are paths from x to y, up to homotopy. Then the automorphism group of x0 is the (pointed) fundamental group Pi 1(X, x0). In the case where X is connected, and first fundamental group of X is not abelian, this illustrates the fact that for a connected groupoid — whose definition you can guess — the automorphism groups of the objects are all isomorphic, but not canonically isomorphic.)
+
 Homological dimension as supremum of n such that Ext^n(E,F) is nonzero. Correspond with enough injectives and projectives.
 
 Completion of measure space: (X, A, mu) be measure space, X is set, A is sigma algebra, mu be measure. Let completion A denote all usbsets which are a union of a set in A and a null set. Show that if A- is a sigma algebra, there is an unique extension of the measure mu to it. Okay, null set have measure 0, so really I don't understand what you mean by extension, A- is sigma algebra, A is sigma algebra and closed under countable unions? Best guess is you need Caratheodor's extension theorem. Did not try thinking abotu using symmetric differences and equivalence of sets. https://math.stackexchange.com/questions/713084/completion-of-a-measure-space
