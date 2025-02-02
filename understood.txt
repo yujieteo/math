@@ -1,5 +1,9 @@
 UNDERSTOOD
 
+Counting measure: simplest example of measure, f(x) = 1 gives cardinality of measurable sets. Therefore, f is the counting measure.
+
+Infinite sigma algebra exercises (see Folland, Exercises in 1.2.): it contains an infinite sequence of disjoint sets, without loss of generality consider sequence not all disjoint, take sequence of set complements, with union of every other sets. Cardinality of M is at that of the continuum to define (choice function) second projection onto power set of the naturals, so it is least cardinality of the continuum.
+
 Centraliser of an element versus centraliser of a set: same logic elements in the group that commute with all elements in the set.
 
 Example of calculating centraliser of elements: in D4, rotations form one centraliser, cyclic group S4, flips form another centraliser cyclic group S2.
@@ -2933,9 +2937,25 @@ Probability laws are natural transformations from random variable functor to mea
 
 Random variable: are Set endofunctors A^{omega}. Measurable function from sample space to measurable space. Motivation: you want a different measures.
 
+Measure space: a triple of a set X, sigma algebra M and a measure mu. Kolmogorov triple works the same way, an triple of an outcome space X, a sigma algebra Sigma, and a probability measure omega.
+
+Measurable space: simply a pair of X is a set and M subset of powerset of X that is a sigma algebra (i.e. algebra closed under countable unions and finite complements)
+
+Idea of a measurable space: pick out subsets where size is well defined, theses subsets are measurable, then assign a number or a measure to those spaces based on how big it is. Not all subsets are measurable if you have axiom of choice, example being Lebesgue measure on the real line.
+
 Borel sigma algebra: set in topological space formed by open sets using countable unions, countable intersections, and relative complements.
 
 Sigma algebra: closed under countable complements, countable unions, and countable intersections.
+
+Ring on set X and collection of subset: a collection M closed under relative complementation under unions of finitary families i.e. empty set is i n M, for S and T sets in M, their union and rleative complement is in M.
+
+Generating sigma algebras: turns out this is very difficult, and it fails for sigma-rings and sigma-algebras. https://ncatlab.org/nlab/show/sigma-algebra you will need descriptive set theory and be very careful to get it, and you need coutnable choice here since you need to show the countable union of a countable union is a countable union.
+
+Microcanonical phase space as an example of a sigma algebra: example take R^N, N is order of Avogadro's number to be microcanonical spahase space P, then take macrocanonical phase space p with R^2 or R^n with features that can be measured. Take PROJECTION of f: P -> p, the preimage of this projection is a sigma algebra on the microcanonical phase space P, the thermodynamic entropy of this system is theorectically the information theoretic entropy with respect to this sigma algebra. This is a neat example that relates it to physics.
+
+Power set as prototypical example of a sigma algebra: a powe set is closed under all operations, so it is a sigma algebra. Feels like some sort of free object with all possibilities covered.
+
+Algebra of sets on X: closed under finite nions and complements. An algebra is a sigma algebra provided it is closed under countable disjoint unions. Replace a sequence of sets with a disjoint sequence. Sufficient to establish that it is closed under countable unions with this.
 
 Preimage of sigma algebras are sigma algebras: prove using the fact that preimages preserve intersections, unions, and relative complements.
 
