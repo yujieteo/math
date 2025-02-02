@@ -6,6 +6,14 @@ Chern classes: vector bundles and different ways to measure how twisted they are
 
 Projective variety: subvariety of projective space.
 
+Motivation for derived categories: work with complexes rather than their cohomology. Use sheaves to link algebraic geometry and algebraic topology.
+
+Cohomology as not the true dual of homology: Hom(,Z) destroys torsion information. Take Hom at the level of dual complexes.
+
+Ordinary double point: plane curve intersects itself such that it has two distinct tangent lines with different partial derivatives.
+
+Kummer surface: maximum number of ordinary double points, surface of degree 4. Looks very very nice.
+
 Motivation for projective spaces and projective varieties, connected component of affine variety is either single point or noncompact. Proof: supposed X is connected component of affine variety, functions x_i cant be maximum on X unless constant, if X is compact thant x_i equal constant a_i or X is a point (a_1, ... a_n).
 
 Functor between groups regarded as one object categories: these are just group homomorphisms.

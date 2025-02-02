@@ -4,6 +4,8 @@ Practice computing the homotopy groups of a torus.
 
 What is the topology of an ordinary double point?
 
+Make this make sense: definition of an immersion, in fact why is an immersion? A special nonsingular map from one manifold to another such that at every point in the domain of the map, the derivative is an injective linear transformation. This is equivalent to saying that every point in the domain has a neighborhood such that, up to diffeomorphisms of the tangent space, the map looks like the inclusion map from a lower-dimensional Euclidean space to a higher-dimensional Euclidean space. 
+
 Prime numbers and knots with the Kapranov-Reznikov-Mazur dictionary, make this make sense: https://mathoverflow.net/questions/14574/your-favorite-surprising-connections-in-mathematics/58349
 
 Riehl 1.6.v: More specifically, find a concrete category that contains a monomorphism whose underlying function is not injective. Find a concrete category that contains an epimorphism whose underlying function is not surjective.
@@ -14,7 +16,7 @@ Riehl 1.6.iii: Show that any map from a terminal object in a category to an init
 
 Riehl 1.5.xi: Consider the functors Ab to Group (inclusion), Ring to Ab (forgetting the multiplication), (−)* : Ring to Group (taking the group of units), Ring to Rng (inclusion), Field to Ring (inclusion), and ModR to Ab (forgetful). Determine which functors are full, which are faithful, and which are essentially surjective. Do any define an equivalence of categories? (Warning: A few of these questions conceal research-level problems, but they can be fun to think about even if full solutions are hard to come by) STUCK: the last one seems to be a crazy question, how can they really be creative? These things clearly are different if we make some sort of description.
 
-Riehl 1.5.ix: Show that any category that is equivalent to a locally small category is locally small. STUCK: what is equivalent.
+Riehl 1.5.ix: Show that any category that is equivalent to a locally small category is locally small. STUCK: what is equivalent. My approach would be to try and define equivalent as natural isomorphism, then consider natural isomorphisms of morphisms in locally small category (sets worth of arrows by definition) into the category we want. Apply Yoneda / suitable functor into Set and show that there is a bijection on the level of sets, so it must have the same cardinality.
 
 Riehl 1.5.viii. Klein’s Erlangen program studies groupoids of geometric spaces of various kinds. Prove that the groupoid Affine of affine planes is equivalent to the groupoid Proj of projective planes with a distinguished line, called the "line at infinity." The morphisms in each groupoid are bijections on both points and lines (preserving the distinguished line in the case of projective planes) that preserve and reflect the incidence relation. The functor Proj -> Affine removes the line at infinity and the points it contains. Explicitly describe an inverse equivalence.
 
@@ -24,25 +26,25 @@ Riehl 1.5.v: Find an example to show that a faithful functor need not reflect is
 
 Riehl 1.5.iv: Show that a full and faithful functor F : C → D both reflects and creates isomorphisms.
 
-Riehl 1.4.ii. What is a natural transformation between a parallel pair of functors between groups, regarded as one-object categories?
+Riehl 1.4.ii. What is a natural transformation between a parallel pair of functors between groups, regarded as one-object categories? STUCK: I can visualise this, two dots, then functors, but need to use the fact that these are all isomorphisms somehow? Also, definition of natural isomorphism very finicky in my mind still.
 
 Riehl 1.3.x. Show that the construction of the set of conjugacy classes of elements of a group is functorial, defining a functor Conj : Group → Set. Conclude that any pair of groups whose sets of conjugacy classes of elements have differing cardinalities cannot be isomorphic. STUCK: conjugacy as functor, what is functorial? Not bijective in category of sets, so cannot be isomorphic with underlying sets of conjugacy classes as representative objects.
 
-Riehl 1.3.ix: consider, center, commutator subgroup, automorphsim group define functors from discrete category of groups with identity morphisms to groups. STUCK: define functors explicitly, check if they are functorial in isomorphisms, epimorphisms, homomorphisms.
+Riehl 1.3.ix: consider, center, commutator subgroup, automorphism group define functors from discrete category of groups with identity morphisms to groups. STUCK: define functors explicitly, check if they are functorial in isomorphisms, epimorphisms, homomorphisms.
 
 Riehl 1.2.v. Show that the inclusion Z to Q is both a monomorphism and an epimorphism in the category Ring of rings. Conclude that a map that is both monic and epic need not be an isomorphism (this is an counterexample). STUCK: definition of monomorphism and epimorphism.
 
 Riehl 1.1.ii. Let C be a category. Show that the collection of isomorphisms in C defines a subcategory, the maximal groupoid inside C.
 
-Functor between preorder regarded as categories: the answer from Google is monotone functions but I am STUCK, what are monjotone functions.
+Functor between preorder regarded as categories: the answer from Google is monotone functions but I am STUCK, what are monotone functions.
 
-Prove that the conditional distribution of X or Y, conditioned on X + Y being fixed i.e. X + Y = N, is a binomial distribution with parameter n = N, p = l/(l+u), X is Poisson with l, Y is Poisson with u.
+Prove that the conditional distribution of X or Y, conditioned on X + Y being fixed i.e. X + Y = N, is a binomial distribution with parameter n = N, p = l/(l+u), X is Poisson with l, Y is Poisson with u. STUCK: here is why, I can't seem to use techniques of characteristic functions (need to give a sincere try), another thing is sums of random variables and conditioning is not so simple to work with with exponential functions.
 
 Open interval (a, b) is open in usual topology on real line: countable unions and finite intersections of open sets are are open. STUCK: I also didn't understand what you mean by usual topology on real line. Imagine trying to start with definition of topology using the whole real line first, then somehow get it down to (a, b). Actually I was thinking you can try a continuous function between (a, b) and real line sort of that preserve open-ness. Further, you can use the positive real number definition of subsets being open in Euclidean n-space.
 
 Show that open intervals is basis for usual topology on R. STUCK: definition of basis and usual topology not intuitive. For me I tend to think of circles and then glue glue glue them to form any open set. Recall that it must be usual topology.
 
-Show rational open balls is basis for usual topology on R.
+Show rational open balls is basis for usual topology on R. STUCK: what about reals, probably need something about reals between two rationals, then see there is always some reals. In fact this is the definition of open, you can always find some point that is still there.
 
 Describe the Sorgenfrey line. STUCK: Sorgenfrey line not well defined or understandable.
 
