@@ -1,5 +1,13 @@
 UNDERSTOOD
 
+Deformation theory intuition: formalises idea to study nonlinear problems by study linearisation at a point, then quadratic behaviour of a point.
+
+Chern classes: vector bundles and different ways to measure how twisted they are.
+
+Projective variety: subvariety of projective space.
+
+Motivation for projective spaces and projective varieties, connected component of affine variety is either single point or noncompact. Proof: supposed X is connected component of affine variety, functions x_i cant be maximum on X unless constant, if X is compact thant x_i equal constant a_i or X is a point (a_1, ... a_n).
+
 Functor between groups regarded as one object categories: these are just group homomorphisms.
 
 Sum of two independent Poisson random variable: this is easily proven by considering that the sum of the random variable is the product of the characteristic functions.
@@ -1048,6 +1056,10 @@ Dimension decomposition of tensor product: dim(V_1 * V_2) = dim(V_1) dim(V_2)., 
 Moduli space: points are algebro-geometric isomorphism classes of objects, solutions to geometric problems.
 
 Example of projective space as moduli space: real / complex projective space is a moduli space parametrising the space of line passing through the origin in real / complex space.
+
+Projective space: identified with the quotient (C^{n+1}\{0})/(C^*) which are lines in C^{n+1}.
+
+Projective space in terms of algebra: action of C* on poly ring C[x_0, ..,x_n] by multiplication of l in C*, l powers, direct sum decomposition is eigenspace decomposition, this defines the weight space.
 
 Example of Grassmannian as moduli space: Grassmanian G(k, V) of a vector space over field K is moduli space of all k-dimensional linear subspaces of V. I think this is the example that is interesting since it talks about vector spaces directly.
 
