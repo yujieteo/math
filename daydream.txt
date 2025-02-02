@@ -1,12 +1,70 @@
 DAYDREAMS:
 
+Homological dimension as supremum of n such that Ext^n(E,F) is nonzero. Correspond with enough injectives and projectives.
+
+Completion of measure space: (X, A, mu) be measure space, X is set, A is sigma algebra, mu be measure. Let completion A denote all usbsets which are a union of a set in A and a null set. Show that if A- is a sigma algebra, there is an unique extension of the measure mu to it. Okay, null set have measure 0, so really I don't understand what you mean by extension, A- is sigma algebra, A is sigma algebra and closed under countable unions? Best guess is you need Caratheodor's extension theorem. Did not try thinking abotu using symmetric differences and equivalence of sets. https://math.stackexchange.com/questions/713084/completion-of-a-measure-space
+
+Punctured gyrotop is open subset U of X where X is Spec(C[x,y,z]/(xz,yz)) by deleting the origin (x,y,z) from X. Compute sheaf of rings O_X(U). I saw the hint and exercise from Evan Chen, or O(U disjoint union V) = O(U) * O(V), distinguished open sets, affine scheme, sheaves on a base. Try graphing xz, yz these are varieties sort of.
+
+Vakil exercise: presheafs F(U) global sections as Homs(U -> Y), U is some sort of open, these are sections of a map to X. There is some sort of basic poset condition, and sheaves can be generalised from topological not to use inclusions. https://arxiv.org/pdf/2010.09651. Extend on this example: idea is to have some Alexandrov topology, define preordered set with reflex and transitive, then poset has antisymmetry. Define Alexandrov topology. Now change inclusions and restriction properties, and you can now define cellular sheaves with a suitable universsal property of base sheaves. Cellular sheaf is functor from category of poset to category of algebraic structures/groups. Strictly speaking equip poset with Alexandrov topology, these are presheaf on Alexandrov topological space.
+
+Representative of equivalence class as representation theory? Pick space X, pick special equivalence relation (usually homotopy), then you can have some sort of nice classification.
+
+Build a concrete example with kernels as limits, cokernels as colimits. It is quite easy, these are equalisers and coequalisers.
+
+Vakil exercise: stalks as colimit, equivalence relation, F is sheaf of rings, then stalk F_p is also a ring. Figuring out how to add and subtract things on stalk, we add on intersections,if they are the same open functions, then take the same restrictions so this is well defined, then you realise it maps all into it so it must be a colimit.EASIEST EXERCISE: stalks are colimits of sections. Now stalks are local rings if X are geometric spaces. Interestijng, does it make sense to say maximal ideal to be some sort of colimit.
+
+Exercise: define tangent space using stalks. https://math.stackexchange.com/questions/3657278/stalks-of-manifolds set of pointed derivations from the sheaf of rings on whole space O_X(X) to complex numbers, this will fail on constants, so be careful, use germs of functions O_{X,p}, this makes sense, tangents can only be defined on a point if you take the whole space it just vanish. Simplest example is simple curve. How do we think about this example more carefully?
+
+Compare sheaves as O-modules, then stalks as O_p modules.
+
+What is an action of a ring? I understand why is an action of a ring (recycle action of rings to get representation ring because you want to swap out groups you want).
+
+Show that anything not in the maximal ideal is invertible, let stalk of p quotiented out by maximal ideal. I am stuck on this since I have yet to think of a concrete example first.
+
+Relate modules with representation theory, abelian group with action of a ring this is representation theory.
+
+Tangent space, every point has a vector space, then you want to be very nice, then you can some sort of localisation, make this make senese. These are a sort of sheaf O-module.
+
+Vakil exercise: F is sheaf of X, then pushforward Pi_x F is a sheaf of Y, consider preimage on the pushforward, then take restrictions of set on the preimage sheaf, this is a sheaf. Sheaf of functions on X, pushforward to Y, it is still a sheaf of rings.
+
+Give examples where it is cheap to answer, but not cheap to answer why you care, so delay answers.
+
+Construct example of presheaves, maps of presheaves, pushfowards, pullbacks on your favourite space.
+
+Distinguish between sections and stalks naturally. I could not really distinguish them.
+
+Same germ near point if locally, honest open neighbourhood they are the same. MAke this make sense.
+
+Vakil: distinguish between constant sheaf and locally constant sheaves as an exercise.
+
+Construct formal power series degree n poly by taking first n terms is a limit as an example of a categorical limit.
+
+Why is a cofinal condition?
+
+Why are functions that are called O for the sheaf of functions? I think it comes from the Erlangen program, O means holomorphic function.
+
+Construct example of Homs in integral domain and Homs in fields. Fraction fields in terms of adjunction. You need to be very careful. Hom(A, k) = Hom(K(A, k)), forget k is a field into integral domain, K(A) is fraction field. Example: adjunction sort of fails with Z and Z mod 2.
+
+How does Grassmannians generalsie projective space? Parameterised k dimensional linear subsapce as C^n, so we have G(k, n)? P^{n-1} is G(1, n).
+
+Geometric spaces locally look like open subsets of R^n.
+
+How does one relate gcd and abelian as some of naturality property relating order of g, order of h, product of gh equal to order |g||h| and that abelian is the correct work for natural.
+
+Why is an orbifold?
+
+How does moduli space relate to vector bundles, they are both parameterised by some space? See AGITTOC where Vakil asked for this.
+
+Moduli space as universal property? See Vakil AGITTOC.
+
 Exercise in Folland (pg. 24), if M is the sigma algebra generate by epsilon, then M is the union of sigma algebras generated by F as F ranges over all countable subsets of Epsilon. Got stuck here, really I need to understand what it means for a sigma algebra generated by some set, then construct some sort of mapping from subsets of epsilon to sigma algebra. The hint says I need to show that the Eps itself is a sigma algebra.
 
 Calculate centraliser of matrix [a 0; b d] in GL_2(R). Stuck at what sort of elements are even possible in GL_2(R).
 
 Combine all definitions of matroid: https://homepages.inf.ed.ac.uk/cheunen/publications/2015/matroids/matroids.pdf
 
-Logical functor
+Logical functor? I was motivated by this by considering the inclusion and exclusion principle?
 
 Nakayama's lemma like inverse function theorem: https://mathoverflow.net/questions/61446/how-to-memorise-understand-nakayamas-lemma-and-its-corollaries/61448#61448
 
@@ -34,7 +92,7 @@ Extended Euclid's algorithm?
 
 Spec C[x] to Spec R[x]
 
-Dense image for Spectrum? 
+Dense image for Spectrum? What is the definition of this? See adjectives of projects?
 
 Chain? Refinement? Simplicity? Composition series?
 
@@ -42,7 +100,7 @@ Homology of finite simplicial complex over integers, try two by two matrix https
 
 Make this make sense: If one wants to summarize our knowledge of physics in the briefest possible terms, there are three really fundamental observations: (i) Space-time is a pseudo-Riemannian manifold M, endowed with a metric tensor and governed by geometrical laws. (ii) Over M is a vector bundle X with a nonabelian gauge group G. (iii) Fermions are sections of (???). R and F are not isomorphic; their failure to be isomorphic explains why the light fermions are light and presumably has its origins in a representation difference A in some underlying theory. All of this must be supplemented with the understanding that the geometrical laws obeyed by the metric tensor, the gauge fields, and the fermions are to be interpreted in quantum mechanical terms.
 
-Spectral sequences topics: Leray spectral, sheaf cohomology, pushforward, chain complex, fibrations, derived functors, grothendieck spectral, chain complex; visualisation; cup product; cohomology ring; differential graded algebra; exact couple; derived couple; bockstein; serrel atiyah-hirezburch for k theory; filtered complex; hodge-de rham spectral
+Spectral sequences topics: Leray spectral sequence, sheaf cohomology, pushforward, chain complex, fibrations, derived functors, grothendieck spectral, chain complex; visualisation; cup product; cohomology ring; differential graded algebra; exact couple; derived couple; Bockstein; serrel atiyah-hirezburch for k theory; filtered complex; hodge-de rham spectral
 
 Geometric invariant theory topics: Isbell dual, quotients, action groupoids, moduli spaces, moduli stacks; reductive group on projective variety; orbifold; gauge group; bridgeland stability conditions; deligne mumford stack, stability, stable vector bundles
 
