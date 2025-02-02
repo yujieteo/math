@@ -1,5 +1,13 @@
 UNDERSTOOD
 
+Functor between groups regarded as one object categories: these are just group homomorphisms.
+
+Sum of two independent Poisson random variable: this is easily proven by considering that the sum of the random variable is the product of the characteristic functions.
+
+Classical Poisson approximation to the binomial distribution: exercise in Weinan, Tiejun - Applied Stochastic Analysis, trick is to take binomial variables, then construct it into a power series somehow, then you take limit, it is exponential.
+
+Binomial distribution as sum of Bernoulli trials: prove by looking at characteristic function then if you take some sort of n-fold power (note exponential functions are to be multiplied to add the random variables), this is the property of the Fourier transform, you get the characteristic function of the binomial distribution
+
 Category misunderstanding: I think that one of the biggest, most subtle misunderstanding in category theory is to think of categories as totally distinct worlds of math, rather than an algebraic structure in its own right. Simplest counterexample is definition of a group as a category. A category is an algebraic structure in its own right, so functors may be trapped within its own world as well. If not, you will limit the imaginations you can have functors.
 
 Counting measure: simplest example of measure, f(x) = 1 gives cardinality of measurable sets. Therefore, f is the counting measure.
@@ -2039,7 +2047,9 @@ Normaliser of a subset S in a group G: set of elements in G that is fixed under 
 
 Rolle's theorem: real differentiable function with two equal values at two distinct point must have one point bin between them a stationary point.
 
-Galois conjugate: element of a separable closure L of a field K, which are in the orbit of x under the group action of the absolute Galois group G_K on L.
+Galois conjugate: element of a separable closure L of a field K, which are in the orbit of x under the group action of the absolute Galois group G_K on L. Generalise complex conjugate to some random fields.
+
+Axiom K: loop function or self identification induction, turns intensional type theory into extensional type theory.
 
 Landau's function: maximum order of element in symmetric group. Or least common multiple of all partitions of number 1 to n. Example of the order of an element in a group.
 

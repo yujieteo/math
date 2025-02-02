@@ -1,20 +1,54 @@
 DAYDREAMS:
 
+Prime numbers and knots with the Kapranov-Reznikov-Mazur dictionary, make this make sense: https://mathoverflow.net/questions/14574/your-favorite-surprising-connections-in-mathematics/58349
+
+Riehl 1.6.v: More specifically, find a concrete category that contains a monomorphism whose underlying function is not injective. Find a concrete category that contains an epimorphism whose underlying function is not surjective.
+
+Riehl 1.6.iv: Find an example to show that a faithful functor need not preserve epimorphisms. Argue by duality, or by another counterexample, that a faithful functor need not preserve monomorphisms. STUCK: need clear definitions, and what interest that comes out of this example.
+
+Riehl 1.6.iii: Show that any map from a terminal object in a category to an initial one is an isomorphism. An object that is both initial and terminal is called a zero object. STUCK: these maps do not exist in general, need to find a suitable category where it does exist. Example, zero ring, take zero ring map to integers, isomorphism? But zero ring is NOT a zero object (in the category of rings, not some trivial category).
+
+Riehl 1.5.xi: Consider the functors Ab to Group (inclusion), Ring to Ab (forgetting the multiplication), (−)* : Ring to Group (taking the group of units), Ring to Rng (inclusion), Field to Ring (inclusion), and ModR to Ab (forgetful). Determine which functors are full, which are faithful, and which are essentially surjective. Do any define an equivalence of categories? (Warning: A few of these questions conceal research-level problems, but they can be fun to think about even if full solutions are hard to come by) STUCK: the last one seems to be a crazy question, how can they really be creative? These things clearly are different if we make some sort of description.
+
+Riehl 1.5.ix: Show that any category that is equivalent to a locally small category is locally small. STUCK: what is equivalent.
+
+Riehl 1.5.viii. Klein’s Erlangen program studies groupoids of geometric spaces of various kinds. Prove that the groupoid Affine of affine planes is equivalent to the groupoid Proj of projective planes with a distinguished line, called the "line at infinity." The morphisms in each groupoid are bijections on both points and lines (preserving the distinguished line in the case of projective planes) that preserve and reflect the incidence relation. The functor Proj -> Affine removes the line at infinity and the points it contains. Explicitly describe an inverse equivalence.
+
+Riehl 1.5.vii: Let G be a connected groupoid and let G be the group of automorphisms at any of its objects. The inclusion BG into G defines an equivalence of categories. Construct an inverse equivalence G → BG. STUCK: BG as a classifying space.
+
+Riehl 1.5.v: Find an example to show that a faithful functor need not reflect isomorphisms.
+
+Riehl 1.5.iv: Show that a full and faithful functor F : C → D both reflects and creates isomorphisms.
+
+Riehl 1.4.ii. What is a natural transformation between a parallel pair of functors between groups, regarded as one-object categories?
+
+Riehl 1.3.x. Show that the construction of the set of conjugacy classes of elements of a group is functorial, defining a functor Conj : Group → Set. Conclude that any pair of groups whose sets of conjugacy classes of elements have differing cardinalities cannot be isomorphic. STUCK: conjugacy as functor, what is functorial? Not bijective in category of sets, so cannot be isomorphic with underlying sets of conjugacy classes as representative objects.
+
+Riehl 1.3.ix: consider, center, commutator subgroup, automorphsim group define functors from discrete category of groups with identity morphisms to groups. STUCK: define functors explicitly, check if they are functorial in isomorphisms, epimorphisms, homomorphisms.
+
+Riehl 1.2.v. Show that the inclusion Z to Q is both a monomorphism and an epimorphism in the category Ring of rings. Conclude that a map that is both monic and epic need not be an isomorphism (this is an counterexample). STUCK: definition of monomorphism and epimorphism.
+
+Riehl 1.1.ii. Let C be a category. Show that the collection of isomorphisms in C defines a subcategory, the maximal groupoid inside C.
+
+Functor between preorder regarded as categories: the answer from Google is monotone functions but I am STUCK, what are monjotone functions.
+
+Prove that the conditional distribution of X or Y, conditioned on X + Y being fixed i.e. X + Y = N, is a binomial distribution with parameter n = N, p = l/(l+u), X is Poisson with l, Y is Poisson with u.
+
 Open interval (a, b) is open in usual topology on real line: countable unions and finite intersections of open sets are are open. STUCK: I also didn't understand what you mean by usual topology on real line. Imagine trying to start with definition of topology using the whole real line first, then somehow get it down to (a, b). Actually I was thinking you can try a continuous function between (a, b) and real line sort of that preserve open-ness. Further, you can use the positive real number definition of subsets being open in Euclidean n-space.
 
-Show open intervals is basis for usual topology on R.
+Show that open intervals is basis for usual topology on R. STUCK: definition of basis and usual topology not intuitive. For me I tend to think of circles and then glue glue glue them to form any open set. Recall that it must be usual topology.
 
 Show rational open balls is basis for usual topology on R.
 
-Describe the Sorgenfrey line.
+Describe the Sorgenfrey line. STUCK: Sorgenfrey line not well defined or understandable.
 
-Furstenberg topology to give infinitude of primes.
+Furstenberg topology to give infinitude of primes. STUCK: Furstenberg topology is not well defined or motivated.
 
 Show ray topology is topology.
 
 Show every nonempty open contains rational number, show there is no uncountable collection of pairwise disjoint open subsets in the reals.
 
-Prove uncountable pigeonhole principle.
+Uncountable pigeonhole principle: un-countably many pigeons are stuffed into countably many pigeonholes, at least one pigeonhole has un-countably many pigeons stuffed into it. STUCK: I was trying along lines of contradiction, suppose not, then there is a bijection of uncountably many pigeons with countably union of countable pigeons in pigeonhole. Need countable choice at least to show that union of countably infinitely many countably infinite sets is countable.
 
 Prove every Hausdorff space is T1, every T1 space is T0.
 
@@ -22,9 +56,9 @@ Show that addition and multiplications are continuous from unit square to unit i
 
 Show that unit square and unit interval are not homeomorphic with the usual topology. Actually the real question is give a list of topological invariants that distinguish the two (very easy since dimension is a topological invariant, what about others?)
 
-Prove Urysohn's lemma.
+Prove Urysohn's lemma. STUCK: applications, statements of Urysohn's lemma.
 
-Prove the pasting lemma.
+Prove the pasting lemma. STUCK: what even is the pasting lemma and what is it good for?
 
 Prove subspace topology from universal property.
 
@@ -1586,7 +1620,7 @@ Why does one define the product topology with all but finitely many opens in com
 
 Why in the last step in the construction of Tor or Ext do you take homology?
 
-Why is Noetherian normalisation called that?
+Why is Noetherian normalisation called that? See https://en.wikipedia.org/wiki/Noether_normalization_lemma 
 
 Why is completion of an abelian group also an abelian group?
 
@@ -1594,7 +1628,7 @@ Why is defining the opposite category of opens an open problem? It is not really
 
 Why is it not possible for judgemental equalities to be proven?
 
-Why is resolvent set unbounded on Banach space for bounded operator?
+Why is resolvent set unbounded on Banach space for bounded operator? What is boundedness or resolvent set? What is a bounded operator?
 
 Why is separatedness the condition such that intersection of affines is an affine?
 
@@ -1602,7 +1636,7 @@ Why is the identity map bounded but non compact unless finite dimension vector s
 
 Why is the identity map bounded but non compact unless finite dimension vector spaces? A bounded linear operator on separable Hilbert space is noncompact, hint uncountably many eigenvalues, so non separable. And on compactness: think of it as a MUCH stronger property than boundedness.
 
-Why is the mapping class group finitely generated by Dehn twists?
+Why is the mapping class group finitely generated by Dehn twists? https://mathoverflow.net/questions/65432/elegant-proof-that-mapping-class-groups-are-generated-by-dehn-twists
 
 Why is the reals are center of ring of quaternions. I guessed it.
 
@@ -1682,8 +1716,6 @@ https://youtu.be/PHm4bYziyug?feature=shared I don’t understand Scholze definit
 
 infinity projective 1 loop space
 
-infinity projective 1 loop space?
-
 lambda in the definition of convex combination. good name?
 
 left exact localisations and why should we care about them?
@@ -1722,7 +1754,7 @@ the difference between geometric fibres and geometrically connected?
 
 the functor that works on opens that is the colimit of open overs on a product open covers over equalisers / descent such that applying this functor on a presheaf gives a separated sheaf, applying this functor again gives sheafification? Also how do we use separated morphisms in the definition.
 
-the homotopy excision theorem and how does it prove the Freudenthal suspension theorem?
+Define the homotopy excision theorem and how does it prove the Freudenthal suspension theorem?
 
 the implicit function theorem in differential geometry?
 
@@ -1737,10 +1769,6 @@ the motivation for Jaffard domains, and Prufer domains?
 the motivation for Landau's function? Why should I care about the maximum order of an element in the symmetric group?
 
 the motivation for residue fields? They say it is the natural generalisation of the codomain / range of a point or the values of each point?
-
-the motivation of Galois conjugate?
-
-the motivation of axiom K?
 
 the relationship between eigenvalue eigenvector equations and the affine line and projective modules?
 
