@@ -1,5 +1,15 @@
 DAYDREAMS:
 
+List all generalisations of categories: internal categories a category is internal to another ategory with enough pullbacks, an object of objects, and an object of morphisms, enriched categories where instead of sets of Homs, you take hom objects, and then apply another category over them, indexed category captures working over a base, operad is a morphism from several objects to single objects, opposite categories, localisation, geometric realisation of categories, continuous categories, topological space as (infinity,0)-category, EI categories satisfying Schroder-Bernstein where all endomorphisms are isomorphisms, category of fractions, reflective localisations.
+
+Polynomial functors?
+
+Construct representable functors secretly as hom functors using Yoneda's: try the following examples, make explicit the Hom functors used here, Spec Z, (1, Z), (1, R), schemes, Eilenberg-Maclane space, Grassmannians. STUCK, Spec Z, Eilenberg-Maclane spaces (unless you reverse), Grassmannians.
+
+Algebraic geometry duality: https://ncatlab.org/nlab/show/algebra
+
+Geometric realisation of categories: desribe the functor that sends categories to topological spaces, define the nerve of a cateogry, define the geometric realisation of the nerve.
+
 Splitting over C[x,y]
 
 Sections as right inverse of morphism 
