@@ -1,5 +1,11 @@
 UNDERSTOOD
 
+Torsion of G-bundles: prevents global sections (think arrows) from existing. Standard example is universal covering of the reals onto the circle.
+
+Atlas as structural sheaf of smooth manifolds: the atlas is in some sense, maps that construct the smooth manifolds example .structural sheaf
+
+Eigenvectors of adjugate are the same as original matrix: proof is by considering adjugate equation where adj A * A = A * adj A, apply to definition of eigenvector, use associativity.
+
 Deformation theory intuition: formalises idea to study nonlinear problems by study linearisation at a point, then quadratic behaviour of a point.
 
 Chern classes: vector bundles and different ways to measure how twisted they are.

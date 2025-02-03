@@ -1,5 +1,37 @@
 DAYDREAMS:
 
+Splitting over C[x,y]
+
+Sections as right inverse of morphism 
+
+Retraction as left inverse of morphism 
+
+Proper inverse exist if sections are retractions. Retractions feel like retract.
+
+List all Chern classes
+
+Natural transformations of group actions as categorical morphisms are just group homomorphisms make this make sense
+
+Inversion of circle on complex plane is yet another circle? STUCK: I try to compute complex conjugate in my head as a first guess, seems like it will be mapped outside somehow
+
+Functions of schemes can’t be defined at points? Why is this true because of nilpotents? What is the relationship between this and nilpotents?
+
+Existence of nilpotents: what is the difference between topological space of scheme Spec k[x, y]/(x, y^2) and Spec k[x, y]/(x, y)? Is there a difference in the ring of coordinate functions? Answer is YES, y is in k[x, y]/(x, y^2). What does y evaluate to? Define a nilpotent. Therefore, prove the statement that there exists two elements f and g of the homogenous coordinate ring with the same value at every point but are algebraically distinct.
+
+Orthogonal projection and integral domain: consider element (1,0) in Cartesian product of R and S. Consider the orthogonal projection x^2 = x, show that you cannot conclude that r^m = r^n implies r^(m-n) = 1 and this motivates the definition of an integral domain. Define an integral domain?
+
+Global sections functor: work out the following details, what functor does Z represent as object (hint: Hom(G, -), you can consider any group Hom from Z to H to be uniquely determined by image of 1 in H), what about Spec(Z)? What about Hom(-, Spec(Z)? Global sections functor is representable by Hom(-, Spec(Z)).
+
+Sheaf as contravariant functor of opposite category: Affine schemes are the opposite category of commutative rings. Make this make sense by thinking about sheaves. This is the Nullstellensatz. What is the initial object of commutative rings? (Hint: it is the integers) Argue by duality that Spec Z must be the terminal object of affine schemes. Therefore, argue from definition that for any scheme there is a unique map to Spec Z.
+
+Functors represented by a scheme: show that vector bundles of rank k over algebraic variety or scheme X correspond to algebraic morphisms X to A, where A is the Grassmannian.
+
+Adjoints as ceiling and floor: work out this example, let a category be reals, objects are real numbers, morphisms are partial orders of reals. Consider subcategory of integers to reals, inclusion of integers to reals have left and right adjoint, right adjoint is floor, left adjoint is ceiling? Use the partial orders to show this. For example r <= n if ceil(r) <= n. Argue similarly for right adjoint.
+
+Biadjacency matrix of directed bipartite graph as adjunction: construct the following example, let M be this (define this); then M* with opposite graph, all edges reversed, consider linear operators from Markov chain perspective as encoding transition probabilities between states, adjoint linear operator is running those operation backwards. Compare this as a way to get map B* to A*, from a map A to B, then inner products are distinguished choices of isomorphism of opposite objects.
+
+What is the group structure behind the definition of the determinant with even and odd permutations? 
+
 Practice computing the homotopy groups of a torus.
 
 What is the topology of an ordinary double point?
