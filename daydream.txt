@@ -12,8 +12,6 @@ List all Chern classes
 
 Natural transformations of group actions as categorical morphisms are just group homomorphisms make this make sense
 
-Inversion of circle on complex plane is yet another circle? STUCK: I try to compute complex conjugate in my head as a first guess, seems like it will be mapped outside somehow
-
 Functions of schemes can’t be defined at points? Why is this true because of nilpotents? What is the relationship between this and nilpotents?
 
 Existence of nilpotents: what is the difference between topological space of scheme Spec k[x, y]/(x, y^2) and Spec k[x, y]/(x, y)? Is there a difference in the ring of coordinate functions? Answer is YES, y is in k[x, y]/(x, y^2). What does y evaluate to? Define a nilpotent. Therefore, prove the statement that there exists two elements f and g of the homogenous coordinate ring with the same value at every point but are algebraically distinct.
@@ -42,13 +40,29 @@ Prime numbers and knots with the Kapranov-Reznikov-Mazur dictionary, make this m
 
 Riehl 1.6.v: More specifically, find a concrete category that contains a monomorphism whose underlying function is not injective. Find a concrete category that contains an epimorphism whose underlying function is not surjective.
 
-Riehl 1.6.iv: Find an example to show that a faithful functor need not preserve epimorphisms. Argue by duality, or by another counterexample, that a faithful functor need not preserve monomorphisms. STUCK: need clear definitions, and what interest that comes out of this example.
+Riehl 1.6.iv: Find an example to show that a faithful functor need not preserve epimorphisms. Argue by duality, or by another counterexample, that a faithful functor need not preserve monomorphisms. STUCK: need clear definitions, and what interest that comes out of this example. Exercise on faithful functor.
 
-Riehl 1.6.iii: Show that any map from a terminal object in a category to an initial one is an isomorphism. An object that is both initial and terminal is called a zero object. STUCK: these maps do not exist in general, need to find a suitable category where it does exist. Example, zero ring, take zero ring map to integers, isomorphism? But zero ring is NOT a zero object (in the category of rings, not some trivial category).
+Riehl 1.6.iii: Show that any map from a terminal object in a category to an initial one is an isomorphism. An object that is both initial and terminal is called a zero object. Suppose it exists, it must be isomorphism, otherwise zero object is not unique or universal property. STUCK: but this is circular actually, using some other fact to prove this. Definition of initial object and terminal object?
 
 Riehl 1.5.xi: Consider the functors Ab to Group (inclusion), Ring to Ab (forgetting the multiplication), (−)* : Ring to Group (taking the group of units), Ring to Rng (inclusion), Field to Ring (inclusion), and ModR to Ab (forgetful). Determine which functors are full, which are faithful, and which are essentially surjective. Do any define an equivalence of categories? (Warning: A few of these questions conceal research-level problems, but they can be fun to think about even if full solutions are hard to come by) STUCK: the last one seems to be a crazy question, how can they really be creative? These things clearly are different if we make some sort of description.
 
 Riehl 1.5.ix: Show that any category that is equivalent to a locally small category is locally small. STUCK: what is equivalent. My approach would be to try and define equivalent as natural isomorphism, then consider natural isomorphisms of morphisms in locally small category (sets worth of arrows by definition) into the category we want. Apply Yoneda / suitable functor into Set and show that there is a bijection on the level of sets, so it must have the same cardinality.
+
+Hom functor explicit definition: define hom functors using the objects, morphisms methodology, and dually. Show that this is a bifunctor, and its domain is the product category of the opposite category C^op and normal category C.
+
+Exercise on one object categories: let BG be one object category of the group, say it takes values in Vect so Func(BG, Vect) is canonically isomorphic to representation category, show that these are linear representations of the group G. What about B End(U) what are the morphisms?
+
+Enriched category to define algebra: a category with a vector space or morphisms or topological space of morphisms, repalce hom-sets with hom-objects in a suitable category K. Therefore, show that an algebra is a one object enriched category over ???.
+
+K-enriched adjunction, K-enriched equivalence?
+
+Examples of enriched categories: what is a set enriched category? (hint: locally small) Waht is a category enriched in chain complexes? What is a category enriched in simplicial sets (hint: infinity, 1 categories)? What is a category enriched in category of topological space? What is a category enriched in Cat? What is a category enriched over K-modules? What is a preorder as an enriched category? What is a torsor over a group enriched over the discrete category on the underlying set of the group? Now about about one object categories, and their corresponding enrichment?
+
+Construction of module over category: what is an action on a  module over a monoid? Let V be a closed monoidal category, V-enriched presheaf p: C -> V feels like representation already, is a module over the category C (use category instead of group here), presheaves are like representations, where instead of vector spaces we used closed monoidal categories. Now show that a left module over V is a V-presheaf on C, a functor of V-enriched categories i.e. M is C^op -> V, dually a right module is a V-enriched functor M: C -> V. Define a C-D bimodule / profunctor / distributor using a suitable tensor product (HINT: consider the definition of Hom sets to be C^op * C, * is product of categories). One take the one objectification, R a ring, BR is AB-enriched category of one object, then a left R-module N is equivalently an Ab-enriched functor N: BR^op -> Ab, define a right module similarly, then the usual tensor product of abelian groups of left and right modules can be defined as some sort of hom like thing, BR^op * BR -> Ab. Take the coend of this product, this gives the tensor product over ring R of M and N. BR^op is a right module, BR is a left module. What happens if you pick G as group, and Ab as set (G-set)? What generalisations are there in this example (hint: closed monoidal category as vector space, presheaves as generalisations of representations)?
+
+One objectification constructions: many constructs in category theory can be reduced to picking a suitable category of one object. Make the following examples make sense: groups are one object categories, all morphisms are isomorphisms. Monoids are one object categories. Then even better you can take one object of enrichment of categories and have morphisms have other properties you want, this gives a uniform definition of a lot of objects.
+
+Work with quivers to distinguish modules and representations.
 
 Riehl 1.5.viii. Klein’s Erlangen program studies groupoids of geometric spaces of various kinds. Prove that the groupoid Affine of affine planes is equivalent to the groupoid Proj of projective planes with a distinguished line, called the "line at infinity." The morphisms in each groupoid are bijections on both points and lines (preserving the distinguished line in the case of projective planes) that preserve and reflect the incidence relation. The functor Proj -> Affine removes the line at infinity and the points it contains. Explicitly describe an inverse equivalence.
 
