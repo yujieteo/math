@@ -26,7 +26,7 @@ Sheaf as contravariant functor of opposite category: Affine schemes are the oppo
 
 Functors represented by a scheme: show that vector bundles of rank k over algebraic variety or scheme X correspond to algebraic morphisms X to A, where A is the Grassmannian.
 
-Adjoints as ceiling and floor: work out this example, let a category be reals, objects are real numbers, morphisms are partial orders of reals. Consider subcategory of integers to reals, inclusion of integers to reals have left and right adjoint, right adjoint is floor, left adjoint is ceiling? Use the partial orders to show this. For example r <= n if ceil(r) <= n. Argue similarly for right adjoint.
+Adjoints as ceiling and floor: work out this example, let a category be reals, objects are real numbers, morphisms are partial orders of reals. Consider subcategory of integers to reals, inclusion of integers to reals have left and right adjoint, right adjoint is floor, left adjoint is ceiling? Use the partial orders to show this. For example r <= n if ceil(r) <= n. Argue similarly for right adjoint. Now from this example, think of objects and morphisms, now come up with more left adjoints and right adjoints.
 
 Biadjacency matrix of directed bipartite graph as adjunction: construct the following example, let M be this (define this); then M* with opposite graph, all edges reversed, consider linear operators from Markov chain perspective as encoding transition probabilities between states, adjoint linear operator is running those operation backwards. Compare this as a way to get map B* to A*, from a map A to B, then inner products are distinguished choices of isomorphism of opposite objects.
 

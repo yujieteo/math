@@ -1,5 +1,7 @@
 UNDERSTOOD
 
+Galois correspondence: a pair of adjoint functors between posets.
+
 Torsion of G-bundles: prevents global sections (think arrows) from existing. Standard example is universal covering of the reals onto the circle.
 
 Atlas as structural sheaf of smooth manifolds: the atlas is in some sense, maps that construct the smooth manifolds example .structural sheaf
@@ -1887,7 +1889,17 @@ For any M in poly ring k[X_1, ... X_n], exists finite {f_i from i = 1 to i = m} 
 
 Representable nature of limits / colimits: for functor diagram F: J -> C, there is natural isomorphism between C(X, lim_J F) and lim_J C(X, F-). Similarly, there is natural isomorphism for C(colim_J F, X) to lim_J^op C(F-, X). Note, be careful, the diagram is for the opposite category.
 
-Reflective subcategory: consider category C, pick subcategory D such that inclusion (or embedding) admits left adjoint (preserving colimits) called reflector or localisation. Mnemonic: object looks at its reflection. Example: category of compact Hausdorff spaces included into category of topological spaces. The reflector left adjoint is Stone-Cech compactification. Example 2: category of abelian groups admitted into category of groups, the reflector right adjoint is abelianisation. Example 3: Sheaves as subcategory of presheaves, left adjoint is sheafification. Example 4: inclusion of certain categories of general commutative rings have localisation as left adjoint to inclusion. Example 5: small categories included to the category of simplicial sets, the left adjoint sends simplicial set to its homotopy category, no good name for this.
+Reflective subcategory: consider category C, pick subcategory D such that inclusion (or embedding) admits left adjoint (preserving colimits) called reflector or localisation. Mnemonic: object looks at its reflection. 
+
+Stone Cech compactification as reflector/localisation: category of compact Hausdorff spaces included into category of topological spaces. The reflector left adjoint is Stone-Cech compactification. 
+
+Abelianisation as right adjoint of reflector: category of abelian groups admitted into category of groups, the reflector right adjoint is abelianisation.
+
+Sheafification as reflector/localisation: sheaves as subcategory of presheaves, left adjoint is sheafification. 
+
+Localisation as localisation for general commutative rings: inclusion of certain categories of general commutative rings have localisation as left adjoint to inclusion. 
+
+Simplicial set into homotopy category as reflector: small categories included to the category of simplicial sets, the left adjoint sends simplicial set to its homotopy category, no good name for this.
 
 Reflection of isomorphisms: consider a full and faithful functor F from category C to category D, if Ff is isomorphism in cat D, f is morphism in C, then f is isomorphism in C. 
 
