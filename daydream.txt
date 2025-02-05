@@ -1,5 +1,15 @@
 DAYDREAMS:
 
+Left and right adjoint of the forgetful functor: define the forgetful functor F: DirGraph -> Set, maps a graph to its set of vertices by restrict along the functor from the terminal category 1, compute left and right adjoint. STUCK: they did a one objectification, objects are functor (E, V) and a pair of maps s, t, E and V to Set, morphisms are natural transformations of these functors, if I forget this, then I need to compute the left and right adjoint of this forget functor which is the free or cofree composition of morphisms in Set? Got stuck trying to work out this example, maybe look at functor category and suitably enriched stuff, or look at quivers?
+
+Representation theory and Kan extensions: Recall a single object category with invertible is precisely? Now consider the functor category Vect_k^G, what are these (G-representations over field k)?. If H is a subgroup of  G, replace restriction from Vect_k^G -> Vect_k^H with a suitable functor, define the left adjoint of this functor. This induction functor is a left Kan extension along i. Now consider G-set, G-space, based G-spaces, in which cases does these adjoints not exist?
+
+Ring homomorphism with suitable enrichment of extension of scalars: consider R-module M to S-module M *_R S, this is the V-enriched left Kan extension along V-functor R -> S between one object V-categories? What is the category of choice for enrichment, V? What is this called (hint: ring homomorphism)?
+
+TOTAL Left derived functor and TOTAL right derived functor: compose representation functor F: C -> D and localisation functor D -> Ho D, this admits what along the localisation functor C -> Ho C (hint: admits Kan extension)? What is this called?
+
+Hilbert's basis theorem and rings, and polynomial rings: rings have representing object Z with generator 1, poly rings have representing object Z[x], with generator 1, Noetherian is preserved under some functor, is this the Hilbert basis theorem?
+
 Operads from categories: gradually build up definition of categories, with objects and sets worth of morphisms with associative functoriality. Replace morphisms with hom objects in another category to define enriched categories. Allow Hom objects to take in arbitrary arguments to define operads.
 
 Attitude exercise: expose the attitudes of the following concepts, series, copresheafs/representation, sieves (hint: sub functor of representable, what about Grothendieck topology), quivers (directed graphs, but what about quiver representations), causal set (partially ordered set, but what about?), fields in physics (sections of fibre bundles), random variables (real values measurable  maps, but sample space to space to states), dynamical systems (set with group action G*S to S, group with time, S with space, f to be laws of motion), curve (smooth function, but parameterisation), module object (action object over monoid objects, but mainly to emphasise (bi)linearity)
