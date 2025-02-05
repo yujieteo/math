@@ -1,5 +1,13 @@
 UNDERSTOOD
 
+Saturated homotopical category: a homotopy category where under localisation of wide category W for homotopical category M, all isomorphisms become weak equivalences.
+
+Homotopy category: homotopical category under formal localisation of M under wide subcategory W.
+
+Homotopical category: a category with wide subcategory W with composable triples such that hg gf in W means f, g, h, and hgf are in W.
+
+Homotopy categorical of spaces: formal localisation of the homotopical category of topological spaces and weak homotopy equivalences i.e. category of CW complex and homotopy classes of maps.
+
 Galois correspondence: a pair of adjoint functors between posets.
 
 Torsion of G-bundles: prevents global sections (think arrows) from existing. Standard example is universal covering of the reals onto the circle.
@@ -787,13 +795,13 @@ Slogan for derived functors: right derived functors come from left exact functor
 
 Connection between derived functors to Kan extensions: derived functors with abelian category A can be seen as Kan extensions of embeddings of A into suitable derived categories.
 
-Derived functors and derived category intuition: let A be abelian category, define a homotopical category with morphisms being hom-sets up to homotopy, then localise at it to get a derived category.
+Derived functors and derived category intuition: let A be abelian category, define a homotopical category with morphisms being hom-sets up to homotopy, then (simplicially) localise at it to get a derived category.
 
 Universal property of derived category: localisation of the category of complexes with respect to quasi-isomorphisms.
 
 Derived category: A abelian category, D(A) is a category, with functor Q from category of cochain complexes Kom(A) to the derived category D(A) with universal property, defined by universal property, C is another category (note, note abelian), and F: Kom(A) to C such that f^o is quasi-isomorphism in Kom(A), image F(f^o) is ISOMORPHISM in C, F factors to Q. They weakened universal property with quasi-issomorphism.
 
-Category of complexes of A, Kom(Ab) as example: objects in Kom Ab are cochain complexes of C* of Abelian groups, Hom(B*, C*) are morphisms of complexes f*: B* -> C* that are equivalent under homotopy.
+Category of complexes of A, Kom(Ab) as example: objects in Kom Ab are cochain complexes of C* of abelian groups, Hom(B*, C*) are morphisms of complexes f*: B* -> C* that are equivalent under homotopy.
 
 Cochain complexes look like long maps of X^i such that differential (coboundary) of the differential is zero i.e. d^{i+1} * d^i = 0, ith cohomology group of H^i is defined by the kernel of the differntial map d^i (sending objects in X^i to 0) quotiented out by the image of d^{i - 1} (equivalence of elements in the image of the previous differential map for stuff in the kernel)
 
@@ -803,7 +811,7 @@ Field of characteristic p, map s: x -> x^p is isomorphism of K onto subfields K^
 
 Multiplicative group of finite field F_q cyclic of order q - 1: proof using Euler phi-function, number of integers x with 1 <= x <= which are corprime to d, whose image in Z/dZ is a generator of this group. There are phi(d) = q - 1 generators of cyclic group of order d.
 
-Zero ring: trivial field, excluded from a field, one maximal ideal (0)
+Zero ring: trivial field, excluded from a field, one maximal ideal (0).
 
 Z[root(2)] not a field but with unifnitely many units: key step is using (1 + root(2))^n(-1 + root(2))^n = 1 by induction, so these are the only units using induction on b of a + root(2) b.
 
