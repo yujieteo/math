@@ -1,5 +1,7 @@
 UNDERSTOOD
 
+Dedekind finite ring: ab = 1 implies ba = 1, all one sided inverses in the ring are two sided.
+
 Simple group: normal subgroups are trivial and full group.
 
 Cyclic group of prime order: only simple abelian group, all subgroups of abelian group are normal, subgroup <g> must be all of G, so it must be cyclic of some order, now subgroups must be m | n, so g must be prime (cannot even be prime power order).
@@ -3169,6 +3171,8 @@ Irrational rotation of circle as ergodic: if rational then periodic so not ergod
 
 Sign of permutation is inevitable, proof is consider a n sphere, boundary is (n-1) sphere which can be constructed in simplicies/CW complex, but spheres can be realised as sphere spectrum, which correspond to the integers as group under addition forgetting the spectra properly, integers as a abelian group has two automorphisms, trivial and negations therefore there is a well defined homomorphism from symmetric group of n to symmetric group order 2. Related to Tor.
 
+Motivating projective space using solutions: projective space give as many solutions as possible, example x^2 + 1 = 0 fails for R, R is not algebraically closed. The other case is where 0 = 1, you need to turn from projective space into affine space, x + y = 1 and x + y = 2 has a solution of two parallel lines, intersecting at infinity. y = 1 - x, y = 2 - x, same gradient, different y intercept.
+
 Example, take model of group object. We have group, topological group, Lie group, semi direct product. Category of points of topoi is isomorphic to models of theory.
 
 Ultraproduct, Cartesian product modulo ultra filter, filter is family of subset of power set 2^I, I is some indexing or grading, closed under superset and non empty intersections, the following are equivalent filter is ultrafilter, no filter greater than that filter, proper subsets are closed by inclusion or the complement inclusion. Ultraproducts are defining things in first order logic.
@@ -3187,9 +3191,9 @@ Stone spaces: compact Hausdorff spaces which are totally disconnected. Cantor to
 
 Isbell adjunction and Isbell duality, space is geometry, quantity is algebra, take the smooth space and consider its colimit, the left adjunction taking smooth spaces to smooth rings, as copresheafification, consider a smooth algebra, taking its spectrum or sheafification gives its limit which is a smooth space as right adjoint.
 
-Six functor formalism, three adjunctions. You want two adjunctions first, direct image to inverse image for morphisms as adjoints, direct image with compact support with exceptional inverse image or Verdier duality adjoints for separated morphisms, lastly it's the symmetric monoidal tensor product with internal hom as adjoint. See Scholzes notes.
+Six functor formalism, three adjunctions. You want two adjunctions first, direct image to inverse image for morphisms as adjoints, direct image with compact support with exceptional inverse image or Verdier duality adjoints for separated morphisms, lastly it's the symmetric monoidal tensor product with internal hom as adjoint. See Scholze's notes.
 
-Separated morphism, diagonal morphism is a morphism mapping a space X to its diagonal X with product in Y is such is a closed subspace of the diagonal X to Y.
+Separated morphism: diagonal morphism is a morphism mapping a space X to its diagonal X with product in Y is such is a closed subspace of the diagonal X to Y. Motivation is from the fact that Zariski topology is not Hausdorff in general.
 
 Diagonal: canonical isomorphism to the self Cartesian product
 

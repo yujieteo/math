@@ -1,6 +1,38 @@
 DAYDREAMS:
 
-Understand the flaw in Zariski dense arguments for the proof of the Cayley-Hamilton theorem: here https://mathoverflow.net/questions/179194/a-question-about-zariski-dense-arguments
+Comparison of negative self intersection: show that a line isomorphic to P1 in P2 has 1 self intersection (hint: perturbation intersects in one point), now try this with exceptional divisor in blow up, intersection is -1, so negative self intersection either means blow up, or rigidity or cannot be perturbed.
+
+Global sections of O(-1): twisted structure sheaves, make this make sense: https://math.stackexchange.com/questions/112926/global-sections-of-mathcalo-1-and-mathcalo1-understanding-structu
+
+Composing functors to get representable objects: consider GL_n(-) from CRing to Groups as a functor then compose this with the forgetful functor. Find that this composition is representable by a ring. Now recover this by Tannaka duality. Solution given by comments here: https://math.stackexchange.com/questions/95712/what-use-is-the-yoneda-lemma
+
+Boolean rings and maximal spectrum: in a similar vein to the Zariski topology, let B be a Boolean ring with all elements idempotent, identify it with a subset of its maximal spectrum, now prove Stone's representation theorem for Boolean algebras, deduce the existence of ultrafilters from the existence of maximal ideals in ring, and prove the compactness theorem in propositional logic. (Hint: all using Stone duality)
+
+Motivating Zariski topology as semidecidable properties: open sets are semidecidable properties. Zariski topology is about non-vanishing polynomials. This set of polynomials do not vanish here, so you can compute the value of a polynomial at finite precision. Since this is sufficiently different from zero means it cannot be zero. Zariski topology not being Hausdorff tells you how vanishing of polynomial behaves. Example: if they agree on a Zariski dense subset, non Hausdorff, they agree identically. This proves Cayley-Hamilton theorem, and non-Hausdorffness of the Zariski topology clarifies the meaning of perturbations of A + eps E. See Qiaochu Yuan's answer and blog posts. https://math.stackexchange.com/questions/161884/why-zariski-topology
+
+Motivating Zariski topology in arbitrary commutative rings: prove that if X is compact Hausdorff, C(X) is ring of continuous functions X -> R, maximal spectrum C(X) is not only identifiable with X, it even has the same topology.
+
+Zariski topology as classifying topos: https://math.stackexchange.com/questions/161884/why-zariski-topology try to understand Zhen Lin's answer for this.
+
+Comparison between Serre's FAC to today: https://achinger.impan.pl/fac/fac.pdf
+
+Verdier duality: make this make sense, Verdier duality generalised Poincare duality as existence of adjoint to derived pushforward https://math.uchicago.edu/~amathew/verd.pdf
+
+Geometric interpretation of the Riemann-Roch theorem: https://math.stackexchange.com/questions/683360/geometric-interpretation-of-the-riemann-roch-for-curves do not understand this.
+
+Exercise on pullback and pushforward isomorphism of schemes: hard by Matt Emerton, consider schemes X and Y, Y is a point i.e. Spec k, k field, we have Hom_X (f*G, F) isomorphic to Hom_Y(G, f_* F). F is O_X-module, G is O_Y module, f_* is now computing global sections (why?), now ask if O_X *_k H^0(X,F) -> F is isomorphic>? (probably not) HARD! I don't even understand where this natural map comes from. https://math.stackexchange.com/questions/6406/pullback-and-pushforward-isomorphism-of-sheaves
+
+Find out what all these problems mean? https://math.stackexchange.com/questions/255063/why-study-algebraic-geometry
+
+What does this trinity mean? Compact Riemann surface is projective non-singular curve over C is a finite extension field of the rational function field C(X).
+
+What is the divisor class group of surface? What is the torsion part of maps?
+
+Motivation for separatedness with the Cayley-Hamilton theorem: define the Cayley-Hamilton theorem, let A be a n block matrix of complex entires, the characteristic polynomial is zero. Exercise: this is trivial for diagonalisable matrices, the set of diagonalisable matrices is Zariski dense in C^{n^2}, the function C^{n^2} to C^{n^2} given by A to the characteristic equation of A vanishes everywhere since it vanishes on a Zariski dense subset (it is not open, contains open subset of matrices with distinct eigenvalues), or more concretely, morphisms between irreducible algebraic varieties (in an algebraically closed field) agree if they agree on a Zariski dense set, BUT subtle point is domain and codomain are separated as schemes. What is the definition of separatedness (hint, it is categorical, diagonal morphism is closed immersion)?   https://mathoverflow.net/questions/179194/a-question-about-zariski-dense-arguments
+
+Comparison of Cayley-Hamilton proof to physics: compare the algebraic geometry proof to the physicist proof, if A is square matrix, then A + esp H is diagonalisable after pertubation, take eps as it approaches zero.
+
+Comparison to classical density argument in commutative algebra for Cayley Hamilton theorem: prove the Cayley Hamilton theorem, start with diagoanlisable matrices satisfy the theorem, these are dense in the full space of the commutative ring, therefore, non-diagonalsiable matrices satisfy the theorem since characteristic polynomial is of finite degree, in finitely many aentries of the matrices.
 
 Intuition for normal subgroups as relativistically invariant, this does not make sense?
 
@@ -1262,7 +1294,7 @@ I still don’t understand cohomology other than it is some sort of dual to homo
 
 Motivation for normalisers? https://en.wikipedia.org/wiki/Centralizer_and_normalizer
 
-I understand why do we care about derived functors (enough injectives), but how to we understand it? Scholze uses it to give a very clean definition of etale cohomology and what does this even mean? Example: cohomology is the right defined functor from the “abelian space” (specifically spectra) and getting an abelian group. Note that abelian groups are a fully faithful inclusion into cohomology. What does it mean by enough injectives? Sheaf cohomology is the right derived functor to the global section functor? Answer; this is Grothendieck’s genius to use a functor for any coefficient. More specifically any functor as coefficients.
+I understand why do we care about derived functors (enough injectives), but how to we understand it? Scholze uses it to give a very clean definition of etale cohomology and what does this even mean? Example: cohomology is the right defined functor from the “abelian space” (specifically spectra) and getting an abelian group. Note that abelian groups are a fully faithful inclusion into cohomology. What does it mean by enough injectives? Sheaf cohomology is the right derived functor to the global section functor? Answer; this is Grothendieck’s genius to use a functor for any coefficient. More specifically any functor as coefficients. https://math.stackexchange.com/questions/54752/sheaf-cohomology-what-is-it-and-where-can-i-learn-it
 
 Identity theorem?
 
