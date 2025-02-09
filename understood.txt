@@ -1,5 +1,17 @@
 UNDERSTOOD
 
+First monads: endofunctors on category with unital associative binary operation under composition. (Basically, category definition, but with endofunctor, or a monad is a monoid in the category of endofunctors.)
+
+Relation category: objects are sets, morphisms are relations.
+
+Regular monomorphisms: a monomorphism is regular if it is an equaliser of a pair of morphisms. Example: categories with zero object or zero morphisms, it is normal where every monomorphism isa kernel, then every monomorphism is regular.
+
+Fiber and cofibres in category of pointed objects: given morphism in category of pointed objects coslice category of basepoint /  category of pointed objects, with finite limits and colimits. The fibre of a map is the pullback of point inclusion, fib(f) -> * -> Y is equivalent to fib(f) -> X -> Y. The cofibre is the pushout of the point projection, X -> Y -> cofib(f),  and X -> * -> cofib(f).
+
+Classifying topos for pointed object: presheaf topos on the opposite category of pointed finite sets.
+
+Pointed object: (X, x), morphism x from * -> X, where * is terminal object.
+
 Saturated homotopical category: a homotopy category where under localisation of wide category W for homotopical category M, all isomorphisms become weak equivalences.
 
 Homotopy category: homotopical category under formal localisation of M under wide subcategory W.
@@ -2895,6 +2907,14 @@ Etale space: sheafs on the site of opens for topological space is the sheaf of l
 
 Motivation for slice category as bundle: Top be category of topological space, Top/B be slice category, category of topological space over object B in Top (these are the bundles of B!)
 
+Slice category: objects are morphism, morphisms are commuting triangles to colimits X.
+
+Coslice category: objects are morphisms, morphisms are commuting triangles from limit X.
+
+Canonical forgetful functor from slice and coslice category: forget C_X/ and C^X/ to C, forgetting the morphisms X.
+
+Category of pointed objects: objects are morphisms from basepoint to x, morphisms are commuting triangles from limit *, morphisms preserve chosen points.
+
 Sections are right inverses. Sections B -> A are right inverses of bundles A -> B which are left inverses of sections. Sections typically refer to global sections, not local sections by default. In homotopy type theory, helpful for defining left injections and right injections.
 
 Derived functors: normal functors that are presented in a category of weak equivalences (homotopy suitable setting).
@@ -3253,7 +3273,7 @@ Z[t]/t^2 thickening of affine line with nilpotent everywhere, K1 contains invert
 
 Brown representability: all cohomology theories can be represented by spectra, need pointed connected spaces, CW complexes to state LES.
 
-Wedge sum, glue together pointed spaces at the point.
+Wedge sum: (1) glue together pointed spaces at the point; (2) coproduct in the coslice category.
 
 Cayley's Theorem, one of my favourites because once you understand Cayley's Theorem, you understand Yoneda embedding and Yoneda's lemma. Note: not trivial, requires key step. Consider underlying element of group x, mapping to left action gx. IMPORTANT: groups are closed, so this is bijection, since this is a bijection on the same set, it is a permutation, so groups must be isomorphic to permutation groups (or subgroups of symmetric groups) under composition of permutations. Yoneda's: considering homset(b, a) mapping to natural transformations nat(hom(a, -), hom(b, -)). This must be an isomorphism, since compositions of morphisms are morphisms (we used the assumption of a locally small category here, this is large enough to only form a set). Therefore, define this as an Yoneda embedding (if on sets), and all small categories are embed into the category of functors of defined on that categories, which are represented by pre-sheaves or representable functors.
 
@@ -3341,7 +3361,7 @@ Spectrum (sphere): representation of cohomology by Brown representability theore
 
 Fields: (1) every element is invertible; (2) every module (vector space) over fields are free or have basis (need Zorn's); (3) matrix analysis, the main definition is that it be closed under "addition" and "multiplication"; (4) localise to become so small in affines like dots.
 
-Smash product generalised tensor product which is a product that is bilinear since a ring is a monoid with tensor product of abelian groups. Tensor product corresponds to Tor.
+Smash product: (1) generalised tensor product which is a product that is bilinear since a ring is a monoid with tensor product of abelian groups. Tensor product corresponds to Tor; (2) tensor product in coslice category.
 
 Field extension: define some subfield with some subset, then the main field is the field extension. Also, the subset is adjunction to the field extension. From field to field extension, if it is a ring homomorphism preserving ring structure, must be an injection.
 

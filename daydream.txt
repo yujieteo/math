@@ -1,5 +1,15 @@
 DAYDREAMS:
 
+Free-forgetful adjunction between pointed sets and sets as monad: what endofunctor is induced (hint: addition of disjoint point). What monad is it called (hint: maybe monad).
+
+List monad: which free-forgetful adjunction do you use for this endofunctor (hint: monoids and sets, defined by the disjoint union).
+
+Free group monad: which free-forgetful adjunction do you use for this monad (hint: group and sets)
+
+Free R-module monad: which free-forgetful adjunction do you use for this monad (hint: R-modules). Reduce this to define the free Ab monad, and free vector space monad.
+
+Wedge sum and smash product with coslice/slice categories: product of two pointed object is categorical product (limit) in coslice category, define the coproduct (needs to adjoin base point so you need basepoint by a pushout from the basepoint to the wedge sum.)
+
 Context, logic and quantifiers: work with the following example? https://math.stackexchange.com/questions/1812490/in-category-theory-what-is-a-fibration-and-why-should-i-care-about-them. Define what is a termon some free variables (hint: well typed expression built on function and constant symbols). For example, consider the signaure of the theory of groups, with a  single sort * for the abstract group, then (x * e) * y would be a term in the context of groups. Show that the notion of context and terms constitute the free category with finite products over a given set of objects and morphisms. Now, define formulas using logical connectives. Then show that with a base category of contexts, and any category of contexts, you can nnow have the Boolean algebra of propositions. Define substitution morphisms. Define morphisms between propositions over objects. Sorts functions and relations yield morphisms in C. Now consider the functor p: B -> C where morphisms in C are sorts, functions, and relations, fibres of p are Boolean algebra, relation symbols are elements of B_Gamma, p is the Cartesian fibrations. Now, show that quantifiers show up as adjoints over the initial Cartesian fibration given contexts, functions, and relations. Finally, validate the punch line that logic give initial categorical fibrations, contexts are reflected in the base space, logic is in the fibres, and quantifiers are in the adjoints. 
 
 Linear contractions?
