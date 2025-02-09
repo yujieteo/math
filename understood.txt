@@ -1,5 +1,21 @@
 UNDERSTOOD
 
+Subobject: take category C, object A, it is an equivalence class of monomorphisms with codomain A, identify two monomorphisms m and m' from B to A and B' to A with th e same equivalence class if there is an isomorphism B -> B' such that m = m' f. This feels like a universal property style definition.
+
+Quotient object: suboject of A in the opposite category. Good exercise to build out explicitly, it is an equivalence class of epimorphisms with domain A, identifying epimorphisms e and e' from A to B and A' to B'' if there is an isomorphism f from B' to B, such that e = f * e'. https://math.stackexchange.com/questions/61062/quotient-objects-their-universal-property-and-the-isomorphism-theorems/61204#61204
+
+Examples of subojects in topology: subspaces of topological spaces are subobjects, topologies that are finer are also subobjects example B is subobject of A if B has a finer topology of A.
+
+Examples of subobjects in monoids: category of monoid, Z is a quotient of M, because N to Z is epic.
+
+Motivation fo regular monos and regular epis: now define regular monos as equaliser of pair of parallel morphisms, regular epis dually are coequaliser for some pair of parallel morphisms. 
+
+Examples of regular monos: kernel of group,ring and module, which equalises f and the zero morphism.
+
+Example of regular epis: cokernel of groups, rings, modules. Projection maps on quotient groups, rings and modules are epis.
+
+Linear algebra specialty: direct sum of finitely many vector space is the same as the direct product of them.
+
 First monads: endofunctors on category with unital associative binary operation under composition. (Basically, category definition, but with endofunctor, or a monad is a monoid in the category of endofunctors.)
 
 Relation category: objects are sets, morphisms are relations.
@@ -3239,7 +3255,7 @@ Refinement of open cover means better experiment than the open cover itself in t
 
 Open cover refers to decidable experiment in finite time, compact means admits open covers referring to decidable by one experiment.
 
-Example of verification in finite time corresponding to semidecidable logic, verify something is open in finite time, closed set not so because of points in the boundary requiring infinitely many computations.
+Example of verification in finite time corresponding to semidecidable logic, verify something is open in finite time, closed set not so because of points in the boundary requiring infinitely many computations. https://math.stackexchange.com/questions/31859/what-concept-does-an-open-set-axiomatise
 
 Stone duality, poset lattice correspond to topology, with poset lattice interpreted as a form of logic, this corresponds to topology being defined as a semidecidable logic, where arbitrary unions correspond decidable disjunctions, finite intersections correspond to decidable conjunctions in finite time.
 

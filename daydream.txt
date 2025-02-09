@@ -1,5 +1,15 @@
 DAYDREAMS:
 
+Orbit spaces: consider a space X, with an action of the group G, form the quotient X / G, what are points of this quotient space (hint: orbits of group action), now define the groupoid quotient X // G (hint: this is not exactly the set of points of X/Gm consider the functor pi_0: Grpd to Set, which takes the set of isomorphism classes on the groupoid). Now replace this example with stacks and sheaves.
+
+Stacks and orbit spaces: continue, if you have a sheaf C^op to Set, with an action of a sheaf of groups C^op to Grp, take quotients componentwise gets a presheaf C^op -> Set. How do you make it into a sheaf? (Hint: sheafify/stackify to get an object with desired universal property). How do you make it a stack when you take groupoid quotients? So if you have a stack C^op -> Grpd, apply fundamental group functor pi_0: Grpd -> Set where groupoids are mapped to bijections, you get a presheaf C^op -> Set. Now do you understand what a stack is (Hint: C^op  to Grpd)? https://math.stackexchange.com/questions/5021726/projective-space-as-a-stack/5021847#5021847
+
+Finite fields, algebraic closure and distinct roots: let k be a finite field, let a be any element in the algebraic closure of k, prove that it's minimal polynomial has distinct roots? STUCK, what is the algebraic closure of a finite field? What is a minimal polynomial?
+
+Definition of the opposite category as a quintuple: what is it a quintuple of? (Hint, objects, morphisms, source, targets, and opposite composition).
+
+Limits and colimits in opposite categories: start by considering products is a coproduct in the opposite product, prove this! (Hint: use universal properties!). Now compare this presheaves and representation functors. Now try to exploit some sort of Isbell adjunction by thinking with the basic example of V(xy) as a coproduct and the corresponding product of ideals.
+
 Free-forgetful adjunction between pointed sets and sets as monad: what endofunctor is induced (hint: addition of disjoint point). What monad is it called (hint: maybe monad).
 
 List monad: which free-forgetful adjunction do you use for this endofunctor (hint: monoids and sets, defined by the disjoint union).
