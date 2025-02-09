@@ -1157,6 +1157,8 @@ Quotient object: three are quotient ring, space (linear algebra or topology), qu
 
 Involution: f^2 is idempotent or f = f^{-1}.
 
+Fermat's theorem: every prime p - 1 is divisible by 4 is the sum of two squares, consider if two involutions act on a finite set, one fixes odd number of points so does the other. Let p = 4k + 1 be prime, let N be natural numbers, consider finite set of triples (x,y,z) such that x^2 + 4yz = p, x has two involutions (x,y,z) -> (x,y,y) is sum of two squares x^2 + 4y^2 and the other involution, (x,y,z) -> ... (fill in yourself), with one fixed point (1, 1, k) so it becomes 1 + 4z = p, so cardinality of this set is odd, hence S also has a fixed point with respect to the obvious involution.
+
 Cantor's bijection: a bijection from the product of naturals to the naturals taking (x, y) to 0.5([x+y]^2 + 3x + y). Draw it out. This is the only quadratic bijection up to symmetry of variables (x,y) (y,x). Used to show cardinality of products of naturals is the same as that of the naturals.
 
 Algebraist definition of 0^0: this is equal to 1, empty map from nothing to nothing. Also gives 0! = 1.
