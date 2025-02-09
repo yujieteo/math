@@ -1,5 +1,7 @@
 DAYDREAMS:
 
+Understand the flaw in Zariski dense arguments for the proof of the Cayley-Hamilton theorem: here https://mathoverflow.net/questions/179194/a-question-about-zariski-dense-arguments
+
 Intuition for normal subgroups as relativistically invariant, this does not make sense?
 
 Compact object? Ind(C)? comparison object?
