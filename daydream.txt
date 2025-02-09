@@ -1,5 +1,25 @@
 DAYDREAMS:
 
+Natural transformations of functors: show that a natural transformation of functors C to D is the same as a functor 2 * C to D, where 2 = {0 -> 1}. What is the domain and codomain of this natural transformation? (Hint, restriction from {0} * C and codomain is restriction from {1} to D). Now relate this to a homotopy (hint: unit interval, so it looks like a pre-homotopy).
+
+Sheaf conditions and stalks: why must we assume that the category has enough limits, and enough filtered colimits. Why is the key condition, consider a morphism p in F -> G in Sh(X;C) (C-valued sheaves on X) is isomorphism if it is isomorphic on the level of stalks. Now see if C = Set, this is the fact that Sh(X) has enough points. Prove that x*: Sh(X;C) -> C that sends a sheaf to its stalk F_x has a right adjoint using skyscraper sheaves? STUCK: don't understand how skyscraper sheaves apply here.
+
+Non-empty sets as commutative monoids: use induction to show this: 1-element set is a monoid uniquely, if X has two distinct elements, 0 and 1, make it into a commutative monoid with x * y, x if y is 1, y if x is 1, 0 otherwise.
+
+Semidecidable and least upper bound: prove that a least upper bound is not in a set (hint: open intervals). Now tie this in with Stone duality.
+
+Fibre product of schemes: exercise, why is a fibre product of schemes not an example of a fibre product of sheaves in a Grothendieck topos (hint: need to use a Zariski topos, and Zariski sites).
+
+Axiom of choice is a choice object: define a projective object as a given a set of morphisms a from A to B and p frm P to B, a is epic, then there exists morphism p' from P to A, such that a * p' lifts to p, or the functor Hom_C(P, -) from C to Set preserves epis; define a choice object as an object such that every epimorphism with codomain P splits, what is splits; now define the axiom of choice is as every object in the category of Sets is a choice objects. Why is this equivalent to the the definition of the axiom of choice?
+
+General linear group as a functor: what is this a functor of? (Hint: CRing to Grp, mapping commutative ring to GL_n(A)). Consider the functor sending its ring to group of units. Now verify that determinant is a natural transformation of these functors.
+
+Categorical tip: ask what it means in the special case of a poset or a preorder. Often, things simplify. Why? (Hint: there are essentially unique morphisms, a poset is a category where for any pair of objects, there is at most one morphism from x to y, if there are morphisms from x to y and y to x, they are isomorphic). Describe posets as skeletal thin category enriched over the cartesian monoidal category of truth values. Define skeletal (two objects that are isomorphic are actually already equal i.e. all isomorphisms are automorphisms). Define the skeleton of the category (skeletal subcategory of C, whose inclusion functor exhibits it to be equivalent to C), define the weak skeleton of the category using weak equivalence.
+
+Preorder set and partially order set: which is a strict, thin category, and which is a strict, thin and skeletal category? (Hint: preorders do not have antisymmetry implying equality).
+
+Counterexample for initial objects: prove with counterexample that every morphism from the initial object need not be a monomorphism. (Hint: in CRing, initial object Z, only holds for rings of characteristic 0).
+
 Orbit spaces: consider a space X, with an action of the group G, form the quotient X / G, what are points of this quotient space (hint: orbits of group action), now define the groupoid quotient X // G (hint: this is not exactly the set of points of X/Gm consider the functor pi_0: Grpd to Set, which takes the set of isomorphism classes on the groupoid). Now replace this example with stacks and sheaves.
 
 Stacks and orbit spaces: continue, if you have a sheaf C^op to Set, with an action of a sheaf of groups C^op to Grp, take quotients componentwise gets a presheaf C^op -> Set. How do you make it into a sheaf? (Hint: sheafify/stackify to get an object with desired universal property). How do you make it a stack when you take groupoid quotients? So if you have a stack C^op -> Grpd, apply fundamental group functor pi_0: Grpd -> Set where groupoids are mapped to bijections, you get a presheaf C^op -> Set. Now do you understand what a stack is (Hint: C^op  to Grpd)? https://math.stackexchange.com/questions/5021726/projective-space-as-a-stack/5021847#5021847

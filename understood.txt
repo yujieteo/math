@@ -1,5 +1,7 @@
 UNDERSTOOD
 
+Split epis: for split epi e A to B in category C, there exists split mono s from B to A, we have e * s is in 1_B. We call s the section of e, e the retraction of s, B is the retract of S, and e, s is the splitting of the idempotent A to A.
+
 Subobject: take category C, object A, it is an equivalence class of monomorphisms with codomain A, identify two monomorphisms m and m' from B to A and B' to A with th e same equivalence class if there is an isomorphism B -> B' such that m = m' f. This feels like a universal property style definition.
 
 Quotient object: suboject of A in the opposite category. Good exercise to build out explicitly, it is an equivalence class of epimorphisms with domain A, identifying epimorphisms e and e' from A to B and A' to B'' if there is an isomorphism f from B' to B, such that e = f * e'. https://math.stackexchange.com/questions/61062/quotient-objects-their-universal-property-and-the-isomorphism-theorems/61204#61204
