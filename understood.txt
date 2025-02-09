@@ -1,5 +1,9 @@
 UNDERSTOOD
 
+Pointed object: consider a category with a terminal object, a pointed object (X, x) is an object with a global element. 
+
+Forgetful functor forgetting the basepoint: it is a functor where we have the coslice category */C to C, (X, x) is mapped to X, this has a left adjoint that takes an object to the coproduct (X with disjoint basepoint adjoined). Underlies maybe monad.
+
 Galois correspondence: a pair of adjoint functors between posets.
 
 Torsion of G-bundles: prevents global sections (think arrows) from existing. Standard example is universal covering of the reals onto the circle.
@@ -2950,6 +2954,8 @@ Whitehead problem: 0 to Z to B to A to 0 is spit short exact sequence. Equivalen
 Split exact sequence: short exact sequence built in the simplest possible way (quotients)
 
 Lex: left exact, preserving FINITE colimits. So it is weaker than left adjoints.
+
+Finitely complete category / left exact category: admits all finite limits, all limits for diagram F : J -> C, J is a finite category. 
 
 Rex: right exact, preserving FINITE limits. So it is weaker than right adjoint.
 
