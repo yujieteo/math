@@ -2761,7 +2761,9 @@ Gluing modules: A-modules are equivalent to quasi-coherent sheafs on Spec A whic
 
 A category of presheaves has presheaf functors as objects, and natural transformations as morphisms.
 
-Most Kan extensions define the value of an extended functor on each object (each “point”) by a weighted (co)limit. For a locally small category E, a right Kan extension is pointwise if it is preserved by all representable functors E(e, -) to the category of sets Set. Representable functors are naturally isomorphic with a representation \theta: hom_C(-,c) -> E(e, -). A left Kan extension is pointwise if its corresponding right Kan extension is pointwise.
+Most Kan extensions define the value of an extended functor on each object (each “point”) by a weighted (co)limit. For a locally small category E, a right Kan extension is pointwise if it is preserved by all representable functors E(e, -) to the category of sets Set. Representable functors are naturally isomorphic with a representation \theta: hom_C(-,c) -> E(e, -). A left Kan extension is pointwise if its corresponding right Kan extension is pointwise. 
+
+https://mathoverflow.net/questions/33188/a-slick-definition-of-the-kan-extension
 
 Also, a right Kan extension of functor F from category C to category E along a functor K from category C to D is pointwise if and only if the limit lim ( d \downarrow K -> C -> E) exists and is isomorphic Ran_K F(d) for morphism d in category C. We have d \downarrow K as an indexing category. This can be shown since a pointwise extension preserves representable functors, so Yoneda's lemma applies then the Ran_K F(d) is isomorphic limit of Fpi_d: d \downarrow K -> E where a l pi_d. Dually, a left Kan extension of functor F from category C to category E along a functor K from category C to D is pointwise if and only if the colimit colim ( K \downarrow d -> C -> E ) exists and is isomorphic Lan_K F(d) for morphism d in category C.
 
