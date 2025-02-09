@@ -1,5 +1,15 @@
 UNDERSTOOD
 
+Simple group: normal subgroups are trivial and full group.
+
+Cyclic group of prime order: only simple abelian group, all subgroups of abelian group are normal, subgroup <g> must be all of G, so it must be cyclic of some order, now subgroups must be m | n, so g must be prime (cannot even be prime power order).
+
+Projective representation: instead of GL(V), use PGL(V) = GL(V)/F*, F* is normal subgroup (closed under conjugation) of nonzero scalar multiples of identity / scalar transformation. This word has to come from geometry.
+
+Discrete Fourier transform, oscillator representations as projective representations: take finite field Z/p, p prime, Vbe p-dim space of Z/p, values in C, take T_a f(b) to be f(b - a), and S_a f(b) to be exp(2pi ab/p) f(b), T_a is translation, S_a is shift in frequency space or the discrete Fourier transform of f, verify that T_a S_b commutes with S_b T_a by multiplicative transformation, then you can look at projective representations of p of Cartesian product Z/p and Z/p as p(a,b) = [T_a S_b].
+
+Projective representation of SO(3): rotation group has universal cover SU(2), there ie exactly one irreducible representation of SU(2) in each dimension, odd dimension is ordinary representation of SO(e), even dimension descends to projective representations SO(3).
+
 Split epis: for split epi e A to B in category C, there exists split mono s from B to A, we have e * s is in 1_B. We call s the section of e, e the retraction of s, B is the retract of S, and e, s is the splitting of the idempotent A to A.
 
 Subobject: take category C, object A, it is an equivalence class of monomorphisms with codomain A, identify two monomorphisms m and m' from B to A and B' to A with th e same equivalence class if there is an isomorphism B -> B' such that m = m' f. This feels like a universal property style definition.

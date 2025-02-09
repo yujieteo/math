@@ -1,5 +1,7 @@
 DAYDREAMS:
 
+Intuition for normal subgroups as relativistically invariant, this does not make sense?
+
 Compact object? Ind(C)? comparison object?
 
 Natural transformations of functors: show that a natural transformation of functors C to D is the same as a functor 2 * C to D, where 2 = {0 -> 1}. What is the domain and codomain of this natural transformation? (Hint, restriction from {0} * C and codomain is restriction from {1} to D). Now relate this to a homotopy (hint: unit interval, so it looks like a pre-homotopy).
