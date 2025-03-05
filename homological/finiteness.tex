@@ -1,0 +1,91 @@
+\documentclass[10pt]{article}
+
+\usepackage{times}
+\usepackage{amsthm}
+
+\theoremstyle{plain}% default
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem*{corollary}{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+\newtheorem{conjecture}{Conjecture}[section]
+\newtheorem{example}{Example}[section]
+\newtheorem{exercise}{Exercise}[section]
+
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+\newtheorem*{note}{Note}
+\newtheorem{case}{Case}
+
+\begin{document}
+
+\title{Introduction to finiteness conditions}
+
+\maketitle
+
+Consider a unital associative commutative ring $\mathrm{Mod}_A$ as $A$-modules. 
+
+A module
+$M$ in $\mathrm{Mod}_A$ is finitely generated 
+if and only if there exists an $A$-linear
+surjection $A^{\oplus n} \rightarrow M$
+for nonzero $n$. The intuition for this is that there is a finite 
+generating set (not a basis, since need not be linearly independent).
+
+A module $M$ in 
+$\mathrm{Mod}_A$ is finitely presented
+if and only if there exists an exact sequence
+$A^{\oplus m} \rightarrow A^{\oplus n} \rightarrow M \rightarrow 0$
+for nonzero $m$ and $n$. The motivation is that categorically, 
+these are the compact objects in the category of $A$-modules.
+An example would be that finite sets are the compact objects in the category of sets.
+If the commutative ring $A$ is a field, then the compact objects
+are precisely the finite dimensional vector spaces.
+
+\begin{lemma}
+	Let $0 \rightarrow M' \rightarrow M \rightarrow M'' \rightarrow 0$
+	be an exact sequence.
+	
+	If $M'$ and $M''$ are finitely generated, then so is $M$.
+	
+	If $M'$ and $M''$ are finitely presented, then so is $M$.
+	
+	If $M'$ is finitely generated and $M$ is finitely presented, then $M''$ is finitely presented.
+	
+	If $M$ is finitely generated then $M''$ is finitely generated.
+	
+	If $M$ is finitely generated, and $M''$ is finitely presented, then $M'$ is finitely generated.
+\end{lemma}
+
+\begin{lemma}
+	If $A$ is noetherian, then $M$ is a finitely generated $A$-module if and only if $M$ is also a finitely presented $A$-module.
+\end{lemma}
+
+\begin{proof}
+	Suppose $A$-module $M$ is finitely generated. 
+	Consider $A^{\oplus n} \rightarrow M$. 
+	Since the $A$-module $M$ is finitely generated, we 
+	can choose $K$ to be such that
+	$0 \rightarrow K \rightarrow A^{\oplus n} \rightarrow M \rightarrow 0$. 
+	This is the key step: since $A$ is noetherian, therefore $K$ is finitely generated. 
+	Since $K$ is also finitely generated, by definition one can construct 
+	$A^{\oplus m} \rightarrow K \rightarrow A^{\oplus n}$.
+	This gives the construction of an exact sequence 
+	for $M$ to be finitely presented 
+	where $A^{\oplus m} \rightarrow A^{\oplus n} \rightarrow M \rightarrow 0$.
+	Therefore, the $A$-module $M$ must be finitely presented since this 
+	construction satisfies the definition.
+\end{proof}
+
+\begin{example}
+	An example would be an ideal. Let $I$ be in an ideal
+contained in module $A$. Consider the surjection from $A$ to the 
+quotient of $A$ over the ideal $A/I$. 
+This quotient $A/I$ must be finitely generated.
+\end{example}
+
+
+\end{document}

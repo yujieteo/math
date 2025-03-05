@@ -1,12 +1,28 @@
 \documentclass[10pt]{article}
 
+\usepackage{times}
+\usepackage{amsthm}
+
+\theoremstyle{plain}% default
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem*{corollary}{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+\newtheorem{conjecture}{Conjecture}[section]
+\newtheorem{example}{Example}[section]
+\newtheorem{exercise}{Exercise}[section]
+
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+\newtheorem*{note}{Note}
+\newtheorem{case}{Case}
+
 \begin{document}
 
-\title{Notes on Category Theory}
-
-\author{Teo Yu Jie}
-
-\date{\today}
+\title{From categories to Kan extensions}
 
 \maketitle
 
@@ -45,6 +61,9 @@ Dually,
     \mathrm{colim}^{\mathcal{K} \mathbf{Dom}(\mathcal{K}-, f)} \mathcal{F}
 \end{equation}
 
-The presentation here is forced to be circular to show Kan extensions early to show this side of category theory early.
+The presentation here is forced to be circular to conceptualise Kan extensions early. 
+
+These notes are duality focused. Some dualities I think are important are: (1) Makkai duality, that corresponds logic to geometry in a categorical sense; (2) Tannaka duality, a duality that most generally establishes the Yoneda lemma; (3) Isbell duality, that corresponds algebra and geometry. A broad understanding of dualities and analogies sharpens thinking. This has great value outside of mathematics, since category theory is the mathematics of analogy.
+
 
 \end{document}
