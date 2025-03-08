@@ -22,7 +22,7 @@
 
 \begin{document}
 
-\title{Dualities, adjunctions, and representating objects}
+\title{Dualities, adjunctions, and representing objects}
 
 \maketitle
 
@@ -136,6 +136,20 @@ Isbell duality is interesting because it highlights an approach one can take to 
 	This is an example of how a suitable isomorphism can be used to find a duality. Further, the poset lattice correspond to topology. The poset lattice interpreted as a form of logic. This corresponds to topology being defined as a semidecidable logic, where arbitrary unions correspond decidable disjunctions, finite intersections correspond to decidable conjunctions in finite time.
 
 	Further, one can relate profinite sets as pro objects in the category of finite sets, to be equivalent to compact Hausdorff totally disconnected spaces. From Stone duality, compactness can be thought of as the case where every limit point is a point, or any decidable proposition is computable within finite time. Countability becomes important in a topology, where countably many experiments can be used to determine a result, corresponding to how every limit point being a limit point with some countable subset. This motivates separability. For me, I use the typical example of countable dense balls of rational radii that cover the real line, then replace balls with neighbourhoods for the general topological notion of countability.
+\end{example}
+
+\begin{example}
+	The decomposition of the linear representation of the direct product group of the general linear group on a field $k$ with the symmetric group of size $n$ can be decomposed as a direct sum of tensor product of irreducible representation for either group. This is Schur-Weyl duality.
+
+	Consider the field of complex numbers.
+	An example would be to suppose the number of factors to be $2$, then the space of two tensors decomposes into symmetric and antisymmetric part, each is a irreducible module for the general linear group of size $n$. This is because the symmetric group on two elements consists of two elements, the trivial representation and the sign representation. The trivial representation give rise to symmetric tensors that do not change under factor permutation, the sign representation corresponds to skew symmetric tensors that flip the sign.
+
+	\begin{equation}
+		\mathbf{C}^n \otimes \mathbf{C}^n
+		= S^2 \mathbf{C}^n \oplus \Lambda^2 \mathbf{C}^n
+	\end{equation}
+
+	A map from $V$ to $S_\lambda V$ for a given tableau $\lambda$ of $n$ can be upgraded to a covariant functor with maps from $V$ to $W$ inducing covariantly maps from $S_\lambda V$ to $S_\lambda W$.
 \end{example}
 
 Some general tips for using dualities. Firstly, one can establish an isomorphism under two successive operations to find an adjunction. Secondly, if there is an estimation, see if there is a dual notion that is also an estimation and imagine the problem to be similar to a thin category or posets. This can help in establishing another adjunction. Thirdly, logic can be related to space by Heyting duality, representing objects to objects or Yoneda nonsense by Tannaka duality, arrow reversal by the Eckmann-Hinton duality, space and quantities by Isbell duality.
