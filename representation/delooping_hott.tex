@@ -1,0 +1,98 @@
+\documentclass[10pt]{article}
+
+\usepackage{times}
+\usepackage{amsthm}
+
+\theoremstyle{plain}% default
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem*{corollary}{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+\newtheorem{conjecture}{Conjecture}[section]
+\newtheorem{example}{Example}[section]
+\newtheorem{exercise}{Exercise}[section]
+
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+\newtheorem*{note}{Note}
+\newtheorem{case}{Case}
+
+\begin{document}
+
+\title{Delooping groupoids and representation theory}
+
+\maketitle
+
+\begin{definition}
+	A slice category of an ambient category with a particular object is the category whose objects are morphisms to the particular object in the category and morphisms are commuting triangles to particular object from other objects as cocones.
+
+	A coslice category of an ambient category with a particular object is the category whose objects are morphisms from the particular object in the category and morphisms are commuting triangles with particular object to other objects as cones.
+
+	There is a canonical forgetful functor by forgetting morphisms to or from this particular object.
+\end{definition}
+
+Note that in coslice categories the commuting triangles form cones as morphisms, not cocones from the particular object. This is very annoying.
+This can bundles rectified if we think of the morphism itself as the head of the cone or the cocone, rather than the particular object.
+
+\begin{definition}
+	A pointed object is an object in the coslice category with a terminal object. These objects are morphisms from the terminal object to objects in the ambient category.
+\end{definition}
+
+One will also need to generalised connected spaces from the category of topological spaces to an arbitrary extensive category. Recall that a topological space is connected if it cannot be split up into two independent parts.
+
+We will not define extensive categories.
+
+\begin{definition}
+	An object out of an extensive category is defined to be connected if the hom-functor out of this object preserves all coproducts.
+\end{definition}
+
+\begin{example}
+	Consider a group $G$. There is a pointed connected groupoid $G \rightarrow *$ with a single object, the morphisms being the elements of the group $G$ and composition as the group operation in $G$.
+
+	This is the delooping of the group $G$ in an $(\infty,1)$-topos. This is the delooping groupoid $\mathbf{B}G$.
+
+	The delooping of an object $A$ is a uniquely pointed object $\mathbf{B}A$ such that $A$ is the loop space object of $\mathbf{B}A$. If we pick $A$ as a group $G$, then its delooping in the context of the category of topological spaces is a representing object known as the classifying space $\mathrm{B}G$. In the context of the category of infinity groupoids, it is the one object groupoid $\mathbf{B}G$. The geometric realisation of the groupoid $\mathbf{B}G$ is canonically isomorphic to the classifying space $\mathrm{B}G$ under the homotopy hypothesis.
+
+	The homotopy hypothesis is the assertion that infinity groupoids are equivalent to the simplicial localisation of topological spaces at their weak homotopy equivalences, induced by the fundamental infinity groupoid construction.
+\end{example}
+
+\begin{example}
+	A permutation representation is a functor from the delooping groupoid of a discrete group to the category of sets.
+\end{example}
+
+\begin{example}
+	A linear representation is a functor from the delooping groupoid of a discrete group to the category of vector spaces over a base field.
+\end{example}
+
+\begin{example}
+	A vector bundle over a manifold with a flat connection on a bundle is a functor from the delooping groupoid being the fundamental groupoid of the manifold to the category of vector spaces.
+\end{example}
+
+\begin{example}
+	A quiver representation of a quiver (directed graph) is a functor from the delooping groupoid being the path category of the quiver to the category of vector spaces.
+\end{example}
+
+\begin{example}
+	A smooth representation of a discrete group is a functor from the delooping groupoid being the Lie groupoid (an object in the (2,1)-topos of (2,1)-sheaves over category of cartesian spaces or the category of smooth manifolds) to the stack category of vector bundles, which is the generalisation of the category of vector spaces in a (2,1)-topos.
+
+	You can recover the ordinary representation by applying the global section functor from the (2,1)-sheafification of the category of smooth manifolds to the category of groupoids. Explicitly, this is the evaluation of the terminal object in the category of smooth manifolds, which is the ordinary point.
+
+	The underlying representation is the global sections functor composed with the smooth representation of the discrete group from the delooping groupoid being the Lie groupoid (an object in the (2,1)-topos of (2,1)-sheaves over category of cartesian spaces or the category of smooth manifolds) to the category of vector spaces.
+
+	One can change two things: (1) the delooping groupoid with any Lie groupoid; (2) the site.
+\end{example}
+
+\begin{example}
+	Instead of vector bundles, one can consider their completion to quasicoherent sheaves.
+
+	A representation of an algebraic group of vector spaces is a functor from the delooping groupoid being an algebraic stack to the category of quasicoherent sheaves.
+
+	More generally, a functor from an algebraic stack to the category of quasicoherent sheaves assign each point of $K_0$ a representation space to be glued together to a quasicoherent sheaf of modules.
+
+	The most general case would be to pick $K$ to be an infinity groupoid and for $\mathrm{Mod}$ to be any infinity-one category of infinity-modules to define infinity representations of the infinity groupoid.
+\end{example}
+
+\end{document}
