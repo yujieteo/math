@@ -29,7 +29,7 @@
 This presents a top down view of ordinary representation theory.
 
 \begin{definition}
-	A representation of a representable category in a representing category is a functor from the representable category to the representing category.
+	A representation of a source category in a target category is a functor from the source category to the target category.
 \end{definition}
 
 \begin{definition}
@@ -37,19 +37,19 @@ This presents a top down view of ordinary representation theory.
 \end{definition}
 
 \begin{example}
-	The representing category is the category of vector spaces over a field. The functor is a linear representation.
+	The target category is the category of vector spaces over a field. The functor is a linear representation.
 \end{example}
 
 \begin{example}
-	The representable category is the delooping of a group, it has a group representation in the representing category.
+	The source category is the delooping of a group, it has a group representation in the target category.
 \end{example}
 
 \begin{example}
-	The representable category is the free category on a quiver. This is quiver representation.
+	The source category is the free category on a quiver. This is quiver representation.
 \end{example}
 
 \begin{example}
-	The representable category is the category of $G$-sets for a group $G$. The representing category is a category of linear representation. The functor is a permutation representations.	
+	The source category is the category of $G$-sets for a group $G$. The target category is a category of linear representation. The functor is a permutation representations.	
 \end{example}
 
 \begin{example}
@@ -71,7 +71,7 @@ This presents a top down view of ordinary representation theory.
 \end{exercise}
 
 \begin{example}
-	Let a Lie group be the representing category (continuous symmetries of a single object where all morphisms are isomorphisms), and let the vector space underlying the Lie algebra given by the derivative of its adjoint action on the neutral element. This is the adjoint representation.
+	Let a Lie group be the target category (continuous symmetries of a single object where all morphisms are isomorphisms), and let the vector space underlying the Lie algebra given by the derivative of its adjoint action on the neutral element. This is the adjoint representation.
 \end{example}
 
 \begin{exercise}
@@ -114,7 +114,7 @@ Recall the duality between subgroup inclusions and quotient groups. Likewise, we
 	A convenient definition of monodromy is as follows. Let $X$ be a topological space. Forming monodromy is a functor from the category of covering spaces over $X$ to the permutation representations of the fundamental groupoid of $X$.
 	\begin{equation}
 		\mathrm{Fib_{E}} : \Pi_1(X) \rightarrow \mathrm{Set}
-	\end{equation}.
+	\end{equation}
 
 	This gives the fundamental theorem of covering spaces, where the reconstruction of covering spaces from monodromy is an inverse functor to the monodromy functor. Therefore, there is an equivalence of categories between the covering space $\mathrm{Cov(X)}$ with the permutation representations of the fundamental groupoid of $X$, denoted by $\mathrm{Set}^{\Pi_1(X)}$. This is also a form of duality.
 \end{example}
