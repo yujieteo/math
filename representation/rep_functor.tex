@@ -1,0 +1,56 @@
+\documentclass[10pt]{article}
+
+\usepackage{times}
+\usepackage{amsthm}
+
+\theoremstyle{plain}% default
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem*{corollary}{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+\newtheorem{conjecture}{Conjecture}[section]
+\newtheorem{example}{Example}[section]
+\newtheorem{exercise}{Exercise}[section]
+
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+\newtheorem*{note}{Note}
+\newtheorem{case}{Case}
+
+\begin{document}
+
+\title{Introducing representations with functors}
+
+\maketitle
+
+This presents a top down view of ordinary representation theory.
+
+\begin{definition}
+	A representation of a representable category in a representing category is a functor from the representable category to the representing category.
+\end{definition}
+
+\begin{definition}
+	A homomorphism between representations is simply a natural transformation between representations.
+\end{definition}
+
+\begin{example}
+	The representing category is the category of vector spaces over a field. The functor is a linear representation.
+\end{example}
+
+\begin{example}
+	The representable category is the delooping of a group, it has a group representation in the representing category.
+\end{example}
+
+\begin{example}
+	The representable category is the free category on a quiver. This is quiver representation.
+\end{example}
+
+\begin{example}
+	The representable category is the category of $G$-sets for a group $G$. The representing category is a category of linear representation. The functor is a permutation representations.	
+\end{example}
+
+
+\end{document}

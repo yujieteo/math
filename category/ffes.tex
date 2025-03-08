@@ -1,0 +1,61 @@
+\documentclass[10pt]{article}
+
+\usepackage{times}
+\usepackage{amsthm}
+
+\theoremstyle{plain}% default
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem*{corollary}{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+\newtheorem{conjecture}{Conjecture}[section]
+\newtheorem{example}{Example}[section]
+\newtheorem{exercise}{Exercise}[section]
+
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+\newtheorem*{note}{Note}
+\newtheorem{case}{Case}
+
+\begin{document}
+
+\title{Full, faithful, essential surjective}
+
+\maketitle
+
+\begin{definition}
+	A functor between small categories is a homomorphism of underlying graphs that respects the compositions of objects, consisting of a component function of classes of objects and sets of morphisms such that for each pair of objects, it has a component function between hom-sets respecting the source and target of morphisms with coincident source and target objects, respects the identity morphisms and respect composition of images.
+\end{definition}
+
+\begin{definition}
+	A functor is full if for each pair of objects, the function between hom-sets is surjective.
+\end{definition}
+
+\begin{definition}
+	A functor is faithful if for each pair of objects, the function between hom-sets is injective.
+\end{definition}
+
+\begin{definition}
+	A functor is essentially surjective if there merely exists an isomorphism between the functor on a object in the source category to an object in the target category.
+\end{definition}
+
+Why the distinctions?
+
+\begin{example}
+	An essentially surjective functor is additionally fully faithful precisely when it is an equivalence of categories. This serves a good test for equivalence of categories.
+\end{example}
+
+What about infinity categories?
+
+\begin{definition}
+	A functor of infinity categories (in Lurie's construction, I copied this from Kerodon) is fully faithful if for every pair of objects in the infinity category, the induced map of morphism spaces is a homotopy equivalence of Kan complexes.
+\end{definition}
+
+\begin{exercise}
+	Compare the definition of fully faithful to that in normal spaces to better understand what is important in infinity categories.
+\end{exercise}
+
+\end{document}

@@ -1,0 +1,66 @@
+\documentclass[10pt]{article}
+
+\usepackage{times}
+\usepackage{amsthm}
+
+\theoremstyle{plain}% default
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem*{corollary}{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+\newtheorem{conjecture}{Conjecture}[section]
+\newtheorem{example}{Example}[section]
+\newtheorem{exercise}{Exercise}[section]
+
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+\newtheorem*{note}{Note}
+\newtheorem{case}{Case}
+
+\begin{document}
+
+\title{Introducing representations with $k$-algebras}
+
+\maketitle
+
+\begin{remark}
+	The intuition is that an associative $k$-algebra is a possibly noncommutative ring with a copy of the field $k$ inside it. It is a $k$-vector space. (Hint: we will slowly weaken it to modules, then to group rings).
+\end{remark}
+
+\begin{example}
+	Let $k$ be a field. These are $k$-algebras, the polynomial ring on $n$ generators $k[x_1, ..., x_n]$. The set of $n$ by $n$ matrices or $\mathbf{Mat}(V)$ linear maps $T : V \rightarrow V$, multiplication by operator composition.
+\end{example}
+
+\begin{definition}
+	A $k$-algebra $A$ is a noncommutative ring with a ring homomorphism into $A$ whose image is a copy of the field $k$ as a subset of $A$, with associativity on scalars $\lambda a = a \lambda$ for $\lambda$ in field $k$ and $a$ in $k$-algebra A. If the ring multiplication is commutative, then it is a commutative algebra.  
+\end{definition}
+
+\begin{definition}
+	A $k$-algebra is a $k$-vector space with associative, bilinear multiplication product.
+\end{definition}
+
+\begin{definition}
+	The group algebra is a $k$-algebra with elements of the group $G$ as the basis elements of the algebra.
+\end{definition}
+
+\begin{definition}
+	A homomorphism of $k$-algebras is a linear map between the $k$-algebras respecting multiplication (or composition if you are categorically minded and can reason analogously between composition of linear maps and matrix multiplication) and sends the identity between the source and target. This is both a homomorphism as a ring and as a vector space.
+\end{definition}
+
+\begin{definition}
+	The direct sum of $k$-algebras is defined in terms of the ring addition, but the ring product is DEFINED to vanish when both elements are in different algebras.
+\end{definition}
+
+\begin{definition}
+	A representation of a $k$-algebra $A$ is a $k$-vector space $V$ with an action of $k$-algebra $A$ on $k$ vector space $V$ that satisfies bilinearity and scalar multiplication which is a $k$-algebra homomorphism from $k$-algebra $A$ to the set of linear maps from $k$-vector space $V$ to $k$-vector space $V$.
+\end{definition}
+
+\begin{exercise}
+	Now replace the above worked examples with group rings. What is the definition of a group ring?
+\end{exercise}
+
+
+\end{document}
