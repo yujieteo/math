@@ -22,14 +22,14 @@
 
 \begin{document}
 
-\title{Examples of dualities and adjunctions in category theory}
+\title{Dualities, adjunctions, and representating objects}
 
 \maketitle
 
 Category theory is the mathematics of metaphor. It is unique in the sense that unlike other disciplines of analogy, dualities in category theory allow for perfect metaphors in the form of (natural) isomorphisms.
 
 \begin{exercise}
-	Work out the adjunction between the floor and ceiling functions on the real line.
+	Work out the adjunction between the floor and ceiling functions on the real line. Related this to the duality between open sets and closed sets. How is this duality by a suitable isomorphism? (Hint: double complementation)
 \end{exercise}
 
 \begin{example}
@@ -42,6 +42,8 @@ Category theory is the mathematics of metaphor. It is unique in the sense that u
 	The right adjunction where we have a smooth algebra and then we consider its spectrum or \textit{presheafification} which gives something like a smooth space. Note that you will need a full sheafification to get the smooth space.
 
 	Another basic example would be the homogenous nullstellensatz, where there is a duality between the projective varieties in complex projectiv space of order $n$ to the homogenous ideals of a coordinate ring except for the irrelevant ideal.
+
+	Dimension theory also has this duality in definitions. The Krull dimension is dual to the depth of a module.
 \end{example}
 
 \begin{exercise}
@@ -75,6 +77,8 @@ Isbell duality is interesting because it highlights an approach one can take to 
 	Since the circle group is compact and connected, by Pontrjagin duality, the integers must therefore be discrete and torsion free.
 
 	The exponential map also gives the self duality of the additive rules as the sum of powers of exponentials. This gives a duality between abelian discrete groups like additivity on the integers to compact commutative topological groups like the circle groups. One can make the construction of the Haar measure make sense, and associate it with this group.
+
+	Van-Kampen's theorem is a statement on how the amalgamated free product of the fundamental group is the wedge sum of two path connected topological spaces.
 \end{example}
 
 \begin{example}
@@ -103,6 +107,10 @@ Isbell duality is interesting because it highlights an approach one can take to 
 
 \begin{example}
 	The Baire category theorem is a result that relates the qualitative theory of continuous linear operators and the quantitative theory of estimates.
+
+	The Riesz representation are related to representable functors as such. Let $F$ be a linear functional in complex Hilbert space $H$. If $F$ is continuous, then there exists an unique $a$ in complex Hilbert space $H$ where it is equal to the inner product function $\langle a, - \rangle$ where $F(v) = \langle a, v \rangle$.
+
+	For example, continuous linear functions on square integrable functions are representable by the integral inner product $\int a(x) v(x)$. Generally, general continuous functions are representable by test functions. This is distribution theory. The analogy is much deeper, this is a sheaf! It is easier to spot sheaves when you want sections of something to exist. We have test functions as representing objects. The exists in a "sheaf" in some sense, as global sections that represent general continuous functionals.
 \end{example}
 
 \begin{example}
@@ -120,5 +128,16 @@ Isbell duality is interesting because it highlights an approach one can take to 
 \begin{example}
 	One can generalise the fact that $d^^2 = 0$ that encodes a commutative law as well as $d^2 \omega = 0$. For some long sequences, one can compare the conversion of a free graded commutative algebra on the special linear group $SL$ into a differential grade algebra to be analogous to making it into a Lie algebra by setting the Jacobi identity to vanish. This duality means that the free graded Lie algebra on the special linear group into a differential graded algebra is also a commutative algebra, when you have $d^2 = 0$ to encode a commutative law. This duality is also known as Koszul duality.
 \end{example}
+
+\begin{example}
+	Stone duality refers to the duality between a totally disconnected compact Hausdorff space (Stone spaces) to the Boolean algebras by considering the clopen sets of the Stone space. The set of prime filters for a bounded distributed lattice (a poset admitting all finite meets and joins, or a  thin category with all finite limits and finite colimits) is a Stone space. There exists a map from the Boolean algebras to the clopen sets of the prime filters of a Boolean algebras which can be made into an isomorphism of Boolean algebras.
+	This is Stone's representability theorem. Now, weaken complementation to turn a Boolean algebra into a Heyting algebra. Define Heyting spaces appropriately, and establish the isomorphisms to complete Heyting duality.
+
+	This is an example of how a suitable isomorphism can be used to find a duality. Further, the poset lattice correspond to topology. The poset lattice interpreted as a form of logic. This corresponds to topology being defined as a semidecidable logic, where arbitrary unions correspond decidable disjunctions, finite intersections correspond to decidable conjunctions in finite time.
+
+	Further, one can relate profinite sets as pro objects in the category of finite sets, to be equivalent to compact Hausdorff totally disconnected spaces. From Stone duality, compactness can be thought of as the case where every limit point is a point, or any decidable proposition is computable within finite time. Countability becomes important in a topology, where countably many experiments can be used to determine a result, corresponding to how every limit point being a limit point with some countable subset. This motivates separability. For me, I use the typical example of countable dense balls of rational radii that cover the real line, then replace balls with neighbourhoods for the general topological notion of countability.
+\end{example}
+
+Some general tips for using dualities. Firstly, one can establish an isomorphism under two successive operations to find an adjunction. Secondly, if there is an estimation, see if there is a dual notion that is also an estimation and imagine the problem to be similar to a thin category or posets. This can help in establishing another adjunction. Thirdly, logic can be related to space by Heyting duality, representing objects to objects or Yoneda nonsense by Tannaka duality, arrow reversal by the Eckmann-Hinton duality, space and quantities by Isbell duality.
 
 \end{document}
