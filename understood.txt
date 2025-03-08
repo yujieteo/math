@@ -1,5 +1,7 @@
 UNDERSTOOD
 
+Vector space: a vector space is a vector bundle over a point. Imagine a cylinder vector bundle, now collapse this into a vector.
+
 Dedekind finite ring: ab = 1 implies ba = 1, all one sided inverses in the ring are two sided.
 
 Simple group: normal subgroups are trivial and full group.
