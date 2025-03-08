@@ -1,0 +1,124 @@
+\documentclass[10pt]{article}
+
+\usepackage{times}
+\usepackage{amsthm}
+
+\theoremstyle{plain}% default
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem*{corollary}{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+\newtheorem{conjecture}{Conjecture}[section]
+\newtheorem{example}{Example}[section]
+\newtheorem{exercise}{Exercise}[section]
+
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+\newtheorem*{note}{Note}
+\newtheorem{case}{Case}
+
+\begin{document}
+
+\title{Examples of dualities and adjunctions in category theory}
+
+\maketitle
+
+Category theory is the mathematics of metaphor. It is unique in the sense that unlike other disciplines of analogy, dualities in category theory allow for perfect metaphors in the form of (natural) isomorphisms.
+
+\begin{exercise}
+	Work out the adjunction between the floor and ceiling functions on the real line.
+\end{exercise}
+
+\begin{example}
+	The Isbell adjunction or the Isbell duality give a precise duality between space and quantity. Alternatively, it is the duality between geometry and algebra.
+
+	Consider a smooth space and its colimit (think of the colimit naively as some sort of sum). 
+	
+	The left adjunction taking smooth spaces to smooth ring is also known as a \textit{co-presheafification}. 
+	
+	The right adjunction where we have a smooth algebra and then we consider its spectrum or \textit{presheafification} which gives something like a smooth space. Note that you will need a full sheafification to get the smooth space.
+
+	Another basic example would be the homogenous nullstellensatz, where there is a duality between the projective varieties in complex projectiv space of order $n$ to the homogenous ideals of a coordinate ring except for the irrelevant ideal.
+\end{example}
+
+\begin{exercise}
+	What is the initial object of commutative rings?
+	Argue by duality, from the previous question to determine the terminal object of affine schemes.
+\end{exercise}
+
+Isbell duality is interesting because it highlights an approach one can take to mathematical thinking. One can first build a duality that is obvious, in this case it is the duality between classical affine varieties and nilpotent free finitely generated algebras over a field. Then, slowly relax all of these assumptions (nilpotents exist, finitely generated, field axioms) to get schemes. The idea is to start with some duality, drop as many assumptions as you can, and see how much duality will still hold. This was Grothendieck's approach to algebraic geometry.
+
+\begin{example}
+	Verdier duality is one part of the formalism of six functors.
+
+	There is the adjunction between the direct image and the inverse image for morphisms.
+
+	There is also the adjunction between the direct image with compact support with exceptional inverse image for separated morphisms. This is the Verdier duality.
+
+	Lastly, there is the adjunction between the symmetric monoidal tensor product and the internal hom.
+
+	This also motivates the philosophy of invertible sheaves. Varieties can be looked as classically as topological spaces instead of varieties as functions of them. Similarly, we can study line bundles instead using the sheaf of sections.
+\end{example}
+
+\begin{exercise}
+	Describe Verdier duality as a form of generalised Poincare duality through the existence of an adjoint to the derived pushforward.
+\end{exercise}
+
+\begin{example}
+	Pontrjagin duality is exemplified with this easy example.
+
+	Consider the group of integers under addition and compare it to the circle group. The product of roots of unity if one consider the circle group gives rise to Fourier theory.
+
+	Since the circle group is compact and connected, by Pontrjagin duality, the integers must therefore be discrete and torsion free.
+
+	The exponential map also gives the self duality of the additive rules as the sum of powers of exponentials. This gives a duality between abelian discrete groups like additivity on the integers to compact commutative topological groups like the circle groups. One can make the construction of the Haar measure make sense, and associate it with this group.
+\end{example}
+
+\begin{example}
+	The Eckmann-Hinton duality refers to how diaagrams for some concept cane be reversed.
+
+	This is similar to how one can define the opposite category for category theory.
+
+	A similar argument is used for colimits to turn the Eilenberg-Steenrod axioms for homology to give axioms for cohomology.
+
+	This also gives the adjunction functor between the reduced suspension which is left adjoint to the loop space, which is the right adjoint.
+
+	Homotopy groups can be related to homotopy classes of maps from the $n$-sphere to our space, we have $\pi_n(X, p) \cong \langle S^n, X \rangle$. The sphere has a single nonzero (reduced) cohomology group.
+
+	Cohomology groups are homotopy classes of maps to spaces with a single nonzero homotopy group. This is given by the Eilenberg-Maclane spaces $K(G, n)$ and the relation
+	$H^n(X;G) \cong \langle X, K(G,n) \rangle$. This is an example of Fuks duality. One can apply this to have a homotopy to be dual to cohomology, mapping cylinder to mapping cocylinder, fibrations to cofibrations.
+
+	Similarly, I think Lagrange duality can be classified under this. The constraint problem is dual to the abundance problem, the minimisation problem is dual to the maximisation problem. This is related to the formal duality of vector spaces in optimisation problems. Variables in the primal problem is complemnetary to constraints in the dual problem. There cannot be a slack on both the constraint and the corresponding dual variable.
+
+	In homological algebra, there is the tensor-hom adjunction and its derived counterpart, the Tor-Ext adjunction. The standard counter example for hom-sets over the module $\mathbf{Z}/2$.
+	Ext must be a left exact functor, Tor must be a right exact functor.
+\end{example}
+
+\begin{example}
+	Subgroups are dual to quotient groups. In a quotient group, similar elements are now made equivalent (if they are in the same subgroup) by an equivalence relation.
+\end{example}
+
+\begin{example}
+	The Baire category theorem is a result that relates the qualitative theory of continuous linear operators and the quantitative theory of estimates.
+\end{example}
+
+\begin{example}
+	A monoid and its module category are dual. This is called Tannaka duality. Consider automorphisms / endomorphisms of some forgetful functor called the fibre functor. This fibre functor gives the monoid structure. Apply Yoneda's lemma, using the fact that the fibre functor is an endofunctor. This is an example of a representable functor. This corresponds to the fact that modules are representations ove ring.
+
+	Representation theory is a basic example of this duality. For example, one can consider maps between an object to its algebra. For example, the representation of discrete groups can be thought of as modules over the group ring. Let $G$ be the discrete group or the group ring, and $GL(V)$. Representations or simply maps from $G to GL(V)$ are endomorphisms of a vector space.
+
+	A proof sketch can be done for G-sets as an exercise in a similar fashion to Cayley's theorem.
+\end{example}
+
+\begin{example}
+	The syntax of first order logic (pretopoi) corresponds to the semantics of first order logic (ultracategories). This is known as Makkai duality.
+\end{example}
+
+\begin{example}
+	One can generalise the fact that $d^^2 = 0$ that encodes a commutative law as well as $d^2 \omega = 0$. For some long sequences, one can compare the conversion of a free graded commutative algebra on the special linear group $SL$ into a differential grade algebra to be analogous to making it into a Lie algebra by setting the Jacobi identity to vanish. This duality means that the free graded Lie algebra on the special linear group into a differential graded algebra is also a commutative algebra, when you have $d^2 = 0$ to encode a commutative law. This duality is also known as Koszul duality.
+\end{example}
+
+\end{document}

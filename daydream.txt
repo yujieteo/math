@@ -912,8 +912,6 @@ Construction on the Haar measure on locally compact groups? Explore this in the 
 
 Contravariance of universal property, example: there is a unique map from scheme S to spectrum of Z, scheme S can be represented by this unique map. The proof relies on the fact that there is a unique (ring) homomorphism from the integers to any other ring. This is contravariant! Why is that? Can we complete this proof so that it clarifies going on. Note, a ring is an abelian group with an additional monoidal structure given by tensor product?
 
-Convex conjguate? Lagrange duality? Dual problem? https://cs.stanford.edu/people/davidknowles/lagrangian_duality.pdf
-
 Coordinate process as stochastic process?
 
 Counterexample that L^2 convergence not implying convergence.
@@ -1963,10 +1961,6 @@ https://mathoverflow.net/questions/301780/entering-to-the-k-theory-realm/301797#
 https://mathoverflow.net/questions/394054/why-stable-infty-categories/394056#394056
 
 https://ncatlab.org/nlab/show/Gelfand+duality Gelfand duality, why do we care about Gelfand duality when others exist? What are some motivating examples of Gelfand duality? It just seems like a broad categorisation example topology to commutative algebra and algebraic geometry to commutative rings. the difference between this and Isbell duality which is also about algebra and geometry? Isbell seems to be about sheafification and form of spectra, whereas Gelfand is more direct and about algebraic structures and some topology/geometry?
-
-https://ncatlab.org/nlab/show/Tannaka+duality how can one use the proof of Tannaka duality that groups are represented by automorphisms.
-
-https://ncatlab.org/nlab/show/space+and+quantity How does one understand Isbell duality between space and quantity in terms of topoi?
 
 https://www.math.uchicago.edu/~may/MISC/FiniteSpaces.pdf
 
