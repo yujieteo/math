@@ -1,0 +1,53 @@
+\documentclass[10pt]{article}
+
+\usepackage{times}
+\usepackage{amsthm}
+
+\theoremstyle{plain}% default
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem*{corollary}{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+\newtheorem{conjecture}{Conjecture}[section]
+\newtheorem{example}{Example}[section]
+\newtheorem{exercise}{Exercise}[section]
+
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+\newtheorem*{note}{Note}
+\newtheorem{case}{Case}
+
+\begin{document}
+
+\title{Bundles and their generalisations}
+
+\maketitle
+
+\begin{definition}
+	A bundle $(E, p)_B$ over an object called the base object $B$ in a category $\mathbf{C}$ is an object called the total object $E$ of the category equipped with a morphism $p$ in the category from the total object $E$ to the base object $B$.
+\end{definition}
+
+The typical case is when these objects are spaces.
+
+\begin{definition}
+	Consider a generalised element $x$ in the base object $B$, the fibre of the total object over the generalised element $E_x$ of the bundle $(E, p)$ is the pullback $x*E$.
+\end{definition}
+
+By abuse of notation, we either truncate the morphism or truncate the total object for the statement of a bundle.
+
+\begin{definition}
+	Given two bundles $(E_1, p_1)_B$ and $(E_2, p_2)_B$, a morphism of bundles over the base object $B$ is a morphism of total objects $E_1$ to $E_2$ which commutes over the total object as a cocone. Alternatively, bundles over the base object $B$ form the slice category of category $\mathbf{C}$ over the base object $B$. 
+\end{definition}
+
+\begin{definition}
+	The over category $\mathbf{C} / B$ is the cateogry of bundles over a given object.
+\end{definition}
+
+\begin{definition}
+	A fibre bundle $(E, p)$ over base object $B$ with a standard fibre $F$ is a bundle over $B$ such that the fibre of the total object over the generalised element $E_x$ of the bundle $(E, p)$ is the pullback isomorphic to the standard fibre $x*E \cogr F$.
+\end{definition}
+
+\end{document}
