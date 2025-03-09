@@ -42,7 +42,7 @@ Fiber and cofibres in category of pointed objects: given morphism in category of
 
 Classifying topos for pointed object: presheaf topos on the opposite category of pointed finite sets.
 
-Pointed object: (X, x), morphism x from * -> X, where * is terminal object.
+Pointed object: (X, x), morphism x from * -> X, where * is terminal object. Note that there are always maps TO the terminal object.
 
 Saturated homotopical category: a homotopy category where under localisation of wide category W for homotopical category M, all isomorphisms become weak equivalences.
 
