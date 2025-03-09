@@ -1,5 +1,9 @@
 DAYDREAMS:
 
+Connections of a bundle.
+
+Study internalisation with respect to enrichment.
+
 Fixed notes on weighted limits: https://mathoverflow.net/questions/33188/a-slick-definition-of-the-kan-extension
 
 Comparison of negative self intersection: show that a line isomorphic to P1 in P2 has 1 self intersection (hint: perturbation intersects in one point), now try this with exceptional divisor in blow up, intersection is -1, so negative self intersection either means blow up, or rigidity or cannot be perturbed.
