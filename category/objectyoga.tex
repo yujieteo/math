@@ -151,6 +151,18 @@ The word closed should remind you of the Yoneda lemma, and Cayley's theorem, gro
 \section{List of objects}
 
 \begin{definition}
+    A subobject is equivalently:
+    \begin{enumerate}
+        \item isomorphism classes of monomorphisms. Two monomorphisms are isomoprhic if they are both monomorphisms into a object and there is a isomorphism between them such that when the isomorphism composed to a monomorphism, this gives equality to the other monomorphism.
+        \item objects of the full subcategory of the over category of an object in monomorphisms. The product in this over category as a subcategory is an intersection or meet of subobjects, their coproduct is the union or the join of subobjects. An over category or a slice category over a (base) object is a category whose objects are all arrows with codomain as that object and morphisms all satisfy commutative diagrams that has that object as the cocone.
+    \end{enumerate}
+\end{definition}
+
+\begin{definition}
+    A complemented object is a subobject given by a monomorphism in a coherent category and is defined when it has a complement or another subobject such that its intersection is the initial object and the union is the full object of the subobject.
+\end{definition}
+
+\begin{definition}
     An exponential object is an internal hom object in a cartesian closed categories. Cartesians so products and multiplications make sense, closed so that the internal hom exists, so products can be defined as internal homs to form exponentials.
 \end{definition}
 
@@ -174,6 +186,10 @@ The word closed should remind you of the Yoneda lemma, and Cayley's theorem, gro
 
 \begin{definition}
     A interval object cospan diagram with equal feet in the category with I and point any two object, 0 and 1 are morphisms.If the feet of the cospan are the terminal object, then this is a cartesian interval object.
+
+    A pointed object is an object equipped with a global element.
+
+    A global element is a morphism from the terminal object to that object.
 \end{definition}
 
 \begin{definition}
@@ -290,6 +306,58 @@ The word closed should remind you of the Yoneda lemma, and Cayley's theorem, gro
     A continuous object is an object in the functor category, or a functor that preserves all small limits.
 
     A connected object is an object in the functor category, or a functor that preserves all small colimits.
+\end{definition}
+
+\begin{definition}
+    A power object is a object with a monomorphism such that there exist a unique monomorphism for each other object into their cartesian object a unique morphism such that the monomorphism is a pullback.
+
+    The power object of a terminal object is a subobject classifier.
+\end{definition}
+
+\begin{example}
+    A power object in set is a power set.
+
+    A category with finit elimits and power objects for all objects is precisely a topos.
+\end{example}
+
+\begin{definition}
+    A comma object of a pair of morphisms in a cospan in a two category is an object equipped with two projections to the feet of comma object as the apex that also has a 2-morphism that fills this commutative diagram such that the 2-morphism is universal as a 2-limit.
+\end{definition}
+
+\begin{remark}
+    A pullback on sets is a subset of the cartesian product of two sets. A pullback is a finred product in the category of fibre bundles over a base object. A pullback is the limit of a cospan diagram and are universal. A pullback is a pushout in the opposite category. A fibration (object) and a total object forms a bundle object over the base object.
+\end{remark}
+
+\begin{definition}
+    An internal preorder is a subobject of the cartesian product object in equipped with internal reflexibity that is a section of both the source and target subobject of the cartesian product object, and internal transitivity which is an object that factors the left and right projection map from the product of the internal preorder to the product of the preordered objects on both the source and targets. An internal preorder can be the representing object of the representable subpresheaf of the hom functor into the cartesian product of an object so that for each object $Y$ the composite $R(Y)$ into $\mathrm{hom}(Y, X \times X)$ is canonically isomorphic to $\mathrm{hom}(Y,X) \times \mathrm{hom}(Y,X)$ that exhibits $R(Y)$ as a preorder on $\mathrm{hom(Y,X)}$.
+
+    A congruence is an internal equivalence relation or an internal groupoid and hence an internal category with all morphisms being isomorphisms with no non identity automorphisms. It consists of a subobject of the Cartesian product of an object with itself, with internal reflexivity as sections of projections, internal symmetry which interchanges projections using them as sections of each other, and internal transivity where a suitable fibre product of the subobject with itself factors the projection map through the subobject fibre product to the full cartesian product via a suitable pullback diagram with the fibre product of the subobject with itself as the pullback.
+
+    A preorder object is an object in a category with pullbacks and suobjects with an internal preorder on the object $X$ that is injective  of pullbacks of the product $X \times X$.
+
+    A quotient object is the coequaliser of a congruence.
+
+    A cartesian monoidal preordered object is a preordered object with an internal preorder as a representable subpresheaf of homs out of the target with monoidal objects with monoidal multiplication and a global unit from the terminal object to any object such that there exists a function $\tau$ for all global elements $a$, it is identified by the source as a section and becomes the global unit under target as a section. It also has suitable left and right unitors $\lambda_l$ and $\lambda_r$ as internal hom objects such that for all global elements, composition of the left component subobject with the left unitor gives the internal left projection, right component subobject with the right unitor give the internal right projection, and internal composition by left on the projection on the opposing unitor gives the meet of subobjects of the preorder. Dualising using means that the global unit is the join, and is careful still a morphism from the terminal object.
+
+    A semicartesian monoidal object is an object in a category whose tensor unit is the terminal object.
+
+    A semicocartesian monoidal object is an object in a category whose tensor unit is the initial object.
+
+    A join relative object is a cocartesian monoidal preordered object that is a partial order object.
+
+    A meet relative object is a cartesian monoidal preordered object that is a partial order object.
+
+    A partial order object is a preordered object whose internal preorder has an internal antisymmetric relation.
+
+    A bicartesian preordered object or a prelattice object is a object that is both a cartesian monoidal preordered object and a cocartesian monoidal preordered object.
+
+    A lattice object is a prelattice object that is also a partially ordered object.
+
+    A bicartesian closed preordered object is a Heyting prealgebra object exhibits closure with a suitable logical function that is a bicartesian preordered object.
+
+    A Boolean prealgebra object is a bicartesian closed preorder object for all element pairs of source and target $(s,t)$ such that composition by source $s$ gives implications of objects $a \implies b$ as an object, and composition by target $t$ gives the join of the statements $a$ being false (vacously true) or $b$ is true. You need bicartesian to admit all small products and coproducts, closure to make this internal hom.
+
+    A Boolean algebra object is a Boolean prealgebra object that is also a partially ordered object that makes statements either true or false but not both.
 \end{definition}
 
 \end{document}
