@@ -1,0 +1,363 @@
+\documentclass[10pt]{article}
+
+\usepackage{times}
+\usepackage{amsmath, amsthm, amssymb, amsfonts}
+
+\theoremstyle{plain}% default
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem*{corollary}{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+\newtheorem{conjecture}{Conjecture}[section]
+\newtheorem{example}{Example}[section]
+\newtheorem{exercise}{Exercise}[section]
+
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+\newtheorem*{note}{Note}
+\newtheorem{case}{Case}
+
+\begin{document}
+
+\title{The yoga of object and functors, or internalisations to externalsiations}
+
+\maketitle
+
+\section{Internalisation and externalisations}
+
+One can define an object internalised to a category to
+serve as definitions.
+
+Firstly, adjectives on categories serve as conditions that allow certain mathematical structures to exist. Then, one can define an object that exist in that category. Lastly, one can supplement different examples of the same object in various categories.
+
+\begin{example}
+    A group object in the category of topological spaces is a topological group. In the category of smooth manifolds, it is the lie group. In the category of varieties, it is the algebraic group.
+
+    The category of topological spaces must be cartesian for the relevant unital, associative, and inverse commutative diagrams to make sense since the requires all products to exist.
+\end{example}
+
+\begin{exercise}
+    The general exercise of this set of notes is simply to fill in all the details of the definitions. I will only write in plain English the idea of the definition of the object so that it is easy to keep in my head, and handwave away coherence conditions, commutative diagrams, and symbolism.
+\end{exercise}
+
+These internal objects internal to a category can alter be externalised to functors with the category as the domain, or as fibrations over the category.
+
+\begin{example}
+    An internal groupoid in a finitely complete category can be externalised to a Grothendieck fibration.
+\end{example}
+
+\section{Categorical adjectives}
+
+We will start with many categorical adjectives. These serve as conditions of structure for objects to exist.
+
+\begin{definition}
+    An initial object have all morphisms mapping from it.
+
+    A final or terminal object have all morphisms mapping to it.
+\end{definition}
+
+Typically, definitions will have morphisms mapping from the terminal object, and not to the terminal object. This is a source of confusion.
+
+This is best rectified by knowing this definition:
+
+\begin{definition}
+    A global element of a object is a morphism from the terminal object. Alternatively, it is the global element of the represented presheaf of the object. This definition works if the category has no terminal object since the Yoneda embedding is fully faithful and preserves all limits.
+\end{definition}
+
+\begin{definition}
+    A category is locally small if hom sets are small sets.
+\end{definition}
+
+\begin{definition}
+    A finitely complete category is a category that admits all finite limits. It is also called a lex category. Lex is shorthand for left exact. 
+
+    A finitely cocomplete category is a category that admits all finite colimits.
+\end{definition}
+
+\begin{definition}
+    A complete category has all small limits.
+
+    A cocomplete category has all small colimits.
+\end{definition}
+
+\begin{definition}
+    The free cocompletion of a category is the presheaf category formed by freely adjoining colimits through the Yoneda embedding.
+\end{definition}
+
+\begin{definition}
+    A regular category is a finitely complete category whose kernel pair on any morphism as a pullback admits a coequaliser on projections, and the pullback of epimorphisms along any morphism is again a regular morphism. It is defined so that the kernel pair is always a congruence on the kernel pair components. The resulting coequaliser is the object of equivalence classes.
+\end{definition}
+
+\begin{definition}
+    A coherent category is a regular category whose subobject posets all have finite unions preserved under base change functors.
+\end{definition}
+
+\begin{definition}
+    A monoidal category has a canonical tensor product as a functor and the terminal obejct as the tensor unit. It has suitable conditions on associators, left unitor, and right unitor so that the triangle identity and the pentagona identity commute to allow for the bilinearity of maps.
+\end{definition}
+
+The canonical example for a monoidal category should be rings.
+
+\begin{definition}
+    A closed category is a category that has an internal hom object. Morphisms from source objects to target objects are objects of a closed category defined as the internal hom objects if they indeed are objects of a closed category.
+\end{definition}
+
+The word closed should remind you of the Yoneda lemma, and Cayley's theorem, groups are closed under group elements as hom objects.
+
+\begin{definition}
+    An internal hom is a functor admitting the tensor-hom adjunction for every object in the category. A category with a canonical internal hom with an appropriate tensor-hom adjunction is a closed monoidal category.
+\end{definition}
+
+\begin{definition}
+    A closed monoidal category is a monoidal category with an internal hom.
+\end{definition}
+
+\begin{definition}
+    A semicartesian monoidal category has the tensor unit as a terminal object. This is weaker than saying the tensor product is the categorical cartesian product.
+
+    A semicocartesian monoidal category has the tensor unit as a initial object. This is weaker than saying the tensor product is the categorical cartesian product.
+\end{definition}
+
+\begin{definition}
+    The graded category is the functor category from the discrete (or monoidal) category to the current category denoted by $C^S$ as an exponential. The objects of this category is serve as the definition for graded objects.
+\end{definition}
+
+\begin{definition}
+    A cartesian monoidal category is a category with finite products with respect to its cartesian monoidal structure. The internal hom (which exists, since it is closed) of a cartesian closed category is called exponentiation (which can be thought of as a product, since it is cartesian). The tensor unit is the terminal object, it has all finite products, and the tensor product is a product. 
+
+    A cocartesian monoidal category is a category with finite coproducts with respect to its cartesian monoidal structure. The tensor unit is the initial object, it has all finite coproducts, and the tensor product is a coproduct. 
+
+    A cartesian closed functor is product preserving and exponential preserving.
+\end{definition}
+
+\begin{definition}
+    A bicartesian closed category is a category that is cartesian (admits all finite products) and co-cartesian (admits all finite coproducts) that has an internal hom.
+\end{definition}
+
+\begin{definition}
+    An subcategory is dense in a category if every object is a colimit of a diagram of objects in the subcategory in a canonical way.
+    This is defined to be a dense subcategory.
+\end{definition}
+
+\begin{remark}
+    A completion of an object is an object with the original object as a subobject. The word "free" is used for adjunction of forgetful functor. Typically, this is also used for faithful reflector.
+
+    Examples include Cauchy completions of metric spaces, Dedekind completions of linear order, ring completion, Stone-Cech compactification of a Tychnoff space, profinite completion, Grothendieck group formation, group completion, field of fraction of integral domains, free cocompletion to presheaf categories, ind-completion under filtered colimits, pro-completion under cofiltered limits.
+\end{remark}
+
+\section{List of objects}
+
+\begin{definition}
+    A subobject is equivalently:
+    \begin{enumerate}
+        \item isomorphism classes of monomorphisms. Two monomorphisms are isomoprhic if they are both monomorphisms into a object and there is a isomorphism between them such that when the isomorphism composed to a monomorphism, this gives equality to the other monomorphism.
+        \item objects of the full subcategory of the over category of an object in monomorphisms. The product in this over category as a subcategory is an intersection or meet of subobjects, their coproduct is the union or the join of subobjects. An over category or a slice category over a (base) object is a category whose objects are all arrows with codomain as that object and morphisms all satisfy commutative diagrams that has that object as the cocone.
+    \end{enumerate}
+\end{definition}
+
+\begin{definition}
+    A complemented object is a subobject given by a monomorphism in a coherent category and is defined when it has a complement or another subobject such that its intersection is the initial object and the union is the full object of the subobject.
+\end{definition}
+
+\begin{definition}
+    An exponential object is an internal hom object in a cartesian closed categories. Cartesians so products and multiplications make sense, closed so that the internal hom exists, so products can be defined as internal homs to form exponentials.
+\end{definition}
+
+\begin{definition}
+    A differential object in a category with translation is an object equipped if the translation called the differential. This is a special case of suspensions.
+
+    A suspension object is an object in an $(\infty,1)$ category admitting a terminal object as the suspension object as the homotopy pushout.
+\end{definition}
+
+\begin{definition}
+    A connected object is an object whose hom functor out of the object to a fixed object is preserves coproducts.
+\end{definition}
+
+\begin{remark}
+    Therefore, the colimit of connected objects is a connected object.
+\end{remark}
+
+\begin{definition}
+    A filtered object is an object equipped with either an ascending or descending filtration. For example, a descending filtration has a sequence of morphisms as a graded object.
+\end{definition}
+
+\begin{definition}
+    A interval object cospan diagram with equal feet in the category with I and point any two object, 0 and 1 are morphisms.If the feet of the cospan are the terminal object, then this is a cartesian interval object.
+
+    A pointed object is an object equipped with a global element.
+
+    A global element is a morphism from the terminal object to that object.
+\end{definition}
+
+\begin{definition}
+    An integer object in a cartesian closed category with a terminal object is equipped with a morphism from the terminal object to it and an isomorphism called the successor with the universal property such that there is a unique isomorphisms that satisfies conditions with commutative diagrams akin to the Peano axioms. This can be generalised to symmetric monoidal categories using the tensor unit instead of the terminal object.
+\end{definition}
+
+\begin{definition}
+    A braided object is an object $B$ in a monoidal category equipped with an invertible morphism $a$ on a tensor product satisfying the Yang-Baxter equation $(a B)(B a)(a B) = (B a)(a B)(B a)$ where the silent product by parentheses is morphism composition, and the silent product within the parentheses is the tensor product.
+\end{definition}
+
+\begin{remark}
+    I know this is terrible notation for the Yang-Baxter equation, but it shows the braiding so nicely I think it is worth showing.
+\end{remark}
+
+\begin{definition}
+    A choice object is an object such that the axiom of choice holds when making choices from the object. A projective object is an object such that the axiom of choice holds when making choices indexed by the projective object.
+\end{definition}
+
+\begin{definition}
+    A descent object is an hom object that induces a contravariant descent hom object that is an equivalence.
+\end{definition}
+
+\begin{definition}
+    A compact object is a corepresentable functor (hom object) from a locally small category that admits filtered colimits such that homs out of it to a fixed object preserve filtered colimits.
+\end{definition}
+
+\begin{definition}
+    A pro object is an object in the full subcategory inclusion via the opposite of the Yoneda embedding. Recall that the Yoneda embedding is from the category of presheaves to the free cocompletion. Taking the dual of the Yoneda embedding means we start from the category and end up with its free completion.
+
+    Dually, an ind object is an object in the full subcategory inclusion via the Yoneda embedding from the category of presheaves to the free cocompletion.
+
+    Pro means projective, ind means inductive.
+
+    A strict pro object is representable as a limit of a small cofiltered diagram.
+
+    A strict ind object is representable as a colimit of a small filtered diagram.
+
+    A sind object is a formal sifted colimit taken in the category of presheaves or free completion.
+\end{definition}
+
+\begin{remark}
+    Warning, pro objects are not projective objects.
+
+    Warning, ind objects are not inductive objects.
+\end{remark}
+
+\begin{example}
+    A formal scheme is an ind-object in schemes.
+
+    Finitely indexed sets are ind-objects in sets.
+
+    Finitely generated groups are ind-objects in groups.
+
+    Profinite groups are pro objects of finite groups.
+\end{example}
+
+\begin{definition}
+    A monomorphism (between a subobject to a full object) that is normal or conjugate to some internal equivalence relation or it factors through that internal equivalence relation is equipped and defines a normal subobject from a subobject.
+\end{definition}
+
+\begin{definition}
+    A Noetherian object is such that only finitely many inclusions in the ascending chain subobjects of the Noetherian object are not isomorphisms in the category.
+
+    An Artinian object is such that only finitely many inclusions in the descending chain of subobjects of the Artinian object are not isomorphisms in the category, there is a terminal subobject in some sense.
+\end{definition}
+
+\begin{definition}
+    A locally small object is an object in the full subcategory of the slice category on the monomorphisms is essentially small.
+
+    Easier definition: isomorphism classes of monomorphisms with the locally small object as target or the subobjects of the object form a set.
+
+    A colocally small object is an object in the full subcategory of the coslice category on the epimorphisms is essentially small.
+
+    Easier definition: isomorphism classes of epimorphisms with the locally small object as source or the quotient of the object form a set.
+\end{definition}
+
+\begin{definition}
+    A projective object is an object whose hom functor out of the object preserves epimorphisms. A morphism out of the projective object factors through epimorphisms to be a projective morphism on the coimage object, this is defined to be the left lifting property.
+    
+    An injective object is an object whose hom functor into the object preserve monomorphisms.
+
+    A tiny object is a projective object whose hom functor out of the object preserves coequalisers (or all colimits). These are the projective connected objects.
+
+    A category has enough projectives if all objects in the category admits epimorphisms by a projective object in the category. We say that every object admits a projective presentation.
+
+    A category has enough injectives if all objects in the category admits monomorphisms into a injective object in the category.
+
+    In a regular category, projectives are also regular projectives.
+\end{definition}
+
+\begin{definition}
+    A simple object is an object with precisely the terminal object and the full object as the quotient object.
+
+    A semisimple object is a coproduct of simple objects.
+\end{definition}
+
+\begin{definition}
+    A group object is an object with diagrams that allow an unital associative magma object to commute in a cartesian category.
+
+    A ring object is an object with diagram with diagrams that expressive addition, zero, multiplicative identity and additive inverses in a cartesian monoidal category.
+
+    A Lie algebra object is an object in a symmetric monoidal $k$-linear category with braiding such that it is an object and a morphism called the Lie bracket formed from the tensor product, with equivalence classes formed using the Jacobi identity and skew symmetry. Braiding is needed here to define the Jacobi identity.
+\end{definition}
+
+\begin{definition}
+    A simplicial object is a presheaf object of the presheaf functor category from the simplicial indexing category.
+
+    A graded object is an representing object of the representable functor category from the discrete monoidal category.
+
+    An associated graded object is a gaded object whose n-th degree is the cokernel of the n-th inclusion.
+\end{definition}
+
+\begin{definition}
+    A continuous object is an object in the functor category, or a functor that preserves all small limits.
+
+    A connected object is an object in the functor category, or a functor that preserves all small colimits.
+\end{definition}
+
+\begin{definition}
+    A power object is a object with a monomorphism such that there exist a unique monomorphism for each other object into their cartesian object a unique morphism such that the monomorphism is a pullback.
+
+    The power object of a terminal object is a subobject classifier.
+\end{definition}
+
+\begin{example}
+    A power object in set is a power set.
+
+    A category with finit elimits and power objects for all objects is precisely a topos.
+\end{example}
+
+\begin{definition}
+    A comma object of a pair of morphisms in a cospan in a two category is an object equipped with two projections to the feet of comma object as the apex that also has a 2-morphism that fills this commutative diagram such that the 2-morphism is universal as a 2-limit.
+\end{definition}
+
+\begin{remark}
+    A pullback on sets is a subset of the cartesian product of two sets. A pullback is a finred product in the category of fibre bundles over a base object. A pullback is the limit of a cospan diagram and are universal. A pullback is a pushout in the opposite category. A fibration (object) and a total object forms a bundle object over the base object.
+\end{remark}
+
+\begin{definition}
+    An internal preorder is a subobject of the cartesian product object in equipped with internal reflexibity that is a section of both the source and target subobject of the cartesian product object, and internal transitivity which is an object that factors the left and right projection map from the product of the internal preorder to the product of the preordered objects on both the source and targets. An internal preorder can be the representing object of the representable subpresheaf of the hom functor into the cartesian product of an object so that for each object $Y$ the composite $R(Y)$ into $\mathrm{hom}(Y, X \times X)$ is canonically isomorphic to $\mathrm{hom}(Y,X) \times \mathrm{hom}(Y,X)$ that exhibits $R(Y)$ as a preorder on $\mathrm{hom(Y,X)}$.
+
+    A congruence is an internal equivalence relation or an internal groupoid and hence an internal category with all morphisms being isomorphisms with no non identity automorphisms. It consists of a subobject of the Cartesian product of an object with itself, with internal reflexivity as sections of projections, internal symmetry which interchanges projections using them as sections of each other, and internal transivity where a suitable fibre product of the subobject with itself factors the projection map through the subobject fibre product to the full cartesian product via a suitable pullback diagram with the fibre product of the subobject with itself as the pullback.
+
+    A preorder object is an object in a category with pullbacks and suobjects with an internal preorder on the object $X$ that is injective  of pullbacks of the product $X \times X$.
+
+    A quotient object is the coequaliser of a congruence.
+
+    A cartesian monoidal preordered object is a preordered object with an internal preorder as a representable subpresheaf of homs out of the target with monoidal objects with monoidal multiplication and a global unit from the terminal object to any object such that there exists a function $\tau$ for all global elements $a$, it is identified by the source as a section and becomes the global unit under target as a section. It also has suitable left and right unitors $\lambda_l$ and $\lambda_r$ as internal hom objects such that for all global elements, composition of the left component subobject with the left unitor gives the internal left projection, right component subobject with the right unitor give the internal right projection, and internal composition by left on the projection on the opposing unitor gives the meet of subobjects of the preorder. Dualising using means that the global unit is the join, and is careful still a morphism from the terminal object.
+
+    A semicartesian monoidal object is an object in a category whose tensor unit is the terminal object.
+
+    A semicocartesian monoidal object is an object in a category whose tensor unit is the initial object.
+
+    A join relative object is a cocartesian monoidal preordered object that is a partial order object.
+
+    A meet relative object is a cartesian monoidal preordered object that is a partial order object.
+
+    A partial order object is a preordered object whose internal preorder has an internal antisymmetric relation.
+
+    A bicartesian preordered object or a prelattice object is a object that is both a cartesian monoidal preordered object and a cocartesian monoidal preordered object.
+
+    A lattice object is a prelattice object that is also a partially ordered object.
+
+    A bicartesian closed preordered object is a Heyting prealgebra object exhibits closure with a suitable logical function that is a bicartesian preordered object.
+
+    A Boolean prealgebra object is a bicartesian closed preorder object for all element pairs of source and target $(s,t)$ such that composition by source $s$ gives implications of objects $a \implies b$ as an object, and composition by target $t$ gives the join of the statements $a$ being false (vacously true) or $b$ is true. You need bicartesian to admit all small products and coproducts, closure to make this internal hom.
+
+    A Boolean algebra object is a Boolean prealgebra object that is also a partially ordered object that makes statements either true or false but not both.
+\end{definition}
+
+\end{document}
