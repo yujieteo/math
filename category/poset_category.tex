@@ -1,0 +1,137 @@
+\documentclass[10pt]{article}
+
+\usepackage{times}
+\usepackage{amsmath, amsthm, amssymb, amsfonts}
+
+\theoremstyle{plain}% default
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem*{corollary}{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+\newtheorem{conjecture}{Conjecture}[section]
+\newtheorem{example}{Example}[section]
+\newtheorem{exercise}{Exercise}[section]
+
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+\newtheorem*{note}{Note}
+\newtheorem{case}{Case}
+
+\begin{document}
+
+\title{The example of posets as $(0,1)$-categories}
+
+\maketitle
+
+$(0,1)$-categories make exceptionally unique examples since it can be seen as posets. Once interpreted in this way, with some form of Heyting duality (between logic and topology), one can link category theory to topological spaces.
+
+\begin{definition}
+	For $-2 \leq n \leq \infty$, an $(n,0)$-category is an $\infty$-groupoid that is $n$-truncated. For $0 < r < \infty$, an $(n-r)$-category is an $(\infty,r)$-category $C$ such that for all objects $X$ and $Y$ in category $C$, the $(\infty, r-1)$-categorical hom object $C(X,Y)$ is an $(n-1,r-1)$-category.
+\end{definition}
+
+This is the formal definition for general categories which is very hard to work with since there are some exceptions at lower numbers, which will not care about here. We will use two suggestive slogans as guides since these things are notorious to define with regards the equivalence or invertibility of morphisms. I do not think there is a good definition that just magically covers all cases.
+
+\begin{enumerate}
+	\item An $(n,r)$-category have all $k > n$ trivial $k$-morphisms (parallel morphisms are made equivalent) and $k > r$ morphisms that are reversible (or an equivalence in some sense).
+	\item An $(n,r)$-category is an $r$-directed homotopy $n$-type.
+\end{enumerate}
+
+\begin{definition}
+	An object in a category with a given property is essentially unique with this property if it is isomorphic to any other object with that property.
+\end{definition}
+
+\begin{lemma}
+	An object that is the limit or colimit over a given diagram is essentially unique. 
+\end{lemma}
+
+\begin{proof}
+	By definition of the universal property of the limit and colimit.
+\end{proof}
+
+\begin{definition}
+	A preordered set is a strict and thin category. A partially ordered set is a strict, thin, and skeletal category.
+\end{definition}
+
+A poset is a proset. A proset need not be isomorphic up to strictness to a poset. The axiom of choice gives every proset are the same as poset up to equivalence of categories with the theorem that every category has a skeleton by considering the axiom of choice.
+
+\begin{definition}
+	A preorder or quasiorder is a reflexive and transitive relation.
+
+	A preordered set is a set with this partial order.
+
+	A reflexive relation is a binary relation on a set which every element is defined to be equivalent up to relation with itself $x ~ x$.
+
+	A transitive relation is a binary relation on a set that follows this example: if $x$ is related to $y$, and $y$ is related to $z$, then $x$ is related to $z$ by definition.
+\end{definition}
+
+One itnereprets the preorder as the existence of a unique morphism.
+
+\begin{definition}
+	A $(0,1)$-category is a category whose hom-objects are $(-1)$-groupoids. All pairs of objects $a$ and $b$ either have no morphism, or an essentially unique one. 
+\end{definition}
+
+\begin{definition}
+	A $(0,1)$-category is equivalently a preordered set. Therefore it is a partially ordered set.
+\end{definition}
+
+\begin{proof}
+	An $(n,1)$-category is an $(\infty,1)$-category such that every hom $\infty$-groupoid is $(n-1)$-truncated.
+	
+	A $0$-truncated $\infty$-groupoid is equivalently a set.
+	
+	A $(-1)$-truncated $\infty$-groupoid is either contractible or empty.
+
+	Unwinding these definitions like this, the above definitions make sense. Every hom-$\infty$-groupoid in this case is just a set. Since this is $(-1)$-truncated, it is either empty or the singleton. Therefore there is at most one morphism from any object to any other. This satisfies the definition of a preordered set.
+\end{proof}
+
+These definitions motivates the generalisations of the structures of sites and topoi.
+
+\begin{definition}
+	A $(0,1)$-category with the structure of a site is a partially ordered site. 
+\end{definition}
+
+\begin{definition}
+	A $(0,1)$-category with the structure of a topos is a Heyting algebra. 
+\end{definition}
+
+This definition motivates a deeper look into Heyting algebra to better understand topoi.
+
+\begin{definition}
+	A $(0,1)$-category with the structure of a Grothendieck topos is a frame or locale. 
+\end{definition}
+
+This definition of frames and locales motivates Stone duality and Grothendieck toposes.
+
+\begin{definition}
+	A $(0,1)$-category with the structure of a groupoid is a set up to equivalence or symmetric proset up to isomorphism (a set with an equivalence relation).
+\end{definition}
+
+This definition explains one disjoint unions of equivalence classes make sense on the level of sets.
+
+\section{The order theory category theory dictionary}
+
+The following order theory concepts are valid for $(0,1)$-category as a dictionary.
+
+\begin{enumerate}
+	\item Prosets are simplified categories.
+	\item Posets are simplified skeletal category.
+	\item Sets are simplified groupoids.
+	\item Monotone functions are simplified functors.
+	\item Meets are simplified limits.
+	\item Joins are simplified colimits.
+	\item Lattices has all finite meets and joins, so it is a simplification of a bicartesian category.
+	\item Galois connections are simplified duality and adjunctions.
+	\item Moore closures are simplified monads.
+	\item Heytian algebras are simplified cartesian closed pretopoi.
+	\item Locales or frames are simplified Grothendieck topos.
+	\item Posites are simplified sites.
+\end{enumerate}
+
+\begin{definition}[Loose]
+	A loose definition of negative thinking is categorification by thinking backwards. Thinking about the categorification of objects on level zero, by thinking about categorifications on level 1.
+\end{definition}
+
+\end{document}
