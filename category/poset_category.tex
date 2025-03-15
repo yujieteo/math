@@ -70,12 +70,16 @@ A poset is a proset. A proset need not be isomorphic up to strictness to a poset
 One itnereprets the preorder as the existence of a unique morphism.
 
 \begin{definition}
-	A $(0,1)$-category is a category whose hom-objects are $(-1)$-groupoids. All pairs of objects $a$ and $b$ either have no morphism, or an essentially unique one. 
+	A $(0,1)$-category is a category whose hom-objects are $(-1)$-groupoids. All pairs of objects $a$ and $b$ either have no morphism, or an essentially unique one where two parallel morphisms are equal up to equivalence, since they have the same source and target, and the spaces of choices of equivalences between them is contractible.
 \end{definition}
 
 \begin{definition}
 	A $(0,1)$-category is equivalently a preordered set. Therefore it is a partially ordered set.
 \end{definition}
+
+\begin{remark}
+	One can think of the preordered set also as the enriched category theory with the base of enrichment being the interval category.
+\end{remark}
 
 \begin{proof}
 	An $(n,1)$-category is an $(\infty,1)$-category such that every hom $\infty$-groupoid is $(n-1)$-truncated.
@@ -100,8 +104,16 @@ These definitions motivates the generalisations of the structures of sites and t
 This definition motivates a deeper look into Heyting algebra to better understand topoi.
 
 \begin{definition}
-	A $(0,1)$-category with the structure of a Grothendieck topos is a frame or locale. 
+	A $(0,1)$-category with the structure of a Grothendieck topos is a frame or locale.
+	
+	A frame is a poset that has all small coproducts, all finite limits and satisfy the infinite distributive law.
+
+	A topological space has arbitrary unions and finite intersections. We say a topological space has a frame of open subsets. We can therefore define a topological space to be a set equipped with a subframe of its power set.
 \end{definition}
+
+The axioms of a frame are Giraud's axioms on sheaf toposes restricted to $(0,1)$-toposes. The infinite distributive law expresses that a frame have universal colimits stable under pullback, where poset pullbacks and products coincide. A morphism of frames is precisely the inverse image of a geometric morphism that preserves finite limits and arbitrary colimits.
+
+It also naturally has a structure of a site, a family of morphisms is a covering precisely if it is the union of collections of domain sets.
 
 This definition of frames and locales motivates Stone duality and Grothendieck toposes.
 
@@ -119,16 +131,36 @@ The following order theory concepts are valid for $(0,1)$-category as a dictiona
 	\item Prosets are simplified categories.
 	\item Posets are simplified skeletal category.
 	\item Sets are simplified groupoids.
-	\item Monotone functions are simplified functors.
+	\item Monotone functions are simplified functors. This is because a function between preordered sets respects the preordering.
+	\item Antitone functions are simplified contravariant functors.
 	\item Meets are simplified limits.
 	\item Joins are simplified colimits.
-	\item Lattices has all finite meets and joins, so it is a simplification of a bicartesian category.
+	\item Lattices has all finite meets and joins, so it is a simplification of a finitely complete and cocomplete category.
+	\item Join semilattices are simplified finitely cocomplete categories.
+	\item Meet semilattices are simplified finitely complete categories.
 	\item Galois connections are simplified duality and adjunctions.
 	\item Moore closures are simplified monads.
-	\item Heytian algebras are simplified cartesian closed pretopoi.
+	\item Heyting algebras are simplified cartesian closed pretopoi.
 	\item Locales or frames are simplified Grothendieck topos.
 	\item Posites are simplified sites.
+	\item The statement that $A(x)$ is true if and only if $y \leq x$ implies $A(y)$ is true for every $y$ in the poset is a simplified form of the Yoneda lemma. This one is quite powerful, the Yoneda lemma on this level basically says for a statement to be true, all premises to the statement must be true. By space-quantity duality, we can establish this on the level of sets and representing objects as well. Using this, one can express the Yoneda lemma as well as follows: if a proper subset of a set that is an is an upper set then it contains the partition with $x$ as a greatest lower bound if and only if the greatest lower bound is contained in this proper subset. 
+	\item Upper sets representing monotone functions is a simplification of a representable functor. 
+	\item The poset of true values $\Omega = {0,1}$ is the representing hom-object to be used in thinking about the Yoneda embedding, it is therefore a $(-1,0)$-category. This is a frame equivalent to the frame of opens corresponding to the discrete topology on singletons.
+	\item Given a fixed object and a object $x$ that is more than or equal to that object i.e. $h_\mathrm{C}(x) = (- \leq x)$ corresponds to the Yoneda embedding $Y_\mathrm{C} : \mathrm{C} \rightarrow [\mathrm{C}^o, \Omega]$.
+	\item The Kronecker delta is a simplification of the $0$-homs in the $(-1)$-category of morphisms (two elements are either equal or not, corresponding to true and false). The Yoneda embedding can also be seen as a set theoretic function sending elements that represent an indicator functions. The set of $0$-presheaves of $X$ to the poset of true values $\Omega = {0,1}$ can be identified with the power-set $P(X)$ of $X$. The Yoneda bending sends an element to the singleton set. Presheaves are basically just subsets.
+	\item The frame of opens is precisely the category of open subsets of a topological space, this is a frame.
+	\item The discrete topology on a topological space is precisely the frame of opens derived from the power set of the underlying set of a topological space.
+	\item The subobject poset of an object in a geometric category is a frame. This is the desirable property of a geometric category.
 \end{enumerate}
+
+\begin{exercise}
+What categorical concept corresponds to the following:
+
+\begin{enumerate}
+	\item Upper bounds (not least upper bounds which are joins)
+\end{enumerate}
+
+\end{exercise}
 
 \begin{definition}[Loose]
 	A loose definition of negative thinking is categorification by thinking backwards. Thinking about the categorification of objects on level zero, by thinking about categorifications on level 1.
