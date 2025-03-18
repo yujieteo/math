@@ -1,5 +1,23 @@
 UNDERSTOOD
 
+Pontrjagin duality on finite abelian groups: obviously formal dual if you have abelian and finite compositions of group morphisms, fails for torsion abelian groups since finiteness condition is needed for abelian to work properly, you need some sort of projective conditions for it to work.
+
+Exactness, acyclic, and zero complex: theorem in Weibel that gives condition on exactness where all homology right R-modules vanish.
+
+Split exact sequence of vector space: idea is to decompose into double boundary + homology, so we have C_n = B_n ++ H_n ++ B_n-1, where ++ is direct sum, then make exact sequence that way.
+
+Homology and cohomology of tetrahedron: note that one consider free modules over number of edges, surfaces, then use rank nullity on the incidence matrices to determine kernel and images of differential maps.
+
+Alternative definition of complete category: consider functor category as power category C^I, if I is small, and it preserves limits so C^I is complete.
+
+Additive / abelian categories on monos: very nice to have kernels, monomorphisms and monics be basically the same on some level, see Weibel. Furthermore, existence of 0 object very important, Hom is right adjoint, preserving limits, need something like AB4 i.e. cocompleteness to have direct sums preserved as well.
+
+Total complexes: idea is to have differential maps become anticommutative so that self product of sums of differential maps decompose from (dh + dv)^2 = dh dh + dh dv + dv dh + dv dv. Then do the obvious thing of setting dh dv + dv dh = 0 as definition you get dh dh + dv dv. Note that dh dh and dv dv = 0 due to definition of original chain complexes.
+
+Chain complexes: idea is to just spam differential maps of modules, also cool trick is to define homology as right R-modules in category mod-R and not groups, it is nicer. See Weibel.
+
+Monics and epics equality definition: idea is to have sections unequal under action of epics as retract, or to have retracts unequal under action of monics as sections. Monics and epics becomes monomorphisms and epimorphisms under suitable forgetful functor in set.
+
 Endomorphism monoids: Examples: base of enrichment is commutative monoid, we have endomorphism rigs. If it full abelian groups instead it is endomorphism rjngs. If it is commutative R modules then it is endomorphism R algebra.
 
 Power object: object with monomorphism such that there exists a unique morphism for every other object and every monomorphism into their Cartesian object there is a unique morphism to make the monomorphism is a pullback. If the object of choice is the terminal object, its power object is the subobject classifier. A power object in set is precisely a power set.
