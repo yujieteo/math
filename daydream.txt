@@ -1,5 +1,61 @@
 DAYDREAMS:
 
+H1 or sheaf cohomology classifies torsors of a group make this make sense. H1 of a Lie group on manifold g classifies principal g bundles.
+
+All functors
+
+All category adjectives
+
+All dualities
+
+New objects
+
+Finite object?
+
+Learn enough category theory or really algebraic topology to work with Eilenberg Maclane Objects
+
+Klesli object, Eilenberg Moore object
+
+Kan object
+
+Module object (examples)
+
+Real numbers object
+
+Colax or lax comma object
+
+Sifted and motivations for sifting
+
+Pasting diagram? Monoidal category associativity isomorphisms.
+
+Line object: in a monoidal category and object L such that the tensoring functor into L has an inverse. This definition does not make sense to me.
+
+Free functor
+
+Equivariant object
+
+Closed sets with infimum norm = 0 but no points in common. Hint: similar to Z, take set of singletons of integer more than 3, and singletons of set n + 1/n, n more than 3. This is so smart!!! Compactness is exemplified here.
+
+What is a spoof?
+
+Nilpotent thickening of a field?
+
+Diagonal is closed is equivalent to Hausdorff. Prove this. Now prove that separated scheme is the right condition that preserves Hausdorff-ness, since for separated schemes diagonal morphisms are closed.
+
+Dedekind cuts on the posets and the Yoneda lemma: the least upper bound b represents the set of elements below b, this is the Yoneda lemma on the category of posets.
+
+Characters as representing objects? Recall that the definition of a one dimensional character is from G to C^* which is the punctured complex plane, with the multiplicative group.
+
+https://math.stackexchange.com/questions/4172202/what-is-the-sphere-spectrum?rq=1 follow line by line arguments presented here to understand the sphere spectrum
+
+Representation theory and Kan extensions: Recall a single object category with invertible is precisely? Now consider the functor category Vect_k^G, what are these (G-representations over field k)?. If H is a subgroup of  G, replace restriction from Vect_k^G -&gt; Vect_k^H with a suitable functor, define the left adjoint of this functor. This induction functor is a left Kan extension along i. Now consider G-set, G-space, based G-spaces, in which cases does these adjoints not exist? One potential answer is quasi coherent sheaves see https://mathoverflow.net/questions/96818/left-adjoint-to-restriction-functor so it does not preserve infinite products which always exist.
+
+Existence of Stone Cech compactification: https://mathoverflow.net/questions/5786/how-do-i-check-if-a-functor-has-a-left-right-adjoint
+
+Why does restrictions of quasi coherent sheaves not preserve infinite products? https://math.stackexchange.com/questions/54354/arbitrary-products-of-quasi-coherent-sheaves
+
+Read Thomason and Trobough, https://www.maths.ed.ac.uk/~v1ranick/papers/tt.pdf
+
 Connections of a bundle.
 
 Study internalisation with respect to enrichment.
