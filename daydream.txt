@@ -1,5 +1,15 @@
 DAYDREAMS:
 
+What is locally free?
+
+Different notions of localisation.
+
+Hasse invariants?
+
+Quillen’s construction of R even periodic.
+
+Quillen formal group?
+
 H1 or sheaf cohomology classifies torsors of a group make this make sense. H1 of a Lie group on manifold g classifies principal g bundles.
 
 All functors
