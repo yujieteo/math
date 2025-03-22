@@ -1,5 +1,135 @@
 UNDERSTOOD
 
+Idea of Noetherian normalisation: coordinate change of x1x2 - 1 not finite over C[x1] to become finite with coordinate change x1 = y2 + y1, x2 = y2 - y-1 using a C[x]-algebra homomorphism.
+
+Filtered ring: definition in Serre, is a ring with family of ideals A_n filtered in Z satisfying: A_{0} = A, A_{n+1} is in An ApAq in Ap+q. This gives ring structure onto the filtration.
+
+Filtered module over filtered ring: A-module M with family of submodules for filtration to make it into a ring, M0 =  M, M_{n+1} in M_n BUT A_p M_q  =  M_{p+1}
+
+Filtered modules form additive category (NOT AN ABELIAN CATEGORY): important point, homological algebra applies, morphisms are A-linear maps u from M to N where u(M_n) in N_n. Therefore injective and surjective morphisms are usual, kernel and cockerel exist with induced filtration. There exist bijective morphisms that are not isomorphisms.
+
+Induced filtration on submodules of filtered module: if P (probably because projective) is A-submodule of filtered module M, induced filtration on P is filtration P_n defined by intersections P_n =  P intersect M_n.
+
+Quotient filtration: let N = M/P be quotient of filtered module with module P, filtration (N_n) where N_n  =  (M_n + P)/P is in image of M_n. Careful for notation, this does not mean localisation.
+
+Primary decomposition theorem: every submodule can be written as intersection of p-primary submodules Q(p) of M, when p is the associated prime ideal of Ass(M/N). This generalises prime factorissation into unique p-primary submodules or making it from primary components.
+
+Embedding of module M to limit of E(p) for p associated prime of M: E(p) is defined to be the case where Ass(E(p)) = p, for every p in Ass(M). Use analogy in case of Z that module is composite number ideal, p is prime number in primary decomposition of of the module, and E(p) has unique associated prime, and is product of (p) some how i.e. E(p) is some sort of p prime power ideal.
+
+P-primary submodule of M: let p be in th prime spectra of A, submodule Q of M is called a p-primary submodule of M if Ass(M/Q) = {p} or the set of associated primes of quotient module M/Q oney has that p primary submodule.
+
+Associated primes, is in set of prime ideals {p_1 to p_m} of increasing sequence of submodules M0 = 0, Mn = M and is in support of M, with the same minimal elements: consider prime ideal in spectrum of ring A, the localisation is nonzero if and only if one p_i is contained by the prime p_i, so the support of M contains prime ideals of sequence, same minimal elements. If prime ideal is in associated prime of module M, module M contains submodule N isomorphic to A/p, N intersect M_i is nonzero if m is in this intersection then module Am is isomorphic to A/p_i, so p = p_i so Ass(M) is in {p_i to p_n} at least. Finally if p is minimal element of Supp(M , support of localisation of M at p is reduced to unique maximal ideal pA_p of A_p, note that Ass(M_p) is nonempty and clearly in Supp(M_p) so pA_p is in Ass(M_p), and Ass(M_p) is compatible to localisation, so pA_p is in Ass(M), and support and Ass(M) share same minimal elements. Work through Serre Theorem 1 in Local Algebra.
+
+Embedded element: nonminimal element of Ass(M)
+
+Associated primes is finite: proof it is contained in the support of M.
+
+Motivation of associated primes: in Z, decompose composite (n) to associated prime ideals of powers (p_i^d_i), p_i is associated prime, then these prime ideals are primary components, so associated primes generalised unique factorisation to arbitrary rings, increase sequence of submodules due to Noetherian-ness is important, finiteness is important and other stuff… see Harvard notes.
+
+Increasing sequence of submodules M0 to Mn such that Mi / M_{i-1} isomorphic to A/p_i, p_i in spectrum: if M is nonzero, there exists submodule in associated prime isomorphic to A/p_1, p_1 prime, if M1 != M_1, inductively apply same argument to M_2 of M_2 containing M_1 such that M_2/M_1 is isomorphic to A/p_2, so on and so forth, obtain increasing sequence, this is Noetherian, so this sequence stops.
+
+Nonzero module have nonzero associated primes: nonzero modules have maximal element since the ring is noetherian, so there are nonzero associated primes.
+
+Maximal elements of set of annihilators of nonzero elements of module are prime ideals: let P be the set of annihilators of nonzero elements of module M, then every maximal element of P is a prime ideal. Consider nonzero element of module M, whose annihilator p (recall it is the kernel of module of localisation) is a maximal element of P. If xy is in p, and x is not in p, then xm is nonzero, since x is not in annhilator, and m is nonzero, so xm is nonzero. The annhilator of xm contains p (since it is bigger, p does not annihilate xm), and it is therefore equal to p, since p is the maximal element of the set of annihilators of nonzero element say definition. Since yxm =0 as a result of y in Ann(xm) = p, p is prime ideal if p is a maximal element. See Serre Local Algebra Proposition 5. Key step is showing annihilator of xm contains p, maximality gives equality.
+
+Associated prime ideals to a module: prime ideal associated to module TFAE (1) if there is a submodule such that it is the domain generated by the quotient of the prime ideal over the ring (this definition makes sense when you think of prime numbers, and submodules as prime powers); (2) exist element of module of M whose annihilator (kernel of module to localisation) is equal to prime ideal (makes sense if you think of prime in element that makes it vanish) same as Gathmanns definition of associated prime ideal is prime ideal that can be written as root(I:a) for a in ring R is prime. Prime ideals associated to M is Ass(M), these are the associated prime ideals of module M
+
+Natural map from module to limit of localisations for associated primes is injective: suppose M nonzero, there is submodule or maximal ideal m in M nonzero by corollary 1 or associated primes, let ideal be annihilator(m), since m is nonzero, this is proper ideal and not fully A. Let m be maximal ideal containing I, if m is zero in M_m, there exists a in maximal ideal m such that am = 0, contradicting Ann(m) in maximal ideal. Therefore, each nonzero m and ideal M, there exists at least one maximal m such that m is not zero in localisation so map from M to product of localisations of associated primes is injective. Don’t understand motivation of this.
+
+Association is compatible with localisation: let S be multiplicative group closed subset of A, let p be prime ideal such that S and p is disjoint, localise S^{-1} p of S^{-1} A to be associated to S^{-1} M, we need prime p to be associated to M. Proof: let p be associated prime of M, by definition there is a m in module M whose annhilator is P, by definition of annihilator being some localisation, it is the annhilator of the element m/1 in localisation S^{-1}M is S^{-1}p which is in associated prime of localisation Ass(S^-1 M}. For converse, suppose S^{-1} p is annhilator of quotient element m/s in localisation S^{-1}M, m is in M, s is in S, if a is the annihilator of m, then localisation re equal up to prime ideals so S^{-1} a = S^{-1} p so a is in p, implyingg existence of s' in S such that s’ p is in A, so the annihilator of s’m is prime ideal p, and p is in associate d prime of M.
+
+Quasicompact noetherian space: quasicompact means admits filtered colimits mapping out of it, open cover admits finite subcover with diagram indexed by small category. Colimit is cover, filtered colimit is finite sub cover. Hausdorff for full compactness.
+
+Spec(A) of A is quasicompact noetherian space: proof, noetherian gives quasicompactness.
+
+Irreducible component of F: let F be closed subset of Spec(A), every irreducible subset of F is contained in maximal irreducible subset of F, these are closed in F, each subset is called irreducible component of F, this is finite (due to Noetherian hypothesis) union of these is equal to F. Irreducible components of Spec(A) are algebraic sets V(p).
+
+Minimal prime ideals: the prime ideals that span the all irreducible components of Supp(M) are the V(p), Spec(A) has irreducible components V(p), this forms the set of minimal prime ideals of A. Let M be finitely generated prime ideal, with annihilator a (kernel of map to localisation at ideal a). They have the following property: p contains annihilator a, and is minimal, p is minimal of Supp(M), module M_p is zero and is of finite length (fg, support contains only maximal ideals)
+
+Annihilator definition in terms of localisation: kernel of map to localisation.
+
+Support of a module: set of prime ideals such that there is nontrivial localisation under module M so M_p is nonzero. It is a closest subset of the spectrum of ring A, where M is an A-module.
+
+Exact sequence give union of supports: if 0 -> M’ -> M -> M’’ -> 0 is exact sequence, then Supp(M) = Supp(M’) union Supp(M’’), this gives a geometric intuition of spliting, and so unions of closed subsets hint form exact sequences somehow? Proposition 4 in Serre.
+
+Support intersection of quotients: let P and Q be submodules of fg module M, then Supp(M/P intersect Q)) = Supp(M/P) union Supp(M/Q).
+
+Support of tensor products: let M and N be two finitely generated modules, under Isbell duality Supp(M tensor N) = Supp(M) intersect Supp(N), apply the fact that if M tensor N = 0 iff M = 0 or N =  0 to Nakayama’s lemma at localisation Mp and Np which are nonzero by definition of the support, so it must be the support where both M_p nonzero and N_p nonzero. 
+
+Corollary of support of tensor products: Supp(M/tM) = Supp(M) intersect V(t), for M finitely generated A-module, t and ideal of A. Proof: by tensor products, M/tM = M tensor_A A/t. By Nakayama's lemma, both supports are nonzero so intersection. Supp(M) and V(t).
+
+Equivalent characterisation of quotient as tensor product: let M be finitely generated A module, and t and ideal of A, then M/tM = M tensor A/t.
+
+Nonzero localisation of prime ideals (Proposition 3, Serre): consider p prime ideal of A, TFAE M_p nonzero and p in V(a). Suppose M finitely generator, annihilator of A_p module M_p is a_p so p is in V(a). The set of p in Spec(A) is the support of module M, closed subset of Spec(A).
+
+Not leaving commutative algebra: I realised prime spectrum is set of prime ideals, so you haven’t exactly left commutative algebra when you are doing algebraic geometry. Common misconception about dualities, you are simply using intuitions and structures from geometry to do commutative algebra when doing algebraic geometry.
+
+Nakayama’s lemma history: it came from Krull and Azumaya based on what Nakayama said.
+
+Typical residual class ring and quotients: ideal, so quotient is residue class ring, prime ideal, so quotient is domain, maximal ideal, so quotient is field.
+
+Results on spectrum: spectrum is set of all prime ideals, consider a is ideal of a, then set of p in Spec(A) such that ideal a is in prime ideal p is the variety on from ideal a denoted V(a) [this is abuse of definition, this isn’t a variety, merely the Zariski closed sets]. By Isbell adjunction, intersection of ideals becomes union of varieties. Spec(A) is noetherian if A is noetherian, increasing filtration of opens stops or is absorbed. If F is nonzero closed set in spectrum, then F is irreducible or nonunion of two closed sets distinct of F and there exists prime in prime spectrum such that F is the variety generated by a prime ideal or F is the closure of prime ideal.
+
+Radical of ideal: set of x in comm ring A, existing n(x) >= 1 such that x^n(x) in a is an ideal called the radical of a.
+
+Serre’s noetherian module:  module is noetherian if TFAE: (1) ascending chain of submodules stops/filtration absorbs indefinitely; (2) nonempty family of submodules of M has maximal element; (3) all submodules are finitely generated, so submodule and quotient modules are noetherian.
+
+Serre’s noetherian ring: ring is noetherian if it is neoetherian module as a self module TFAE: (1) ascending chain of ideals stops or as indefinite absorbing filtration; (2) nonempty family of ideals has maximal element; (3) all ideals finitely generated, so poly rings and formal power series over the ring are also noetherian.
+
+Finite length module: module has finite length if it has Jordan Holder sequence. For noetherian case, module is finitely generated, support only has maximal ideals.
+
+Serre’s definition of prime ideal: quotient of commutative ring with prime ideal is domain. A domain is defined to be embeddable in a field.
+
+Serre’s definition of maximal ideal: ideal, quotient of commutative ring with maximal ideal is a field and is distinct from the ring
+
+Semilocal ring: set of all maximal ideals is finite. Leads to local ring with unique maximal ideal. Local ring is motivated by A - m =  A* to define multiplicative group of invertible elements.
+
+Multiplicity of an ideal of a local noetherian ring with respect to a finitely generated A-module E: coefficient n^r / r! In the polynomial light function from n to the length_A(E/q^nE). This definition lets you define the multiplicity of the homology modules of the Koszul complex constructed on E, this can be used to study local algebra.
+
+Jacobson radical: intersection of all maximal ideals. Motivation 1-xy invertible for every y in A means x is in Jacobson radical.
+
+Nilradical: intersection of all prime ideals. It is naturally contained in Jacobson radical. All maximal ideals are prime (fields are stricter than domains)
+
+Nakayama’s lemma (Serre’s proof): let M be a finitely generated A-module, and q be ideal of A in Jacobson radical r of A, if smallest submodule by a product of q qM = M i.e. idempotent action on M, then M is 0. Or simply, if an ideal in the Jacobson radical is an idempotent action on a A-module to generate the submodule, the A-module must be zero. Suppose module is nonzero, it has a quotient which is a simple module isomorphic to field generated by the maximal ideal, then mM is clearly not M, which is contrary to the fact that the ideal is a subset of the maximal ideal. Fails for say (2)Z = Z, cannot be killed by odd integers, so you need Noetherian hypothesis.
+
+Nakayama corollary on N + qM: if N is submodule of M, such that M = N + qM, and q is contained in Jacobson radical, then M is equal to M. Apply Nakyama’s to qM.
+
+Localisation (Serre), an defining annihilator using localisation: S^{-1}M is the set of fractions m/s, using identifications s’’(s’m - sm’) = 0 as existence condition. Maps A to S-1M and M to S-1M is natural with fractions a to a/1 and m to m/1. Kernel of map to localisation defines the annhilator of Ann_M(S) set of m in M such that there exists s in S where sm = 0. Prime ideals of localisation are the same ideals after localisation.
+
+Flat by Serre: A-module F is flat if M -> F tensor_A M is exact.
+
+Local ring as localisation: let p be prime ideal of A, take S to be complement A - p (another definition, this must be multiplicative group) then localise A_p and M_p, local rings with maximal ideal pA_p and pM_p. If M nonzero, exists prime ideal p with M_p nonzero. Generally, if N submodule o fM, x is element of M, x is element of N iff it is locally where image of x in M_p belongs to N_p for every prime ideal (proof by applying above to (N+Ax)/N, use Nakayama’s).
+
+Set of nilpotent elements as characterisation of Jacobson radical, definition of reduced ring: suppose x is non-nilpotent element of ring A, take multiplicative group to be set of powers of x (think of torsion), then localisation at multiplicative group is nonzero, therefore has a prime ideal that does not contain non-nilpotent x. Therefore, intersection prime ideals of A (Jacobson radical) is set of nilpotent elements of A. So if Jacobson radical vanishes, ring is reduced.
+
+Nakayama corollary on vanishing of tesnor products: if A is local ring, M and N are finitely generated A modules, then tensor product vanishing means M is 0 or N is 0. Proof: m be maximal ideal, by definition k is field A/m, set quotients M’ = M/mM and N’=N/mN, if tensor product vanish, M’ tensor N’ vanish, so either 1 is zero by Nakayama M is 0 or N is 0.
+
+Definition of Tor in terms of free resolutions: consider comm ring R, and M with N, R-modules. Then we have the free resolution F_{i+1} to F_{i} to … F_{0} to M to 0 as a free resolution of the module M as an R-module, form complex with tensor of M, the Tor_i^R(M, N) is equal to the kernel of the F_i ** N to F_{i-1} ** N, image of F_{i+1} ** N to F_{i} ** N, where ** denotes tensor product in N.
+
+Example of flatness of vector space over residue field: let the coordinate ring S = R[x] / (x^2 - t), fiber over prime ideal (t - a), with nonzero a in field k, then it is isomorphic to the Cartesian product k^2 with k[x] / (x^2 - g), fibre over ideal (t) is k[x] / (x^2), t - t so f = 0 when you consider fibres over the ideal (t), fibre over (0) is k(t)[x] / (x^2 - t) field of degree 2 over residue field, k((0)). Over each prime, the fibre over prime ideal is a vector space, dimension 2 over the residue field k(p), free R-module on generators (1 + x^2), prove by showing ax^2 + b = 0, this means a = 0 and b = 0.
+
+Example of facilities with differing properties: take a family of curves xy - a = 0. Hyperbola is smooth to a singular union of two lines. This fails to be locally trivial at a = 0.
+
+Residue field of a ring at prime ideal P over point p: this corresponds tho a localisation at point p.
+
+Locally trivial: in manifolds, take the neighbourhood U of a topological space X, the open set U is isomorphic to a family phi(U), where phi is a fiber from the topological space X to base space B
+
+Separated morphism: map to fibre product over base scheme is a closed immersion under Zariski topology. Scheme is separated if morphism is separated over base scheme Spec Z. 
+
+Diagonal map as characterisation of Hausdorff: draw spaces as lines X and X, diagonal is diagonal line, consider neighbourhoods U, V of points (x,y) projected down to X and X lines as axes. If diagonal is closed where you have closed neighbourhoods as a block in the space, then you can find open neighbourhood of the U x V in the space, so U and V is Hausdorff
+
+Diagonal morphism recycled in line of double origin being not separated scheme: draw line of double origin in Zariski topology, looks like two horizontal and two vertical copies of affine line, consider diagonal morphism, should have two points out of the four points, there are two additional points not cutting the diagonal in the closure of the diagonal map, so maps to fibre product under Spec Z is not closed immersion!
+
+Separable morphisms are not separable schemes: consider separable morphism between line of two origins to line of two origins, the morphism is identity map, so this is a separable morphism of schemes.
+
+Quasi-separated morphism: if the image of the diagonal map to fibre product of schemes is quasi compact, need some screwy example with ring of infinitely many generators for this to work. Noetherian schemes are quasi-separated schemes after all.
+
+Motivation for Tor: universal coefficient theorem to construct homology, end of exact sequence contains Tor. Next other motivation for Tor is constructing exact sequences, Tor appears on start of seance when you tensor by M. 
+
+Tor comes from chain complexes: take homology group of complex, for it to be defined at a particular abelian group, then tensor product with the abelian group is done first, then you take homology of that.
+
+Tor is derived tensor product so the answers are kinda obvious: Tor(Z, G) is 0 for Z integers since Z is the prototypical group, Tor(Z/mZ, Z/nZ) = Z/(m,n)Z which is just like tensor product and we also have Tor(Z/mZ, Z) vanish for all finitely generated abelian groups. Recall you can make fg ab groups into direct sum of cyclic groups. Just think of it is tensor product the results should look similar, in fact you can try with direct sum of abelian groups, it will work. Strangely Tor(G, K) is isomorphic to Tor(K, G) in general, but this is rather mysterious. However, this is not a natural isomorphism between Tor and tensor product, depends on choice of generators.
+
 Affine space of plane curve to demonstrate moduli space and flatness: idea is family is just a morphism or a fibre, take B to be the affine space of polynomials sum of (a_ij)(x_i)(y_j) in Einstein notation, then consider dimension to be (n+1)(n+2)/2, take affine N+2 hyperspace with coordinates x y and {a_ij}, now consider projective morphism from this N+2 hyperspace onto the original space B. Consider subspace X this sum = 0, this is a subspace of the total space affine N+2 space. Restrict this projective morphism to morphism domain X, the fibre is a plane curve whose equations corresponds to that point. WARNING, you can instead end up with planes = 0 aka trivial solutions that are not points. This is a powerful example, and one can generalise to various other ways of thinking since families varying under parameters are everywhere.
 
 Bad definition of families of algebras parameterised by prime ideals: let S be an algebra over ring R (so R equipped with ring homomorphism) for every point define fibre translated via Isbell would give maximal ideal to be defined as for maximal ideal P in S (R/P)-algebra (S/PS), for arbitrary primes i.e. irreducible varieties we have quotient field K(R/P), so it is K(R/P) tensor S as a K(R/P)-algebra, recall that the quotient field is generated by the localisation of the whole ring - prime ideal of the multiplicative closed subset. Now you have R[x,y] / sum (a_ij)(x_i)(y_j) as algebra of plane curves. Fro good definition, you want flatness of S as algebra over R-modules, this way the K(R/P) tensor S has monomorphism preserved from the quotient field K(R/P). This monomorphism is for topological reasons, consider the fibre parametrising the family, then consider affine neighbourhood of point U, and affine neighbourhood V of pushfoward/preimage of fibre of point p(x) such that the fibre restricts to a map from U to V. This can only work if on some level the tensor product preserves monomorphism.
