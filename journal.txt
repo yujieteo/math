@@ -1,5 +1,7 @@
 Journal
 
+22 March 2025: did a lot of commutative algebra and category theory over March, algebraic geometry no longer look so intimidating, I was thinking about learning it in depth in Matsumura.
+
 2 February 2025: try problems you have totally NO CLUE, sit down and time to solve it.
 
 1 February 2025: finally did some math, learnt more about representable functors, rep theory, geometric group theory and stuff.
