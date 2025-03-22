@@ -38,7 +38,7 @@ Subrings of Noetherian ring and Artinian ring need not have the same property: Q
 
 Exact sequence of Noetherian and Artinian A-modules, middle term is Noetherian and Artninian: suppose 0 to A to B to C to 0 is an exact sequence of modules, A and C Noetherian implies B Noetherian, proof in Matsmura by applying infectiveness of natural map.
 
-Artinian ring is Noetherian: prove A has finite length of A-modules. It has finitely many maximal ideals, if not just take descending filtration of products p1 in p1p2 in p1p2p3 contrary to Artinian. Finite set of prime ideals, set full product as radical of A, descending chain stops in finitely many steps, so there exists end of ideal chain I^s ‎ =  I^{s+1}, then consider length of chain of M/p_i M for sequence A in p_1 in p_1 p_2 terminating in I in I p_1 in I p_1 p_2 all the way to I^s ‎ =  0, this chain is finite so sum l(A) of these terms is also finite.
+Artinian ring is Noetherian: prove A has finite length of A-modules. It has finitely many maximal ideals, if not just take descending filtration of products p1 in p1p2 in p1p2p3 contrary to Artinian. Finite set of prime ideals, set full product as radical of A, descending chain stops in finitely many steps, so there exists end of ideal chain I^s  =  I^{s+1}, then consider length of chain of M/p_i M for sequence A in p_1 in p_1 p_2 terminating in I in I p_1 in I p_1 p_2 all the way to I^s =  0, this chain is finite so sum l(A) of these terms is also finite.
 
 Extended ideal: f from A to B in ring him, I ideal of A, J an ideal of B f(I)B is extended ideal of I to B, J intersect A for f^{-1}I of a is contracted ideal of A. Extension and contraction are adjoints in this sense I^{ec} in I, and J^{ce} in J. This is canonical bijection.
 
