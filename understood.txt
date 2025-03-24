@@ -1,5 +1,27 @@
 UNDERSTOOD
 
+Double dual functor is naturally isomorphic to identity functor: proof by considering double dual of vector spaces giving the same space, double dual of linear maps of finite dimensions to get the same linear map due to the fact that these admit representations by matrices.
+
+Definition of equivalence of categories: given a covariant functor it gives equivalence of categories if it is fully faithful and F is essentially surjective i.e. isomorphism of objects b and F(a) for object a in category A and object b in category B.
+
+Canonical morphism of localisation considering (1, 1/2, 1/3… ) in Q * Q * Q: this is only injective, consider morphism sending (k_n)/s to (k_n/s) via this map so k_n / s = 1 / n for all n more than or equal to 1, then s is a divisor of of n for all n, a contradiction, this is at most injective, and this is a localisation, so localisations of do not commute with infinite products in general.
+
+Coproduct all but finitely many terms: reduce it to base case of cardinality functor: product of infinite terms, it will stay infinite under cardinality, coproduct will add all these terms, and if finitely many it will be okay so noncoincident with products.
+
+Automorphism group of sets: these are just symmetric groups.
+
+Automorphism group of vector spaces: general linear group.
+
+Connected groupoid: automorphism groups of the object is isomorphic but not canonically isomorphic.
+
+Functor of maps versus functor of points: consider contravariant functor of pre sheaves to maps sending morphism from b_1 to b_2 to morphism of hom-sets mor(b_2, a) to mor(b_1, a). This is why Vakil calls it functor of maps to A. But A is fixed object, so functor of points.
+
+Examples of unique isomorphisms: easiest one is initial object, if there are two initial objects, and all stuff map from initial object, there is a map mapping from initial object 1 to initial object 2, and vice versa, determining isomorphism. This phenomena applies to terminal objects.
+
+Vakil’s warning of localisation notation: A_(p) means you are allowed to divide by elements not in prime ideal (p), but A_f means you are allowed to divide by f. So A_f is not equal A_(f)
+
+Localisation is injective if multiplicative subset contains no zero divisors: exercise in Vakil but I wrote this myself: if S contains zero divisors, then kernel of this map is isomorphism classes of the zero divisors due to torsion, so nonempty kernel so not injective.
+
 Lasker ring: commutative ring where any ideal admits coprimary Lasker decomposition. Noether showed Noetherian rings are Lasker rings.
 
 Proof of Lasker Noether theorem: M is contained in finite product of coprimary modules. If not true, pick maximal submodule N by Zorn’s so that M/N not in product of coprimary ideals. May assume N = 0 without loss of generality just by quotienting out. Notice M is not coprimary, then it will be contained in product of coprimary ideals, so it has two submodules M_1 isomorphic R/p_1, M_2 isomorphic R/p_2, p_1 not equal p_1. ann(x_1) is P_1 and ann(x_2)  is P_2, We find that M_1 and M_2 disjoint. Take exact sequence M_1 intersection M_2 to M to M/M_1 ++ M/M_2 (using coincident direct sum of product). The kernel of this exact sequence is 0 since M_1 intersect M_2 is zero. So each of these two is contained in product of coprimaries so M must contain in coprimaries, contradiction.
