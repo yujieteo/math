@@ -4,6 +4,10 @@ Image of measurable function inherits measurable from codomain: why is this the 
 
 Motivate primary decomposition theorem in Serre with last two props.
 
+Image of measurable function inherits measurable from codomain: why is this the case?
+
+Motivate primary decomposition theorem in Serre with last two props.
+
 What is locally free?
 
 Different notions of localisation.
