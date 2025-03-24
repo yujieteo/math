@@ -1,5 +1,21 @@
 UNDERSTOOD
 
+Support of module: set of primes with localisation at point p, stalk of M at point p nonzero or M_p nonzero, or set of primes containing Ann(M). This is much more crude than the support prime.
+
+Calculation for supports: (1) R = Z, M = Z/12Z, Ass(M) = Supp(M) = (2) and (3); (2) pick M = Z, Supp(M) is Spec Z, Ass(M) = 0; (3) pick M = Z ++ Z/2Z, Supp(M) = Spec Z, Ass(M) = (0) and (2).
+
+Support is closure of associated primes of M in Noetherian comm. Rings: proof: suppose p in Ass(M), then P = Ann(a) for a in M by definition contained in Ann(M) and contained in Supp(M). Suppose P in Supp(M), M_p nonzero by definition look at Ass(M_p) nonempty. So we have q is in Ass(M_p), and q is in Spec(R_p) we have f from R to R_p, and inverse from f^{-1} from Spec R_p to Spec(M), look at f^{1}(q) is in Ass(M) is contained in P so p is in closure of f^{-1}(q)
+
+Module as something living on its support to see examples of embedded primes and isolated / minimal primes: consider M = k[x,y]/(y) and is the x axis, living on its support. Consider M = k[x,y]/(y^2, xy), and Ass(M) = (y), (x,y). Minimal ones are isolated or minimal like (y), and (x,y) contains (y), and is an embedded prime looking like some nilpotent there. So module is sitting at this point, more of it is sitting on the embedded prime. This Spec M recall is the xy axis with double point at intersection.
+
+Coprimary decomposition: break up modules, each one associated with one element of Ass(M). Fails for general rings, counterexample is M = R/(y^2, xy) for more general rings, best we can do is only submodule so R/(y^2, xy) is included into R/y ++ R/(x,y), it is only a submodule of coprimary modules, so this is coprimary decomposition. Historically it was thought of as the Lasker Noether theorem for ideals.
+
+Lasker Noetherian theorem: if ideal I of Noetherian R, then I is an intersection of finitely many primary ideals.
+
+Primary ideals: ideal that makes the Lasker Noether theorem works it its invited by Lasker, defined by if xy in J, then x in J or y^m in J, m integer strictly more than 0. Lasker’s proof is like 100 pages, Noether gave a super short proof.
+
+Structure theorem of abelian groups and associated primes: take A = A_0 ++ A_2 ++ A_3 so associated prime Ass(Z^n) = (0), Ass(A_2) is A_2. The others are all unique except A_0 due to embedded prime nature of (0).
+
 Dedekind domain that is nonfactorial not UFD: Z adjoined root five with maximal ideal (1-root5 and 2), annhilator of this ideal is (0) and cannot be built up in a chain.
 
 Trick to determine algebraic numbers: just square it until you find a suitable equation.
