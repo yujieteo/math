@@ -1,5 +1,7 @@
 UNDERSTOOD
 
+Lasker ring: commutative ring where any ideal admits coprimary Lasker decomposition. Noether showed Noetherian rings are Lasker rings.
+
 Proof of Lasker Noether theorem: M is contained in finite product of coprimary modules. If not true, pick maximal submodule N by Zorn’s so that M/N not in product of coprimary ideals. May assume N = 0 without loss of generality just by quotienting out. Notice M is not coprimary, then it will be contained in product of coprimary ideals, so it has two submodules M_1 isomorphic R/p_1, M_2 isomorphic R/p_2, p_1 not equal p_1. ann(x_1) is P_1 and ann(x_2)  is P_2, We find that M_1 and M_2 disjoint. Take exact sequence M_1 intersection M_2 to M to M/M_1 ++ M/M_2 (using coincident direct sum of product). The kernel of this exact sequence is 0 since M_1 intersect M_2 is zero. So each of these two is contained in product of coprimaries so M must contain in coprimaries, contradiction.
 
 Implication of Lasker Noether theorem from limit definition to original form:  pick M = R/I, then R/I = M is in product of (R/I_p), so (R/I_p) is coprimary, then I_p is primary in Lasker’s sense, so I must be the intersection of I_p if you do some exact sequence I_1 intersect to I_p to M to product of (R/I_p).
