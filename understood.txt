@@ -1,5 +1,11 @@
 UNDERSTOOD
 
+Symbolic power: let R be a ring, let p be a prime ideal for a ring, for n >= 0, the nth symbolic power is the ideal p^(n) is equal to the kernel of the map R to R_p / p^n R_p. 
+
+Definition of prime ideals using symbolic powers of R/p^(n): let R be a noetherian ring, p be prime ideal, n > 0, then Ass(R/p^(n)) = {p}. Proof: suppose q is asscoiated prime of R/p^(n) then p is in q. On the otehr hand, consider x in R, x not in p is a nonzerodivisor on quotient R/p^(n). If y in R and xy in p^(n) = R intersection p^n R_p by definition of asscoaited power, then y is in p^n R_p, hence y is in p^(n).
+
+K_0 group K_0'(R): every finite R-module M there is an elemenet [M] in K_0'(R), for every short exact sequence 0 -> M' -> M -> M'' -> 0 of r finite R-modules, have the relation [M] = [M'] + [M''], K_0'(R) has elements [M] is generators, then relations K_0'(R) among generateors [M] are Z-linear combinations of the relations coming from exact sequences as above. Note that the collection of all finitely generated R-modules have to be checked to be a proper class.
+
 Simple module in terms of length: TFAE: (1) M is simple; (2) length_R(M) = 1; (3) M = R/m for some maximal ideal m in R; https://stacks.math.columbia.edu/tag/00IU 
 
 Jacobson ring: use the definition of Jacobson ideal for every radical ideal I (equal to its radical i.e. I = rad(I) and not just I in rad(I)), is the intersection of all maximal ideals. 
