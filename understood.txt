@@ -1,5 +1,31 @@
 UNDERSTOOD
 
+Artinian ring dimension definition: Noetherian ring of Krull dimension 0.
+
+Finite modules have filtrations such that successive quotients are cyclic modules: let R be a ring, let M be a finite R-module, there exists a filtration by finit eR-submodules such that each quotient M_i / M_i-1 is isomorphic to R/I_i for some ideal I_i of R. Proof by induction on number of generators of M, since M is also finitely generated, let x_1 to x_r in M be generators, let M' = Rx_1 in M by definition, then M / M' has r - 1 generators, induction hypothesis applies. Clearly M' is isomorphic to R/I_1 and so forth, with I_1 defined as {f in R | fx_1 = 0}.
+
+Blowup algebra / Rees algebra: let R be a commutative ring, let I be an ideal contained in R, the blow up algebra associated to the pair (R, I) is the graded R-algebra Bl_I(R) = oplus_{n >= 0} I^n = R ++ I ++ I^2 ... where the summand I^n is placed in degree n. Let a in I be an element, a^(1) the element a seen as an element of degree 1 in the Rees algebra, the affine blow up algebra R[I/a] is represented by an expression of the form x/a^n with x in I^n. This feels very localised, two representives x/a^n and y/a^m define the same element if and only if a^k(a^m x - a^n y) = 0 for k >= 0. This feels liek a generalisation of localisation.
+
+Finite locally free module of rank r: let R be a commutative ring, and let M be an R-module. We say M is finite locally free if we can cover the prime spectrum of R, Spec(R), by standard opens D(f_i) for i in I such that M_{f_i} is a free R_{f_i}-module for all i in I and fi we can choose the covering such that M_{f_i} is isomorphic to a free module R_{f_i}^{+ r} of rank r.
+
+Finite locally free module: let R be a commutative ring, and let M be an R-module. We say M is finite locally free if we can cover the prime spectrum of R, Spec(R), by standard opens D(f_i) for i in I such that M_{f_i} is a free R_{f_i}-module for all i in I and fi we can choose the covering such that M_{f_i} is finite free.
+
+Locally free module: let R be a commutative ring, and let M be an R-module. We say M is locally free if we can cover the prime spectrum of R, Spec(R), by standard opens D(f_i) for i in I such that M_{f_i} is a free R_{f_i}-module for all i in I.
+
+Coherent module: TFAE (1) finitely generated and every finitely generated submodule of M is finitely presented over R for M and R-module, R a commutative ring; (2) every finitely generated ideal is finitely presented as a module.
+
+Coherent ring: coherent as a module over itself.
+
+Inverse system: inverse system over the partially ordered set indexed by naturals. Given ring and R-mdoules M_1 <- M_2 <- M_3, composing successive maps, then lim M_i is limit in category of R_modules. More over f_12 : M_1 -> M_2 where f_12 * f_31 = f_32 when this makes sense. Collection of all inverses systems form a category.
+
+Cohen-Macaulay rings: Noetherian local ring R is called Cohen-Macaulay if it is Cohen-Macaulay as a module over itself.
+
+Cohen-Macaulay module: let R be a Noetherian local ring with unique maximal ideal, let M be a FINITE R-module, we say M is Cohen-Macaualay if dim(Supp(M)) = depth(M). This has good properties, in local Cohen-Macaulay rings, any maximal chain of prime ideals have length equal to the dimension.
+
+Prime localsiations of a regular local ring are regular: this is not that easy to show, and a lot of effort is spent to prove this fact. Let (R, m, k) be a ?Noetherian local ring: the following are equivalent: (1) k has finite projective dimension as an R-module; (2) R has finite global dimension; (3) R is a regular local ring. Consequentyl, global dimension of R equals dim(R) = dim_k(m/m^2) for maximal ideal m. 
+
+Integral ring extension: let p: R to S be a commutative ring map, an element s in image S is integral over R if there exists a monic polynomial P(x) in R[x] such that P^p(s) = 0, where P^p(x) in S[x] is the image of P under p: R[x] to S[x]. The ring map is integral if every s in image S is integral over R.
+
 Symbolic power: let R be a ring, let p be a prime ideal for a ring, for n >= 0, the nth symbolic power is the ideal p^(n) is equal to the kernel of the map R to R_p / p^n R_p. 
 
 Definition of prime ideals using symbolic powers of R/p^(n): let R be a noetherian ring, p be prime ideal, n > 0, then Ass(R/p^(n)) = {p}. Proof: suppose q is asscoiated prime of R/p^(n) then p is in q. On the otehr hand, consider x in R, x not in p is a nonzerodivisor on quotient R/p^(n). If y in R and xy in p^(n) = R intersection p^n R_p by definition of asscoaited power, then y is in p^n R_p, hence y is in p^(n).
