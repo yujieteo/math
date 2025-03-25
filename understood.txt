@@ -1,5 +1,43 @@
 UNDERSTOOD
 
+Simple module in terms of length: TFAE: (1) M is simple; (2) length_R(M) = 1; (3) M = R/m for some maximal ideal m in R; https://stacks.math.columbia.edu/tag/00IU 
+
+Jacobson ring: use the definition of Jacobson ideal for every radical ideal I (equal to its radical i.e. I = rad(I) and not just I in rad(I)), is the intersection of all maximal ideals. 
+
+Length of module over M: (1) supremum of chain n for 0 = M_0 in M_1 in M_2 to M_n = M, M_i not equal M_{i+1}. Use injection for inclusion in this case; (2) supremum of lengths of chains of submodules. Modules of finite length are finite. Length is additive in short exact sequences.
+
+Radical / semiprime ideal: radical ideal is set of elements r such that r^n in I for some natural number n. I is in rad(I) since I is less strict, only allowing case n = 1. Radical or semiprime ideal is when ideal equal to its own ideal. Radical of primary ideal is prime ideal. 
+
+Locally nilpotent ideals: an ideal I of comm. ring R is lcoally nilpotent sucht that for every x in I, there exists natural number n such that x^n = 0 or x is nilpotent.
+
+Nilpotent ideals: I^n = 0 for natural n.
+
+Invertibility of 1+I in R: let R be ring with Jacobson radical rad(R), let ideal I in R be an ideal, TFAE: (1) I in Jacobson radical; (2) every element 1+I is a unit in R; (3) every element of R which maps to a unit of R/I is a unit. Proof: suppose f is in Jacobson radical, then f is in all maximal ideals m of R, so 1 + f is not in maximal ideals for m of R, the closed subset V(1+f) of Spec(R) is empty, so 1+f is a unit and nonzero. Conversely, suppose 1+f is a unit for all f in I, if m is a maximal ideal and SUPPOSE I is not in m or Jacobson radical, then I + m = R by definition of maximal ideal, so 1 = f + g for some g in m and f in I by definition of the elements of the equation, g = 1 + (-f) is not a unit, contradiction so I must be in M. This is a good exercise to work out the meaning of results and unravel the definitions, especially what it means for units to not be in V(1+f), as well as characterisation of maximal ideal. For final statement, let f in R map to unit R/I, find g in R mapping to f mod I by definition of R/I, hence fg = 1 mod I by composition, fg is unit of R, so f is unit.
+
+Trick with maximal ideals: if something is not in Jacobson radical, then I + m = R full ring since m is maximal ideal.
+
+Units and prime spectra: if a variety V(f) in Spec(R) is empty, this implies f is unit and nonvanishing. Recall that maximal ideals corresponds to points.
+
+Internal hom in R modules: this was very powerful on a multiplcative closed subset to define localisation as a directed colimit. Let R be a commutative ring, M and N are R-modules, then Hom_R(M,N) is the set of R-linear maps from M to N, comes with structure of abelian group with ring hom (x+y)m = x(m)+y(m), it is also an R-module with scalars. Hom_R defines an additive functor from the category of R-modules Mod_R from Mod_R^op * Mod_R to Mod_R.
+
+Flatness with module maps and equational criterion for latness: TFAE (1) M is flat; (2) if f is module map from free R-module R^n to M, and x in Ker(f), then there are module maps such that there are module maps h: R^n to R^m and g: R^m to M such that f = gh and x in Ker(h), prove by consdering exactness of R^n -> R^m -> M -> 0, so x is in Ker(h)
+
+Weak homotopy equivalences: maps that induces isomorphisms on the homotopy groups. Space you can pick yourself.
+
+Lazard's criterion: let M be an R-module, then M is falt if and only if it is a colimit of a directed system of free finite R-modules. FORWARD: Colimit of directed system of flat modules is flat, directed colimits is exact since tensor product is let adjoint preserving colimits and directness, hence if M is colimit of directed system of free finite modules, then M is flat; CONVERSE: module can be written as colimit of directed system of finitely presented modules (we used R is commutative here) idea is to make set of ordered pairs (J, N), J finite subset of I and N is finitely generated submodule R^J intersect K, E can be made into directed preorder using morphism (J,N) less than or equal to (J', N'), this is a thin category, define this ordered pair as a quotient or simplicity M_e = R^J / N, f_ee' is natural map M_e to M_e' to be the natural map for e <= e', then this induce colim M_e to M. Stacks give the next two steps by case analysis, using a finite basis (using the fact F is ree) to show M_e' = R^J' / N' is isomorphic to M, the argument is very subtle, need a bit of work to understand. https://stacks.math.columbia.edu/tag/058G 
+
+Example of localisation as flat directed colimit: R -> R -> R are multiplication by S, example pick R = Z, and s = 2, we have Z to Z to Z to Z, which is isomorphic to Z to 0.5Z to 0.25Z and so on, colimit is localisation Z[1/2] in Q. See Eric Wofsey's answer: https://math.stackexchange.com/questions/2665044/ring-localization-as-directed-colimit-of-finitely-generated-free-module 
+
+Localisation as category: object set is multiplicatively closed subset, morphism s to t is an element u in S such that us = t, identities and composition is well defined since S is multiplicative, u: s -> t is a morphism (or in fact a morphism object), then there is a unique homomorphism of A-algebras A_s to A_t. The colimit has the same universal property as S^{-1} A hence they are isomorphic. Construction works for arbitrary commutative rings (note, we used us = t, so morphisms are sections). Careful, this is only a preorder, reflexive and transitive, not symmetric.
+
+Preorder on multiplicatively closed set: multiplicatively closed set have a natural preorder, whose colimit is the localisation.
+
+Class number: size of class group
+
+Class group isomorphism: canonical isomorphism to the Galois group of the maximum unramified abelian extension
+
+Localisations are flat by Lazard’s theorem: first show that it is a filtered colimit, then by Lazard’s module is flat if it is a colimit of a directed system of free finite R-modules so localisations are flat.
+
 Double dual functor is naturally isomorphic to identity functor: proof by considering double dual of vector spaces giving the same space, double dual of linear maps of finite dimensions to get the same linear map due to the fact that these admit representations by matrices.
 
 Definition of equivalence of categories: given a covariant functor it gives equivalence of categories if it is fully faithful and F is essentially surjective i.e. isomorphism of objects b and F(a) for object a in category A and object b in category B.
