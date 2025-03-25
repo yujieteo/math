@@ -1,5 +1,15 @@
 UNDERSTOOD
 
+Well ordering principle: nonempty set of natural numbers has least element.
+
+Left derived functor in the language of cocartesian fibrations: convert functor f from categories C to D into a cocartesian fibration p : eps to [1], localise eps, if localisation esp’ of esp remains cocartesian over [1], we say f has a left derived functor. It can also be derived as the right Kan extension, right derived functor can be defined as the left Kan extension of localisation? Need infinity categories, see Hinich’s paper “What is a Derived Functor” for this to make sense. See also Dwyer-Kan localisation.
+
+Secondary A-modules: let A be commutative ring, an A-module m is said to be secondary if M is nonzero and for each a in A, the endomorphism p_a from M to M defined by p_a(m) = am for m in M is either surjective or nilpotent, if M is secondary then P = rad(ann(M)) is a prime ideal, and M is said to be P-secondary. Nonzero quotients of a P-secondary-module is P-secondary (equivalence relations only eliminates cases for endomorphism).
+
+Examples of secondary A-module: A is integral domain, quotient field K is (0)-secondary A-module, A is local ring with maximal ideas P and if all element of P is nilpotent, then A itself is a P-secondary A-module.
+
+Secondary presentation: expression of secondary modules as finite sum of secondary submodules M = N_1 + … N_n, this representations minimal if the prime ideals P_i = rad(ann(N_i)) are all distinct and none of the N_i is redundant.
+
 Flat functor: functor to set is flat if it is the filtered colimit of representable functors. Example: module F: C to Set is flat if and only if the tensor product is left exact. Localisation is a flat functor. Example, take localisation to be defined as filtered colimit, then show using Lazard's criterion that it is a flat functor.
 
 Flat functors and points of pre sheaf topos: If C is finitely complete, F is flat if and only if it is left exact and preserves finite limit, so tensor product is left adjoint. To generalise this for a small category, the category of topos point of the pre sheaf topos Set^{C^op} or the geometric morphisms from Set to Set^{C^op} and the natural transformations between them is equivalent to the category of flat modules of C.
