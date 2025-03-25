@@ -1,5 +1,13 @@
 UNDERSTOOD
 
+Flat functor: functor to set is flat if it is the filtered colimit of representable functors. Example: module F: C to Set is flat if and only if the tensor product is left exact. Localisation is a flat functor. Example, take localisation to be defined as filtered colimit, then show using Lazard's criterion that it is a flat functor.
+
+Flat functors and points of pre sheaf topos: If C is finitely complete, F is flat if and only if it is left exact and preserves finite limit, so tensor product is left adjoint. To generalise this for a small category, the category of topos point of the pre sheaf topos Set^{C^op} or the geometric morphisms from Set to Set^{C^op} and the natural transformations between them is equivalent to the category of flat modules of C.
+
+Sequential colimits: filtered colimit whose diagrams indexed by partially ordered set of natural numbers.
+
+Germs in terms of filtered colimits: elements in filtered columns in Set and Gap are classes of equivalences called germs. Filtered limits in Set and Top are given as families of compatible elements called threads.
+
 Artinian ring dimension definition: Noetherian ring of Krull dimension 0.
 
 Finite modules have filtrations such that successive quotients are cyclic modules: let R be a ring, let M be a finite R-module, there exists a filtration by finit eR-submodules such that each quotient M_i / M_i-1 is isomorphic to R/I_i for some ideal I_i of R. Proof by induction on number of generators of M, since M is also finitely generated, let x_1 to x_r in M be generators, let M' = Rx_1 in M by definition, then M / M' has r - 1 generators, induction hypothesis applies. Clearly M' is isomorphic to R/I_1 and so forth, with I_1 defined as {f in R | fx_1 = 0}.
