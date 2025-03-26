@@ -1,5 +1,9 @@
 UNDERSTOOD
 
+Exterior powers: powers of the binomial coefficient.
+
+Proper inverses, sections and retracts: sections are right inverses, retracts are left inverses, if a section is a retract than it is a proper inverse.
+
 Isomorphisms of locally ringed spaces, and reflecting isomorphisms: let X and Y be locally ringed spaces, if f is an isomorphism of ringed spaces from X to Y, then suppose A and B are local rings, isomorphism of rings A to B is a local ring isomorphism. So the functor from locally ringed spaces to ringed spaces reflect isomorphisms.
 
 Integral ring homomorphism preserves closed point under Isbell adjunction: if p from A to B is an integral homomorphism, Spec p from Spec B to Spec A mapping closed point to closed point since if D in D’ and D’ is a field, D is a field following from integral extension of integral domain. This gives the motivation for calling it integral ring homomorphisms. https://math.stackexchange.com/questions/424408/when-is-the-image-of-a-closed-point-closed-under-a-morphism-between-schemes

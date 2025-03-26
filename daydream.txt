@@ -8,8 +8,6 @@ Image of measurable function inherits measurable from codomain: why is this the 
 
 Motivate primary decomposition theorem in Serre with last two props.
 
-What is locally free?
-
 Different notions of localisation.
 
 Hasse invariants?
@@ -19,8 +17,6 @@ Quillen’s construction of R even periodic.
 Quillen formal group?
 
 H1 or sheaf cohomology classifies torsors of a group make this make sense. H1 of a Lie group on manifold g classifies principal g bundles.
-
-All functors
 
 All category adjectives
 
@@ -57,8 +53,6 @@ Closed sets with infimum norm = 0 but no points in common. Hint: similar to Z, t
 What is a spoof?
 
 Nilpotent thickening of a field?
-
-Diagonal is closed is equivalent to Hausdorff. Prove this. Now prove that separated scheme is the right condition that preserves Hausdorff-ness, since for separated schemes diagonal morphisms are closed.
 
 Dedekind cuts on the posets and the Yoneda lemma: the least upper bound b represents the set of elements below b, this is the Yoneda lemma on the category of posets.
 
@@ -115,8 +109,6 @@ Comparison of Cayley-Hamilton proof to physics: compare the algebraic geometry p
 Comparison to classical density argument in commutative algebra for Cayley Hamilton theorem: prove the Cayley Hamilton theorem, start with diagoanlisable matrices satisfy the theorem, these are dense in the full space of the commutative ring, therefore, non-diagonalsiable matrices satisfy the theorem since characteristic polynomial is of finite degree, in finitely many aentries of the matrices.
 
 Intuition for normal subgroups as relativistically invariant, this does not make sense?
-
-Compact object? Ind(C)? comparison object?
 
 Natural transformations of functors: show that a natural transformation of functors C to D is the same as a functor 2 * C to D, where 2 = {0 -> 1}. What is the domain and codomain of this natural transformation? (Hint, restriction from {0} * C and codomain is restriction from {1} to D). Now relate this to a homotopy (hint: unit interval, so it looks like a pre-homotopy).
 
@@ -184,8 +176,6 @@ Ring homomorphism with suitable enrichment of extension of scalars: consider R-m
 
 TOTAL Left derived functor and TOTAL right derived functor: compose representation functor F: C -> D and localisation functor D -> Ho D, this admits what along the localisation functor C -> Ho C (hint: admits Kan extension)? What is this called?
 
-Hilbert's basis theorem and rings, and polynomial rings: rings have representing object Z with generator 1, poly rings have representing object Z[x], with generator 1, Noetherian is preserved under some functor, is this the Hilbert basis theorem?
-
 Operads from categories: gradually build up definition of categories, with objects and sets worth of morphisms with associative functoriality. Replace morphisms with hom objects in another category to define enriched categories. Allow Hom objects to take in arbitrary arguments to define operads.
 
 Attitude exercise: expose the attitudes of the following concepts, series (hint: sums), copresheafs/representations (hint: sheafification), sieves (hint: subfunctor of representable, what about Grothendieck topology), quivers (directed graphs, but what about quiver representations?), causal set (partially ordered set, but what about?), fields in physics (sections of fibre bundles), random variables (real values measurable  maps, but sample space to space of states), dynamical systems (set with group action G*S to S, group with time, S with space, f to be laws of motion), curve (smooth function, but parameterisation), module object (action object over monoid objects, but mainly to emphasise (bi)linearity)
@@ -226,12 +216,6 @@ Geometric realisation of categories: desribe the functor that sends categories t
 
 Splitting over C[x,y]
 
-Sections as right inverse of morphism 
-
-Retraction as left inverse of morphism 
-
-Proper inverse exist if sections are retractions. Retractions feel like retract.
-
 List all Chern classes
 
 Natural transformations of group actions as categorical morphisms are just group homomorphisms make this make sense
@@ -242,7 +226,7 @@ Existence of nilpotents: what is the difference between topological space of sch
 
 Orthogonal projection and integral domain: consider element (1,0) in Cartesian product of R and S. Consider the orthogonal projection x^2 = x, show that you cannot conclude that r^m = r^n implies r^(m-n) = 1 and this motivates the definition of an integral domain. Define an integral domain?
 
-Global sections functor: work out the following details, what functor does Z represent as object (hint: Hom(G, -), you can consider any group Hom from Z to H to be uniquely determined by image of 1 in H), what about Spec(Z)? What about Hom(-, Spec(Z)? Global sections functor is representable by Hom(-, Spec(Z)).
+Global sections functor: work out the following details, what functor does Z represent as object (hint: Hom(G, -), you can consider any group Hom from Z to H to be uniquely determined by image of 1 in H), what about Spec(Z)? What about Hom(-, Spec(Z))? Global sections functor is representable by Hom(-, Spec(Z)).
 
 Sheaf as contravariant functor of opposite category: Affine schemes are the opposite category of commutative rings. Make this make sense by thinking about sheaves. This is the Nullstellensatz. What is the initial object of commutative rings? (Hint: it is the integers) Argue by duality that Spec Z must be the terminal object of affine schemes. Therefore, argue from definition that for any scheme there is a unique map to Spec Z.
 
@@ -364,21 +348,22 @@ Polynomial maps?
 
 Linear maps?
 
-Vakil 1.2F: (a) show localisation cmmutes with finite products or equivalently with finite direct sums; (b) localisation commutes with arbitrary direct sums; (c) localisation fails to commute with infinite products hint take series (1/s) which is infinite product of Q. This means that the map of infinite products induced by the universal property is not always isomorphism; (d) localisation does not always commute with Hom, except when Hom is finitely presented.
+Vakil 1.2F: (a) show localisation commutes with finite products or equivalently with finite direct sums (it is a directed colimit, then apply Lazard's criterion); (b) localisation commutes with arbitrary direct sums (likewise with directed colimit, apply Lazard's criterion); (c) localisation fails to commute with infinite products hint take series (1/s) which is infinite product of Q. This means that the map of infinite products induced by the universal property is not always isomorphism; (d) localisation does not always commute with Hom, except when Hom is finitely presented.
 
-Vakil 1.2E: construct the localisation map from M to its localisation, define elements, then check that it is a module, see one subtle point by Borcherds where you need something extra that I cannot remember I think it is no nonzero divisors. I am STUCK only at carefully checking all details.
+Vakil 1.2E: construct the localisation map from M to its localisation, define elements, then check that it is a module, see one subtle point by Borcherds where you need something extra that I cannot remember I think it is no nonzero divisors. Simple, check transitivity then we have b^2(ac - ca) = 0, and b^2 needs to be a nonzero divisor.
 
 Vakil 1.2D: verify that maps from A to its localisation have a suitable universal property. Define it, verify it. Map that sends elements to its invertibles must factor uniquely through its localisation.
 
-Vakil 1.2C: show that A to its localisation S^{-1} A is injective if A does not have zero divisors. STUCK: need definition of localisation, injective, and zero divisors.
+Vakil 1.2C: show that A to its localisation S^{-1} A is injective if A does not have zero divisors. STUCK: need definition of localisation, injective, and zero divisors.Localisations preserve flatness.
 
 Vakil 1.2B: initial and final objects in Set, Rings, Top (if they exist), we have initial as empty set, final as singleton set. Actually I get stuck thinking naturally why these must be the correct objects. STUCK on rings (do not understand why Z is initial object, and zero ring i.e. 0 = 1 is terminal object), Top is empty and Sierpinski two point space.
 
-Vakil 1.2A: show two initial/terminal objects are uniquely isomorphic. These are representing objects of limits and colimits, therefore as universal properties there is a natural isomorphism between them.
+Vakil 1.2A: show two initial/terminal objects are uniquely isomorphic. (Universal property, unique map to initial and terminating object) These are representing objects of limits and colimits, therefore as universal properties there is a natural isomorphism between them.
 
 Vakil 1.1D: show that vector space with bases to finite dimensional vector space without bases by describing a suitable inverse functor. STUCK, my best guess is forgetting the base somehow, so use forgetful functor. Really I should try describing these categories in detail.
 
 Vakil 1.1C: show that double dual functor is naturally isomorphic (not just natural transformation) identity functor in category of finite dimensional vector space. STUCK: can't see where finite dimensional is needed here, but I can think of counterexamples without finiteness condition being left shift operator, taking double dual of that will fail. these are from functional analysis.
+Finite dim needed for representations as matrices to make sense.
 
 Vakil 1.1A: UNIMPORTANT EXERCISE. A category in which each morphism is an isomorphism is called a groupoid. (This notion is not important in what we will discuss. The point of this exercise is to give you some practice with categories, by relating them to an object you know well.) (a) A perverse definition of a group is: a groupoid with one object. Make sense of this: One object as symmetries and guarantees closure, isomorphisms guarantee invertible. (b) Describe a groupoid that is not a group. Easy: homotopies with different base points.
 
@@ -394,7 +379,7 @@ Vakil exercise: presheafs F(U) global sections as Homs(U -> Y), U is some sort o
 
 Representative of equivalence class as representation theory? Pick space X, pick special equivalence relation (usually homotopy), then you can have some sort of nice classification.
 
-Build a concrete example with kernels as limits, cokernels as colimits. It is quite easy, these are equalisers and coequalisers.
+Build a concrete example with kernels as limits, cokernels as colimits. It is quite easy, these are equalisers and coequalisers. Example, equaliser of map with 0 map, requires kernel in the left of exact sequence. Cokernel is coequaliser of map with 0 map. Kernels are representing object of the equaliser of a map with the zero map.
 
 Vakil exercise: stalks as colimit, equivalence relation, F is sheaf of rings, then stalk F_p is also a ring. Figuring out how to add and subtract things on stalk, we add on intersections,if they are the same open functions, then take the same restrictions so this is well defined, then you realise it maps all into it so it must be a colimit.EASIEST EXERCISE: stalks are colimits of sections. Now stalks are local rings if X are geometric spaces. Interestijng, does it make sense to say maximal ideal to be some sort of colimit.
 
@@ -673,7 +658,7 @@ Make this make sense: pushforwards are nice on sections bad on stalks, pullbacks
 
 https://math.stackexchange.com/questions/313940/cohomology-with-coefficients-in-the-sheaf-of-distributions
 
-Extension of scalars?
+Extension of scalars? Right projection of tensor product map to another scalar.
 
 Pushforward and inverse image of sheaves as adjoints?
 
@@ -756,8 +741,6 @@ Show equivalence of definitions: variety is irreducible iff every dense open sub
 
 Example of  "affine basis" of the plane z=1 in R3? I'm curious if there is an element of this basis that corresponds to the origin. Is <1,0,1>,<0,1,1>, <0,0,1> an affine basis? A set is an affine basis of when you translate it so that one element is the origin, the rest forms a basis
 
-Exterior power?
-
 Prove rings are unital, then every left artinian ring is also left Noetherian, so you have both ACC and DCC
 
 component of a point x from X is a union of all connected subsets of  X that contain x
@@ -779,8 +762,6 @@ Poincaré duality.
 Cohomology, differential forms, currents, de Rham theory, Thom isomorphism.
 
 Morse theory and the Witten complex.
-
-Vector bundles and Chern Classes.
 
 Equivariant cohomology (classifying spaces sort of explained), localisation.
 
@@ -863,8 +844,6 @@ Additive White Gaussian Noise channel?
 Adeles? Why do this, why embed a field into its direct product of all completion.
 
 Affine communication lemma? See Vakil. If affine open subset Spec A injects into X has property X, then for any f in A, then Spec A_f injects into X has this property. Part II, if (f_1, ... f_...n)= A Spec A_fi injects into A for all i so Spec A injects into X.
-
-Affine versus projective?
 
 Alexandrov topology?
 
@@ -1024,8 +1003,6 @@ Differential geometry using locally ringed spaces? See Sheaves on Manifolds by K
 
 Dilworth's theorem?
 
-Directed joins versus normal joins?
-
 Directed suprema?
 
 Dirichlet functional?
@@ -1058,17 +1035,15 @@ Don’t fully understand Borcherds complete computation of Tor over finitely gen
 
 Don’t fully understand how tensor and Hom are adjunctions? Constant is left adjoint to limits which are right adjoint. Colimit is left adjoint to constant which are right adjoint
 
-Don’t fully understand locality and glueing? Why do we need these in contrast when we do open covers that do all the work for us. See separated presheaf, sheaf, scheme constructions.
-
 Don’t understand Zhen Lin’s comment: usual five lemma follows from the short five lemma: factor each morphism appearing in the rows into an epimorphism followed by a monomorphism.
 
-Don’t understand how to keep it in head? Kunneth formula. Duality
+Don’t understand how to keep it in head? Kunneth formula.
 
 Don’t understand measurable functors and the fact that the realisation of a probability law is a natural transformation from the random variable functor to the measurable functors? Where in the construction do you want the measurable functor to use the axiom of dependent choice?
 
 Don’t understand the definition of quasiinverse? https://ncatlab.org/nlab/show/weak+inverse. Princial of equivalence?
 
-Don’t understand the salamander lemma, it’s proof and its importance.
+Don’t understand the salamander lemma, it’s proof.
 
 Don’t understand what are covering sieves, local isomorphisms and separated presheaves?
 
@@ -1111,8 +1086,6 @@ Examples of a cofree functor.
 Explicit calculation of Jordan canonical form over C to be GL(n,C)?
 
 Explore https://notebookarchive.org/frequencies-of-named-theorems-in-arxiv-math-mathoverflow-and-stackexchange-mathematics--2020-09-8sywjs5/.
-
-Exterior powers of vector space?
 
 Fano’s inequality proof? Motivation (hint: channel coding theorem)
 
@@ -1268,7 +1241,7 @@ How are types of sheaves intuitionistic in nature? https://studenttheses.uu.nl/b
 
 How are vector bundles equivalent to class groups? https://www.math.uchicago.edu/~may/VIGRE/VIGRE2008/REUPapers/Clarkson.pdf
 
-How do I compute homologies my head with practice exercises?
+How do I compute homologies my head with practice exercises? See Weibel exercises, I have yet to copy those over.
 
 How do holomorphic function in complex analysis related to regular functions in algebraic geometry?
 
@@ -1366,8 +1339,6 @@ I don’t understand why how symmetric monoidal tensor products as left adjoints
 
 I read somewhere that there is perfectoid spaces are a third group of all but I cannot remember?
 
-I still don't understand how nilradical form the intersection of all prime ideals of a commutative ring. This is not intuitive to me. Prove it again, proof is available.
-
 I still don’t understand cohomology other than it is some sort of dual to homology, it is a generalisation of an abelian group, it has some coefficients.
 
 Motivation for normalisers? https://en.wikipedia.org/wiki/Centralizer_and_normalizer
@@ -1397,8 +1368,6 @@ Integral extension?
 Intermediate value theorem? Revisit.
 
 Intersection of affines covered by finite number of affines i.e. QCQS lemma?
-
-Intuition behind examples of filtered category?
 
 Intuition for Cauchy sequences?
 
@@ -1533,8 +1502,6 @@ Nilpotence theorem of CW complexes.
 Nisnevich descent, etale descent, ??? You have some sort of topology you want that is not like the typical topology, since they are somewhat disconnected, certain glueing exists. This motivates these forms of descent, topologies…
 
 Noether's theorem? Symplectic version.
-
-Noetherian normalisation?
 
 Non-constant function between two compact Riemann surfaces, how is it related to Galois theory?
 
@@ -1796,7 +1763,7 @@ Uniquely decodable code?
 
 Uniqueness theorem? This one seems super vague.
 
-Universal coefficient theorem
+Universal coefficient theorem. This is homological algebra where Tor appears at the very end. See Borcherd's introduction to it. Don't understand how it motivated category theory.
 
 Upper topology?
 
@@ -1844,8 +1811,6 @@ What are covering sieves? What are Grothendieck constructions? How did Scholze d
 
 What are eliminators and constructors in type theory?
 
-What are finite limits, Cartesian closed, and subobject classifiers?
-
 What are function spaces that you can fit in your head? This is very difficult, so start with simple examples of function spaces and work with those instead?
 
 What are inductive systems and why should I care about formal filtered colimits? Ncat says that large categories are equivalent to inductive categories and are hence accessible in some sense of the word?
@@ -1855,12 +1820,6 @@ What are lifts and where does the duality of projective resolutions and injectiv
 What are modalities and why is it important?
 
 What are modalities? Why should I care about modalities? See Egbert Rijke's articles on it.
-
-What are projective objects and projective resolutions?
-
-What are projective resolutions?
-
-What are representable functors as upper sets or posets?
 
 What are semi simple Lie groups and Lie algebras?
 
@@ -1918,7 +1877,7 @@ Which distributions best model which problems? Create a list.
 
 Whitney extension theorem?
 
-Why ar proper curves projective? https://math.stackexchange.com/questions/2629341/proper-curves-over-some-field-are-
+Why are proper curves projective? https://math.stackexchange.com/questions/2629341/proper-curves-over-some-field-are-
 
 Why are Galois extensions normal and separable? Why is this the right definition?
 
@@ -1934,13 +1893,11 @@ Why are there no analogs of the Lebsegue measure?
 
 Why can pushouts be used to construct suspension, join, cones, wedges? These can be done in classical homotopy theory?
 
-Why can’t constructs in commutative algebra like rings, ideals (functor from group conjugation), be directly expressed in terms of functors? https://math.uchicago.edu/~amathew/chthreeimportantfunctors.pdf
+Why can’t constructs in commutative algebra like rings, ideals (functor from group conjugation), be directly expressed in terms of functors? (Hint: they can) https://math.uchicago.edu/~amathew/chthreeimportantfunctors.pdf
 
 Why care about Artinian ring? Situations involving finitely many prime ideals, or finitely many points ofn a scheme, reduced to a statement about Artinian ring.
 
 Why care about constructivity?
-
-Why care about reduced rings?
 
 Why classification of compact, connected and simply connected Lie group is so simple?
 
@@ -2066,8 +2023,6 @@ smooth scheme?
 
 the Fourier-Mukai transform and why should I care about it?
 
-the Freudenthal suspension theorem and how is it used to define spectra?
-
 the Freudenthal suspension theorem and how is it used to define spectra? Also, what motivated the suspension theorem, it was invented very early in the 1930s.
 
 the McKay correspondence between Dublin diagrams, platonic splits, finite subgroups of the special orthogonal group in three dimensions, finite subgroups of the special unitary group, and the simple Lie group. Why should I care about the McKay correspedoence?
@@ -2091,8 +2046,6 @@ Define the homotopy excision theorem and how does it prove the Freudenthal suspe
 the implicit function theorem in differential geometry?
 
 the left adjoint of the random variable functor? It seems to forget some set of real numbers and converts it into outcomes?
-
-the mathematical motivation behind the notion of filtration?
 
 the motivation behind a diagonal morphism, and why should we care about separated morphisms so much it warrants its own functor adjunction?
 
