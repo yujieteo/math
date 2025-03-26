@@ -1,5 +1,7 @@
 UNDERSTOOD
 
+Isomorphisms of locally ringed spaces, and reflecting isomorphisms: let X and Y be locally ringed spaces, if f is an isomorphism of ringed spaces from X to Y, then suppose A and B are local rings, isomorphism of rings A to B is a local ring isomorphism. So the functor from locally ringed spaces to ringed spaces reflect isomorphisms.
+
 Integral ring homomorphism preserves closed point under Isbell adjunction: if p from A to B is an integral homomorphism, Spec p from Spec B to Spec A mapping closed point to closed point since if D in D’ and D’ is a field, D is a field following from integral extension of integral domain. This gives the motivation for calling it integral ring homomorphisms. https://math.stackexchange.com/questions/424408/when-is-the-image-of-a-closed-point-closed-under-a-morphism-between-schemes
 
 Application of the Lemma on Spec map induced by ring Hom: consider example of affine line on the integers being the set of prime ideals of poly ring, let f from affine line on Z to Spef Z denote the continuous map induced by the canonical ring homomorphism from Z to Z[T] then we have a partition where the affine line on Z is made up by the union of the preimage of the zero ideals and the union of all primes by the preimage of pZ for every prime in Z. This is called a partition of the affine line on Z. Studying it, we can take the localisation at zero ideals to get a canonical homeomorphism between the preimage of the zero ideal and set of prime ideals of Q[T] denoting the affine line. Let p be a prime number, then an ideal is in the preimage of this map f of ox if and only if p is in p, so Z[T]/(p) gives finite field algebra F_p[T], from 1(b) we have a homomorphism between the preimage of f from pZ and the coordinate ring or the affine line over a finite field. This brings affine lines over Q and finite fields into a single space.
@@ -627,6 +629,8 @@ Schemes and open subschemes: ringed topological space on open covers such that p
 Morphism of ringed topological space: consists of continuous map (much like def of ring homomorphism) in the level of topological space and a morphism of sheaf of rings that is contravariant such that stalks are local homomorphism on maximal ideals. Morphisms of schemes are morphisms on the level of ringed topological spaces so that is why this is important.
 
 Open immersion of schemes: respectively closed if morphisms of ringed topological spaces are isomorphisms (for every point in top) and an open immersion for the continuous map in question.
+
+Open immersion of locally ring spaces: let f from X to Y be a morphism of locally ringed space, we say f is an open immersion if f is a homeomorphism of X onto open subset of Y, and the map f^-1 O_Y -> O_X on the sheaf of rings is an isomorphism. This feels like some sort of continuity condition.
 
 Residue field: the quotient of the structural sheaf with its maximal ideal associated with the local ring.
 
@@ -4031,7 +4035,11 @@ Wiener process derivative: comprises of drift term and diffusion term.
 
 Diffusion term in probability: dertivative of the white noise.
 
-Locally ringed space: (1) is a ringed space i.e. all stalks at x are a local ring. Ringed space such that all presheafs are local rings i.e. colimits of global section functors of opens. By duality between commutative algebra and algebraic geometry, this corresponds to maximal ideals; (2) sheaf + topological space. The idea is fairly simple, you have a ring of functions locally on each open set.
+Locally ringed space: (1) is a ringed space i.e. all stalks at x are a local ring. Stalks on prime spectrum of ring are the local rings of R at its primes. Ringed space such that all presheafs are local rings i.e. colimits of global section functors of opens. By duality between commutative algebra and algebraic geometry, this corresponds to maximal ideals; (2) sheaf of rings + topological space (formed by Spec or set of prime ideals). The idea is fairly simple, you have a ring of functions locally on each open set.
+
+Morphism of locally ringed spaces: morphism of ringed spaces such that for all x in X the induced ring map is a local ring map.
+
+Example of sheaf of smooth functions: consider C^infty or smooth manifolds and morphisms of smooth manifolds, the sheaf of smooth functions is a sheaf of rings on a smooth manifold. Any map ofmanifolds if and only if for every local section h of the sheaf of smooth function the composition is a local section, this gives a copvariant morphsim of ringed spaces f from (M, sheaf on M) to (N, sheaf on N).
 
 Notation for locally ringed space: Spec A is (Spec A, O_{Spec A}) by abuse of notation. Howevr next step is fully faithful functor from opposite category of ring to locally ringed spaces, evolving from opposite category of topological space to sets.
 
