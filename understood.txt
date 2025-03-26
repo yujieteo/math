@@ -18,7 +18,9 @@ Global section is zeroth cohomology: let G* be injective resolution for sheaf F,
 
 Global section is zeroth cohomology warning: in the definition of derived functors, you have to "chop off" the left-most object in the injective resolution (i.e., the object you started with) before applying the functor and taking homology.
 
-Global sections of a presheaf of sets over a site C: this is the set of morphisms in the category of presheaves over a site C from the final object (terminal object, not initial object, recall that it is trivial) to the presheaf of sets. The presheaf that associates every boejct a singleton. Why is this definition important? You now have every object a singleton, this helps in constructing a moduli space, fote sites without a final object. This is the most general definition of the fucntor of global sections. See Stacks 7.45.
+Global sections of a presheaf of sets over a site C: this is the set of morphisms in the category of presheaves over a site C from the final object (terminal object, not initial object, recall that it is trivial) to the presheaf of sets. The presheaf that associates every object a singleton. Why is this definition important? You now have every object a singleton that can be used in algebra, this helps in constructing a moduli space, note sites without a final object. This is the most general definition of the functor of global sections. See Stacks 7.45.
+
+Isbell adjunction from global sections: warning this intuition is not perfect we have natural isomorphism (global sections on presheaf (LRSP -> CRing), copresheaf) is naturally isomorphic to (presheaf, spectrum on copresheaf (CRing -> LRSp)). Note prime ideals serve as functors, then the set of them form a spectrum.
 
 Computation of global sections from coequaliser in Sh(C): let C be a site, let a, b from V to U be objects of cite C such that h_V ->-> h_U -> * is a coequaliser in category of sheaves over a site Sh(C), then the sheaf of sections is the equaliser of a*, b* dual on sheaves F(U) -> F(V) contravariantly. Proof is by definition by taking Mor_{Sh(C)} (h, F) = F(U).
 

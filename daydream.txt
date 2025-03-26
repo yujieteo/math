@@ -1,5 +1,7 @@
 DAYDREAMS:
 
+Hartshorne, chapter 2, 2.4, use the fact that Hartshorne proved this for locally ringed spaces, then use the fact that you can cover a scheme with open affine schemes, and the right definition for this adjunction holds is due to gluing and stuff. https://mathoverflow.net/questions/57777/question-about-the-spec-and-global-section-functors and also https://stacks.math.columbia.edu/tag/01I1 solves this exercise.
+
 Hartshorne, chapter 2, 2.10, Spec R[x] looks like, 2D point generic point {0}, then points (x - a), then there are also pairs of points (x - a - ib). Not Hausdorff, and it has parts of various dimension in comparison to R.
 
 Hartshorne, chapter 2, 2.6, the spectrum of the zero ring is the empty topological space, there is a map from the empty topological space to other underlying topological spaces in schemes. By Isbell adjunctions, this corresponds to the fact that the zero ring is the terminal object in the category of commutative ring. There is a unique morphism to the zero ring from every ring by sending all elements to zero.
