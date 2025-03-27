@@ -1,5 +1,68 @@
 UNDERSTOOD
 
+Computations of injective and surjective complexes: 0 -> M -> N, map from 0 to M is d_{I+1}, map from M to N is d_{I+1}, if this is exact we have Ker(M -> N) =  Im(0 -> M) for exactness, so kernel is zero (since image 0 -> M is 0) so injective. Consider for M -> N -> 0, if this is exact we have Ker(N -> 0) = Im(M -> N). The image from M to N is all of N (since we consider Ker(N -> 0), this is only if this is surjective). See Wikipedia article. I prefer Eisenbud’s notation for exact sequences since it makes things clear, and use image of left map = kernel of next map. Then Kernel/Image gives homology.
+
+Classic differential operators short exact sequence: I finally know how this works: 0 -> R -> Cinfty(R3, R) -> grad Cinfty(R3, R3) -> curl Cinfty(R3, R3) -> div Cinfty(R3, R) -> 0.
+
+Short exact sequence for resolutions: 0 -> Z -> Q -> Q/Z -> 0 is injective resolution of Z, flat resolution of Q/Z.
+
+Exponential sheaf sequence: 0 -> 2 pi I Z -> O_M -> O*_M -> 0, O_M is sheaf of holomorphic functions on complex manifold, O*_M is sheaf of nonvanishing functions due to exponential function. Cohomology group H^0(O_U*) is set of non vanishing holomorphic functions on U. Cohomology group H^1(2 pi I Z_U) gives 2 pi I times integer for each closed loop and winding number of each non vanishing holomorphic function. So cohomology 0 gives non vanishing holomorphic function with cup product it now has an algebra, cohomology 1 gives winding number and group structure of circle group, with it's own algebra. Image of line bundle in next cohomology group in cohomology 2 gives the next exact sequence.
+
+Euler’s identity as exact sequence: 0 -> 2 pi i Z -> C -> C* -> 1, gives exp(pi i) = -1. Im(C -> C*) =  Ker(C* -> 1), exp(2 pi i) = 1.
+
+Circle exact sequence: 0 -> Z -> R -> S1 -> 0, or use Pontryagin dual Hom(Z, T) as S_1, then Tate’s thesis gives 0 -> K -> A_K -> Hom(K, T) -> 0. K is global field, A_K is adele ring, this applies Pontryagin duality functor. Gives nice definition of adele ring.
+
+Isometry exact sequence: 0 -> R^d -> Isom(R^d) -> O(R^d) -> 0. Forget about origin and use V = R^d as affine space, there is a copy of the left hand sides R&d as translations in the isometry group, there is component of orthogonal group on right hand side. This is also a split exact sequence.
+
+Lie algebra exact sequence: sequence from 0 -> rad(g) -> g -> g/rad(g) -> 0, separate Lie algebra g to its solvable radical rad(g) and it ssemisimple projection g/rad(g).
+
+Nilpotent group exact sequence: 0 -> Z(G) -> G -> G/Z(G) -> 0, centre Z(G),, if G is nilpotent then G/Z(G) is nilpotent with nilpotency degree decremented by 1.
+
+Topology group exact sequence: 0 -> G^0 -> G -> G/G^0 -> 0, G^0 is identity component, G/G^0 is the totally disconnected component.
+
+Hilbert space exact sequence: 0 -> K(H) -> B(H) -> Q(H) -> 0, K(H) is compact operators on Hilbert space, B(H) is bounded operator, Q(H) is Calkin algebra, invertible modulo compacts or being Fredholm is same as being invertible in Calkin algebra.
+
+Equivalence of cochain short exact sequence: 0 -> Im(d) -> Ker(d) -> H(C,d) -> -, implies 0 -> H(C,d) -> Coker(d) -> Im(d) -> 0 for cochain complex (C,d)
+
+Universal coefficient theorem (homology version): 0 -> H_n(C) *_R A -> H_n(C *_R A) -> Tor_1^R(H_n-1(C), A) -> 0. Kunneth is a derivative of this, when you take direct sums over i + j = k+1, where middle term is direct product of X * Y, R is PID. Need R be PID.
+
+Banach space short exact sequence: 0 -> c_0 -> l_infty -> l_infty / c_0 -> 0, c_0 is spaces convergent to 0, l_infty is space of bounded sequences, both endowed with supremum norm. This does not split (Sobczyk’s theorems).
+
+Free presentation exact sequence: 0 -> R -> F -> G -> 0, R and F being free groups of relators, G is a free group of generators modulo relations in R.
+
+Kernel cokernel exact sequence in category: for A -> B -> C, map f from A to B, map g from B to C, then exactness of 0 -> ker f -> ker gf -> ker g -> Coker f -> Coker gf -> Coker g -> 0. Map from ker g to Coker f factors through B. Show that gf is invective iff f is injective and ker j injective to Coker f. Shows that gf is subjective if g is surjective and ker j surjective to Coker f. Show that gf is isomorphism if f injective, g surjective, ker j to Coker f is isomorphism.
+
+Torsion subgroup exact sequence: 0 -> T(A) -> A -> A/T(A) -> 0, T(A) is torsion subgroup of A, A/T(A) is torsion free.
+
+Addition of numbers as exact sequence: 0 -> Z_10 -> Z_100 -> Z_10, group in middle is Z_10 * Z_10 twisted by a 2 cockle. Two cocycle is given by first digit 0 if n+m < 10, and 1 if n+m >= 10. This is just summation of two digit numbers.
+
+Maschke’s theorem as short exact sequence: every short exact sequence of k[G]-modules 0 -> V_1 -> V_2 -> V_3 -> 0 splits. So k[G] is a semi simple ring. Or k[G] is both injective and projective. Apply Artin-Wedderburn theorem, k[G] is a product of matrix algebras.
+
+List of powerful short exact sequence: as long as you can say Im(K_1 -> K_2) = Ker(K_2 -> K_3). Short exact sequence means you are doing arithmetic with groups and group homomorphisms instead of group elements, homology and cohomology is like taking quotients. Image(f_i) = Ker(f_i+1). Homology is Ker(f_n+1) / Im(f_n) Long exact sequences corresponds to defining a natural number or an exact sequence indexed by the natural numbers. https://mathoverflow.net/questions/363720/short-exact-sequences-every-mathematician-should-know
+
+Motivation for Noetherian normalisation: Krull dimension for k algebra, Nullstellensatz proof via Zariski’s lemma. Implies formula dim(X) = trdeg(K(X)/k) for affine varieties over field, or dim(X *_k Y) = dim(X) + dim(Y) for X, Y affine variety. Also implies every affine variety over a field has a finite map to some affine space A^n, and n Is the dimension of varieties. Generic smoothness of geometrically reduced finite type k-schemes.
+
+Stacks project key lemmas for Noetherian normalisation: lemma (1), let n be in N, let N be finite nonempty set of multi index. v is index from v1 to vn, e is e1 to en, set inner product of ev to be some of e_i v_i terms, then e_1 >> e_2 >> … >> e_n, we have (e v = e v’) if and only if v’ = v; lemma (2)
+ The polynomial g(x_1 + x_n^e_1, x_2 + x_n2^e2I) = ax_n^d + lower order terms. I don’t like Stacks’ proof since the words homogenous poly does not come up. https://stacks.math.columbia.edu/tag/00OW
+
+Noether normalisation geometrically for infinite field (Emerton): I can follow this proof and understand the technique. given k algebra R, assume k infinite (not finite field), Spec R as variety V in A^d for some d. Take projective closure (Zariski closure) of variety in projective space P^d obtain projective variety. If V is affine A^d, no problem R = k[x1, …, xd] witness its own Noether normalisation, and cannot be normalised further. Assume V is proper sub variety of A^d, so V’ is proper sub variety of P^d. Use k is infinite, can and do choose a point P defined over k lying at infinity and not in V’ (important), can and do choose hyperplane defined over k does not contain point P. Apply projection from P to H (exists) get morphism from V’ to H. Properness of projective morphisms, this map has closed image in H, say W’. P is chosen to lie at infinity, must be intersecting with affine so V -> H intersect A^d, again has closed image, say W. This map is finite, V -> W corresponds to map R’ -> R with R finite over R’. If W = H intersect A^d, this is the Noetherian normalisation of R, R’ is poly ring. If not proceed inductively, replace V by W, and A^d by H intersect A^d with one dimension less. Goal: projection to hyperplane is surjective, if V has dimension n, need to perform d - n projections. At each stage, lots of choices of points P to be lying at infinity, H affected. https://mathoverflow.net/questions/42275/choosing-the-algebraic-independent-elements-in-noethers-normalization-lemma/42363#42363 Follow up: Lemma 13.2 and Theorem 13.3 In Eisenbud.
+
+Comparison between geometric proof by Emerton of Noetherian normalisation: (1) base case of transcendental over k, algebraic than reduce generated by c; (2) consider homogenous poly since change of variables; (3) induction down. The goemetric proof is so satisfying.
+
+Motivation for Weierstrass preparation lemma: enables change of variables.
+
+Properness of projective morphisms: Hartshorne theorem 4.9, use valuative criterion for properness, there is also uniqueness. Key step. Let R be a local ring, open cover on Spec R must contain Spec R itself, so for any local ring R, any scheme X, any open cover U_a of X and any morphism set of primes Spec R to scheme X, there is some U_a which morphism factors. Applies since valuation rings are local rings. Uniqueness means projective morphism is separated (diagonal map closed like Hausdorff). Diagonal morphism from P^n -> P^n * P^n is closed immersion, formation of diagonals and closed immersions are compatible with base change, you can check this over base Z. You can also check directly that the diagonal is closed, computing using standard cover of P^n by n+1 affines.
+
+Blowups as birational morphisms: birational morphism between projective varieties is a blowup. The weak factorization theorem says that every birational map can be factored as a composition of particularly simple blowups. Resolve singularities without changing the function field.
+
+Motivation behind blowing up: smooth out singular points by repeatedly blowing up there, and we saw that if you take 6 general points and blow up at them, that classifies smooth cubics, which is nice enough I guess, gives a nice way to say there’s 27 lines on a smooth cubic. Resolution of singularities.
+
+Grothendieck Riemann Roch special: Riemann-Roch theorem relates the Euler characteristics of the cohomology of a vector bundle with their topological degrees for curves and line bundles, the Grothendieck-Riemann-Roch theorem changes the theorem from a statement about a single vector bundle to a vector bundle applying to chain complexes of sheaves. 
+
+Grothendieck on normal point under proper birational morphism: Recall that H0 is sheaf of global sections. Zariski's deepest theorems was that the inverse image of every normal point under a proper birational morphism from one variety onto another is connected. Then Grothendieck came along and he reproved this result by a descending induction on an assertion on the higher cohomology groups with Zariski's theorem resulting from the H0 case.
+
+Illusie on Grothendieck recalling simple examples: Grothendieck made many efforts to recall what was necessary, and explain very simple examples showing how it all works.
+
 Morphisms of locally ringed space: morphism of ringed space, induced ring map on strucutral sheaves is a local ring map.
 
 Morphism of ringed spaces: continuous map f of topological space X to Y, and a f map f' of sheave of rings that is contravariant from O_Y to O_X. f' can be thought of as a a map O_Y -> f* O_X.
