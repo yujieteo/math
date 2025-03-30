@@ -366,6 +366,15 @@ Polynomial maps?
 
 Linear maps?
 
+Vakil 1.2I: show that tensor product is unique up to unique isomorphism. Any bilinear map t' from Cartesian product of M and N to T', there is a unique A-linear map from the tensor product M *_A N -> T' such that t' = f * t. Objects are tensors, morphisms are A-linear maps. 
+
+Vakil 1.2J: The construction of 1.2.5 exists and gives a tensor product by the typical argument of the bilinear map by defining bases see Qing Liu's explicit construction, with relations spelt out.
+
+Vakil 1.2H: show that the tensor product is a covariant endofunctor on Mod_A and is right exact meaning if M' -> M -> M'' -> 0 is an exact sequence of A-modules, then the induced sequence M' *_A N -> M *_A N -> M'' *_A N -> 0 is also exact.
+We need to show that Im(M' *_A N -> M _A N) is equal to Ker(M *_A N -> M'' *_A N) if Im(M' -> M) = Ker(M -> M''). Consider the image of (M' *_A N -> M *_A N) this appears as the induced map (M *_A N)/(M' *_A N -> M *_A N) ->  M'' *_A N. Try to define an  inverse, for (m'',n) in m'' x n, choose m in M such that for f: M *_A N -> M'' *_A N, we have f(m) = m'' sends (m'', n) to m' *_A n mod Im(M' *_A N -> M *_A N). One can check that this is well defined since the original sequence is exact. Look for M'' *_A N as the cokernel of M' *_A N -> M _A N. Or suffices to show that induced map M * M/Im(m' * 1) is an isomorphism, construct inverse of g using universal property of the tensor product (need to use exactness to show isomorphism?) See Qing Liu's book and digest the proof there.
+
+Vakil 1.2G: Show that Z/(10) * Z/(12) is isomorphic to Z/(2). Consider the linear map m * (n_10 + n_12) = m * n_10 + m * n_12. The only elements that satisfy this linear map would be elements in Z/(2) because gcd(10,12) = 2.
+
 Vakil 1.2F: (a) show localisation commutes with finite products or equivalently with finite direct sums (it is a directed colimit, then apply Lazard's criterion); (b) localisation commutes with arbitrary direct sums (likewise with directed colimit, apply Lazard's criterion); (c) localisation fails to commute with infinite products hint take series (1/s) which is infinite product of Q. This means that the map of infinite products induced by the universal property is not always isomorphism; (d) localisation does not always commute with Hom, except when Hom is finitely presented.
 
 Vakil 1.2E: construct the localisation map from M to its localisation, define elements, then check that it is a module, see one subtle point by Borcherds where you need something extra that I cannot remember I think it is no nonzero divisors. Simple, check transitivity then we have b^2(ac - ca) = 0, and b^2 needs to be a nonzero divisor.
