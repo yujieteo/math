@@ -366,6 +366,12 @@ Polynomial maps?
 
 Linear maps?
 
+Vakil 1.2L: let S be a multiplicative subset of A, then M is an A-module, describe a natural isomorphism (S^{-1} A) *_A M -> S^{-1} M as S^{-1} A-modules and as A modules. Natural isomorphism means I have to find some commutative diagram (write it down?) where the natural isomorphism from p(a/s) = a/s as one can check to be an isomorphism. Use the universal property of the tensor product, the universal property of M_S as an A-module, the univerasl property of M as an A-module. Careful, note an A-module can have at most one S^{-1}A-module structure compatible with its A-module structure.
+
+Vakil 1.2K (b): tensor products should be formulated by the universal property it satisfies. unit is A = A *_B A -> B *_A C or u_b * u_C. It has the multiplication m_b * n_c induced by the functorality of the tensor product, asscoiativity and symmetry isomorphisms. Example (B *_A C) *_A (B *_A C) is isomorphic to (B *_A B) *_A (C *_A C) to B *_A C with map m_B * m_C. Note, you will have to think of B and C as A-algebras, with A->B and A->C to be the ring homomorphisms or morphisms of rings. We will not use Vakil's hint to make explicit the ring homomorphism.
+
+Vakil 1.2K (a): if M is an an A-module, and f: A -> B is a morphism of ring, then B *_A M has the structure of a B-module, inheriting the ring structure of A-module with a ring homomorphism on elements m in M to f(a) * (m1 + m2), with the bilinear map preserving the ring structure, this is a B-module since the ring operation act on elements of B as scalar multiples with map a -> f(a). An A-module can considered as a ring object enriched in the category of abelian groups, therefore this is a functor known as the extension of scalars from enriched categories Mod_A to Mod_B.
+
 Vakil 1.2I: show that tensor product is unique up to unique isomorphism. Any bilinear map t' from Cartesian product of M and N to T', there is a unique A-linear map from the tensor product M *_A N -> T' such that t' = f * t. Objects are tensors, morphisms are A-linear maps. 
 
 Vakil 1.2J: The construction of 1.2.5 exists and gives a tensor product by the typical argument of the bilinear map by defining bases see Qing Liu's explicit construction, with relations spelt out.
