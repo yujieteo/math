@@ -1,5 +1,21 @@
 UNDERSTOOD
 
+Free T-algebra adjunction: F_T is left adjoint to U_T, this is an adjunction of forgetful U_T from T-algebras to category of Set, we have the T-algebra on a single generator.
+
+Lawvere theory Isbell conjugation of T: the global sections functor (zeroth cohomology) is left adjoint to the spectrum functor, taking TAlg^op to Sh(C) relating T-algebras to sheaf topos over duals T in C in TAlg^op for C a small full subcategory with subcanonical coverage.
+
+T-line object: the T-line object is defined to be the spectrum functor Spec acting on the free T-algebra on a single generator as exhibited in the category of sheaf topos for a small full subcategory with subcanonical coverage Sh(C). In symbols Spec F_T(*) in Sh(C).
+
+Additive group object: for the Lawvere theory of abelian groups. Algebras over abelian Lawvere theory have the adjunctions TAlg -> Ab, ab_* is left adjoint to ab^*. Then the abelian group object in sheaf topos for a small full subcategory with subcanonical coverage Sh(C) will be G_T in Ab(Sh(C)).
+
+Multiplicative group object: for a line object A_T, write  (A_T inject A_T) in Sh(C) be the maximal subobject of the line on thsoe elements that have inverses under multiplication A_T * A_T -> A_T, this is the multiplicative group of the line object.
+
+Examples of free-T algebra and sheaf adjunction: for T = theory of commutative associative algebras ove ra ring R, then A_T = A_R is the affine line over the ring R, G_M is the standard multiplicative group, and G_a is the standard algebraic additive group. For T = Smooth or CartSp the theory of smmoth algebra, thena A_smooth is the real line as a diffeological space, additive group is Lie group ofthe real numbers, the multiplicative group is the Lie group Rx = R - {0} of nonzero real numbers under multiplication.
+
+Cohomology of algebraic theories: for a ring R and H_{et}^n(-,-), the etale cohomology G_m the multiplcaitve group of the affine line, then H_et^0(R, G_M) is the group of units (or invertibles) R^*. H_et^1(R, G_m) is the Picard group or isomorphism classes of invertible R-modules, then H_et^2(R, G_m) is the Baruer group of Morita classes of Azumaya R-algebras.
+
+Line object in a monoidal category: object L such that tensoring functor C -> C has an inverse.
+
 Computations of injective and surjective complexes: 0 -> M -> N, map from 0 to M is d_{I+1}, map from M to N is d_{I+1}, if this is exact we have Ker(M -> N) =  Im(0 -> M) for exactness, so kernel is zero (since image 0 -> M is 0) so injective. Consider for M -> N -> 0, if this is exact we have Ker(N -> 0) = Im(M -> N). The image from M to N is all of N (since we consider Ker(N -> 0), this is only if this is surjective). See Wikipedia article. I prefer Eisenbud’s notation for exact sequences since it makes things clear, and use image of left map = kernel of next map. Then Kernel/Image gives homology.
 
 Classic differential operators short exact sequence: I finally know how this works: 0 -> R -> Cinfty(R3, R) -> grad Cinfty(R3, R3) -> curl Cinfty(R3, R3) -> div Cinfty(R3, R) -> 0.

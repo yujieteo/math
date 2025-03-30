@@ -56,6 +56,8 @@ Pasting diagram? Monoidal category associativity isomorphisms.
 
 Line object: in a monoidal category and object L such that the tensoring functor into L has an inverse. This definition does not make sense to me.
 
+Stanley-Reisner rings, Face rings? Quotients of a polynomial algebra over a field by a square free monomial ideal.
+
 Free functor
 
 Equivariant object
