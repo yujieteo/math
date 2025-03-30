@@ -44,7 +44,11 @@ Klesli object, Eilenberg Moore object
 
 Kan object
 
+Fourier remarks by Emerton: https://mathoverflow.net/questions/37021/is-fourier-analysis-a-special-case-of-representation-theory-or-an-analogue/37189#37189 and here https://math.stackexchange.com/questions/58515/what-is-fourier-analysis-on-groups-and-does-it-have-applications-to-physics/58591#58591
+
 Module object (examples)
+
+Don't understand this Matt Emerton motivation to study Lie algebras: https://mathoverflow.net/questions/58696/why-study-lie-algebras/58808#58808
 
 Real numbers object
 
