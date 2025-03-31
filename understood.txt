@@ -1,5 +1,15 @@
 UNDERSTOOD
 
+Divisors as intersection points (Emerton’s answer): they are intuitively intersections of the curve (be careful about points at infinity. Think of field as k(x,y), then divisors are products of curves like f(x,y) g(x,y) = 0 so in some sense there is idempotent torsion? Or at least that I how I feel about torsion. 
+
+Weak Nullstellensatz: apply geometric argument to any polynomial ring to projections of hyperplanes to points at infinity repeatedly, you get the quotient out by a maximal ideal to be repeated normalisation to the point.
+
+Open immersions are not finitely presented: Take the case of Y affine. The weak definition says that there is an open quasicompact subset of X that surjects. Restricting f to that subset gives an actually finitely presented quasicompact morphism.
+
+Using quasicompactness: If your morphism isn’t qc, you can’t show it is qc. If your morphism is qc, then the preimages of a cover, cover the source (if f is surjective, implied by fp)
+
+Finite implies quasi finite: consider f from Spec S to Spec R for map R to S want to show preimage of f over point is finite. Quotient out at prime ideal (0) for any point (R is integral domain is used here, no nonzero divisors) then localise it so the localisation of R is a field. S as is finite dimensional vector space, so Artinian, so finite number of prime ideals.
+
 Diophantine analysis in Q analysis: analyze equations over finite fields using quadratic reciprocity. Use info to study over complete local fields Q_p using Hensel's lemma and study oer R. Piece together local information to global field via Hasse's principle.
 
 Commutative algebra comments (Emerton) vs non-commutative case: (1) commuting vperator can be simultaneously upper triangularised in fd vector spaces. So the spectrum of a noncommutative ring can be hard to define. More importantly, M and N are fg modules over ring A such that M *_A N = 0, then Tor^A_i(M,N) vanish for all i. Not true if noncommutative, M and N have no longer well defined supports or localisation fails.
