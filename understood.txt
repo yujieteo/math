@@ -1,6 +1,138 @@
 UNDERSTOOD
 
-Divisors as intersection points (Emerton’s answer): they are intuitively intersections of the curve (be careful about points at infinity. Think of field as k(x,y), then divisors are products of curves like f(x,y) g(x,y) = 0 so in some sense there is idempotent torsion? Or at least that I how I feel about torsion. 
+Red number and black table are actually logarithms: write number as square of 1.0001^x, then multiplication reduces to addition in group law, roots reduce to multiplication. Same rule applies with circular side rule.
+
+Banach Tarski paradox with Sierpinski, now draw a infinitely branching Sierpinski snowflake, cut out top and bottom, left and right of snowflake, rotating one part of the snowflake gives back 3 other parts of the snowflake, so you get the Banach Tarski paradox.
+
+Vitali set fail measures: assigns it to each bin, each real number in [0, 1] take x - y is rational, they are in the same bin, if p - q is irrational they go into separate bins, this has assigns real numbers to exactly one bin, pick one representative from each bin using axiom of choice, shift Vitali set by rational in [0, 1] with infinite copies of Vitali set, now you add all these copies, these are between -1 and 2, the size of the Vitali set is 1 and 3 equal, however if the original size of Vitali set is what, adding uncountably infinite parts should give infinite. So Vitali sets fail measure theory. 
+
+Well ordering theorem proof: use axiom of choice to select a starting point, then pick x0 to x1, if we run out, give up exists countable ordinal omega, then pick x_omega, all partitions have least upper bound, least upper bound property, and the reals are now well ordered.
+
+Surjection as point omissions: surjective means no point in T is omitted from the image of S in f.
+
+Injection as point image difference: injective means different points have different images.
+
+Map injection versus existence: point has one image means map exists, injection means different points have different images.
+
+Analogy between the Goodwillie calculus in infinity categories and differential stuff: smooth manifolds are analogous to compactly generated infinity categories, smooth functions are analogous to functors preserving filtered colimits, points are object, real vector spaces are analogous to stable infinity categories, linear maps of vector spaces correspond to exact functors of infinity categories, differential of a smooth map is excisive approximation of a functor, a polynomial is an excisive functor, subtraction of polynomials is fiber of map of excisive functor. In this case, functions preserving filtered colimits are very common (see localisation preserving filtered collimits) and we also have that excision enables some sort of differentiation of functors (no clue where that came from?)
+
+Galois extension as looser algebraic completion: it contains more things that are algebraically indistinguishable from the original expansion.
+
+Stable homotopy motivation: the idea is so that it is stable under suspension so the infinite chain of suspensions is constant.
+
+Nullstellensatz for local ring: let A be a local ring of an affine variety X at subvariety Y, then prime ideals of A (note it had unique maximal ideal) corresponds to subvarieties of X that contain Y. Containment is reversed as usually for the Nullstellensatz.
+
+Finite cocompleteness by a child: this means admits finite colimits. Simplest example is natural numbers, works for any topoi, you can think of any big finite integers for example 1, 2, Graham’s number. We say that the natural numbers has an internal set theory, and admits finite colimits.
+
+Spookiness of incompressible strings or bits: by definition there it is incompressible, something this true for literally no reason, no structure to compress it so it is just true.
+
+Measure theory as linear algebra: these are just linear combination of points, finite dimensional linear combination of points.
+
+Motivation for Hahn decomposition: you need to prove Hahn decomposition to show that the definition of integrable functions make sense. This means that a measurable function is integrable if it decomposes into finite Hahn decomposition of positive parts and negative parts under the Lebesgue measure.
+
+Motivation of Lebesgue measure: homomorphism from sigma algebra to real line preserving cardinality of equivalence classes / disjoint unions of countable sets up to countable additivity. This idea is to prevent addition of null sets with uncountable unions to prevent Banach Tarski nonsense. Therefore we have unions of sets of points reduced to the case of countable dimensional linear algebra.
+
+Metropolis rejection in simulated tempering: at low temperature, the energy is low, the metropolis acceptance rate is very low see min of 1 and exp(-B H(x)) therefore for simulated tempering you want to randomly sample at different temperatures so that the Metropolis acceptance rate is high at high temperature, and it will find the global minimum temperature easily at lower temperatures and will not be stuck at local minimums.
+
+Monte Carlo as sampling: it is a fancy name for sampling.
+
+Parameter set: codomain of measurable set. This is needed so that we can define random variables by using sample space as the codomain.
+
+Thermodynamic average of a function: apply distribution theory to a function, integral inner product of the function and the Gibbs distribution, note that the Gibbs distribution is a test function in this case.
+
+Trajectories of random variables: since random variables are really measurable functions from the sample space to the real line.
+
+Kolmogorov extension approach: use a specific finite dimensional distribution to conclude almost sure properties of the path.
+
+Kolmogorov extension theorem intuitively: let a sequence of finite dimensional distortion unions invariant under permutation and joining copies of R, then it can act as a probability triple under these conditions.
+
+Stochastic processes contrasted against random variables: while random variables are measurable functions with codomain the sample space, stochastic processes have filtrations. First consider a very large sample space such as all possible coin flips, then reduce it down to a filtration at each step so that it is easier to manage. The main tool needed for this is the Kolmogorov extension theorem.
+
+Sampling and optimisation: sampling is at a fixed temperature while optimisation is at all temperatures as we progressively lower: let U(X) be a smooth function on R^d with lower bound, dimension d, we can consider the Gibbs distribution to be of the form exp(-B U(X)) where B is the inverse temperature,
+
+Normalisation constant for the Gibbs distribution: this is the integral over the support of damping so 1/Z is equal to 1/integral of exp(- B U(X)), B is inverse temperature so as B tends to infinity it refers to cooling. 
+
+Optimisation as cooling sampling: idea is to consider the normalised exp( -B U(X) ) / Z. Set admittance means that Z is the cardinality of the distribution and the limit of the distribution is 1/number of minimal points.
+
+Metropolis algorithm motivation: try to find Markov chain pM = p, where M is of dimension n^2 since it is a square matrix. Then we needed balance is pi mij = pj mji. Pick pi is equal to exp(-B Hj)/Z this becomes exp(-B delta Hij) satisfying the group law, we have mij = Qij Aij, 1 - sum of pij for i = j, Q proposal, A decision. For group law, Q needs to be symmetric so Aij / Aij = exp(-B delta Hij) and has additive group law of H, H is smooth or infinitely differentiable function. Metropolis is to min(1, exp(-B delta Hij). Glauber dynamics pick is 1/1+exp(B delta Hij).
+
+Thermodynamics average existence: you need the empirical average ergodicity theorem, need primitive and irreducible Markov chain, Markov chain irreducibility need order of generator to exist s such that P_s}_ij > 0, then you can guarantee a Markov chain exists. Rules out oscillatory counterexamples of matrix action such as [0 1; 1 0], these are poles on the complex axis under then interpretation of [A B; B A] as representation of the complex numbers. Basically a primitive Markov chain will be have positive damping coefficient.
+
+Group endomorphisms from R to R: these are linear maps from R to R when considered as vector space over Q, that way you have invertibility.
+
+Null set example of Sierpinski triangle: it has measure 0 set yet it is a clearly nontrivial shape, therefore they define stuff in measure theory up to a difference in null set.
+
+1D Ising Model: magnetisation model used to illustrate either the metropolis cutoff or Glauber dynamics, idea is to have (-1,1)^N for magnetisation spin, decompose Hamiltonian into two components. Metropolis cutoff considers the minimum of (1, exp(- B H(x))), where B is the inverse temperature and cool to infinity.
+
+Algebraic cycle: formal sums (something like linear combinations) of algebraic r-dimensional subvarieties, or closed integral k-subschemes of finite type over a field k. The linear combinations have integer coefficients called the multiplicities. These form a free abelian group (think of these formal sums like alphabets, and composing from closed integral k-subschemes as alphabets into algebraic cycles). Closed integral subschemes of X are in one to one correspondence with scheme theoretic points. Divisors as formal linear combinations of points in the curve.
+
+Hodge conjecture is motivated by algebraic cycles: Let X be a non-singular complex projective manifold. Then every Hodge class on X is a linear combination with rational coefficients of the cohomology classes of complex subvarieties of X. Algebraic cycles permit integer coefficients, and they use sub varieties itself, not cohomology classes.
+
+Codimension zero algebraic cycle: linear combinations of irreducible components of the variety.
+
+Codimension one algebraic cycles: linear combinations of divisors. Cartier and Weil divisors are derived from the divisibility of algebraic number fields.
+
+Weil divisor: homology classes, codimension 1 cycles
+
+Dedekind domain motivation: generalisation of unique prime factorisation, all non-zero ideals are in a unique way products of prime ideals. Another definition of Dedekind domain would be to say it is a noetherian, integrally closed domain of dimension 1.
+
+Hahn Banach theorem motivation: sufficiently many continuous functionals in every normed space so that we can define dual spaces and adjoint operators. Adjunction is equal up to inner product.
+
+Existence of countable ordinals: beliefs that are independent of your beliefs about set theory usually boils down the existence of cardinals.
+
+De Groot dual: dual of a topology whose closed sets are generated by the compact saturated sets
+
+Compact implies bounded: fix finitely many balls with increasing radii, exist due to compactness, so one of them must cover the entire space so bounded. A point to not be contained in any ball means there it must be infinite distance away. Rewrite proof with filtered colimits, admits filtered colimits of increase filtration, so at least one terminal colimit (bounded object?).
+
+Metric space compactness, and bounded was: think of a point not contained in any ball, it must be a point at infinity for undefined metric
+
+Difference between the weak law and the strong law of large number: the weak law means it will converge to the probability required almost surely with large number of samples of independent and identically distributed distributions, the strong law means the sample mean will converge to the population mean almost surely.
+
+Independent and identical distribution in categorical theoretic language: preserves (infinite product) products or the entropy function is a group homomorphism (or for that matter, any products acting on independent and identically distributed. The product of random variables is a sequence, which can be described as x^n. The projection maps preserve the random variables properties.
+
+Asymptotic equipartition principle proof idea: first, define it in such a way, using log decomposability such that it becomes the sum of individual logs. This uses Pontrjagin duality on the log function as a group homomorphism. Then, apply the weak law of large numbers, so it will converge in probability between the joint distribution to individual. Therefore, you get back the definition of probability.
+
+Preimage of open set is open: open set means you have a bit of wiggle room in that set. Saying "the preimage under f of an open set must be open" says that if you have a little wiggle room in your target, then you are allowed to wiggle a little in the preimage and you will still land in the target. In other words, a small enough change in the input will yield (an arbitrarily) small change in the output.
+
+Affine is not preserved under quotients: the group GL2(k) acts in the obvious way on P1. If we fix a point of P1 we get a morphism of an aﬃne variety onto a projective variety with aﬃne fibers. In particular the quotient of 2 aﬃne groups need not be aﬃne, and a fiber bundle with aﬃne fibers over a projective variety can be aﬃne.
+
+Ax-Grothendieck theorem and meaning of characteristic 0: suppose f is an injective morphism from a variety to itself over an algebraically closed field, Then f is surjective. (This is false over Q: consider x to x3). The key point is that the theory of algebraically closed fields of given characteristic is complete, which follows from the fact that it is categorical in uncountable cardinals. So any two algebraically closed fields of the same characteristic indistinguishable using first order statements Characteristic 0 is defined by the statements 2 not equal 0, 3 not equal 0,...and any proof uses only a finite number of these, so applies to all algebraically closed fields of suﬃciently large characteristic. This gives two powerful methods for proving things for all algebraically closed fields in characteristic 0: Use analysis, Riemannian geometry, hodge theory etc. Then apply Lefschetz principle. Prove for algebraic closures of finite fields, using counting arguments, Weil conjectures, Frobenius endomorphism, etc. (Famous example: Mori’s bend and break argument.)
+
+Key property of completions: Key property is Hensel’s lemma, stating that solutions in kcan often be lifted to solutions in R, by lifting to R/m,R/m2,R/m3, ...
+
+Coordinate rings of affine algebraic groups: motivation, since these are the commutative Hopf algebras.
+
+Segre embedding: P^m & P^n embedded as projective variety from (x_0, ...) * (y_0 ...) to (x_0 y_0 ... x_i y_j) inside P^{mn + m + n} or tensor product of two lines in the tensor product of two vector spaces.
+
+Grassmannians as disjoint unions of affine spaces: easy to represent, disjoint unions of affine spaces, quotients of GL_m+n over / (* *; 0 *). Quotient of two affine groups can be projective.
+
+Quasiprojective varieties: are covered by open aﬃne varieties. It is unnatural to assume all varieties should be embedded in projective space; this is rather like demanding that all diﬀerentiable manifolds should be subsets of Euclidean space. Weil defined abstract varieties as (roughly) things that can be covered by open aﬃne varieties. Formal definition comes later using locally ringed space as special case of schemes. Work slightly informally. Weil originally introduced concept to construct abstract Jacobian varieties of curves over finite fields, though these turned out to be projective.
+
+Dimension of Noetherian rings: Noetherian local rings always have finite dimension, Noetherian rings can have infinite dimension (example: k[x_1, ... x_n](x_i^2)). Non-Noetherian rings can have dimension.
+
+Analytic geometry vs synthetic geometry: analytic geometry uses coordiantes, synthetic geometry uses points lines and incidence relations.
+
+Dimension in terms of functions and algebra: dim B/k = tr. deg ring of quotient field of B over k.
+
+Ideal generated by 2 radical ideals need not be radical: Intersection of line y = 0 with parabola y= x2 Ideal generated by 2 ideals is (y,y−x^2) = (y,x^2) NOT radical!
+
+Rabinowitsch trick: add extra variable x_0 to deduce strong from weak nullstellensatz.
+
+Abelian variety: projective variety that is a group, chord tangent process on x^3 + y^3 = 9 since a + b + c = 0, a, b, c collinear. Not birational to A^1 since it has genus 1 not 0 as a Riemann surface. Projective coordinates (x: y: z) mod lambda or x^3 + y^3 = 9z^3, z is not 1. Associative is hard to prove directly, but follows from sum of a_1 to a_n = sum of b_1 to b_n if and only if there is a rational function with zeroes at 'a's, poles at 'b's.
+
+Cubic curves as example of abelian varieties: these are connected projective algebraic groups.
+
+27 lines on cubic surface basics: example w^3 + x^3 + y^3 + z^3 = 0 in P^3, typical line is (1: -1: t: -t), 3^3 * 4! order, 27 images under this group, acted on permutation group.
+
+Connection between differentiable manifold and schemes: schemes are covered by affine schemes. 
+
+Vector bundles in diﬀerential geometry: functions differential forms, tangent fields, etc. For schemes use SHEAVES (cotangent bundle of something with a singularity does not exist, but its cotangent sheaf does.)
+
+Determinantal varieties: A^mn is m by n matrices or linear maps from k^m to k^n, subsets of rank <= N is an affine varieties, given by matrices that all minors of rank N + 1 vanish, subset of maps from k^m -> k^n that are onoto is open.
+
+Abelian varieties are abelian: proof strategy for complex numbers, any map from projective variety to C is constant by teh maximum principle, so adjoint map to the automorphism group of tangent space of origin is 0. Abelian linear groups are not abelian, this is old names for symplectic group, an affine algebraic group.
+
+Divisors as intersection points (Emerton’s answer): they are intuitively intersections of the curve (be careful about points at infinity). Think of field as k(x,y), then divisors are products of curves like f(x,y) g(x,y) = 0 so in some sense there is idempotent torsion? Or at least that I how I feel about torsion. 
 
 Weak Nullstellensatz: apply geometric argument to any polynomial ring to projections of hyperplanes to points at infinity repeatedly, you get the quotient out by a maximal ideal to be repeated normalisation to the point.
 
@@ -797,6 +929,8 @@ Projective schemes: fix ring A, consider graded A-algebras over direct sum of fr
 Noetherian scheme: a scheme is Noetherian if it is finite union (colimit) of affine open such that structure sheaf of affine open is Noetherian ring.
 
 Locally Noetherian scheme: a scheme is locally Noetherian if every point has a neighbourhood that is a Noetherian subscheme. Local ring of Noetherian schemes is Noetherian is trivial by definition, similarly for affine opens, use finite unions and Noetherian property so structure sheaf is also Noetherian.
+
+Typical problem for local properties: does "locally X" mean has a base of aﬃne X” or "every open aﬃne subset is X". Usually equivalent in practice.
 
 Affine variety in terms of affine schemes: affine scheme associated with the finitely generated algebra over an algebraically closed field k.
 
