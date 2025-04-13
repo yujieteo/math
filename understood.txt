@@ -88,9 +88,9 @@ Metric space compactness, and bounded was: think of a point not contained in any
 
 Difference between the weak law and the strong law of large number: the weak law means it will converge to the probability required almost surely with large number of samples of independent and identically distributed distributions, the strong law means the sample mean will converge to the population mean almost surely.
 
-Independent and identical distribution in categorical theoretic language: preserves (infinite product) products or the entropy function is a group homomorphism (or for that matter, any products acting on independent and identically distributed. The product of random variables is a sequence, which can be described as x^n. The projection maps preserve the random variables properties.
+Independent and identical distribution in categorical theoretic language: preserves (infinite product) products or the entropy function is a group homomorphism (or for that matter, any products acting on independent and identically distributed.) The product of random variables is a sequence, which can be described as x^n. The projection maps preserve the random variables properties.
 
-Asymptotic equipartition principle proof idea: first, define it in such a way, using log decomposability such that it becomes the sum of individual logs. This uses Pontrjagin duality on the log function as a group homomorphism. Then, apply the weak law of large numbers, so it will converge in probability between the joint distribution to individual. Therefore, you get back the definition of probability.
+Asymptotic equipartition principle proof idea: first, define it in such a way, using log decomposability such that it becomes the sum of individual logs. This uses Pontrjagin duality on the log function as a group homomorphism. Then, apply the weak law of large numbers, so it will converge in probability between the joint distribution to individual. Therefore, you get back the definition of probability using log additivity.
 
 Preimage of open set is open: open set means you have a bit of wiggle room in that set. Saying "the preimage under f of an open set must be open" says that if you have a little wiggle room in your target, then you are allowed to wiggle a little in the preimage and you will still land in the target. In other words, a small enough change in the input will yield (an arbitrarily) small change in the output.
 
@@ -3545,6 +3545,14 @@ Data processing inequality: if X to Y to Z is Markov chain, then mutual informat
 Sufficient statistic: consider n -> X -> T(X) Markov chain, T(X) statistic, X random variable, n is indexing. Data processing inequality gives mutual information between indices and random variable - mutual information of indices and statistic to be nonnegative. Definition: this difference is equal to zero if T is a sufficient statistic. Example: number of tails is sufficient statistic to recover Bernoulli variable. Example: max and min values is sufficient statistic for uniform distribution.
 
 Minimal sufficient statistic: if it forms “contravariant” Markov chain n -> T(X) -> U(X) -> X for any other sufficient statistic U. Alternatively, it has the same Kolmogorov complexity as the indices n, or it maximally compresses the indices n.
+
+Entropy of English: character entroy is abotu 1.5. Word entropy has risen from 7.9 to 8.4, so there is about 8.4 yes no questions to determine the entropy.
+
+Sequence power notation: x^n can be used to denote a sequence from x_1 to x_n, this is consistent with Einstein's notatin.
+
+Representation by n H(x) bits: proof, split decompositions of expected lengths of codewords in typical set, and those in complement, by lemma on typical set, it is the sum of probability p(x^n) * n(H + eps) for the typical set, but it is p(x^n) * (n log |X| + 2). Now reduce probability case to near certainty, all p(x^n) is nearly certain (typical trick for inequalities) then we have the entropy of e_n log|X| for the atypical case, so the entropy is constrinaed by n(H + eps) where H is the entropy of the codeword, n is the length, epsilon can be made as small as you want.
+
+Typical set versus asymptotic partition: typical set is the consequence of the strong law of large numbers, asumptotic equipartition is the consequence of the weak law of large numbers.
 
 Fano's inequality: consider Markov chain of input X to output Y to correlated reconstruction X*, then let the error probability be probability that X*(Y) is not equal to X. Then Fano's inequality states that the sum of entropy of the error probability and the error probability times the logarithm of the (alphabet/support- 1) is more than or equal to the conditional entropy X given Y. Intuitively, entropy of error probability is uncertainty with correct predictions, the logarithm of the (alphabet/support -1) refers to the entropy of uniform distribution of all incorrect choice. Therefore, H(X|Y) is less than or equal to Hb(e) + Pe(X) log(card(X)-1), Hb(e) is binary entropy of Pe(X != X*)
 
