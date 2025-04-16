@@ -1,5 +1,62 @@
 UNDERSTOOD
 
+Groupoids with types as infinity groupoids: category with all invertible morphisms so Grpd as a category embeds into Cat as a subcategory. Types are infinity groupoids, this definition is powerful because it will be sufficient to capture all the complexity of homotopies in between. NOTE: by imposing that the morphisms are all invertible, there is no valid partial order, so this is a generalisation of sets.
+
+(-1)-groupoids: these are single truth value with trivial symmetry. For this to be a 0-category, this will have to be the set of true and false. Note that  (-2)-groupoid has no such symmetry so it is a point, abd this to be a (-1)-poset, which is also a point with trivial order.
+
+Truth value in a topos: definition feels like that of a category, morphism from terminal object 1 to subobject classifier omega. This is equivalent to the equivalence class of monomorphisms of into the subobject classifier
+
+Coarser topology does not have a smaller basis: consider Euclidean topology on the reals versus cofinite topology (open sets are all sets whose complements are finite and empty set), Euclidean topology has basis rational balls so countable, cofinite topology has uncountable basis, but is much coarser.
+
+Coarse graining problem of Markov chain: I only could understand the problem, given a Markov chain P and a predefined partition C, the optimal coarse grained chain P' is the problem to min norm( P' - P ) for some norm pi. Existence of community structure correspond to existence of spectral grap of eigenvalues of P. Need to check that this means that the Markov chain can be partitioned into the union of subnetworks with no edges of across the different networks
+
+Dimension and number of pieces: dimension is tricky to define, the number of pieces is the homotopy group
+
+Groupoids vs categories: groupoids generalise sets categories generalise partially ordered sets, negative thinking is applied here. This is Voevodsky's big insight which he got stuck on for a very long time. Grothendieck said that one must consider all morphisms when studying algebraic geometry, hence they use category theory.
+
+Bott periodicity in stable unitary group GLnC: pieces of points is zeroth homotopy group, so it is one piece, pieces of paths is first homotopy group, these are the integral numbers. This is a shadow of full Bott periodicity.
+
+Yoneda lemma in terms of sheaf of sections: set of sections A(U) of a presheaf A is isomorphic to the set of natural transformations into A, with the domain hom functor. See 1lab post.
+
+Existence of countable ordinals: ZFC has finite Kolmogorov complexity, so it can only determine finite amount of math truth.
+
+Worked example of nilpotents of ring: consider x^2 = 0, x is nilpotent element, ring has nilpotents, you can have two elements f and g of the homogeneous coordiante ring which have the same value at every point but are algebraically distinct. How about x^2 + 2, we imagine the real axis to be at y = 2, that is real meaning of imaginary roots.
+
+Zero measure sets need not be countable: Sierpinski triangle or Cantor's set are notable counterexamples
+
+Colimits of rings: tensor product of ring algebras are colimits of rings, it is the free product of two elements in two rings, then force naturality by taking linearisations. So bilinearisation is natural, and naturality is a form of linearisation.
+
+Example of perfect metaphor in Z/2: completely precise metaphor (isomorphism): the way {even, odd} add is the same as the way the numbers 11, -13 multiply. the isomorphism is given by x -> (-1) ^X. there's a single underlying structure of which these two are instantiations which is Z/2 and the associated group homomorphism.
+
+Finite groups are isomorphic to matrix group: proof apply Cayley's theorem, so they are representable by permutation matrices.
+
+Hull operator: intersection of all topologies containg
+F. The intersection of topologies is a topology since arbitrary unions and finite intersections open sets in the topology is a open set. It is also the smallest.
+
+Congruence relation in the universal algebra sense: subset of the direct product that is both a equivalence relation and a subalgebra. In category theory this is the quotient category.
+
+Subgroups requiring normality: normality needed for quotient group due to existence of non abelian groups, not true for modules due to ring structure
+
+Abelian is condition for naturality of order: order of g and order of h, order of gh is product if we have abelian as a condition for the group. There is a caregorical way to express this (probably forgetful functor or cardinality functor). Therefore, abelian is natural in this sense
+
+Icosahedral group: smallest nonabelian simple group A_60, alternating group
+
+Affine meaning: examples midpoint, third of line segment, the paramterisation is a free parameter.
+
+Principal minor decomposition: the characteristic poly try for two by two matrix det(tI-M) you will get t^2 - tr(M)t + det(M), eigenvalue equation can be determined based on fix root, more generally the decomposition follows by alternating sitns where a_n-1 is the trace, followed by monomials, and ends with the determinant, up to alternating signs, these are the principal minors.
+
+Yoneda philosophy: check out this, this has lots of implications, https://mathoverflow.net/questions/3184/philosophical-meaning-of-the-yoneda-lemma
+
+Yoneda lemma in terms of projective objects: representables in the functor category are projective objects.
+
+Yoneda lemma and Evangelion: need observing others to understand yourself. No difference between me and nothing. The very first other person is your other mother.
+
+Presheaves as generalised objects: pre sheaves being generalised objects modelled on a category, probe them by test objects in C with sensible rule mapping into them. For this interpretation, it must be true that some X in C regarded as an object of C, or regarded as a generalised object is the same thing. Generalised object I think refers to hom objects. The Yoneda lemma ensures this is the case. More specifically, category of presheaf is free cocomplete category of C. Yoneda lemma is aa categorification of the fact that a map from a set to the free commutative monoid on that set is an injection i.e. distinct objects in set give rise to distinct objects on the free commutative monoid.
+
+Category as algebraic theory in multisoreted language with unary functions: objects of the category being sorts, morphisms are definable functions, equalities are composites of morphisms. Representable functors with representing object s are just models freely generated by a single element of sort s.
+
+Probes as Yoneda objects: Yoneda lemma means Yoneda probs Hom(-,A) elements of functor F, are usual elements of FA.
+
 Red number and black table are actually logarithms: write number as square of 1.0001^x, then multiplication reduces to addition in group law, roots reduce to multiplication. Same rule applies with circular side rule.
 
 Banach Tarski paradox with Sierpinski, now draw a infinitely branching Sierpinski snowflake, cut out top and bottom, left and right of snowflake, rotating one part of the snowflake gives back 3 other parts of the snowflake, so you get the Banach Tarski paradox.
