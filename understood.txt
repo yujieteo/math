@@ -1,5 +1,19 @@
 UNDERSTOOD
 
+Brouwer gave modern definition of homotopy: makes sense for fixed point theorems, continuous (admits small limits i.e. projections are all okay) mappings from space X to space Y are homotopic if there exists a continuous mapping F from the cartesian product of X and the unit interval (you may generalise this with motivic stuff) to Y such that the starting continuous map is f(x) and the ending continuous map is g(x) all in X. Idea is that you cannot construct a homotopy group between two separate pieces.
+
+Isomorphism or invariance of homology modules is hard: this is the invariance problems, this was very difficult.
+
+Important parts to complete homology theory: theory of intersection, product spaces, and relative homology.
+
+Function analysis in two key words: spectral theory and duality. Spectral theory is basically about eigenfunctions and expansions, takes 60 years to extend to PDEs. Spectral theory matured with linear duality.
+
+Problem with PDEs: the main heart of the problem is the integral equations associated to them, so we did not understand integral equations, needed distribution theory and functional analysis to fix this.
+
+Functional analysis as discrete jumps: they decided to use minimal assumptions on the kernel of integral equations to simplify the theory.
+
+Hilbert’s simplification in functional analysis: he considered symmetric integral equations under infinite bounded quadratic forms. People translated Hilbert’s idea into Hilbert space, since the geometry of the Lebesgue integral is useful to study.
+
 Homology was popularised as algebra, not geometry first: Noether came up with this idea is to have boundary of j-chains be homomorphism of Z-modules b_j from C_j to C_{j-1} such that b_j-1 * b_j = 0, Betti numbers and torsion coefficients amounted to Z-modules H_j = Ker b_j / Im b_j+1, these are homology modules, so homology is already considered to be the linear algebra of boundary maps. This modification changed algebraic topology, since you can now use arbitrary sequences, or consider modules over any ring, then they have systems of (C_j and b_j) to be a chain complex, Mayer of Mayer-Vietoris considered this, but restricted to free modules and finite bases for simplicity.
 
 Poincare’s reversal in algebraic topology: most people try to compute numbers that do not change under homomorphism to spaces, he decided to just do computations with topological objects.
