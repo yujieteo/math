@@ -1,5 +1,39 @@
 UNDERSTOOD
 
+Convergent sequence is bounded in metric space, pick bound on d(x_n, x) is bounded by ball of radius max of 1 and max of other norm of other terms in sequence to x_n and x, bound by ball of finite radius so bounded.
+
+Subset in metric space is closed iff (x_n in A) then limit x in A: forward supposed for contradiction forward that x not in A, subset is closed and (x_n in A), take complement of closed set, it must be open, x not in A so x in open neighbourhood of complement, bu definition of open, there exists B such that x_n in X\A for all n more than N, but x is now in A due to openness, contrary to complementation assumption. Converse, (x_n) tends towards x, x in A but suppose A is not closed, then X\A not open, we have ball centred at y in X\A of radius r_n thet is not disjoint from A, exists points y in intersection of such a ball and A so sequence (y_n) tend towards y for y in A since ball is not disjoint from A, but y is supposedly in X\A by hypothesis, contradiction.
+
+C[0,1, K] infinite dim: differentiation of poly by setting coefficient to vanish gives powers of x^n to be linearly independent set for any dim n in naturals, since one can find this in any dim n in naturals, must be infinite dim by equivalent definition.
+
+Infinite dim vector space means for very natural can find n linearly independent elements of V: forward, consider collection of linearly independent elements of V, infinite dim means no upper bound graded in N exists, so there must be element in collection of card n in N for all N, converse (contrapositive) suppose finite dim of dimension n, then cannot find basis of card n+1 that is linearly independent, otherwise it would be dim n+1.
+
+Universal lossless compression is impossible: wlog consider case of binary strings: the possibilities for n string is 2^n, but the possibilities for shorter representstions is 1 + ... 2^{n-1} so it is 2^{n} - 1, there is no injective function into this. Apply this theorem to Kolmogorov compression means there are strings of length n whose Kolmogorov complexity is length n.
+
+Coequaliser as image identification: to glue two parts together, they have the same image, that is the idea behind the coequaliser, they are equal in the image for two morphisms, hence the gluing, for example the image of all numbers divisible by 4 in 36 are quotiented out as 4 elements in the sample partition of 9 elements so the quotient is 9.
+
+Finite dim complex vector space is just the complex numbers: need to use the fact that it is an integral domain (no nonzero divisors) somehow.. Consider nonzero c in C-vector space. The C-linear map from c to kc is injective (used fact that it is an integral domain, c does not divide 0), and since C-vector space is finite dimensional, this map is surjective. Consider some x in c that is sent to 1 i.e. kx = 1, x is inverse of k, belongs to C-vector space so this must be the field C?
+
+Approximate density in epsilon neighbourhood: the approximate density of a A at point x with some epsilon neighbourhood is the quotient of intersection between A and B_eps(x) with divisor / quotient out measure of B_eps(x). 
+
+Continuity in the category of posets: functors or just functions in posets are continuous if it preserves supremum, or meets, this corresponds to the definition of preserving small limits.
+
+Stephanov-Denjoy theorem: a measurable function if and only if it is approximately continuous almost everywhere
+
+Continuous as limits, and preimage of opens: the first definition of continuity considers limit of sequences to a value, this corresponds to the categorical limit projecting down to increasingly accurate filtrations? At least that is my felt sense of continuity, motivates the definition of continuous functors preserve small limits. So successive approximation feels like some sort of product. Ties in with epsilon delta stuff also. The oscillatory definition of continuity is also useful, it quantifies how bad continuity fails. Preimage openness means we can consider successive filtrations of inclusions in topological space, and the continuous function preserves all of it with the point being equal to its limiting neighbourhood in some sense. Further, with Stone duality, continuity preserving small limits which may or may not exist corresponds to the idea that it preserves how something is semidecidable in finite sets or not, admitting all small limits (cardinality problems are side stepped here) means it preserves how the arbitrary unions or finite intereexrions means the semidecidability of sequences (not decidable in finite time) is preserved indefinitely, so it need not just preserved all filtered limits which feel like closed sets if you require filtration.
+
+Yoneda embedding reflects commutativity of diagrams: it is full (1-surjective) and faithful (2-surjective), since it preserves the commutativity of diagrams
+
+Cyclic permutation ambiguous definition: defined as if permutations go through every point in the group, permissive definition allow for fixed points.
+
+Zariski topos axiom: you can define the Zariski topos without mentioning points using this crazy axiom that a ringed space (or ringed topos) is locally ringed if for every x+y=1, the two open sets on which x and y are invertible cover the whole space. For a space with points it is a theorem that the stalks are local if and only if it satisfies this property. For a topos without points it can only be an axiom, not a theorem.
+
+Hausdorff, regular, normal Wikipedia illustrations: Hausdorff is disjoint union of two points, regular is disjoint union between point and closed set, normal is disjoint union between two closed sets. Points are closed sets typically? When are points not closed points
+
+Converting a finite field to a group: consider finite field Fp of prime order, Fp \ 0 is actually a group. I saw this fact used in the proof of the Chevalley-Warning theorem in number theory.
+
+Representing objects are unique: consider Vakil's analogy on particle acclerator, if an object is tested against colliding particles, and these are ALL COLLIDING particles possible (key assumption from the definition of a category and the input of the Yoneda lemma), and exhibit test results, another particle also exhibit the same test results, then these two particles are equivalent up to isomorphism. Replace colliding particles with behaviour of morphisms, and consider this and define it on the level of copresheaves or representable functors
+
 Groupoids with types as infinity groupoids: category with all invertible morphisms so Grpd as a category embeds into Cat as a subcategory. Types are infinity groupoids, this definition is powerful because it will be sufficient to capture all the complexity of homotopies in between. NOTE: by imposing that the morphisms are all invertible, there is no valid partial order, so this is a generalisation of sets.
 
 (-1)-groupoids: these are single truth value with trivial symmetry. For this to be a 0-category, this will have to be the set of true and false. Note that  (-2)-groupoid has no such symmetry so it is a point, abd this to be a (-1)-poset, which is also a point with trivial order.
