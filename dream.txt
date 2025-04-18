@@ -2494,7 +2494,7 @@ Intuition for localisation and losing fg: intuitively, localisation involves inv
 
 Intuition for proper maps of affine algebraic sets: preimage of every set that is compact in the classical topology is again compact, it is essentially a continuity or limit preserving condition.
 
-Intuition of ideal: ideal is addtive subgroup in additive group R, absorbs multiplication on the left by elements of additive group R. So left ideal is left submodule of R, the considered as left module over itself, the over itself is absorption part. So unlike closure of subgroup or subspaces, ideals using this absorption property to ensure closure to make it module over itself, vector space over itself. Feels like a zero object.
+Intuition of ideal: ideal is additive subgroup in additive group R, absorbs multiplication on the left by elements of additive group R. So left ideal is left submodule of R, the considered as left module over itself, the over itself is absorption part. So unlike closure of subgroup or subspaces, ideals using this absorption property to ensure closure to make it module over itself, vector space over itself. Feels like a zero object.
 
 Intuition of implicit function theorems: sufficient conditions for differentiable inverse of germ f_p of a differentiable map of smooth manifolds f: M -> N, invertibility works as germ is local diffeomorphism for some neighbourhood of p to some neighbourhood of f(p), then you can consider the tangent map.
 
@@ -3120,7 +3120,7 @@ Morphism of finite type in schemes: morphism f of schemes X to Y has covering of
 
 Morphism of finite type: if f is quasi compact and the canonical contra variant homomorphism of structure sheaf of affine opens makes the structure sheaf into a suitable finitely generated algebra.
 
-Morphism of group schemes: idea is you want the induced map of schemes to be a group homomoprhism, let G and G' be groups schemes over S, such that for every T/S, the induced covariant morphism of schemes G(T) to G'(T) is a induced group homomorphism.
+Morphism of group schemes: idea is you want the induced map of schemes to be a group homomorphism, let G and G' be groups schemes over S, such that for every T/S, the induced covariant morphism of schemes G(T) to G'(T) is a induced group homomorphism.
 
 Morphism of locally ringed spaces: morphism of ringed spaces such that for all x in X the induced ring map is a local ring map.
 
@@ -3156,7 +3156,7 @@ Motivating the Hilbert adjoint: generalises inner products (recall that Hilbert 
 
 Motivation behind blowing up: smooth out singular points by repeatedly blowing up there, and we saw that if you take 6 general points and blow up at them, that classifies smooth cubics, which is nice enough I guess, gives a nice way to say there’s 27 lines on a smooth cubic. Resolution of singularities.
 
-Motivation behind category theory: study of groups Ext(G, H) as isomorphism of Hom(R, G)/Hom(F|R, G) where we quotient out by the subgroup of Hom(R,G) consisting of restrictions to R of homomorphisms of F into G. They noticed that functor acted not only on groups, but acted on homomoprhism of groups to avoid speaking of the set of all commutative grou-ps, assigning a commutative group to an arbitrary commutative group, because they keep using notations like Hom(G, H), Ext(G, H), G tensor H, Ch(G), Annih(L). Typical unnatural isomoprhisms are between fd vector sapce (or finite abelian group) and its dual vector space (Pontrajagin dual), but it is natural on the second dual. Basically it is X -> Ch(Ch(X)) beign natural in Pontrajin theory. Idea is generalised chain complexes are forming a category, and chain complexes to homology of chain complexes is a covariant functor from the category of generalised chain complexes to the category of commutative groups.
+Motivation behind category theory: study of groups Ext(G, H) as isomorphism of Hom(R, G)/Hom(F|R, G) where we quotient out by the subgroup of Hom(R,G) consisting of restrictions to R of homomorphisms of F into G. They noticed that functor acted not only on groups, but acted on homomoprhism of groups to avoid speaking of the set of all commutative grou-ps, assigning a commutative group to an arbitrary commutative group, because they keep using notations like Hom(G, H), Ext(G, H), G tensor H, Ch(G), Annih(L). Typical unnatural isomoprhisms are between fd vector space (or finite abelian group) and its dual vector space (Pontrajagin dual), but it is natural on the second dual. Basically it is X -> Ch(Ch(X)) beign natural in Pontrajin theory. Idea is generalised chain complexes are forming a category, and chain complexes to homology of chain complexes is a covariant functor from the category of generalised chain complexes to the category of commutative groups.
 
 Motivation behind graded module: action of group on linear forms of poly ring see how dimension of space of invariants vary.
 
@@ -3232,7 +3232,7 @@ Multiple of closed curve: curve that runs around another curve.
 
 Multiplication of matrices by left: in matrix AB, left multiplication by A multiplies columns of B, right multiplication of B multiplies rows of A.
 
-Multiplicative group object: for a line object A_T, write  (A_T inject A_T) in Sh(C) be the maximal subobject of the line on thsoe elements that have inverses under multiplication A_T * A_T -> A_T, this is the multiplicative group of the line object.
+Multiplicative group object: for a line object A_T, write  (A_T inject A_T) in Sh(C) be the maximal subobject of the line on those elements that have inverses under multiplication A_T * A_T -> A_T, this is the multiplicative group of the line object.
 
 Multiplicative group of finite field F_q cyclic of order q - 1: proof using Euler phi-function, number of integers x with 1 <= x <= which are corprime to d, whose image in Z/dZ is a generator of this group. There are phi(d) = q - 1 generators of cyclic group of order d.
 
@@ -4970,7 +4970,7 @@ Valuation ring centre: valuation ring R of field A contains A in field K as a su
 
 Valuation ring: integral domain R such that every element x in its field of fractions satisfy x not in R implies x^{-1} in R, or R^{-1} set of inverses of nonzero elements, union of R and R^{-1} is field of fractions.
 
-Value group: ideals of valuation ring formed total order under inclusion for ideals and R-modules, give G opposite order given by inclusion, this is an abelian group (xR)(yR) = xyR, adding infinity and stuff and a homomorphism called the value group of the homomorphism from K* to subgroup H. These are value groups (need better definition then in Matsumura.
+Value group: ideals of valuation ring formed total order under inclusion for ideals and R-modules, give G opposite order given by inclusion, this is an abelian group (xR)(yR) = xyR, adding infinity and stuff and a homomorphism called the value group of the homomorphism from K* to subgroup H. These are value groups (need better definition then in Matsumura.)
 
 Van Kampen statement: duality, amalgamated free product of fundamental group is wedge sum of two path connected topological space. This is Pontryagin duality, locally compact topological space
 
@@ -5144,7 +5144,7 @@ n-ary operation: suppose U is forgetful from commutative R- algebra to set, then
 
 p-adic integers as completion: complete the ring of integers at ideal (p) to get the ring of p-adic integers. Note that ideals are dual to filters.
 
-p-group fixed point theorem: consider finite set X under the action of p-group G, if the cardinality of X is not divisible by p, since X is the disjoint union of orbits under the action of G, there must be a fixed point with other orbits divisible by p.
+p-group fixed point theorem: consider finite set X under the action of p-group G, if the cardinality of X is not divisible by p, since X is the disjoint union of orbits under the action of G, there must be a fixed point with other orbits divisible by p. Need to use the fact that p is prime, otherwise you have disjoint union of orbits with prime factorisation of p as length of orbit.
 
 x nilpotent implies 1-x invertible in A: start with 1/(1-x) as geometric series 1 + x + x^2 + ... but it must terminate as some x^n = 0 (x nilpotent), so it must exist.
 
