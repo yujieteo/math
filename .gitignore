@@ -213,6 +213,7 @@ sympy-plots-for-*.tex/
 # pdfcomment
 *.upa
 *.upb
+*.py
 
 # pythontex
 *.pytxcode
