@@ -5147,4 +5147,3 @@ p-adic integers as completion: complete the ring of integers at ideal (p) to get
 p-group fixed point theorem: consider finite set X under the action of p-group G, if the cardinality of X is not divisible by p, since X is the disjoint union of orbits under the action of G, there must be a fixed point with other orbits divisible by p. Need to use the fact that p is prime, otherwise you have disjoint union of orbits with prime factorisation of p as length of orbit.
 
 x nilpotent implies 1-x invertible in A: start with 1/(1-x) as geometric series 1 + x + x^2 + ... but it must terminate as some x^n = 0 (x nilpotent), so it must exist.
-
