@@ -2234,7 +2234,7 @@ Homology or cohomology show how far it fails under localisation. Exactness give 
 
 Homology was popularised as algebra, not geometry first: Noether came up with this idea is to have boundary of j-chains be homomorphism of Z-modules b_j from C_j to C_{j-1} such that b_j-1 * b_j = 0, Betti numbers and torsion coefficients amounted to Z-modules H_j = Ker b_j / Im b_j+1, these are homology modules, so homology is already considered to be the linear algebra of boundary maps. This modification changed algebraic topology, since you can now use arbitrary sequences, or consider modules over any ring, then they have systems of (C_j and b_j) to be a chain complex, Mayer of Mayer-Vietoris considered this, but restricted to free modules and finite bases for simplicity. Hopf used this to talk about the Lefschetz trace formula.
 
-Homothety: scalar multiple of the iddentity map.
+Homothety: scalar multiple of the identity map.
 
 Homotopical category: a category with wide subcategory W with composable triples such that hg gf in W means f, g, h, and hgf are in W.
 
@@ -3418,7 +3418,7 @@ Open ball: set of all points where norm is strictly less than the radius. This w
 
 Open cover refers to decidable experiment in finite time, compact means admits open covers referring to decidable by one experiment.
 
-Open immersion of locally ring spaces: let f from X to Y be a morphism of locally ringed space, we say f is an open immersion if f is a homeomorphism of X onto open subset of Y, and the map f^-1 O_Y -> O_X on the sheaf of rings is an isomorphism. This feels like some sort of continuity condition.
+Open immersion of locally ringed spaces: let f from X to Y be a morphism of locally ringed space, we say f is an open immersion if f is a homeomorphism of X onto open subset of Y, and the map f^-1 O_Y -> O_X on the sheaf of rings is an isomorphism. This feels like some sort of continuity condition.
 
 Open immersion of schemes: respectively closed if morphisms of ringed topological spaces are isomorphisms (for every point in top) and an open immersion for the continuous map in question.
 
