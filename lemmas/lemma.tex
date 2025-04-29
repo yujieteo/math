@@ -217,6 +217,30 @@ This is a nice proof idea which is to find a representing object fo rthis constr
     Pick the set $X$ as the partition from $0$ to $a$, and apply the p-group fixed point theorem with the cyclic group $P$ of prime order $p$.
 \end{proof}
 
+\begin{lemma}
+Prove by mathematical induction tha tthe sum of cubes is $\dfrac{n^2(n+1)^2}{4}$.
+\end{lemma}
+
+\begin{proof}
+    The base case of $1$ can be checked by hand.
+    For the induction step, reverse the completion of the square of $(n^2 + 4n + 4)$ when factorising $(n + 1)^2$.
+\end{proof}
+
+\begin{lemma}
+    If $a$ divides $b$ and $b$ divides $a$, then $a$ is equal to $b$. 
+\end{lemma}
+
+\begin{proof}
+    We have $a = ub$ and $b = va$, solving for $a - nua = 0$ and factorising $a(1 - uv) = 0$ gives $uv = 1$. Since the ring of integers has no multiplicative inverses, therefore $u = v = 1$ and hence $a = b$.
+\end{proof}
+
+\begin{lemma}
+Prove that $n$ choose $k$ is equal to $n$ choose $n - k$ for integers $n$ and $k$.
+\end{lemma}
+
+\begin{proof}
+    We note that the ring of integers has commutative multiplication. By definition, the coefficient of $n$ choose $k$ is $(n - k)! k!$ which is commutative by the substitution $l = n - k$.
+\end{proof}
 
 \bibliographystyle{plainnat}
 \bibliography{references} %
