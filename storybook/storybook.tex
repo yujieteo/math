@@ -130,10 +130,15 @@
 \makeindex
 
 % Add theorems
-\usepackage{amsthm}
-\newtheorem{theorem}{Theorem}[chapter]
+\usepackage{amsthm, amssymb, amsmath}
+\newtheorem{theorem}{Theorem}
 \newtheorem{definition}[theorem]{Definition}
 \newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
 
 \begin{document}
 
@@ -352,21 +357,85 @@ I still believe there really is no correct definition to certain things and that
 \end{lemma}
 
 \begin{proof}
-  Pick the set $X$ as the partition from $0$ to $a$, and apply the p-group fixed point theorem with the cyclic group $P$ of prime order $p$.
+  Pick the set $X$ as the partition from $0$ to $a$, and apply the p-group fixed point theorem or Lemma \ref{lem:p-group-fixed-point-theorem} with the cyclic group $P$ of prime order $p$.
 \end{proof}
 
 \chapter{Groups}
 \label{ch:group}
 
+All discussion on the ontology of the group is without reference or scholarship, or just fake history.
+
+I spent most of the time first really describing the various ontologies of a group. This exercise really made me appreciate why groups are important concepts.
+
 \section{Groups from Galois theory}\label{sec:groupsgalois}
 
-It is strange that Galois is typically not mentioned right at the start as to why groups are invented. They wanted to make sure to some extent when you do permutations, the remaining result is still a permutations.
+It is strange that Galois is typically not mentioned right at the start as to why groups are invented. They wanted to make sure to some extent when you do permutations, the remaining result is still a permutations. Note that he did not make an axiomatic definition of a group, he only computed with these permutations and assumed closure of these permutations.
+
+Galois invented this ontology. The idea is you want to permute the roots of a polynomial equation and compose these permutations. With this ontology, and consider the trivial permutation, and compositions of permutations to be permutations, one arrives at the definition of the group. Also, which permutation when composed with a given permutation gives the trivial permutation? This must be the inverse permutation. Further, one can invent how these permutations of roots work. Given a polynomial equation, you can get the roots of the polynomial equations, that are solutions to algebraic equations. You want to permute the roots of that solve these algebraic equations, to see if you can admit a solution by radicals.
 
 \begin{definition}[Prototype psuedodefinition by Galois and Cauchy]
 A group is a set of permutations that preserves "the structure" such that if you compose any two permutations, it is still a permutation that preserves "the structure".
 \end{definition}
 
-Cauchy's first definition was that of substitutions, and you can derive substitutions. 
+Cauchy's first definition was that of substitutions, and you can derive substitutions. Galois wanted to see when will permutations fail to preserve the structure of being solvable as the means of determining the solvability of the quintic.
+
+Anyways this prototype pseudodefinition is given a more explicit form once Burnside and Cayley realised you want other operations other than permutation. This ontology is surprisingly close to groupoids and generalises quite well. The idea is you want sameness in the object or set of objects to consider whatever operations you put on it such that this part of it remains the same. Note that Burnside and Cayley was interested in infinite groups as well. This is how one can invent the definition of a group (or even a groupoid) as set of operations on the same object.
+
+\begin{definition}[Prototype psuedodefinition by Burnside reinterpreted]
+A group is a set of operations on the same object.
+
+A groupoid is a set of operations on a set of objects.
+\end{definition}
+
+Cayley's ontology of a group gives the same definition as Burnside's but it is a bit different.
+
+Cayley invented this ontology, he invented Cayley's theorem, groups are isomorphic to permutation subgroups of the symmetric group. 
+
+The object remains invariant, so you can compose symmetries to get back the original object, and you can consider the what to compose to the any symmetry transformation to get back the trivial symmetry of doing nothing. 
+
+This ontology is obtained when one consider that there is a bijection between left action on group elements, to permutations of group elements. 
+
+To prove Cayley's theorem, consider the mapping a group element $x$ to the left action on the group element $gx$, since the composition of group elements is closed by preserving the symmetries of an object, this must be a bijection on the set of group elements. Since this is a bijection on the set of group elements, the set of group elements is in bijection to the permutation of the group elements, and is hence isomorphic to a permutation subgroup of the symmetric group. The symmetric group is also a automorphism group on sets. One can invent the notion of a group by considering all symmetries of an object.
+
+Note that Cayley did consider infinite symmetries. The ontological object in the mind's eye for a \textit{Lie group} is the symmetries of a sphere where the orthogonal group acts on it. In the ontology of a topological group or a Lie group, one wants to compose operations to get back where they started and to ensure the action of the symmetry means that object still exists and it is achievable. One can therefore reinvent the notion of a group by looking at what rules let you ensure the object remains kept and compact under the operation, and that it is achievable and perfectly reversible.
+
+\begin{definition}[Prototype psuedodefinition by Cayley reinterpreted]
+  A group is the symmetries on the same object.
+  
+  A groupoid is the symmetries on a set of objects.
+\end{definition}
+
+Note that Cayley also had the idea idea of composition of its members: although Cayley's idea is now in modernity associated with categories, he wrote that a group is defined by the law of composition of its members, therefore one can invent a group by considering all compositions and what is the law associated with this.
+
+The closure property is the most important property, since Galois and Cauchy define groups in terms of the closure properties alone. With permutations, all you need is closure in defining a group (and in fact is the key step of the Yoneda lemma to get your double Hom functor to be the same as natural isomorphisms to an object). Therefore, one can invent a group by forcing permutations to be closed.
+
+Another ontology for groups comes from the idea of a class group in algebraic number theory or deriving a third element that holds under associativity with sameness under left action: this ontology is given by Kronecker that is similar to Weber, the idea is to derive a third variable, assume commutative and associative laws hold and that for finite set $a$, $b$, $c$, ... then if $ab$ not equal to $ac$ then $b$ not equal to $c$. Weber also defined a group of degree $h$, with the idea one can derive a third element for associativity to hold and sameness under left action in Weber's definition. This is the last definition before the formal axiomatisation of a group as a unital associative magma with an invertible operation.
+
+\begin{definition}[Implicit axiomatic definition of a group]
+  A group is a unital associative magma with inverses.
+\end{definition}
+
+\section{More modern ontologies for a group}
+
+Groups have more topological ontologies, we present these below.
+
+A group can represent the loss of space in homotopy. Start with the idea of a fundamental group, or homotopy that covers some sort of area, if we forget this notion of homotopy covering areas, we get the fundamental notion of a group if we consider the end result of one base point. Therefore one can invent the notion of a group by saying the integral or area under homotopy is forgotten or vanishes.
+
+Therefore, while a fundamental group really is a group in its entirety, the homotopies it represents have lost some structure when it is expressed as a fundamental group.
+
+A group can be the rules to classify objects in a space. Start with an ontology of an Eilenberg-Maclane space or a $\mathbf{B}G$ space, where the space consists of other spaces or is a parameterisation of some objects. One can invent the notion of the group as the operations allowed to get from one space to another in this classifying space. Therefore, one can start with some classification of spaces with some rules that keeps the spaces of having the same property, the symmetry of keeping these spaces to have these same properties in the classifying space is therefore the fundamental group of the classifying space of the group.
+
+We now consider more algebraic ontologies of a group.
+
+A group can be seen as categories of one object with all isomorphisms. Consider that compositions of morphisms are all morphisms, if you add the stipulation of invertibility, and only require to study the symmetries (invertibility) of one object, you get the definition of a group being a groupoid of one object, or alternatively a category of one object with all isomorphisms on that object. One can therefore invent the notion of a group, by knowing what is groupoid, and consider all isomorphisms on a single groupoid object.
+
+A group can be given by generators and relations in a short exat sequence. Consider a finite free group of $n$-alphabets, this gives the finite symmetric group on $n$-objects, freely adjoining the alphabet. Since this is a free group, you want to be able compose and take away elements of the free group easily. To get general groups, add additional relators for product of group elements to be the identity of the group to further constrain the definition of a group, these are called the relations. In fact, generators and relations are sufficient to define any finite group, and are enough to define a group. These are called the presentation of the group. One can invent the notion of a group, by seeing how you can make a free group by composing group elements as freely as possible, then you impose some rules to give it more structure and uniqueness.
+
+Groups can be represented by their representations, from the group itself to the general linear group, you want compositions of linear representations be linear representations (or linear transformations), likewise for the trivial representations, and the existence of inverse representations. This also motivates the study of invariants of these matrices, therefore the character of representations is defined by the trace of these linear maps. One can invent the notion of a group, by simply looking at compositions of matrix actions, and see what representations, when multiplied, get back the same trivial representations.
+
+A more primitive ontology of a group is that it gives the structure of an alphabet and "free" compositions. One starts with an alphabet and wants to be able to add letters and delete letters, in fact this is the nature of composition, since we use letters to denote composition, therefore one can reinvent the structure of a group as the correct conditions to let us compose morphisms and invertible morphisms for the morphisms to cancel. This ontology is why groups are important, they represent the best possible construction in composition of morphisms in algebra.
+
+The notion of a group is so central to modern algebra. It is the word that appeared the most in my original copy of notes by a very wide margin. This is because one wants to study things that do not change within a problem, and groups give ways to look at all possibilities leaving the invariant unchanged. This feels very combinatorial actually.
 
 \section{Some unmotivated lemmas}
 
@@ -393,7 +462,7 @@ I am trying to motivate these, but these seem to be very crucial to group theory
   Since a set must have distinct elements, the number of elements in each equivalence class under disjoint union add up to the number of elements in the set $S$.
 \end{proof}
 
-\begin{lemma}[p-group fixed point theorem]
+\begin{lemma}[p-group fixed point theorem]\label{lem:p-group-fixed-point-theorem}
   Suppose $P$ is a finite $p$-group.
   Suppose $X$ is a set in which the finite $p$-group $P$ acts, then the subset $X^{p}$ of fixed points satisfy $|X^P|$ is congruent to $|X|$ modulo $P$. Particularly, if $|X|$ is not congruent to $0$ modulo $p$, then this action has a fixed point. 
 \end{lemma}
@@ -425,11 +494,240 @@ I am trying to motivate these, but these seem to be very crucial to group theory
 
 \begin{lemma}[Fermat's Little Theorem]
   Let $a$ be a non-negative integer, and $p$ be a prime.
-  Then $a^p - a$ is divisible by the prime $p$. 
+  Then thte integer $a^p - a$ is divisible by the prime $p$. 
 \end{lemma}
 
 \begin{proof}
-  Pick the set $X$ as the partition from $0$ to $a$, and apply the p-group fixed point theorem with the cyclic group $P$ of prime order $p$.
+  Pick the set $X$ as the partition from $0$ to $a$, and apply the p-group fixed point theorem or Lemma \ref{lem:p-group-fixed-point-theorem} with the cyclic group $P$ of prime order $p$.
+\end{proof}
+
+\section{Some unorganised definitions}
+
+\begin{definition}
+  A magma is a set with a binary operation.
+  A monoid is a unital associative magma.
+  A group is a monoid with inverses.
+\end{definition}
+
+\begin{example}
+  A group is a full subcategory of groupoids with a single object. The delooping functor from groups to groupoids is full and faithful.
+\end{example}
+
+\begin{definition}
+  A group object internal to a category with finite products is an object with maps that have commuting diagrams for associativity, unitality and inverses. It is a presheaf functor onto the categories of groups whose underlying presheaf functor on sets is representable.
+\end{definition}
+
+\begin{example}
+  A group object in group is an abelian group. This is an example of the Eckmann-Hilton argument.
+\end{example}
+
+\begin{definition}
+  An automorphism is an endomorphism that is an isomorphism.
+\end{definition}
+
+\begin{definition}
+  A group $G$ has a presentation for a coequaliser diagram from the free group on generators $FX$ to the free group on a set of relations $FR$.
+  The diagram is $FR \rightrightarrows FX \rightarrow G$.
+\end{definition}
+
+\begin{definition}
+  A finite group has an underlying finite set. It is a group object in the category of finite sets.
+\end{definition}
+
+\begin{definition}
+  A subgroup is a subobject in the category of groups given by a monomorphism of groups from the subgroup to the full group.
+\end{definition}
+
+\begin{definition}
+  A subgroup is normal if left conjugation by any element leaves the normal subgroup invariant. Equivalently, a normal subgroup are kernels of group homomorphisms. Loosely, they are congruence relations in the category of groups.
+\end{definition}
+
+\begin{definition}
+  A quotient object of a congruence or internal equivalence relation of an object in a category is the coequaliser of the induced pair of morphisms that are made equivalent.
+\end{definition}
+
+\begin{definition}
+  A quotient group is a quotient object in the category of groups.
+\end{definition}
+
+\begin{definition}
+  A simple group is a group with exactly two quotient groups, the trivial group and the group itself.
+\end{definition}
+
+\begin{example}
+  Consider the inclusion of a normal subgroup into a group, the quotient group is the set of cosets equipped with the group structure induced from the group $G$. It is precisely the cokernel of the inclusion if the inclusion is a (group homo)morphism of abelian groups.
+\end{example}
+
+\begin{definition}
+  An action of a group in a category is a functor from the groupoid on the single object into a category.
+  Enrichment over this category defines action objects.
+
+  This can be encoded in the action groupoid fiber sequence in the category of groupoids.
+
+  \begin{equation}
+    X \rightarrow X // G \rightarrow \mathbf{B}G
+  \end{equation}
+
+  This fiber sequence may be thought of as the $\rho$-associated bundle to the $G$-universal principal bundle.
+\end{definition}
+
+\begin{example}
+  A representation is a linear action using the general linear group. A circle action uses the circle group. An action on a set in itself if it exists, the set is a magma.
+\end{example}
+
+\begin{definition}
+  A (left/right) coset object is the quotient of a group and a subgroup, this is a set of equivalence classes of elements of a group where two elements are equivalent if they differ by (left/right) multiplication with an element in the subgroup.
+
+  The left coset object coequalises parallel morphisms from the product of the subgroup object and the full group object under group multiplication and projection.
+
+  The right coset object coequalises parallel morphisms from the product of the full group object and the subgroup object (order matters here) under group multiplication and projection.
+\end{definition}
+
+\begin{definition}
+  A normaliser subgroup of an underlying subset of a group is the subgroup with all elements such that there are two distinct elements in the underlying subset that commutes on the left and right with an element in this normaliser subgroup.
+\end{definition}
+
+\begin{definition}
+  A centraliser subgroup is a normaliser subgroup with the stronger condition that these two distinct elements must be the same. So, all elements commute with the elements of a subset of the underlying set of the group.
+\end{definition}
+
+\begin{definition}
+  The centre of a group is the subgroup with all underlying elements of the group that commutes with all elements of a group.
+\end{definition}
+
+\begin{definition}
+  A stabiliser subgroup of an element in a full group is the set of all elements that leave the element fixed with the same group action. 
+\end{definition}
+
+\begin{definition}
+  If there are two subgroups, they are conjugate subgroups if there exists an element such that a conjugation action by the group element takes one to the other.
+\end{definition}
+
+\begin{definition}
+  The torsion subgroup is the subgroup of all elements with finite order whoser power is the netural element.
+
+  A group is pure torsion if it coincides with its torsion subgroup.
+
+  A group is torsion free if the torsion subgroup is the trivial group. The trivial group is the subgroup with only the neutral element.
+\end{definition}
+
+\begin{definition}
+  A Sylow $p$-subgroup is a maximum $p$-torsion subgroup for a prime $p$ of a finite group $G$.
+\end{definition}
+
+\begin{definition}
+  Given an action of a discrete group on a set, the set with the group acting on a fixed point is an orbit of the action, or the $G$-orbit through the point $x$.
+
+  The set is a disjoint union of its orbits.
+
+  The category of orbits of a group is the full subcategory of the category of sets with an action of the group $G$.
+\end{definition}
+
+\begin{example}
+  An orbit of a cyclic subgroup of a permutation group is a permutation cycle.
+\end{example}
+
+\begin{definition}
+  An adjoint action is an action by (left) conjugation.
+
+  The conjugacy class of a element is the orbit of an element under the adjoint self-action of the group, It is the subset of all the elements obtained by conjugation from a group element with another group element.
+\end{definition}
+
+\begin{example}
+  The conjugacy class of a neutral element is itself.
+
+  An abelian group could be defined as a group where all conjugacy classes are singletons, one for each element of the group.
+
+  The number of conjugacy classes refer to the number of its irreducible representations.
+
+  The self duality of symmetric groups with general linear groups over the field of one element, so there is a correspondence between conjugacy classes and their irreducible representations.
+\end{example}
+
+\begin{example}
+  A character of a linear representation is a well defined function that on the set of conjugacy classes of elements in the group. This is a neat definition, since such a function must be invariant under conjugation.
+\end{example}
+
+\begin{definition}
+  A pullback is a limit of a cospan. It is the cone of a cospan that commutes. 
+  A pushout is a colimit of a span. It is the cocone of a span that commutes. 
+\end{definition}
+
+\begin{definition}
+  The direct product of groups is the cartesian product in the category of groups. If the group is abelian, and there is a finite number of factors, this is also the direct sum of groups.
+
+  The free product of groups is the coproduct in the category of groups.
+
+  The amalgamated free product of groups is the pushout or colimit in the category of groups. This is unique and universal by factoring a suitable homomorphism.
+\end{definition}
+
+\begin{definition}
+  Let a group $G$ act on a group $\Gamma$ on the left by a group automorphism $p : G \rightarrow \mathrm{Aut}(\Gamma)$, the semidirect product group has an underlying set the cartesian product $\Gamma \times G$ with multiplication twisted by the group automorphism $p$ on the group element $\gamma$ in the group $\Gamma$, but not on $g$ in group $G$. The twisting acts on the group element $h$ in the group $G$:
+
+  \begin{equation}
+    (\delta, h)(\gamma, g)
+    = (\delta p(h)(\gamma), hg))
+  \end{equation}
+\end{definition}
+
+\begin{exercise}
+  Find a better definition of the semidirect product.
+\end{exercise}
+
+\begin{definition}
+  The Cayley graph (or quiver) of a group is a graph with the elements of the group $G$ as the vertices, and the edges labelled by elements of the set of generators $X$ of the group $G$ as subset of the underlying set of the group $G$. The metric induced from the graph distance is called the word metric with respect to the generators.
+\end{definition}
+
+\begin{example}[Cayley's theorem]
+  Consider the group acting on itself by left multiplication with a permutation representation which can be drawn out on a Cayley graph. 
+  This permutation representation maps the group to a subgroup of the symmetric group.
+
+  This representation is faithful if the permutation representation is injective with a trivial kernel.
+  
+  Suppose a group element is in the kernel of the permutation representation, any group element is a left multiple of the identity element. Therefore, this group element must be the identity element since this is a permutation representation acting on the identity element, and the kernel of the permutation representation is trivial.
+
+  Since the permutation representation has a trivial kernel, the image of the permutation representation must be isomorphic to the quotient group on the trivial kernel, which is the full group by the first isomorphism theorem. Therefore, the permutation representation is an isomorphism. Since this is an isomorphism, the group must be isomorphic to a subgroup of the symmetric group. 
+\end{example}
+
+\section{Class equation}
+
+% Lagrange
+% First, second, third, isomorphism theorems
+% Sylow's Theorem
+% Fundamental theorem of Ab groups
+% Classification
+
+Suppose $G$ is a group. Suppose $A$ is a $G$-set.
+
+Each $G$-set $A$ has a canonical decomposition as coproducts of components. These are the orbits of the action. Define the representative element $a_x$ in each orbit $x$, there is a canonical isomorphism of $G$-set $A$ and the coproduct $\Sigma_{\mathrm{orbits \, in \, x}} G / \mathrm{Stab}(a_x)$.
+
+Apply a forgetful functor into the cardinality of underlying sets, the cardinality of the $G$-set $A$ is the sum of the order of the group $G$ divided by the order of the stabiliser of the element $a_x$ under each orbit.
+
+\begin{equation}
+  |A| = \sum_{\mathrm{orbits \, x}}
+  \dfrac{|G|}{|\mathrm{Stab}(a_x)|}
+\end{equation}
+
+This next form expresses the groupoid cardinality of the action groupoid of the group $G$ acting on the $G$-set, $A$.
+
+\begin{equation}
+  \dfrac{|A|}{|G|} = \sum_{\mathrm{orbits \, x}}
+  \dfrac{1}{|\mathrm{Stab}(a_x)|}
+\end{equation}
+
+\begin{theorem}
+  Show that a nontrivial group of prime power has a nontrivial centre.
+\end{theorem}
+
+\begin{proof}
+  The orbit of an element if it belongs to the centre is consists of the element as a singleton if it belongs to the centre. Without loss of generality, consider elements that are not in the center.
+
+  The cardinality of the orbit of an element divides the order of the group of prime power by the class equation. 
+  
+  The prime divides the cardinality of the orbit of a noncentral group element. 
+  
+  The class equation can be decomposed to calculate the order of the group as the sum of the order of the group center and the sum of the quotient of the order of group divided by the stabiliser of nontrivial orbits. 
+  
+  In both cases, the prime must divide the order of the group and the order of the centre. So the centre has more than one element and by definition, is nontrivial.
 \end{proof}
 
 \section{Hints or Solutions}
@@ -452,13 +750,1416 @@ The idea is to suppose an algebraic integer $a$ is in a finite extension of $L$,
     Consider chain of extensions by pairs of algebraic integers, these are finite extensions. Polynomials are finite sums and products of algebraic integers so these are algebraic as well.
 \end{proof}
 
-\chapter{Rings}
+\chapter{Linear Algebra}
+\label{ch:lin-alg}
+
+\section{Bundles}
+
+\begin{definition}
+	A bundle $B^{(E,p)}$ over an object called the base object $B$ in a category $\mathbf{C}$ is an object called the total object $E$ of the category equipped with a fibration $p$ in the category from the total object $E$ to the base object $B$.
+\end{definition}
+
+The typical case is when these objects are spaces.
+
+\begin{definition}
+	Consider a generalised element $x$ in the base object $B$, the fibre of the total object over the generalised element $E_x$ of the bundle $B^{(E, p)}$ is the pullback $x^*E$.
+\end{definition}
+
+By abuse of notation, we either truncate the morphism or truncate the total object for the statement of a bundle.
+
+\begin{definition}
+	Given two bundles $B^{(E_1, p_1)}$ and $B^{(E_2, p_2)}$, a morphism of bundles over the base object $B$ is a morphism of total objects $E_1$ to $E_2$ which commutes over the total object as a cocone. Alternatively, bundles over the base object $B$ form the slice category of category $\mathbf{C}$ over the base object $B$. 
+\end{definition}
+
+\begin{definition}
+	The over category $\mathbf{C} / B$ is the cateogry of bundles over a given object.
+\end{definition}
+
+\begin{definition}
+	A fibre bundle $B^{(E, p)}$ over base object $B$ with a standard fibre $F$ is a bundle over $B$ such that the fibre of the total object over the generalised element $E_x$ of the bundle $B^{(E, p)}$ is the pullback (fibre product) isomorphic to the standard fibre $x^*E \cong F$.
+\end{definition}
+
+Coverage gives the minimum structure necessary to define a sheaf. Grothendieck weakened the notion of open covers (which gives the Zariski coverage)for more general coverage.
+
+\begin{definition}
+	A coverage of a category consists of each collections of covering families of morphisms on $U$ $f_i : U^{\{U_i\}_{i \in I}}$ for each object $U$ in the category such that if there is a morphism $g : U^V$ then there exist a covering family of morphisms $h_j = V^{\{V_j\}_{j \in J}}$
+	such that there exist morphisms $k : V^{V_j}$ such that the composite of this morphism and the covering morphism on $V$, denoted as $g \circ h_j$ factors through the covering morphism on $U$, denoted as $f_i$.
+\end{definition}
+
+\begin{definition}
+	A site is defined with the data of a category and its coverage.
+\end{definition}
+
+\begin{definition}
+	A small site has a coverage with covering families that can be organised into a set.
+\end{definition}
+
+Note that the coverage is needed to be defined to exists.
+
+\begin{definition}
+	Suppose the category $C$ is a site.
+	A locally trivial fibre bundle over base object $B$ is denoted as $B^{(E, p)}$ with standard fibre $F$ is a bundle over base object $B$ with a cover (covering family) $(j_\alpha : B^{U_\alpha})_\alpha$ such that for each index $\alpha$, the pullback $E_\alpha$ along $j_\alpha$ is isomorphic to the slice category $\mathbf{C} / U_\alpha$ between the pullback $E_\alpha$ and the trivial bundle $U_\alpha \times F_\alpha$.
+\end{definition}
+
+Every locally trivial fibre bundle is a locally trivial bundle. A locally trivial bundle is a locally trivial fibre bundle if the base object is connected.
+
+\begin{definition}
+	A cartesian category is a category whose monoid structure is given by the category theoretic product, with the terminal object as unit.
+\end{definition}
+
+\begin{definition}
+	A group object or an internal group internal to a category with finite products (binary Cartesian products and a terminal object) is an object with unique morphisms to the terminal objects and morphisms within the category with a binary operation, a neutral element, and inverse elements such that diagrams that commute for a unital associative magma object also commute for the group object.
+\end{definition}
+
+\begin{definition}
+	Suppose the category $\mathbf{C}$ is a site and a cartesian category.
+	A $G$-bundle is a locally trivial fibre bundle over base object $B$ is denoted as $B^{(E, p)}$ with standard fibre $F$ is a bundle over base object $B$ with a cover (covering family or transition maps) $(g_{\alpha, \beta} : G^{U_{\alpha, \beta}})$ which give the transition maps relative to the action of the group object $G$ (a group internal to a cartesian category $\mathbf{C}$) on the standard fibre $F$.
+\end{definition}
+
+\begin{definition}
+	A $G$-principal bundle is a $G$-bundle whose group object $G$ is the standard fibre.
+\end{definition}
+
+\begin{example}
+	A $G$-torsor is a $G$-principal bundle over the base object $B$ in the category of $\mathbf{Set}$.
+
+	If $G$ is a group object internal to $\mathbf{Set}$, then the action of the group $G$ on itself equips the underlying set of the group $G$ with a structure of a $G$-torsor.
+
+	A unit of measurement is a torsor on the multiplicative group of the reals. An affine space over a base field is a torsor for the additive group of the base field by translation.
+\end{example}
+
+This means that for a $G$-principal bundle, the transition maps are automorphisms.
+
+\begin{definition}
+	Suppose $F$ is a topological vector space (over a topological field).
+	
+	A vector bundle is the case of a $\mathrm{GL}(F)$-bundle over $B$ with the standard fibre $F$, where $\mathrm{GL}(F)$ is the general linear group with its defining action on $F$.
+
+	A module bundle is the case of a $\mathrm{GL}(F)$-bundle over $B$ with the standard fibre $F$ that is a topological module, where $\mathrm{GL}(F)$ is the general linear group with its defining action on $F$.
+\end{definition}
+
+\begin{example}
+	A vector bundle with a base object a point is a vector space.
+
+	A real vector bundle over a topological space is a real vector space associated with a $O(n)$-principal bundle. $O(n)$ is the orthogonal group, the group of rotations. Fibres are real vector spaces.
+
+	Vector bundles can be dualised by passing fibrewise to dual vector space.
+
+	A topological vector bundle has a base object being a topological space.
+
+	A differentiable vector bundle has a base object a differentiable manifold.
+
+	An algebraic vector bundle has a base object a scheme.
+
+	A tangent bundle is a vector bundle with a base object a tangent space of a point.
+	Application of direct sum and tensor product of vector space fibrewise gives equivalent definitions over vector bundles. Passing fibrewise to the cotangent space defines the cotangent bundle.
+	
+	The Grothendieck group completion under direct sum of vector bundles as monoid gives topological K-theory.
+\end{example}
+
+\begin{definition}
+	A line bundle is a vector bundle of rank 1.
+\end{definition}
+
+\begin{exercise}
+	Find a good definition for associated bundles.
+\end{exercise}
+
+\begin{example}
+	Complex line bundles are canonically associated bundles of circle group prinicpal bundles.
+
+	The Mobius strip is a unique up to isomorphism non trivial real line bundle over the circle group.
+\end{example}
+
+\begin{definition}
+	Consider a right principal $G$-bundle for a group $G$ with morphism $\pi : P \rightarrow X$.
+
+	Form the quotient object (assuming these exists), $P \times_G F = (P \times F) / ~$ where $P \times F$ is a product, and $~$ is the smallest congruence such that using generalised elements we have the equivalence relation $(pg, f) ~ (p, gf)$. Now there is a canonical projection $P \times_G F \rightarrow X$ where the class (not set) of $(p, f)$ is mapped to $\pi(p) \in X$
+
+	We now have $P \times_G F \rightarrow X$ as a fibre bundle defined as the associated bundle with typical fibre $F$, the transition functions belong to the action of the group $G$ on the typical fibre $F$.
+\end{definition}
+
+\begin{definition}
+	A natural bundle is a bundle where homomorphisms over objects in the category lift the morphisms of bundle in a natural way.
+\end{definition}
+
+\begin{example}
+	Consider smooth manifolds. For any smooth function $f$, a pushforward of vector fields to tangent fields yield a fibrewise linear morphism of tangent bundles $df$ of tangent bundles. This is the incarnation of the chain rule, which states that the construction of the tangent bundle is functorial.
+\end{example}
+
+\section{Isbell adjunction on vector bundles}
+
+With the Isbell adjunction between quantity and space, one can relate algebra with bundles.
+
+\begin{enumerate}
+	\item A ring can be thought of a ring of functions in a space.
+	\item A module over a ring can be thought of a space of sections of a vector bundle on the space.
+	\item A compact topological space can be thought of its C-star algebra of continuous function valued in the complex numbers. A opposite category of commutative C-star algebras is equivalent to the category of compact topological spaces. This is Gelfand duality.
+	\item A Hausdorff topological complex vector bundle over a compact topological space can be thought of as a $C(X, \mathbf{C})$-module of its continuous sections. So topological complex vector bundles over a space $X$ is an equivalnce of categories to finitely generated projective modules over $C(X, \mathbf{C})$. This is the Serre-Swan theorem.
+	\item The direct sum of modules is the fiberwise direct sum of vector bundles.
+	\item The extension of scalars of a module along a ring homomorphism corresponds to a pullback of vector bundles along the dual map of spaces.
+\end{enumerate}
+
+\section{Morita theory, and higher linear algebra}
+
+I got interested in Morita theory because it helps generalise linear algebra. This is basically a copy of Qiaochu Yuan's blog post on Higher Linear Algebra. I have only included parts of it I am interested in.
+
+\begin{definition}
+	A unital ring is a monoid object in the category of an abelian groups. It is a monoid internal to the monoidal category of abelian groups. The monoidal category part is necessary to ensure that the tensor product of abelian groups exist.
+\end{definition}
+
+\begin{definition}
+	A linear category or an algebroid is a category whose hom-sets are all modules with bilinear composition.
+
+	A $k$-linear category or $k$-algebroid is a category enriched over the monoidal category of $k$-modules with the tensor product of modules.
+
+	A symmetric monoidal $k$-linear category or $k$-algebroid is a category enriched over the category of $k$-modules with the tensor product of modules and the composition are bilinear. 
+\end{definition}
+
+\begin{example}
+	A linear category is the horizontal categorification of (unital associative) algebra.
+\end{example}
+
+\begin{example}
+	A integer algebra is a ring. A integer algebroid is a ringoid.
+\end{example}
+
+\begin{definition}
+	A module category is a linear category equipped with an action of a tensor linear category. It is a category enriched in teh category of modules in a base field.
+\end{definition}
+
+A Morita 2-category can be thought of as the 2-category of module categories over the symmetric monoidal category $\mathrm{Mod}(k)$ of $k$-modules, equipped with the tensor product $\otimes_k$ over $k$.
+
+\begin{corollary}[Corollary of Eilenberg-Watts]
+	The Morita 2-category has objects as symmetric monoidal categories $\mathrm{Mod}(A)$ with $A$ as a $k$-algebra (a pair $(k, p)$ where $p$ is a $k$-ring homomorphism).
+
+	The Morita 2-category has morphisms as co-continuous $k$-linear functors from symmetric monoidal categories of $k$-algebras $\mathrm{Mod}(A)$ to $\mathrm{Mod}(B)$.
+\end{corollary}
+
+Suppose $k$ is a commutative ring, and $\mathrm{Mod}(k)$ is a symmetric monoidal category with a tensor product $\otimes_k$ and a category $V$ as the base of enrichment.
+
+\begin{definition}
+	Consider categories enriched over the base of enrichment category $V$. These are the $V$-enriched categories.
+\end{definition}
+
+\begin{definition}
+	Suppose $C$ and $D$ are two $V$-categories, the naive tensor product $C \otimes D$ is the $V$-category with objects are pairs of objects in $C$ and objects in $D$, and whose homs are given be the tensor product:
+
+\begin{equation}
+	\mathrm{Hom}_{C \otimes D} ((c_1, d_1), (c_2, d_2)) \cong \mathrm{Hom}_{C}(c_1, c_2) \otimes \mathrm{Hom}_{D}(d_1, d_2)
+\end{equation}
+
+\end{definition}
+
+If we reduce these categories $C$ and $D$ to be one object categories, and the base of enrichment to be the $\mathrm{Mod}(k)$ which is a symmetric monoidal category with a tensor product $\otimes_k$, this reduces to the tensor product of $k$-algebras.
+
+\begin{definition}
+	Suppose $C$ and $D$ are two $V$-categories over the base of enrichment category $V$, a left module over $C$ is a $V$-enriched functor from $C$ to $V$. These can be thought of a co-presheaves.
+\end{definition}
+
+\begin{definition}
+	Suppose $C$ and $D$ are two $V$-categories over the base of enrichment category $V$, a right module over $C$ is a $V$-enriched functor from the opposite category $C^\mathrm{op}$ to $V$.
+	These can be thought of as presheaves.
+\end{definition}
+
+\begin{definition}
+	Suppose $C$ and $D$ are two $V$-categories over the base of enrichment category $V$, a (C,D)-bimodule module is a $V$-enriched functor from the tensor product of categories $D^\mathrm{op} \otimes C$ to $V$. These exist since we assume the base of enrichment category $V$ is a monoidal category.
+\end{definition}
+
+These reduces to their usual meaning with one object categories to correspond to algebras, with the base of enrichment to be $\mathrm{Mod}(k)$ which is a symmetric monoidal category with a tensor product $\otimes_k$.
+
+\section{Remarks on analogies}
+
+\begin{enumerate}
+	\item Sets are analogous to categories.
+	\item Abelian groups are analogous to cocomplete categories. Abelian addition is categorified to be taking colimits. A cocomplete category has all small colimits. The presheaf category $[C^\mathrm{op}, \mathbf{Set}]$ is cocomplete for a small category $C$. The Yoneda embedding exhibits it as a free cocompletion of $C$ or $\mathrm{Yo} : C \hookrightarrow \mathrm{PSh}C$ as something that freely adjoins colimits to the small category $C$. 
+	\item Rings are anaologous to monoidal cocomplete categories. The monoidal structure distributes bilinearly over colimits.
+	\item Commutative rings are analogous to symmetric monoidal cocomplete categories.
+	\item Modules over commutative rings are analogous to cocomplete module categories over symmetric monoidal cocomplete categories.
+\end{enumerate}
+
+By the universal property ofthe free cocompletion, cocontinuous (preserves all small colimits) $k$-linear functors from symmetric monoidal categories of $k$-algebras $\mathrm{Mod}(C)$ to $\mathrm{Mod}(D)$ correspond to $k$-linear functors from the category $C$ to the symmetric monoidal category of $k$-algebras $\mathrm{Mod}(D)$, or equivalently by adjunction to $(C,D)$-bimodules. Composition is the tensor product of bimodules, computed using co-ends. This proves and generalises the Eilenberg-Watts theorem.
+
+We can have the category $C$ to be finitely many isomorphism classes of objects of objects. Replace this with the direct sum of one object from each isomorphism class because the category $C$ is Morita equivalent to the one object $k$-linear category with this endomorphism ring, now the Morita $2$-category is bigger since the category $C$ is allowed to have infinitely many objects.
+
+\begin{definition}
+	Suppose $C$ and $D$ are two $V$-categories over the base of enrichment category $V$
+
+	The Morita 2-category has objects as essentially small $k$-linear categories $C$, morphisms as $(C,D)$-bimodules over $k$ and 2-morphisms as homomorphisms of bi-modules.
+
+	Equivalently, objects are the cocomplete $k$-linear categories $\mathrm{Mod}(C)$ where these are have all small colimits, morphisms are cocontinuous $k$-linear functors from $\mathrm{Mod}(C)$ to $\mathrm{Mod}(D)$ preserving small colimits, and 2-morphisms as natural transformations.
+\end{definition}
+
+\begin{proposition}
+	The Morita 2-category has biproduct.
+	This is similar to the fact that vector spaces where coproducts and products coincide, making this a linear algebra.
+
+	\begin{equation}
+		\mathrm{Mod}(A) \times \mathrm{Mod}(B)
+		\cong \mathrm{Mod}(A \sqcup B)
+	\end{equation}
+\end{proposition}
+
+\begin{proposition}
+	There is a tensor-hom adjunction
+	\begin{equation}
+		[\mathrm{Mod}(A) \otimes \mathrm{Mod}(B), \mathrm{Mod}(C)]
+		\cong
+		[\mathrm{Mod}(A), [\mathrm{Mod}(B), \mathrm{Mod}(C)]]
+	\end{equation}
+\end{proposition}
+
+The internal hom is the category of cocontinuous $k$-linear functor which itself is a cocomplete $k$-linear category.
+
+Using the definition of the universal property, we have:
+
+\begin{equation}
+	\mathrm{Mod}(A) \otimes \mathrm{Mod}(B) \cong \mathrm{Mod}(A \otimes_k B)
+\end{equation}
+
+where the naive tensor product is dentoed as $\otimes_k$ over the commutative ring $k$. Therefore, $\mathrm{Mod}_k$ is the unit object or the tensor product over $\mathrm{Mod}(k)$.
+
+\section{Big categories and small categories}
+
+Big categories are akin to categories of mathematical objects. These correspond to entier worlds like categories of sets, abelian groups, modules, sheaves. These tend to admit all small colimits (Cocomplete), and people consider cocontinuous left adjoints between them. Left adjoints preserve colimits.
+
+Little categories are categories as mathematical objects. Categories with one objects are typical example, and serve as a starting point for enrichment, are Cauchy complete in the sense that they are the closure of a category under limits that are preserved for any functor.
+
+We can pass from small to big categories by taking modules (most general) representations (left modules), or presheaves (right modules). 
+
+We can pass from big to small categories by taking tiny objects.
+
+\begin{definition}
+	A tiny object is an object in the category such that the hom functor out of the object preserves colimits. These are also called small projective objects.
+\end{definition}
+
+\begin{example}
+	A functor on a little category can be something like the category of open subsets of a topological subset, it might be a functor on a big category like the category of commutative rings.
+\end{example}
+
+\begin{example}
+	A plausible definition for a cocomplete abelian category having a basis if it has tiny (compact and projective) generators.
+\end{example}
+
+Given a basis category $C$ for a higher module $\mathrm{Mod}(C)$, an object cn be described by a module / presheaf $F : C^\mathrm{op} \rightarrow \mathrm{Mod}(k)$.
+
+The components of this presheaf can eb thought of as "coordinates" of the presheaf functor $\mathrm{F}$ with the category as the basis.
+
+This is analogous to how a vector is the sum over a elements of a basis weighted by coordinates in that basis.
+
+\begin{definition}
+	A presheaf is a weighted colimit or coend or functor tensor product:
+
+	\begin{equation}
+		F(-) \cong \int^{c \in C}
+		F(c) \otimes_k \mathrm{Hom}(-,c)
+	\end{equation}
+
+	weighted by coordinates $F(c)$ of the basis of representable presheaves.
+\end{definition}
+
+This is an enriched version of the co-Yoneda lemma where the presheaf of sets over a category is canonically a colimit of representable presheaves (integral).
+
+Likewise, cocontinuous $k$-linear functor $\mathrm{Mod}(C)$ to $\mathrm{Mod}(C)$ are equivalent to bimodule functors $C \otimes_k D^\mathrm{op} \rightarrow \mathrm{Mod}(k)$ which can be interpreted as saying that such functors can be written as matrices indexed by categories $C$ and $D$. Composition and evaluations can be interepreted by familar linear algebra if we reinterpret the relevant products as tensor products, the relevant sums as co-ends.
+
+One can degenerate this example by taking $C = D$. Then endormorphisms of $\mathrm{Mod}(C)$ correspond to $(C,C)$-bimodules or equivalently to functors $F : C^\mathrm{p} \otimes_k C \rightarrow \mathrm{Mod}(k)$. You can take the coends to define the trace of the endomorphism $F$ which is denoted by $\mathrm{Tr}(F)$ which in $\mathrm{Mod}(k)$.
+
+\begin{equation}
+	\mathrm{Tr}(F) = \int^{c \in C}
+	F(c,c)
+\end{equation}
+
+This is a generalisation of the (zeroth) Hochschild homology, with coefficient in a bimodule, which it reduces to if $C$ is an algebra.
+
+\begin{example}
+	Generalise the Hochschild cohomology using a suitable computation using ends.
+\end{example}
+
+The identity functor an be represented by the hom $\mathrm{Hom(-,-)}$, taking its trace gets the Hochschild homology or the trace of $C$
+
+\begin{equation}
+	\mathrm{Tr}(C) = \int^{c \in C}
+	\mathrm{Hom}(c,c)
+\end{equation}
+
+More explicitly, this coend is the result of coequalising the left and right action on the category $C$ on the hom $\mathrm{Hom(-,-)}$ by postcomposition and precomposition respectively. This is the relevant coequaliser:
+
+\begin{equation}
+	\mathrm{Tr}(C) = \mathrm{coeq}
+	\left(
+		\coprod_{c, d \in C} \mathrm{Hom}(c,d)
+		\otimes
+		\mathrm{Hom}(d,c)
+		\rightrightarrows 
+		\coprod_{c \in C}
+		\mathrm{Hom}(c,c)
+	\right)
+\end{equation}
+
+These send pairs of morphisms into mutual composites. This trace is the quotient of the direct sum of endomorphism rings of every object in the category $C$ by the subspace of 
+"commutators" of the form $fg - gf$, where $f$ and $g$ need nor be endomorphisms.
+
+\chapter{Representation Theory}
+\label{ch:rep-theory}
+
+\begin{remark}
+	The intuition is that an associative $k$-algebra is a possibly noncommutative ring with a copy of the field $k$ inside it. It is a $k$-vector space. (Hint: we will slowly weaken it to modules, then to group rings).
+\end{remark}
+
+\begin{example}
+	Let $k$ be a field. These are $k$-algebras, the polynomial ring on $n$ generators $k[x_1, ..., x_n]$. The set of $n$ by $n$ matrices or $\mathbf{Mat}(V)$ linear maps $T : V \rightarrow V$, multiplication by operator composition.
+\end{example}
+
+\begin{definition}
+	A $k$-algebra $A$ is a noncommutative ring with a ring homomorphism into $A$ whose image is a copy of the field $k$ as a subset of $A$, with associativity on scalars $\lambda a = a \lambda$ for $\lambda$ in field $k$ and $a$ in $k$-algebra A. If the ring multiplication is commutative, then it is a commutative algebra.  
+\end{definition}
+
+\begin{definition}
+	A $k$-algebra is a $k$-vector space with associative, bilinear multiplication product.
+\end{definition}
+
+\begin{definition}
+	The group algebra is a $k$-algebra with elements of the group $G$ as the basis elements of the algebra.
+\end{definition}
+
+\begin{definition}
+	A homomorphism of $k$-algebras is a linear map between the $k$-algebras respecting multiplication (or composition if you are categorically minded and can reason analogously between composition of linear maps and matrix multiplication) and sends the identity between the source and target. This is both a homomorphism as a ring and as a vector space.
+\end{definition}
+
+\begin{definition}
+	The direct sum of $k$-algebras is defined in terms of the ring addition, but the ring product is DEFINED to vanish when both elements are in different algebras.
+\end{definition}
+
+\begin{definition}
+	A representation of a $k$-algebra $A$ is a $k$-vector space $V$ with an action of $k$-algebra $A$ on $k$ vector space $V$ that satisfies bilinearity and scalar multiplication which is a $k$-algebra homomorphism from $k$-algebra $A$ to the set of linear maps from $k$-vector space $V$ to $k$-vector space $V$.
+\end{definition}
+
+\begin{exercise}
+	Now replace the above worked examples with group rings. What is the definition of a group ring?
+\end{exercise}
+
+\section{Representations from a categorical perspective}
+
+This presents a top down view of ordinary representation theory.
+
+\begin{definition}
+	A representation of a source category in a target category is a functor from the source category to the target category.
+\end{definition}
+
+\begin{definition}
+	A homomorphism between representations is simply a natural transformation between representations.
+\end{definition}
+
+\begin{example}
+	The target category is the category of vector spaces over a field. The functor is a linear representation.
+\end{example}
+
+\begin{example}
+	The source category is the delooping of a group, it has a group representation in the target category.
+\end{example}
+
+\begin{example}
+	The source category is the free category on a quiver. This is quiver representation.
+\end{example}
+
+\begin{example}
+	The source category is the category of $G$-sets for a group $G$. The target category is a category of linear representation. The functor is a permutation representations.	
+\end{example}
+
+\begin{example}
+	Let a category $C$ have a tensor product $\otimes$ and a unital tensor $I$ be a monoidal category. Let $|M|$ be the underlying object, multiplication $\mu : M \otimes M \rightarrow M$ and unit $\eta : I \rightarrow M$  satisfying the associative law and left and right unit laws such that we have a monoid in the monoidal category as a triple $(|M|, \mu, \eta)$.
+
+	The regular representation is defined as the action of the monoid $M$ on the underlying object of $|M|$ in the category $C$ induced by the product $\mu$.
+\end{example}
+
+\begin{example}
+	For a symmetric group $S_n$, its alternating representation is the one dimensional linear representation from the symmetric group $S_n$ to the general linear group of $GL(1)$ as a vector space sending even permutations to $+1$, and odd permutations to $-1$.
+\end{example}
+
+\begin{exercise}
+	Define a symmetric group as a one object category with particular isomorphisms of relevance.
+
+	Similarly, define the general linear group $GL(1)$.
+
+	Now describe the alternating representation as a functor.
+\end{exercise}
+
+\begin{example}
+	Let a Lie group be the target category (continuous symmetries of a single object where all morphisms are isomorphisms), and let the vector space underlying the Lie algebra given by the derivative of its adjoint action on the neutral element. This is the adjoint representation.
+\end{example}
+
+\begin{exercise}
+	Define the co-adjoint action by defining a suitable vector space.
+\end{exercise}
+
+Recall the duality between subgroup inclusions and quotient groups. Likewise, we have the induction restriction adjunction in representation theory.
+
+\begin{example}
+	Every subgroup inclusion induces a restriction representation functor from the category of representations on the full group to the category of representations on the subgroup. This forgets the full group action on the given full representation, remembering only the subgroup action to induce the representation of the subgroups.
+
+	If the restriction of a functor has a left adjoint, then there exists a functor assigning left induced representations from the category of representations on the subgroups back to the category of representations on the full group. 
+	
+	This is directly analogous to how the left adjoint of the restriction of scalars is the extension of scalars.
+\end{example}
+
+\begin{exercise}
+	Use the example of the category of the finite dimensional representation over a field $k$ to construct the induced representation functor explicitly using the tensor product of representations.
+
+	We have the induced representation functor from the vector space $V$ of the full representation to the tensor product $k[G] \otimes_H V$ of the $k$-algebra on the finite group $k[G]$ with the vector space $V$ under the tensor product in subgroup $H$.
+	
+	If you take $V = \mathbf{1}$, show that the induced representation is the basic permutation representation spanned by the coset space $G/H$:
+
+	\begin{equation}
+		\mathrm{ind}_H^{G} (\mathbf{1})
+		= k[G / H]
+	\end{equation}
+
+\end{exercise}
+
+\begin{example}
+	Groups are symmetries of one object. Groupoids are symmetries of multiple objects.
+
+	Therefore, we can define groupoid representations. Let $G$ be a groupoid. A linear representation of the groupoid $G$ is a groupoid homomorphism to the groupoid core $\mathrm{Core(Vect)}$ of the category of vector spaces $\mathrm{Vect}$. For each object in the groupoid there is an asscoiated vector space, and for each morphism in the groupoid a related linear map that respects composition and the identity.
+
+	Picking the groupoid core of the category of sets give a permutation representation. We can write this symbolically using the power morphism notation $\mathrm{Core(Set)}^{G}$.
+
+	Picking the groupoid to be the delooping groupoid of a group $G$ is a group representation.
+
+	A convenient definition of monodromy is as follows. Let $X$ be a topological space. Forming monodromy is a functor from the category of covering spaces over $X$ to the permutation representations of the fundamental groupoid of $X$.
+	\begin{equation}
+		\mathrm{Fib_{E}} : \Pi_1(X) \rightarrow \mathrm{Set}
+	\end{equation}
+
+	This gives the fundamental theorem of covering spaces, where the reconstruction of covering spaces from monodromy is an inverse functor to the monodromy functor. Therefore, there is an equivalence of categories between the covering space $\mathrm{Cov(X)}$ with the permutation representations of the fundamental groupoid of $X$, denoted by $\mathrm{Set}^{\Pi_1(X)}$. This is also a form of duality.
+\end{example}
+
+\section{Representations, from the ontology of a delooping groupoid}
+
+\begin{definition}
+	A slice category of an ambient category with a particular object is the category whose objects are morphisms to the particular object in the category and morphisms are commuting triangles to particular object from other objects as cocones.
+
+	A coslice category of an ambient category with a particular object is the category whose objects are morphisms from the particular object in the category and morphisms are commuting triangles with particular object to other objects as cones.
+
+	There is a canonical forgetful functor by forgetting morphisms to or from this particular object.
+\end{definition}
+
+Note that in coslice categories the commuting triangles form cones as morphisms, not cocones from the particular object. This is very annoying.
+This can bundles rectified if we think of the morphism itself as the head of the cone or the cocone, rather than the particular object.
+
+\begin{definition}
+	A pointed object is an object in the coslice category with a terminal object. These objects are morphisms from the terminal object to objects in the ambient category.
+\end{definition}
+
+One will also need to generalised connected spaces from the category of topological spaces to an arbitrary extensive category. Recall that a topological space is connected if it cannot be split up into two independent parts.
+
+We will not define extensive categories.
+
+\begin{definition}
+	An object out of an extensive category is defined to be connected if the hom-functor out of this object preserves all coproducts.
+\end{definition}
+
+\begin{example}
+	Consider a group $G$. There is a pointed connected groupoid $G \rightarrow *$ with a single object, the morphisms being the elements of the group $G$ and composition as the group operation in $G$.
+
+	This is the delooping of the group $G$ in an $(\infty,1)$-topos. This is the delooping groupoid $\mathbf{B}G$.
+
+	The delooping of an object $A$ is a uniquely pointed object $\mathbf{B}A$ such that $A$ is the loop space object of $\mathbf{B}A$. If we pick $A$ as a group $G$, then its delooping in the context of the category of topological spaces is a representing object known as the classifying space $\mathrm{B}G$. In the context of the category of infinity groupoids, it is the one object groupoid $\mathbf{B}G$. The geometric realisation of the groupoid $\mathbf{B}G$ is canonically isomorphic to the classifying space $\mathrm{B}G$ under the homotopy hypothesis.
+
+	The homotopy hypothesis is the assertion that infinity groupoids are equivalent to the simplicial localisation of topological spaces at their weak homotopy equivalences, induced by the fundamental infinity groupoid construction.
+\end{example}
+
+\begin{example}
+	A permutation representation is a functor from the delooping groupoid of a discrete group to the category of sets.
+\end{example}
+
+\begin{example}
+	A linear representation is a functor from the delooping groupoid of a discrete group to the category of vector spaces over a base field.
+\end{example}
+
+\begin{example}
+	A vector bundle over a manifold with a flat connection on a bundle is a functor from the delooping groupoid being the fundamental groupoid of the manifold to the category of vector spaces.
+\end{example}
+
+\begin{example}
+	A quiver representation of a quiver (directed graph) is a functor from the delooping groupoid being the path category of the quiver to the category of vector spaces.
+\end{example}
+
+\begin{example}
+	A smooth representation of a discrete group is a functor from the delooping groupoid being the Lie groupoid (an object in the (2,1)-topos of (2,1)-sheaves over category of cartesian spaces or the category of smooth manifolds) to the stack category of vector bundles, which is the generalisation of the category of vector spaces in a (2,1)-topos.
+
+	You can recover the ordinary representation by applying the global section functor from the (2,1)-sheafification of the category of smooth manifolds to the category of groupoids. Explicitly, this is the evaluation of the terminal object in the category of smooth manifolds, which is the ordinary point.
+
+	The underlying representation is the global sections functor composed with the smooth representation of the discrete group from the delooping groupoid being the Lie groupoid (an object in the (2,1)-topos of (2,1)-sheaves over category of cartesian spaces or the category of smooth manifolds) to the category of vector spaces.
+
+	One can change two things: (1) the delooping groupoid with any Lie groupoid; (2) the site.
+\end{example}
+
+\begin{example}
+	Instead of vector bundles, one can consider their completion to quasicoherent sheaves.
+
+	A representation of an algebraic group of vector spaces is a functor from the delooping groupoid being an algebraic stack to the category of quasicoherent sheaves.
+
+	More generally, a functor from an algebraic stack to the category of quasicoherent sheaves assign each point of $K_0$ a representation space to be glued together to a quasicoherent sheaf of modules.
+
+	The most general case would be to pick $K$ to be an infinity groupoid and for $\mathrm{Mod}$ to be any infinity-one category of infinity-modules to define infinity representations of the infinity groupoid.
+\end{example}
+
+\chapter{Rings and Modules}
 \label{ch:ring}
+
+\section{Problems in defining rings}
+
+\begin{definition}
+	A unital ring is a monoid object in the category of an abelian group. It is a monoid internal to the monoidal category of abelian groups. The monoidal category part is necessary to ensure that the tensor product of abelian groups exist.
+
+	A unital ring is a pointed category enriched over the category of abelian groups with a single object.
+
+	A unital ring is an abelian group equipped with a neutral element, a bilinear map or a group homomorphism out of the tensor product of abelian groups that is associative and unital.
+
+	A ring object in the category of Sets is a ring, for Set is a cartesian monoidal category with a categorical theorectic product being the tensor product, and a neutral element being a terminal object.
+
+	A commutative unital ring is a commutative monoid object in the monoidal category of abelian groups.
+\end{definition}
+
+\begin{example}
+	One can change the abelian category of abelian groups with a higher category of symmetric monoidal higher groupoids, yielding ring groupoids or symmetric ring groupoids for the commutative case.
+\end{example}
+
+You want to drop unitality for analysis for some reason Borcherds explained but I don't understand. Commutativity is a nice plus, there are plenty of examples of noncommutative rings.
+
+\section{Tensor products}
+
+\begin{enumerate}
+  \item The tensor product originally is a representing object for a multi-linear map. Classically, this is for modules over a ring.
+  \item The tensor product functor that is part of the definition of monoidal categories is also a tensor product.
+  \item It could also mean a tensor product over a monoid for a monoidal category with a right and left action. The tensor product is the over the monoid is the quotient of their tensor product in the monoidal category by this action.
+\end{enumerate}
+
+\begin{definition}
+  A definition sketch for a coloured operad is a category with multiple inputs and one output for a collection of morphisms. Note that we use coloured operads to refer to multicategories, and coloured symmetric operads to symmetric multicategories.
+\end{definition}
+
+\begin{definition}
+  The tensor product of a pair of objects in a coloured operad is an object with a universal multimorphism to the tensor product such that any multimorphism of this pair objects to another object factors uniquely through it.
+\end{definition}
+
+\begin{example}
+  Supposed the coloured operad is the category of abelian groups, using multilinear maps as the multimorphisms. This gives the tensor product of abelian groups. The tensor product is equipped with a universal map from the cartesian product of a pair of abelian groups as a set to the tensor product such that the map is a linear (a group homomorphism in this case) in each argument separately.
+
+  An explicit construction of the tensor product of abelian groups starts with the cartesian product in sets, generating a free abelian group of pairs from the underlying elements of the cartesian product, and quotienting by relations for the bilinearity on these pairs of group objects.
+  
+  The tensor product is neither a subobject or a quotient of the cartesian product in this case.
+\end{example}
+
+\begin{exercise}
+  Use the above definition to define the tensor product of abelian semigroups.
+\end{exercise}
+
+\begin{theorem}
+  A monoid in the category of abelian groups with the tensor product is a ring.
+\end{theorem}
+
+\begin{proof}
+  The tensor product is bilinear and serves as the distributive law for the ring.
+\end{proof}
+
+\begin{example}
+  The tensor product for the category of chain complex of modules of a commutative ring has components given by the coproduct of tensor products of modules whose degrees add to the degree of the component.
+\end{example}
+
+\begin{example}
+  A category is closed if for any objects the collection of morphisms from objects in the category itself is an object. This object is denoted as the hom-object or the internal hom of the category. A coloured operad with unit can be constructed into a closed category.
+
+  For any closed category if not monoidal has the underlying multicategory. Tensor products in this multicategory holds by the adjunction on the level of hom-objects between the tensor product and the object internal hom. This adjunction exists because internal homs exists in a closed category by definition.
+  
+  \begin{equation}
+    \mathrm{hom}(A \otimes B, C)
+    \cong
+    \mathrm{hom}(A, \mathrm{hom}(B,C))
+  \end{equation}
+
+  Forgetting the monoidal structure of abelian groups, this internal hom is still there since the product of two group elements is a group element.
+\end{example}
+
+\begin{example}
+  For a commutative ring $R$ with the multicategory $R\mathrm{Mod}$ of $R$-modules and $R$-multilinear maps over this commutative ring $R$. The tensor product of modules $A \otimes_R B$ can be constructed as quotient of the tensor product of abelian groups $A \otimes B$ with the equivalence relation of the action of the commutative ring $R$.
+
+  \begin{equation}
+    A \otimes R \otimes B \rightrightarrows A \otimes B
+  \end{equation}
+
+  which is the coequaliser of the two maps.
+
+  If the commutative ring $R$ is a field, this is the tensor product of vector spaces. This also give rise to the tensor product of linear representations.
+
+  This can even be generalised if the ring $R$ is not commutative, if $A$ is a right $R$-module and $B$ is a left $R$-module. More generally, if $R$ is a monoid in any monoidal category (a ring is a monoid in the category of abelian groups with its tensor product, the tensor product of a left and right $R$-module can be defined analogously)
+
+  If $R$ is a commutative monoid in a symmetric monoidal category so that right and left modules coincide, the their tensor product of modules is again a $R$-module.
+
+  Note that the tensor product in the category of abelian groups is not the tensor products of modules over any monoid in the cartesian monoidal category of sets.
+\end{example}
+
+\begin{definition}
+  A tensor is an element of a tensor product.
+\end{definition}
+
+\begin{example}
+  Tensor products of sections of tangent bundles and cotangent bundles are also the operations of differentiations of tensors.
+
+  Recall that tangent bundles are bundles with a total object and a morphism to the base object of tangent space. Dualising this morphism gives the definition of a cotangent bundle.
+\end{example}
+
+\begin{example}
+  The tensor product of vector bundles is the vector bundle whose fiber over any point is the tensor product of modules of the respective fibres.
+\end{example}
+
+\begin{example}
+  The smash product is the tensor product in the closed monoidal category of pointed sets.
+
+  It is the quotient set of the cartesian product where all points with a base point are identified with a quotient to be equivalent.
+
+  It can also be defined as the pushout of pushouts and tensor products formed in the category for two pointed categories as the category of pointed objects (coslice category with maps FROM the terminal object) the smash product makes the coslice category also a closed symmetric monoidal category with finite limits and colimits.
+\end{example}
+
+\begin{definition}
+  The cartesian product of object is in a cartesian category is such that it is a product object that is the product of objects equipped with projection morphisms to its component objects with the universal property that it factors uniquely through this cartesian product and into its respective projection morphisms. A cartesian category admits all finite limits.
+\end{definition}
+
+\begin{example}
+  A cartesian closed product is a category with finite product closed under its cartesian monoidal structure.
+
+  A closed category has hom-objects. Therefore, like the real numbers, the internal hom in a cartesian closed category is rightfully called exponentiation.
+
+  A cartesian closed functor is a functor that preserves products as limits and preserves exponentiation as internal homs.
+\end{example}
+
+\begin{example}
+  The Tor functor is the derived tensor product. It is the left derived functor for the tensor product of modules over a commutative ring.
+\end{example}
+
+\section{Finiteness conditions on sequences}
+
+Consider a unital associative commutative ring $\mathrm{Mod}_A$ as $A$-modules. 
+
+A module
+$M$ in $\mathrm{Mod}_A$ is finitely generated 
+if and only if there exists an $A$-linear
+surjection $A^{\oplus n} \rightarrow M$
+for nonzero $n$. The intuition for this is that there is a finite 
+generating set (not a basis, since need not be linearly independent).
+
+A module $M$ in 
+$\mathrm{Mod}_A$ is finitely presented
+if and only if there exists an exact sequence
+$A^{\oplus m} \rightarrow A^{\oplus n} \rightarrow M \rightarrow 0$
+for nonzero $m$ and $n$. The motivation is that categorically, 
+these are the compact objects in the category of $A$-modules.
+An example would be that finite sets are the compact objects in the category of sets.
+If the commutative ring $A$ is a field, then the compact objects
+are precisely the finite dimensional vector spaces.
+
+\begin{lemma}
+	Let $0 \rightarrow M' \rightarrow M \rightarrow M'' \rightarrow 0$
+	be an exact sequence.
+	
+	If $M'$ and $M''$ are finitely generated, then so is $M$.
+	
+	If $M'$ and $M''$ are finitely presented, then so is $M$.
+	
+	If $M'$ is finitely generated and $M$ is finitely presented, then $M''$ is finitely presented.
+	
+	If $M$ is finitely generated then $M''$ is finitely generated.
+	
+	If $M$ is finitely generated, and $M''$ is finitely presented, then $M'$ is finitely generated.
+\end{lemma}
+
+\begin{lemma}
+	If $A$ is noetherian, then $M$ is a finitely generated $A$-module if and only if $M$ is also a finitely presented $A$-module.
+\end{lemma}
+
+\begin{proof}
+	Suppose $A$-module $M$ is finitely generated. 
+	Consider $A^{\oplus n} \rightarrow M$. 
+	Since the $A$-module $M$ is finitely generated, we 
+	can choose $K$ to be such that
+	$0 \rightarrow K \rightarrow A^{\oplus n} \rightarrow M \rightarrow 0$. 
+	This is the key step: since $A$ is noetherian, therefore $K$ is finitely generated. 
+	Since $K$ is also finitely generated, by definition one can construct 
+	$A^{\oplus m} \rightarrow K \rightarrow A^{\oplus n}$.
+	This gives the construction of an exact sequence 
+	for $M$ to be finitely presented 
+	where $A^{\oplus m} \rightarrow A^{\oplus n} \rightarrow M \rightarrow 0$.
+	Therefore, the $A$-module $M$ must be finitely presented since this 
+	construction satisfies the definition.
+\end{proof}
+
+\begin{example}
+	An example would be an ideal. Let $I$ be in an ideal
+contained in module $A$. Consider the surjection from $A$ to the 
+quotient of $A$ over the ideal $A/I$. 
+This quotient $A/I$ must be finitely generated.
+\end{example}
+
+\chapter{Algebraic Topology}
+\label{ch:alg-top}
+
+\chapter{Category Theory}
+\label{ch:cat-theory}
+
+A category is about composition: it has (\textit{"collection"}) objects and a \textit{enriched base} of morphisms (organised as hom-objects under this \textit{enriched base}) with (\textit{single/multiple}) domain object(s) and (\textit{single/multiple}) codomain object(s) that are respected by composition and identities. Every object has an identity morphism. Morphisms compose with left and right units. Morphisms compose associatively.
+ 
+ Interpreting objects as "collections" generalises to internal categories. Having multiple domain or codomain objects generalises to operads. We neglect these choices for now. 
+ 
+ A functor $\mathcal{F}$ is a morphism from the category $\mathbf{C}$ to the category $\mathcal{F}\mathbf{C}$ respecting identification and composition. The morphisms in a functor category with objects as functors are natural transformations.
+ 
+ Kan extensions extends functors from other functors. Suppose a functor $\mathcal{F}$ is from a domain category $\mathbf{Dom}$ to a codomain category $\mathcal{F} \mathbf{Dom}$. A left non-pointwise Kan extension functor $\mathrm{Lan}_\mathcal{K} \mathcal{F}$ along an extension functor $\mathcal{K}$ from the extended domain category $\mathcal{K} \mathbf{Dom}$ to the codomain category $\mathcal{F} \mathbf{Dom}$ is such that the functor $\mathcal{F}$ has a unique natural transformation $\eta$ to the composition $\mathrm{Lan}_\mathcal{K} \mathcal{F} \circ \mathcal{K}$. The right non-pointwise Kan extension functor $\mathrm{Ran}_\mathcal{K} \mathcal{F}$ is similar with the direction of the natural transformation $\eta$ reversed.
+ This gives the natural isomorphism:
+ \begin{equation}
+     [\mathbf{Dom}, \mathcal{F} \mathbf{Dom}](\mathcal{G} \mathcal{K}, \mathcal{F}) \cong 
+     [\mathcal{K} \mathbf{Dom}, \mathcal{F} \mathbf{Dom}](\mathcal{G}, \mathrm{Ran}_\mathcal{K} \mathcal{F})
+ \end{equation}
+ 
+ A left Kan extension $(\mathcal{L}, \eta)$, and a right Kan extension $(\mathcal{R}, \epsilon)$ with unit $\eta$ from the identity functor $\mathbf{1}$ to $\mathcal{L} \mathcal{R}$ and counit $\epsilon$ from $\mathcal{L} \mathcal{R}$ to the identity functor $\mathcal{1}$ are such that the Kan extension functor $\mathcal{L}$ is left adjoint to right Kan extension functor $\mathcal{R}$.
+ 
+ Kan extensions along a uniqueness functor $\mathbf{!}$ can be used to define limits and colimits. A representable functor is a functor that can be represented by an object. A limit is an universal object is that replaces compositions of morphisms into it as a representing object that represents a diagram functor. Dually, a colimit subsumes compositions of morphisms out of it.
+ 
+ In practice, only pointwise Kan extensions are useful computationally. A pointwise Kan extension is characterised by preservation of limits and colimits with all representable functors. One uses a weighted limit (with respect to a weighting functor $\mathcal{W}$ from a indexing category $\mathcal{K} \mathbf{Dom}(f, \mathcal{K}-)$) for morphism $f$ in the codomain category $\mathcal{F} \mathbf{Dom}$:
+ 
+ \begin{equation}
+     (\mathrm{Ran}_\mathcal{K} \mathcal{F})(f)
+     :=
+     \mathrm{lim}^{\mathcal{K} \mathbf{Dom}(f, \mathcal{K}-)} \mathcal{F}
+ \end{equation}
+ 
+ Dually,
+ 
+ \begin{equation}
+     (\mathrm{Lan}_\mathcal{K} \mathcal{F})(f)
+     :=
+     \mathrm{colim}^{\mathcal{K} \mathbf{Dom}(\mathcal{K}-, f)} \mathcal{F}
+ \end{equation}
+ 
+ The presentation here is forced to be circular to conceptualise Kan extensions early. 
+ 
+ These notes are duality focused. Some dualities I think are important are: (1) Makkai duality, that corresponds logic to geometry in a categorical sense; (2) Tannaka duality, a duality that most generally establishes the Yoneda lemma; (3) Isbell duality, that corresponds algebra and geometry. A broad understanding of dualities and analogies sharpens thinking. This has great value outside of mathematics, since category theory is the mathematics of analogy.
+
+ \section{Modern examples of dualities}
+
+ Category theory is the mathematics of metaphor. It is unique in the sense that unlike other disciplines of analogy, dualities in category theory allow for perfect metaphors in the form of (natural) isomorphisms.
+ 
+ \begin{exercise}
+ 	Work out the adjunction between the floor and ceiling functions on the real line. Related this to the duality between open sets and closed sets. How is this duality by a suitable isomorphism? (Hint: double complementation)
+ \end{exercise}
+ 
+ \begin{example}
+ 	The Isbell adjunction or the Isbell duality give a precise duality between space and quantity. Alternatively, it is the duality between geometry and algebra.
+ 
+ 	Consider a smooth space and its colimit (think of the colimit naively as some sort of sum). 
+ 	
+ 	The left adjunction taking smooth spaces to smooth ring is also known as a \textit{co-presheafification}. 
+ 	
+ 	The right adjunction where we have a smooth algebra and then we consider its spectrum or \textit{presheafification} which gives something like a smooth space. Note that you will need a full sheafification to get the smooth space.
+ 
+ 	Another basic example would be the homogenous nullstellensatz, where there is a duality between the projective varieties in complex projectiv space of order $n$ to the homogenous ideals of a coordinate ring except for the irrelevant ideal.
+ 
+ 	Dimension theory also has this duality in definitions. The Krull dimension is dual to the depth of a module.
+ \end{example}
+ 
+ \begin{exercise}
+ 	What is the initial object of commutative rings?
+ 	Argue by duality, from the previous question to determine the terminal object of affine schemes.
+ \end{exercise}
+ 
+ Isbell duality is interesting because it highlights an approach one can take to mathematical thinking. One can first build a duality that is obvious, in this case it is the duality between classical affine varieties and nilpotent free finitely generated algebras over a field. Then, slowly relax all of these assumptions (nilpotents exist, finitely generated, field axioms) to get schemes. The idea is to start with some duality, drop as many assumptions as you can, and see how much duality will still hold. This was Grothendieck's approach to algebraic geometry.
+ 
+ \begin{example}
+ 	Verdier duality is one part of the formalism of six functors.
+ 
+ 	There is the adjunction between the direct image and the inverse image for morphisms.
+ 
+ 	There is also the adjunction between the direct image with compact support with exceptional inverse image for separated morphisms. This is the Verdier duality.
+ 
+ 	Lastly, there is the adjunction between the symmetric monoidal tensor product and the internal hom.
+ 
+ 	This also motivates the philosophy of invertible sheaves. Varieties can be looked as classically as topological spaces instead of varieties as functions of them. Similarly, we can study line bundles instead using the sheaf of sections.
+ \end{example}
+ 
+ \begin{exercise}
+ 	Describe Verdier duality as a form of generalised Poincare duality through the existence of an adjoint to the derived pushforward.
+ \end{exercise}
+ 
+ \begin{example}
+ 	Pontrjagin duality is exemplified with this easy example.
+ 
+ 	Consider the group of integers under addition and compare it to the circle group. The product of roots of unity if one consider the circle group gives rise to Fourier theory.
+ 
+ 	Since the circle group is compact and connected, by Pontrjagin duality, the integers must therefore be discrete and torsion free.
+ 
+ 	The exponential map also gives the self duality of the additive rules as the sum of powers of exponentials. This gives a duality between abelian discrete groups like additivity on the integers to compact commutative topological groups like the circle groups. One can make the construction of the Haar measure make sense, and associate it with this group.
+ 
+ 	Van-Kampen's theorem is a statement on how the amalgamated free product of the fundamental group is the wedge sum of two path connected topological spaces.
+ \end{example}
+ 
+ \begin{example}
+ 	The Eckmann-Hinton duality refers to how diaagrams for some concept cane be reversed.
+ 
+ 	This is similar to how one can define the opposite category for category theory.
+ 
+ 	A similar argument is used for colimits to turn the Eilenberg-Steenrod axioms for homology to give axioms for cohomology.
+ 
+ 	This also gives the adjunction functor between the reduced suspension which is left adjoint to the loop space, which is the right adjoint.
+ 
+ 	Homotopy groups can be related to homotopy classes of maps from the $n$-sphere to our space, we have $\pi_n(X, p) \cong \langle S^n, X \rangle$. The sphere has a single nonzero (reduced) cohomology group.
+ 
+ 	Cohomology groups are homotopy classes of maps to spaces with a single nonzero homotopy group. This is given by the Eilenberg-Maclane spaces $K(G, n)$ and the relation
+ 	$H^n(X;G) \cong \langle X, K(G,n) \rangle$. This is an example of Fuks duality. One can apply this to have a homotopy to be dual to cohomology, mapping cylinder to mapping cocylinder, fibrations to cofibrations.
+ 
+ 	Similarly, I think Lagrange duality can be classified under this. The constraint problem is dual to the abundance problem, the minimisation problem is dual to the maximisation problem. This is related to the formal duality of vector spaces in optimisation problems. Variables in the primal problem is complemnetary to constraints in the dual problem. There cannot be a slack on both the constraint and the corresponding dual variable.
+ 
+ 	In homological algebra, there is the tensor-hom adjunction and its derived counterpart, the Tor-Ext adjunction. The standard counter example for hom-sets over the module $\mathbf{Z}/2$.
+ 	Ext must be a left exact functor, Tor must be a right exact functor.
+ \end{example}
+ 
+ \begin{example}
+ 	Subgroups are dual to quotient groups. In a quotient group, similar elements are now made equivalent (if they are in the same subgroup) by an equivalence relation.
+ \end{example}
+ 
+ \begin{example}
+ 	The Baire category theorem is a result that relates the qualitative theory of continuous linear operators and the quantitative theory of estimates.
+ 
+ 	The Riesz representation are related to representable functors as such. Let $F$ be a linear functional in complex Hilbert space $H$. If $F$ is continuous, then there exists an unique $a$ in complex Hilbert space $H$ where it is equal to the inner product function $\langle a, - \rangle$ where $F(v) = \langle a, v \rangle$.
+ 
+ 	For example, continuous linear functions on square integrable functions are representable by the integral inner product $\int a(x) v(x)$. Generally, general continuous functions are representable by test functions. This is distribution theory. The analogy is much deeper, this is a sheaf! It is easier to spot sheaves when you want sections of something to exist. We have test functions as representing objects. The exists in a "sheaf" in some sense, as global sections that represent general continuous functionals.
+ \end{example}
+ 
+ \begin{example}
+ 	A monoid and its module category are dual. This is called Tannaka duality. Consider automorphisms / endomorphisms of some forgetful functor called the fibre functor. This fibre functor gives the monoid structure. Apply Yoneda's lemma, using the fact that the fibre functor is an endofunctor. This is an example of a representable functor. This corresponds to the fact that modules are representations ove ring.
+ 
+ 	Representation theory is a basic example of this duality. For example, one can consider maps between an object to its algebra. For example, the representation of discrete groups can be thought of as modules over the group ring. Let $G$ be the discrete group or the group ring, and $GL(V)$. Representations or simply maps from $G to GL(V)$ are endomorphisms of a vector space.
+ 
+ 	A proof sketch can be done for G-sets as an exercise in a similar fashion to Cayley's theorem.
+ \end{example}
+ 
+ \begin{example}
+ 	The syntax of first order logic (pretopoi) corresponds to the semantics of first order logic (ultracategories). This is known as Makkai duality.
+ \end{example}
+ 
+ \begin{example}
+ 	One can generalise the fact that $d^^2 = 0$ that encodes a commutative law as well as $d^2 \omega = 0$. For some long sequences, one can compare the conversion of a free graded commutative algebra on the special linear group $SL$ into a differential grade algebra to be analogous to making it into a Lie algebra by setting the Jacobi identity to vanish. This duality means that the free graded Lie algebra on the special linear group into a differential graded algebra is also a commutative algebra, when you have $d^2 = 0$ to encode a commutative law. This duality is also known as Koszul duality.
+ \end{example}
+ 
+ \begin{example}
+ 	Stone duality refers to the duality between a totally disconnected compact Hausdorff space (Stone spaces) to the Boolean algebras by considering the clopen sets of the Stone space. The set of prime filters for a bounded distributed lattice (a poset admitting all finite meets and joins, or a  thin category with all finite limits and finite colimits) is a Stone space. There exists a map from the Boolean algebras to the clopen sets of the prime filters of a Boolean algebras which can be made into an isomorphism of Boolean algebras.
+ 	This is Stone's representability theorem. Now, weaken complementation to turn a Boolean algebra into a Heyting algebra. Define Heyting spaces appropriately, and establish the isomorphisms to complete Heyting duality.
+ 
+ 	This is an example of how a suitable isomorphism can be used to find a duality. Further, the poset lattice correspond to topology. The poset lattice interpreted as a form of logic. This corresponds to topology being defined as a semidecidable logic, where arbitrary unions correspond decidable disjunctions, finite intersections correspond to decidable conjunctions in finite time.
+ 
+ 	Further, one can relate profinite sets as pro objects in the category of finite sets, to be equivalent to compact Hausdorff totally disconnected spaces. From Stone duality, compactness can be thought of as the case where every limit point is a point, or any decidable proposition is computable within finite time. Countability becomes important in a topology, where countably many experiments can be used to determine a result, corresponding to how every limit point being a limit point with some countable subset. This motivates separability. For me, I use the typical example of countable dense balls of rational radii that cover the real line, then replace balls with neighbourhoods for the general topological notion of countability.
+ \end{example}
+ 
+ \begin{example}
+ 	The decomposition of the linear representation of the direct product group of the general linear group on a field $k$ with the symmetric group of size $n$ can be decomposed as a direct sum of tensor product of irreducible representation for either group. This is Schur-Weyl duality.
+ 
+ 	Consider the field of complex numbers.
+ 	An example would be to suppose the number of factors to be $2$, then the space of two tensors decomposes into symmetric and antisymmetric part, each is a irreducible module for the general linear group of size $n$. This is because the symmetric group on two elements consists of two elements, the trivial representation and the sign representation. The trivial representation give rise to symmetric tensors that do not change under factor permutation, the sign representation corresponds to skew symmetric tensors that flip the sign.
+ 
+ 	\begin{equation}
+ 		\mathbf{C}^n \otimes \mathbf{C}^n
+ 		= S^2 \mathbf{C}^n \oplus \Lambda^2 \mathbf{C}^n
+ 	\end{equation}
+ 
+ 	A map from $V$ to $S_\lambda V$ for a given tableau $\lambda$ of $n$ can be upgraded to a covariant functor with maps from $V$ to $W$ inducing covariantly maps from $S_\lambda V$ to $S_\lambda W$.
+ \end{example}
+ 
+ Some general tips for using dualities. Firstly, one can establish an isomorphism under two successive operations to find an adjunction. Secondly, if there is an estimation, see if there is a dual notion that is also an estimation and imagine the problem to be similar to a thin category or posets. This can help in establishing another adjunction. Thirdly, logic can be related to space by Heyting duality, representing objects to objects or Yoneda nonsense by Tannaka duality, arrow reversal by the Eckmann-Hinton duality, space and quantities by Isbell duality.
+
+ \section{The standard example of thin categories}
+
+$(0,1)$-categories make exceptionally unique examples since it can be seen as posets. Once interpreted in this way, with some form of Heyting duality (between logic and topology), one can link category theory to topological spaces.
+ 
+ \begin{definition}
+ 	For $-2 \leq n \leq \infty$, an $(n,0)$-category is an $\infty$-groupoid that is $n$-truncated. For $0 < r < \infty$, an $(n-r)$-category is an $(\infty,r)$-category $C$ such that for all objects $X$ and $Y$ in category $C$, the $(\infty, r-1)$-categorical hom object $C(X,Y)$ is an $(n-1,r-1)$-category.
+ \end{definition}
+ 
+ This is the formal definition for general categories which is very hard to work with since there are some exceptions at lower numbers, which will not care about here. We will use two suggestive slogans as guides since these things are notorious to define with regards the equivalence or invertibility of morphisms. I do not think there is a good definition that just magically covers all cases.
+ 
+ \begin{enumerate}
+ 	\item An $(n,r)$-category have all $k > n$ trivial $k$-morphisms (parallel morphisms are made equivalent) and $k > r$ morphisms that are reversible (or an equivalence in some sense).
+ 	\item An $(n,r)$-category is an $r$-directed homotopy $n$-type.
+ \end{enumerate}
+ 
+ \begin{definition}
+ 	An object in a category with a given property is essentially unique with this property if it is isomorphic to any other object with that property.
+ \end{definition}
+ 
+ \begin{lemma}
+ 	An object that is the limit or colimit over a given diagram is essentially unique. 
+ \end{lemma}
+ 
+ \begin{proof}
+ 	By definition of the universal property of the limit and colimit.
+ \end{proof}
+ 
+ \begin{definition}
+ 	A preordered set is a strict and thin category. A partially ordered set is a strict, thin, and skeletal category.
+ \end{definition}
+ 
+ A poset is a proset. A proset need not be isomorphic up to strictness to a poset. The axiom of choice gives every proset are the same as poset up to equivalence of categories with the theorem that every category has a skeleton by considering the axiom of choice.
+ 
+ \begin{definition}
+ 	A preorder or quasiorder is a reflexive and transitive relation.
+ 
+ 	A preordered set is a set with this partial order.
+ 
+ 	A reflexive relation is a binary relation on a set which every element is defined to be equivalent up to relation with itself $x ~ x$.
+ 
+ 	A transitive relation is a binary relation on a set that follows this example: if $x$ is related to $y$, and $y$ is related to $z$, then $x$ is related to $z$ by definition.
+ \end{definition}
+ 
+ One interprets the preorder as the existence of a unique morphism.
+ 
+ \begin{definition}
+ 	A $(0,1)$-category is a category whose hom-objects are $(-1)$-groupoids. All pairs of objects $a$ and $b$ either have no morphism, or an essentially unique one where two parallel morphisms are equal up to equivalence, since they have the same source and target, and the spaces of choices of equivalences between them is contractible.
+ \end{definition}
+ 
+ \begin{definition}
+ 	A $(0,1)$-category is equivalently a preordered set. Therefore it is a partially ordered set.
+ \end{definition}
+ 
+ \begin{remark}
+ 	One can think of the preordered set also as the enriched category theory with the base of enrichment being the interval category.
+ \end{remark}
+ 
+ \begin{proof}
+ 	An $(n,1)$-category is an $(\infty,1)$-category such that every hom $\infty$-groupoid is $(n-1)$-truncated.
+ 	
+ 	A $0$-truncated $\infty$-groupoid is equivalently a set.
+ 	
+ 	A $(-1)$-truncated $\infty$-groupoid is either contractible or empty.
+ 
+ 	Unwinding these definitions like this, the above definitions make sense. Every hom-$\infty$-groupoid in this case is just a set. Since this is $(-1)$-truncated, it is either empty or the singleton. Therefore there is at most one morphism from any object to any other. This satisfies the definition of a preordered set.
+ \end{proof}
+ 
+ These definitions motivates the generalisations of the structures of sites and topoi.
+ 
+ \begin{definition}
+ 	A $(0,1)$-category with the structure of a site is a partially ordered site. 
+ \end{definition}
+ 
+ \begin{definition}
+ 	A $(0,1)$-category with the structure of a topos is a Heyting algebra. 
+ \end{definition}
+ 
+ This definition motivates a deeper look into Heyting algebra to better understand topoi.
+ 
+ \begin{definition}
+ 	A $(0,1)$-category with the structure of a Grothendieck topos is a frame or locale.
+ 	
+ 	A frame is a poset that has all small coproducts, all finite limits and satisfy the infinite distributive law.
+ 
+ 	A topological space has arbitrary unions and finite intersections. We say a topological space has a frame of open subsets. We can therefore define a topological space to be a set equipped with a subframe of its power set.
+ \end{definition}
+ 
+ The axioms of a frame are Giraud's axioms on sheaf toposes restricted to $(0,1)$-toposes. The infinite distributive law expresses that a frame have universal colimits stable under pullback, where poset pullbacks and products coincide. A morphism of frames is precisely the inverse image of a geometric morphism that preserves finite limits and arbitrary colimits.
+ 
+ It also naturally has a structure of a site, a family of morphisms is a covering precisely if it is the union of collections of domain sets.
+ 
+ This definition of frames and locales motivates Stone duality and Grothendieck toposes.
+ 
+ \begin{definition}
+ 	A $(0,1)$-category with the structure of a groupoid is a set up to equivalence or symmetric proset up to isomorphism (a set with an equivalence relation).
+ \end{definition}
+ 
+ This definition explains one disjoint unions of equivalence classes make sense on the level of sets.
+ 
+ \section{The order theory category theory dictionary}
+ 
+ The following order theory concepts are valid for $(0,1)$-category as a dictionary.
+ 
+ \begin{enumerate}
+ 	\item Prosets are simplified categories.
+ 	\item Posets are simplified skeletal category.
+ 	\item Sets are simplified groupoids.
+ 	\item Monotone functions are simplified functors. This is because a function between preordered sets respects the preordering.
+ 	\item Antitone functions are simplified contravariant functors.
+ 	\item Meets are simplified limits.
+ 	\item Joins are simplified colimits.
+ 	\item Lattices has all finite meets and joins, so it is a simplification of a finitely complete and cocomplete category.
+ 	\item Join semilattices are simplified finitely cocomplete categories.
+ 	\item Meet semilattices are simplified finitely complete categories.
+ 	\item Galois connections are simplified duality and adjunctions.
+ 	\item Moore closures are simplified monads.
+ 	\item Heyting algebras are simplified cartesian closed pretopoi.
+ 	\item Locales or frames are simplified Grothendieck topos.
+ 	\item Posites are simplified sites.
+ 	\item The statement that $A(x)$ is true if and only if $y \leq x$ implies $A(y)$ is true for every $y$ in the poset is a simplified form of the Yoneda lemma. This one is quite powerful, the Yoneda lemma on this level basically says for a statement to be true, all premises to the statement must be true. By space-quantity duality, we can establish this on the level of sets and representing objects as well. Using this, one can express the Yoneda lemma as well as follows: if a proper subset of a set that is an is an upper set then it contains the partition with $x$ as a greatest lower bound if and only if the greatest lower bound is contained in this proper subset. 
+ 	\item Upper sets representing monotone functions is a simplification of a representable functor. 
+ 	\item The poset of true values $\Omega = {0,1}$ is the representing hom-object to be used in thinking about the Yoneda embedding, it is therefore a $(-1,0)$-category. This is a frame equivalent to the frame of opens corresponding to the discrete topology on singletons.
+ 	\item Given a fixed object and a object $x$ that is more than or equal to that object i.e. $h_\mathrm{C}(x) = (- \leq x)$ corresponds to the Yoneda embedding $Y_\mathrm{C} : \mathrm{C} \rightarrow [\mathrm{C}^o, \Omega]$.
+ 	\item The Kronecker delta is a simplification of the $0$-homs in the $(-1)$-category of morphisms (two elements are either equal or not, corresponding to true and false). The Yoneda embedding can also be seen as a set theoretic function sending elements that represent an indicator functions. The set of $0$-presheaves of $X$ to the poset of true values $\Omega = {0,1}$ can be identified with the power-set $P(X)$ of $X$. The Yoneda bending sends an element to the singleton set. Presheaves are basically just subsets.
+ 	\item The frame of opens is precisely the category of open subsets of a topological space, this is a frame.
+ 	\item The discrete topology on a topological space is precisely the frame of opens derived from the power set of the underlying set of a topological space.
+ 	\item The subobject poset of an object in a geometric category is a frame. This is the desirable property of a geometric category.
+ \end{enumerate}
+ 
+ \begin{exercise}
+ What categorical concept corresponds to the following:
+ 
+ \begin{enumerate}
+ 	\item Upper bounds (not least upper bounds which are joins)
+ \end{enumerate}
+ 
+ \end{exercise}
+ 
+ \begin{definition}[Negative thinking]
+ 	A loose definition of negative thinking is categorification by thinking backwards. Thinking about the categorification of objects on level zero, by thinking about categorifications on level 1.
+ \end{definition}
+
+ \section{Internalisation and externalisations}
+ 
+ One can define an object internalised to a category to
+ serve as definitions.
+ 
+ Firstly, adjectives on categories serve as conditions that allow certain mathematical structures to exist. Then, one can define an object that exist in that category. Lastly, one can supplement different examples of the same object in various categories.
+ 
+ \begin{example}
+     A group object in the category of topological spaces is a topological group. In the category of smooth manifolds, it is the lie group. In the category of varieties, it is the algebraic group.
+ 
+     The category of topological spaces must be cartesian for the relevant unital, associative, and inverse commutative diagrams to make sense since the requires all products to exist.
+ \end{example}
+ 
+ \begin{exercise}
+     The general exercise of this set of notes is simply to fill in all the details of the definitions. I will only write in plain English the idea of the definition of the object so that it is easy to keep in my head, and handwave away coherence conditions, commutative diagrams, and symbolism.
+ \end{exercise}
+ 
+ These internal objects internal to a category can alter be externalised to functors with the category as the domain, or as fibrations over the category.
+ 
+ \begin{example}
+     An internal groupoid in a finitely complete category can be externalised to a Grothendieck fibration.
+ \end{example}
+ 
+ \section{Categorical adjectives}
+ 
+ We will start with many categorical adjectives. These serve as conditions of structure for objects to exist.
+ 
+ \begin{definition}
+     An initial object have all morphisms mapping from it.
+ 
+     A final or terminal object have all morphisms mapping to it.
+ \end{definition}
+ 
+ Typically, definitions will have morphisms mapping from the terminal object, and not to the terminal object. This is a source of confusion.
+ 
+ This is best rectified by knowing this definition:
+ 
+ \begin{definition}
+     A global element of a object is a morphism from the terminal object. Alternatively, it is the global element of the represented presheaf of the object. This definition works if the category has no terminal object since the Yoneda embedding is fully faithful and preserves all limits.
+ \end{definition}
+ 
+ \begin{definition}
+     A category is locally small if hom sets are small sets.
+ \end{definition}
+ 
+ \begin{definition}
+     A finitely complete category is a category that admits all finite limits. It is also called a lex category. Lex is shorthand for left exact. 
+ 
+     A finitely cocomplete category is a category that admits all finite colimits.
+ \end{definition}
+ 
+ \begin{definition}
+     A complete category has all small limits.
+ 
+     A cocomplete category has all small colimits.
+ \end{definition}
+ 
+ \begin{definition}
+     The free cocompletion of a category is the presheaf category formed by freely adjoining colimits through the Yoneda embedding.
+ \end{definition}
+ 
+ \begin{definition}
+     A regular category is a finitely complete category whose kernel pair on any morphism as a pullback admits a coequaliser on projections, and the pullback of epimorphisms along any morphism is again a regular morphism. It is defined so that the kernel pair is always a congruence on the kernel pair components. The resulting coequaliser is the object of equivalence classes.
+ \end{definition}
+ 
+ \begin{definition}
+     A coherent category is a regular category whose subobject posets all have finite unions preserved under base change functors.
+ \end{definition}
+ 
+ \begin{definition}
+     A monoidal category has a canonical tensor product as a functor and the terminal obejct as the tensor unit. It has suitable conditions on associators, left unitor, and right unitor so that the triangle identity and the pentagona identity commute to allow for the bilinearity of maps.
+ \end{definition}
+ 
+ The canonical example for a monoidal category should be rings.
+ 
+ \begin{definition}
+     A closed category is a category that has an internal hom object. Morphisms from source objects to target objects are objects of a closed category defined as the internal hom objects if they indeed are objects of a closed category.
+ \end{definition}
+ 
+ The word closed should remind you of the Yoneda lemma, and Cayley's theorem, groups are closed under group elements as hom objects.
+ 
+ \begin{definition}
+     An internal hom is a functor admitting the tensor-hom adjunction for every object in the category. A category with a canonical internal hom with an appropriate tensor-hom adjunction is a closed monoidal category.
+ \end{definition}
+ 
+ \begin{definition}
+     A closed monoidal category is a monoidal category with an internal hom.
+ \end{definition}
+ 
+ \begin{definition}
+     A semicartesian monoidal category has the tensor unit as a terminal object. This is weaker than saying the tensor product is the categorical cartesian product.
+ 
+     A semicocartesian monoidal category has the tensor unit as a initial object. This is weaker than saying the tensor product is the categorical cartesian product.
+ \end{definition}
+ 
+ \begin{definition}
+     The graded category is the functor category from the discrete (or monoidal) category to the current category denoted by $C^S$ as an exponential. The objects of this category is serve as the definition for graded objects.
+ \end{definition}
+ 
+ \begin{definition}
+     A cartesian monoidal category is a category with finite products with respect to its cartesian monoidal structure. The internal hom (which exists, since it is closed) of a cartesian closed category is called exponentiation (which can be thought of as a product, since it is cartesian). The tensor unit is the terminal object, it has all finite products, and the tensor product is a product. 
+ 
+     A cocartesian monoidal category is a category with finite coproducts with respect to its cartesian monoidal structure. The tensor unit is the initial object, it has all finite coproducts, and the tensor product is a coproduct. 
+ 
+     A cartesian closed functor is product preserving and exponential preserving.
+ \end{definition}
+ 
+ \begin{definition}
+     A bicartesian closed category is a category that is cartesian (admits all finite products) and co-cartesian (admits all finite coproducts) that has an internal hom.
+ \end{definition}
+ 
+ \begin{definition}
+     An subcategory is dense in a category if every object is a colimit of a diagram of objects in the subcategory in a canonical way.
+     This is defined to be a dense subcategory.
+ \end{definition}
+ 
+ \begin{remark}
+     A completion of an object is an object with the original object as a subobject. The word "free" is used for adjunction of forgetful functor. Typically, this is also used for faithful reflector.
+ 
+     Examples include Cauchy completions of metric spaces, Dedekind completions of linear order, ring completion, Stone-Cech compactification of a Tychnoff space, profinite completion, Grothendieck group formation, group completion, field of fraction of integral domains, free cocompletion to presheaf categories, ind-completion under filtered colimits, pro-completion under cofiltered limits.
+ \end{remark}
+ 
+ \section{List of objects}
+ 
+ \begin{definition}
+     A subobject is equivalently:
+     \begin{enumerate}
+         \item isomorphism classes of monomorphisms. Two monomorphisms are isomoprhic if they are both monomorphisms into a object and there is a isomorphism between them such that when the isomorphism composed to a monomorphism, this gives equality to the other monomorphism.
+         \item objects of the full subcategory of the over category of an object in monomorphisms. The product in this over category as a subcategory is an intersection or meet of subobjects, their coproduct is the union or the join of subobjects. An over category or a slice category over a (base) object is a category whose objects are all arrows with codomain as that object and morphisms all satisfy commutative diagrams that has that object as the cocone.
+     \end{enumerate}
+ \end{definition}
+ 
+ \begin{example}
+ 	If we have monomorphisms not on the level of isomorphisms but on equality and essential uniqueness, this condition can only happen on the level of posets, then this corresponds to subsets. This motivates the definition of subobjects.
+ \end{example}
+ 
+ \begin{definition}
+     A complemented object is a subobject given by a monomorphism in a coherent category and is defined when it has a complement or another subobject such that its intersection is the initial object and the union is the full object of the subobject.
+ \end{definition}
+ 
+ \begin{definition}
+     An exponential object is an internal hom object in a cartesian closed categories. Cartesians so products and multiplications make sense, closed so that the internal hom exists, so products can be defined as internal homs to form exponentials.
+ \end{definition}
+ 
+ \begin{definition}
+     A differential object in a category with translation is an object equipped if the translation called the differential. This is a special case of suspensions.
+ 
+     A suspension object is an object in an $(\infty,1)$ category admitting a terminal object as the suspension object as the homotopy pushout.
+ \end{definition}
+ 
+ \begin{definition}
+     A connected object is an object whose hom functor out of the object to a fixed object is preserves coproducts.
+ \end{definition}
+ 
+ \begin{remark}
+     Therefore, the colimit of connected objects is a connected object.
+ \end{remark}
+ 
+ \begin{definition}
+     A filtered object is an object equipped with either an ascending or descending filtration. For example, a descending filtration has a sequence of morphisms as a graded object.
+ \end{definition}
+ 
+ \begin{definition}
+     A interval object cospan diagram with equal feet in the category with I and point any two object, 0 and 1 are morphisms.If the feet of the cospan are the terminal object, then this is a cartesian interval object.
+ 
+     A pointed object is an object equipped with a global element.
+ 
+     A global element is a morphism from the terminal object to that object.
+ \end{definition}
+ 
+ \begin{definition}
+     An integer object in a cartesian closed category with a terminal object is equipped with a morphism from the terminal object to it and an isomorphism called the successor with the universal property such that there is a unique isomorphisms that satisfies conditions with commutative diagrams akin to the Peano axioms. This can be generalised to symmetric monoidal categories using the tensor unit instead of the terminal object.
+ \end{definition}
+ 
+ \begin{definition}
+     A braided object is an object $B$ in a monoidal category equipped with an invertible morphism $a$ on a tensor product satisfying the Yang-Baxter equation $(a B)(B a)(a B) = (B a)(a B)(B a)$ where the silent product by parentheses is morphism composition, and the silent product within the parentheses is the tensor product.
+ \end{definition}
+ 
+ \begin{remark}
+     I know this is terrible notation for the Yang-Baxter equation, but it shows the braiding so nicely I think it is worth showing.
+ \end{remark}
+ 
+ \begin{definition}
+     A choice object is an object such that the axiom of choice holds when making choices from the object. A projective object is an object such that the axiom of choice holds when making choices indexed by the projective object.
+ \end{definition}
+ 
+ \begin{definition}
+     A descent object is an hom object that induces a contravariant descent hom object that is an equivalence.
+ \end{definition}
+ 
+ \begin{definition}
+     A compact object is a corepresentable functor (hom object) from a locally small category that admits filtered colimits such that homs out of it to a fixed object preserve filtered colimits.
+ \end{definition}
+ 
+ \begin{definition}
+     A pro object is an object in the full subcategory inclusion via the opposite of the Yoneda embedding. Recall that the Yoneda embedding is from the category of presheaves to the free cocompletion. Taking the dual of the Yoneda embedding means we start from the category and end up with its free completion.
+ 
+     Dually, an ind object is an object in the full subcategory inclusion via the Yoneda embedding from the category of presheaves to the free cocompletion.
+ 
+     Pro means projective, ind means inductive.
+ 
+     A strict pro object is representable as a limit of a small cofiltered diagram.
+ 
+     A strict ind object is representable as a colimit of a small filtered diagram.
+ 
+     A sind object is a formal sifted colimit taken in the category of presheaves or free completion.
+ \end{definition}
+ 
+ \begin{remark}
+     Warning, pro objects are not projective objects.
+ 
+     Warning, ind objects are not inductive objects.
+ \end{remark}
+ 
+ \begin{example}
+     A formal scheme is an ind-object in schemes.
+ 
+     Finitely indexed sets are ind-objects in sets.
+ 
+     Finitely generated groups are ind-objects in groups.
+ 
+     Profinite groups are pro objects of finite groups.
+ \end{example}
+ 
+ \begin{definition}
+     A monomorphism (between a subobject to a full object) that is normal or conjugate to some internal equivalence relation or it factors through that internal equivalence relation is equipped and defines a normal subobject from a subobject.
+ \end{definition}
+ 
+ \begin{definition}
+     A Noetherian object is such that only finitely many inclusions in the ascending chain subobjects of the Noetherian object are not isomorphisms in the category.
+ 
+     An Artinian object is such that only finitely many inclusions in the descending chain of subobjects of the Artinian object are not isomorphisms in the category, there is a terminal subobject in some sense.
+ \end{definition}
+ 
+ \begin{definition}
+     A locally small object is an object in the full subcategory of the slice category on the monomorphisms is essentially small.
+ 
+     Easier definition: isomorphism classes of monomorphisms with the locally small object as target or the subobjects of the object form a set.
+ 
+     A colocally small object is an object in the full subcategory of the coslice category on the epimorphisms is essentially small.
+ 
+     Easier definition: isomorphism classes of epimorphisms with the locally small object as source or the quotient of the object form a set.
+ \end{definition}
+ 
+ \begin{definition}
+     A projective object is an object whose hom functor out of the object preserves epimorphisms. A morphism out of the projective object factors through epimorphisms to be a projective morphism on the coimage object, this is defined to be the left lifting property.
+     
+     An injective object is an object whose hom functor into the object preserve monomorphisms.
+ 
+     A tiny object is a projective object whose hom functor out of the object preserves coequalisers (or all colimits). These are the projective connected objects.
+ 
+     A category has enough projectives if all objects in the category admits epimorphisms by a projective object in the category. We say that every object admits a projective presentation.
+ 
+     A category has enough injectives if all objects in the category admits monomorphisms into a injective object in the category.
+ 
+     In a regular category, projectives are also regular projectives.
+ \end{definition}
+ 
+ \begin{definition}
+     A simple object is an object with precisely the terminal object and the full object as the quotient object.
+ 
+     A semisimple object is a coproduct of simple objects.
+ \end{definition}
+ 
+ \begin{definition}
+     A group object is an object with diagrams that allow an unital associative magma object to commute in a cartesian category.
+ 
+     A ring object is an object with diagram with diagrams that expressive addition, zero, multiplicative identity and additive inverses in a cartesian monoidal category.
+ 
+     A Lie algebra object is an object in a symmetric monoidal $k$-linear category with braiding such that it is an object and a morphism called the Lie bracket formed from the tensor product, with equivalence classes formed using the Jacobi identity and skew symmetry. Braiding is needed here to define the Jacobi identity.
+ \end{definition}
+ 
+ \begin{definition}
+     A simplicial object is a presheaf object of the presheaf functor category from the simplicial indexing category.
+ 
+     A graded object is an representing object of the representable functor category from the discrete monoidal category.
+ 
+     An associated graded object is a gaded object whose n-th degree is the cokernel of the n-th inclusion.
+ \end{definition}
+ 
+ \begin{definition}
+     A continuous object is an object in the functor category, or a functor that preserves all small limits.
+ 
+     A connected object is an object in the functor category, or a functor that preserves all small colimits.
+ \end{definition}
+ 
+ \begin{definition}
+     A power object is a object with a monomorphism such that there exist a unique monomorphism for each other object into their cartesian object a unique morphism such that the monomorphism is a pullback.
+ 
+     The power object of a terminal object is a subobject classifier.
+ \end{definition}
+ 
+ \begin{example}
+     A power object in set is a power set.
+ 
+     A category with finit elimits and power objects for all objects is precisely a topos.
+ \end{example}
+ 
+ \begin{definition}
+     A comma object of a pair of morphisms in a cospan in a two category is an object equipped with two projections to the feet of comma object as the apex that also has a 2-morphism that fills this commutative diagram such that the 2-morphism is universal as a 2-limit.
+ \end{definition}
+ 
+ \begin{remark}
+     A pullback on sets is a subset of the cartesian product of two sets. A pullback is a finred product in the category of fibre bundles over a base object. A pullback is the limit of a cospan diagram and are universal. A pullback is a pushout in the opposite category. A fibration (object) and a total object forms a bundle object over the base object.
+ \end{remark}
+ 
+ \begin{definition}
+     An internal preorder is a subobject of the cartesian product object in equipped with internal reflexibity that is a section of both the source and target subobject of the cartesian product object, and internal transitivity which is an object that factors the left and right projection map from the product of the internal preorder to the product of the preordered objects on both the source and targets. An internal preorder can be the representing object of the representable subpresheaf of the hom functor into the cartesian product of an object so that for each object $Y$ the composite $R(Y)$ into $\mathrm{hom}(Y, X \times X)$ is canonically isomorphic to $\mathrm{hom}(Y,X) \times \mathrm{hom}(Y,X)$ that exhibits $R(Y)$ as a preorder on $\mathrm{hom(Y,X)}$.
+ 
+     A congruence is an internal equivalence relation or an internal groupoid and hence an internal category with all morphisms being isomorphisms with no non identity automorphisms. It consists of a subobject of the Cartesian product of an object with itself, with internal reflexivity as sections of projections, internal symmetry which interchanges projections using them as sections of each other, and internal transivity where a suitable fibre product of the subobject with itself factors the projection map through the subobject fibre product to the full cartesian product via a suitable pullback diagram with the fibre product of the subobject with itself as the pullback.
+ 
+     A preorder object is an object in a category with pullbacks and suobjects with an internal preorder on the object $X$ that is injective  of pullbacks of the product $X \times X$.
+ 
+     A quotient object is the coequaliser of a congruence.
+ 
+     A cartesian monoidal preordered object is a preordered object with an internal preorder as a representable subpresheaf of homs out of the target with monoidal objects with monoidal multiplication and a global unit from the terminal object to any object such that there exists a function $\tau$ for all global elements $a$, it is identified by the source as a section and becomes the global unit under target as a section. It also has suitable left and right unitors $\lambda_l$ and $\lambda_r$ as internal hom objects such that for all global elements, composition of the left component subobject with the left unitor gives the internal left projection, right component subobject with the right unitor give the internal right projection, and internal composition by left on the projection on the opposing unitor gives the meet of subobjects of the preorder. Dualising using means that the global unit is the join, and is careful still a morphism from the terminal object.
+ 
+     A semicartesian monoidal object is an object in a category whose tensor unit is the terminal object.
+ 
+     A semicocartesian monoidal object is an object in a category whose tensor unit is the initial object.
+ 
+     A join relative object is a cocartesian monoidal preordered object that is a partial order object.
+ 
+     A meet relative object is a cartesian monoidal preordered object that is a partial order object.
+ 
+     A partial order object is a preordered object whose internal preorder has an internal antisymmetric relation.
+ 
+     A bicartesian preordered object or a prelattice object is a object that is both a cartesian monoidal preordered object and a cocartesian monoidal preordered object.
+ 
+     A lattice object is a prelattice object that is also a partially ordered object.
+ 
+     A bicartesian closed preordered object is a Heyting prealgebra object exhibits closure with a suitable logical function that is a bicartesian preordered object.
+ 
+     A Boolean prealgebra object is a bicartesian closed preorder object for all element pairs of source and target $(s,t)$ such that composition by source $s$ gives implications of objects $a \implies b$ as an object, and composition by target $t$ gives the join of the statements $a$ being false (vacously true) or $b$ is true. You need bicartesian to admit all small products and coproducts, closure to make this internal hom.
+ 
+     A Boolean algebra object is a Boolean prealgebra object that is also a partially ordered object that makes statements either true or false but not both.
+ \end{definition}
 
 \chapter{Notation}
 
 \begin{itemize}
-  \item 
+  \item $\equiv$, equivalence relation
+  \item $[L:K]$, degree of extension
+  \item $||$, cardinality, support, norm
+  \item $\mathbf{B}G$, delooping of groupoid, Eilenberg-Maclane spaces.
 \end{itemize}
 
 \backmatter
