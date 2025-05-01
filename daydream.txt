@@ -16,23 +16,11 @@ Add more details on algebraic group and algebraic group schemes.
 
 Additive White Gaussian Noise channel?
 
-Adeles? Why do this, why embed a field into its direct product of all completion.
-
-Adjoints as ceiling and floor, work out this example, let a category be reals, objects are real numbers, morphisms are partial orders of reals. Consider subcategory of integers to reals, inclusion of integers to reals have left and right adjoint, right adjoint is floor, left adjoint is ceiling? Use the partial orders to show this. For example r <= n if ceil(r) <= n. Argue similarly for right adjoint. Now from this example, think of objects and morphisms, now come up with more left adjoints and right adjoints.
-
-Affine and projective varieties and schemes.
-
 Affine communication lemma? See Vakil. If affine open subset Spec A injects into X has property X, then for any f in A, then Spec A_f injects into X has this property. Part II, if (f_1, ... f_...n)= A Spec A_fi injects into A for all i so Spec A injects into X.
 
 Affine cone of projective variety? Visualisation? See Richard's Thomas notes of affine cone of projective curve zy^2 = x(x^2 - z^2)
 
 Alexandrov topology?
-
-Algebraic geometry duality, https,//ncatlab.org/nlab/show/algebra
-
-All category adjectives
-
-All dualities
 
 All norms are equivalent in finite dimensional vector space. This is not really intuitive, and there are a lot of details in the proof.
 
@@ -50,13 +38,9 @@ Artin map?
 
 Artin-Wedderburn?
 
-As it stands, it looks like you're proving that every completely simple semigroup (with an idempotent) has a unique idempotent. This is not true, as otherwise every finite completely simple semigroup is a group (take the direct product of a non-trivial rectangular band and a group as a counter example). To make it more clear, the definition of a primitive idempotent needs updating. Let $E$ be the set of idempotents of a semigroup $S$ without zero. Then $\prec$, defined by $e \prec f$ if $ef = fe = e$ for $e,f \in E$, is a partial ordering of $E$. An idempotent is primitive if it minimal under this partial ordering. In other words, the idempotent $e$ is primitive if for all $f \in E$ we have $ef = fe = f \implies e = f$. Then the calculation you did shows that every idempotent is primitive.
-
 Atiyah Singer topics, elliptical differential operator, analytic index, compact manifold, topological index, Riemann-Roch, gauss bonnet, Pontryagin classes; differential operator symbol; fredholm operator; todd class; mixed cohom class; chern character; classifying space; thom isomorphism; index problem; grothendieck riemann roch; teleman index theorem, many index theorem, Hirzeburch-Thom characteristic classes;
 
 Atiyah-Singer index theorem.
-
-Atiyah-Singer index theorem?
 
 Attitude exercise, expose the attitudes of the following concepts, series (hint, sums), copresheafs/representations (hint, sheafification), sieves (hint, subfunctor of representable, what about Grothendieck topology), quivers (directed graphs, but what about quiver representations?), causal set (partially ordered set, but what about?), fields in physics (sections of fibre bundles), random variables (real values measurable  maps, but sample space to space of states), dynamical systems (set with group action G*S to S, group with time, S with space, f to be laws of motion), curve (smooth function, but parameterisation), module object (action object over monoid objects, but mainly to emphasise (bi)linearity)
 
@@ -65,8 +49,6 @@ Automorphisms of compact Riemann surfaces?
 Autoregressive model?
 
 Axiom of choice is a choice object, define a projective object as a given a set of morphisms a from A to B and p frm P to B, a is epic, then there exists morphism p' from P to A, such that a * p' lifts to p, or the functor Hom_C(P, -) from C to Set preserves epis; define a choice object as an object such that every epimorphism with codomain P splits, what is splits; now define the axiom of choice is as every object in the category of Sets is a choice objects. Why is this equivalent to the the definition of the axiom of choice?
-
-Azumaya algebra?
 
 Baer-Specker?
 
@@ -1262,9 +1244,9 @@ Orthogonal projection and integral domain, consider element (1,0) in Cartesian p
 
 Ostrokowski's theorem?
 
-Over ZF, ultrafilter lemma is equivalent to maps from X to Sierpinski two point set with product topology is compact. Make this make sense?
-
 Over ZF, The ultrafilter lemma implies that a countable union of finite sets is always countable. Interesting, I didn’t know we need to make this assumption. It also implies that every countable family of non-empty finite sets has a choice function, which is equivalent to Kónig's lemma. Make this make sense?
+
+Over ZF, ultrafilter lemma is equivalent to maps from X to Sierpinski two point set with product topology is compact. Make this make sense?
 
 PBW theorem, Poincare-Birkhoff-Witt theorem?
 
