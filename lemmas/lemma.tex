@@ -251,6 +251,14 @@ Prove that $n$ choose $k$ is equal to $n$ choose $n - k$ for integers $n$ and $k
 The idea is to suppose an algebraic integer $a$ is in a finite extension of $L$, then we have $[L:K]$ is n less than infinity, then take $1, a, a^2, ..., a^n$, this is $n + 1$ elements of a n-dimensional vector space. Since this is of higher dimension, there must be a nontrivial linear relation $k_0 + k_1 a + ... k_n a^n$, so $a$ is algebraic. For the converse, suppose $p(x)$ is an irreducible polynomial in the field extension $K[x]$, take the quotient of the ideal $K[x]/(p)$ is a field. This is obviously a ring. This a ring, now we check existence of inverses, suppose $q(x)$ is in $K(x)/(p)$, $q(x)$ is nonzero, then $q$ and $p$ are coprime since $p(x)$ is irreducible. Therefore, $a(x)q(x) + b(x) p(x) = 1$ can be found by Euclidean algorithm, so $a(x)$ is inverse of $q(x)$ in $K(x)/((p(x)))$. Since $a$ is a root of $p(x)$ in $K[x]$, where $p$ is irreducible, so $K[x]/p(x)$ is a map to $L$ taking $x$ to $a$. The image of $K[x]/(p)$ is in $L$.
 \end{proof}
 
+\begin{lemma}
+    Sums, products, quotients and differences of algebraic integers are algebraic. Consequently, roots of polynomials are algebraic.
+\end{lemma}
+
+\begin{proof}
+    Consider chain of extensions by pairs of algebraic integers, these are finite extensions. Polynomials are finite sums and products of algebraic integers so these are algebraic as well.
+\end{proof}
+
 \bibliographystyle{plainnat}
 \bibliography{references} %
 \end{document}
