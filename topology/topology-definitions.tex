@@ -270,3 +270,59 @@ Colimits in the category of topological spaces are precisely the union of open c
 	\end{equation}
 	is a bijection on the level of sets.
 \end{definition}
+
+\index{topological space!filtered}
+\begin{definition}[Filtered topological space, filtered object]
+    \label{definition-filtered-topological-space}
+    A filtered object is an object equipped with either an ascending or descending filtration.\sidenote{For example, a descending filtration has a sequence of morphisms as a graded object.}
+
+	A filtered topological space is a topological space $(X, \tau)$ where all open sets have a chain of opens under inclusion $U_1 \in U_2 \in ... X$ for every $U_i$ in the topology $\tau$.
+\end{definition}
+
+\index{space!topological subspace}
+\begin{definition}[Subspaces in topology, subobject definition]
+    \label{definition-topological-subspace}
+    A subobject can be defined as isomorphism classes of monomorphisms. Two monomorphisms are isomorphic if they are both monomorphisms into a object and there is a isomorphism between them such that when the isomorphism composed to a monomorphism, this gives equality to the other monomorphism.
+    
+	A topological subspace can be defined in the same way.
+	Monomorphisms are injective continuous maps.
+	So a subspace topology $(S, \tau_S)$ of a topological space $(X, \tau)$ for a subset $S$ of $X$ can be defined as an injection from $i: (S, \tau_S) \rightarrow (X, \tau)$ made into "isomorphism classes" by picking the coarsest topology of all possible topologies, and this injection is continuous.
+\end{definition}
+
+\index{embedding!topological}
+\begin{definition}[Topological embedding]
+    \label{definition-topological-embedding}
+    
+	A subspace topology $(S, \tau_S)$ of a topological space $(X, \tau)$ for a subset $S$ of $X$ can be defined as an injection from $i: (S, \tau_S) \rightarrow (X, \tau)$ made into "isomorphism classes" by picking the coarsest topology of all possible topologies, and this injection is continuous. We have that the topological space $(S, \tau_S)$ is homeomorphic to its image in 
+	the topological space $(X, \tau)$.
+
+	This injection is called a topological embedding.
+\end{definition}
+
+\index{map!open}
+\begin{definition}[Open map]
+	\label{definition-open-map}
+	
+	An open map is a map that maps open sets to open sets.
+\end{definition}
+
+\index{map!closed}
+\begin{definition}[Closed map]
+	\label{definition-closed-map}
+	
+	An closed map is a map that maps closed sets to closed sets.
+\end{definition}
+
+\index{subspace!open}
+\begin{definition}[Open subspace]
+	\label{definition-open-subspace}
+	
+	An open subspace is a subspace formed by an injective open map.
+\end{definition}
+
+\index{subspace!closed}
+\begin{definition}[Closed subspace]
+	\label{definition-closed-subspace}
+	
+	An closed subspace is a subspace formed by an injective closed map.
+\end{definition}
