@@ -1,0 +1,18 @@
+\section{Definitions}
+
+\index{category}
+\index{morphism}
+\begin{definition}[Category]
+	A category $\mathbf{C}$ has a set of objects, denoted $\mathrm{Ob}(X)$ or with objects $X$.
+	
+	It has a set of morphisms between objects $X, Y$ denoted $\mathrm{Hom}(X,Y)$. 
+	
+	It has a composition map for objects $X$, $Y$, $Z$ where $\cdot: \mathrm{Hom}(Z, Y) \times \mathrm{Hom}(Y,X) \rightarrow \mathrm{Hom}(Z, X)$ such that for morphism $p$ in $\mathrm{Hom}(Y,X)$ and morphism $q$ in $\mathrm{Hom}(Z, Y)$ we have a morphism $q \cdot p$ in the set of morphisms $\mathrm{Hom}(Z, X)$.
+
+	These are to satisfy the following rules:
+
+	\begin{enumerate}
+		\item For every object $X$ in the set of objects $\mathrm{Ob}(X)$, there exists an identity morphism $i \in Hom_\mathbf{C}(X, X)$ such that it composes with morphisms $p$ and $q$ where $p = i \cdot p$ and $q \cdot i = q$.
+		\item The composition of morphism is associative where $p \cdot ( q \cdot r) = (p \cdot q) \cdot r$.
+	\end{enumerate}
+\end{definition}
