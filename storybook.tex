@@ -1,20 +1,11 @@
 \documentclass[notoc]{tufte-book}
 
-\hypersetup{colorlinks}% uncomment this line if you prefer colored hyperlinks (e.g., for onscreen viewing)
+\hypersetup{colorlinks}
 
 %%
 % Book metadata
 \title{A Math Bedtime Storybook\thanks{To my parents}}
 \author[Yu Jie Teo]{Yu Jie Teo}
-
-%%
-% If they're installed, use Bergamo and Chantilly from www.fontsite.com.
-% They're clones of Bembo and Gill Sans, respectively.
-%\IfFileExists{bergamo.sty}{\usepackage[osf]{bergamo}}{}% Bembo
-%\IfFileExists{chantill.sty}{\usepackage{chantill}}{}% Gill Sans
-
-%\usepackage{microtype}
-
 
 %%
 % For nicely typeset tabular material
@@ -52,19 +43,6 @@
   \ifcase\month\or January\or February\or March\or April\or May\or June\or
   July\or August\or September\or October\or November\or
   December\fi\space\number\year
-}
-
-
-% Prints an epigraph and speaker in sans serif, all-caps type.
-\newcommand{\openepigraph}[2]{%
-  %\sffamily\fontsize{14}{16}\selectfont
-  \begin{fullwidth}
-  \sffamily\large
-  \begin{doublespace}
-  \noindent\allcaps{#1}\\% epigraph
-  \noindent\allcaps{#2}% author
-  \end{doublespace}
-  \end{fullwidth}
 }
 
 % Inserts a blank page
@@ -138,8 +116,6 @@
 \newtheorem{corollary}[theorem]{Corollary}
 \newtheorem{proposition}[theorem]{Proposition}
 
-\numberwithin{theorem}{section}  % Number theorems by section (e.g., 1.1, 1.2, etc.)
-
 \begin{document}
 
 % r.3 full title page
@@ -203,8 +179,11 @@ To my parents.
 \chapter{Set Theory}
 \input{set/set-definitions.tex}
 
-\chapter{Category Theory}
+\chapter{Categories}
 \input{category/category-definitions.tex}
+
+\chapter{Topology}
+\input{topology/topology-definitions.tex}
 
 \backmatter
 
