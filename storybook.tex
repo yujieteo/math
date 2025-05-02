@@ -107,7 +107,10 @@
 % Add theorems
 \usepackage{amsthm, amssymb, amsmath}
 
-\newtheorem{theorem}{Theorem}[section]
+\setcounter{secnumdepth}{0}% turn on numbering for parts and chapters
+
+% Define theorem-like environments using theorems, definitions, etc.
+\newtheorem{theorem}{Theorem}[section]  % Theorem numbering by section
 \newtheorem{definition}[theorem]{Definition}
 \newtheorem{lemma}[theorem]{Lemma}
 \newtheorem{example}[theorem]{Example}
@@ -165,13 +168,10 @@ To my parents.
 \vfill
 \vfill
 
-
 % r.9 introduction
 \cleardoublepage
 \chapter{Introduction}
 \input{introduction/introduction.tex}
-
-\mainmatter
 
 \chapter{Conventions}
 \input{conventions/conventions.tex}
