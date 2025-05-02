@@ -1,18 +1,97 @@
 \section{Definitions}
 
+\begin{definition}[Set of morphisms]
+	\label{definition-set-of-morphisms}
+	A set of morphisms between objects $X, Y$ are maps from $X$ to $Y$. 
+	These are denoted $\mathrm{Hom}(X,Y)$ and are also called hom-sets.
+\end{definition}
+
+\begin{definition}[Composition maps]
+	\label{definition-composition-maps}
+	A composition map for objects $X$, $Y$, $Z$ where is a map from a cartesian product of hom-sets to a hom-set $\cdot: \mathrm{Hom}(Z, Y) \times \mathrm{Hom}(Y,X) \rightarrow \mathrm{Hom}(Z, X)$.
+\end{definition}
+
 \index{category}
 \index{morphism}
+\index{composition}
 \begin{definition}[Category]
+	\label{definition-category}
 	A category $\mathbf{C}$ has a set of objects, denoted $\mathrm{Ob}(X)$ or with objects $X$.
 	
 	It has a set of morphisms between objects $X, Y$ denoted $\mathrm{Hom}(X,Y)$. 
 	
 	It has a composition map for objects $X$, $Y$, $Z$ where $\cdot: \mathrm{Hom}(Z, Y) \times \mathrm{Hom}(Y,X) \rightarrow \mathrm{Hom}(Z, X)$ such that for morphism $p$ in $\mathrm{Hom}(Y,X)$ and morphism $q$ in $\mathrm{Hom}(Z, Y)$ we have a morphism $q \cdot p$ in the set of morphisms $\mathrm{Hom}(Z, X)$.
 
-	These are to satisfy the following rules:
+	These satisfy these rules:
 
 	\begin{enumerate}
 		\item For every object $X$ in the set of objects $\mathrm{Ob}(X)$, there exists an identity morphism $i \in Hom_\mathbf{C}(X, X)$ such that it composes with morphisms $p$ and $q$ where $p = i \cdot p$ and $q \cdot i = q$.
 		\item The composition of morphism is associative where $p \cdot ( q \cdot r) = (p \cdot q) \cdot r$.
 	\end{enumerate}
+\end{definition}
+
+\index{category}
+\index{morphism}
+\index{composition}
+\index{functor!covariant}
+\begin{definition}[Covariant functor]
+	\label{definition-covariant-functor}
+	A functor category $\mathbf{FC}$ has a set of objects, denoted $\mathrm{Ob}(\mathbf{F}X)$ or with objects $FX$.
+	
+	It has a set of morphisms between objects $\mathbf{F}X, \mathbf{F}Y$ denoted $\mathrm{Hom}(\mathbf{F}X,\mathbf{F}Y)$. 
+	
+	It has a composition map for objects $\mathbf{F}X$, $\mathbf{F}Y$, $\mathbf{F}Z$.
+	
+	This map is such that $\cdot: \mathrm{Hom}(\mathbf{F}Z, \mathbf{F}Y) \times \mathrm{Hom}(\mathbf{F}Y,\mathbf{F}X) \rightarrow \mathrm{Hom}(\mathbf{F}Z, \mathbf{F}X)$.
+	
+	This is such that each morphism $Fp$ in $\mathrm{Hom}(\mathbf{F}Y,\mathbf{F}X)$ and morphism $\mathbf{F}q$ in $\mathrm{Hom}(\mathbf{F}Z, \mathbf{F}Y)$ we have a morphism $\mathbf{F}q \cdot \mathbf{F}p$ in the set of morphisms $\mathrm{Hom}(\mathbf{F}Z, \mathbf{F}X)$.
+
+	These satisfy these rules:
+
+	\begin{enumerate}
+		\item For every object $\mathbf{F}X$ in the set of objects $\mathrm{Ob}(\mathbf{F}X)$, there exists an identity morphism $i \in Hom_\mathbf{FC}(\mathbf{F}X, \mathbf{F}X)$ such that it composes with morphisms $\mathbf{F}p$ and $\mathbf{F}q$ where $\mathbf{F}p = \mathbf{F}i \cdot \mathbf{F}p$ and $Fq \cdot \mathbf{F}i = \mathbf{F}q$.
+		\item The composition of morphisms is associative where $\mathbf{F}p \cdot ( \mathbf{F}q \cdot \mathbf{F}r) = (\mathbf{F}p \cdot \mathbf{F}q) \cdot \mathbf{F}r$.
+		\item The composition keeps arrows so $\mathbf{F}(p \cdot q) = \mathbf{F}p \cdot \mathbf{F}q$. We abused notation for composition here.
+	\end{enumerate}
+
+	A covariant functor $\mathbf{F}$ takes a category $\mathbf{C}$ to the functor category $\mathbf{FC}$ satisfying the above rules.
+\end{definition}
+
+\index{category}
+\index{morphism}
+\index{composition}
+\index{functor!contravariant}
+\begin{definition}[Contravariant functor]
+	\label{definition-contravariant-functor}
+	A functor category $\mathbf{FC}$ has a set of objects, denoted $\mathrm{Ob}(\mathbf{F}X)$ or with objects $FX$.
+	
+	It has a set of morphisms between objects $\mathbf{F}X, \mathbf{F}Y$ denoted $\mathrm{Hom}(\mathbf{F}X,\mathbf{F}Y)$. 
+	
+	It has a composition map for objects $\mathbf{F}X$, $\mathbf{F}Y$, $\mathbf{F}Z$.
+	
+	This map is such that $\cdot: \mathrm{Hom}(\mathbf{F}Z, \mathbf{F}Y) \times \mathrm{Hom}(\mathbf{F}Y,\mathbf{F}X) \rightarrow \mathrm{Hom}(\mathbf{F}Z, \mathbf{F}X)$.
+	
+	This is such that each morphism $\mathbf{F}p$ in $\mathrm{Hom}(\mathbf{F}Y,\mathbf{F}X)$ and morphism $\mathbf{F}q$ in $\mathrm{Hom}(\mathbf{F}Z, \mathbf{F}Y)$ we have a morphism $\mathbf{F}q \cdot \mathbf{F}p$ in the set of morphisms $\mathrm{Hom}(\mathbf{F}Z, \mathbf{F}X)$.
+
+	These satisfy these rules:
+
+	\begin{enumerate}
+		\item For every object $\mathbf{F}X$ in the set of objects $\mathrm{Ob}(\mathbf{F}X)$, there exists an identity morphism $i \in Hom_\mathbf{FC}(\mathbf{F}X, \mathbf{F}X)$ such that it composes with morphisms $\mathbf{F}p$ and $\mathbf{F}q$ where $\mathbf{F}p = \mathbf{F}i \cdot \mathbf{F}p$ and $\mathbf{F}q \cdot \mathbf{F}i = \mathbf{F}q$.
+		\item The composition of morphisms is associative where $\mathbf{F}p \cdot ( \mathbf{F}q \cdot \mathbf{F}r) = (\mathbf{F}p \cdot \mathbf{F}q) \cdot \mathbf{F}r$.
+		\item The composition reverses arrows so $\mathbf{F}(p \cdot q) = \mathbf{F}q \cdot \mathbf{F}p$. We abused notation for composition here.
+	\end{enumerate}
+
+	A functor $\mathbf{F}$ takes a category $\mathbf{C}$ to the functor category $\mathbf{FC}$ satisfying the above rules.
+\end{definition}
+
+\index{category!opposite}
+\index{morphism}
+\index{composition}
+\begin{definition}[Opposite category]
+	\label{definition-op-category}
+	A category $\mathbf{C}$ has a set of objects, denoted $\mathrm{Ob}(X)$ or with objects $X$.
+	
+	It has a set of morphisms between objects $X, Y$ denoted $\mathrm{Hom}(X,Y)$. 
+	
+	The opposite category, denoted $\mathbf{C}^\mathrm{op}$ is a category with the hom-sets of $\mathrm{Hom}(Y,X)$ satisfying the definition of a category in Definition \ref{definition-category}.
 \end{definition}
