@@ -369,6 +369,20 @@ The idea of linear combinations can be first studied in terms of primality.
   A trivial divisor is a divisor that is either $1$ or the integer itself.
 \end{definition}
 
+\begin{lemma}[Infinitude of primes]
+	There are infinitely many primes.
+\end{lemma}
+
+\begin{proof}
+	We have at least one prime which is $2$.
+	Suppose we have a product of primes $p_{i}$ up to the $i$-th prime.
+	Consider that $(\prod_{i \in \mathbb{N}} p_i) + 1$ can be factorised in terms
+	of a prime that is not in the list of primes $p_{i}$ up to the $i$-th prime, since 
+	$(\prod_{i \in \mathbb{N}} p_i) + 1$ is not divisible by any primes in $p_{i}$.
+	Therefore, given a set of $i$ primes, we can find by incrementation of their product, a set of $i+1$ primes.
+	Therefore, there must be infinitely many primes by the principle of mathematical induction.
+\end{proof}
+
 \index{quotient}
 \index{remainder}
 \begin{lemma}[Uniqueness of quotient and remainder]\label{lem:uniqueness-quot}
@@ -382,17 +396,30 @@ The idea of linear combinations can be first studied in terms of primality.
 
 \index{gcd}
 \index{linear combination}
-\begin{lemma}[Greatest common divisor as linear algebra]\label{lem:gcd-lin-alg}
+\begin{lemma}[Bezout's identity]\label{lem:bezout-identity}
   Let $a$ and $b$ be nonzero integers, then there exists a linear combination with coefficients $u$ and $v$ in the integers such that $au + bv$ is equal to the greatest common divisor $gcd(a,b)$.
 \end{lemma}
 
+The intuition behind Bezout's identity are that of lattices, linear combinations of two integers $au$ and $bv$ have their greatest common divisor $gcd(a,b)$ to be the thing in common. This intuition came from the linear algebra for polynomials which is the reason why Bezout had this identity attributed to him.\sidenote{I am actually stuck trying to find a proof of Bezout's identity due to this. There is also other theorems like the fundamental theorem of arithmetic, infinity of primes, quadratic reciprocity, Euler's partition identity, Wilson's theorem}
+
+\begin{remark}
+	We have $a u = gcd(a,b) m_a u$ and $b v = gcd(a,b) m_b v$ so we have the linear combination of integers factorised out into $au + bv = gcd(a,b)(m_a u + m_b v)$. 
+	
+	We just need to check $m_a u + m_b v = 1$ when $m_a$ and $m_b$ are coprime integers to prove Bezout's identity.
+\end{remark}
+
+\begin{lemma}[Euclid's lemma]
+	If a prime integer $p$ divides the integer product $ab$, then the prime $p$ either divides the integer $a$ or it divides the integer $b$.
+\end{lemma}
+
+The proof of this illustrates the idea that for either or statements, you can try denying the case of one side as a hypothesis, then use symmetry to cover the other side.
+
 \begin{proof}
-  A divisor of $a$ is an integer $u$ such that $au$ is an integer.
-  A divisor of $b$ is an integer $v$ such that $bv$ is an integer.
-  The greatest common divisor exist, since $au + bv$ is an integer, so it is equal to $gcd(a,b)w$, where $gcd(a,b)w$ is 
-  a product of an integer $w$ that is not equal to $1$ and $1$ without loss of generality, if it is $1$ we are done and it is
-  nonzero without loss of generality since once can choose divisors of $u$ and $v$ to make it nonzero.
-  We have $gcd(a,b) m_a u + gcd(a,b) m_b v = gcd(a,b) w$ so $m_a u + m_b v = w$. We can iterate this process, and since $w$ is nonzero and with each step, the integers $w$ decreases, by the well ordering of the integers, $w$ will terminate at $1$ after correcting up to sign by taking $-1$ when necessary onto integers $u$ and $v$, and the product of $gcd(a,b) m_{a_1} m_{a_2}...$ and $gcd(a,b) m_{b_1} m_{b_2}...$ terminates the the integers $u$ and $v$ of interest.
+	Suppose without loss of generality that the prime $p$ does not divide $b$. Then, we have 
+	from Bezout's identity \ref{lem:bezout-identity} there exists integers $u$ and $v$ such that the linear combination $pu + bv = gcd(p,b) = 1$
+	
+	We multiply both sides by $a$.
+	Consider the product of both sides by $apu + abv = a$. Since the prime $p$ divides the integer $apu$ and the prime $p$ divides the integer $abv$ by our hypothesis, the prime $p$ must divide the sum of $apu$ and $abv$ which is the integer $a$. Therefore, we must have that $p$ divides $a$, and the argument holds symmetrically for the integers swapped, and in the case where both are divisible by $p$.
 \end{proof}
 
 \index{theorem!Fermat's little}
@@ -498,6 +525,32 @@ Another ontology for groups comes from the idea of a class group in algebraic nu
 
 \begin{definition}[Implicit axiomatic definition of a group]
   A group is a unital associative magma with inverses.
+\end{definition}
+
+\index{group!axiomatic definition}
+\index{magma}
+\index{magma!unital}
+\index{group!law}
+\index{operation!binary}
+\index{identity}
+\index{group!inverse}
+\begin{definition}[Implicit axiomatic definition of a group]
+  A group is a unital associative magma with inverses.
+
+  Formally, we have the following:
+
+  A group $G = (|G|, X)$ is a set $|G|$ 
+  of group elements $g$
+  where composition of group elements is a
+  binary operation called the group law $\cdot: G \times G \rightarrow G$ (of which we will abuse notation)
+  such that for any group elements $g_a$ $g_b$ and $g_c$ and $g_d$ we have the following properties:
+  
+  \begin{enumerate}
+	\item Existence of the identity: we have for any group element $g$ in the group $G$, an identity $1$ such that $g \cdot 1 \equiv 1 \cdot g \equiv g$.
+	\item Existence of inverses: for each group element $g$, there exists an inverse $g^{-1}$ such that the composition $g \cdot g^{-1} \equiv 1$.
+	\item Associativity of composition: we have the following associativity of composition formally expressed as $(g_a \cdot g_b) \cdot g_c \equiv (g_a) \cdot (g_b \cdot g_c)$.
+	\item Composition of group elements are group elements (not an axiom really, comes from the binary operation of the group law) where $g_a \cdot g_b = g_d$ is a group element.
+  \end{enumerate}
 \end{definition}
 
 \section{More modern ontologies for a group}
