@@ -1,0 +1,41 @@
+\section{Lemmas}
+
+We shall implicitly use without reference the axioms of set theory. 
+
+\index{set!naive}
+\index{law!De Morgan's}
+\begin{lemma}[De Morgan's first law for pairs of naive sets]
+    \label{lemma-de-morgan-first}
+    Let $X$ and $Y$ be a naive sets.
+    
+    Then the set $X^\mathrm{c} \cup Y^\mathrm{c}$ is equal to $(X \cap Y)^\mathrm{c}$.
+
+    The rule applies for arbitrary unions of complements to the complement of arbitrary intersections.
+\end{lemma}
+
+\begin{proof}
+    We read the set $X^\mathrm{c} \cup Y^\mathrm{c}$ as consisting of the elements $c$ such that it is either not in $X$ or it is the elements not in $Y$, or both.
+
+    By case analysis, we take the elements that are not in both set $X$ and set $Y$. These elements form precisely the set $(X \cap Y)^\mathrm{c}$.
+
+    This proves the base case. Now consider the arbitrary union of the precedent case with the successive set complement. The law for the pairs applies again, and the successive case is shown. The proof follows by induction.
+\end{proof}
+
+\index{set!naive}
+\index{law!De Morgan's}
+\begin{lemma}[De Morgan's second law for pairs of naive sets]
+    \label{lemma-de-morgan-second}
+    Let $X$ and $Y$ be a naive sets.
+    
+    Then the set $X^\mathrm{c} \cap Y^\mathrm{c}$ is equal to $(X \cup Y)^\mathrm{c}$.
+
+    The rule applies for arbitrary intersection of complements to the complement of arbitrary unions.
+\end{lemma}
+
+\begin{proof}
+    We read the set $X^\mathrm{c} \cap Y^\mathrm{c}$ as consisting of the elements $c$ such that they are not in $X$ and they are not elements not in $Y$.
+
+    By case analysis, we take the elements that are not in either set $X$ or set $Y$ or both. These elements form precisely the set $(X \cup Y)^\mathrm{c}$.
+
+    This proves the base case. Now consider the arbitrary intersection of the precedent case with the successive set complement. The law for the pairs applies again, and the successive case is shown. The proof follows by induction.
+\end{proof}
