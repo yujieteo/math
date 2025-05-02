@@ -58,6 +58,73 @@ We follow Steen and Seebach's presentation of topology \cite{Steen1995}.
 	By abuse of notation, we call $X$ a topological space.
 \end{definition}
 
+\begin{definition}[Open covers]
+	\label{definition-open-cover}
+	For a set $X$, a collection of subsets 
+	of the set $X$ is called a topology, denoted by $\tau$ 
+	if arbitrary unions and finite intersections of each subset
+	is in $\tau$. A pair $(X, \tau)$ is a topological space.
+	
+	An open cover of $U$ on a open subset $V$
+	of a a topological space $(X, \tau)$
+	is a union of open sets $U = \cup U_i$ in 
+	the topology $\tau$ such that 
+	the open subset $V$ is contained in the open cover $U$.
+\end{definition}
+
+\begin{definition}[Finite open covers]
+	\label{definition-finite-open-cover}
+	For a set $X$, a collection of subsets 
+	of the set $X$ is called a topology, denoted by $\tau$ 
+	if arbitrary unions and finite intersections of each subset is in $\tau$. A pair $(X, \tau)$ is a topological space.
+	
+	A finite open cover of $U$ on a open subset $V$
+	of a a topological space $(X, \tau)$
+	is a finite union of open sets $U = \cup U_i$ in 
+	the topology $\tau$ such that 
+	the open subset $V$ is contained in the open cover $U$.
+\end{definition}
+
+\index{compact}
+\begin{definition}[Compact topological space]
+	\label{definition-compact-topological-space}
+	For a set $X$, a collection of subsets 
+	of the set $X$ is called a topology, denoted by $\tau$ 
+	if arbitrary unions and finite intersections of each subset
+	is in $\tau$. A pair $(X, \tau)$ is a topological space.
+	
+	A compact topological space $(X, \tau)$ is a topological space where every open cover, that is a union of a collection open sets $U = \cup U_i$ containing $X$
+	admits a finite subcover, that is a finite union of 
+	a subcollection of open sets $U = \cup U_i$.
+\end{definition}
+
+We now give the definition in terms of category theory.
+
+\begin{remark}
+	The category of topological spaces is both complete and cocomplete. From Definition \ref{definition-cocomplete} and \ref{definition-complete}, all small limits and colimits exist in the category of topological spaces.
+\end{remark}
+
+\index{compact}
+\index{object!compact}
+\begin{definition}[Compact topological space, compact object]
+	\label{definition-compact-topological-space-cat}
+	A compact topological space $(X, \tau)$ is a compact object in the category of topological spaces.\sidenote{See Definition \ref{definition-compact-object} for a general definition}
+
+	A compact object is a corepresentable functor (hom object, in this case it is a topological space representing a set of open covers) from a locally small category\sidenote{We used the fact that the category of topological spaces is complete and cocomplete.} that admits filtered colimits such that homs out of it (open covers as homs) to a fixed object (the underlying topological space) preserve filtered colimits (finite subcovers).
+\end{definition}
+
+Colimits in the category of topological spaces are precisely the union of open covers. Filtered colimits in the category of topological spaces are precisely the union of finite covers. Admission means that there are finite subcovers.
+
+\index{object!initial}
+\begin{definition}[Initial object in the category of topological spaces]
+	The unique initial object in the category of topological spaces is the empty set.
+\end{definition}
+
+\index{object!final}
+\begin{definition}[Final object in the category of topological spaces]
+	The final object in the category of topological spaces is the singleton space.
+\end{definition}
+
 \index{coarser}
 \begin{definition}[Coarser]
 	\label{definition-coarser}

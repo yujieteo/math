@@ -188,7 +188,7 @@ This is best rectified by knowing this definition:
 \index{element!global}
 \begin{definition}[Global element, final object]
 	\label{definition-global-element-final}
-	Let $\mathbf{C}$ be category with a final object.
+	Let $\mathbf{C}$ be a category with a final object.
 
     A global element of a object $x$ is a morphism from the final object $1$. 
 \end{definition}
@@ -197,7 +197,7 @@ This is best rectified by knowing this definition:
 \index{element!global}
 \begin{definition}[Global element, represented presheaf]
     \label{definition-global-element-presheaf}
-	Let $\mathbf{C}$ be category without a final object.
+	Let $\mathbf{C}$ be a category without a final object.
 
 	It is the global element of the represented presheaf of the object.\sidenote{This definition works if the category has no terminal object since the Yoneda embedding is fully faithful and preserves all limits.}
 \end{definition}
@@ -208,9 +208,23 @@ Certain size theory concerns are needed to define types of objects using the yog
 
 \index{small!locally}
 \begin{definition}[Locally small]
-    Let $\mathbf{C}$ be category.
+    Let $\mathbf{C}$ be a category.
 
     A category is locally small if the hom-sets are small sets.
+\end{definition}
+
+\index{category!fibre complete}
+\begin{definition}[Fibre complete category]
+    Let $\mathbf{C}$ be a category.
+
+    A category is fibre complete that the category of all topologies on a given set called the fibre of $U$ on a set $X$ form a complete lattice ordered by inclusion.
+\end{definition}
+
+\index{category!concrete}
+\begin{definition}[Concrete category]
+    Let $\mathbf{C}$ be a category.
+
+    A category is concrete if it is equipped with a faithful functor to a category of sets.\sidenote{This functor makes it possible to think of the objects of the category as sets with additional structure.}
 \end{definition}
 
 \index{complete!finitely}
