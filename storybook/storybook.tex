@@ -155,7 +155,7 @@ I consider it an important feature of my approach to mathematics, which feels re
 \openepigraph{%
 I can illustrate the second approach with the same image of a nut to be opened.
 
-The first analogy that came to my mind is of immersing the nut in some softening liquid, and why not simply water? From time to time you rub so the liquid penetrates better, and otherwise you let time pass. The shell becomes more flexible through weeks and months – when the time is ripe, hand pressure is enough, the shell opens like a perfectly ripened avocado!
+The first analogy that came to my mind is of immersing the nut in some softening liquid, and why not simply water? From time to time you rub so the liquid penetrates better, and otherwise you let time pass. The shell becomes more flexible through weeks and months - when the time is ripe, hand pressure is enough, the shell opens like a perfectly ripened avocado!
 
 A different image came to me a few weeks ago.
 
@@ -165,9 +165,9 @@ The unknown thing to be known appeared to me as some stretch of earth or hard ma
 \openepigraph{%
 In our acquisition of knowledge of the Universe (whether mathematical or otherwise) that which renovates the quest is nothing more nor less than complete innocence. It is in this state of complete innocence that we receive everything from the moment of our birth. Although so often the object of our contempt and of our private fears, it is always in us. It alone can unite humility with boldness so as to allow us to penetrate to the heart of things, or allow things to enter us and taken possession of us.
 
-This unique power is in no way a privilege given to “exceptional talents” – persons of incredible brain power (for example), who are better able to manipulate, with dexterity and ease, an enormous mass of data, ideas and specialized skills. Such gifts are undeniably valuable, and certainly worthy of envy from those who (like myself) were not so “endowed at birth, far beyond the ordinary”.
+This unique power is in no way a privilege given to “exceptional talents” - persons of incredible brain power (for example), who are better able to manipulate, with dexterity and ease, an enormous mass of data, ideas and specialized skills. Such gifts are undeniably valuable, and certainly worthy of envy from those who (like myself) were not so “endowed at birth, far beyond the ordinary”.
 
-Yet it is not these gifts, nor the most determined ambition combined with irresistible will-power, that enables one to surmount the “invisible yet formidable boundaries” that encircle our universe. Only innocence can surmount them, which mere knowledge doesn’t even take into account, in those moments when we find ourselves able to listen to things, totally and intensely absorbed in child’s play.
+Yet it is not these gifts, nor the most determined ambition combined with irresistible will-power, that enables one to surmount the “invisible yet formidable boundaries” that encircle our universe. Only innocence can surmount them, which mere knowledge doest even take into account, in those moments when we find ourselves able to listen to things, totally and intensely absorbed in child's play.
 }{Alexander Grothendieck}
 
 
@@ -259,8 +259,9 @@ I will try to put exercises as sidenotes. Solutions to all exercises are provide
 
 Here are some remarks on topics:
 
+\index{topics}
 \begin{enumerate}
-  \item Number theory is the most important topic in mathematics. However, there is a contradiction between how I feel and what I think. I feel very disinterested in number theory, but I think it is basically the source of all of our good ideas in mathematics. In general, my feelings are more aligned with abstraction and generality, but my thoughts of what is important are the concrete and what historically happened. Therefore, every chapter will present the most general and powerful versions of the ideas with as much generality as I can handle, but the focus and precedence will always be what happened in history and what came first, with number theory being the central motivation for most of the topics.
+  \item Number theory is the most important topic in mathematics. Therefore, I chose to start with number theory as opposed to other organising principles. However, there is a contradiction between how I feel and what I think. I feel very disinterested in number theory, but I think it is basically the source of all of our good ideas in mathematics. In general, my feelings are more aligned with abstraction and generality, but my thoughts of what is important are the concrete and what historically happened. Therefore, every chapter will present the most general and powerful versions of the ideas with as much generality as I can handle, but the focus and precedence will always be what happened in history and what came first, with number theory being the central motivation for most of the topics.
   \item Linear algebra would start with Grassmann's abstraction of the exterior algebra first. Historically, this came first but was hard to understand. Therefore, my view of linear algebra is a geometric one first, followed by linear maps between spaces.
   \item The metric topology came first, then problems without distances in the bridge problems, then abstract general and algebraic topology. I will try to follow this order in presentation.
   \item For group theory, I intend to start by motivating Galois theory first. Galois theory for me is the least interesting topic when I started learning mathematics, but I have appreciated it better with history and more advanced applications. My goal is to present group theory more concretely with the classification of groups of small order and lots of examples, but my real inclinations tend to be very categorical and groupoid like in nature from the axioms. The goal is to somehow do the more concrete approach in this book.
@@ -297,7 +298,80 @@ I still believe there really is no correct definition to certain things and that
 
 \chapter{Number Theory}
 
-\begin{lemma}
+\index{number theory}
+\index{arithmetic}
+Number theory and arithmetic is the most important concentration of study in mathematics.
+This is an opinion of course, however it is not at all obvious now as to why number theory is important.
+
+When I studied mathematics in a formal education system I was basically not exposed to anything related to number theory at all in my mathematical curriculum. It only took an understanding of history and how things have developed, one can truly understand the centrality of number theory even in mathematics as practiced in the modern day.
+
+When you look at history of mathematics (or even just using imagination), it is quite obvious one started with counting on the positive integers, trying to find relations between numbers (most notably Pythagorean triples), and they have already started connecting geometry to number theory with concerns over the roots of numbers being irrationals.
+
+Even in recent history (hundred years before $1900$s), number theory were the source of all the shadows of powerful organising ideas. Four ideas in particular, stuck out to me: (1) ideal numbers, (2) factorisation, (3) congruences and modularity, (4) groups. These two ideas were hints at organising principles in mathematics which are very interesting to me when I first started thinking about mathematics and algebra seriously.
+
+\section{Defining numbers}
+
+We will start by failing to define numbers without reference to previous ideas.\sidenote{It turns out it is very difficult to define numbers without reference to previous ideas. The definition of numbers is easily observed to originate as a piece of metamathematics, although we can start from other axioms and build up to it after a lot of effort.}
+
+\index{generator}
+\index{set!empty}
+\index{inverse!additive}
+\index{group!completion}
+\index{Peano!increment}
+\begin{definition}[Integers via incrementation and group completion]
+  An integer can be formed by incrementation and then considering the group completion of it. Starting with the integer $0$, one can define the successor operation, where the succesor of $n$ is the integer $n + 1$. A construction can be given in terms of sets, the empty set is $0$, the set containing the empty set is $1$. 
+  
+  Incrementation can also be defined be an operation or a map to be composed. The $0$ is the trivial composition, $1$ is the composition of a single element, $2$ is the composition of two elements. This is also known as the construction of the free group on a single generator $1$ after performing group completion on the monoid after successively adding integers. The categorical perspective, when applied to this, gives the integer as a representing object for the composition of the number of morphisms.
+
+  Group completion, which is not defined here, is used to define the additive inverse of an integers by asking for the integer and the additive inverse to be added to zero. Then, zero becomes the neutral element of the group of additive integers.
+\end{definition}
+
+\section{Primes, towards ideal theory}
+
+One central ontology that came from number theory is that of linear combinations and linear algebra.
+
+Primes are the primary example of a motivating idea in mathematics. It is the first example of a basic ontology of mathematics, one tries to find orthogonal components that are totally distinct from one another in some way, and then use geometry to build them up later. This comes from a spatial consideration of distributivity, which is described as linearity making linear algebra very important. This idea of building up multiples of several components to be distributed into.
+
+The first example where see this is in primes, and in prime factorisation. The powers of primes represent the coefficients, and the primes themselves represent distinct and orthogonal components.
+
+\index{orthogonal}
+\index{linear!combination}
+\begin{example}[Prime factorisation as linear combination]
+  Prime numbers can be factorised (up to the identity 1) into various orthogonal components. An example is $2^2 * 3^3 * 5^5$, where it feels like a linear combination or $2(2) \oplus 3(3) \oplus 5(5)$ by abuse of notation. Addition here is multiplication, and powers are scalar multiplication.
+  Moreover, $(2 * 3)^{5} = 2^5 * 3^5$.
+  \sidenote{This notation is deliberately abused to expose the comparison to linear algebra. We shall see later that distributivity is the key part of defining geometry later. The exponential object existing will show up categorically later as a realisation of the internal hom present in the integers.}
+\end{example}
+
+Putting together orthogonal components with the image of putting vectors that are orthogonal together or gluing open balls together from the basis of a topology is very geometric. In fact, one of the good criteria for a space is the notion of a distributive category.
+
+\index{category!distributive}
+\begin{definition}[Distributive category]
+  A distributive category is one where finite products over finite coproducts distribute into a coproduct of products. Explicitly, suppose we have objects $A$, $B$, $C$. Then, there exists a canonical isomorphism between these objects are given by the rules with $\times$ being the categorical product and $+$ being the categorical coproduct and $=$ represents a isomorphism of objects:
+  \begin{equation}
+    A \times (B + C) = (A \times B) + (A \times C) 
+  \end{equation}
+  and also
+  \begin{equation}
+    (B + C) \times A = (B \times A) + (B \times C) 
+  \end{equation}
+\end{definition}
+
+The idea of linear combinations can be first studied in terms of primality.
+
+\index{divisor!positive}
+\index{integer!prime}
+\index{divisor!trivial}
+\begin{definition}[Primes, divisors]
+  A positive integer $a$ is a positive divisor of an integer $n$ if there exists an integer multiple $k$ such that $ka = n$. We also say that $a$ divides $n$ or $a | n$ or $n \equiv 0 \mod a$.
+
+  A prime integer (or a prime number) is a positive integer greater than 1 \sidenote{This choice is made by mathematicians to avoid saying up to the additive identity or the trivial divisor all the time.} whose only divisor is $1$ and the integer itself.
+
+  A trivial divisor is a divisor that is either $1$ or the integer itself.
+\end{definition}
+
+\index{quotient}
+\index{remainder}
+\begin{lemma}[Uniqueness of quotient and remainder]\label{lem:uniqueness-quot}
   Suppose $a$ and $b$ are integers. Then there exists unique integers, defined as the quotient $q$ and the remainder $r$, such that $a = qb + r$ with the condition that the remainder $r$ is more than or equal to zero, but less than $b$.
 \end{lemma}
 
@@ -306,9 +380,10 @@ I still believe there really is no correct definition to certain things and that
   Since the integers are closed under subtraction by assumption (one will have to use the successor function and define subtraction, or use the fact that the integers are a ring), therefore $a - nb$ is an integer, for $n$ an integer. These integers are all unique, one can apply mathematical induction on $n = 1$ to show that all these integers are unique to each other. We now show that there exists a case where $r$ is less than $b$. This must exist without loss of generality, since if $r = a - nb$ is greater than $b$, then redefine the remainder $r$ to be $a - (n+1)b$ which must be less than $b$ but still greater than $0$, with the quotient being $n+1$ and all these case follow from the closure of the integers as a ring under subtraction. Therefore, the remainder $r$ exists, and the corresponding coefficient of integer $b$ must be the quotient $n$.
 \end{proof}
 
-\begin{lemma}
-  Let $a$ and $b$ be nonzero integers, then there exists a linear combination with coefficients $u$ and $v$ in the integers such that
-  $au + bv$ is equal to the greatest common divisor $gcd(a,b)$.
+\index{gcd}
+\index{linear combination}
+\begin{lemma}[Greatest common divisor as linear algebra]\label{lem:gcd-lin-alg}
+  Let $a$ and $b$ be nonzero integers, then there exists a linear combination with coefficients $u$ and $v$ in the integers such that $au + bv$ is equal to the greatest common divisor $gcd(a,b)$.
 \end{lemma}
 
 \begin{proof}
@@ -318,6 +393,22 @@ I still believe there really is no correct definition to certain things and that
   a product of an integer $w$ that is not equal to $1$ and $1$ without loss of generality, if it is $1$ we are done and it is
   nonzero without loss of generality since once can choose divisors of $u$ and $v$ to make it nonzero.
   We have $gcd(a,b) m_a u + gcd(a,b) m_b v = gcd(a,b) w$ so $m_a u + m_b v = w$. We can iterate this process, and since $w$ is nonzero and with each step, the integers $w$ decreases, by the well ordering of the integers, $w$ will terminate at $1$ after correcting up to sign by taking $-1$ when necessary onto integers $u$ and $v$, and the product of $gcd(a,b) m_{a_1} m_{a_2}...$ and $gcd(a,b) m_{b_1} m_{b_2}...$ terminates the the integers $u$ and $v$ of interest.
+\end{proof}
+
+\index{theorem!Fermat's little}
+\index{divisibility}
+\index{theorem!$p$-group fixed point}
+\begin{lemma}[Fermat's Little Theorem]
+  Let $a$ be a non-negative integer, and $p$ be a prime.
+  Then $a^p - a$ is divisible by the prime $p$. 
+\end{lemma}
+
+\begin{proof}
+  Pick the set $X$ as the partition from $0$ to $a$, and apply the $p$-group fixed point theorem or Lemma \ref{lem:p-group-fixed-point-theorem} with the cyclic group $P$ of prime order $p$.
+  Suppose $P$ is a finite $p$-group, using the hypothesis that $p$ is prime.
+  Suppose without loss of generality, the cardinality of the set of interest $X$ is the integer $a$.
+  Suppose $X$ is a set in which the finite $p$-group $P$ acts, then the subset $X^{p}$ of fixed points $|X^P|$ is congruent to $|X|$ modulo $P$. The cardinality of the set of maps from the $p$-group on the set $X$ is 
+  $a^p$. By the Lemma \ref{lem:p-group-fixed-point-theorem}, we have $a^p = a \mod p$, which implies that $a^p - a = 0 \mod p$. Therefore, $a^p - a$ is divisible by the prime $p$.
 \end{proof}
 
 \chapter{Sets and Foundations}
@@ -351,15 +442,6 @@ I still believe there really is no correct definition to certain things and that
   Since the set must be empty if mathematical induction is valid, therefore mathematical induction is a valid way to show that statements $P_n$ are true for all natural numbers $n$.
 \end{proof}
 
-\begin{lemma}[Fermat's Little Theorem]
-  Let $a$ be a non-negative integer, and $p$ be a prime.
-  Then $a^p - a$ is divisible by the prime $p$. 
-\end{lemma}
-
-\begin{proof}
-  Pick the set $X$ as the partition from $0$ to $a$, and apply the p-group fixed point theorem or Lemma \ref{lem:p-group-fixed-point-theorem} with the cyclic group $P$ of prime order $p$.
-\end{proof}
-
 \chapter{Groups}
 \label{ch:group}
 
@@ -381,6 +463,7 @@ Cauchy's first definition was that of substitutions, and you can derive substitu
 
 Anyways this prototype pseudodefinition is given a more explicit form once Burnside and Cayley realised you want other operations other than permutation. This ontology is surprisingly close to groupoids and generalises quite well. The idea is you want sameness in the object or set of objects to consider whatever operations you put on it such that this part of it remains the same. Note that Burnside and Cayley was interested in infinite groups as well. This is how one can invent the definition of a group (or even a groupoid) as set of operations on the same object.
 
+\index{operation!set of}
 \begin{definition}[Prototype psuedodefinition by Burnside reinterpreted]
 A group is a set of operations on the same object.
 
@@ -399,6 +482,8 @@ To prove Cayley's theorem, consider the mapping a group element $x$ to the left 
 
 Note that Cayley did consider infinite symmetries. The ontological object in the mind's eye for a \textit{Lie group} is the symmetries of a sphere where the orthogonal group acts on it. In the ontology of a topological group or a Lie group, one wants to compose operations to get back where they started and to ensure the action of the symmetry means that object still exists and it is achievable. One can therefore reinvent the notion of a group by looking at what rules let you ensure the object remains kept and compact under the operation, and that it is achievable and perfectly reversible.
 
+\index{Cayley!group ontology}
+\index{symmetry}
 \begin{definition}[Prototype psuedodefinition by Cayley reinterpreted]
   A group is the symmetries on the same object.
   
@@ -441,7 +526,10 @@ The notion of a group is so central to modern algebra. It is the word that appea
 
 I am trying to motivate these, but these seem to be very crucial to group theory.
 
-\begin{lemma}
+\begin{lemma}[Sets can be decomposed to disjoint unions of equivalence classes]
+  \label{set-equiv-class-decomp}
+  \index{equivalence class}
+  \index{disjoint union}
   Let $S$ be a set, and let $\equiv$ be an equivalence relation on the set $S$.
   Let $a$ and $b$ be elements of the set $S$, then either 
   the equivalence classes containing $a$ called $S_{a}$ is equal to the 
@@ -749,6 +837,8 @@ The idea is to suppose an algebraic integer $a$ is in a finite extension of $L$,
 \begin{proof}
     Consider chain of extensions by pairs of algebraic integers, these are finite extensions. Polynomials are finite sums and products of algebraic integers so these are algebraic as well.
 \end{proof}
+
+\chapter{Topology}
 
 \chapter{Linear Algebra}
 \label{ch:lin-alg}
