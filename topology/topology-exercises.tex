@@ -25,6 +25,41 @@ Show that a topology can be comparable to every other topology.
 
 \begin{proof}
     Consider a set with the indiscrete topology as per Example \ref{example-indiscrete}. It is coarser than every other topology.
-    
+
     By definition, a topology must contain the indiscrete topology which consists of arbitrary unions of all subsets which is the full set, as well as finite intersections of all subsets which is the empty set for disjoint sets.
+\end{proof}
+
+\begin{exercise}[Motivation for isolated point]
+	\label{exercise-motivation-isolated-point}
+	Show that an isolated point is a point contained in an open set with no other point of a subset $A$ in a topological space $(X, \tau)$.
+\end{exercise}
+
+\begin{proof}
+	By Definition \ref{definition-isolated-point}, an open set containing an isolated point does not contain a limit point. Since it does not contain a limit point, there is no point whose open neighbourhood in the subset containing the isolated point as a distinct point. Therefore, the open set containing the isolated point must no other point in open set since by case analysis either the isolated point is a limit point in the open set which is not true, or there is a limit point in the open set which is not true.
+\end{proof}
+
+\begin{exercise}[Closed set contains all of its limit points]
+	Show that a closed set contains all of its limit points.
+	\label{exercise-closed-set-all-limit-points}
+\end{exercise}
+
+\begin{proof}
+	The complement of the full set and its limit point is a open set by the definition of a closed set or Defintion \ref{definition-closed-set}, and every point in a closed set satisfies this condition.
+	
+	Therefore, a closed set contains all of its limit points.
+\end{proof}
+
+\begin{exercise}[Perfect set equal to derived set]
+	Show that a set is perfect if and only if it is equal to its derived set.
+	\label{exercise-perfect-set-equal-derived set}
+\end{exercise}
+
+\begin{proof}
+	Suppose a set is perfect.
+	A closed set contains all of its limit points.
+	This is because the complement of the full set and its limit point is a open set by the definition of a closed set or Defintion \ref{definition-closed-set}, and every point in a closed set satisfies this condition. This complement, denoted by $A - A$ for closed set $A$ and full set $X$ is open, containing limit point $x$ and no points of $A$. It is therefore a derived set.
+	
+	A set containing all its limit points is closed since $X - A$ contains a neighbourhood of each of its limit points, and hence it is open. This is a perfect set, as this is a closed set without any isolated points.
+
+	Therefore, a set is perfect if and only if it is equal to its derived set.
 \end{proof}

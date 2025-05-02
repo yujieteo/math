@@ -63,16 +63,27 @@ This section is purely metamathematical and it is not rigorous.
 
 \index{set!naive}
 \begin{definition}[Naive set]
+	\label{definition-naive-set}
 	A naive set is a list of unique elements.
+\end{definition}
+
+\index{class!naive}
+\begin{definition}[Naive class]
+	\label{definition-naive-class}
+	Suppose we have a formula $p(x, p_1, ... p_n)$.
+
+	A naive class is a set $C$ containing elements $x$ such that $x$ satisfies the formula $p(x, p_1, ... p_n)$.
 \end{definition}
 
 \index{membership!naive}
 \begin{definition}[Naive membership]
+	\label{definition-naive-membership}
 	If an element $x$ in in a naive set $X$, we say $x$ is a member in $X$, and it is denoted by $x \in X$.
 \end{definition}
 
 \index{set!union}
 \begin{definition}[Union of sets]
+	\label{definition-naive-set-union}
 	Let $X$ and $Y$ be naive sets.
 	Then, there exists a set, called the union of $X$ and $Y$, denoted $X \cup Y$, which contains the list of unique elements in either $X$ or $Y$, or both.
 \end{definition}
@@ -89,6 +100,7 @@ This section is purely metamathematical and it is not rigorous.
 
 \index{set!intersection}
 \begin{definition}[Intersection of sets]
+	\label{definition-naive-set-intersection}
 	Let $X$ and $Y$ be naive sets.
 	Then, there exists a set, called the intersection of $X$ and $Y$, denoted $X \cap Y$, which contains the list of unique elements in $X$ and in $Y$. 
 \end{definition}
@@ -105,6 +117,7 @@ This section is purely metamathematical and it is not rigorous.
 
 \index{set!complementation}
 \begin{definition}[Complementation of sets]
+	\label{definition-naive-set-complementation}
 	Let $X$ and $Y$ be naive sets.
 	Then, there exists a set, called the complementation of $X$ and $Y$, denoted $X - Y$, which contains the list of unique elements in $X$ but not in $Y$. 
 \end{definition}
