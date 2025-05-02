@@ -238,3 +238,28 @@ Colimits in the category of topological spaces are precisely the union of open c
 	Suppose $\tau$ is a topology for a set $X$.
 	The closure of a set is a set together with its limit points.
 \end{definition}
+
+\index{topological space!pointed}
+\begin{definition}[Pointed topological space]
+    \label{definition-pointed-topological-space}
+    A pointed object is an object equipped with a global element.\sidenote{See Definition \ref{definition-pointed-object}.}
+
+    Recall from Definition \ref{definition-global-element-final} that a global element is a morphism from the terminal object to that object.
+
+    Therefore, a pointed topological space is a pointed object in the category of set. Explicitly, it is a topological set, equipped with a continuous map from a singleton in that topological space to the pointed topological space.
+\end{definition}
+
+\index{topological space!connected}
+\begin{definition}[Connected topological space, connected objects]
+    \label{definition-connected-topological-space}
+    A connected object is an object whose hom functor out of the object to a fixed object is preserves coproducts.
+    \sidenote{The colimit of connected objects is a connected object.}
+
+	A connected topological space is a connected object in the category of topological spaces.
+	This means that the map:
+	\begin{equation}
+		\mathrm{Hom}(X,Y) + \mathrm{Hom}(X,Z)
+		\rightarrow \mathrm{Hom}(X,Y+Z)
+	\end{equation}
+	is a bijection on the level of sets.
+\end{definition}
