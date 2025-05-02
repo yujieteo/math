@@ -1,0 +1,2130 @@
+"Cartesian fibration" is named because of the existence of cartesian lifts for morphisms, which are named that because the paradigmatic example of a cartesian fibration is the codomain functor C^{\to} -> C for a category C that has all pullbacks (i.e. the existence of Cartesian squares.)
+
+2 of 6 properties of composable triple of arrows? How does one understands this definition? For the class of weak equivalences.
+
+3 by 3 lemma?
+
+ABP estimate for elliptic equations?
+
+Abel's theorem?
+
+Absolutely irreducible meaning?
+
+Additive White Gaussian Noise channel?
+
+Affine communication lemma? See Vakil. If affine open subset Spec A injects into X has property X, then for any f in A, then Spec A_f injects into X has this property. Part II, if (f_1, ... f_...n)= A Spec A_fi injects into A for all i so Spec A injects into X.
+
+Affine cone of projective variety? Visualisation? See Richard's Thomas notes of affine cone of projective curve zy^2 = x(x^2 - z^2)
+
+Alexandrov topology?
+
+All norms are equivalent in finite dimensional vector space. This is not really intuitive, and there are a lot of details in the proof.
+
+Also how does one explain that using a proper Klelisi or Eilenberg-Moore category gives Markov chains? What are the differences?
+
+Ambient homotopy theory?
+
+Amenability in group theory?
+
+Applications of the continuous mapping theorem?
+
+Are there group extensions of subgroups to proper groups? Is there a word for this? This is similar to field extensions?
+
+Artin map?
+
+Artin-Wedderburn?
+
+Atiyah Singer topics, elliptical differential operator, analytic index, compact manifold, topological index, Riemann-Roch, gauss bonnet, Pontryagin classes; differential operator symbol; fredholm operator; todd class; mixed cohom class; chern character; classifying space; thom isomorphism; index problem; grothendieck riemann roch; teleman index theorem, many index theorem, Hirzeburch-Thom characteristic classes;
+
+Atiyah-Singer index theorem.
+
+Attitude exercise, expose the attitudes of the following concepts, series (hint, sums), copresheafs/representations (hint, sheafification), sieves (hint, subfunctor of representable, what about Grothendieck topology), quivers (directed graphs, but what about quiver representations?), causal set (partially ordered set, but what about?), fields in physics (sections of fibre bundles), random variables (real values measurable  maps, but sample space to space of states), dynamical systems (set with group action G*S to S, group with time, S with space, f to be laws of motion), curve (smooth function, but parameterisation), module object (action object over monoid objects, but mainly to emphasise (bi)linearity)
+
+Automorphisms of compact Riemann surfaces?
+
+Autoregressive model?
+
+Axiom of choice is a choice object, define a projective object as a given a set of morphisms a from A to B and p frm P to B, a is epic, then there exists morphism p' from P to A, such that a * p' lifts to p, or the functor Hom_C(P, -) from C to Set preserves epis; define a choice object as an object such that every epimorphism with codomain P splits, what is splits; now define the axiom of choice is as every object in the category of Sets is a choice objects. Why is this equivalent to the the definition of the axiom of choice?
+
+Baer-Specker?
+
+Balog-Szemeredi-Gowers theorem?
+
+Banach space representation https,//ivv5hpp.uni-muenster.de/u/pschnei/publ/pap/iwasawa.pdf
+
+Base change of closed immersion stays closed immersion proof using locality.
+
+Base of a residue field?
+
+Bernstein theorem?
+
+Bertini's theorem
+
+Biadjacency matrix of directed bipartite graph as adjunction, construct the following example, let M be this (define this); then M* with opposite graph, all edges reversed, consider linear operators from Markov chain perspective as encoding transition probabilities between states, adjoint linear operator is running those operation backwards. Compare this as a way to get map B* to A*, from a map A to B, then inner products are distinguished choices of isomorphism of opposite objects.
+
+Binomial theorem consequences?
+
+Bivectors are what angular velocity, magnetism, and momentums are. Reduces to vectors in 3D space
+
+Blakers Massey
+
+Blow ups and blow downs.
+
+Blowing up C^2 at the origin, cut out origin, replace it with projectivisation of normal bundle, in this case it is projective space P^1, glue P^1 to approach origin.
+
+Blowing up examples, blow up C^2 at origin, blowing up affine variety along ideal; blowing up complex manifolds at points; definition of blow up of affine noetherian scheme; exceptional divisors; build up to most general definition of blow ups.
+
+Blowing up of complex variety connected sum of complex projective space with orientation reversed
+
+Bochner's theorem
+
+Bombieri-Vinogradov theorem?
+
+Bona Turner Tao Combinatorics
+
+Boolean rings and maximal spectrum, in a similar vein to the Zariski topology, let B be a Boolean ring with all elements idempotent, identify it with a subset of its maximal spectrum, now prove Stone's representation theorem for Boolean algebras, deduce the existence of ultrafilters from the existence of maximal ideals in ring, and prove the compactness theorem in propositional logic. (Hint, all using Stone duality)
+
+Borcherds proof of Lasker Noether motivates all the definitions to look at it
+
+Borel subgroup? https,//en.wikipedia.org/wiki/Borel_subgroup
+
+Borsuk-Ulam theorem
+
+Bounded variation vs monotonic function?
+
+Braid lemma? https,//ncatlab.org/nlab/show/braid+lemma
+
+Brauer-Siegel formula?
+
+Brenier's theorem?
+
+Brill-Noether matrix?
+
+Calculate centraliser of matrix [a 0; b d] in GL_2(R). Find what elements that commute with the pairs of.
+
+Calculate the spectrum generated by A for A an n by n matrix in the complex numbers, consider the commtuative C-algebra, what is the spectrum? These are probably the eigenvalues as a first guess? https,//math.stackexchange.com/questions/2953190/how-to-understand-the-spectrum-of-a-c-algebra We have, The spectrum of a C∗-algebra is quotient of the set of primary ideals with the Zariski topology by unitary equivalence (set of unitary equivalnce classes of irreducible *-representations of A). Idea is to provide dual object for any locally compact group, then you can take Fourier transform or something.
+
+Cantor function differentiable almost everywhere to 0, but not absolutely continuous.
+
+Capacity with cost? How is the cost applied?
+
+Carleson embedding?
+
+Casorati-Weierstrass proof of essential singularity.
+
+Categorical tip, ask what it means in the special case of a poset or a preorder. Often, things simplify. Why? (Hint, there are essentially unique morphisms, a poset is a category where for any pair of objects, there is at most one morphism from x to y, if there are morphisms from x to y and y to x, they are isomorphic). Describe posets as skeletal thin category enriched over the cartesian monoidal category of truth values. Define skeletal (two objects that are isomorphic are actually already equal i.e. all isomorphisms are automorphisms). Define the skeleton of the category (skeletal subcategory of C, whose inclusion functor exhibits it to be equivalent to C), define the weak skeleton of the category using weak equivalence. Deduce from this that Dedekind cuts is basically the Yoneda lemma.
+
+Category of nonunital rings versus category of monoids, show that category of Monoids is not Malçev? (Hint, submonoid of N^2 generated by (1,0) and (1,1) is not an equivalence realtion).
+
+Cauchy integral formula?
+
+Cauchy potential?
+
+Cauchy's integral formula?
+
+Cauchy's theorem
+
+Cell complex as quotient space of disjoint union of cells
+
+Cellular spectra? General spectra?
+
+Central limit theorem applications?
+
+Chain equivalences?
+
+Chain of closed irreducibles corresponds (locally, dually) to a chain of primes. so a minimal prime (i.e. has no proper prime 'subideals') corresponds to a maximal closed irreducible set a.k.a. an irreducible component
+
+Chain rule for Jacobian as taking functorality or tangent space at a point
+
+Chain? Refinement? Simplicity? Composition series?
+
+Characteristic fluctuation scale?
+
+Characters as representing objects? Recall that the definition of a one dimensional character is from G to C^* which is the punctured complex plane, with the multiplicative group.
+
+Chebotarev density theorem
+
+Chern classes, classify all nonisomorphic vector bundles, topological invariant to distinguish classes of vector bundle; rank of vector bundle; local trivialisations; smooth sections; clutching functions; generic section; transversal section; Poincare duality on fundamental class gives Euler class and Chern class; total Chern class.
+
+Christoffel symbols?
+
+Clariaut's theorem and why is it true?
+
+Class number formula? https,//en.wikipedia.org/wiki/Class_number_formula
+
+Class number problem?
+
+Classical completion? https,//kskedlaya.org/prismatic/sec_derived-complete.html
+
+Classification of singularities?
+
+Classifying space, equivariant cohom, localisation, Grassmanians, infinite qutient Grassmanians, frame bundle construction; principal bundles; weakly contractibles; homotopy groups; Hopf fibration; classifying space; universal bundle; joins and meets of spaces; bijective correspondence between principal G bundles up to isomorphisms and BG spaces; equivariant cohomology for smooth continuous group action; localisation using excision, thom isomorphism, atiyah-bott-berline-vergne, generic cubic surface 27 lines using this.
+
+Clearer example of the decomposition of SU(2)?
+
+Closed map lemma?
+
+Closed sets with infimum norm = 0 but no points in common. Hint, similar to Z, take set of singletons of integer more than 3, and singletons of set n + 1/n, n more than 3. This is so smart!!! Compactness is exemplified here.
+
+Closed subsets of reasonable topological space are exactly those of the form f_1 = ... f_k = 0, where f_i are continuous function. STUCK, I think we take preimages, these are not open? Then Zariski topology obviously follows if we have polynomials. USEFUL EXERCISE! Start with let f be continuous from R to R, prove that {x, f(x) = 0} is closed subset of R, y be limit point, sequence of limit points exist and the limit is y, f is continuous so f(y) = 0 by this sequence, y is in this set, so this set contains all of its limit points, closed subset of R.
+
+Closure of test functions?
+
+Cluster algebra
+
+Coarea formula?
+
+Codensity theorem?
+
+Cofinal has nothing to do with categorical duality
+
+Cohomology, differential forms, currents, de Rham theory, Thom isomorphism.
+
+Cohomology, motives, point counting.
+
+Colax or lax comma object
+
+Combinatorial Set Theory by Halbeisen
+
+Combinatorial characters? Perfect matching? Pleytheism? Polynomial functors? Frobenius character of a permutation action?
+
+Combine all definitions of matroid, https,//homepages.inf.ed.ac.uk/cheunen/publications/2015/matroids/matroids.pdf
+
+Compactly supported smooth functions dense in L1 by approximating characteristic function on an interval.
+
+Compare definitions of various fundamental groups.
+
+Compare sheaves as O-modules, then stalks as O_p modules.
+
+Comparison between Serre's FAC to today, https,//achinger.impan.pl/fac/fac.pdf
+
+Comparison of Cayley-Hamilton proof to physics, compare the algebraic geometry proof to the physicist proof, if A is square matrix, then A + esp H is diagonalisable after pertubation, take eps as it approaches zero.
+
+Comparison of negative self intersection, show that a line isomorphic to P1 in P2 has 1 self intersection (hint, perturbation intersects in one point), now try this with exceptional divisor in blow up, intersection is -1, so negative self intersection either means blow up, or rigidity or cannot be perturbed.
+
+Comparison to classical density argument in commutative algebra for Cayley Hamilton theorem, prove the Cayley Hamilton theorem, start with diagoanlisable matrices satisfy the theorem, these are dense in the full space of the commutative ring, therefore, non-diagonalsiable matrices satisfy the theorem since characteristic polynomial is of finite degree, in finitely many aentries of the matrices.
+
+Complementary slackness? Easiest working example?
+
+Complete partial orders as cartesian closed category of directed complete partial orders?
+
+Completion of measure space, (X, A, mu) be measure space, X is set, A is sigma algebra, mu be measure. Let completion A denote all usbsets which are a union of a set in A and a null set. Show that if A- is a sigma algebra, there is an unique extension of the measure mu to it. Okay, null set have measure 0, so really I don't understand what you mean by extension, A- is sigma algebra, A is sigma algebra and closed under countable unions? Best guess is you need Caratheodor's extension theorem. Did not try thinking abotu using symmetric differences and equivalence of sets. https,//math.stackexchange.com/questions/713084/completion-of-a-measure-space
+
+Completion of ring construction inverse limit, do not understand what do you mean by modulo a filtration of an abelian group.
+
+Complex character of finite group is Q linear combination induced from cyclic subgroup? What does this mean?
+
+Complex manifolds and the Kähler condition.
+
+Complex manifolds phenomena, almost complex structure, smooth varying endomorphism, complexified cotangent space direct sum decomposition to eigenspaces; lie bracket to study this; nijenhuis tensor to measure torsion; newlander-nierenberg for manifold complex; exterior derivative operator; dolbeault cohomology; hermitian manifold for manifold M, J orthogonal transform to riemannian metric g, Kahler condition is associated two form omega is closed; holomorphic coordinates.
+
+Complexity and Real Computation?
+
+Composing functors to get representable objects, consider GL_n(-) from CRing to Groups as a functor then compose this with the forgetful functor. Find that this composition is representable by a ring. Now recover this by Tannaka duality. Solution given by comments here, https,//math.stackexchange.com/questions/95712/what-use-is-the-yoneda-lemma
+
+Computation of Galois groups, https,//math.stackexchange.com/questions/45893/how-to-find-the-galois-group-of-a-polynomial
+
+Compute the blow ups {x1 x2 = 0}, {x_2^2 - x_1^4 = 0}, {x_2^2 - x_1^3 = x_1^2 = 0}. Do this in C^2, see their exceptional divisors.
+
+Connecting homomorphism?
+
+Connections of a bundle.
+
+Consequences of the fundamental theorem of calculus?
+
+Construct example of Homs in integral domain and Homs in fields. Fraction fields in terms of adjunction. You need to be very careful. Hom(A, k) = Hom(K(A, k)), forget k is a field into integral domain, K(A) is fraction field. Example, adjunction sort of fails with Z and Z mod 2.
+
+Construct example of presheaves, maps of presheaves, pushfowards, pullbacks on your favourite space.
+
+Construct formal power series degree n poly by taking first n terms is a limit as an example of a categorical limit.
+
+Construct representable functors secretly as hom functors using Yoneda's, try the following examples, make explicit the Hom functors used here, Spec Z, (1, Z), (1, R), schemes, Eilenberg-Maclane space, Grassmannians. STUCK, Spec Z, Eilenberg-Maclane spaces (unless you reverse), Grassmannians.
+
+Construction of kernel operator as idempotent comonad
+
+Construction of module over category, what is an action on a  module over a monoid? Let V be a closed monoidal category, V-enriched presheaf p, C -> V feels like representation already, is a module over the category C (use category instead of group here), presheaves are like representations, where instead of vector spaces we used closed monoidal categories. Now show that a left module over V is a V-presheaf on C, a functor of V-enriched categories i.e. M is C^op -> V, dually a right module is a V-enriched functor M, C -> V. Define a C-D bimodule / profunctor / distributor using a suitable tensor product (HINT, consider the definition of Hom sets to be C^op * C, * is product of categories). One take the one objectification, R a ring, BR is AB-enriched category of one object, then a left R-module N is equivalently an Ab-enriched functor N, BR^op -> Ab, define a right module similarly, then the usual tensor product of abelian groups of left and right modules can be defined as some sort of hom like thing, BR^op * BR -> Ab. Take the coend of this product, this gives the tensor product over ring R of M and N. BR^op is a right module, BR is a left module. What happens if you pick G as group, and Ab as set (G-set)? What generalisations are there in this example (hint, closed monoidal category as vector space, presheaves as generalisations of representations)?
+
+Construction on the Haar measure on locally compact groups? Explore this in the context of representation theory.
+
+Context, logic and quantifiers, work with the following example? https,//math.stackexchange.com/questions/1812490/in-category-theory-what-is-a-fibration-and-why-should-i-care-about-them. Define what is a termon some free variables (hint, well typed expression built on function and constant symbols). For example, consider the signaure of the theory of groups, with a  single sort * for the abstract group, then (x * e) * y would be a term in the context of groups. Show that the notion of context and terms constitute the free category with finite products over a given set of objects and morphisms. Now, define formulas using logical connectives. Then show that with a base category of contexts, and any category of contexts, you can nnow have the Boolean algebra of propositions. Define substitution morphisms. Define morphisms between propositions over objects. Sorts functions and relations yield morphisms in C. Now consider the functor p, B -> C where morphisms in C are sorts, functions, and relations, fibres of p are Boolean algebra, relation symbols are elements of B_Gamma, p is the Cartesian fibrations. Now, show that quantifiers show up as adjoints over the initial Cartesian fibration given contexts, functions, and relations. Finally, validate the punch line that logic give initial categorical fibrations, contexts are reflected in the base space, logic is in the fibres, and quantifiers are in the adjoints.
+
+Contravariance of universal property, example, there is a unique map from scheme S to spectrum of Z, scheme S can be represented by this unique map. The proof relies on the fact that there is a unique (ring) homomorphism from the integers to any other ring. This is contravariant! Why is that? Can we complete this proof so that it clarifies going on. Note, a ring is an abelian group with an additional monoidal structure given by tensor product?
+
+Converge pointwise vs converge uniformly
+
+Coordinate process as stochastic process?
+
+Counterexample for initial objects, prove with counterexample that every morphism from the initial object need not be a monomorphism. (Hint, in CRing, initial object Z, only holds for rings of characteristic 0).
+
+Counterexample that L^2 convergence not implying convergence.
+
+Cousin problems?
+
+Covering lemma?
+
+Covering space and analytic continuation? https,//mathoverflow.net/questions/479125/analytic-continuation-gives-a-covering-space-and-not-just-a-local-homeomorphism
+
+Curry and apply as Scott continuous?
+
+Cyclotomic fields to prove quadratic reciprocity?
+
+DAYDREAMS,
+
+Darboux continuous?
+
+Darboux theorem
+
+De Morgan algebra? https,//en.wikipedia.org/wiki/De_Morgan_algebra Can do this I am lazy.
+
+Decomposition group?
+
+Dedekind cuts on the posets and the Yoneda lemma, the least upper bound b represents the set of elements below b, this is the Yoneda lemma on the category of posets.
+
+Define the homotopy excision theorem and how does it prove the Freudenthal suspension theorem?
+
+Definition of the opposite category as a quintuple, what is it a quintuple of? (Hint, objects, morphisms, source, targets, and opposite composition).
+
+Deformation theory examples, moduli space; functor of points; family; fibres of same type; isomorphism classes of vector bundles of fixed rank; isomorphism classes of subvarieties of a fixed varieties with fixed hilbert poly; iso classes of regular maps; stability condition; coherent sheaf; vector bundle; nonsingular varieties; moduli problem functor; representable of moduli problem; art category; curvilinear deformation; first order deformation; tangent space; obstructions; embedded deformations; dgla philosophy; deformation of nonsingular varieties; deformation of bundle; Cech differential; deformation fo smooth embedded varieties; Kuranishi model; germ of moduli space; T1 lifting technique;
+
+Deformation theory.
+
+Degree genus formula is g = 0.5(d-1)(d-2) degenerating degree d curve to union of n lines.
+
+Denotational semantics?
+
+Dense image for Spectrum? What is the definition of this? See adjectives of projects?
+
+Densely defined?
+
+Descartes did not just describe the plane as the product of a line with itself, he basically invented analytic algebraic geometry, which is the study of polynomial curves in n-dimensional affine k-space - which are exactly the equalizers of polynomial functions k^n -> k. So we are justified in naming both products and equalizers after Descartes, thus the term "Cartesian category" for a category with products and equalizers.
+
+Describe the Sorgenfrey line. STUCK, Sorgenfrey line not well defined or understandable.
+
+Desingularise the curve {x_2^2- x_1^4 = 0} by two blow ups and get the diagram sequence. Calculate explicitly this blow up.
+
+Det ab as exterior power
+
+Diagonal embeddings?
+
+Difference between homotopy group and homology group, main difference is that homology group are abelianised in some sense.
+
+Difference between uniquely decodable code versus instantaneous code.
+
+Different notions of localisation.
+
+Differential forms, geometric meaning of multi variable calculus. Try learning tbe exterior algebra
+
+Differential geometry using locally ringed spaces? See Sheaves on Manifolds by Kashiwara.
+
+Dilworth's theorem?
+
+Directed suprema?
+
+Dirichlet functional?
+
+Dirichlet principle
+
+Dirichlet's theorem?
+
+Dirichlet's unit theorem?
+
+Distinguish between sections and stalks naturally. I could not really distinguish them.
+
+Do not really understand the duality between ideals and filters. Need to break it down in terms of definitions in ways I could understand.
+
+Do not understand simple example of power series ring being faithfully flat BUT NOT free.
+
+Do not understand spanning trees from linear algebra.
+
+Do not understand the definition of Prufer domains, Prufer domain, commutative ring without zero divisors, such that every non zero finitely generated ideal is invertible.
+
+Do not understand the purpose of the Kolmogorov consistency theorem? The proof also relies axiom of choice? https,//fabricebaudoin.blog/2012/03/25/lecture-5-the-daniell-kolmogorov-existence-theorem/
+
+Do not understand the significance of the existence of nonempty affine algebraic sets for all proper ideals in poly ring k[X_1, ..., X_n]. This just means it is nonempty if proper?
+
+Dominated convergence theorem?
+
+Don't understand the essentially surjective example where R is isomorphic to poly ring quotiented out by radical ideal.
+
+Don't understand the intuition the contraction mapping theorem and why is it important.
+
+Don't understand this Matt Emerton motivation to study Lie algebras, https,//mathoverflow.net/questions/58696/why-study-lie-algebras/58808#58808
+
+Don’t fully understand Borcherds complete computation of Tor over finitely generated abelian groups.
+
+Don’t fully understand how tensor and Hom are adjunctions? Constant is left adjoint to limits which are right adjoint. Colimit is left adjoint to constant which are right adjoint
+
+Don’t understand Zhen Lin’s comment, usual five lemma follows from the short five lemma, factor each morphism appearing in the rows into an epimorphism followed by a monomorphism.
+
+Don’t understand how to keep it in head? Kunneth formula.
+
+Don’t understand measurable functors and the fact that the realisation of a probability law is a natural transformation from the random variable functor to the measurable functors? Where in the construction do you want the measurable functor to use the axiom of dependent choice?
+
+Don’t understand the definition of quasiinverse? https,//ncatlab.org/nlab/show/weak+inverse. Princial of equivalence?
+
+Don’t understand the salamander lemma, it’s proof.
+
+Don’t understand what are covering sieves, local isomorphisms and separated presheaves?
+
+Easy proof of connectedness of R?
+
+Eberlein-Smulian theorem?
+
+Edmond's matching polytope theorem?
+
+Egorov's theorem
+
+Eigenvalues of Frobenius map?
+
+Eilenberg Maclane spectrum? (Hint, use Eilenberg Maclane spaces as representing object)
+
+Eisenbud says II1 to II4 as vocabulary building. But basic results are hidden here.
+
+Eisenstein criterion?
+
+Elliptic parabolic regularity theory?
+
+Embedding? General examples? https,//ncatlab.org/nlab/show/embedding
+
+Empty set, $(1)$ as ideal or the unit ideal. Useful in showing (quasi)compactness of Zariski topology?
+
+Enriched category to define algebra, a category with a vector space or morphisms or topological space of morphisms, repalce hom-sets with hom-objects in a suitable category K. Therefore, show that an algebra is a one object enriched category over ???.
+
+Entropy rate of stationary Markov chain? https,//www2.isye.gatech.edu/~yxie77/ece587/Lecture6.pdf
+
+Equivariant cohomology (classifying spaces sort of explained), localisation.
+
+Equivariant object
+
+Ergodic theorem? What are some important classes of this?
+
+Escardo-Simpson characterisation of real interval.
+
+Essential extension?
+
+Euler class?
+
+Euler product?
+
+Euler-Lagrange formula
+
+Every algebraic variety is birational to a projective variety (Chow's lemma). https,//en.wikipedia.org/wiki/Birational_geometry
+
+Everywhere differentiable, derivative not continuous.
+
+Exactly 9 model category structure in set? https,//www.matem.unam.mx/~omar/notes/modelcatsets.html
+
+Example of  "affine basis" of the plane z=1 in R3? I'm curious if there is an element of this basis that corresponds to the origin. Is <1,0,1>,<0,1,1>, <0,0,1> an affine basis? A set is an affine basis of when you translate it so that one element is the origin, the rest forms a basis
+
+Example of braided monoidal categories, which is the motivating example of braided monoidal categories? (hint, graded modules over commutative ring, then braid the tensor product). Now make it symmetric by choosing a suitable identity for u with braiding x * y to u^( |x| |y| ) y * x for suitable tensor products (hint, u^2 = 1). What is a common value for u (hint, -1)
+
+Example of closed monoidal category, what is the canonical example of a monoidal category (hint, Vect, tensor product of vector spaces and linear maps exist) therefore a monoidal category must come with, tensor product, tensor unit, associative; left unitor, right unitor, triangle identity on tensor product, pentagon identity on tensor product. Now build up to a closed monoidal category by defining the tensor product and the internal Hom, and stipulating that the tensor hom adjunction exist. Now use this to define modules, using a one object category enriched over Ab.
+
+Example of projective resolution, Koszul complex of a regular sequence which is a free resolution of the ideal generated by the sequence. Still not sure how this is even after seeing what Koszul complexes are.
+
+Examples of a cofree functor.
+
+Examples of enriched categories, what is a set enriched category? (hint, locally small) Waht is a category enriched in chain complexes? What is a category enriched in simplicial sets (hint, infinity, 1 categories)? What is a category enriched in category of topological space? What is a category enriched in Cat? What is a category enriched over K-modules? What is a preorder as an enriched category? What is a torsor over a group enriched over the discrete category on the underlying set of the group? Now about about one object categories, and their corresponding enrichment?
+
+Examples of symmetric monoidal categories using Vect, define a suitable braiding from the category Vect as a monoidal category by thinking about the tensor product. (Hint, standard braiding). Now redo the example with graded modules over commutative ring.
+
+Examples of weak choice principles, https,//math.stackexchange.com/questions/3001455/how-strong-are-weak-choice-principles
+
+Exceptional locus, blow up of X at ideal I is the preimage of the projection map of the algebraic set of the ideal i.e. p^{-1}(Z(I))
+
+Exercise in Folland (pg. 24), if M is the sigma algebra generate by epsilon, then M is the union of sigma algebras generated by F as F ranges over all countable subsets of Epsilon. Got stuck here, really I need to understand what it means for a sigma algebra generated by some set, then construct some sort of mapping from subsets of epsilon to sigma algebra. The hint says I need to show that the Eps itself is a sigma algebra.
+
+Exercise in Tannaka duality using representation theory, define representation as a functor category, Rep(C) = Func(C, D), now define the following, permutation representations, linear representations, modular representations. Now describe the Tannakian reconstruction theorem, use the forgetful functor for F Rep(G) to Vect, and describe the group of automorphisms of the fiber functor F. Why is this forgetful functor called the fiber functor? Now describe Tannaka duality as the reconstruction of algebraic symmetric object from the monoidal category of representations of that object.
+
+Exercise in global sections, define total space, base space, and bundles, define global sections in bundles, section of fibres to give back base space or map s such that p * s is the identity of the base space, now define local section using some section of the map to U, then define a pullback with inclusion from U to B (hint, what is the DIRECT LIMIT of the pullback, it must be E|U or inclusion preimage i*E) , now try the sheaf of local functions using the sheaf of a topological space A = Sh(Op(X)) as a sheaf if local sections of its etale space bundle E to X, pick a suitable total space to define the sheaf of global sections (hint, terminal object) and think about this as a direct image functor induced from morphism of topological space X to points, last define the global sections functor in a general Grothendieck topos by a hom-set out of terminal object. Now compare this to the Spec functor in Isbell duality.
+
+Exercise in non Cartesian category, that Ab/RMod with tensor product of Ab/RMod is non Cartesian, yet it is closed monoidal, What is a suitable definition of Cartesian categories?
+
+Exercise on Isbell adjunction, what is a category C that is an enriched symmetric monoidal category V? What is an enriched functor category [C^op, V] (Hom object of presheaves), then what is the Yoneda embedding (hint; C to [C^op, V])? Then there is a canonical adjunction where the global sections functor O is left adjoint to the Spec functor, from [C, V]*op to [C^op, V] as Spec functor, and from [C^op, V] to [C, V]^op as global sections O. This is the Isbell adjunction, which one sends presheaves to copresheaves?  Which symmetric monoidal category do we pick to get typical algebraic geometry? (Hint, one object set enriched over Top?)
+
+Exercise on one object categories, let BG be one object category of the group, say it takes values in Vect so Func(BG, Vect) is canonically isomorphic to representation category, show that these are linear representations of the group G. What about B End(U) what are the morphisms?
+
+Exercise on pullback and pushforward isomorphism of schemes, hard by Matt Emerton, consider schemes X and Y, Y is a point i.e. Spec k, k field, we have Hom_X (f*G, F) isomorphic to Hom_Y(G, f_* F). F is O_X-module, G is O_Y module, f_* is now computing global sections (why?), now ask if O_X *_k H^0(X,F) -> F is isomorphic>? (probably not) HARD! I don't even understand where this natural map comes from. https,//math.stackexchange.com/questions/6406/pullback-and-pushforward-isomorphism-of-sheaves
+
+Exercise, define tangent space using stalks. https,//math.stackexchange.com/questions/3657278/stalks-of-manifolds set of pointed derivations from the sheaf of rings on whole space O_X(X) to complex numbers, this will fail on constants, so be careful, use germs of functions O_{X,p}, this makes sense, tangents can only be defined on a point if you take the whole space it just vanish. Simplest example is simple curve. How do we think about this example more carefully?
+
+Existence of Stone Cech compactification, https,//mathoverflow.net/questions/5786/how-do-i-check-if-a-functor-has-a-left-right-adjoint
+
+Existence of nilpotents, what is the difference between topological space of scheme Spec k[x, y]/(x, y^2) and Spec k[x, y]/(x, y)? Is there a difference in the ring of coordinate functions? Answer is YES, y is in k[x, y]/(x, y^2). What does y evaluate to? Define a nilpotent. Therefore, prove the statement that there exists two elements f and g of the homogenous coordinate ring with the same value at every point but are algebraically distinct.
+
+Explain, is that an algebraic scheme over a field can be covered by a finite number of spectra of finitely generated algebras. Those affine schemes that arise as the spectrum of a finitely generated algebra over a field are called algebraic, and the intuition behind this is that they are defined by a finite set of polynomials in a finite number of symbols. I think this terminology and point of view is common in the context of group schemes, see for example the notes of J.S. Milne
+
+Explicit calculation of Jordan canonical form over C to be GL(n,C)?
+
+Explore https,//notebookarchive.org/frequencies-of-named-theorems-in-arxiv-math-mathoverflow-and-stackexchange-mathematics--2020-09-8sywjs5/.
+
+Explore this quotient map when blowing up C^2 to origin, C^2 \ {0} -> P^1 taking coordinates for (x, y) -> [x , y]. What are homogenous coordinates on P^1m then take closure of this graph, have something like {xY = Xy} as proper subset of C^2 * P^1, This is the blowup at 0, denote it as Bl_0 C^2. There is the projection to C^2 itself, p, Bl_0 C^2 subset of C^2 * P^1 -> C^2.
+
+Extended Euclid's algorithm?
+
+Extension of scalars? Right projection of tensor product map to another scalar.
+
+Exterior algebra and Grassmann algebra
+
+Exterior domain
+
+Fano’s inequality proof? Motivation (hint, channel coding theorem)
+
+Fans and algebro-geometric toric varieties.
+
+Fatou's lemma, https,//en.wikipedia.org/wiki/Fatou%27s_lemma
+
+Feit Thompson theorem?
+
+Feynman path integrals.
+
+Fibers of fibration of points?
+
+Fibre product of schemes, exercise, why is a fibre product of schemes not an example of a fibre product of sheaves in a Grothendieck topos (hint, need to use a Zariski topos, and Zariski sites).
+
+Field of one element?
+
+Figure out a description of Chevalley's structure theorem?
+
+Figure out easier proof of Goursat's lemma and Zassenhaus' butterfly lemma, Schreier refinement theorem and the Jordan Holder theorem.
+
+Fill in fundamental theorem of quotient groups.
+
+Final topology (https,//en.wikipedia.org/wiki/Final_topology), cofinal topology? Final topology is coinduced, weak, colimit, inductive. Quotient topology of quotient space is final topology.
+
+Find generalisations or good definitions that help prove the Baire category theorem.
+
+Find out what all these problems mean? https,//math.stackexchange.com/questions/255063/why-study-algebraic-geometry
+
+Find the proper definition of a blow up of affine varieties along an ideal given polys at a set of generators for the ideal. Actually, you can just recycle the form, it is some element X \ Z(I), where Z is the zero set of the dieal, then it is some affine line^n cross projective line^r written in homogenosu coordinates.
+
+Finetti theorem?
+
+Finish the proof of closed subspaces of Banach spaces are Banach spaces.
+
+Finite dim needed for representations as matrices to make sense.
+
+Finite dimensional representation W of C* is algebraic if correspodning group homomorphism C* to GL(W*) is algebraic, show that data of Z-graded vector space V = direct sum of V_d with finite dimensional graded components V_d is equivalent to the data of a vector space V with a C* action such that every v in V is contained in a finite dimensional C*-invariant subspace, in which C* action is algebraic. STUCK, I have zero clue how to prove this. Definition of algebraic, grading, direct sum, C*-invariant?
+
+Finite dimensional representation of compact group always unitary, proof by sticking inner product and integrate?
+
+Finite division ring necessarily commutative proof and why?
+
+Finite field F_p, are there irreducible polynomials of each degree? Yes and how to compute them?
+
+Finite fields, algebraic closure and distinct roots, let k be a finite field, let a be any element in the algebraic closure of k, prove that it's minimal polynomial has distinct roots? STUCK, what is the algebraic closure of a finite field? What is a minimal polynomial?
+
+Finite object?
+
+Finitely co-generated? https,//math.stackexchange.com/questions/2239502/an-example-about-finitely-cogenerated-modules
+
+Fix the corollary on quantiative regularity for the closed graph theory.
+
+Fixed notes on weighted limits, https,//mathoverflow.net/questions/33188/a-slick-definition-of-the-kan-extension
+
+Flat cohomology?
+
+Flatness, Let $f , X \rightarrow S$ be a morphism of schemes, and assume that $S$ is reduced. reduced? (i) If $S$ is a smooth curve then $f$ is called (geometrically) flat if no component of $X$ is mapped to a single point in $S$. Here by component we mean an irreducible or embedded component, i.e. (in the affine picture) the subvarieties of $X$ occurring in the primary decomposition of the ring that defines $X$. Why does this make sense?
+
+For curves the arithmetic and geometric genus are defined by finding a replacement smooth curve and taking its genus. For the geometric genus, the normalization. For the arithmetic genus, the deformation to smoothness. For higher dimensional compete varieties, the geometric genus is again defined by normalization, but the normalization isn’t smooth. The geometric genus is h^0,n, while you propose h^0,1. h^0,n is better because it is birationally invariant.
+
+For monoid, TFAE, pullback of triple cross to double cross to single cross; G is a group.
+
+Forcing produces ZFC?
+
+Forms of Cauchy-Schwarz?
+
+Four lemma?
+
+Four-fold way?
+
+Fourier inversion theorem?
+
+Fourier remarks by Emerton, https,//mathoverflow.net/questions/37021/is-fourier-analysis-a-special-case-of-representation-theory-or-an-analogue/37189#37189 and here https,//math.stackexchange.com/questions/58515/what-is-fourier-analysis-on-groups-and-does-it-have-applications-to-physics/58591#58591
+
+Fourier-Mukai transform?
+
+Frattini subgroup?
+
+Frechet spaces?
+
+Free R-module monad, which free-forgetful adjunction do you use for this monad (hint, R-modules). Reduce this to define the free Ab monad, and free vector space monad.
+
+Free algebras in the universal algebra sense are coproducts of the free algebra generated by a singleton set.
+
+Free functor
+
+Free group monad, which free-forgetful adjunction do you use for this monad (hint, group and sets)
+
+Free probability and non-commutative random variables.
+
+Free-forgetful adjunction between pointed sets and sets as monad, what endofunctor is induced (hint, addition of disjoint point). What monad is it called (hint, maybe monad).
+
+Freiman's theorem?
+
+Frobenius reciprocity?
+
+Frobenius theorem on real division algebras?
+
+Frobenius theorem?
+
+Frustrated at definitions you cannot reinvent so easily. Example chain complexes satisfying motivation is much harder to explain than the definition.
+
+Fubini's theorem? Using measure theory? Tonelli's theorem? See Wikipedia for proof key steps, this one is good.
+
+Function types are the same as internal homs. Internal logic of the category as function type. Make this make sense? https,//ncatlab.org/nlab/show/internal+logic
+
+Functions of schemes can’t be defined at points? Why is this true because of nilpotents? What is the relationship between this and nilpotents?
+
+Functions on annulus and Laurent series?
+
+Functor between preorder regarded as categories, the answer from Google is monotone functions but I am STUCK, what are monotone functions.
+
+Functor from presheaf to stalk, use the fact that adjoints are unique up to unique isomorphism and adjoints of composites are composite of adjoints to show that a skyscraper presheaf functor has the same right adjoint as the functor that sends a sheaf to its stalk.
+
+Functorial factorisation of maps?
+
+Functors represented by a scheme, show that vector bundles of rank k over algebraic variety or scheme X correspond to algebraic morphisms X to A, where A is the Grassmannian.
+
+Fundamental finiteness principle in algebraic geometry? See pg. 71 of Eisenbud.
+
+Fundamental theorem of Galois theory?
+
+Furstenberg topology to give infinitude of primes. STUCK, Furstenberg topology is not well defined or motivated.
+
+Galois field in algebraic codes?
+
+Galois group
+
+Galois group and why does a symmetric monoidal stable infinity 1 category suitable for this? See Kuga's Galois dream.
+
+Galois group, filtration of it, local field extension.
+
+Galois insertion and coinsertion?
+
+Galois theory to prove impossible trisections?
+
+Gauss-Bonnet theorem?
+
+General linear group as a functor, what is this a functor of? (Hint, CRing to Grp, mapping commutative ring to GL_n(A)). Consider the functor sending its ring to group of units. Now verify that determinant is a natural transformation of these functors.
+
+Genus of curve? Arithmetic genus? Serre duality?
+
+Geometric Invariant theory.
+
+Geometric Nakayama? https,//math.stackexchange.com/questions/3895881/geometric-nakayamas-lemma
+
+Geometric definition of the momentum of electromagnetic field being the Ponyting vector
+
+Geometric interpretation of the Riemann-Roch theorem, https,//math.stackexchange.com/questions/683360/geometric-interpretation-of-the-riemann-roch-for-curves do not understand this.
+
+Geometric invariant theory topics, Isbell dual, quotients, action groupoids, moduli spaces, moduli stacks; reductive group on projective variety; orbifold; gauge group; bridgeland stability conditions; deligne mumford stack, stability, stable vector bundles
+
+Geometric realisation of categories, desribe the functor that sends categories to topological spaces, define the nerve of a cateogry, define the geometric realisation of the nerve.
+
+Geometric spaces locally look like open subsets of R^n.
+
+Girsanov's theorem?
+
+Give examples where it is cheap to answer, but not cheap to answer why you care, so delay answers.
+
+Givental's quotient construction, line bundles and divisors.
+
+Global regular functions proof to be coordinate ring of variety.
+
+Global sections functor, work out the following details, what functor does Z represent as object (hint, Hom(G, -), you can consider any group Hom from Z to H to be uniquely determined by image of 1 in H), what about Spec(Z)? What about Hom(-, Spec(Z))? Global sections functor is representable by Hom(-, Spec(Z)).
+
+Global sections of O(-1), twisted structure sheaves, make this make sense, https,//math.stackexchange.com/questions/112926/global-sections-of-mathcalo-1-and-mathcalo1-understanding-structu
+
+Godel incompleteness
+
+Godel's incompleteness theorem?
+
+Good definition of operator in contrast to endofunctor.
+
+Gorenstein ring? STUCK, what is finite injective dimension as R-module, why do we care? Localisation at prime ideal is Gorenstein local ring?
+
+Gram-Schmidt process?
+
+Green's functions?
+
+Gromov compactness?
+
+Gromov-Witten invariant?
+
+Group ring adjoint to the unit group, preserve all colimits as left adjoint, then apply Yoneda?
+
+Gupta 1970, over every division ring D, not a field, there is an invertible size 2 square matrix whose transpose is not nilpotent
+
+H1 or sheaf cohomology classifies torsors of a group make this make sense. H1 of a Lie group on manifold g classifies principal g bundles.
+
+Haar measure on SL_2(R) explicitly with matrix coordinates. Compare with Iwasawa decomposition.
+
+Hadamard three circle theorem?
+
+Hahn-Banach theorem, Banach-Tarski paradox, ultrafilter lemam, countable choice?
+
+Hamilton-Cayley theorem in one sentence using algebraic geometry, true for diagonalizable matrices, which forms a Zariski dense set. (although it is not open, but it contains the open subset of matrices with distinct eigenvalues, this is where it feels perturbative Also, the irreducibility of affine space is assumed.) Compare to A is a square matrix, then it is diagonalizable after perturbation. Finally, as an example of the somewhat mysterious reduction steps in EGA, we can also restate and reprove it for integral domains by base change to the algebraic closure of the function field.
+
+Harmonic conjugates? Cauchy-Riemann's equations and relation with hydrodynamics.
+
+Harnack inequality?
+
+Hartshorne Chapter 1, 1.1(a), y = x^2 is zero set of poly y - x^2, show that A(Y) is isomorphic to polynomial ring in one variable. STUCK, know that k[x,y]/(y-x^2) is isomorphic to k[x]/(x^2), but how on earth do you construct the isomorphism. Definition of polynomial ring. Polynomial ring is set of expression of the form with coefficients. These form a ring (take ring action on group of monomials). Maybe the best way is to show that they have the same group, and they have the same ring action. In this case they do, same coefficients? Also there is the ideal (y - x^2) and (x^2). These cut out the same zeroes? Coordinate rings isomorphic actually, is it sufficient. Definition of morphism of algebraic varieties, definition of isomorphisms are unclear.
+
+Hartshorne Chapter 1, 1.1(b), let Z be plane curve xy = 1, A(Z) is not isomorphic to poly ring in one variable over k. Looks like curve y = 1/x. Consider poly ring as k[x, 1/x], but 1/x is not zero in k. Note this is not a polynomial ring by definition, since poly ring have indexes that are indexed by positive integers, so it cannot be isomorphic since there is no representative for x^{-1}.
+
+Hartshorne Chapter 1, 1.1(c), let f be any irreducible quadratic polynomial k[x,y], let W be the conic defined by f, show that A(W) is isomorphic to either A(Y) in example 1a, or A(Z) in example 1b. STUCK, I think you need some sort of classification of the conics. It is strange that these are the only two cases. First case it is obvious, but why is it only A(Z)?
+
+Hartshorne Chapter 1, 1.2, twisted cubic, show that Y = {(t, t^2, t^3)| t in field k } is affine variety, find generators for the ideal, show that A(Y) is isomorphic to polynomial ring of one variable over k.
+
+Hartshorne Chapter 1, 1.3, let Y be algebraic set in A^3 defined by polynomials x^2 - yz, and xz - x, show that Y is the union of three irreducible components, STUCK at algebraic set, A^3 and irreducible components not being natural notions.
+
+Hartshorne chapter 1, 2.5, show that projective n-th space is a noetherian topological space. My approach is that descending chain of closed projective points terminate at P^1 points, Use n+1 copies of A^n to cover, note that A^n is noetherian. STUCK, noetherian topological space, descending chain condition is still not natural to me because normally noetherian to me is rather algebraic.
+
+Hartshorne, chapter 2, 2.1, note that the open complement of the algebraic set / Zariski closed set V((f)) for the ideal generated by f correspondes precisely to the multiplciatively closed subset used in the localisation A_f, therefore there is an isomorphism between Spec A_f to the locally ringed space (D(f), O_X|D(f)), use the fact that restriction of the structural sheaf makes sense since this is affine schemes, so stalks are the isomorphic i.e. local rings.
+
+Hartshorne, chapter 2, 2.10, Spec R[x] looks like, 2D point generic point {0}, then points (x - a), then there are also pairs of points (x - a - ib). Not Hausdorff, and it has parts of various dimension in comparison to R.
+
+Hartshorne, chapter 2, 2.19, A is isomorphic to the direct product (direct sum since coincident on additive category) of two rings, and are disconnected by orthogonality of idempotents, since the idempotent serve as absorbing elements and as idempotents, the set of prime ideals, when realised as a topological space, is disconnected since it can be formed as the disjoint union of the prime spectrum of two rings (if one checks their linear decomposition).
+
+Hartshorne, chapter 2, 2.2, induced scheme structure exists for open subscheme. First, verify it for the locally ringed space underneath. Consider the open set on the topological space associated with the locally ringed space. Restrict all ring homomorphisms on the structure sheaf to this open, these are the induced ring homomorphisms. The open immersion to the image of the open immersion in the original topological space is a homeomorphism, likewise for ring homomorphisms since the stalks for each point in the open set are the same for the topological space, so maps of local rings are also the same (we used the fact that this is affine scheme). Now, if this happens to admit covering by open sets (Zariski covers) then this is a scheme.
+
+Hartshorne, chapter 2, 2.4, use the fact that Hartshorne proved this for locally ringed spaces, then use the fact that you can cover a scheme with open affine schemes, and the right definition for this adjunction holds is due to gluing and stuff. https,//mathoverflow.net/questions/57777/question-about-the-spec-and-global-section-functors and also https,//stacks.math.columbia.edu/tag/01I1 solves this exercise.
+
+Hartshorne, chapter 2, 2.6, the spectrum of the zero ring is the empty topological space, there is a map from the empty topological space to other underlying topological spaces in schemes. By Isbell adjunctions, this corresponds to the fact that the zero ring is the terminal object in the category of commutative ring. There is a unique morphism to the zero ring from every ring by sending all elements to zero.
+
+Hasse invariants?
+
+Hausdorff spaces as every net converges to at most one point? Compact Hausdorff space is space where every net accumulates at some point and converges to at most one point? See Folland for nets and filters. Make this make sense?
+
+Hawaiian ring has no universal covering.
+
+Helly's theorem
+
+Helmholtz decomposition
+
+Hensel lemma?
+
+Hermitian pairing
+
+Higgs bundles.
+
+Higher Chow groups
+
+Hilbert's Weak Nullstellensatz shows that the “traditional points” are present as points of the scheme, and this carries over to any algebraically closed field. If the field is not algebraically closed, the traditional points are glued together into clumps by Galois conjugation, as in real affine line and the affine line over $F_p$. How does this even work?
+
+Hironaka's 1964 theorem on resolution of singularities
+
+Hodge index theorem
+
+Hodge numbers?
+
+Hodge theorem?
+
+Hodge theorem? Compact Kahler manifold? Hodge structure? It is related to de Rham complex, de Rham homology and cohomology (see Lurie lecture)?
+
+Hodge theory topics, hodge star operator; hodge theorem; stokes theorem; de rham cohom; exterior derivative; laplacian operator as linear operator called harmonic; hodge theorem; poincare duality; betti numbers, weitzenbock formula; fundamental form; Kahler manifold; dolbeault theorem
+
+Hodge theory.
+
+Holomorphic sphere?
+
+Holomorphy?
+
+Hom functor explicit definition, define hom functors using the objects, morphisms methodology, and dually. Show that this is a bifunctor, and its domain is the product category of the opposite category C^op and normal category C.
+
+Homogenous spectrum of graded ring?
+
+Homological dimension as supremum of n such that Ext^n(E,F) is nonzero. Correspond with enough injectives and projectives.
+
+Homology of finite simplicial complex over integers, try two by two matrix https,//eric-bunch.github.io/blog/calculating_homology_of_simplicial_complex
+
+Homotopy excision? How does homotopy excision (a result about cohomologies coming from quotient groups) prove the Freudenthal suspension theorem?
+
+Homotopy long exact sequence of fibration?
+
+How are analytic functions related to the completions of a commutative ring?
+
+How are anima a generalisation of homotopy types and infinity groupoids? What are they even? https,//www.reddit.com/r/math/comments/ni8a7l/why_are_infinitygroupoids_the_right_notion_of/
+
+How are anima a generalisation of homotopy types? Now it is worse ncatlab uses it as a synonym for infinity groupoid.
+
+How are resolutions both an exact sequence of modules and objects in an abelian category?
+
+How are truncations the Postnikov sections, and why are these important? How can Postnikov sections with (-1)-type implies propositions?
+
+How are types obedient to partial equivalence relations?
+
+How are types of sheaves intuitionistic in nature? https,//studenttheses.uu.nl/bitstream/handle/20.500.12932/22151/Applications%20of%20sheaves%20to%20intuitionistic%20logic.pdf?sequence=2
+
+How are vector bundles equivalent to class groups? https,//www.math.uchicago.edu/~may/VIGRE/VIGRE2008/REUPapers/Clarkson.pdf
+
+How do I compute homologies my head with practice exercises? See Weibel exercises, I have yet to copy those over.
+
+How do holomorphic function in complex analysis related to regular functions in algebraic geometry?
+
+How do you get Lebesgue decomposition theorem to get the Radon-Nikodym derivative? When do you notice something is combined. Why do you need all decomposition theorems to get what you want?
+
+How do you internalise the logic of dependent products?
+
+How do you use Kan extensions to do all of (classical) category theory quickly in your head? I have notes for this.
+
+How does Grassmannians generalsie projective space? Parameterised k dimensional linear subsapce as C^n, so we have G(k, n)? P^{n-1} is G(1, n).
+
+How does Varadhan construct a counterexample for moments not determining the function?
+
+How does a locally compact field be defined by some norm?
+
+How does an Householder matrix work? What motivates a Householder matrix. It is meant to be a transform that does some reflection. See Wikipedia.
+
+How does moduli space relate to vector bundles, they are both parameterised by some space? See AGITTOC where Vakil asked for this.
+
+How does one do Joukowdsky transforms rigorously?
+
+How does one draw the ring of dual numbers?
+
+How does one easily prove Carathedory’s theorem?
+
+How does one generalises preserves, creates, and reflection of limits generally. See Page 90 of Emily Riehl's Category Theory in Context.
+
+How does one make it easy to define frames particularly the distribution of joints and meets apart from using infimum and supremum?
+
+How does one prove that the continuum hypothesis is independent are ZFC?
+
+How does one relate gcd and abelian as some of naturality property relating order of g, order of h, product of gh equal to order |g||h| and that abelian is the correct work for natural.
+
+How does one understand QR factorisation?
+
+How does the classification of finitely generated modules generalise the Jordan normal form? https,//math.stackexchange.com/questions/88687/eigenvalues-for-matrices-over-general-rings
+
+How does unitary matrices be easier to compute (conjugate transpose) and why does it have better stability properties?
+
+How is Gelfand duality related to the Stone Weierstrass theorem and how is Peter Johnstones book talking about this? See ncat page on Stone spaces.
+
+How is tensor product related to smash product? https,//ncatlab.org/nlab/show/smash+product
+
+How is the Scott topology and semicontinuity not related?
+
+How is the smash product an adjoint to the mapping space?
+
+How is variance equal to power for maximal differential entropy under average power constraint?
+
+How on earth do you work snake lemmas, five lemmas, magic diagrams. Do not understand motivation? https,//angyansheng.github.io/notes/homological-algebra-i
+
+How to do classification of order of groups?
+
+How to maximise the use of the Chinese remainder theorem? Fast Fourier transform?
+
+How to prove that Reg(X) is open for reduced k-schemes locally of finite type, but things like J-2 rings arose and you simply can't find a unified reference that does all of this in a linear way. Qing Liu's book has some of this but I didn't really like the treatment.
+
+How to remember the conditions for central limit theorem?
+
+How to understand Lie’s three laws? It is apparently some realisation from some functor but it is not really clear?
+
+How to understand Schur's lemma defined using endomorphism ring? Simple modules? Division rings? https,//en.wikipedia.org/wiki/Schur%27s_lemma
+
+How to understand dependent product projections?
+
+How to understand pullbacks and monomorphisms intuitively in the subobject classifier definition?
+
+How to understand rings as homomorphisms from a ring to the endomorphism ring of an abelian group?
+
+Hurewicz fibrations?
+
+Hurewicz theorem?
+
+I also do not really understand the motivation for all the effort to form the difference equations for coefficient matrices. I understand these are important in practice, but I do not understand useful about this viewpoint and how to keep in your head.
+
+I do not fully understand Ito stuff (Ito integral, isometry, calculus) and why is it so potent.
+
+I do not understand Jacobson rings as a convenience definition.
+
+I do not understand positive definite matrices. Wy are they the thing that round off the course in linear algebra for Strang's book?
+
+I do not understand the inverse limit completion of the ring of integers modulo prime powers. See profinite completion and p-adic integers.
+
+I do not understand total space and the space of sections in the context of homotopy type theory. I always find it hard to imagine the space of functions. Is cobordism?
+
+I do not understand why do we consider the Cauchy integral formula for the coefficients of the Laurent series.
+
+I don't fully understand the renormalisation group approach to derive the central limit theorem, decimation in particular to force the limit of all other cumulatnts to tend towards zero is rather interesting.
+
+I don't understand the Ito and Stratnovich interpretation?
+
+I don’t understand how a copresheaf expresses quantity where a presheaf expresses space by probing. What Ncat did was to express it as some internal hom between sets of quantities and values then gets the copresheaf as some covariant functor from copresheaves to set. The contravariant functor is the spectrum operations, from presheaves to set, the covariant functor is the copresheafification (whatever that is) https,//ncatlab.org/nlab/show/space+and+quantity
+
+I don’t understand the definition of N-homomorphism between N-algebras.
+
+I don’t understand the two cases in the proof of the Lebesgue-Radon-Nikodym derivative theorem?
+
+I don’t understand the visualisation and contrast between the topological and the type-theoretic induction principles.
+
+I don’t understand transport in homotopy type theory?
+
+I don’t understand why how symmetric monoidal tensor products as left adjoints of internal hom and internal Hom as right adjoints for symmetric monoidal tensor products must be the correct valid notion.
+
+I read somewhere that there is perfectoid spaces are a third group of all but I cannot remember?
+
+I still don’t understand cohomology other than it is some sort of dual to homology, it is a generalisation of an abelian group, it has some coefficients.
+
+I understand why do we care about derived functors (enough injectives), but how to we understand it? Scholze uses it to give a very clean definition of etale cohomology and what does this even mean? Example, cohomology is the right defined functor from the “abelian space” (specifically spectra) and getting an abelian group. Note that abelian groups are a fully faithful inclusion into cohomology. What does it mean by enough injectives? Sheaf cohomology is the right derived functor to the global section functor? Answer; this is Grothendieck’s genius to use a functor for any coefficient. More specifically any functor as coefficients. https,//math.stackexchange.com/questions/54752/sheaf-cohomology-what-is-it-and-where-can-i-learn-it
+
+I'm not sure where to ask this but can someone explain to me the definition of a symplectic lattice?  Is the period lattice of a riemann surface an example?
+
+IMPORTANT, use Zorn's lemma to prove that every filter on a set is contained in an ultra filter. Hint, filter is in the power set of the power set of X, let F be the collection of all filters, F with strict inclusion is an partial order, apply Zorn's lemma with the appropriate hypothesis. Not the partial order that will solve this. Warm up, show that a filter is an ultrafilter if and only if it is a maximal element in this partial order.
+
+Identity theorem?
+
+If X and Y are smooth projective varieties and F a sheaf on X, do we have something like H^p(X x Y, pr\_1^\* F) = H^p(X,F) \otimes H^0(Y,O\_Y)? Yes, but need flat to prove by induction on affines that cover X, use pushforward?
+
+If we have a Markov process, what are the possibilities of the generators and the translation density? Example, Wiener uses Laplace operator, with heat kernel.
+
+Image of measurable function inherits measurable from codomain, why is this the case?
+
+Image of measurable function inherits measurable from codomain, why is this the case?
+
+Imagine you have a scalar valued continuous functions defined on an open cover of a topological space And that all the functions agree on intersections  Then you can glue all these functions to give a continuous global scalar valued function
+
+Implications of Riesz representation theorem?
+
+Implicit function theorem?  Versus inverse function theorem?
+
+Implicit function theorem? See ncat and Lee for more information. Also the relation between it and functional analysis?
+
+Index notation example size or orbit is [N, stabiliser]??
+
+Induced representations, contrast between tensor products of G modules and vector valued functions on g?
+
+Inertia group?
+
+Inseparable extension example and proof?
+
+Instantaneous code? Uniquely decodable code? Huffman code? Prefix code?
+
+Integral basis.
+
+Integral extension?
+
+Integral over as element vs integral over as field? If K is integral over F (K,F are fields) then thats the same as saying K is algebraic over F right?
+
+Intermediate value theorem? Revisit.
+
+Internal relation?
+
+Intersection of affines covered by finite number of affines i.e. QCQS lemma?
+
+Intuition for Cauchy sequences?
+
+Intuition for normal subgroups as relativistically invariant, this does not make sense?
+
+Invariant factor as free rank of Betti number of module?
+
+Invariant factor calculation.
+
+Inverse function theorem?
+
+Irrelevant ideals?
+
+Is it possible to make the duality between embeddings and quotients more explicit?
+
+Is there a compilation of all varieties drawings from Mumford book that somebody has drawn out with clear explanations?
+
+Is there a definition of left and right adjoints in terms of operators (not categorical)?
+
+Is there a simpler definition of symmetric ring spectra that I can fit in my head AND DO COMPUTATIONS WITH? I don’t like the fact I have to vaguely point at some equivariance under symmetric groups, and then define spectra with stable homotopy suspension colimit thing.
+
+Is there some sort of representation theory going on when one decomposes it into the Sym and Alt for matrices.
+
+Isbell adjunction examples, fill in the details on duality based on the algebra, as well as the Isbell adjoint functors, (1) commutative C* algebra, (2) commutative ring, (3) smooth manifolds via Pursell’s theorem, (4) space of states, (5) Heisenberg picture be Schrodinger picture, (6) compact totally disconnected Hausdorff space and Boolean algebra; (6) commutative von Neumann algebra to compact strict localizable enhanced measurable space (what maps of interest?); (7) finite germ generate C^infty ring, Milnor duality; (8) finitely presented complex EFC algebra with globally finitely presented Stein space (what maps of interest?) Stein duality.
+
+Isbell adjunction for modules and vector bundles, fill in the following examples, (1) sheaf of Z/2 vector space, (2) W-* representations of a commutative von Neumann algebra on Hilbert space; (3) modules over commutative ring and quasi coherent sheaf of O-modules over affine scheme; (4) algebraic vector bundles and what sort of modules over a commutative algebra; (5) smooth vector bundles; (6) holomorphic vector bundles?
+
+Isomorphisms as unusually precise metaphors, this related math to poetry, and we try to hunt for it in real life
+
+Ito's lemma
+
+Jacobian variety?
+
+Jordan curve theorem
+
+K-enriched adjunction, K-enriched equivalence?
+
+KAM theorem?
+
+KAM theory? Quasiperiodic orbits?
+
+Kan object
+
+Klesli object, Eilenberg Moore object
+
+Kodaira embedding, bend and break.
+
+Kodaira vanishing theorem
+
+Koenig's theorem?
+
+Koszul duality topics, Artin-Wedderburn, semisimple algebras; Koszul algebras, Koszul dual; ext algebra; augmentation; poincare poly; quadratic duality; quadratic algebra as quotients of tensor algebras; Koszul resolutions; derived Koszul duality; differential graded algebra; rational homotopy theory; Quillen's model; Whitehead product; massey product; minimal algebra;
+
+Koszul resolutions and Koszul duality.
+
+Krasner's lemma?
+
+Laurent series versus Laurent polynomials?
+
+Lax-Milgram theorem
+
+Learn cup product properly in Hatcher. Hatcher is unreadable to me still...
+
+Learn enough category theory or really algebraic topology to work with Eilenberg Maclane Objects
+
+Lebesgue theorem?
+
+Lebsegue measure as interval coverings?
+
+Lefschetz fixed point theorem?
+
+Lefschetz pencils in algebraic and symplectic geometry.
+
+Lefschetz pencils, hyperplane slices; hyperplane theorem; eigenvalues, ordinary double point, Hessian nondegeneracy; dimension counting environment; real morse theory; vanishing cycle; Lefschetz thimble; monodromy; hard Lefschetz;
+
+Lefschetz theorem
+
+Left and right adjoint of the forgetful functor, define the forgetful functor F, DirGraph -> Set, maps a graph to its set of vertices by restrict along the functor from the terminal category 1, compute left and right adjoint. STUCK, they did a one objectification, objects are functor (E, V) and a pair of maps s, t, E and V to Set, morphisms are natural transformations of these functors, if I forget this, then I need to compute the left and right adjoint of this forget functor which is the free or cofree composition of morphisms in Set? Got stuck trying to work out this example, maybe look at functor category and suitably enriched stuff, or look at quivers?
+
+Lempel-Ziv coding?
+
+Lenstras definition of Euclidean domain
+
+Let R be a ring. Writing Tr for the trace of a matrix, TFAE, (1) Whenever A,B,C are square matrices of the same size over R, we have Tr(ABC) = Tr(CB).
+
+Levi-Civita and Chern connections.
+
+Lie algebra of Lie group as functor.
+
+Lifting property of covering, means we can find something f such that g composed with f gives h, given g and h.
+
+Limit defined up to isomorphism in 1 category? But limit defined only up to equivalence in infinity category?
+
+Limits and colimits in opposite categories, start by considering products is a coproduct in the opposite product, prove this! (Hint, use universal properties!). Now compare this presheaves and representation functors. Now try to exploit some sort of Isbell adjunction by thinking with the basic example of V(xy) as a coproduct and the corresponding product of ideals.
+
+Line bundles and kodaira embedding, line bundles give rational maps of proj space; very ample, ample, sem ample; test for Kahler manifold projective using Kodaira embedding theorem; ample line bundles; Kleiman's criterion; when embedding fails; line bundle not generated by sections; minimal model program; bend and break lemma; Kodaira dimension; rational curves; canonical modules; positivity; moduli space;
+
+Line bundles and the minimal model programme.
+
+Line object, in a monoidal category and object L such that the tensoring functor into L has an inverse. This definition does not make sense to me.
+
+Linear (Cauchy functional equation) but fails homogeneity, don't understand where this fails axiom of choice.
+
+Linear contractions?
+
+Linear map lemma in Axler, try using a proof from the integers
+
+Linear maps?
+
+Liouville theorem?
+
+List all Chern classes
+
+List all generalisations of categories, internal categories a category is internal to another category with enough pullbacks, an object of objects, and an object of morphisms, enriched categories where instead of sets of Homs, you take hom objects, and then apply another category over them, indexed category captures working over a base, operad is a morphism from several objects to single objects, opposite categories, localisation, geometric realisation of categories, continuous categories, topological space as (infinity,0)-category, EI categories satisfying Schroder-Bernstein where all endomorphisms are isomorphisms, category of fractions, reflective localisations.
+
+List monad, which free-forgetful adjunction do you use for this endofunctor (hint, monoids and sets, defined by the disjoint union).
+
+List of functionals? Energy intuition?
+
+Littlewood-Richardson rule?
+
+Local field?
+
+Local limit theorem
+
+Locales are the right adjoints of topological spaces by the functor or the opposite category of frames? Is this correct?
+
+Localisation functor? Why is it called that? See Gabriel and Zisman's construction of this.
+
+Localisation of quotients and taking of quotients of localisations are equivalent, and they both give a residue field. the geometric interpretation of this?
+
+Logical functor? I was motivated by this by considering the inclusion and exclusion principle?
+
+Lp space duality?
+
+Lp space duality?
+
+Lucchesi younger theorem?
+
+Major comparison theorems?
+
+Make sense of essentially algebraic as set^C with C lex, coherent topoi as first order, geometric as topoi.
+
+Make sense of the exponent axes and what these represent, https,//terrytao.wordpress.com/2010/03/11/a-type-diagram-for-function-spaces/ https,//mathoverflow.net/questions/17736/way-to-memorize-relations-between-the-sobolev-spaces/17906#17906
+
+Make the definition of a class using logical predicates make sense (or distinguish it from a set somehow).
+
+Make the weak Hilbert Nullstellensatz in terms of partitions of unity make sense?
+
+Make this make sense, If one wants to summarize our knowledge of physics in the briefest possible terms, there are three really fundamental observations, (i) Space-time is a pseudo-Riemannian manifold M, endowed with a metric tensor and governed by geometrical laws. (ii) Over M is a vector bundle X with a nonabelian gauge group G. (iii) Fermions are sections of (???). R and F are not isomorphic; their failure to be isomorphic explains why the light fermions are light and presumably has its origins in a representation difference A in some underlying theory. All of this must be supplemented with the understanding that the geometrical laws obeyed by the metric tensor, the gauge fields, and the fermions are to be interpreted in quantum mechanical terms.
+
+Make this make sense, blow up of complex manifold is defined by gluing polydisc in C^m to M\{x} along composition of preimage of chart and projections. Prove that this is independent of coordinates.
+
+Make this make sense, definition of an immersion, in fact why is an immersion? A special nonsingular map from one manifold to another such that at every point in the domain of the map, the derivative is an injective linear transformation. This is equivalent to saying that every point in the domain has a neighborhood such that, up to diffeomorphisms of the tangent space, the map looks like the inclusion map from a lower-dimensional Euclidean space to a higher-dimensional Euclidean space.
+
+Make this make sense, pushforwards are nice on sections bad on stalks, pullbacks are nice on stalks bad on sections
+
+Make this make sense, the blow up of X along Z, X is (Noetherian) affine scheme, Z is closed subscheme Z = Spec A/I, then the blow up of X along Z is Bl_Z X = Proj_A (A ++ I ++ I^2 ...) where the term inside is graded A-algebra. Noetherian affine scheme guarantees it is generated by finitely many generators.
+
+Make this make sense, the blow up of X along Z, X is (Noetherian) scheme, Z is closed subscheme Z = Spec A/I, then the blow up of X along Z is Bl_Z X = Proj_A (O_X ++ I_Z ++ I^2_Z ...) wjere O_X is the local ideal sheaves, they are glued to form sheaf I_Z. Compare to non-affine, sheaves have to be used instead of the ideals themselves. Exceptional divisor is preimage of natural morphism on Z, where projection is a map from Proj_A (O_X ++ I_Z ++ I^2_Z ...) to X, or the blow up itself to X. Why is this called the exceptional divisor?
+
+Malcev category? Left exact category in which any reflexive internal relation is an equivalence relation, equivalently, fibers of its fibration of points are unital or strongly unital.
+
+Maschke's theorem proof in groups and in modules and in category theory?
+
+Math gets richer when it is contextualised
+
+Matrix mortality problem, undecidable for 3 x 3 in 1970s.
+
+Maximal torii? https,//en.wikipedia.org/wiki/Maximal_torus
+
+Maximum modulus principle? Why should I care about it.
+
+Mayer-Vietoris in different contexts.
+
+Measure theory for image based rendering?
+
+Measure theory using locales
+
+Minimal primes, codimension 0 (why?)
+
+Minimax theorem for word length?
+
+Mixed Hodge structures.
+
+Modular forms? https,//en.wikipedia.org/wiki/Modular_form See Indra's pearls.
+
+Module object (examples)
+
+Moduli space as universal property? See Vakil AGITTOC.
+
+Moduli spaces topics, stable bundles; parameter space; deformations; ringed space; germs; pullbacks; moduli problem; classify up to equivalence; base spacel family pullbacks; example of families; deformation of vector bundles; hilbert poly and flatness; functor of points; fine moduli space; universal family; coarse moduli space; jump phenomenon; quot functor; symmetric algebra; plucker embedding to show Grassmannian is projective smooth irreducible variety; simpson's construction; Fieseker stability;
+
+Moduli spaces, spaces corresponding to object? Represent a contravariant functor of interest. This usually means that they represent a contravariant functor that we're interested in. For example, Vakil constructs the Grassmannian as a scheme that represents the contravariant functor that takes a scheme $X$ to the set of  surjective morphisms $O_X^n \rightarrow E$, where $E$ is locally free of rank $k$. Make this make sense?
+
+Moduli spaces.
+
+Moment maps and the Kempf-Ness theorem.
+
+Monotone convergence theorem
+
+Monotone reference machine?
+
+Morava K theory?
+
+Morita equivalence?
+
+Morphisms on a base?
+
+Morse theory and the Witten complex.
+
+Morse theory and witten complexes phenomena, morse theory fixing smooth function has height function then differentia data completely determines smooth manifold; height function of circle embeded in real line with critical points; height function of torus on real line; nondegeneracy of critical points where df has single zero or vanishes to first order; consider Hessian nonsinular; morse function if critical points nondegenerate; morse lemma; riemannian metric; grad f direction of greatest increase with gradient flow; compact manifold is homotopy equivalent to cell complex, decompose to morse-smale-witten complex; unstable manifolds and stable manifolds; borken flow line; chain groups; morse homology isomorphic to singular homology; tilted torus, alternate proof of poincare duality by replacement of f by -f.
+
+Motivate primary decomposition theorem in Serre with last two props.
+
+Motivate primary decomposition theorem in Serre with last two props.
+
+Motivating Zariski topology as semidecidable properties, open sets are semidecidable properties. Zariski topology is about non-vanishing polynomials. This set of polynomials do not vanish here, so you can compute the value of a polynomial at finite precision. Since this is sufficiently different from zero means it cannot be zero. Zariski topology not being Hausdorff tells you how vanishing of polynomial behaves. Example, if they agree on a Zariski dense subset, non Hausdorff, they agree identically. This proves Cayley-Hamilton theorem, and non-Hausdorffness of the Zariski topology clarifies the meaning of perturbations of A + eps E. See Qiaochu Yuan's answer and blog posts. https,//math.stackexchange.com/questions/161884/why-zariski-topology
+
+Motivating Zariski topology in arbitrary commutative rings, prove that if X is compact Hausdorff, C(X) is ring of continuous functions X -> R, maximal spectrum C(X) is not only identifiable with X, it even has the same topology.
+
+Motivation behind distinguished open sets?
+
+Motivation for approximate limit, approximately continuous
+
+Motivation for normalisers? https,//en.wikipedia.org/wiki/Centralizer_and_normalizer
+
+Motivation for separatedness with the Cayley-Hamilton theorem, define the Cayley-Hamilton theorem, let A be a n block matrix of complex entires, the characteristic polynomial is zero. Exercise, this is trivial for diagonalisable matrices, the set of diagonalisable matrices is Zariski dense in C^{n^2}, the function C^{n^2} to C^{n^2} given by A to the characteristic equation of A vanishes everywhere since it vanishes on a Zariski dense subset (it is not open, contains open subset of matrices with distinct eigenvalues), or more concretely, morphisms between irreducible algebraic varieties (in an algebraically closed field) agree if they agree on a Zariski dense set, BUT subtle point is domain and codomain are separated as schemes. What is the definition of separatedness (hint, it is categorical, diagonal morphism is closed immersion)?   https,//mathoverflow.net/questions/179194/a-question-about-zariski-dense-arguments
+
+Motivation for strict transform, ideal you want functorality of blow ups, blow up of variety by embedding it to a larger one, blowing that up and taking the strict transform. Feels like conjugation, so strict transform is like some sort of inverse of embedding. Find more reading on strict transforms.
+
+Motivation for valuation rings? https,//math.stackexchange.com/questions/462574/learn-about-valuations-valuation-rings-value-group
+
+Motivation of echelon matrices?
+
+Motivic cohomology
+
+Mountain Pass theorem, https,//en.wikipedia.org/wiki/Mountain_pass_theorem
+
+Multi-access channel?
+
+Nakayama's lemma like inverse function theorem, https,//mathoverflow.net/questions/61446/how-to-memorise-understand-nakayamas-lemma-and-its-corollaries/61448#61448
+
+Natural transformations of functors, show that a natural transformation of functors C to D is the same as a functor 2 * C to D, where 2 = {0 -> 1}. What is the domain and codomain of this natural transformation? (Hint, restriction from {0} * C and codomain is restriction from {1} to D). Now relate this to a homotopy (hint, unit interval, so it looks like a pre-homotopy).
+
+Natural transformations of group actions as categorical morphisms are just group homomorphisms make this make sense
+
+Ncatlab definition of locally presentable in terms of reflective localisation
+
+Need a clearer (more concise) proof that K^d is complete. L^p spaces are complete. c0(K) is complete.
+
+Need a clearer proof that L^infty(K) is not separable. Need a clear proof that L^p(K) is separable.
+
+Need to motivate the achievability lemmas, typical average, joint typicality, packing, covering, conditional typicality?
+
+Nerve theorem?
+
+New objects
+
+Newform? the Atkin-Lehner theory?
+
+Nice generalisation of contour integrals using partial orders?
+
+Nike's lemma? Spec A and Spec B are affine open subschemes of a scheme X, then intersection of Spec A and Spec B are the union of open sets are simultaneously open subschemes of Spec A and Spec B.
+
+Nilpotence theorem of CW complexes.
+
+Nilpotent thickening of a field?
+
+Nisnevich descent, etale descent, ??? You have some sort of topology you want that is not like the typical topology, since they are somewhat disconnected, certain glueing exists. This motivates these forms of descent, topologies…
+
+Noether's theorem? Symplectic version.
+
+Non-constant function between two compact Riemann surfaces, how is it related to Galois theory?
+
+Non-empty sets as commutative monoids, use induction to show this, 1-element set is a monoid uniquely, if X has two distinct elements, 0 and 1, make it into a commutative monoid with x * y, x if y is 1, y if x is 1, 0 otherwise.
+
+Nonsingular projective algebraic curve?
+
+Not all open sets in totally disconnected space is also closed. Counterexample?
+
+Notes on field of fractions of half line functions to give distribution theory?
+
+Nowhere zero flows?
+
+O(-1) as example of line bundle?
+
+Occam algorithm intuition?
+
+Oka's principle?
+
+One objectification constructions, many constructs in category theory can be reduced to picking a suitable category of one object. Make the following examples make sense, groups are one object categories, all morphisms are isomorphisms. Monoids are one object categories. Then even better you can take one object of enrichment of categories and have morphisms have other properties you want, this gives a uniform definition of a lot of objects.
+
+Open interval (a, b) is open in usual topology on real line, countable unions and finite intersections of open sets are are open. STUCK, I also didn't understand what you mean by usual topology on real line. Imagine trying to start with definition of topology using the whole real line first, then somehow get it down to (a, b). Actually I was thinking you can try a continuous function between (a, b) and real line sort of that preserve open-ness. Further, you can use the positive real number definition of subsets being open in Euclidean n-space.
+
+Open mapping theorem proof. I don't understand it. Find a better proof of the open mapping theorem. Ideally helping in defining some useful construct to do the proof, that uses linearity, (convexity), surjectivity. It does not make sense because I have some balls centred, then do some scaling of the balls. I also do not understand where surjectivity is used. Admit you don't want to work on it.
+
+Operads from categories, gradually build up definition of categories, with objects and sets worth of morphisms with associative functoriality. Replace morphisms with hom objects in another category to define enriched categories. Allow Hom objects to take in arbitrary arguments to define operads.
+
+Optimal transport?
+
+Orbit spaces, consider a space X, with an action of the group G, form the quotient X / G, what are points of this quotient space (hint, orbits of group action), now define the groupoid quotient X // G (hint, this is not exactly the set of points of X/Gm consider the functor pi_0, Grpd to Set, which takes the set of isomorphism classes on the groupoid). Now replace this example with stacks and sheaves.
+
+Orbit stabiliser to Sylow theorems see Silverman.
+
+Order of the complex Fourier transform?
+
+Ordinary double point topics, hypersurface singularities; nodes; Deligne-Mumford compactification; pencil of sections; Morse lemma; smoothing; resolving; Milnor fibre; symplectic geometry; Lagrangian submanifold; vanishing cycles; monodromy, holomony; Dehn twist; Picard-Lefschetz formula; resolution of singularities using birational map compare to this; Cartier divisor; Atiyah flop; algebraic surgery;
+
+Orientability table
+
+Ornstein-Uhlenbledk?
+
+Orthogonal projection and integral domain, consider element (1,0) in Cartesian product of R and S. Consider the orthogonal projection x^2 = x, show that you cannot conclude that r^m = r^n implies r^(m-n) = 1 and this motivates the definition of an integral domain. Define an integral domain?
+
+Ostrokowski's theorem?
+
+Over ZF, The ultrafilter lemma implies that a countable union of finite sets is always countable. Interesting, I didn’t know we need to make this assumption. It also implies that every countable family of non-empty finite sets has a choice function, which is equivalent to Kónig's lemma. Make this make sense?
+
+Over ZF, ultrafilter lemma is equivalent to maps from X to Sierpinski two point set with product topology is compact. Make this make sense?
+
+PBW theorem, Poincare-Birkhoff-Witt theorem?
+
+Packing lemma motivation? Multi source channels?
+
+Paley-Wiener theorem
+
+Partial retrospective, like taking a partial derivative looking to the future
+
+Partition of unity definition does not make sense to me?
+
+Pasting diagram? Monoidal category associativity isomorphisms.
+
+Pell equation
+
+Perfect graph?
+
+Perron-Frobenius on ergodicity of Markov chains, PageRank? See stochastic analysis book.
+
+Peter-Weyl theorem
+
+Petersen graph as standard counterexample?
+
+Phragmen-Lindelof theorem?
+
+Pivot variables, free variables, combinations of special solutions?
+
+Plancherel formula?
+
+Poincare duality and cohomology phenomena (1) simplicial homology; fundamental group; singular cohomology; Mayer Vietoris; poincare duality, homology is H_k is dual to cohomology H^{n-k} for X^n; compute a bunch of homoology groups.
+
+Poincare-Hopf index theorem?
+
+Poincaré duality.
+
+Polarisation is an I sogeny to the dual abelian variety, and a principal polarization is a polarization which is an isomorphism?
+
+Polish space, Lusin space, Suslin space, Radon spaces and probability theory, https,//en.wikipedia.org/wiki/Polish_space
+
+Polynomial functors?
+
+Polynomial maps?
+
+Polynomial, element in a polynomial ring. Vector, element in vector space Object, element in some structure. Is there a formal word for this?
+
+Polytopes and symplectic toric varieties.
+
+Portmanteau theorem
+
+Positive mass theorem
+
+Postnoikov tower and how is it related to a Whitehead tower?
+
+Practice computing the homotopy groups of a torus.
+
+Preorder set and partially order set, which is a strict, thin category, and which is a strict, thin and skeletal category? (Hint, preorders do not have antisymmetry implying equality).
+
+Prime elements versus irreducible elements?
+
+Prime number theorem?
+
+Prime numbers and knots with the Kapranov-Reznikov-Mazur dictionary, make this make sense, https,//mathoverflow.net/questions/14574/your-favorite-surprising-connections-in-mathematics/58349
+
+Principal ideal domain corresponds to the spectrum looking like an affine line. How is this related to Z as PID from classification of surfaces?
+
+Principally polarised abelian variety?
+
+Prioritisation of things, less abstract nouns, less insight porn, less unsolicited advice, more concrete observations of specific things
+
+Prism map?
+
+Probe the upper bound, averages don’t matter
+
+Problem and dual problem? CCCP?
+
+Profinite space, inverse limit of finite space gives subspace topology of the product? the subspace topology and what does this mean?
+
+Proj is to Spec as projective varieties are to affine varieties. To elaborate on this, just as Spec takes a ring and gives you an affine scheme by putting a structure sheaf on the space of prime ideals with the Zariski topology, Proj takes a graded ring and gives you a (general) scheme by putting a structure sheaf on the space of homogeneous prime ideals with the Zariski topology. I'm leaving out some details, but you said you wanted an "intuitive" understanding.
+
+Proof of subgroups of free groups being free using covering space of wedges of circles?
+
+Proof that infinitely many primes split completely in an arbitrary extension of number fields using Dedekind zeta function with pole at 1. Let L be the Galois closure of K over Q. If l splits completely over L then it splits completely over Q. The ideals of prime norm in L are, apart from the (finitely many) primes that ramify over Q, the prime ideal factors of the rational primes that split completely in L over Q. But, from the Dedekind zeta function having a pole at s=1, there must be infinitely many prime ideals of prime norm in L. So infinitely many rational primes split completely in L, and so also in K.
+
+Prove Urysohn's lemma. STUCK, applications, statements of Urysohn's lemma.
+
+Prove all equivalent definitions of a normal subgroup.
+
+Prove every Hausdorff space is T1, every T1 space is T0.
+
+Prove rings are unital, then every left artinian ring is also left Noetherian, so you have both ACC and DCC
+
+Prove subspace topology from universal property.
+
+Prove that Bl_0 R^2 is actually the Mobius bundle, and imagine removing a small disc around the origin, and identifying antipodal points of resulting boundary. STUCK, what is a Mobisu bundle O_{RP^1}(-1), what is real projective space.
+
+Prove that blow up Bl_0 C^2 removes small D^4 centred at origin, removing a small D^4 centred at origin, identifying Hopf fibres on introduced boundary S^3. STUCK, what are Hopf fibres, visuals?
+
+Prove that category of presheaves are Cartesian closed monoidal categories? (Hint, need some homs)
+
+Prove that finite fields and their extensions only have trivial norm?
+
+Prove that generators of ideals I for the blow up is a sort of universal property i.e. if I have another set of generators of I, define blow up again, then the blow ups are isomorphic? See Richard Thomas notes.
+
+Prove that intersection product of E as exceptional locus/divisor in Bl_0 C^n is equal to -1? STUCK, what does this mean?
+
+Prove that precompactness gives the equivalent definition as having all Cauchy subsequences converge.
+
+Prove that regularity, normality are topological invariants.
+
+Prove that the conditional distribution of X or Y, conditioned on X + Y being fixed i.e. X + Y = N, is a binomial distribution with parameter n = N, p = l/(l+u), X is Poisson with l, Y is Poisson with u. STUCK, here is why, I can't seem to use techniques of characteristic functions (need to give a sincere try), another thing is sums of random variables and conditioning is not so simple to work with with exponential functions.
+
+Prove that the preimage of 0 in C^2 for the blow up at 0 under this projection is a copy of P^1. HINT, x = y = 0, so X and Y are unconstrained variables.
+
+Prove the equivalence of Zorn's lemma, the well-ordering principle, and the Axiom of Choice. Consider, https,//math.stackexchange.com/questions/629464/statements-equivalent-to-the-axiom-of-choice
+
+Prove the equivalent definitions of a Baire space.
+
+Prove the existence of a unique torsion-free metric connection on a pseudo-Riemannian manifold. (aka the Levi-Civita connection). Prove also a unique metric connection with any given vector-valued 2-form, the proof is in the same spirit.
+
+Prove the pasting lemma. STUCK, what even is the pasting lemma and what is it good for?
+
+Prove the properties of the spectrum of self linear operators.
+
+Prove the uniqueness of function when in agreement on dense subset.
+
+Pullback as induced fibration with fibre bundles?
+
+Punctured gyrotop is open subset U of X where X is Spec(C[x,y,z]/(xz,yz)) by deleting the origin (x,y,z) from X. Compute sheaf of rings O_X(U). I saw the hint and exercise from Evan Chen, or O(U disjoint union V) = O(U) * O(V), distinguished open sets, affine scheme, sheaves on a base. Try graphing xz, yz these are varieties sort of.
+
+Pushforward and inverse image of sheaves as adjoints?
+
+Quasi coherent has enough projective?
+
+Quasi-isomorphism in derived category?
+
+Quillen formal group?
+
+Quillen’s construction of R even periodic.
+
+Quillen’s small object argument?
+
+Quiver? I learnt that it is a generalisation of set, and you can see this is a definition of a magmaoid.
+
+Quotient of affine variety by action of finite group in terms of coordinate rings? https,//math.stackexchange.com/questions/83631/quotient-of-an-affine-variety-by-a-finite-group
+
+R = k[x,y,z]/(x^2, y^2, xz, yz, z^2 - xy) as a Gorenstein ring of zero dimensions. See Wikipedia for. I don't understand the motivation for it.
+
+Ramification points and branch points of compact Riemann surfaces.
+
+Ramsey's theorem?
+
+Rayleigh quotient how it works?
+
+Read Thomason and Trobough, https,//www.maths.ed.ac.uk/~v1ranick/papers/tt.pdf
+
+Real numbers object
+
+Reals constructed by Dedekind cuts, not very clear.
+
+Reducing divisors to the most classical case, https,//mathoverflow.net/questions/74427/does-the-name-divisor-in-algebraic-geometry-relate-to-divisor-in-the-basic-arith
+
+Referring to pullbacks as Cartesian squares is a bit more questionable than referring to Cartesian products, but you can justify it on the grounds that a Cartesian square is just a Cartesian product that lives in a slice category, products are pretty close to pullbacks in the grand scheme of things as they're both fundamental kinds of limits
+
+Relate modules with representation theory, abelian group with action of a ring this is representation theory.
+
+Rellich theorem?
+
+Representation theorems?
+
+Representation theory and Kan extensions, Recall a single object category with invertible is precisely? Now consider the functor category Vect_k^G, what are these (G-representations over field k)?. If H is a subgroup of  G, replace restriction from Vect_k^G -&gt; Vect_k^H with a suitable functor, define the left adjoint of this functor. This induction functor is a left Kan extension along i. Now consider G-set, G-space, based G-spaces, in which cases does these adjoints not exist? One potential answer is quasi coherent sheaves see https,//mathoverflow.net/questions/96818/left-adjoint-to-restriction-functor so it does not preserve infinite products which always exist.
+
+Representation theory and Kan extensions, Recall a single object category with invertible is precisely? Now consider the functor category Vect_k^G, what are these (G-representations over field k)?. If H is a subgroup of  G, replace restriction from Vect_k^G -> Vect_k^H with a suitable functor, define the left adjoint of this functor. This induction functor is a left Kan extension along i. Now consider G-set, G-space, based G-spaces, in which cases does these adjoints not exist?
+
+Representative of equivalence class as representation theory? Pick space X, pick special equivalence relation (usually homotopy), then you can have some sort of nice classification.
+
+Rescaled variable, Levy reminds me of some Lp space?
+
+Residue theorem?
+
+Resultants?
+
+Ribet’s theorem? This one is quite crazy.
+
+Ricci curvature?
+
+Riehl 1.1.ii. Let C be a category. Show that the collection of isomorphisms in C defines a subcategory, the maximal groupoid inside C.
+
+Riehl 1.2.v. Show that the inclusion Z to Q is both a monomorphism and an epimorphism in the category Ring of rings. Conclude that a map that is both monic and epic need not be an isomorphism (this is an counterexample). STUCK, definition of monomorphism and epimorphism.
+
+Riehl 1.3.ix, consider, center, commutator subgroup, automorphism group define functors from discrete category of groups with identity morphisms to groups. STUCK, define functors explicitly, check if they are functorial in isomorphisms, epimorphisms, homomorphisms.
+
+Riehl 1.3.x. Show that the construction of the set of conjugacy classes of elements of a group is functorial, defining a functor Conj , Group → Set. Conclude that any pair of groups whose sets of conjugacy classes of elements have differing cardinalities cannot be isomorphic. STUCK, conjugacy as functor, what is functorial? Not bijective in category of sets, so cannot be isomorphic with underlying sets of conjugacy classes as representative objects.
+
+Riehl 1.4.ii. What is a natural transformation between a parallel pair of functors between groups, regarded as one-object categories? STUCK, I can visualise this, two dots, then functors, but need to use the fact that these are all isomorphisms somehow? Also, definition of natural isomorphism very finicky in my mind still.
+
+Riehl 1.5.iv, Show that a full and faithful functor F , C → D both reflects and creates isomorphisms.
+
+Riehl 1.5.ix, Show that any category that is equivalent to a locally small category is locally small. STUCK, what is equivalent. My approach would be to try and define equivalent as natural isomorphism, then consider natural isomorphisms of morphisms in locally small category (sets worth of arrows by definition) into the category we want. Apply Yoneda / suitable functor into Set and show that there is a bijection on the level of sets, so it must have the same cardinality.
+
+Riehl 1.5.v, Find an example to show that a faithful functor need not reflect isomorphisms.
+
+Riehl 1.5.vii, Let G be a connected groupoid and let G be the group of automorphisms at any of its objects. The inclusion BG into G defines an equivalence of categories. Construct an inverse equivalence G → BG. STUCK, BG as a classifying space.
+
+Riehl 1.5.viii. Klein’s Erlangen program studies groupoids of geometric spaces of various kinds. Prove that the groupoid Affine of affine planes is equivalent to the groupoid Proj of projective planes with a distinguished line, called the "line at infinity." The morphisms in each groupoid are bijections on both points and lines (preserving the distinguished line in the case of projective planes) that preserve and reflect the incidence relation. The functor Proj -> Affine removes the line at infinity and the points it contains. Explicitly describe an inverse equivalence.
+
+Riehl 1.5.xi, Consider the functors Ab to Group (inclusion), Ring to Ab (forgetting the multiplication), (−)* , Ring to Group (taking the group of units), Ring to Rng (inclusion), Field to Ring (inclusion), and ModR to Ab (forgetful). Determine which functors are full, which are faithful, and which are essentially surjective. Do any define an equivalence of categories? (Warning, A few of these questions conceal research-level problems, but they can be fun to think about even if full solutions are hard to come by) STUCK, the last one seems to be a crazy question, how can they really be creative? These things clearly are different if we make some sort of description.
+
+Riehl 1.6.iii, Show that any map from a terminal object in a category to an initial one is an isomorphism. An object that is both initial and terminal is called a zero object. Suppose it exists, it must be isomorphism, otherwise zero object is not unique or universal property. STUCK, but this is circular actually, using some other fact to prove this. Definition of initial object and terminal object?
+
+Riehl 1.6.iv, Find an example to show that a faithful functor need not preserve epimorphisms. Argue by duality, or by another counterexample, that a faithful functor need not preserve monomorphisms. STUCK, need clear definitions, and what interest that comes out of this example. Exercise on faithful functor.
+
+Riehl 1.6.v, More specifically, find a concrete category that contains a monomorphism whose underlying function is not injective. Find a concrete category that contains an epimorphism whose underlying function is not surjective.
+
+Riemann mapping theorem? Why is the key step that the limit is onto has same characteristic as functions taht approach it?
+
+Riemann-Hurwitz?
+
+Riemann-Lebesgue?
+
+Riemann-Roch theorem?
+
+Riesz potential?
+
+Riesz theorem
+
+Riesz-Markov representation theorem?
+
+Ring homomorphism with suitable enrichment of extension of scalars, consider R-module M to S-module with tensor product over M *_R S, this is the V-enriched left Kan extension along V-functor R -> S between one object V-categories? What is the category of choice for enrichment, V (hint, Ab)? What is this called (hint, ring homomorphism)?
+
+Ring with Jacobson radical (Gupta-Khurana-Khurana-Lam 2009), TFAE, transpose of every invertible square matrix over R is invertible; R/rad(R) is commutative
+
+Rouche's theorem?
+
+Same germ near point if locally, honest open neighbourhood they are the same. MAke this make sense.
+
+Sard's theorem
+
+Scale parameter of a distribution?
+
+Schwartz notations?
+
+Schwartz's lemma? Mobius transformations to eliminate condition of f(0) = 0.
+
+Schwarz class preserved under Fourier transform, how does Fourier transform trades regularity for decay?
+
+Scott topology?
+
+Segre embedding?
+
+Seifert-van Kampen theorem?
+
+Self duality of L^2 spaces
+
+Self-adjoint vs essentially self-adjoint Symmetric operator wtih self adjoint closure (what does closure mean), operator with unique self adjoint extension (motivation?)
+
+Semidecidable and least upper bound, prove that a least upper bound is not in a set (hint, open intervals). Now tie this in with Stone duality.
+
+Semidecidable logic as some sort algebra does not make sense to me as an analogy to topological space, shouldnt it be one counter example to disprove in finite time? Then looking at many examples to prove in infinite time? Or is this the converse?
+
+Semisimple Lie groups and Lie algebras?
+
+Shape operator? Eigenvalues? Give curvature?
+
+Sheaf as contravariant functor of opposite category, Affine schemes are the opposite category of commutative rings. Make this make sense by thinking about sheaves. This is the Nullstellensatz. What is the initial object of commutative rings? (Hint, it is the integers) Argue by duality that Spec Z must be the terminal object of affine schemes. Therefore, argue from definition that for any scheme there is a unique map to Spec Z.
+
+Sheaf conditions and stalks, why must we assume that the category has enough limits, and enough filtered colimits. Why is the key condition, consider a morphism p in F -> G in Sh(X;C) (C-valued sheaves on X) is isomorphism if it is isomorphic on the level of stalks. Now see if C = Set, this is the fact that Sh(X) has enough points. Prove that x*, Sh(X;C) -> C that sends a sheaf to its stalk F_x has a right adjoint using skyscraper sheaves? STUCK, don't understand how skyscraper sheaves apply here.
+
+Sheaf of distinguished opens is isomorphic to A_f, see Hartshorne Prop II 2.2.
+
+Shoenfield's absoluteness theorem? https,//jaydaigle.net/blog/more-on-the-axiom-of-choice/
+
+Show Tietze Extension Theorem implies Urysohn's lemma.
+
+Show equivalence of definitions, variety is irreducible iff every dense open subset is connected iff every sufficiently small open dense subset. Sufficiently small dense opens are a birational invariant
+
+Show every nonempty open contains rational number, show there is no uncountable collection of pairwise disjoint open subsets in the reals.
+
+Show rational open balls is basis for usual topology on R. STUCK, what about reals, probably need something about reals between two rationals, then see there is always some reals. In fact this is the definition of open, you can always find some point that is still there.
+
+Show ray topology is topology.
+
+Show that addition and multiplications are continuous from unit square to unit interval with usual topologies.
+
+Show that anything not in the maximal ideal is invertible, let stalk of p quotiented out by maximal ideal. I am stuck on this since I have yet to think of a concrete example first.
+
+Show that for any point on complex plane except origin, there is a unique line throigh this point an origin, corresponds to unique line in P^1. STUCK, the bijection between this and that is obvious.
+
+Show that homotopy equivalence are quasi-isomorphisms? See Weibel Chapter 10.4.
+
+Show that open intervals is basis for usual topology on R. STUCK, definition of basis and usual topology not intuitive. For me I tend to think of circles and then glue glue glue them to form any open set. Recall that it must be usual topology.
+
+Show that unit square and unit interval are not homeomorphic with the usual topology. Actually the real question is give a list of topological invariants that distinguish the two (very easy since dimension is a topological invariant, what about others?)
+
+Show this, same vanishing locus gives same radical i.e. V_pr(I) = V_pr(J) != 0 implies radical(I) = radical(J)
+
+Sifted and motivations for sifting
+
+Simple examples of function spaces?
+
+Simpler definition of symmetric ring spectra that I can fit in my head AND DO COMPUTATIONS WITH? I don’t like the fact I have to vaguely point at some equivariance under symmetric groups, and then define spectra with stable homotopy suspension colimit thing.
+
+Singular integrals
+
+Singularity theory?
+
+Skorokhod’s representation theorem?
+
+Smith normal form for homology?
+
+Smooth, piecewise linear, and topological manifolds compare and contrast
+
+Sobolev embedding theorem? Missing gaps, test function, frequency scale, Lorentz norms, Lebesgue space as s = 0, regularity parameter, uncertainty principle in Fourier analysis, Plancherel's theorem, singular integrals, Holder spaces, https,//terrytao.wordpress.com/2009/04/30/245c-notes-4-sobolev-spaces/
+
+Sobolev immersion theorem?
+
+Sobolev norm?
+
+Space probing by objects and objects valuation, using the idea that spaces are probed by objects, define a presheaf. Now define a functor category.
+
+Spec C[x] to Spec R[x]
+
+Spec and Proj phenomena, (1) algebraically closed, this is needed because otherwise you can morphism of schemes which are empty; (2) duality of space and ring; (3) Gelfand-Naimak classification of C* algebras, C* algebra associated to Hausdorff compact topological space get spectrum of C* algebra exercise to forget C(X) and get complexification of X; (4) finitely generated unital commutative algebras over C corresponding to affine varieties using Hilbert's basis theorem; (5) show case these phenomena, coordinate rings best example is C[x,y]/(y - x^2) as coordinate ring. Isomorphism with C[x] corresponds with geometric fact that this is projection of parabola on the x-axis, localisations to fields, bijection between radical ideals and affine varieties, contravariant equivalence between affine varieties and category of finitely generated reduced algebra without nilopotent elements, quotient is reduced if I is radical, nullstellensatz; (6) C^{n+1} remove {0} over C*, use Hermitian on C^{n+1}, get projective space, homogenous ideals, projective varieties, homogenous spectrum, rewritie dualities of Spec and Proj, degree genus formula, Zariski topology, coordinates as linear functionals; (7) improving correspondence of space means you want to restrict the  notion of ring to radical ideals using Nullstellensatz or to enlarge the notion of space using schemes to account for double points or infinitesimal thickenings aka ideal (x) vs (x^2) with nilpotence.
+
+Spec and Proj.
+
+Spec failing to preserve limits by design, https,//math.stackexchange.com/questions/241386/does-the-functor-of-points-commutes-with-inverse-limits/241473#24147, scheme representable functor from Sch^op to Set, and Spec functor from CRing to Sch^op. Representable functors map all colimits to corresponding limits, so show that Sch(-,X) map disjoint unions of schemes into products of sets. Show that Spec does not send limits (hint, FINITE products) in CRing to colimits in Sch using a counterexample (hint, k field, A is product of infinitely many copies of k, Spec A is not disjoint union of infinitely many copies of Spec k which are points). Spec 0 is empty, Spec A * B is Spec A + Spec B. Now consider why does Spec not preserve equalisers (hint, projective line by gluing two copies of affine line, see typical railroad construction to infinity with parallel intersection of lines). Therefore, show that functor of points do not preserve all limits in general, at least preserving finite products.
+
+Spectral sequences topics, Leray spectral sequence, sheaf cohomology, pushforward, chain complex, fibrations, derived functors, grothendieck spectral, chain complex; visualisation; cup product; cohomology ring; differential graded algebra; exact couple; derived couple; Bockstein; serrel atiyah-hirezburch for k theory; filtered complex; hodge-de rham spectral
+
+Spectral sequences.
+
+Spectral theorem for self adjoint operators, what else can you milk out of it?
+
+Spectral theorem? See all possibilites of a spectral theorem.
+
+Spherical harmonics?
+
+Splitting an idempotent?
+
+Splitting over C[x,y]
+
+Stability theorems?
+
+Stable bundles and simple bundles.
+
+Stacks and orbit spaces, continue, if you have a sheaf C^op to Set, with an action of a sheaf of groups C^op to Grp, take quotients componentwise gets a presheaf C^op -> Set. How do you make it into a sheaf? (Hint, sheafify/stackify to get an object with desired universal property). How do you make it a stack when you take groupoid quotients? So if you have a stack C^op -> Grpd, apply fundamental group functor pi_0, Grpd -> Set where groupoids are mapped to bijections, you get a presheaf C^op -> Set. Now do you understand what a stack is (Hint, C^op  to Grpd)? https,//math.stackexchange.com/questions/5021726/projective-space-as-a-stack/5021847#5021847
+
+Stanley-Reisner rings, Face rings? Quotients of a polynomial algebra over a field by a square free monomial ideal.
+
+Stein spaces?
+
+Stirling formula and groupoid cardinality
+
+Stoke's theorem?
+
+Stone's theorem
+
+Stone-Weierstrass theorem
+
+Strict transform of Y in projection, let p be the projection of the blow up Bl_I X to X along ideal I, then this is the preimage of Y\Z(I), where Z(I) is algebraic set of ideal I, Y is the closed subvariety different from Z.
+
+Strict transform process of blowing up C^2 at reduced origin, fill int he rest of the details as an exercise. (x1, x2) is ideal of interest, then we have Bl_0 C^2 by calculation giving line bundle O_{P^1}(-1).
+
+Strong typicality? Orlitsky-Roche definition? Why so significant?
+
+Structure theory of lie groups to prove fundamental theorem of algebra? see also 3-galois theory, Liouville, winding number versions of these proofs?
+
+Study internalisation with respect to enrichment.
+
+Subdirect product?
+
+Subspace interaction theorem proof? it used for?
+
+Supercommutator? Supercommutative ring to correspond to sheaves? See Gelfand and Manin's Homological Algebra. Use examples of Grassmann algebra.
+
+Support of function, closure, test function, analytic vs compact support and infinitely differentiable, constructing new test functions.
+
+Suspension isomorphisms, key ingredient in Mayer Vietoris sequence and long exact sequences? Why?
+
+Svarc-Milnor lemma? Cocompact, properly discontinuous, quasi-isometric, word metric?
+
+Sylow's relation to Cartan's existence theorem for maximal tori?
+
+Symmetric monoidal category run through, list all the parts that define a symmetric monoidal category with tensor product, unit, associative, left unitor on tensor product, right unitor on tensor product, and the braiding. Now motivate braiding, and motivate the symmetric monoidal category by defining the Isbell conjugation.
+
+Symmetric powers of vector space?
+
+Symmetry of second derivatives?
+
+Symplectic blow ups.
+
+Symplectic reduction topics, almost Kahler manifolds; cotangent bundles; 1-form; Hamiltonian; symplectic gradient; Hamiltonian group action; moment maps; convex polytope; conjugates; equivariant moment maps; moment image as n-simplices
+
+Symplectic reduction.
+
+TOTAL Left derived functor and TOTAL right derived functor, compose representation functor F, C -> D and localisation functor D -> Ho D, this admits what along the localisation functor C -> Ho C (hint, admits Kan extension)? What is this called?
+
+Tail decay?
+
+Tangent space, every point has a vector space, then you want to be very nice, then you can some sort of localisation, make this make senese. These are a sort of sheaf O-module.
+
+Tautological line bundle? EXample of P^1 = O_{P^1}(-1) is defined to be {(v, [v]) in C^2 * P^1}, concentrate on projection of tautological line bundle to C^2.
+
+Taylor's theorem
+
+Tchebotarev density?
+
+Tensor contraction?
+
+The group law on an elliptic curve is associative using Riemann surfaces?
+
+The ordinary double point.
+
+The simple flop.
+
+Theorems for rate distortion function? Calculations?
+
+There is ramification theory of valuations, unramified morphism to define etale morphisms, aand tameness, local fields, algebraic extensions of rationals. What are these?
+
+This is the idea of gluing?
+
+Thom class?
+
+Tietze extension theorem?
+
+Tor functor does not detect torsion
+
+Torelli theorem? How is this concretely applied? See mapping class groups.
+
+Toric varieties I.
+
+Toric varieties II.
+
+Toric varieties III.
+
+Toric varieties, Polytopes and symplectic toric varieties, Givental's quotient construction, line bundles and divisors, Fans and algebro-geometric toric varieties, symplectic manifold, sympleictic form, n-torus, C* complexification of S1, moment maps, hamiltonian, atiyah guillemen sternberg, delzant polytope, fan, toric blow up, combinatorial structure;
+
+Torus knots?
+
+Torus obstructions?
+
+Trace theorem? Sobolev spaces? https,//math.stackexchange.com/questions/2091716/understanding-the-trace-theorem-for-sobolev-spaces
+
+Trace theorems in Sobolev spaces?
+
+Transmission and blocking zeroes of transfer function?
+
+Tropical curves topics, amoebas; moment map; clifford torus; graph of amoeba; tropicalisation; tropical curves; corner loci; tropical semiring; weights and balancing; relation with plane conic; degree and number of tentacles;newton polygons; combinatorial object; example of reducing algebraic geometry to combinatorics; Puiseux series;
+
+Tropical curves.
+
+Try to understand page 60 of Eisenbud later. Specifically, how prime ideals can be thought of more deeply.
+
+Tverberg theorem
+
+Tychnoff? Urysohns lemma? Tietze extension theorem?
+
+Uncountable pigeonhole principle, un-countably many pigeons are stuffed into countably many pigeonholes, at least one pigeonhole has un-countably many pigeons stuffed into it. STUCK, I was trying along lines of contradiction, suppose not, then there is a bijection of uncountably many pigeons with countably union of countable pigeons in pigeonhole. Need countable choice at least to show that union of countably infinitely many countably infinite sets is countable.
+
+Understand Galois correspondence of subgroups and path connected coverings. See Kuga, Galois’s dream.
+
+Uniform vs nonuniform complexity classes?
+
+Uniformization theorem?
+
+Uniquely decodable code?
+
+Uniqueness theorem? This one seems super vague.
+
+Universal coefficient theorem. This is homological algebra where Tor appears at the very end. See Borcherd's introduction to it. Don't understand how it motivated category theory.
+
+Upper topology?
+
+Use quadratic reciprocity to show primes splitting in Q(sqrt(-23)).
+
+V-isotypic component?
+
+Vakil 1.1.B., If A is an object in a category C , show that the invertible elements of Mor(A,A) form a group (called the automorphism group of A, denoted Aut(A)). What are the automorphism groups of the objects in Set and Vect_k? (free group on objects in Set as generators, general linear group on vector space) Show that two isomorphic objects have isomorphic automorphism groups (use the isomorphism as a way to factor through the automorphic group, this is an example of a universal property). (For readers with a topological background, if X is a topological space, then the fundamental groupoid is the category where the objects are points of X, and the morphisms x to y are paths from x to y, up to homotopy. Then the automorphism group of x0 is the (pointed) fundamental group Pi 1(X, x0). In the case where X is connected, and first fundamental group of X is not abelian, this illustrates the fact that for a connected groupoid — whose definition you can guess — the automorphism groups of the objects are all isomorphic, but not canonically isomorphic.)
+
+Vakil 1.1A, UNIMPORTANT EXERCISE. A category in which each morphism is an isomorphism is called a groupoid. (This notion is not important in what we will discuss. The point of this exercise is to give you some practice with categories, by relating them to an object you know well.) (a) A perverse definition of a group is, a groupoid with one object. Make sense of this, One object as symmetries and guarantees closure, isomorphisms guarantee invertible. (b) Describe a groupoid that is not a group. Easy, homotopies with different base points.
+
+Vakil 1.1C, show that double dual functor is naturally isomorphic (not just natural transformation) identity functor in category of finite dimensional vector space. STUCK, can't see where finite dimensional is needed here, but I can think of counterexamples without finiteness condition being left shift operator, taking double dual of that will fail. these are from functional analysis.
+
+Vakil 1.1D, show that vector space with bases to finite dimensional vector space without bases by describing a suitable inverse functor. STUCK, my best guess is forgetting the base somehow, so use forgetful functor. Really I should try describing these categories in detail.
+
+Vakil 1.2A, show two initial/terminal objects are uniquely isomorphic. (Universal property, unique map to initial and terminating object) These are representing objects of limits and colimits, therefore as universal properties there is a natural isomorphism between them.
+
+Vakil 1.2B, initial and final objects in Set, Rings, Top (if they exist), we have initial as empty set, final as singleton set. Actually I get stuck thinking naturally why these must be the correct objects. STUCK on rings (do not understand why Z is initial object, and zero ring i.e. 0 = 1 is terminal object), Top is empty and Sierpinski two point space.
+
+Vakil 1.2C, show that A to its localisation S^{-1} A is injective if A does not have zero divisors. STUCK, need definition of localisation, injective, and zero divisors.Localisations preserve flatness.
+
+Vakil 1.2D, verify that maps from A to its localisation have a suitable universal property. Define it, verify it. Map that sends elements to its invertibles must factor uniquely through its localisation.
+
+Vakil 1.2E, construct the localisation map from M to its localisation, define elements, then check that it is a module, see one subtle point by Borcherds where you need something extra that I cannot remember I think it is no nonzero divisors. Simple, check transitivity then we have b^2(ac - ca) = 0, and b^2 needs to be a nonzero divisor.
+
+Vakil 1.2F, (a) show localisation commutes with finite products or equivalently with finite direct sums (it is a directed colimit, then apply Lazard's criterion); (b) localisation commutes with arbitrary direct sums (likewise with directed colimit, apply Lazard's criterion); (c) localisation fails to commute with infinite products hint take series (1/s) which is infinite product of Q. This means that the map of infinite products induced by the universal property is not always isomorphism; (d) localisation does not always commute with Hom, except when Hom is finitely presented.
+
+Vakil 1.2G, Show that Z/(10) * Z/(12) is isomorphic to Z/(2). Consider the linear map m * (n_10 + n_12) = m * n_10 + m * n_12. The only elements that satisfy this linear map would be elements in Z/(2) because gcd(10,12) = 2.
+
+Vakil 1.2H, show that the tensor product is a covariant endofunctor on Mod_A and is right exact meaning if M' -> M -> M'' -> 0 is an exact sequence of A-modules, then the induced sequence M' *_A N -> M *_A N -> M'' *_A N -> 0 is also exact.
+
+Vakil 1.2I, show that tensor product is unique up to unique isomorphism. Any bilinear map t' from Cartesian product of M and N to T', there is a unique A-linear map from the tensor product M *_A N -> T' such that t' = f * t. Objects are tensors, morphisms are A-linear maps.
+
+Vakil 1.2J, The construction of 1.2.5 exists and gives a tensor product by the typical argument of the bilinear map by defining bases see Qing Liu's explicit construction, with relations spelt out.
+
+Vakil 1.2K (a), if M is an an A-module, and f, A -> B is a morphism of ring, then B *_A M has the structure of a B-module, inheriting the ring structure of A-module with a ring homomorphism on elements m in M to f(a) * (m1 + m2), with the bilinear map preserving the ring structure, this is a B-module since the ring operation act on elements of B as scalar multiples with map a -> f(a). An A-module can considered as a ring object enriched in the category of abelian groups, therefore this is a functor known as the extension of scalars from enriched categories Mod_A to Mod_B.
+
+Vakil 1.2K (b), tensor products should be formulated by the universal property it satisfies. unit is A = A *_B A -> B *_A C or u_b * u_C. It has the multiplication m_b * n_c induced by the functorality of the tensor product, asscoiativity and symmetry isomorphisms. Example (B *_A C) *_A (B *_A C) is isomorphic to (B *_A B) *_A (C *_A C) to B *_A C with map m_B * m_C. Note, you will have to think of B and C as A-algebras, with A->B and A->C to be the ring homomorphisms or morphisms of rings. We will not use Vakil's hint to make explicit the ring homomorphism.
+
+Vakil 1.2L, let S be a multiplicative subset of A, then M is an A-module, describe a natural isomorphism (S^{-1} A) *_A M -> S^{-1} M as S^{-1} A-modules and as A modules. Natural isomorphism means I have to find some commutative diagram (write it down?) where the natural isomorphism from p(a/s) = a/s as one can check to be an isomorphism. Use the universal property of the tensor product, the universal property of M_S as an A-module, the univerasl property of M as an A-module. Careful, note an A-module can have at most one S^{-1}A-module structure compatible with its A-module structure.
+
+Vakil exercise, F is sheaf of X, then pushforward Pi_x F is a sheaf of Y, consider preimage on the pushforward, then take restrictions of set on the preimage sheaf, this is a sheaf. Sheaf of functions on X, pushforward to Y, it is still a sheaf of rings.
+
+Vakil exercise, presheafs F(U) global sections as Homs(U -> Y), U is some sort of open, these are sections of a map to X. There is some sort of basic poset condition, and sheaves can be generalised from topological not to use inclusions. https,//arxiv.org/pdf/2010.09651. Extend on this example, idea is to have some Alexandrov topology, define preordered set with reflex and transitive, then poset has antisymmetry. Define Alexandrov topology. Now change inclusions and restriction properties, and you can now define cellular sheaves with a suitable universsal property of base sheaves. Cellular sheaf is functor from category of poset to category of algebraic structures/groups. Strictly speaking equip poset with Alexandrov topology, these are presheaf on Alexandrov topological space.
+
+Vakil exercise, stalks as colimit, equivalence relation, F is sheaf of rings, then stalk F_p is also a ring. Figuring out how to add and subtract things on stalk, we add on intersections,if they are the same open functions, then take the same restrictions so this is well defined, then you realise it maps all into it so it must be a colimit.EASIEST EXERCISE, stalks are colimits of sections. Now stalks are local rings if X are geometric spaces. Interestijng, does it make sense to say maximal ideal to be some sort of colimit.
+
+Vakil, distinguish between globally constant sheaf and locally constant sheaves as an exercise.
+
+Valuative criterion for properness?
+
+Vanishing cycles, symplectic geometry.
+
+Vector bundles correspondence to locally free projective modules? (Serre Swan theorem!)
+
+Verdier duality, make this make sense, Verdier duality generalised Poincare duality as existence of adjoint to derived pushforward https,//math.uchicago.edu/~amathew/verd.pdf
+
+Veroneus map?
+
+Virtual cycles.
+
+Visualise the blow up at 0. In Richard Thomas's notes, the line bundle are now spread out lines on the origin.
+
+Volume comparison theorem?
+
+Von Neumann algebra vs C* algebra?
+
+Ways to prove ring homomorphisms.
+
+We can use a compact topological group like a circle to show how symmetry is related to groups. Why must lines be straight through center for a group law?
+
+We need to show that Im(M' *_A N -> M _A N) is equal to Ker(M *_A N -> M'' *_A N) if Im(M' -> M) = Ker(M -> M''). Consider the image of (M' *_A N -> M *_A N) this appears as the induced map (M *_A N)/(M' *_A N -> M *_A N) ->  M'' *_A N. Try to define an  inverse, for (m'',n) in m'' x n, choose m in M such that for f, M *_A N -> M'' *_A N, we have f(m) = m'' sends (m'', n) to m' *_A n mod Im(M' *_A N -> M *_A N). One can check that this is well defined since the original sequence is exact. Look for M'' *_A N as the cokernel of M' *_A N -> M _A N. Or suffices to show that induced map M * M/Im(m' * 1) is an isomorphism, construct inverse of g using universal property of the tensor product (need to use exactness to show isomorphism?) See Qing Liu's book and digest the proof there.
+
+Weak derivative
+
+Weak ergodicity? Strong ergodicity? See Weinan, Tiejun, and Vanden-Eijnden.
+
+Weak star topology?
+
+Wedge sum and smash product with coslice/slice categories, product of two pointed object is categorical product (limit) in coslice category, define the coproduct (needs to adjoin base point so you need basepoint by a pushout from the basepoint to the wedge sum.)
+
+Weil conjectures topics, Grothendieck group of nicely compactible differential manifolds; universal Euler characteristic; Ax-Grothendieck; Lefschetz principle for first order logic; profinite completion; spreading out; counting points; Grothendieck ring of varieties; motivic measures; de Rham fundamental group; algebraic envelope; zeta functions; rational functions, functional equation, Betti numbers and related to Riemann hypothesis; Hasse-Weil for elliptic curves; Weil cohomology theory; Poincare duality; Kunneth formula;
+
+Well-quasi ordering?
+
+Weyl algebra?
+
+Weyl's unitary trick?
+
+What are (-1)-types and (-1)-truncated logic? They are the correct way to generalise mere propositions, if we use propositions as types the law of the excluded middle fails see https,//ncatlab.org/nlab/show/mere+proposition
+
+What are Christoffel symbols and why do people commit effort to compute them?
+
+What are Hopf surfaces? Complex analytic K3 surface? Complex algebraic K3 surfaces? Why should I care about them?
+
+What are a list of special functors in homological algebra, Ext, Tor, Ind???
+
+What are adjunctions in homotopy type theory? https,//arxiv.org/pdf/2008.12433
+
+What are allegories? https,//math.stackexchange.com/questions/367663/allegories-in-easy-words/367699#367699
+
+What are binding constructs? What are object classifiers?
+
+What are covariant derivatives? parallel transport in this context?
+
+What are covering sieves? What are Grothendieck constructions? How did Scholze define the plus construction?
+
+What are eliminators and constructors in type theory?
+
+What are function spaces that you can fit in your head? This is very difficult, so start with simple examples of function spaces and work with those instead?
+
+What are inductive systems and why should I care about formal filtered colimits? Ncat says that large categories are equivalent to inductive categories and are hence accessible in some sense of the word?
+
+What are lifts and where does the duality of projective resolutions and injective resolutions come from?
+
+What are modalities and why is it important?
+
+What are modalities? Why should I care about modalities? See Egbert Rijke's articles on it.
+
+What are semi simple Lie groups and Lie algebras?
+
+What are sifted colimits? Why care about sifted categories?
+
+What are some nasty examples when we fail to consider regular or smooth schemes (other than obvious nilpotent stuff)
+
+What are spin groups and how are they related to physics?
+
+What are the analogies of higher inductive types with homotopy theory?
+
+What are the equivalences of dense and how should I prove them?
+
+What are the key properties of Tor and Ext and how do you remember them?
+
+What are the reflective subcategories involved in localisation of commutative rings?
+
+What are universe truncations and how are they used to construct cardinals?
+
+What concept classes fail Occam's learning to probably approximately correct learning?
+
+What do we know about the factorisation of matrices (LU factorisation) from what we know in commutative algebra, and algebraic geometry?
+
+What does it mean by a base change being the pullback of a morphism of fields?
+
+What does it mean for Pontryagin duality to give examples of compact commutative group since they are dual to abelian discrete groups?
+
+What does it mean for a Cartesian closed category to be closed by exponentiation? Exponentiation is some sort of function from the power to the base right?
+
+What does it mean for a first order languages? Sort, terms, and formulas?
+
+What does it mean for loop space and suspensions to be adjoints (suspension left adjoint, loop space right adjoint)?
+
+What does it mean for something to be accessible?
+
+What does it mean for the Fourier transform to turn multiples of powers of x into derivatives? Is it a functor? How is this related to the distribution theory?
+
+What does it mean for the set of ideals in a ring to be a lattice?
+
+What does it mean for types to be Kan complexes and dependent types to be a Kan Fibration? Are dependent types some sort of function?
+
+What does locally Cartesian closed have to do with dependent types!
+
+What does this trinity mean? Compact Riemann surface is projective non-singular curve over C is a finite extension field of the rational function field C(X).
+
+What exactly does it mean for the characteristic function to be the expectation of some complex exponential?
+
+What is a spoof?
+
+What is an action of a ring? I understand why is an action of a ring (recycle action of rings to get representation ring because you want to swap out groups you want).
+
+What is the best way to write down Frobenius reciprocity in terms of tensor products, resolutions and induced representations?
+
+What is the divisor class group of surface? What is the torsion part of maps?
+
+What is the group structure behind the definition of the determinant with even and odd permutations?
+
+What is the topology of an ordinary double point?
+
+What matrices can you solve exp(A) = B?
+
+What motivates local presentability?
+
+What problem did introducing the symmetric group with equivariance solve? Is it related to Cayley’s theorem and Yoneda stuff?
+
+When you're localizing a quotient you localize at the image of the set of elements you're inverting? What does this mean
+
+Which distributions best model which problems? Create a list.
+
+Whitney extension theorem?
+
+Why are Galois extensions normal and separable? Why is this the right definition?
+
+Why are finite boolean algebras isomorphic to power set algebras? What are power set algebras?
+
+Why are finitely generated abelian groups a direct sum of the cyclic groups? the definition of finitely generated abelian groups?
+
+Why are functions that are called O for the sheaf of functions? I think it comes from the Erlangen program, O means holomorphic function.
+
+Why are proper curves projective? https,//math.stackexchange.com/questions/2629341/proper-curves-over-some-field-are-
+
+Why are symmetric spectra pointed? Why define some equivariance with symmetric group?
+
+Why are taking resolutions the key step before defining a functor so that you can get long exact sequences?
+
+Why are there no analogs of the Lebsegue measure?
+
+Why can pushouts be used to construct suspension, join, cones, wedges? These can be done in classical homotopy theory?
+
+Why can’t constructs in commutative algebra like rings, ideals (functor from group conjugation), be directly expressed in terms of functors? (Hint, they can) https,//math.uchicago.edu/~amathew/chthreeimportantfunctors.pdf
+
+Why care about Artinian ring? Situations involving finitely many prime ideals, or finitely many points ofn a scheme, reduced to a statement about Artinian ring.
+
+Why care about constructivity?
+
+Why classification of compact, connected and simply connected Lie group is so simple?
+
+Why do matrix exponentials converge? Something to do with completeness of spaces?
+
+Why do we are about formal cofiltered limit of objects in a category, as well as the ind-objects, and pro-objects?
+
+Why do we care about presentability and subobject classifiers in topoi?
+
+Why does checking structured morphisms of schemes require a base change?
+
+Why does one define the product topology with all but finitely many opens in components space are equal to the component space?
+
+Why does restrictions of quasi coherent sheaves not preserve infinite products? https,//math.stackexchange.com/questions/54354/arbitrary-products-of-quasi-coherent-sheaves
+
+Why exceptional locus?
+
+Why in the last step in the construction of Tor or Ext do you take homology?
+
+Why is Noetherian normalisation called that? See https,//en.wikipedia.org/wiki/Noether_normalization_lemma
+
+Why is a cofinal condition?
+
+Why is an orbifold?
+
+Why is completion of an abelian group also an abelian group?
+
+Why is defining the opposite category of opens an open problem? It is not really Stone spaces or spatial frames.
+
+Why is it not possible for judgemental equalities to be proven?
+
+Why is resolvent set unbounded on Banach space for bounded operator? What is boundedness or resolvent set? What is a bounded operator?
+
+Why is separatedness the condition such that intersection of affines is an affine?
+
+Why is the identity map bounded but non compact unless finite dimension vector spaces? (see example on C([0,1])) A bounded linear operator on separable Hilbert space is noncompact, hint uncountably many eigenvalues, so non separable. And on compactness, think of it as a MUCH stronger property than boundedness.
+
+Why is the identity map bounded but non compact unless finite dimension vector spaces? A bounded linear operator on separable Hilbert space is noncompact, hint uncountably many eigenvalues, so non separable. And on compactness, think of it as a MUCH stronger property than boundedness.
+
+Why is the mapping class group finitely generated by Dehn twists? https,//mathoverflow.net/questions/65432/elegant-proof-that-mapping-class-groups-are-generated-by-dehn-twists
+
+Why is the reals are center of ring of quaternions. I guessed it.
+
+Why must Turing machine need to use blanks?
+
+Why must all minimal programs be algorithmically random strings?
+
+Why should I care about Severi Brauer varieties?
+
+Why should I care about the differences between free, projective, flat and torsion free
+
+Wick's theorem
+
+Work with quivers to distinguish modules and representations.
+
+Write sketches of proofs of the metrization theorems.
+
+Write table of dualities replacing Spec by Proj, ideals by homogenous ideals, rings by graded rings... Hint, Proj works with homogenous polys somehow?
+
+ZF and negation of AC every subset of R is measurable
+
+Zariski constant?
+
+Zariski locally free?
+
+Zariski site, you have a thin single ply of tissue with some notion of gluing, inclusion, lattices? Etale site will have multiply ply, collapse Galois actions together to get some Zariski site. the relation between Galois actions and sites?
+
+Zariski topology as classifying topos, https,//math.stackexchange.com/questions/161884/why-zariski-topology try to understand Zhen Lin's answer for this.
+
+addition theorem
+
+algebraic K theory
+
+ample line bundle?
+
+beta reduction? eta expansion as a judgmental equal principle?
+
+binding structure?
+
+classifying topos?
+
+component of a point x from X is a union of all connected subsets of  X that contain x
+
+del Pezzo surface?
+
+etale fundamental group?
+
+etale topology, fppf topology? Sites? easy to remember definition of sites other than the fibre product?
+
+exponential?
+
+finite type, finite presentation?
+
+formal, cofiltered limit in the definition of a pro object?
+
+fppf topology? Sites? easy to remember definition of sites other than the fibre product?
+
+frame transfer?
+
+freely distributed lattice?
+
+functional extensionality?
+
+http,//www.math.uni-bonn.de/people/schwede/SymSpec-v3.pdf
+
+https,//arxiv.org/abs/1409.3503v1
+
+https,//en.m.wikipedia.org/wiki/Cantor_space
+
+https,//en.m.wikipedia.org/wiki/List_of_statements_independent_of_ZFC Understand how these statements fail.
+
+https,//golem.ph.utexas.edu/category/2009/03/firstorder_logical_duality.html How can use ultracategories and ultrafunctors as geometric objects in our head to express the duality between syntax and semantics of first order logic?
+
+https,//math.stackexchange.com/questions/313940/cohomology-with-coefficients-in-the-sheaf-of-distributions
+
+https,//math.stackexchange.com/questions/4172202/what-is-the-sphere-spectrum?rq=1 follow line by line arguments presented here to understand the sphere spectrum
+
+https,//mathoverflow.net/questions/257885/roadmap-to-hill-hopkins-ravenel/257908#257908
+
+https,//mathoverflow.net/questions/301780/entering-to-the-k-theory-realm/301797#301797
+
+https,//mathoverflow.net/questions/394054/why-stable-infty-categories/394056#394056
+
+https,//ncatlab.org/nlab/show/Gelfand+duality Gelfand duality, why do we care about Gelfand duality when others exist? What are some motivating examples of Gelfand duality? It just seems like a broad categorisation example topology to commutative algebra and algebraic geometry to commutative rings. the difference between this and Isbell duality which is also about algebra and geometry? Isbell seems to be about sheafification and form of spectra, whereas Gelfand is more direct and about algebraic structures and some topology/geometry?
+
+https,//ncatlab.org/nlab/show/coalgebra+of+the+real+interval, Coalgebra of the real interval by Freyd.
+
+https,//terrytao.wordpress.com/2009/10/19/grothendiecks-definition-of-a-group/ A group is identifiable with a (set-valued) sheaf on the category of simplicial complexes such that the morphisms associated to collapses…
+
+https,//terrytao.wordpress.com/2010/10/21/245a-problem-solving-strategies/
+
+https,//www.matem.unam.mx/~omar/notes/surprises.html
+
+https,//www.math.uchicago.edu/~may/MISC/FiniteSpaces.pdf
+
+https,//xorshammer.com/2011/07/09/a-logical-interpretation-of-some-bits-of-topology/ Try to understand Lebesgue covering dimension.
+
+https,//youtu.be/PHm4bYziyug?feature=shared I don’t understand Scholze definition of cohomology and why is it easier to use? https,//math.stackexchange.com/questions/54752/sheaf-cohomology-what-is-it-and-where-can-i-learn-it Akhil Mathew gives an immediate explanation of this. https,//mathoverflow.net/questions/38966/what-is-sheaf-cohomology-intuitively
+
+infinity projective 1 loop space
+
+lambda in the definition of convex combination. good name?
+
+left exact localisations and why should we care about them?
+
+list of diagram lemmas?
+
+moving lemma?
+
+perfect base field?
+
+presentable and subobject classifier in topos?
+
+quasi coherent sheaf?
+
+rational conic bundles?
+
+s_P is an element of the stalk F_P, which by definition is an equivalence class of sections over neighborhoods of P. s(P) is a section in F(V_P), where V_P is some open neighborhood of P, representing s_P
+
+smooth scheme?
+
+the Fourier-Mukai transform and why should I care about it?
+
+the Freudenthal suspension theorem and how is it used to define spectra? Also, what motivated the suspension theorem, it was invented very early in the 1930s.
+
+the McKay correspondence between Dublin diagrams, platonic splits, finite subgroups of the special orthogonal group in three dimensions, finite subgroups of the special unitary group, and the simple Lie group. Why should I care about the McKay correspedoence?
+
+the condition for separability, which is all elements can be approximated arbitrarily by countale collection such that the distance measure for the norm can be done by picking x_j such that d(x_j, x), j is in integers, in the context of Stone duality? I thought about this because Stone duality can be thought of some completion of an experiment in logic.
+
+the conjugation operation for ideals? Is it multiplication on the left giving 0.
+
+the difference between Karmarkar's method and the simplex method? Why is it better?
+
+the difference between a polynomial and a polynomial functions?
+
+the difference between flat and locally free (locally have some basis?)
+
+the difference between geometric fibres and geometrically connected?
+
+the functor that works on opens that is the colimit of open overs on a product open covers over equalisers / descent such that applying this functor on a presheaf gives a separated sheaf, applying this functor again gives sheafification? Also how do we use separated morphisms in the definition.
+
+the implicit function theorem in differential geometry?
+
+the left adjoint of the random variable functor? It seems to forget some set of real numbers and converts it into outcomes?
+
+the motivation behind a diagonal morphism, and why should we care about separated morphisms so much it warrants its own functor adjunction?
+
+the motivation for Jaffard domains, and Prufer domains?
+
+the motivation for Landau's function? Why should I care about the maximum order of an element in the symmetric group?
+
+the motivation for residue fields? They say it is the natural generalisation of the codomain / range of a point or the values of each point?
+
+the relationship between eigenvalue eigenvector equations and the affine line and projective modules?
+
+the relationship between equivalence relations and partition functions?
+
+the relationship between happly, fun ext, and transport?
+
+the relationship between sets and Poincare duality in the definition of the 1 -type?
+
+the relationship between the Wiener process, heat kernel, and Brownian motion?
+
+the syntax and semantics of first order logic? And how does Makkai duality clarify this?
+
+the weak star topology?
+
+unramified morphism?
+
+weakly Kan injective?
+
+“Closed category” with any monoidal product, like the hom-tensor adjunction, so cartesian there definitely refers to the cartesian product structure on C as opposed to a tensor product.
+
