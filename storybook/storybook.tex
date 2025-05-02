@@ -369,6 +369,12 @@ The idea of linear combinations can be first studied in terms of primality.
   A trivial divisor is a divisor that is either $1$ or the integer itself.
 \end{definition}
 
+\index{congruence}
+\begin{definition}[Congruences]
+	Supoose we have integers with remainder $r$, quotient $q$ and and divisor $d$.
+	We say an integer $n$ is congruent to $r \mod d$ if $n = dq + r$ for an integer $r$ that is nonnegative but less than the quotient $q$.
+\end{definition}
+
 \begin{lemma}[Infinitude of primes]
 	There are infinitely many primes.
 \end{lemma}
@@ -438,8 +444,14 @@ The proof of this illustrates the idea that for either or statements, you can tr
   $a^p$. By the Lemma \ref{lem:p-group-fixed-point-theorem}, we have $a^p = a \mod p$, which implies that $a^p - a = 0 \mod p$. Therefore, $a^p - a$ is divisible by the prime $p$.
 \end{proof}
 
+\begin{lemma}[Wilson's lemma]
+	An integer $p$ that is greater than $1$ is prime if and only if $(p-1)!$ has a remainder $p-1$ on division by $p$.
+\end{lemma}
+
 \chapter{Sets and Foundations}
 
+\index{principle!well-ordering}
+\index{number!natural}
 \begin{lemma}[Well ordering principle of the natural numbers]
   A nonempty partition of the natural numbers have a least element.
 \end{lemma}
@@ -452,6 +464,7 @@ The proof of this illustrates the idea that for either or statements, you can tr
   The successor of the least element becomes the new least element. If it does not exist in the set, then consider the successor of that element by the principle of mathematical induction. This terminates since we assumed the remaining partition is nonempty, and the least element would be designated. Since any nonempty partition of the natural numbers can be constructed this way, therefore a nonempty partition of the natural numbers have a least element.
 \end{proof}
 
+\index{induction!mathematical}
 \begin{lemma}
   Mathematical induction is a valid way to show that statements $P_n$ are true for all natural numbers $n$.
 \end{lemma}
@@ -476,6 +489,7 @@ All discussion on the ontology of the group is without reference or scholarship,
 
 I spent most of the time first really describing the various ontologies of a group. This exercise really made me appreciate why groups are important concepts.
 
+\index{Galois!theory}
 \section{Groups from Galois theory}\label{sec:groupsgalois}
 
 It is strange that Galois is typically not mentioned right at the start as to why groups are invented. They wanted to make sure to some extent when you do permutations, the remaining result is still a permutations. Note that he did not make an axiomatic definition of a group, he only computed with these permutations and assumed closure of these permutations.
@@ -1244,6 +1258,8 @@ These send pairs of morphisms into mutual composites. This trace is the quotient
 
 \chapter{Representation Theory}
 \label{ch:rep-theory}
+
+\section{Representations from associative algebras}
 
 \begin{remark}
 	The intuition is that an associative $k$-algebra is a possibly noncommutative ring with a copy of the field $k$ inside it. It is a $k$-vector space. (Hint: we will slowly weaken it to modules, then to group rings).
