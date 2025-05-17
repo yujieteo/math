@@ -1,1 +1,9 @@
 \section{Lemmas}
+
+\begin{lemma}[Pigeonhole principle for measure spaces]
+    Let $E_1, E_2$ be an at most countably infinite sequence of measurable subsets of a measurable space $(X, \mathcal{X}, \mu)$. If the union up to $E_n$ or $\cup_n E_n$ has a positive measure, then at least one of the $E_i$ in this union has a positive measure.  
+\end{lemma}
+
+\begin{proof}
+    We define a null set to be a set contained in a set of measure zero. By the definition of a measure, a measure is countably additive. The countable union of countably additive null sets of measure zero, is therefore measure zero. By taking contrapositives, if the countable union of countably additive sets are not measure zero, then at least one of these sets have a non-null measure. Lastly, this lemma is a corollary of the contrapositive.
+\end{proof}
