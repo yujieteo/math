@@ -1,3 +1,11 @@
+Question who are smart way: http://www.catb.org/~esr/faqs/smart-questions.html
+
+Question: https://www.catb.org/~esr/faqs/hacker-howto.html#attitude
+
+Group theory suspicious? Why was I able to understand Rice's theorem through Roger's fixed point theorem? I really had some understanding of group theory, did not care about total computable function, and now Rice's theorem is absolutely intuitive to me because of this fixed point theorem i.e. there are some programs that are basically inverses of extensionality programs like checking for halting or program inverses.
+
+Efficiency pecking order: don't do it, do it but not again, do it less, do it later, do it cheaper, do it while not looking, do it concurrently.
+
 "Cartesian fibration" is named because of the existence of cartesian lifts for morphisms, which are named that because the paradigmatic example of a cartesian fibration is the codomain functor C^{\to} -> C for a category C that has all pullbacks (i.e. the existence of Cartesian squares.)
 
 2 of 6 properties of composable triple of arrows? How does one understands this definition? For the class of weak equivalences.
