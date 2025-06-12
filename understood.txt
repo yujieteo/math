@@ -1,3 +1,15 @@
+Rice's theorem, idea is you want to statically analyse whether a program will execute without errors, define semanti cproperty about program's behaviour example given is halting problems unlike syntactic property, generalsies halting problem, cannot check any given program is correct. Corollary: reduce complexity of machines from Turing completeness or design programs that make it statically correct or be like me, don't program if you don't need to. 
+
+Rice's theorem proof by Kleene's recurison theorem in ZFC: uses contradiction, assume nontrivial extension computable set of natural numbers P, so there is natural number a in P and natural number b not in P. Define a function Q by Q_e(x) = phi_b(x) where e is in P, and Q_e(x) = phi_a(x) where e is not in P. Subscript differs based on membership in P. By Kleene's recurison theorem phi_e is definable isomorphic (in the Roger's fixed point theorem sense) Q_e or this function is a Roger's fixed point function since we assumed this is a nontrivial extension computable set of natural numbers, this contradictions extensionality since phi_a = phi_b = phi_e since e in P and e not in P.
+
+Simple demos of why Rice's theorem is intuitive: since we can have a Roger's fixed point theorem, we can't have a program that changes the extensional behaviour of all programs i.e. there is a program unaffected by the change, therefore there is a program that is unaffected by checking the termination on given natural number, a program that is unaffected by checking for equivalence of programs. So on and so forth, this is the intuitive reason why Rice's theorem works, it all stems from the nonexistence of a program that determines the extensional behaviour of all programs OR you can always design a program that is invariant by the extension program.
+
+Roger's fixed point theorem: if F is a total computable function, it has a fixed point such that phi_e is isomorphic to phi_F(e), where phi is an admissible numbering of the partial recursive function, phi_e is this function corresponding to index e, F is (I made this up) definably isomorphic to G as partial function on the naturals if F(n) and G(n) are both defined and equal, otherwise they are both undefined. This guarantees the existence of a program that is not altered by any transformation from programming instructions. Given any effective procedure to transform programs, there is always a program that, when modified by the procedure, does exactly what it did before. Or, corollary, there is no program that changes the extensional behaviour of all programs.
+
+Borel subgroup, idea is you want Zariski closed aka you can do algebraic geometry on some subgroup, so maximal Zariski closed connected solvable algebraic subgroup. Clasically example is subgroup of upper invertible triangular matrices is Borel subgroup iof general linear group. Then one does algebraic geometry to make it equivalence to algebraic torus (C*) where C* is multiplicative group of complex numbers or Spec(C[x,y,z,w]) powers +- 1.. 
+
+Intelligence, entropy reduction, cross entropy reduction is basically intelligence aka compression problems. Trying to reduce the entropy directly to the Kolmogorov complexity.
+
 (-1)-groupoids, these are single truth value with trivial symmetry. For this to be a 0-category, this will have to be the set of true and false. Note that (-2)-groupoid has no such symmetry so it is a point, abd this to be a (-1)-poset, which is also a point with trivial order.
 
 (0.1)-categories, categories of open subsets of topological spaces or locales using Heyting duality, objects are propositions, morphisms are implications, limits are and, colimits are or. These are (n-r) categories.
@@ -56,7 +68,7 @@ A limit of a pair of parallel morphisms is an equaliser. A limit over a cospan i
 
 A limit of a unique empty diagram from the empty category 0 to a category C defines a terminal object of C. This can be thought of as a product.
 
-A morphism has connected (respectively. irreducible, integral, reduced) geometric fibers if all its geometric fibers are connected (resp. irreducible, integral, reduced). One usually says that the morphism has geometrically connected (resp. geometrically irreducible, geometrically integral, geometrically reduced) fibers.
+Morphism as fibers: Grothendieck's philosophy is if it is definable on the morphisms, then it can be used to be defined on the object. A morphism has connected (respectively. irreducible, integral, reduced) geometric fibers if all its geometric fibers are connected (resp. irreducible, integral, reduced). One usually says that the morphism has geometrically connected (resp. geometrically irreducible, geometrically integral, geometrically reduced) fibers.
 
 A morphism is between categories is a functor F maps morphisms f from a category C to a category FC respecting composition F(f *_{F} c) -> F(f) *_{FC} F(c) and identification in both categories. One can also use the family of homs definition, used in May or Lurie.
 
@@ -2610,7 +2622,7 @@ Jordan decomposition, v = v+ - v-, which says a signed measure can be constructe
 
 Jordan-Holder theorem, two composition series of a given group are equivalent with the same composition factors, up to permutation and isomorphism. Proved using Schreier refinement theorem.
 
-K-theory, (1) vector bundles, pick nice things like infinity-ring or spectra (2) sheafify with site, Zariski, etale, Nisnevich
+K-theory, (1) vector bundles, pick nice things like infinity-ring or spectra (2) sheafify with site, Zariski, etale, Nisnevich descent
 
 K^d complete with standard norm, step 1, pick l2 norm to be complete, then consider arbitrary powers of n and m where |x_i^n 0 x_i^m| less than equal to bounded gap epsilon. Show that candidate l^2 norm is bounded so limit of this gap in the arbitrary case converges to zero., and this limit lies as an element of K^n.
 

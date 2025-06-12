@@ -86,8 +86,6 @@ Boolean rings and maximal spectrum, in a similar vein to the Zariski topology, l
 
 Borcherds proof of Lasker Noether motivates all the definitions to look at it
 
-Borel subgroup? https,//en.wikipedia.org/wiki/Borel_subgroup
-
 Borsuk-Ulam theorem
 
 Bounded variation vs monotonic function?
