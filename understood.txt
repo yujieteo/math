@@ -1,3 +1,4 @@
+
 Turing completeness in practice: represents infinite state with finite memory, example infinite loops. But people are practically interested in the following, all programs terminate without a deliberately designed interrupt sequence.
 
 Branch prediction: idea is to load the branch instruction ahead of time, otherwise will have to wait for condition to evaluate, so branch prediction cuts the time to load the likely branch. From what it looks like, misprediction costs nothing since you do not have to load it and hardware is cheap, so no point being lazy. Static branch prediction means the branches are guessed at compile time, dynamic means use info at run time to guess, random is just cost less, load something better than loading nothing.

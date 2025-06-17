@@ -1,3 +1,5 @@
+Carmack on debugging at the start: in game development, they already have debuggers at the start, use the best tools and visualise at the very start. Always run it at a debugger. Blaming hardware errors, however code analyses revealed a lot of errors with wrong data types or missing a check for null. Do both unit tests and debuggers, this should be true at this point.
+
 Question who are smart way: http://www.catb.org/~esr/faqs/smart-questions.html
 
 Question: https://www.catb.org/~esr/faqs/hacker-howto.html#attitude
