@@ -1,4 +1,98 @@
 
+Throughput in computer science: tasks completed per unit time.
+
+GPU architecture problem with memory: physical distance between GPU computational units from on chip memory, so typically this is resolved by placing low power GPU cores next to memory to work with. Low physical delay. This is known as processing in memory.
+
+Transient instruction: speculative executed instructions from the CPU predicted branch target are stored in a temporary buffer and are committed to registers and memory only if the speculation is correct, if mis-predicted then executed instructions are dropped and not committed. Another example would be to load or store instructions from illegal memory, out of bound indexes from user-space or error in program.
+
+Prime and probe attacks: exploit variance in execution time caused by hardware resource contention.
+
+Edge server contention model: no contention means communication and computation resources are not shared by the tasks, fixed resources are allocated to the tasks, total resources allocated are less than capacity, computation contention means they compete the capacity. Server provisioning prioritise on all sorts of objects, server energy, device energy, typicially done and solved with convex optimisation. Communication contention, contend for communication and limited by bandwidth.
+
+Service rate: rate in which tasks are served at the server. Inter-arrival so use M/M/m or Markov queuing model using Poisson process, service time is exponentially distributed.
+
+Transmission delay: additional network delay due to the transmission medium of the system. 
+
+Computation offloading: offload the task from the end device to the edge server.
+
+Resource provisioning: allocation problem of communication (bandwidth), and computation resources, multiple type resources.
+
+Queueing delay: waiting time experienced by the task due to some pending tasks arriving ahead of the server.
+
+Real time flow scheduling: need to satisfy conditions of no transmission conflict, no collision, no deadline violation, flow sequences are preserved.
+
+Routing of sensor networks: selecting paths for data packets for proper network traffic management.
+
+Communication time: time required to transmit the data from one entity to the other. It depends on the bandwidth allocated and the size of the data to be transmitted.
+
+Response time of offloading task: can be modelled as the sum of execution time and communication time.
+
+Constrained deadline timing model: the work that bound the response time of the tasks (hard real time tasks, that is why real time operating systems are hard)
+
+Response time minimisation: minimises the average task response time and overall makespan.
+
+Makespan time: the largest task response time, response time minimisation is defined as the task that minimises the makespan.
+
+Edge computing: a distributed computing paradigm to let nodes compute or do tasks at the edge of the network, so the network hierarchy is flat.
+
+Virtualisation: creation of a virtual layer over the hardware platform to create multiple computing instances and execute them simultaneously on the same hardware platform for host machine.
+
+Slices, compute units, streaming multiprocessors: run instructions and process data independently from a. Shared memory with its own pool of instruction memory as a cache.
+
+Tasks from a n application perspective: consists of kernels to be executed on a GPU as well as thread blocks.
+
+Directed acyclic graph as representation of heterogeneous systems, vertex is task instance, unidirectional edges corresponds to precedence constraints. Scheduability analyses can be performed once you model it is as DAG. 
+
+Single cycle processes idle: efficiency low, idle due to waiting. Sequential single cycle pipelining leads to hidden unemployment. Fix by improving pipeline. Pizza analogy. Idea is to apply to latency in fetch, decode, execute, memory, write back to determine throughput.
+
+Fetching in computer architecture: refers to fetching instructions from program pointer.
+
+Decode in computer architecture: decoding of instructions, source operands read from register, data path control signals are generated.
+
+Execution in computer architecture: calculate memory address, perform arithmetic, target address calculate, branch condition evaluated.
+
+Amdahl’s law: make the common task run faster. Where t = t’[(1-F) + F/S], (1-F) is unaffected, F is affected, S is increment.
+
+Hardware complexity crude metric: they take the size of the silicon to be the hardware complexity.
+
+Branch misprediction rate (MR): mispredicted branch instructions divided by total number of branch instructions executed.
+
+Branch history register (BHR): number of bits in the history, a branch history of n = 3, is 101, is taken, not taken, taken.
+
+Execution time formula: time = instruction count * clocks per instruction * clock cycle time which is the reciprocal of frequency. This is also known as the performance measure.
+
+Instruction set architecture: based on memory, execution and IO which is the Von Neumann model.
+
+Abstraction layers in electrical engineering: there are 9 layers, problem, Algorithm, language, runtime system, instruction set architecture, microarchitecture, logic, devices, and electrons.
+
+Cycles per instruction: total number of cycles in program / total number of instructions in program
+
+Gustafson’s law: programmer can keep extending on parallel tasks, address shortcoming of Amdahl’s law, criticising the idea that achievable speed up is limited by inherent sequentialise.
+
+Bitlet model: idea is to perform in memory computing for more efficiency.
+
+Delayed branch slots: idea is to check branch taking after cycles, stall until conditional branch is resolved, or speculatively fetch and recover if speculation as wrong, fill up with speculative slots. Fails because may have varying branch slots.
+
+General purpose versus domain specific architecture: general purposes stuff fails to scale and it is hard to maintain backward compatibility and to be further optimised. Domain specific stuff depends heavily on the characterisation.
+
+Operating system: supervisory program that efficiently manages hardware systems. Realtime OS means have to ensue satisfaction of hard deadlines.Abstracts hardware between humans and hardware.
+
+Rate monotonic scheduler: prioritise real time tasks based on minimum inter-arrival time, smaller inter-arrival time, higher priority.
+
+Deadline monotonic scheduler: value of relative deadline which is time duration between arrival instance and deadline, smaller the relative deadline, the higher the priority.
+
+Earliest deadline first scheduler: prioritises tasks with the earliest deadlines.
+
+Worst case response time: maximum completion time based on worst-case execution time of task instance and interference from higher priority task instances.
+
+Dhall effect: deadline missing since tasks that are too long cannot be scheduled to run on parallel on a multicore processor in general.
+
+Partitioned scheduling: real time tasks are offline partitioned into individual processing cores, fails at scheduling of tasks taking more than 50%, so 50% threshold. This is basically the pigeonhole principle with m core, and m+1 real tasks with utilisation more than 0.5, partitioned scheduling fails.
+
+Global scheduling: single scheduling algorithm, but tasks need to be migrated across cores. Task migrations may significantly increase worst case response time, but it will not fail unlike partitioned scheduling.
+
+Proportionate fairness principle in scheduling: processing capacity must be allocated to the task proportional to their utilisation at all times, task preemptions and migrations may increase worst case execution time so not exactly ideal.
+
 Turing completeness in practice: represents infinite state with finite memory, example infinite loops. But people are practically interested in the following, all programs terminate without a deliberately designed interrupt sequence.
 
 Branch prediction: idea is to load the branch instruction ahead of time, otherwise will have to wait for condition to evaluate, so branch prediction cuts the time to load the likely branch. From what it looks like, misprediction costs nothing since you do not have to load it and hardware is cheap, so no point being lazy. Static branch prediction means the branches are guessed at compile time, dynamic means use info at run time to guess, random is just cost less, load something better than loading nothing.
