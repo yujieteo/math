@@ -1,3 +1,21 @@
+Speculation allowed, speculation is allowed only for low cost exceptional events like L1 cache misses, expensive exceptional events (L2 cache miss, TLB miss) processor waits until instruction causing events commits.
+
+Cache coherence, same copy of shared data throughout multicores
+
+Memory consistency, same order of read and write into memory with multicores to ensure correctness.
+
+Diminishing returns of clock speed, 2003 stopped, so there are several other changes. Nobody knows how to design 15 GHz processor.
+
+Diminishing returns of power density, 100 watt/cm2 is for nuclear reactor, 1000 watt/cm2 rocket nozzle, we cannot increase power density.
+
+Diminishing instruction level parallelism, use clock to execute multiple instructions simultaneously. What I am mostly interested in for this course which I thought was interesting.
+
+Memory wall, memory is slower or you want a hierarchy compared to CPU so need to hide memory latency.
+
+Multicore processor motivation, to exploit transistor density due to Moore’s law. Due to desktop performance being less important. Save investments by replication rather than unique design. So the history looks something like, ILP and DLP, TLP with several levels of parallelism, memory hierarchy (caching), then multicore but need to focus on cache scheduling.
+
+Processor-memory gap in log scale, single core is destroyed, typically 20% per year, 2005 no improvement due to power density constraints, memory speed, DRAM latency improves 7% a year.
+
 Asymptotic equipartition theorem with Kolmogorov complexity in story telling, the story with the minimum Kolmogorov complexity compared to the entropy of typical stories will be written in an atypical way and appeal to humanity (minimum model length in humans as a approximation of a Turing machine). So, write weird stories that appeal to humanity.
 
 Themes and handwaving as extremely lossy compression, an analysis of a media piece will definitely have very lossy compression.
