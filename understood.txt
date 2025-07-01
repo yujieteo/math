@@ -1,3 +1,50 @@
+Asymptotic equipartition theorem with Kolmogorov complexity in story telling, the story with the minimum Kolmogorov complexity compared to the entropy of typical stories will be written in an atypical way and appeal to humanity (minimum model length in humans as a approximation of a Turing machine). So, write weird stories that appeal to humanity.
+
+Themes and handwaving as extremely lossy compression, an analysis of a media piece will definitely have very lossy compression.
+
+Profiling is the most important thing: without profiling you fall prey to Amdahl’s law, the most basic concept, since you might be optimising something that is not frequent.
+
+Branch history table, just take a history of how frequently a branch is taken. Minimally 1 bit.
+
+Speculation, predict branch outcome, speculative execution out of order, force them to commit in order, prevent irrevocable action until instruction commits (this is different from waiting).
+
+Reorder buffer, speculative instruction waits in reorder buffer until no longer speculative, commit once it is no longer speculative, not allowed to write to registers or memory and provide precise exceptions. It is still a FIFO, so later instructions have to wait. Try imagine a Tomasulo-based FP unit with speculation for imagination.
+
+1-bit entries, indexed by lower address, index is 1, so the branch is taken with no address tags, not in 5 stage pipeline, helps when branch condition is computed, prediction is merely a hint. Fails since it does a double mis-prediction in a loop. Fix with 2-bit entry.
+
+Local history branch prediction, considers prediction per branch. Noticed because loops have common bound. Can predict wrongly, or other branches map to same history.
+
+Global branch prediction, observation is prediction depends on direction of true, false use a single n-bit shift register. But it is less effective than single bimodal predictor than smaller predictor sizes.
+
+Gshare, combine global history with branch address used in AMD K6 and K7, address bits are concatenated with global history, then access table of counters to predict. Another way, is to view 2n rows and 2m columns, n PC bits to select row, m global history bits to select column. Current branch is unlikely seen so there is redundancy (select). So fix it with index sharing (gshare) use n bits of branch and XOR n-bit global history aka XOR is used for indexing.
+
+Two bit-prediction schemes, prediction misses twice before change. Two bit saturating using <3 and 4.
+
+Branch prediction and cache locality, two important predictability, first it is the predictability of the conditions, this is branch prediction. Another aspect of branch prediction is to also minimize the cost of branch misprediction. Corresponds to real life where the typical outcome must be assume but damages from atypical outcome but be considered. The other big paradigm of prediction is the predictability of locality. You want your caches and things that you frequently use to be near you. Locality misprediction can be when you try to avoid bad habits, but this comes at a cost. I call this the unlearning-locality paradox. Cache locality and branch prediction.
+
+Tomasulo’s algorithm, idea is to use reservations stations. Dynamic scheduling is to allow out of order execution to prevent stalling. Dynamic scheduling means is to have temporary multiple lane. Motivated by small number of FP registers, so he need to get in more effective registers aka register renaming. Buffer the stalling ADD.D into a reservation standard, results are broadcasted on common data buses. Pipeline phases may take several clock sizes, stage is one clock cycle. RS free means no structural hazard. So, IF fetch next instruction into FIFO queue, Issue, get next instruction from the head of instruction queue, if matching RS free no structural hazard, issue instruction to RS, with operand values if in registers otherwise, issue identifiers of the reservation station, all operands available and RAW then execute, otherwise monitor CDB, when executed, write on CDB and mark reservation station as free, aka it is basically like how a bank appointment queue except with the CDB https://www.youtube.com/watch?v=y-N0Dsc9LmU
+
+Radix, base of a number system, binary and decimal are the radices.
+
+Positional notation of number representation, number representation where each digit has a place value aka a polynomial with variable as the radix.
+
+Absolute error in arithmetic computation, absolute difference between computed value and corrected value.
+
+Relative error in arithmetic computation, absolute error divide by absolute value of correct value.
+
+Numerical precision in arithmetic computation, number of digits available for use. Accuracy is however the closeness of measured value to true value.
+
+Units in last place in arithmetic computation, minimum distance between two numbers.
+
+Machine epsilon in arithmetic computation, maximum relative error in the chosen rounding procedure.
+
+Floating point operations per second or flops, decide the performance of the computer.
+
+Twos complement arithemetic, invert all the bits and add one to the number.
+
+Gray code of a binary number, differ by successive bits.
+
+Unary code, 0 is 0, 10 is 1, 110 is 2, so on and so forth.
 
 Throughput in computer science: tasks completed per unit time.
 
