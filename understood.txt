@@ -1,3 +1,5 @@
+History of computer architecture: (1) Amdahl’s law and Moore’s law are the guiding points since these are basic logistical principles, how much can you improve something; (2) instruction level parallelism; (3) clock cycles, so pipelining; (4) prediction and speculative execution; (5) memory hierarchy; (6) multicore processor due to limit on power density aka redundancy and cache coherence. 
+
 Speculation allowed, speculation is allowed only for low cost exceptional events like L1 cache misses, expensive exceptional events (L2 cache miss, TLB miss) processor waits until instruction causing events commits.
 
 Cache coherence, same copy of shared data throughout multicores
