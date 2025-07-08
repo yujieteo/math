@@ -1,3 +1,31 @@
+Max flow min cut theory, define parititon S and cut of S, denoted S^c, then capacity C_(jk) take sum of j in S, k in the cut of S, capacity is constrained by minimum cut capacity. Motivates defining a cut, not constrained by network information theory, basic control volume or conservation law in networks, in fact, it might even be amenable to group theory since this is invariant, the configuration or state space of all other flows form a group.
+
+Fundamental theorems in network information theory, there are three big ones, Shannon's point to point theorem, Ford Fullerson, and max flow min cut theorem.
+
+Inference versus learning, inference has prior assumptions, learning has no prior assumptions.
+
+Estimator of x, random variable that can vary given input or observation y so x^ =  c(y) where x^ is the estimator of x, a single value is a estimate, multiple possible values (random variable), is an estimator.
+
+Addresses and pointers as morphisms in Grothendieck style theory, idea is basically pointers are memory addresses, but addresses are thought of as morphisms (aka pointers).
+
+Unbiased estimator, expectation of estimators equal mean, asymptotically unbiased if holds in limit as N tends to infinity in teh first order moment.
+
+Efficient estimator, defined by second momnet expected to obey Cramer Rao bound, I liked this notion of efficiency as obeying some entropy constrained bound.
+
+Consistent estimator, an estimator that converges in probability.
+
+Four cases of casuality: (1) cascade; (2) common parent; (3) common child; (4) common grandchild.
+
+Acyclic graph and partial order, part of why category theory is powerful, there is no nontransitivity and there is no other identity.
+
+Memory aliasing, blocks optimisation when pointers are repeatedly called and modified since we cannot assume cases are equal.
+
+Function calls, 4 * is cheaper thatn ++++ since each + may change the state and be hard for the compiler to optimise.
+
+Cycles per element, denoted as CPE.
+
+Optimisation blockers, optimisations cannot happen if assumptions cannot be made.
+
 History of computer architecture: (1) Amdahl’s law and Moore’s law are the guiding points since these are basic logistical principles, how much can you improve something; (2) instruction level parallelism; (3) clock cycles, so pipelining; (4) prediction and speculative execution; (5) memory hierarchy; (6) multicore processor due to limit on power density aka redundancy and cache coherence. 
 
 Speculation allowed, speculation is allowed only for low cost exceptional events like L1 cache misses, expensive exceptional events (L2 cache miss, TLB miss) processor waits until instruction causing events commits.
