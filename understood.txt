@@ -1,3 +1,29 @@
+0-address, push and pop, also known as a stack machine.
+
+1-address, load and store with accumulator.
+
+k-address: k number of operands.
+
+Fixed length instructions, good for encoding,a lignment wasted bits, hard to extend ISA in future.
+
+Variable length instruction, Jim Keller says this is better since address searching is easy, determined by opcode and subopcode. Easier compression.
+
+Huffman code, minimum prefix free code, smaller bits, constructed based on profiling, example of MULT 1, DIV 2, ADD 5, gives ADD 1, DIV 01, MULT 00 since 0 is less frequent.
+
+Uniform decode, opcode in same location. Decoding opcode and displacement value to enable parallelism. Comes back later in branch prediction. Restrictis instruction format, and flexibility later.
+
+Non uniform decode, 1st to 7th byte, more compact but more complex decode logic.
+
+Variable length ISA does not permit uniform decode, since the tradeoff is already gone.
+
+RISC characteristics, simple instructions, fixed length, uniform decode, few addressing modes.
+
+Number of registers, more reigsters means more bits for encoding register address.
+
+Mod bits, indicate memory or registers.
+
+Register allocations, compliation allows for frequently used values.
+
 Translation in ISA tradeoff, changes trade off by adding indirection elvel by translating between one ISA to the next, typical example is spec ISA to inmplementation ISA.
 
 Example of translations, Intel and AMD x86 translate with hardware engine from virtual ISA to simple hardware, to make the core of the processor underneath look like RISC.
@@ -8,7 +34,11 @@ Saving in transalted form, idea is to do the translation once, store it in the d
 
 Byte addressable or word addressable, basically the level of scope in which addresses are made.
 
-Addressing modes, how you attain operands either from registers or from memory. 
+Addressing modes, how you attain operands either from registers or from memory. Memroy there are many, like register indirect, memory indirect and displacement.
+
+Register indirect, address of opeands, and is pointer dereference. Example: M[r2], r2 is pointer / address.
+
+Memory indirect, pointer chasing problem essentially. We have M[M[r2]].
 
 ISA trade off for instruction pointer, if you have program counter or instruction pointer, you can do debugging but lose data driven parallelism.
 
@@ -100,7 +130,7 @@ Eliminating ISA, good to think about, interfaces make it easy but they are not t
 
 Number of components per IC against relative manufacturing cost, this is typically reduced by amortisation.
 
-Superscalar processing, it means multiple instructions per cycle.
+Superscalar processing, it means multiple instructions per cycle. Concurent multi insturction fetching. Easier to do with fixed length instruction. Example, Intel 432 use Huffman codes.
 
 Computer architecture and multicore, multicore puts the problem with the programmer.
 
