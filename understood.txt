@@ -1,3 +1,73 @@
+Translation in ISA tradeoff, changes trade off by adding indirection elvel by translating between one ISA to the next, typical example is spec ISA to inmplementation ISA.
+
+Example of translations, Intel and AMD x86 translate with hardware engine from virtual ISA to simple hardware, to make the core of the processor underneath look like RISC.
+
+Transmeta code morphing, idea is to do translation on the level of software.
+
+Saving in transalted form, idea is to do the translation once, store it in the decode cache, then if it is called again, do not translate again.
+
+Byte addressable or word addressable, basically the level of scope in which addresses are made.
+
+Addressing modes, how you attain operands either from registers or from memory. 
+
+ISA trade off for instruction pointer, if you have program counter or instruction pointer, you can do debugging but lose data driven parallelism.
+
+Race condition, process try to access same resource without proper coordination.
+
+Limit based physics thinking for the data driven, exposes more paralellism witho no control as the operands become available, example languages include tensorflow, verilog, simulink, VHDL, and microarchitecture tend to lean closer towards the data flow model.
+
+Out of order execution, instructions are not executed in the order of the program.
+
+Bit addition, two types, ripple carry and bit serial addition, there is a trade off between parallelism in these two examples.
+
+Bit sterring, sign extended versus zero extended for negative values.
+
+Object data type, early RISC only have integer data type, but Intel 632 introduced object data types for object oriented programming.
+
+Binary coded decimal, example of semantic level, decimal digit encoded with a fixed number of bits.
+
+Virtualised architecture, idea is you can address a bit so that you can do any ISA, this was done in the 1960s to simulate any ISA. But this is a problem? Why?
+
+Register size, speicified with the ISA, from 8 bits to 64 bits. Or one can omit using registers, but registers make it easy to use locality for reusse and logality of the data.
+
+General purpose registers, short form is GPR, idea is to reuse or to have better locality of the data, there is no distinction between address or data EXCEPT for the program counter / instruction pointer.
+
+Scaled index bytes, displacement and values for you to use addressing modes.
+
+Control flow instrucitons, change sequence of instructions.
+
+Load / store, instructions operate only on registers.
+
+Memory to memory, instructions can operate on memory location, example being increment of memory operations.
+
+Memory mapped IO, map it to memory region to access IO.
+
+Privilege modes, who can execute what instructions.
+
+Exception and interrupt handling, ISA will follow procedure for these, interrupts are external to program executions, exceptions are internal to program execution.
+
+Vectored interrupt, device interrupts processor rights to which device interrupted to determine jumping address.
+
+Nonvectored interrupt, do not know who is interrupt. early MIPs queried all IO to determine who did this interrupt, not efficient.
+
+Complex instruction, an instruction that does a lot of work. It has a denser encoding, enabling a simpler compiler.
+
+Simple instructions, only permits primitives like add, load/store, compare/branch. Large semantic gaps exist when compilers are no good. RISC is invented when compilers got smarter in optimisations.
+
+Semantic gap opportunity, typically done by breaking the abstraction layer, for example, by exposing the control signals, the dream is that the gap is closed between high level languages and control signal aka the gap is small.
+
+Java machines and Lisp machines, idea is ISA is implemented at a semantic gap close to the high level language.
+
+Semantic gap, complexity of an ISA is determined where you place the ISA relative to the high level language. Idea also generalises to microarchitecture. Hard to maintain backward compatability. Simpler compiler means complex hardware, or complex compiler means simpler hardware.
+
+Examples of CISC instructions, these are complex instructions, FFT, QUICKSORT, VAX.
+
+Extend source index, known as ESI, avoids source and destination.
+
+Extend destination index, EDI.
+
+Small semantic gap examples, see examples of instruction sets to see which ones are primitive.
+
 C programming language as a model of computation, one can compare this with computer architecture and digital logic, these are known as abstraction layers.
 
 Hamming distance, number of locations in which two strings differ. Important because now measure theory can be applied.
