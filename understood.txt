@@ -1,4 +1,54 @@
-Max flow min cut theory, define parititon S and cut of S, denoted S^c, then capacity C_(jk) take sum of j in S, k in the cut of S, capacity is constrained by minimum cut capacity. Motivates defining a cut, not constrained by network information theory, basic control volume or conservation law in networks, in fact, it might even be amenable to group theory since this is invariant, the configuration or state space of all other flows form a group.
+C programming language as a model of computation, one can compare this with computer architecture and digital logic, these are known as abstraction layers.
+
+Hamming distance, number of locations in which two strings differ. Important because now measure theory can be applied.
+
+Abstraction with ISA, assembly is written based on the ISA, so to write assembly you need the ISA, however if you are programming on the level of bits or control signals, you need to know digital logics. One can of course expose control signals for compilers to optimise, this is called breaking the abstraction layer, but in general abstraction improves productivity.
+
+Example of multicore experiments, Intel had matlab and gcc find the slowdown, where gcc had 3 times slow down than matlab. A good first guess is cache eviction by matlab, but the cache is not shared. The catch is that it is memory! Matlab sends a lot of requests to memory with good locality, gcc being well programmed sends fewer requests, so memory controller gets denial of service by matlab.
+
+DRAM bank, 2D array of cells with row buffer. Row conflict takes 2 to 3 times slower, current controls utilise row buffer. Prioritising row hit requests, for the matlab example, matlab has good row buffer locality to row 0, but gcc uses random access patterns.
+
+DRAM capacitor, most memory capacities need to reresh or the charge will leak, corollary is that there is no perfect memory, persistence of memory is a problem.
+
+Refresh overhead for memory, x-axis is device capacity or percetange of the time spent refreshing, for a 64GB you need 46% assuming no improvement, so there is a cap on DRAM memory due to capacitor refresh.
+
+Retention time profile, determining which rows are to be exposed, so one can think about when to refresh the DRAM.
+
+Bloom filters, probabilistic data structure to represent membership. You can use bit by bit, but this is expensive using one bit of address, idea is to use entropy, no problem if you have false positives (for refreshing DRAM) this is convexity, but not false negatives. Take address, use has sets to has h the bit, so the hashing approximates the set membership, use 1024 bits for mapping the address using hashing, note that it is critical that there are no false negativees, the Bloom filter reduces the power of DRAM.
+
+DRAM bit flipping, example one can write a virus that repeatedly access the DRAM to cause errors, this results in reliability and security issues since errors correlate with access rate. Detecting hot access patterns and banning rows before refresh is used to solve this. Another way is to enable low probability of refresh of adjacent rows.
+
+Error correction codes expensive, redundancy is always expensive. Therefore, memory hierarchy is cheaper and proposed for low cost error tolerant memory (video) and high cost correctness memory (exact calculations).
+
+Amdahl's definition of computer architecture, attributes seen by programmmer, defining the interface.
+
+Hardware design, basically designing hardware algorithms to be designed efficiently in hardware. So computer architecture is an abstraction and algorithms course indirectly.
+
+Microarchitecture, beneath the instruction set architecture is teh algorithms that implement the ISA itself.
+
+Eliminating ISA, good to think about, interfaces make it easy but they are not truly fundamental.
+
+Number of components per IC against relative manufacturing cost, this is typically reduced by amortisation.
+
+Superscalar processing, it means multiple instructions per cycle.
+
+Computer architecture and multicore, multicore puts the problem with the programmer.
+
+Memory bottleneck, sharp and fast increase by 20 to 23% of processor, but slow yet steady improvement of memory by 7%. So now, memory is Amdahl's bottleneck.
+
+Program counter and instruction pointer, basically the same thing, it points to the current address in the Von Neumann model as the current instruction to execute.
+
+Von Neumann model: (1) stored program counter in a linear memory array unified between instructions and data where stored value is interpreted based on control signals; (2) sequential instruction processing, instruction is fetched, executed and completed at the same time, program counter tells the current instruction to advance sequentially.
+
+Data flow model: no program counter, executed when operands are ready, no control so inherently more parallel. No computer uses this model, but adapts from it.
+
+Multiprocessor is not a Von Neumann model, because multiple instructions are executed ata once.
+
+Data flow nodes, alternative method for control, wait for all subgraphs to produce results, then do barrier synchronise.
+
+Load imbalance problem in data flow model, one bottleneck in thread means load imbalance as they wait fo rbarriers to be synchronised (recall data flow model needs everything to be done).
+
+Max flow min cut theorem, define parititon S and cut of S, denoted S^c, then capacity C_(jk) take sum of j in S, k in the cut of S, capacity is constrained by minimum cut capacity. Motivates defining a cut, not constrained by network information theory, basic control volume or conservation law in networks, in fact, it might even be amenable to group theory since this is invariant, the configuration or state space of all other flows form a group.
 
 Fundamental theorems in network information theory, there are three big ones, Shannon's point to point theorem, Ford Fullerson, and max flow min cut theorem.
 
