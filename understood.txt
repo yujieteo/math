@@ -1,8 +1,13 @@
 0-address, push and pop, also known as a stack machine.
 
+History of computer architecture: (1) Amdahl’s law and Moore’s law are the guiding points since these are basic logistical principles, how much can you improve something; (2) instruction level parallelism; (3) clock cycles, so pipelining; (4) prediction and speculative execution; (5) memory hierarchy; (6) multicore processor due to limit on power density aka redundancy and cache coherence. 
+
+PC optimisation order: (1) profile or question the requirements, (2) IO locality examples read sequentially once, packed file index in RAM instead of file system, working set smaller than page file; (3) data-flow programming avoiding cache miss, separating data according to usage, vectors; (4) predictable branches and pipeline stalls avoiding dependencies; processing multiple, independent items simultaneously in your already well-cached arrays; and separating different operations into different passes over separated data (data-oriented design), no-sharing threads no mutexes, single instruction multiple data SIMD registers to be used; (5) use GPUs by making large batches of work, large independent non-shared streams.
+
+
 1-address, load and store with accumulator.
 
-k-addressm k number of operands.
+k-address, k number of operands.
 
 Fixed length instructions, good for encoding, but alignment wasted bits, hard to extend ISA in future.
 

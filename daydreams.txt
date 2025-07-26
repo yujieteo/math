@@ -1926,6 +1926,10 @@ Why are taking resolutions the key step before defining a functor so that you ca
 
 Why are there no analogs of the Lebsegue measure?
 
+What are direct, indirect conditional and unconditional jumps?
+
+What is mis-prediction per instruction?
+
 Why can pushouts be used to construct suspension, join, cones, wedges? These can be done in classical homotopy theory?
 
 Why can’t constructs in commutative algebra like rings, ideals (functor from group conjugation), be directly expressed in terms of functors? (Hint, they can) https,//math.uchicago.edu/~amathew/chthreeimportantfunctors.pdf
