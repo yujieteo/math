@@ -32,7 +32,4 @@ Ontology, three outcomes: (1) disappears when nothing in it, (2) stubbornly nebu
 
 Ontology, against the correct answer: fails in math, fails in classifying planets, meta rationalities means all categories (or definitions) as inherently purpose laden. Therefore, what does this definition do, why is this definition is more important. Example, why Poincare define homology as relations with linear combinations. This denies the existence of a general theory of truths.
 
-Ontology, Turing Machine, especially in the context of artificial
-intelligence computer software, is a standardised model to which different languages may refer to facilitate
-translation between the languages. To achieve this objective, an ontology must contain representations of all
-the objects, classes, relations, attributes and other things which are signified by the languages in question. So it is of Kolmogorov complexity up to Turing machine translation.
+Ontology, Turing Machine, especially in the context of artificialintelligence computer software, is a standardised model to which different languages may refer to facilitate translation between the languages. To achieve this objective, an ontology must contain representations of all the objects, classes, relations, attributes and other things which are signified by the languages in question. So it is of Kolmogorov complexity up to Turing machine translation.
