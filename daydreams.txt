@@ -1,5 +1,15 @@
 Carmack on debugging at the start: in game development, they already have debuggers at the start, use the best tools and visualise at the very start. Always run it at a debugger. Blaming hardware errors, however code analyses revealed a lot of errors with wrong data types or missing a check for null. Do both unit tests and debuggers, this should be true at this point.
 
+Difference between registers and addresses?
+
+Do not understand this proof: abelian varieties are abelian, proof strategy for complex numbers, any map from projective variety to C is constant by the maximum principle (do not understand this), so adjoint map to the automorphism group of tangent space of origin is 0. Abelian linear groups are not abelian, this is old names for symplectic group, an affine algebraic group.
+
+Do not quite understand the proof of the uniqueness of adjoints in set of bounded linear operators in the Riesz's representation theorem.
+
+Intuitive definition of comma categories?
+
+Why in the definition of a geoemtric point of a scheme, need Spec(k) -> X, k algebraically closed.
+
 Questions asked the smart way: http://www.catb.org/~esr/faqs/smart-questions.html
 
 Question: https://www.catb.org/~esr/faqs/hacker-howto.html#attitude

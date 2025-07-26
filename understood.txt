@@ -2,9 +2,9 @@
 
 1-address, load and store with accumulator.
 
-k-address: k number of operands.
+k-addressm k number of operands.
 
-Fixed length instructions, good for encoding,a lignment wasted bits, hard to extend ISA in future.
+Fixed length instructions, good for encoding, but alignment wasted bits, hard to extend ISA in future.
 
 Variable length instruction, Jim Keller says this is better since address searching is easy, determined by opcode and subopcode. Easier compression.
 
@@ -24,45 +24,45 @@ Mod bits, indicate memory or registers.
 
 Register allocations, compliation allows for frequently used values.
 
-Translation in ISA tradeoff, changes trade off by adding indirection elvel by translating between one ISA to the next, typical example is spec ISA to inmplementation ISA.
+Translation in ISA tradeoff, changes trade off by adding indirection level by translating between one ISA to the next, typical example is specification ISA to implementation ISA.
 
 Example of translations, Intel and AMD x86 translate with hardware engine from virtual ISA to simple hardware, to make the core of the processor underneath look like RISC.
 
 Transmeta code morphing, idea is to do translation on the level of software.
 
-Saving in transalted form, idea is to do the translation once, store it in the decode cache, then if it is called again, do not translate again.
+Saving in translated form, idea is to do the translation once, store it in the decode cache, then if it is called again, do not translate again.
 
-Byte addressable or word addressable, basically the level of scope in which addresses are made.
+Byte addressable or word addressable, level of scope in which addresses are made.
 
-Addressing modes, how you attain operands either from registers or from memory. Memroy there are many, like register indirect, memory indirect and displacement.
+Addressing modes, how you attain operands either from registers or from memory. Memory there are many, like register indirect, memory indirect and displacement.
 
-Register indirect, address of opeands, and is pointer dereference. Example: M[r2], r2 is pointer / address.
+Register indirect, address of operands, and is pointer dereference. Example: M[r2], r2 is pointer / address.
 
-Memory indirect, pointer chasing problem essentially. We have M[M[r2]].
+Memory indirect, pointer chasing problem basically. We have M[M[r2]].
 
 ISA trade off for instruction pointer, if you have program counter or instruction pointer, you can do debugging but lose data driven parallelism.
 
 Race condition, process try to access same resource without proper coordination.
 
-Limit based physics thinking for the data driven, exposes more paralellism witho no control as the operands become available, example languages include tensorflow, verilog, simulink, VHDL, and microarchitecture tend to lean closer towards the data flow model.
+Limit based physics thinking for the data driven, exposes more parallelism with no control as the operands become available, example languages include tensorflow, verilog, simulink, VHDL, and microarchitecture tend to lean closer towards the data flow model.
 
-Out of order execution, instructions are not executed in the order of the program.
+Out of order execution, instructions not executed in order.
 
-Bit addition, two types, ripple carry and bit serial addition, there is a trade off between parallelism in these two examples.
+Bit addition, two types, ripple carry and bit serial addition, trade off between parallelism in these two examples.
 
-Bit sterring, sign extended versus zero extended for negative values.
+Bit steering, sign extended versus zero extended for negative values.
 
 Object data type, early RISC only have integer data type, but Intel 632 introduced object data types for object oriented programming.
 
 Binary coded decimal, example of semantic level, decimal digit encoded with a fixed number of bits.
 
-Virtualised architecture, idea is you can address a bit so that you can do any ISA, this was done in the 1960s to simulate any ISA. But this is a problem? Why?
+Virtualised architecture, idea is you can address a bit so that you can do any ISA, done in the 1960s to simulate any ISA.
 
-Register size, speicified with the ISA, from 8 bits to 64 bits. Or one can omit using registers, but registers make it easy to use locality for reusse and logality of the data.
+Register size, speicified with the ISA, from 8 bits to 64 bits. Or one can omit using registers, but registers make it easy to use locality for reuse and locality of the data.
 
 General purpose registers, short form is GPR, idea is to reuse or to have better locality of the data, there is no distinction between address or data EXCEPT for the program counter / instruction pointer.
 
-Scaled index bytes, displacement and values for you to use addressing modes.
+Scaled index bytes, displacement and values for you to use addressing modes. Like units in physics.
 
 Control flow instrucitons, change sequence of instructions.
 
@@ -76,7 +76,7 @@ Privilege modes, who can execute what instructions.
 
 Exception and interrupt handling, ISA will follow procedure for these, interrupts are external to program executions, exceptions are internal to program execution.
 
-Vectored interrupt, device interrupts processor rights to which device interrupted to determine jumping address.
+Vectored interrupt, device interrupts processor writes to which device interrupted to determine jumping address.
 
 Nonvectored interrupt, do not know who is interrupt. early MIPs queried all IO to determine who did this interrupt, not efficient.
 
@@ -102,13 +102,13 @@ C programming language as a model of computation, one can compare this with comp
 
 Hamming distance, number of locations in which two strings differ. Important because now measure theory can be applied.
 
-Abstraction with ISA, assembly is written based on the ISA, so to write assembly you need the ISA, however if you are programming on the level of bits or control signals, you need to know digital logics. One can of course expose control signals for compilers to optimise, this is called breaking the abstraction layer, but in general abstraction improves productivity.
+Abstraction with ISA, assembly is written based on the ISA, so to write assembly you need the ISA, however if you are programming on the level of bits or control signals, you need to know digital logic. One can of course expose control signals for compilers to optimise, this is called breaking the abstraction layer, but in general abstraction improves productivity.
 
 Example of multicore experiments, Intel had matlab and gcc find the slowdown, where gcc had 3 times slow down than matlab. A good first guess is cache eviction by matlab, but the cache is not shared. The catch is that it is memory! Matlab sends a lot of requests to memory with good locality, gcc being well programmed sends fewer requests, so memory controller gets denial of service by matlab.
 
 DRAM bank, 2D array of cells with row buffer. Row conflict takes 2 to 3 times slower, current controls utilise row buffer. Prioritising row hit requests, for the matlab example, matlab has good row buffer locality to row 0, but gcc uses random access patterns.
 
-DRAM capacitor, most memory capacities need to reresh or the charge will leak, corollary is that there is no perfect memory, persistence of memory is a problem.
+DRAM capacitor, most memory capacities need to refresh or the charge will leak, corollary is that there is no perfect memory, persistence of memory is a problem.
 
 Refresh overhead for memory, x-axis is device capacity or percetange of the time spent refreshing, for a 64GB you need 46% assuming no improvement, so there is a cap on DRAM memory due to capacitor refresh.
 
@@ -118,7 +118,7 @@ Bloom filters, probabilistic data structure to represent membership. You can use
 
 DRAM bit flipping, example one can write a virus that repeatedly access the DRAM to cause errors, this results in reliability and security issues since errors correlate with access rate. Detecting hot access patterns and banning rows before refresh is used to solve this. Another way is to enable low probability of refresh of adjacent rows.
 
-Error correction codes expensive, redundancy is always expensive. Therefore, memory hierarchy is cheaper and proposed for low cost error tolerant memory (video) and high cost correctness memory (exact calculations).
+Error correction codes expensive, redundancy is always expensive. Therefore, memory hierarchy is cheaper and proposed for low cost error tolerant memory (video, GPU) and high cost correctness memory (exact calculations. CPU). Therefore, CPU and GPU design is based on error tolerance of memory.
 
 Amdahl's definition of computer architecture, attributes seen by programmmer, defining the interface.
 
@@ -134,7 +134,7 @@ Superscalar processing, it means multiple instructions per cycle. Concurent mult
 
 Computer architecture and multicore, multicore puts the problem with the programmer.
 
-Memory bottleneck, sharp and fast increase by 20 to 23% of processor, but slow yet steady improvement of memory by 7%. So now, memory is Amdahl's bottleneck.
+Memory bottleneck, sharp and fast increase by 20 to 23% of processor, but slow yet steady improvement of memory by 7%. Now, memory is Amdahl's bottleneck.
 
 Program counter and instruction pointer, basically the same thing, it points to the current address in the Von Neumann model as the current instruction to execute.
 
@@ -142,7 +142,7 @@ Von Neumann model: (1) stored program counter in a linear memory array unified b
 
 Data flow model: no program counter, executed when operands are ready, no control so inherently more parallel. No computer uses this model, but adapts from it.
 
-Multiprocessor is not a Von Neumann model, because multiple instructions are executed ata once.
+Multiprocessor is not a Von Neumann model, because multiple instructions are executed at once.
 
 Data flow nodes, alternative method for control, wait for all subgraphs to produce results, then do barrier synchronise.
 
@@ -166,21 +166,21 @@ Consistent estimator, an estimator that converges in probability.
 
 Four cases of casuality: (1) cascade; (2) common parent; (3) common child; (4) common grandchild.
 
-Acyclic graph and partial order, part of why category theory is powerful, there is no nontransitivity and there is no other identity.
+Acyclic graph and partial order, why category theory is powerful, there is no nontransitivity and there is no other identity.
 
 Memory aliasing, blocks optimisation when pointers are repeatedly called and modified since we cannot assume cases are equal.
 
-Function calls, 4 * is cheaper thatn ++++ since each + may change the state and be hard for the compiler to optimise.
+Function calls, 4 * is cheaper than ++++ since each + may change the state and be hard for the compiler to optimise.
 
 Cycles per element, denoted as CPE.
 
 Optimisation blockers, optimisations cannot happen if assumptions cannot be made.
 
-History of computer architecture: (1) Amdahl’s law and Moore’s law are the guiding points since these are basic logistical principles, how much can you improve something; (2) instruction level parallelism; (3) clock cycles, so pipelining; (4) prediction and speculative execution; (5) memory hierarchy; (6) multicore processor due to limit on power density aka redundancy and cache coherence. 
+History of computer architecture: (1) Amdahl’s law and Moore’s law are the guiding points since these are basic logistical principles, how much can you improve something; (2) instruction level parallelism; (3) clock cycles, so pipelining; (4) prediction and speculative execution; (5) memory hierarchy; (6) multicore processor due to limit on power density aka redundancy and cache coherence.
 
-Speculation allowed, speculation is allowed only for low cost exceptional events like L1 cache misses, expensive exceptional events (L2 cache miss, TLB miss) processor waits until instruction causing events commits.
+Speculation permissibility, speculation is allowed only for low cost exceptional events like L1 cache misses, expensive exceptional events (L2 cache miss, TLB miss) processor waits until instruction causing events commits. Rule of thumb in life, speculate and act in advance if misprediction has low opportunity cost.
 
-Cache coherence, same copy of shared data throughout multicores
+Cache coherence, same copy of shared data throughout multicores.
 
 Memory consistency, same order of read and write into memory with multicores to ensure correctness.
 
@@ -200,13 +200,13 @@ Asymptotic equipartition theorem with Kolmogorov complexity in story telling, th
 
 Themes and handwaving as extremely lossy compression, an analysis of a media piece will definitely have very lossy compression.
 
-Profiling is the most important thing: without profiling you fall prey to Amdahl’s law, the most basic concept, since you might be optimising something that is not frequent.
+Profiling is the most important thing: without profiling you fall prey to Amdahl’s law, might be optimising infrequent events.
 
-Branch history table, just take a history of how frequently a branch is taken. Minimally 1 bit.
+Branch history table, just take a history of how frequently a branch is taken. Minimally 1 bit. But you can use Bloom filters.
 
 Speculation, predict branch outcome, speculative execution out of order, force them to commit in order, prevent irrevocable action until instruction commits (this is different from waiting).
 
-Reorder buffer, speculative instruction waits in reorder buffer until no longer speculative, commit once it is no longer speculative, not allowed to write to registers or memory and provide precise exceptions. It is still a FIFO, so later instructions have to wait. Try imagine a Tomasulo-based FP unit with speculation for imagination.
+Reorder buffer, speculative instruction waits in reorder buffer until no longer speculative, commit once it is no longer speculative, (data flow sort of) not allowed to write to registers or memory and provide precise exceptions. It is still a FIFO, so later instructions have to wait. Try imagine a Tomasulo-based FP unit with speculation for imagination. CPUs have large reorder buffers.
 
 1-bit entries, indexed by lower address, index is 1, so the branch is taken with no address tags, not in 5 stage pipeline, helps when branch condition is computed, prediction is merely a hint. Fails since it does a double mis-prediction in a loop. Fix with 2-bit entry.
 
@@ -220,7 +220,7 @@ Two bit-prediction schemes, prediction misses twice before change. Two bit satur
 
 Branch prediction and cache locality, two important predictability, first it is the predictability of the conditions, this is branch prediction. Another aspect of branch prediction is to also minimize the cost of branch misprediction. Corresponds to real life where the typical outcome must be assume but damages from atypical outcome but be considered. The other big paradigm of prediction is the predictability of locality. You want your caches and things that you frequently use to be near you. Locality misprediction can be when you try to avoid bad habits, but this comes at a cost. I call this the unlearning-locality paradox. Cache locality and branch prediction.
 
-Tomasulo’s algorithm, idea is to use reservations stations. Dynamic scheduling is to allow out of order execution to prevent stalling. Dynamic scheduling means is to have temporary multiple lane. Motivated by small number of FP registers, so he need to get in more effective registers aka register renaming. Buffer the stalling ADD.D into a reservation standard, results are broadcasted on common data buses. Pipeline phases may take several clock sizes, stage is one clock cycle. RS free means no structural hazard. So, IF fetch next instruction into FIFO queue, Issue, get next instruction from the head of instruction queue, if matching RS free no structural hazard, issue instruction to RS, with operand values if in registers otherwise, issue identifiers of the reservation station, all operands available and RAW then execute, otherwise monitor CDB, when executed, write on CDB and mark reservation station as free, aka it is basically like how a bank appointment queue except with the CDB https://www.youtube.com/watch?v=y-N0Dsc9LmU
+Tomasulo’s algorithm, idea is to use reservations stations. Dynamic scheduling is to allow out of order execution to prevent stalling. Dynamic scheduling means is to have temporary multiple lanes. Motivated by small number of FP registers, so need to get in more effective registers aka register renaming. Buffer the stalling ADD.D into a reservation standard, results are broadcasted on common data buses. Pipeline phases may take several clock sizes, stage is one clock cycle. RS free means no structural hazard. So, IF fetch next instruction into FIFO queue, Issue, get next instruction from the head of instruction queue, if matching RS free no structural hazard, issue instruction to RS, with operand values if in registers otherwise, issue identifiers of the reservation station, all operands available and RAW then execute, otherwise monitor CDB, when executed, write on CDB and mark reservation station as free, aka it is basically like how a bank appointment queue except with the CDB https://www.youtube.com/watch?v=y-N0Dsc9LmU
 
 Radix, base of a number system, binary and decimal are the radices.
 
@@ -236,7 +236,7 @@ Units in last place in arithmetic computation, minimum distance between two numb
 
 Machine epsilon in arithmetic computation, maximum relative error in the chosen rounding procedure.
 
-Floating point operations per second or flops, decide the performance of the computer.
+Floating point operations per second or flops, weak measure of the performance of the computer.
 
 Twos complement arithemetic, invert all the bits and add one to the number.
 
@@ -282,13 +282,13 @@ Edge computing: a distributed computing paradigm to let nodes compute or do task
 
 Virtualisation: creation of a virtual layer over the hardware platform to create multiple computing instances and execute them simultaneously on the same hardware platform for host machine.
 
-Slices, compute units, streaming multiprocessors: run instructions and process data independently from a. Shared memory with its own pool of instruction memory as a cache.
+Slices, compute units, streaming multiprocessors: run instructions and process data independently from a shared memory with its own pool of instruction memory as a cache.
 
 Tasks from a n application perspective: consists of kernels to be executed on a GPU as well as thread blocks.
 
 Directed acyclic graph as representation of heterogeneous systems, vertex is task instance, unidirectional edges corresponds to precedence constraints. Scheduability analyses can be performed once you model it is as DAG. 
 
-Single cycle processes idle: efficiency low, idle due to waiting. Sequential single cycle pipelining leads to hidden unemployment. Fix by improving pipeline. Pizza analogy. Idea is to apply to latency in fetch, decode, execute, memory, write back to determine throughput.
+Single cycle processes idle: efficiency low, idle due to waiting. Sequential single cycle pipelining leads to hidden unemployment. Fix by improving pipeline. Pizza analogy. Idea is to apply to latency in fetch, decode, execute, memory, write back to determine throughput. Pipeline is fixed because applying latency in cycle gives load balance.
 
 Fetching in computer architecture: refers to fetching instructions from program pointer.
 
@@ -312,15 +312,15 @@ Abstraction layers in electrical engineering: there are 9 layers, problem, Algor
 
 Cycles per instruction: total number of cycles in program / total number of instructions in program
 
-Gustafson’s law: programmer can keep extending on parallel tasks, address shortcoming of Amdahl’s law, criticising the idea that achievable speed up is limited by inherent sequentialise.
+Gustafson’s law: programmer can keep extending on parallel tasks, address shortcoming of Amdahl’s law, criticising the idea that achievable speed up is limited by inherent sequentialism. Amdahl's assumes sequentialism.
 
 Bitlet model: idea is to perform in memory computing for more efficiency.
 
 Delayed branch slots: idea is to check branch taking after cycles, stall until conditional branch is resolved, or speculatively fetch and recover if speculation as wrong, fill up with speculative slots. Fails because may have varying branch slots.
 
-General purpose versus domain specific architecture: general purposes stuff fails to scale and it is hard to maintain backward compatibility and to be further optimised. Domain specific stuff depends heavily on the characterisation.
+General purpose versus domain specific architecture: general purpose stuff fails to scale and it is hard to maintain backward compatibility and to be further optimised. Domain specific stuff depends heavily on the characterisation.
 
-Operating system: supervisory program that efficiently manages hardware systems. Realtime OS means have to ensue satisfaction of hard deadlines.Abstracts hardware between humans and hardware.
+Operating system: supervisory program that efficiently manages hardware systems. Realtime OS means have to ensue satisfaction of hard deadlines. Abstracts hardware between humans and hardware.
 
 Rate monotonic scheduler: prioritise real time tasks based on minimum inter-arrival time, smaller inter-arrival time, higher priority.
 
@@ -344,29 +344,29 @@ Branch prediction: idea is to load the branch instruction ahead of time, otherwi
 
 Arithmetic intensity: ratio of computation to memory operations. Numerator is computation since we want volume operation, denominator is memory operations because when you load and store memory it has the wait. Therefore, it is a measure that can be used to optimise performance on particular architectures (which ones to do when you wait and store.)
 
-Rice's theorem, idea is you want to statically analyse whether a program will execute without errors, define semanti cproperty about program's behaviour example given is halting problems unlike syntactic property, generalsies halting problem, cannot check any given program is correct. Corollary: reduce complexity of machines from Turing completeness or design programs that make it statically correct or be like me, don't program if you don't need to. 
+Rice's theorem, idea is you want to statically analyse whether a program will execute without errors, define semantic property about program's behaviour example given is halting problems unlike syntactic property, generalises halting problem, cannot check any given program is correct. Corollary: reduce complexity of machines from Turing completeness or design programs that make it statically correct or be like me, do not program if you do not need to. 
 
 Rice's theorem proof by Kleene's recurison theorem in ZFC: uses contradiction, assume nontrivial extension computable set of natural numbers P, so there is natural number a in P and natural number b not in P. Define a function Q by Q_e(x) = phi_b(x) where e is in P, and Q_e(x) = phi_a(x) where e is not in P. Subscript differs based on membership in P. By Kleene's recurison theorem phi_e is definable isomorphic (in the Roger's fixed point theorem sense) Q_e or this function is a Roger's fixed point function since we assumed this is a nontrivial extension computable set of natural numbers, this contradictions extensionality since phi_a = phi_b = phi_e since e in P and e not in P.
 
 Simple demos of why Rice's theorem is intuitive: since we can have a Roger's fixed point theorem, we can't have a program that changes the extensional behaviour of all programs i.e. there is a program unaffected by the change, therefore there is a program that is unaffected by checking the termination on given natural number, a program that is unaffected by checking for equivalence of programs. So on and so forth, this is the intuitive reason why Rice's theorem works, it all stems from the nonexistence of a program that determines the extensional behaviour of all programs OR you can always design a program that is invariant by the extension program.
 
-Roger's fixed point theorem: if F is a total computable function, it has a fixed point such that phi_e is isomorphic to phi_F(e), where phi is an admissible numbering of the partial recursive function, phi_e is this function corresponding to index e, F is (I made this up) definably isomorphic to G as partial function on the naturals if F(n) and G(n) are both defined and equal, otherwise they are both undefined. This guarantees the existence of a program that is not altered by any transformation from programming instructions. Given any effective procedure to transform programs, there is always a program that, when modified by the procedure, does exactly what it did before. Or, corollary, there is no program that changes the extensional behaviour of all programs.
+Roger's fixed point theorem: if F is a total computable function, it has a fixed point such that phi_e is isomorphic to phi_F(e), where phi is an admissible numbering of the partial recursive function, phi_e is this function corresponding to index e, F is (I made this up) definably isomorphic to G as partial function on the naturals if F(n) and G(n) are both defined and equal, otherwise they are both undefined. This guarantees the existence of a program that is not altered by any transformation from programming instructions. Given any effective procedure to transform programs, there is always a program that, when modified by the procedure, does exactly what it did before. Or, corollary, there is no program that changes the extensional behaviour of all programs. Space of Turing complete programs is too big, so there alawys is a Roger's fixed point.
 
-Borel subgroup, idea is you want Zariski closed aka you can do algebraic geometry on some subgroup, so maximal Zariski closed connected solvable algebraic subgroup. Clasically example is subgroup of upper invertible triangular matrices is Borel subgroup iof general linear group. Then one does algebraic geometry to make it equivalence to algebraic torus (C*) where C* is multiplicative group of complex numbers or Spec(C[x,y,z,w]) powers +- 1.. 
+Borel subgroup, idea is you want Zariski closed aka you can do algebraic geometry on some subgroup, so maximal Zariski closed connected solvable algebraic subgroup. Classical example is subgroup of upper invertible triangular matrices is Borel subgroup of general linear group. Then one does algebraic geometry to make it equivalence to algebraic torus (C*) where C* is multiplicative group of complex numbers or Spec(C[x,y,z,w]) powers +- 1.
 
 Intelligence, entropy reduction, cross entropy reduction is basically intelligence aka compression problems. Trying to reduce the entropy directly to the Kolmogorov complexity.
 
-(-1)-groupoids, these are single truth value with trivial symmetry. For this to be a 0-category, this will have to be the set of true and false. Note that (-2)-groupoid has no such symmetry so it is a point, abd this to be a (-1)-poset, which is also a point with trivial order.
+(-1)-groupoids, these are single truth value with trivial symmetry (no symmetry line). For this to be a 0-category, this will have to be the set of true and false. Note that (-2)-groupoid has no such symmetry so it is a point, abd this to be a (-1)-poset, which is also a point with trivial order.
 
-(0.1)-categories, categories of open subsets of topological spaces or locales using Heyting duality, objects are propositions, morphisms are implications, limits are and, colimits are or. These are (n-r) categories.
+(0,1)-categories, categories of open subsets of topological spaces or locales using Heyting duality, objects are propositions, morphisms are implications, limits are "and", colimits are or. These are (n-r) categories.
 
-(Hilbert) adjoint of a linear operator, consider a linear operator from hilbert spaces H to K, then using the Riesz representation theorem there is a unique adjoint T^* in the set of bounded linear operators B(H, K) such that (Tx, y)_H = (x, T^*y)_K. Construction starts with f(x) ,= (Tx, y)_K, then since this is a bounded linear operator the norm of f(x) is less than or equal to the norm of the linear map T in the operator norm ||T|| of the space of bounded linear maps B(H, K), by linearity f is in H^*, therefore using Riesz representation theorem, you can get uniqueness.
+(Hilbert) adjoint of a linear operator, consider a linear operator from Hilbert spaces H to K, then using the Riesz representation theorem, there is a unique adjoint T^* in the set of bounded linear operators B(H, K) such that (Tx, y)_H = (x, T^*y)_K. Construction starts with f(x) = (Tx, y)_K. Then, since this is a bounded linear operator, therefore the norm of f(x) is less than or equal to the norm of the linear map T in the operator norm ||T|| of the space of bounded linear maps B(H, K), by linearity f is in H^*, therefore using Riesz representation theorem, you can get uniqueness.
 
 (ax + by) nilpotent if x and y are nilpotent, expand (ax + by)^N some power with binomial theorem, highest power nilpotent and vanishes taking N to be product of powers mn, so either it vanishes due to nilpotence of x, or vanishes due to nilpotence of y.
 
-0-1, true false, initial and terminal objects
+0-1, true false, initial and terminal objects.
 
-0-Recursor, Pi_0 C -> C, space of sections over the empty space is a space, any set is a family of functions on the empty set. Logically, any false statement implies any statement.
+0-recursor, Pi_0 C -> C, space of sections over the empty space is a space, any set is a family of functions on the empty set. Logically, any false statement implies any statement. Recall that sections are composable functions on the left. So, example a set is a family of functions composable over the empty set on the left. For example, an empty set is a set of false statements, composable functions are sections on the left (premises), composition is sections of falsisties or composing with nothing,
 
 0-type, no inductive generators
 
@@ -378,57 +378,55 @@ Intelligence, entropy reduction, cross entropy reduction is basically intelligen
 
 1D Ising Model, magnetisation model used to illustrate either the metropolis cutoff or Glauber dynamics, idea is to have (-1,1)^N for magnetisation spin, decompose Hamiltonian into two components. Metropolis cutoff considers the minimum of (1, exp(- B H(x))), where B is the inverse temperature and cool to infinity.
 
-2-categories, objects are functors, morphisms are natural transformation. Useful because instead of Hom object with internal Hom, one can recycle notions of internal Hom onto functors and internal Funct, thereby recycling (0,1)-category theory or 1-category theory to extend into larger structures. This is also small category theory, or categories as algebraic structures as well, so the analogies are deeper. They are also the horizontal categorification of monoidal categories. There is horizontal composition along objects, and vertical composition along morphisms.
+2-categories, objects are functors, morphisms are natural transformations. Useful because instead of Hom object with internal Hom, one can recycle notions of internal Hom onto functors and internal Funct, thereby recycling (0,1)-category theory or 1-category theory to extend into larger structures. This is also small category theory, or categories as algebraic structures as well, so the analogies are deeper. They are also the horizontal categorification of monoidal categories. There is horizontal composition along objects, and vertical composition along morphisms.
 
 27 lines on cubic surface basics, example w^3 + x^3 + y^3 + z^3 = 0 in P^3, typical line is (1, -1, t, -t), 3^3 * 4! order, 27 images under this group, acted on permutation group.
 
-= sum of var(X_i) from 1 to n.
+A -> B, B^A, implication, sets of functions, function space. Consider example B is empty, A is set of false premises to untrue statement, so B^A is set of false logic.
 
-A -> B, B^A, implication, sets of functions, function space
-
-A 2-morphism of functors is natural transformation \eta that has components \alpha_c that takes morphism c composed by a functor F to a functor G such that there is a commutative diagram between the morphism Fc and its common composite Gc' for any morphism f that takes c to c' (Gf * \alpha_c = \alpha_{c'} * Ff).
+2-morphism of functors, natural transformation \eta that has components \alpha_c that takes morphism c composed by a functor F to a functor G such that there is a commutative diagram between the morphism Fc and its common composite Gc' for any morphism f that takes c to c' (Gf * \alpha_c = \alpha_{c'} * Ff).
 
 A \* B, disjunction, sets of pairs, product space
 
-A category C have domain and codomain objects ob(C) and morphisms mor(C) that respect the identity 1_C and associative composition.
+Category, C have domain and codomain objects ob(C) and morphisms mor(C) that respect the identity 1_C and associative composition.
 
-A category of presheaves has presheaf functors as objects, and natural transformations as morphisms.
+Category of presheaves, has presheaf functors as objects, and natural transformations as morphisms.
 
-A comma category F \downarrow G of two functors F, D -> C and G, E -> C has objects, triples (d, e, f), where d is a morphism in category D, e is a morphism in category E, and f which are morphisms from Fd -> Ge in category C, as well as all diagrams of this shape commuting in category C, where h, d -> d', k, e -> e' such that f' * Fh = Gk * f, for morphisms of triples (d, e, f) -> (d', e' ,f').
+Comma category, F \downarrow G of two functors F, D -> C and G, E -> C has objects, triples (d, e, f), where d is a morphism in category D, e is a morphism in category E, and f which are morphisms from Fd -> Ge in category C, as well as all diagrams of this shape commuting in category C, where h, d -> d', k, e -> e' such that f' * Fh = Gk * f, for morphisms of triples (d, e, f) -> (d', e' ,f').
 
-A functor is extended naturally from a left composition of a right Kan extension and the functor when the domain category is extended. Easy to remember, forgetful functors are typical examples of right adjoints which are right Kan extensions.
+Functorial extension naturally for Kan extensions from a left composition of a right Kan extension and the functor when the domain category is extended. Easy to remember, forgetful functors are typical examples of right adjoints which are right Kan extensions.
 
-A functor is extended naturally to left composition of a left Kan extension and the functor when the domain category is extended.
+Geometric fiber of a morphism X -> Y, defined to be the fiber over a geometric point of Y, i.e., the fibered product with the geometric point Spec k -> Y.
 
-A geometric fiber of a morphism X -> Y is defined to be the fiber over a geometric point of Y, i.e., the fibered product with the geometric point Spec k -> Y.
+Geometric point of a scheme X, defined to be a morphism Spec(k) -> X where k is an algebraically closed field. Geometric points corresponds to morphisms, note need k to be algebraically closed. Why?
 
-A geometric point of a scheme X is defined to be a morphism Spec(k) -> X where k is an algebraically closed field.
+Geometrical properties of k-scheme, a k-scheme X is geometrically connected (resp. geometrically irreducible, geometrically integral, geometrically reduced) if the structure morphism X -> Spec k has geometrically connected (resp. irreducible, integral, reduced) fibers. Recall Grothendieck's philosophy where you want to define the structure morphism to get these properties over a base spectrum/scheme Spec k. We will soon see that to check any of these conditions, we need only base change to k.
 
-A k-scheme X is geometrically connected (resp. geometrically irreducible, geometrically integral, geometrically reduced) if the structure morphism X -> Spec k has geometrically connected (resp. irreducible, integral, reduced) fibers. Recall Grothendieck's philosophy where you want to define the structure morphism to get these properties over a base spectrum/scheme Spec k. We will soon see that to check any of these conditions, we need only base change to k.
+Colimits as left Kan extension of a uniqueness functor F, takes morphisms from category C to category D along a uniqueness functor ! from a category C to the category 1 defines a natural transformation to the colimit. This left Kan extension exists if and only if the colimit exists. Colimits now feel like left adjoints.
 
-A left Kan extension of a functor F that takes morphisms from category C to category D along a uniqueness functor ! from a category C to the category 1 defines a natural transformation to the colimit. This left Kan extension exists if and only if the colimit exists. A right Kan extension along a uniqueness functor ! from a category C to the category 1 defines a natural transformation from the limit. This right Kan extension exists if and only if the limit exists.
+Limits as right Kan extension along a uniqueness functor, ! from a category C to the category 1 defines a natural transformation from the limit. This right Kan extension exists if and only if the limit exists. Limits now feel like right adjoints.
 
-A left Kan extension of a functor F that takes morphisms from initial domain category C to a codomain category E along a functor K that maps morphisms from extended domain D to the same codomain category E is a functor Lan_K F that also takes morphisms from category D to category E such that there is a natural transformation \eta that takes functor F to the functorial composition of Lan_K F * K. This natural transformation \eta is defined such that any other natural transformation \gamma factors uniquely through \eta for any other functor K' that, like K, takes morphisms from category D to category E.
+Left Kan extension of a functor F, takes morphisms from initial domain category C to a codomain category E along a functor K that maps morphisms from extended domain D to the same codomain category E is a functor Lan_K F that also takes morphisms from category D to category E such that there is a natural transformation \eta that takes functor F to the functorial composition of Lan_K F * K. This natural transformation \eta is defined such that any other natural transformation \gamma factors uniquely through \eta for any other functor K' that, like K, takes morphisms from category D to category E.
 
-A limit of a pair of parallel morphisms is an equaliser. A limit over a cospan is a pullback, considering pairs of morphisms with the same co-domain. Dually, there are coproducts, initial objects, coequalisers, and pushouts for parallel pairs of morphisms with the same domain.
+Equaliser, limit of a pair of parallel morphisms.
 
-A limit of a unique empty diagram from the empty category 0 to a category C defines a terminal object of C. This can be thought of as a product.
+Pullback as a limit over a cospan is a pullback, considering pairs of morphisms with the same co-domain. Dually, there are coproducts, initial objects, coequalisers, and pushouts for parallel pairs of morphisms with the same domain.
+
+Product as limit of a unique empty diagram from the empty category 0 to a category C, terminal object of C. This can be thought of as a product.
 
 Morphism as fibers: Grothendieck's philosophy is if it is definable on the morphisms, then it can be used to be defined on the object. A morphism has connected (respectively. irreducible, integral, reduced) geometric fibers if all its geometric fibers are connected (resp. irreducible, integral, reduced). One usually says that the morphism has geometrically connected (resp. geometrically irreducible, geometrically integral, geometrically reduced) fibers.
 
-A morphism is between categories is a functor F maps morphisms f from a category C to a category FC respecting composition F(f *_{F} c) -> F(f) *_{FC} F(c) and identification in both categories. One can also use the family of homs definition, used in May or Lurie.
+Morphism is between categories, is a functor F maps morphisms f from a category C to a category FC respecting composition F(f *_{F} c) -> F(f) *_{FC} F(c) and identification in both categories. One can also use the family of homs definition, used in May or Lurie.
 
-A right Kan extension is defined the same but the arrows of the natural transformation reversed, taking the functorial composition of Ran_K F * K to functor F from the opposite category C^op to opposite category E^op when defined in terms of the left Kan extension.
+Right Kan extension as reverse of natural transformation of left Kan extension, is defined the same but the arrows of the natural transformation reversed, taking the functorial composition of Ran_K F * K to functor F from the opposite category C^op to opposite category E^op when defined in terms of the left Kan extension.
 
-A square complex matrix A in the set of n by n matrices M_n of complex entries have eigenvalues \lambda_1, ... \lambda_n in any order. Let x in the complex n-space C^n be a unit vector such that Ax = \lambda_1 x.
+Square complex matrix A in the set of n by n matrices M_n of complex entries, eigenvalues \lambda_1, ... \lambda_n in any order. Let x in the complex n-space C^n be a unit vector such that Ax = \lambda_1 x.
 
-A square complex matrix A in the set of n by n matrices M_n of complex entries have scalars \lambda_1, ... \lambda_n in the complex plane C, positive integers q and n_1, ..., n_q such that the sum n_1 + ... + n_q = n such that A = S J_A S^{-1} where the Jordan matrix J_A is the direct sum of Jordan blocks J_{n_i}(\lambda_i), where J_A = \bigoplus^{q}_{i = 1} J_{n_i}(\lambda_i).
-
-A unit \eta is a natural transformation from the identity functor * to a composition of functors GF. A left Kan extension of the identity functor * along F is defined with the unit \eta as an left adjoint. Left adjoints preserves colimits. A counit \epsilon is a natural transformation from a composition of a functors GF to the identity functor *. A right Kan extension of the identity functor along G is defined with the counit \epsilon as an right adjoint. Right adjoints preserves limits.
+Units definition of left adjoints, a unit \eta is a natural transformation from the identity functor * to a composition of functors GF. A left Kan extension of the identity functor * along F is defined with the unit \eta as an left adjoint. Left adjoints preserves colimits. A counit \epsilon is a natural transformation from a composition of a functors GF to the identity functor *. A right Kan extension of the identity functor along G is defined with the counit \epsilon as an right adjoint. Right adjoints preserves limits.
 
 A-module is flat equivalent to torsion free over A proof, define nonzero ideal aA over A, t_a denote multiplication of a in A, u_a denote multiplication of a in M, then t_a, A -> aA is isomorphism, commutative diagram shows that t_a * Id_M + f = u_a, f is canonical hom from I *_A M to IM, f is isomorphism if and only if u_a is isomorphism, so kernel ax = 0 implies x = 0.
 
-AB in matrix ring = I, means BA = I, proof, dumbest proof ever [a b; c d], compare components of matrix with 1, you get a^2 + b^2c^2 + d^2 = 2, and ring is commutative, so it must be the other case as well and the entries obtained is the same. Similarly, ab + bd = ac + dc = 0.
+AB in matrix ring = I, means BA = I, proof, dumbest proof ever [a b; c d], compare components of matrix with 1, you get a^2 + b^2c^2 + d^2 = 2, and ring is commutative (NEED HYPOTHESIS), so it must be the other case as well and the entries obtained is the same. Similarly, ab + bd = ac + dc = 0.
 
 AEP for ergodic sequence, 2^(nH) typical sequence, with probability 2^(-nH) uniform.
 
@@ -438,13 +436,15 @@ AEP, the logarithm of jointly independent and identically distributed random var
 
 Abelian group of homomorphisms of M to N as R-modules, these are the internal hom of category of R-module homomorphism, these are commutative groups since [rk]m is either r([k]m) or k(rm) by function composition and k in the abelian group of Homs. Did not know the Hom functor can form abelian group. Hom preserves kernels and is left exact. This means Homs in R from module M to fixed object is exact.
 
-Abelian group, the following are equivalent, (1) an abelian group is group where every element is self conjugate example, a = gag^{-1} or ga = ag, this gives the reason why abelian is so important; (2) an abelian group is 1 where all irreducible representations of G have degree 1, proof key step is let g be order of G, h is number of classes of h, (n_1, ..., n_h) be degrees of distinct irreducible representations of g, g = sum of n_i^2 and is only equal to h if and only if all n_i = 1; (3) st = ts for all s, t in group G; (4) all conjugacy classes consist of a single element (self conjugate, conjugacy classes are equivalence classes under conjugation); (4) each function of G is a class function which are functions that are constant for the same conjugacy class as linear combinations of characters;
+Abelian group, the following are equivalent, (1) an abelian group is group where every element is self conjugate example, a = gag^{-1} or ga = ag, gives reason why abelian is so important; (2) an abelian group is 1 where all irreducible representations of G have degree 1, proof: key step is let g be order of G, h is number of classes of h, (n_1, ..., n_h) be degrees of distinct irreducible representations of g, g = sum of n_i^2 and is only equal to h if and only if all n_i = 1; (3) st = ts for all s, t in group G; (4) all conjugacy classes consist of a single element (self conjugate, conjugacy classes are equivalence classes under conjugation); (5) each function of G is a class function which are functions that are constant for the same conjugacy class as linear combinations of characters.
 
-Abelian is condition for naturality of order, order of g and order of h, order of gh is product if we have abelian as a condition for the group. There is a caregorical way to express this (probably forgetful functor or cardinality functor). Therefore, abelian is natural in this sense
+Abelian is condition for naturality of order, order of g and order of h, order of gh is product if we have abelian as a condition for the group. There is a categorical way to express this (probably forgetful functor or cardinality functor). Therefore, abelian is natural in this sense/
 
-Abelian varieties are abelian, proof strategy for complex numbers, any map from projective variety to C is constant by teh maximum principle, so adjoint map to the automorphism group of tangent space of origin is 0. Abelian linear groups are not abelian, this is old names for symplectic group, an affine algebraic group.
+Abelian varieties are abelian, proof strategy for complex numbers, any map from projective variety to C is constant by the maximum principle (do not understand this), so adjoint map to the automorphism group of tangent space of origin is 0. Abelian linear groups are not abelian, this is old names for symplectic group, an affine algebraic group.
 
-Abelian variety, algebraic group that is geometrically integral and proper over field k, always projective and commutative.
+Abelian variety, algebraic group that is geometrically integral and proper over field k, always projective and commutative. Defined by the structure morphism, see geometrically integral morphism, and definition of algebraic group.
+
+***
 
 Abelian variety, projective variety that is a group, chord tangent process on x^3 + y^3 = 9 since a + b + c = 0, a, b, c collinear. Not birational to A^1 since it has genus 1 not 0 as a Riemann surface. Projective coordinates (x, y, z) mod lambda or x^3 + y^3 = 9z^3, z is not 1. Associative is hard to prove directly, but follows from sum of a_1 to a_n = sum of b_1 to b_n if and only if there is a rational function with zeroes at 'a's, poles at 'b's.
 
@@ -452,7 +452,7 @@ Abelianisation as right adjoint of reflector, category of abelian groups admitte
 
 Absolute Galois group as an example of a profinite groups, this is isomorphic to the group of profinite integers or the inverse limit of the cyclic groups of order prime.
 
-Absolute Galois group of an algebraically closed field and of variable C[x] where C is a field, it is free of rank equal to the cardinalotu if C.
+Absolute Galois group of an algebraically closed field and of variable C[x] where C is a field, it is free of rank equal to the cardinality if C.
 
 Absolute Galois group of the reals, cyclic group of two elements, one is the identity, the other is the complex conjugate.
 
@@ -520,15 +520,15 @@ Algebra structure on R^n, bilinear multiplication map R^n cross R^n into R^n whe
 
 Algebraic closure of a finite field, Galois group that is isomorphic to the cyclic group is the inverse limit of cyclic groups modulo n. So the Galois group of algebraic closure of finite field of q order quotiented out the same finite field of q order is the profinite integers.
 
-Algebraic cycle, formal sums (something like linear combinations) of algebraic r-dimensional subvarieties, or closed integral k-subschemes of finite type over a field k. The linear combinations have integer coefficients called the multiplicities. These form a free abelian group (think of these formal sums like alphabets, and composing from closed integral k-subschemes as alphabets into algebraic cycles). Closed integral subschemes of X are in one to one correspondence with scheme theoretic points. Divisors as formal linear combinations of points in the curve.
+Algebraic cycle, formal sums (something like linear combinations) of algebraic r-dimensional subvarieties, or closed integral k-subschemes of finite type over a field k. The linear combinations have integer coefficients called the multiplicities. These form a free abelian group (think of these formal sums like alphabets, and composing from closed integral k-subschemes as alphabets into algebraic cycles). Closed integral subschemes of X are in one to one correspondence with scheme theoretic points. Divisors are formal linear combinations of points in the curve (feel like group elements).
 
 Algebraic geometry point of view of meromorphic function, function's domain is connected, meromorphic functions is the field of fractions of the integral domain of the set of holomorphic function. So holomorphic function feel like integers, meromorphic function feels like localisation of the integers to form the rational numbers. I think it is easier to work with locally connected with this example.
 
-Algebraic group, endow algebraic variety with a group structure.
+Algebraic group, endow algebraic variety with a group structure. Easy example, say you have solutions for a curve ax + by, x and y are integers so ax + by form a group by modulo.
 
 Algebraic integer over rationals are integers, if not rational than consider binomial expansion of (p+q)^n with p/q, q more than 1 as integer and p, q for prime, gives 0 so q divides powers of p, contradicting coprimality.
 
-Algebraic integer, complex number j reveal over the integers. Typical example is the root of unity.
+Algebraic integer, complex number j over the integers a, b or a + bi. Typical example is the root of unity.
 
 Algebraic integers, root of polynomial equation with coefficients in the integers.
 
@@ -4558,7 +4558,7 @@ Secondary presentation, expression of secondary modules as finite sum of seconda
 
 Section agreeing in terms agree in whole section, Qing Liu likes to wlog t = 0 then all germs of sections s on x is zero, open covers as x varies (subtle use of fact that this is colimit) so colimit is 0 or s = 0
 
-Section, composable element on the left
+Section, composable element on the left, g * f, g is a section of f.
 
 Sections and presheaves, by definition global sections must exist when defining presheaves. Recall that sections are maps f such that f_s * s = id_B for s as a map from B to A. This is like the reverse of a retraction. A section is something that makes any map a retraction (think idempotence).
 
