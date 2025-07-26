@@ -448,9 +448,9 @@ Abelian variety, algebraic group that is geometrically integral and proper over 
 
 Abelian variety, projective variety that is a group, chord tangent process on x^3 + y^3 = 9 since a + b + c = 0, a, b, c collinear. Not birational to A^1 since it has genus 1 not 0 as a Riemann surface. Projective coordinates (x, y, z) mod lambda or x^3 + y^3 = 9z^3, z is not 1. Associative is hard to prove directly, but follows from sum of a_1 to a_n = sum of b_1 to b_n if and only if there is a rational function with zeroes at 'a's, poles at 'b's.
 
-Abelianisation as right adjoint of reflector, category of abelian groups admitted into category of groups, the reflector right adjoint is abelianisation.
+Abelianisation as right adjoint of reflector, category of abelian groups admitted into category of groups, the reflector right adjoint is abelianisation. Idea is to find a general construction that is the the adjoint of abelianisation from groups to abelian groups i.e. forgetting non-abelian parts.
 
-Absolute Galois group as an example of a profinite groups, this is isomorphic to the group of profinite integers or the inverse limit of the cyclic groups of order prime.
+Absolute Galois group as an example of a profinite groups, isomorphic to the group of profinite integers or the inverse limit of the cyclic groups of order prime.
 
 Absolute Galois group of an algebraically closed field and of variable C[x] where C is a field, it is free of rank equal to the cardinality if C.
 
