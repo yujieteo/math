@@ -4,7 +4,6 @@ History of computer architecture: (1) Amdahl’s law and Moore’s law are the g
 
 PC optimisation order: (1) profile or question the requirements, (2) IO locality examples read sequentially once, packed file index in RAM instead of file system, working set smaller than page file; (3) data-flow programming avoiding cache miss, separating data according to usage, vectors; (4) predictable branches and pipeline stalls avoiding dependencies; processing multiple, independent items simultaneously in your already well-cached arrays; and separating different operations into different passes over separated data (data-oriented design), no-sharing threads no mutexes, single instruction multiple data SIMD registers to be used; (5) use GPUs by making large batches of work, large independent non-shared streams.
 
-
 1-address, load and store with accumulator.
 
 k-address, k number of operands.
@@ -449,13 +448,13 @@ Abelian varieties are abelian, proof strategy for complex numbers, any map from 
 
 Abelian variety, algebraic group that is geometrically integral and proper over field k, always projective and commutative. Defined by the structure morphism, see geometrically integral morphism, and definition of algebraic group.
 
-***
-
-Abelian variety, projective variety that is a group, chord tangent process on x^3 + y^3 = 9 since a + b + c = 0, a, b, c collinear. Not birational to A^1 since it has genus 1 not 0 as a Riemann surface. Projective coordinates (x, y, z) mod lambda or x^3 + y^3 = 9z^3, z is not 1. Associative is hard to prove directly, but follows from sum of a_1 to a_n = sum of b_1 to b_n if and only if there is a rational function with zeroes at 'a's, poles at 'b's.
+Abelian variety, projective variety that is a group (wh), chord tangent process on x^3 + y^3 = 9 since a + b + c = 0, a, b, c collinear. Not birational to the affine line A^1 since it has genus 1 not 0 as a Riemann surface. Projective coordinates (x, y, z) mod lambda or x^3 + y^3 = 9z^3, z is not 1. Associativity is hard to prove directly, follows from sum of a_1 to a_n = sum of b_1 to b_n if and only if there is a rational function with zeroes at 'a's, poles at 'b's.
 
 Abelianisation as right adjoint of reflector, category of abelian groups admitted into category of groups, the reflector right adjoint is abelianisation. Idea is to find a general construction that is the the adjoint of abelianisation from groups to abelian groups i.e. forgetting non-abelian parts.
 
-Absolute Galois group as an example of a profinite groups, isomorphic to the group of profinite integers or the inverse limit of the cyclic groups of order prime.
+Absolute Galois group intuition, group that sort of generates the entire field.
+
+Absolute Galois group as an example of a profinite group, isomorphic to the group of profinite integers or the inverse limit of the cyclic groups of order prime.
 
 Absolute Galois group of an algebraically closed field and of variable C[x] where C is a field, it is free of rank equal to the cardinality if C.
 
@@ -463,41 +462,41 @@ Absolute Galois group of the reals, cyclic group of two elements, one is the ide
 
 Absolute Galois group, the following are equivalent, Galois group of the separable closure of field K, automorphism group of algebraic closure by inner automorphisms.
 
-Absolute product in category is fibered product over the final object, example X * Y = X *_Z Y in the category of schemes, example X * Y = X *_S Y in the category of S-schemes like S is the spectrum ofthe field.
+Absolute product in category is fibered product over the final object, example X * Y = X *_Z Y in the category of schemes, example X * Y = X *_S Y in the category of (Spec k)-schemes like Spec k is the spectrum of the field. Spectrum of 
 
-Accessible cardinals, apply cardinal arithmetic on cardinal numbers like omega for infinity, successors, disjoint union for addition, Cartesian product for multiplication, power set of functions for exponentiation. If you cannot use these to get the cardinals you want, these are the inaccessible cardinals.
+Accessible cardinals, apply cardinal arithmetic on cardinal numbers like omega for infinity, successors, disjoint union for addition, Cartesian product for multiplication, power set of functions for exponentiation. If you cannot use these to get the cardinals you want, these define the inaccessible cardinals.
 
 Achievable rate, sequence of (2^nR, n) code such that probability of error tends to zero as the code is large. NOTE, it is insufficient to define it as argmin_R of the average of probability of error.
 
 Action of stochastic matrix of Markov chain, for Markov chain u_n, it is equal to u_n = u_0 P^n, where P^n is the repeated application of the stochastic matrix P, for time up to n (indexing set assumed to be nonnegative integers).
 
-Adapted (in statistics), information of the process is precisely and completely available at the same time. It is an non-antipating process.
+Adapted (in statistics), information of the process is precisely and completely available at the same time. It is an non-anticipating process.
 
-Addition of numbers as exact sequence, 0 -> Z_10 -> Z_100 -> Z_10, group in middle is Z_10 * Z_10 twisted by a 2 cockle. Two cocycle is given by first digit 0 if n+m < 10, and 1 if n+m >= 10. This is just summation of two digit numbers.
+Addition of numbers as exact sequence, 0 -> Z_10 -> Z_100 -> Z_10, group in middle is Z_10 * Z_10 twisted by a 2 cocycle. Two cocycle is given by first digit 0 if n + m < 10, and 1 if n+m >= 10. This is just summation of two digit numbers. 
 
-Additive / abelian categories on monos, very nice to have kernels, monomorphisms and monics be basically the same on some level, see Weibel. Furthermore, existence of 0 object very important, Hom is right adjoint, preserving limits, need something like AB4 i.e. cocompleteness to have direct sums preserved as well.
+Additive / abelian categories on monomorphismss, very nice to have kernels, monomorphisms and monics be basically the same on some level in additive / abelian categories, see Weibel's Homological algebra. Furthermore, existence of zero object very important, Hom functor is right adjoint, preserving limits, need something like AB4 i.e. cocompleteness to have direct sums preserved as well.
 
-Additive group object, for the Lawvere theory of abelian groups. Algebras over abelian Lawvere theory have the adjunctions TAlg -> Ab, ab_* is left adjoint to ab^*. Then the abelian group object in sheaf topos for a small full subcategory with subcanonical coverage Sh(C) will be G_T in Ab(Sh(C)).
+Additive group object, Lawvere theory of abelian groups. Algebras over abelian Lawvere theory have the adjunctions TAlg -> Ab, ab_* is left adjoint to ab^*. Then the abelian group object in sheaf topos for a small full subcategory with subcanonical coverage Sh(C) will be G_T in Ab(Sh(C)).
 
-Additive optimality, goal is to have unique minimal element (avoid nonsense with axiom of choice), defined by ensuring existence of functions with greater Kolmogorov complexity up to constant for any Kolmogorov complexity of function i.e. Cg(x) + c_f,g >= Cf(x)
+Additive optimality for Kolmogorov complexity, goal is to have unique minimal element (avoid nonsense with axiom of choice), defined by ensuring existence of functions with greater Kolmogorov complexity up to constant for any Kolmogorov complexity of function i.e. Cg(x) + c_f,g >= Cf(x)
 
-Adjunction and exactness, let C and D be abelian categories, F be functor from C to D, G be functor from D to C, additive functor given isomorphism of bifunctors, Hom_D(FX, Y) = Hom_C(X, GY), F is left adjoint to G, G is right adjoint of F, then F is right exact and G is left exact (see Gelfand and Manin)
+Adjunction and exactness, let C and D be abelian categories, F be functor from C to D, G be functor from D to C, additive functor given isomorphism of bifunctors, Hom_D(FX, Y) = Hom_C(X, GY), F is left adjoint to G, G is right adjoint of F, then F is right exact and G is left exact (see Gelfand and Manin's Homological Algebra)
 
 Adjunction of diagonal functor, diagonal functor is a functor from C to Funct(I, C), projective limit is right adjoint, inductive limit is left adjoint.
 
 Adjunction of right shift operator gives left shift operator, suppose we have s_r x = (0, x1, x2, ...) and maps s_r from l^2 to l^2 discretised Hilbert spaces, then we have s_r^* = s_l since we can see that s_r^* y = (y2, y3, y4, ...). We have that (s_r x, y) = (x, s_r^* y) or that the the right shift operator x is left adjoint to the left shift operator on y.
 
-Affine algebraic group, algebraic group where the underlying variety is an affine variety. There is an exact correspondence to the subgroups of the general linear group.
+Affine algebraic group, algebraic group where the underlying variety is an affine variety. There is an exact correspondence to the subgroups of the general linear group. This is why affine algebraic groups are interesting to study, since general linear group is basically linear algebra.
 
 Affine algebraic set, a subset in an algebraically closed field k^n if it can be written as the set of common zeros of a set of polynomials, there is a set M variables such that V(M) ,= {(x_i from 1 to n) in j^n, such that f(x_1, ... x_n) = 0}, this looks like some sort of kernel. Gives consequences if you have Hilbert's basis theorem.
 
 Affine basis, {x_0 to x_n is affine basis} if and only if (x_1 - x_0, ... x_n - x_0) is linear basis of associated vector space.
 
-Affine combination versus convex combination, affine combination allows negative coefficients, line between them and is compact. Convex combination of a finite set is compact.
+Affine combination versus convex combination, affine combination allows negative coefficients, line between them and is compact. Convex combination of a finite set is compact but does not allow negative coefficients.
 
-Affine is not preserved under quotients, the group GL2(k) acts in the obvious way on P1. If we fix a point of P1 we get a morphism of an aﬃne variety onto a projective variety with aﬃne fibers. In particular the quotient of 2 aﬃne groups need not be aﬃne, and a fiber bundle with aﬃne fibers over a projective variety can be aﬃne.
+Affine is not preserved under quotients, the group general linear group of 2 by 2 matrices over a field k, GL2(k) acts in the obvious way on P1. If we fix a point of P1 we get a morphism of an aﬃne variety onto a projective variety with aﬃne fibers. In particular the quotient of 2 aﬃne groups need not be aﬃne, and a fiber bundle with aﬃne fibers over a projective variety can be aﬃne.
 
-Affine line over k is not Hausdorff, proof consider set of generic point in V(I) if this is the case then the ideal I is in the zero ideal, the algebraic set cut out is the affine line, therefore the closure of the generic point is the whole affine line, this means there exists a nonclosed point {0}. The topological space is not Hausdorff, but the affine line over k is separated as a scheme.
+Affine line over field k is not Hausdorff, counterexample, consider set of generic point in V(I) for variety of ideal I. If this is the case, then the ideal I is in the zero ideal, the algebraic set cut out is the affine line, therefore the closure of the generic point is the whole affine line, this means there exists a nonclosed point {0}. The topological space is not Hausdorff, but the affine line over k is separated as a scheme.
 
 Affine line over k worked example, generic point is 0 ideal, points are max ideals k[T], the affine line over k is defined to the spectrum of k[T]. Proper closed sets are the finite sets. Subsets form varieties V(I), where I is a nonzero ideal, then the V(I) can be formed from the set of prime ideals P_i k[T] for each P_i(T) irreducible factors. Note that this generic point is not closed since 0 is not a maximal ideal of k[T].
 

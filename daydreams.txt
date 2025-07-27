@@ -28,7 +28,11 @@ ABP estimate for elliptic equations?
 
 Abel's theorem?
 
+Absolute Galois group definition
+
 Absolutely irreducible meaning?
+
+Correspondence between affine algebraic groups and subgroups of the general linear group
 
 Additive White Gaussian Noise channel?
 
